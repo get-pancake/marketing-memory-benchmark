@@ -1,0 +1,46 @@
+{
+  "provider": "anthropic",
+  "kind": "anyOf nullable structured-output integration check; no response replacement",
+  "case_id": "q3563424a26",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:07:02Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:07:06Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:07:00Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:07:02Z"
+  },
+  "status": "completed",
+  "usage": {
+    "input_tokens": 3679,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 680,
+    "output_tokens_details": {
+      "thinking_tokens": 345
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish": "end_turn",
+  "complete": true,
+  "keys": [
+    "explanation",
+    "missing",
+    "status",
+    "support",
+    "template"
+  ],
+  "seconds": 6.432880437001586
+}

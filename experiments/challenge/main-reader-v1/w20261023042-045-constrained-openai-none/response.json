@@ -1,0 +1,160 @@
+{
+  "id": "resp_0f9fbd6cd9ff397d016adaf61295f487d1bdcf9b41ffdd26ed",
+  "object": "response",
+  "created_at": 1792734738,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734743,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0f9fbd6cd9ff397d016adaf613885887d1b3fe4bd26917c3b9",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"For each queried account, provide an approved seller policy defining allowed regions, blocked sectors, and approved actions; an observed account profile, current consent=true, and a catalog-matching signal; and an approved integer account priority.\",\"For each queried account, provide observed evidence for the complete account.initiative \u2192 initiative.need \u2192 need.offering \u2192 offering.proof chain, including observed proof.verified with approved value true.\",\"For workshop eligibility, provide approved offering.capacity=true; for assurance_pack, approved offering.assurance=true; for reference_intro, approved proof.shareable=true.\",\"Include source IDs for all supplied evidence.\"],\"reasoning_summary\":\"No company evidence was supplied, so no account-action pair has supported eligibility or priority. No actions can be selected under the shared budget of 7 and maximum of three distinct accounts.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Orchid-45",
+                    "Pine-45",
+                    "Delta-45",
+                    "Birch-45",
+                    "Larch-45",
+                    "Iris-45"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 747,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 176,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 923
+  },
+  "user": null,
+  "metadata": {}
+}

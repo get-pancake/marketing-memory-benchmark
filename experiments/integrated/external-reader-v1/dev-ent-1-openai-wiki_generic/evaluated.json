@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:51.483799+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00e78d7f8ee0a494016adaac9bda8887d1b6e1a6b622c93abf",
+  "usage": {
+    "input_tokens": 17592,
+    "input_tokens_details": {
+      "cache_write_tokens": 17589,
+      "cached_tokens": 0
+    },
+    "output_tokens": 57,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17649
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0445485",
+    "total_input_tokens": 17592,
+    "output_tokens": 57,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17589
+  },
+  "text": "{\"answer\":\"Thornbury Cloth Co.\",\"citations\":[\"D019\"],\"explanation\":\"The January 13 chat explicitly identified the TCC invoice as belonging to the mill, Thornbury Cloth Co., not Tamsin Cold Chain.\"}",
+  "finished_at": "2026-10-23T00:38:54.091483+00:00",
+  "seconds": 2.607695127997431,
+  "id": "dev-ent-1-openai-wiki_generic",
+  "case_id": "dev-ent-1",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Thornbury Cloth Co.",
+  "explanation": "The January 13 chat explicitly identified the TCC invoice as belonging to the mill, Thornbury Cloth Co., not Tamsin Cold Chain.",
+  "citations": [
+    "D019"
+  ]
+}

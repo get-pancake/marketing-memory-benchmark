@@ -1,0 +1,118 @@
+{
+  "id": "qc866479276-openai-gbrain",
+  "case_id": "qc866479276",
+  "world": "wacc7f06b",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 6,
+    "current_value_group_coverage": 0.75,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.3333333333333333,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2013,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:07.801674+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999920",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_05f030d1f98afaab016adab210405487d197a9aee586188a41",
+  "usage": {
+    "input_tokens": 1975,
+    "input_tokens_details": {
+      "cache_write_tokens": 921,
+      "cached_tokens": 1051
+    },
+    "output_tokens": 222,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2197
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0046336",
+    "total_input_tokens": 1975,
+    "output_tokens": 222,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1051,
+    "cache_write_tokens": 921
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved=IT_manager",
+      "seller.approved_geo:approved=US"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S13",
+      "account.account_role:observed": "S9",
+      "account.certification:observed": "S4",
+      "account.observed_signal:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S15",
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=IT_manager",
+      "seller.approved_geo:approved=US"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=IT_manager",
+      "seller.approved_geo:approved=US"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the compliance objective and two-unit allowance, with its additional prerequisites supported by S3, S4, S14 and S15, but approved seller role and geography are missing, so alignment with the observed IT_manager role (S9) and US geography (S13) cannot be verified. P1 has a different objective, while P4 and P2 exceed the resource allowance.",
+  "finished_at": "2026-10-23T01:02:12.426570+00:00",
+  "seconds": 4.624902989002294
+}

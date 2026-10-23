@@ -1,0 +1,123 @@
+{
+  "id": "q8714a87290-anthropic-full",
+  "case_id": "q8714a87290",
+  "world": "w992b6c36",
+  "arm": "full",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.15555555555555556,
+    "selected_sources": 45,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 5270,
+  "status": "completed",
+  "started_at": "2026-10-23T00:42:00.035713+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9998000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:42:03Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:42:06Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:42:00Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11997000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:42:03Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEt4h6g1p1vKd3cZy5a",
+  "usage": {
+    "input_tokens": 6592,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 601,
+    "output_tokens_details": {
+      "thinking_tokens": 288
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.019194",
+    "total_input_tokens": 6592,
+    "output_tokens": 601,
+    "regular_input_tokens": 6592,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S14",
+      "account.account_role:observed": "S42",
+      "account.customer_state:observed": "S30",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S44",
+      "seller.approved_geo:approved": "S5",
+      "seller.approved_role:approved": "S40",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Only P4 fits the 2-unit allowance for the renewal objective, and its role, geo, customer state, usage trend and offering pain prerequisites are supported (S40, S5, S42, S14, S30, S44, S4). No observed evidence shows proof for the adoption pain, so P4 is blocked. The UK geo in S22 is only a proposal and does not change the approved US geo.",
+  "finished_at": "2026-10-23T00:42:06.673208+00:00",
+  "seconds": 6.6375057980039855
+}

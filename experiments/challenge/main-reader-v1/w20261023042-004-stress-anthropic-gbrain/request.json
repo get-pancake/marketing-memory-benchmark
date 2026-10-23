@@ -1,0 +1,84 @@
+{
+  "model": "claude-opus-5-5",
+  "system": "You are a marketing decision-support analyst. Use only supplied current company evidence and the common action catalog. Select up to three actions for distinct accounts to maximize the SUM of approved priority times catalog multiplier under the query's shared cost budget. These policy points are synthetic priorities, NOT expected revenue. Check every action separately; do not let one ineligible account block another.\nEligibility for every action requires: seller policy is approved, the account profile region is allowed and sector not blocked, the action is approved by policy, current observed consent is true, and the signal matches the catalog. Follow account.initiative -> initiative.need -> need.offering -> offering.proof -> proof.verified; verified must be approved true. Account priority must be approved and an integer. Profile, consent, initiative, need, offering, proof and signal require observed authority. Additional capacity and assurance are approved true on the offering; shareable is approved true on the proof. The account itself must be in the query. Missing facts and conflicting current values at the required authority block the affected action. Proposed policies and feedback are not approved facts. Never assume a missing fact.\nAll supplied records have already passed the current-view filter. A later timestamp alone NEVER supersedes another supplied current record. If supplied values conflict at the required authority, abstain for that requirement even when one record has a later date.\nFor each chosen action cite ALL supplied source IDs required for its eligibility AND priority, including policy and every link in the chain. Do not cite unrelated records as proof. Distinct-account, cost and maximum-action constraints apply to the whole plan. When no supported action is available return an empty actions list and request missing evidence. Return the exact JSON schema, with a short reasoning summary and a missing-evidence list. Do not invent company facts or predicted conversion rates.",
+  "messages": [
+    {
+      "content": "{\"catalog\":[{\"cost\":2,\"extra\":[],\"id\":\"diagnostic\",\"multiplier\":2,\"signals\":[\"risk\",\"growth\"]},{\"cost\":3,\"extra\":[\"capacity\"],\"id\":\"workshop\",\"multiplier\":4,\"signals\":[\"risk\",\"launch\"]},{\"cost\":2,\"extra\":[],\"id\":\"renewal_review\",\"multiplier\":3,\"signals\":[\"renewal\"]},{\"cost\":4,\"extra\":[\"shareable\"],\"id\":\"reference_intro\",\"multiplier\":5,\"signals\":[\"growth\",\"renewal\"]},{\"cost\":3,\"extra\":[\"assurance\"],\"id\":\"assurance_pack\",\"multiplier\":4,\"signals\":[\"risk\"]},{\"cost\":1,\"extra\":[],\"id\":\"research_brief\",\"multiplier\":1,\"signals\":[\"risk\",\"growth\",\"renewal\",\"launch\"]}],\"company_evidence\":[{\"authority\":\"approved\",\"entity\":\"Pine-4\",\"id\":\"e6c6a7e198a9d42\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":2},{\"authority\":\"approved\",\"entity\":\"Birch-4\",\"id\":\"ed4310025bacfa2\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":5},{\"authority\":\"approved\",\"entity\":\"Larch-4\",\"id\":\"ea77e58a376b59f\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":4},{\"authority\":\"approved\",\"entity\":\"Juniper-4\",\"id\":\"e4edca5faf5649e\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":11},{\"authority\":\"observed\",\"entity\":\"corporate-129\",\"id\":\"e55f116fbbcaf66\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-60\",\"id\":\"ecee8f033e39ecf\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-120\",\"id\":\"ef5b89142c611e0\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-105\",\"id\":\"e5f6b5c07fe6297\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-144\",\"id\":\"ede1ebb0d8a46a4\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-210\",\"id\":\"e181846b7b4a70b\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-3\",\"id\":\"e95faa335197b40\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-78\",\"id\":\"e88aeffffa9e230\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-234\",\"id\":\"e6ec76f40ad9999\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-222\",\"id\":\"e4cddd26a39d27d\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-108\",\"id\":\"ef6b5c51e4b57ee\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-231\",\"id\":\"e6ec0c4ccc688ab\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-141\",\"id\":\"ed22424da221418\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-228\",\"id\":\"e834a1de6fb9778\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-90\",\"id\":\"eb4613e616bf6f9\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-138\",\"id\":\"e72d421da9fecbe\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-21\",\"id\":\"e4b16ffa0ed8c57\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"approved\",\"entity\":\"Grove-4\",\"id\":\"e0ee4eda1ba4a1c\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":11},{\"authority\":\"observed\",\"entity\":\"corporate-186\",\"id\":\"e27fd8253d1a438\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-87\",\"id\":\"ee60b7173f00b82\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-237\",\"id\":\"e5da59fab417af0\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"approved\",\"entity\":\"Orchid-4\",\"id\":\"e03744c692d607f\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":2},{\"authority\":\"approved\",\"entity\":\"Aster-4\",\"id\":\"e6e24ccfaddf5d2\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":8},{\"authority\":\"approved\",\"entity\":\"Kestrel-4\",\"id\":\"eebee7a487f2561\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":12},{\"authority\":\"observed\",\"entity\":\"Birch-4\",\"id\":\"e01f597ca7528d3\",\"observed_day\":5,\"relation\":\"budget_note\",\"valid_day\":5,\"value\":\"corporate-185\"},{\"authority\":\"approved\",\"entity\":\"offering-4\",\"id\":\"ef3ebd6e7b4a87d\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Orchid-4\",\"id\":\"e5ea693c2b20032\",\"observed_day\":5,\"relation\":\"budget_note\",\"valid_day\":5,\"value\":\"corporate-252\"},{\"authority\":\"observed\",\"entity\":\"Pine-4\",\"id\":\"eb45ddbabf197d9\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-97\"},{\"authority\":\"observed\",\"entity\":\"Birch-4\",\"id\":\"e4de818bd3f418b\",\"observed_day\":5,\"relation\":\"hiring_plan\",\"valid_day\":5,\"value\":\"corporate-88\"},{\"authority\":\"approved\",\"entity\":\"seller\",\"id\":\"e38083eabfd0828\",\"observed_day\":12,\"relation\":\"policy\",\"valid_day\":12,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[\"US\",\"FR\",\"UK\"],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"proposed\",\"entity\":\"seller\",\"id\":\"e528ce3034f1d73\",\"observed_day\":25,\"relation\":\"policy\",\"valid_day\":25,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"observed\",\"entity\":\"Birch-4\",\"id\":\"e1dabbb587f6f55\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-220\"},{\"authority\":\"observed\",\"entity\":\"Birch-4\",\"id\":\"e7d48c00da2cf73\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-143\"},{\"authority\":\"observed\",\"entity\":\"Birch-4\",\"id\":\"ebe46ab6b194019\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-42\"},{\"authority\":\"observed\",\"entity\":\"Larch-4\",\"id\":\"ec14917dd32d47b\",\"observed_day\":5,\"relation\":\"hiring_plan\",\"valid_day\":5,\"value\":\"corporate-26\"},{\"authority\":\"observed\",\"entity\":\"Juniper-4\",\"id\":\"e025c5f0ed73738\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-224\"},{\"authority\":\"observed\",\"entity\":\"Juniper-4\",\"id\":\"e2c4db7ab23e86d\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-39\"},{\"authority\":\"observed\",\"entity\":\"Juniper-4\",\"id\":\"e327dba3bf29d7e\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-55\"},{\"authority\":\"observed\",\"entity\":\"Juniper-4\",\"id\":\"ec909c47206c808\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-94\"},{\"authority\":\"approved\",\"entity\":\"offering-7\",\"id\":\"e797c063685f621\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Pine-4\",\"id\":\"eb17dfb31a591f1\",\"observed_day\":5,\"relation\":\"supplier\",\"valid_day\":5,\"value\":\"corporate-128\"},{\"authority\":\"observed\",\"entity\":\"Pine-4\",\"id\":\"edf41a243e62a17\",\"observed_day\":5,\"relation\":\"supplier\",\"valid_day\":5,\"value\":\"corporate-190\"},{\"authority\":\"observed\",\"entity\":\"Juniper-4\",\"id\":\"e1a8db022c93d09\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-248\"},{\"authority\":\"approved\",\"entity\":\"offering-1\",\"id\":\"e1251e2cfffdf93\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true}],\"query\":{\"access\":[\"public\"],\"accounts\":[\"Birch-4\",\"Juniper-4\",\"Larch-4\",\"Pine-4\",\"Kestrel-4\",\"Grove-4\",\"Aster-4\",\"Orchid-4\"],\"budget\":8,\"day\":30,\"objective\":\"Maximize approved marketing priority within the shared cost allowance; each account at most once.\"}}",
+      "role": "user"
+    }
+  ],
+  "max_tokens": 8192,
+  "thinking": {
+    "type": "adaptive"
+  },
+  "output_config": {
+    "effort": "high",
+    "format": {
+      "type": "json_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "account": {
+                  "type": "string",
+                  "enum": [
+                    "Birch-4",
+                    "Juniper-4",
+                    "Larch-4",
+                    "Pine-4",
+                    "Kestrel-4",
+                    "Grove-4",
+                    "Aster-4",
+                    "Orchid-4"
+                  ]
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reasoning_summary": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

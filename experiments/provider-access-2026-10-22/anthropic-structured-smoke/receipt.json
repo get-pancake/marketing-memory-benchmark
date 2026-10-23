@@ -1,0 +1,10 @@
+{
+  "provider": "anthropic",
+  "kind": "structured-output integration check on development case",
+  "case_id": "q3563424a26",
+  "status": "http_error",
+  "code": 400,
+  "error_type": "invalid_request_error",
+  "message": "output_config.format.schema: Invalid schema: Enum value None does not match declared type '['string', 'null']'",
+  "seconds": 0.13237865599512588
+}

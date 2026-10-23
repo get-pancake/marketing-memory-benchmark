@@ -1,0 +1,100 @@
+{
+  "id": "w20261023041-007-constrained-anthropic-markdown",
+  "case_id": "w20261023041-007-constrained",
+  "world": "w20261023041-007",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:13:12.151072+00:00",
+  "evidence_bytes": 12186,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:13:15Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:13:23Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:13:12Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11995000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:13:15Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbZYWqeEVL9JcE2AMn2",
+  "usage": {
+    "input_tokens": 6854,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 938,
+    "output_tokens_details": {
+      "thinking_tokens": 372
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.046176",
+    "total_input_tokens": 6854,
+    "output_tokens": 938,
+    "regular_input_tokens": 6854,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-7",
+        "action": "workshop",
+        "sources": [
+          "e093f0605063dbf",
+          "ec15422261e0ab6",
+          "e80b5a66a079b89",
+          "e5dbeed21fa80bf",
+          "ec3cfd7881a9351",
+          "e228d0a4b21fe5d",
+          "ea518f5f27d04c2",
+          "e1e53be46be5031",
+          "e81e315af06bb8f",
+          "e2f3e61d3c2cff5",
+          "ede797e5300c2f9"
+        ]
+      }
+    ],
+    "missing": [
+      "proof-2 verified (approved) for Grove-7 chain via offering-2",
+      "Orchid-7: profile, consent, signal, initiative chain, approved priority",
+      "Pine-7: profile, consent, signal, initiative chain, approved priority",
+      "Delta-7: profile, consent, signal, initiative chain, approved priority",
+      "Mesa-7: profile, consent, signal, initiative chain, approved priority"
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) applies; the proposed policy is ignored. North-7 is fully eligible: US/software profile, current consent true, risk signal, and a complete chain from initiative-1 through need-1 and offering-1 to proof-1, with proof-1 verified as approved true. Its approved priority is 3. Offering-1 has capacity, so the workshop scores 3x4=12 at cost 3, which ties assurance_pack for the best eligible action. Only one action per account is allowed. Grove-7 (priority 12) is blocked because proof-2 has no verified fact. Orchid-7, Pine-7, Delta-7 and Mesa-7 have no evidence. The plan therefore contains one action, cost 3 of a budget of 7, for a score of 12."
+  },
+  "score": {
+    "optimum": 54,
+    "recoverable_value": 12,
+    "returned_value": 12,
+    "normalized_value": 0.2222222222222222,
+    "context_normalized_value": 0.2222222222222222,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:13:23.170910+00:00",
+  "seconds": 11.019847664007102
+}

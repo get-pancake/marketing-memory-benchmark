@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:19.080157+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a015cbdb195e8bc016adaade39e3487d1a57253b1e0e7f8ff",
+  "usage": {
+    "input_tokens": 6360,
+    "input_tokens_details": {
+      "cache_write_tokens": 6357,
+      "cached_tokens": 0
+    },
+    "output_tokens": 60,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6420
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0164985",
+    "total_input_tokens": 6360,
+    "output_tokens": 60,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6357
+  },
+  "text": "{\"answer\":\"2026-01-12\",\"citations\":[\"D067\",\"D039\"],\"explanation\":\"The rebrand notice states the name change was effective January 12, 2026. The signed renewal confirms that corporate name-change date.\"}",
+  "finished_at": "2026-10-23T00:44:21.904621+00:00",
+  "seconds": 2.824474459004705,
+  "id": "dev-tl-2-openai-raw_chunks",
+  "case_id": "dev-tl-2",
+  "arm": "raw_chunks",
+  "context_bytes": 24536,
+  "answer_correct": true,
+  "answer": "2026-01-12",
+  "citations": [
+    "D067",
+    "D039"
+  ],
+  "explanation": "The rebrand notice states the name change was effective January 12, 2026. The signed renewal confirms that corporate name-change date.",
+  "citation_ids_valid": true
+}

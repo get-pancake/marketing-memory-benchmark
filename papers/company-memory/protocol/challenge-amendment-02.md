@@ -1,0 +1,15 @@
+# Development amendment 02 and main sample decision
+
+Date: 2026-10-23 UTC, after the complete first reader pilot and before any main reader call.
+
+The first pilot executed 432/432 real calls, with zero transport/format failures; estimated generation usage was $15.4590443. On positive cases both readers obtained identical company-weighted means: no context0, company0.3929833094, GTM0.8752807912, full1.0. The primary paired world-level standard deviation was0.2124443755 for both readers. The declared formula gives72worlds after rounding; the predeclared minimum therefore sets the main to **120freshworlds**,360cases,4,320reader attempts. No significance-driven stopping or later sample increase is planned.
+
+Six unsafe pilot outputs occurred on two negative cases: world003/stress and world004/constrained, in full/GTM contexts. Readers treated a later consent date as replacing another supplied current observation. The formal contract already required current conflicts to block an action, but the prompt did not emphasize that every supplied record had already passed explicit supersession. Add the same sentence to every treatment: a timestamp alone never supersedes another supplied record; conflicting current values remain unresolved even if dates differ. The eligibility/scoring rules and all first-pilot labels/results remain unchanged.
+
+Targeted validation uses six existing development cases: all distinct conflict-error cases, one additional negative case and three positive controls. All six context arms and both readers are executed again (72newcalls), explicitly as development validation, not independent test companies. The original 12-world pilot, not this targeted subset, sets the sample size. Raw first-pilot responses and exact source snapshots are retained. The main test uses seed20261023042; no main outcomes or labels inform this amendment.
+
+The generic query-word control matched all36first-pilot GTM packets exactly. Report it as an identical-input alias with zero additional independent reader observations; the main audit must verify every case before extending that statement. The strongest hypothesis that a dedicated GTM architecture is indispensable is therefore unsupported by development evidence. The measurable candidate contribution is task-conditioned evidence preservation under a budget.
+
+Targeted validation completed72/72calls, zero unsafe plans, estimatedusage$2.4999051. Retain the clarified prompt for all main conditions. The main independent SQL/exhaustive oracle checks agree360/360;93correctness tests pass. Main context preparation may proceed before the final reader freeze; no main reader outcomes exist at this amendment.
+
+Predeclare a descriptive retrieval-only sweep at4/8/16/32/64/128KiB on the same main cases for Company, GTM, Markdown and native GBrain search. It uses no additional reader calls and must not be shown as actual recommendation performance at those alternate budgets. This tests whether larger generic contexts close the gap and prevents extrapolating a bounded-context effect to unlimited company memory.

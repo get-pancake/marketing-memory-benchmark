@@ -1,0 +1,14 @@
+{
+  "model": "gpt-6.1-sol",
+  "input": [
+    {
+      "role": "user",
+      "content": "Return exactly this JSON object, with no markdown: {\"ready\":true}"
+    }
+  ],
+  "max_output_tokens": 256,
+  "reasoning": {
+    "effort": "low"
+  },
+  "store": false
+}

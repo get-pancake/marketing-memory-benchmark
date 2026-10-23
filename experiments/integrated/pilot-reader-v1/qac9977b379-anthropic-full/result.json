@@ -1,0 +1,186 @@
+{
+  "id": "qac9977b379-anthropic-full",
+  "case_id": "qac9977b379",
+  "world": "wd25e532f",
+  "arm": "full",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P2",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2099,
+  "status": "completed",
+  "started_at": "2026-10-23T00:03:14.611099+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJBvdH7PtyMbQZSq2E5P",
+  "usage": {
+    "input_tokens": 1716,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 764,
+    "output_tokens_details": {
+      "thinking_tokens": 455
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.011072",
+    "total_input_tokens": 1716,
+    "output_tokens": 764,
+    "regular_input_tokens": 1716,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S9",
+      "account.observed_signal:observed": "S17",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S8",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S14"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0854fa6",
+          "e44a4882",
+          "e57771ed",
+          "ebd2e8f2",
+          "ecdd4fa3",
+          "e359b769",
+          "e9ae8049"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-790",
+      "objective": "hiring",
+      "template": "P4",
+      "policy_versions": [
+        "e0854fa6",
+        "e44a4882"
+      ],
+      "evidence": [
+        "e0854fa6",
+        "e359b769",
+        "e44a4882",
+        "e57771ed",
+        "e9ae8049",
+        "ebd2e8f2",
+        "ecdd4fa3"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed hiring context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0854fa6",
+          "e44a4882",
+          "e57771ed",
+          "ebd2e8f2",
+          "ecdd4fa3",
+          "e359b769",
+          "e9ae8049"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-790",
+      "objective": "hiring",
+      "template": "P4",
+      "policy_versions": [
+        "e0854fa6",
+        "e44a4882"
+      ],
+      "evidence": [
+        "e0854fa6",
+        "e359b769",
+        "e44a4882",
+        "e57771ed",
+        "e9ae8049",
+        "ebd2e8f2",
+        "ecdd4fa3"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed hiring context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "The approved role and geo (S1, S8) match the observed account role and geo (S9, S15). The observed hiring signal (S17) and the onboarding pain and proof (S4, S14) satisfy P4 within the 3-unit allowance. P1 is blocked because no procurement stage is supplied, and P3 has a different objective. P2 is also eligible, but P4 meets the same requirements with fewer units. The unapproved-strategy and discussion notes were not used as support.",
+  "finished_at": "2026-10-23T00:03:25.763190+00:00",
+  "seconds": 11.152102104999358
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "deterministic_upstream_scorer_diagnostic_not_model_evaluation",
+  "created_at": "2026-10-22T00:29:39.272256+00:00",
+  "upstream_repository": "https://github.com/enterprisemem-bench/enterprisemem-bench",
+  "upstream_revision": "819a8bc99db576a21828c2a8e6d273ae2ff023c4",
+  "source_sha256": {
+    "evaluation/eval_kar.py": "5a3e3f78c0acbd48356b7ac885467e5f81d0b536ee06bcb0aecfb6f682913d44",
+    "data/finance/questions_10.jsonl": "ec8bad3e21bfb003497471092b604559b30176b5ddb235d433106320fea547be",
+    "data/finance/ground_truth_10.jsonl": "6081bc4d84fbd8f32d8e8a3eb41863306847dd1d5e0a537ec1f1fb612ed3dd51"
+  },
+  "code_license": "MIT",
+  "data_license": "CC-BY-4.0",
+  "probes": [
+    {
+      "probe": "correct_numeric_control",
+      "question_id": "Q082",
+      "authored_answer": "425.0",
+      "expected_answer": "425.0",
+      "authored_probe_should_be_correct": true,
+      "upstream_accepted": true
+    },
+    {
+      "probe": "wrong_numeric_control",
+      "question_id": "Q082",
+      "authored_answer": "400.0",
+      "expected_answer": "425.0",
+      "authored_probe_should_be_correct": false,
+      "upstream_accepted": false
+    },
+    {
+      "probe": "negated_numeric_answer",
+      "question_id": "Q082",
+      "authored_answer": "The budget is not 425.0; the current budget is 400.0.",
+      "expected_answer": "425.0",
+      "authored_probe_should_be_correct": false,
+      "upstream_accepted": true
+    },
+    {
+      "probe": "unit_mismatch",
+      "question_id": "Q082",
+      "authored_answer": "$425.0 billion",
+      "expected_answer": "425.0",
+      "authored_probe_should_be_correct": false,
+      "upstream_accepted": true
+    },
+    {
+      "probe": "negated_categorical_answer",
+      "question_id": "Q092",
+      "authored_answer": "The claim 'No; discontinued' is false. It remains active.",
+      "expected_answer": "No; discontinued",
+      "authored_probe_should_be_correct": false,
+      "upstream_accepted": true
+    }
+  ],
+  "omission_probe": {
+    "released_subset_l2_count": 5,
+    "submitted_count": 1,
+    "reported_kar": 1.0,
+    "reported_denominator": 1
+  },
+  "interpretation": "Narrow constructed counterexamples; not evidence that upstream model runs exploited these behaviors. Overall accuracy uses a different, fixed denominator. No upstream model result was reproduced."
+}

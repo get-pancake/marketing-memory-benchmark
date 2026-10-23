@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.844805+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0380ce2d15292b71016adaacd9ff9487d196edb477c4758925",
+  "usage": {
+    "input_tokens": 16153,
+    "input_tokens_details": {
+      "cache_write_tokens": 16150,
+      "cached_tokens": 0
+    },
+    "output_tokens": 75,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16228
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.041131",
+    "total_input_tokens": 16153,
+    "output_tokens": 75,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16150
+  },
+  "text": "{\"answer\":\"10\",\"citations\":[\"D041\",\"D082\"],\"explanation\":\"The executed renewal sets a 10% discount effective April 1, 2026, so it applies on May 1. The April 9 debrief\u2019s 12% statement conflicts with the signed terms and does not amend them.\"}",
+  "finished_at": "2026-10-23T00:39:56.199270+00:00",
+  "seconds": 2.354476685010013,
+  "id": "dev-gov-2-openai-wiki_specialized",
+  "case_id": "dev-gov-2",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "10",
+  "explanation": "The executed renewal sets a 10% discount effective April 1, 2026, so it applies on May 1. The April 9 debrief\u2019s 12% statement conflicts with the signed terms and does not amend them.",
+  "citations": [
+    "D041",
+    "D082"
+  ]
+}

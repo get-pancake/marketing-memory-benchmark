@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-10-23T07:51:44.913389+00:00",
+  "passed": true,
+  "reviewer": "Research assistant visual inspection; not independent human scientific review.",
+  "documents": {
+    "paper/report.pdf": {
+      "pdf_sha256": "9a7f37a31a58b358384ec62fb6a1fb043d229408068c7d517f93f124f6eb5e84",
+      "pages": 13,
+      "checked_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "render_dpi": 110,
+      "render_sha256": {
+        "report-01.png": "7340d7fb63b9629f886bff239f6274bee1941ee625f0410d1ebedfce0bff76e6",
+        "report-02.png": "9794491cb8175206cda9a6f78dded94eb3c059fa81a91b813c1a8e1c06bb5395",
+        "report-03.png": "2f05ee2fd6d8e03cecb690507011a977200bb0f5c36c3e5b61c43e37b72cd5b7",
+        "report-04.png": "e97b0807216bcd9dbef674e97e657416f9de65ea967e9bc7a98b375a90bf520e",
+        "report-05.png": "9af5b22da0af75b8e95f0d7e6515e8b8a632883d59e1b98bdfb07dbab10843da",
+        "report-06.png": "0ae0a88d41bb3e9d6d06b05ec78658b730cc24540b70669b9d71acb0b57ab22e",
+        "report-07.png": "dd3def626e78b8bdc75f1d3306b18105e4ee37ac397bb55dc2140309e18ddf29",
+        "report-08.png": "1b46d4a6691e68da74d5aa79efbfb9f07f8868d6cd55001bbd0ede1b8627eb72",
+        "report-09.png": "df3de44bd8576308b2ed23132cd050e6689ac389c7601e19c19719f609abec83",
+        "report-10.png": "7d4033518fbb38989aba1b2e571547513a586c024384d0e8d245e96d8c5f99b5",
+        "report-11.png": "6d297a52a728094e32a9bec0a1bc3c5d0b4eac309c904733a71b1deabd79cbd2",
+        "report-12.png": "78b7d14289fad1c60aa7568661d20b9206d9c471c77d484a911babe723d3adbb",
+        "report-13.png": "0e66eb7f6eaf03665479c0c65906653422b61c0eaf193aa5627ce3132bdf6176"
+      },
+      "findings": "Title revision: first page visually inspected; all other 12 rendered pages byte-identical to the previously inspected author revision and v4 report. No layout defects."
+    },
+    "paper/investor-note.pdf": {
+      "pdf_sha256": "89307cb017382cb15c1815d9865bc9599d3c69b207f2e6ba3a1d6c4a2be51659",
+      "pages": 2,
+      "checked_pages": [
+        1,
+        2
+      ],
+      "render_dpi": 110,
+      "render_sha256": {
+        "investor-1.png": "b08499b541812c8509321c7fa83d5d714d098fa13ee7089f90a322638f2660e4",
+        "investor-2.png": "12a0b265c8a935e1ec6ebadfbfa774f2a4b099c1f6a13229468fb95e2104fc91"
+      },
+      "findings": "All pages readable; figures, tables, citations, margins and page transitions inspected. No unresolved layout defects."
+    }
+  },
+  "corrected_before_final": [
+    "Diagram text and heading overlap",
+    "Compound-stress shared-axis label collision",
+    "Cost-chart zero-value label collision",
+    "Moved decomposition legend outside bars",
+    "Appendix hash/path overflow",
+    "Reference orphan page"
+  ],
+  "final_tex_layout_warnings": 0,
+  "main_text_brand_occurrences": 0,
+  "play_terminology_occurrences": 0,
+  "figures": 8,
+  "tables": 4,
+  "note": "User-selected title: Domain-Specialized Company Memory for Grounded Marketing Recommendations. Author: Guillaume Marquis. Page 1 reinspected; pages 2\u201313 retain identical rendered bytes. Investor note unchanged. Prior report and receipts remain in Git history; original v4 ZIP is immutable.",
+  "editorial_revision": {
+    "previous_report_sha256": "6fbe0b409a5feab51eac6316c158959bc82aad105b9fcad3e40771072b3eb7f8",
+    "changed_rendered_pages": [
+      1
+    ],
+    "title_changed": true,
+    "new_title": "Domain-Specialized Company Memory for Grounded Marketing Recommendations",
+    "new_visual_inspection_pages": [
+      1
+    ]
+  }
+}

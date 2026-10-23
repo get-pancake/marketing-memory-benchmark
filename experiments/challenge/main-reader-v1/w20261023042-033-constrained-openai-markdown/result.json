@@ -1,0 +1,104 @@
+{
+  "id": "w20261023042-033-constrained-openai-markdown",
+  "case_id": "w20261023042-033-constrained",
+  "world": "w20261023042-033",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:06:11.052865+00:00",
+  "evidence_bytes": 12171,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999496",
+    "x-ratelimit-reset-requests": "8ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ef95f0051a8609c016adaf953e6f887d1a5d0608fa37adad7",
+  "usage": {
+    "input_tokens": 4463,
+    "input_tokens_details": {
+      "cache_write_tokens": 4460,
+      "cached_tokens": 0
+    },
+    "output_tokens": 647,
+    "output_tokens_details": {
+      "reasoning_tokens": 130
+    },
+    "total_tokens": 5110
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017626",
+    "total_input_tokens": 4463,
+    "output_tokens": 647,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4460
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-33",
+        "action": "workshop",
+        "sources": [
+          "e8cf6f1f7fca34f",
+          "e01594c37133dc1",
+          "e7ea53ab91fd565",
+          "e5ee58f2811a25a",
+          "eb853b2fd10ff72",
+          "e153bf0bbcbe5c0",
+          "e3b3556e68ee992",
+          "e6a1e2f4a2d8168",
+          "ee905402a335d79",
+          "e16c876631d412e",
+          "e37209081e67799"
+        ]
+      },
+      {
+        "account": "Juniper-33",
+        "action": "reference_intro",
+        "sources": [
+          "e8cf6f1f7fca34f",
+          "e074b21ee056562",
+          "ea33b922e09cfe8",
+          "e6920f3af6094d2",
+          "e192cc057cf2da7",
+          "ebf976fbf7a5d26",
+          "e5c3bf77e3cad25",
+          "e5bff0c894bb099",
+          "efdc9062b2bf142",
+          "e994dacf2c14258",
+          "e6eb281c70b723c"
+        ]
+      }
+    ],
+    "missing": [
+      "Iris-33, Pine-33 and Larch-33: supply observed profile, consent, signal and complete initiative-to-proof links, plus approved integer priority and approved proof verification. Action-specific extras also require approved evidence.",
+      "Orchid-33: observed consent and downstream initiative-to-proof evidence, including approved proof verification, are absent. Its observed restricted sector independently blocks every action under the approved policy."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 7 of 7 across two distinct accounts and scores 13 synthetic priority points: Birch-33 workshop contributes 2 × 4 = 8; Juniper-33 reference_intro contributes 1 × 5 = 5. Both satisfy all required eligibility checks. The proposed seller policy is not approved evidence. No other queried account supports an eligible action."
+  },
+  "score": {
+    "optimum": 37,
+    "recoverable_value": 13,
+    "returned_value": 13,
+    "normalized_value": 0.35135135135135137,
+    "context_normalized_value": 0.35135135135135137,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T06:06:24.857302+00:00",
+  "seconds": 13.80444677300693
+}

@@ -1,0 +1,95 @@
+{
+  "id": "resp_033b1668ca60b45b016adaa3f9bb0487d1b942fac689974d37",
+  "object": "response",
+  "created_at": 1792713721,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792713726,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_033b1668ca60b45b016adaa3fb441c87d1996ce2f79e688205",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"support\":{\"seller.approved_role:approved\":\"S1\",\"seller.approved_geo:approved\":\"S17\",\"account.account_role:observed\":\"S7\",\"account.account_geo:observed\":\"S13\",\"account.observed_signal:observed\":\"S15\",\"seller.offering_pain:observed\":\"S4\",\"seller.proof_for_pain:observed\":\"S12\",\"account.procurement_stage:observed\":null},\"status\":\"request_evidence\",\"template\":null,\"missing\":[\"Evidence satisfying approved_geo=account_geo under approved policy; S17 specifies CA while S13 specifies US.\"],\"explanation\":\"All hiring candidates fail the required geographic equality: approved geography is CA (S17), but the account geography is US (S13). P1 also lacks observed procurement approval; P3 does not match the hiring objective.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1147,
+    "input_tokens_details": {
+      "cache_write_tokens": 1144,
+      "cached_tokens": 0
+    },
+    "output_tokens": 175,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1322
+  },
+  "user": null,
+  "metadata": {}
+}

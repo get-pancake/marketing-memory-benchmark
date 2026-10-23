@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-004-accessible-openai-gtm",
+  "case_id": "w20261023042-004-accessible",
+  "world": "w20261023042-004",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:55:31.022454+00:00",
+  "evidence_bytes": 16303,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999625",
+    "x-ratelimit-reset-requests": "6ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0191b9633db304f8016adaf6d3e3d887d1b7661b46391d7b9a",
+  "usage": {
+    "input_tokens": 5739,
+    "input_tokens_details": {
+      "cache_write_tokens": 5736,
+      "cached_tokens": 0
+    },
+    "output_tokens": 518,
+    "output_tokens_details": {
+      "reasoning_tokens": 86
+    },
+    "total_tokens": 6257
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.019526",
+    "total_input_tokens": 5739,
+    "output_tokens": 518,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5736
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-4",
+        "action": "renewal_review",
+        "sources": [
+          "e5dd0062bcd82c8",
+          "e0dfdec4f30f954",
+          "e34becfbce12318",
+          "e64109b64d5d76e",
+          "e3942ec766ed092",
+          "e201d596f9d67f1",
+          "e71c603f905af46",
+          "ea1307f324f9635",
+          "ed844f6c1153e64",
+          "e60efb8485514cb"
+        ]
+      },
+      {
+        "account": "Larch-4",
+        "action": "workshop",
+        "sources": [
+          "e5dd0062bcd82c8",
+          "e77e911dc19a7a0",
+          "e8d503ee033f05b",
+          "e4674a5e1828332",
+          "e767a2fd78d7954",
+          "e4809630c32344e",
+          "ea27f32a88bb25b",
+          "eefd1451723961a",
+          "ea1e955b62b17bb",
+          "e1a0095fa8b64ee",
+          "e2e534b8d220198"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The optimal eligible plan scores 31 synthetic priority points: Birch-4 renewal_review contributes 5×3=15 at cost 2, and Larch-4 workshop contributes 4×4=16 at cost 3. Total cost is 5 of 6, using distinct accounts. Juniper-4 and Pine-4 are ineligible because their observed region, DE, is not allowed by the approved policy. The proposed policy is not an approved fact."
+  },
+  "score": {
+    "optimum": 31,
+    "recoverable_value": 31,
+    "returned_value": 31,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 5
+  },
+  "finished_at": "2026-10-23T05:55:42.209004+00:00",
+  "seconds": 11.18657398900541
+}

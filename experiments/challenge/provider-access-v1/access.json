@@ -1,0 +1,56 @@
+[
+  {
+    "name": "anthropic",
+    "url": "https://api.anthropic.com/v1/models",
+    "status": 200,
+    "bytes": 14736,
+    "at_utc": "2026-10-23T04:45:37.357407+00:00",
+    "relevant_models": [
+      {
+        "id": "claude-opus-5-5",
+        "display_name": "Claude Opus 5.5"
+      },
+      {
+        "id": "claude-opus-5",
+        "display_name": "Claude Opus 5"
+      },
+      {
+        "id": "claude-opus-4-8",
+        "display_name": "Claude Opus 4.8"
+      },
+      {
+        "id": "claude-opus-4-7",
+        "display_name": "Claude Opus 4.7"
+      },
+      {
+        "id": "claude-opus-4-6",
+        "display_name": "Claude Opus 4.6"
+      },
+      {
+        "id": "claude-opus-4-5-20251101",
+        "display_name": "Claude Opus 4.5"
+      }
+    ]
+  },
+  {
+    "name": "openai",
+    "url": "https://api.openai.com/v1/models",
+    "status": 200,
+    "bytes": 22618,
+    "at_utc": "2026-10-23T04:45:38.134280+00:00",
+    "relevant_models": [
+      {
+        "id": "gpt-6.1-sol",
+        "display_name": null
+      }
+    ]
+  },
+  {
+    "name": "opus-doc",
+    "error": "URLError"
+  },
+  {
+    "name": "pricing-doc",
+    "error": "URLError"
+  }
+]

@@ -1,0 +1,48 @@
+test_complete_evidence_and_missing_prerequisite (test_context_metrics.ContextMetricsTests.test_complete_evidence_and_missing_prerequisite) ... ok
+test_conflict_omission_creates_false_affordance (test_context_metrics.ContextMetricsTests.test_conflict_omission_creates_false_affordance) ... ok
+test_unauthorized_evidence_is_counted_but_cannot_supply_support (test_context_metrics.ContextMetricsTests.test_unauthorized_evidence_is_counted_but_cannot_supply_support) ... ok
+test_unknown_and_duplicate_source_ids_fail (test_context_metrics.ContextMetricsTests.test_unknown_and_duplicate_source_ids_fail) ... ok
+test_access_filter_removes_proof_before_retrieval (test_contract.ContractTests.test_access_filter_removes_proof_before_retrieval) ... ok
+test_always_abstaining_does_not_win_positive_cases (test_contract.ContractTests.test_always_abstaining_does_not_win_positive_cases) ... ok
+test_bad_model_shapes_are_scored_not_crashes (test_contract.ContractTests.test_bad_model_shapes_are_scored_not_crashes) ... ok
+test_byte_budget_is_respected_for_every_partial_method (test_contract.ContractTests.test_byte_budget_is_respected_for_every_partial_method) ... ok
+test_conflicting_approved_policy_is_not_tie_broken (test_contract.ContractTests.test_conflicting_approved_policy_is_not_tie_broken) ... ok
+test_duplicate_ids_and_invalid_supersession_rejected (test_contract.ContractTests.test_duplicate_ids_and_invalid_supersession_rejected) ... ok
+test_duplicate_json_keys_and_nonfinite_numbers_rejected (test_contract.ContractTests.test_duplicate_json_keys_and_nonfinite_numbers_rejected) ... ok
+test_equivalent_source_is_accepted (test_contract.ContractTests.test_equivalent_source_is_accepted) ... ok
+test_fake_stale_or_unsupplied_citations_fail (test_contract.ContractTests.test_fake_stale_or_unsupplied_citations_fail) ... ok
+test_fixture_cases_have_explicit_consistent_labels (test_contract.ContractTests.test_fixture_cases_have_explicit_consistent_labels) ... ok
+test_full_context_never_silently_truncates (test_contract.ContractTests.test_full_context_never_silently_truncates) ... ok
+test_hidden_metadata_absent_from_model_payload (test_contract.ContractTests.test_hidden_metadata_absent_from_model_payload) ... ok
+test_joint_resource_budget (test_contract.ContractTests.test_joint_resource_budget) ... ok
+test_late_correction_changes_only_later_knowledge_state (test_contract.ContractTests.test_late_correction_changes_only_later_knowledge_state) ... ok
+test_missing_support_and_outreach_are_rejected (test_contract.ContractTests.test_missing_support_and_outreach_are_rejected) ... ok
+test_multiple_acceptable_alternatives (test_contract.ContractTests.test_multiple_acceptable_alternatives) ... ok
+test_prompt_control_receives_identical_retrieval (test_contract.ContractTests.test_prompt_control_receives_identical_retrieval) ... ok
+test_proposal_and_silence_do_not_become_policy (test_contract.ContractTests.test_proposal_and_silence_do_not_become_policy) ... ok
+test_reference_output_and_mock_capabilities (test_contract.ContractTests.test_reference_output_and_mock_capabilities) ... ok
+test_remote_model_requires_explicit_resources (test_contract.ContractTests.test_remote_model_requires_explicit_resources) ... ok
+test_timezone_required (test_contract.ContractTests.test_timezone_required) ... ok
+test_unknown_future_events_cannot_change_initial_snapshot (test_contract.ContractTests.test_unknown_future_events_cannot_change_initial_snapshot) ... ok
+test_world_boundary (test_contract.ContractTests.test_world_boundary) ... ok
+test_all_controls_replay_after_first_retrieval_without_network (test_gbrain_offline.OfflineReplayTests.test_all_controls_replay_after_first_retrieval_without_network) ... ok
+test_duplicate_terminal_attempt_rejected (test_ledger.LedgerTests.test_duplicate_terminal_attempt_rejected) ... ok
+test_failed_attempt_counted (test_ledger.LedgerTests.test_failed_attempt_counted) ... ok
+test_mixed_actual_and_mock_evidence_rejected (test_ledger.LedgerTests.test_mixed_actual_and_mock_evidence_rejected) ... ok
+test_omissions_remain_in_denominator (test_ledger.LedgerTests.test_omissions_remain_in_denominator) ... ok
+test_start_marker_is_not_completion (test_ledger.LedgerTests.test_start_marker_is_not_completion) ... ok
+test_invalid_endpoint_and_negative_cap (test_model_client.ModelClientTests.test_invalid_endpoint_and_negative_cap) ... ok
+test_missing_response_never_falls_back_to_policy_reference (test_model_client.ModelClientTests.test_missing_response_never_falls_back_to_policy_reference) ... ok
+test_remote_spending_cap_is_checked_before_send (test_model_client.ModelClientTests.test_remote_spending_cap_is_checked_before_send) ... ok
+test_transport_payload_and_response_receipt (test_model_client.ModelClientTests.test_transport_payload_and_response_receipt) ... ok
+test_correct_supported_proposals_survive_validator_after_updates (test_recommendation_benchmark.RecommendationPilotTests.test_correct_supported_proposals_survive_validator_after_updates) ... ok
+test_fixed_context_and_resource_envelope (test_recommendation_benchmark.RecommendationPilotTests.test_fixed_context_and_resource_envelope) ... ok
+test_no_budget_cannot_execute (test_recommendation_benchmark.RecommendationPilotTests.test_no_budget_cannot_execute) ... ok
+test_rejecting_bad_proposal_does_not_create_positive_coverage (test_recommendation_benchmark.RecommendationPilotTests.test_rejecting_bad_proposal_does_not_create_positive_coverage) ... ok
+test_subrequest_budget_never_contacts_provider (test_recommendation_benchmark.RecommendationPilotTests.test_subrequest_budget_never_contacts_provider) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.252s
+
+OK
+{"methods": {"facet_hybrid": {"cases": 1, "positive_cases": 1, "complete_positive_support": 1, "complete_positive_rate": 1, "mean_current_value_group_coverage": 1.0, "false_affordance_cases": 0, "mean_packed_input_tokens": 1529, "failures": 0}, "gbrain_catalog_coverage": {"cases": 1, "positive_cases": 1, "complete_positive_support": 1, "complete_positive_rate": 1, "mean_current_value_group_coverage": 1.0, "false_affordance_cases": 0, "mean_packed_input_tokens": 1532, "failures": 0}, "gbrain_hybrid": {"cases": 1, "positive_cases": 1, "complete_positive_support": 0, "complete_positive_rate": 0, "mean_current_value_group_coverage": 0.5, "false_affordance_cases": 0, "mean_packed_input_tokens": 1527, "failures": 0}, "generic_hybrid": {"cases": 1, "positive_cases": 1, "complete_positive_support": 1, "complete_positive_rate": 1, "mean_current_value_group_coverage": 1.0, "false_affordance_cases": 0, "mean_packed_input_tokens": 1533, "failures": 0}, "prompt_hybrid": {"cases": 1, "positive_cases": 1, "complete_positive_support": 1, "complete_positive_rate": 1, "mean_current_value_group_coverage": 1.0, "false_affordance_cases": 0, "mean_packed_input_tokens": 1523, "failures": 0}, "typed": {"cases": 1, "positive_cases": 1, "complete_positive_support": 1, "complete_positive_rate": 1, "mean_current_value_group_coverage": 1.0, "false_affordance_cases": 0, "mean_packed_input_tokens": 1529, "failures": 0}}, "contrasts": {"typed minus gbrain_hybrid": {"mean": 1, "descriptive_world_ci95": null, "independent_worlds": 1}, "typed minus gbrain_catalog_coverage": {"mean": 0, "descriptive_world_ci95": null, "independent_worlds": 1}, "gbrain_catalog_coverage minus gbrain_hybrid": {"mean": 1, "descriptive_world_ci95": null, "independent_worlds": 1}}}

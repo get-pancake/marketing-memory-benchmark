@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:40.293546+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01bc216630d7eae8016adaac90bbcc87d1a727fd747bc3c2a6",
+  "usage": {
+    "input_tokens": 6174,
+    "input_tokens_details": {
+      "cache_write_tokens": 6171,
+      "cached_tokens": 0
+    },
+    "output_tokens": 68,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6242
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0161135",
+    "total_input_tokens": 6174,
+    "output_tokens": 68,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6171
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\"],\"explanation\":\"The signed affiliate amendment established Tier 1 effective 2025-10-15. The renewal effective 2026-05-01 expressly preserved that SLA, overriding the conflicting informal weekly note.\"}",
+  "finished_at": "2026-10-23T00:38:43.549754+00:00",
+  "seconds": 3.2562127470009727
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:40.287924+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_09eac8f2412a6596016adaac907b9c87d1bcb2229875ec4105",
+  "usage": {
+    "input_tokens": 16164,
+    "input_tokens_details": {
+      "cache_write_tokens": 16161,
+      "cached_tokens": 0
+    },
+    "output_tokens": 49,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16213
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0408985",
+    "total_input_tokens": 16164,
+    "output_tokens": 49,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16161
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"Quarrendon\u2019s signed MSA requires written notice of noncontinuation at least 120 calendar days before the period ends.\"}",
+  "finished_at": "2026-10-23T00:38:43.235990+00:00",
+  "seconds": 2.9480879699985962
+}

@@ -1,0 +1,458 @@
+{
+  "schema": "error-localization-v1",
+  "created_at": "2026-10-23T01:27:12.103230+00:00",
+  "source_per_attempt_sha256": "61439b8ca627897ce4b378f81e63c38e21c05bf6b1e0620d7e643557779aedb8",
+  "source_summary_semantic_sha256": "7b6ebd9a54df832c5c1d8c007267ae60dd1dc3378f27b73d4c17fb555443b00e",
+  "script_sha256": "9154abe4232ce0a1001249429da727d9267cf4800da2e063ec3e67d699a5cd34",
+  "methods": {
+    "prompt_hybrid": {
+      "positive": {
+        "supported_recommendation": 13,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 12,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 9,
+        "inapplicable_choice_with_complete_witness": 14,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 29,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 19
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 12,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 23,
+        "available_1_correct_1": 13
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 74,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/supported_recommendation": {
+          "case_id": "q0b7d592c00",
+          "attempt_id": 175,
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 147,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q14a950056f",
+          "attempt_id": 130,
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/no_complete_witness_selected": {
+          "case_id": "q183637723a",
+          "attempt_id": 180,
+          "world": "w3d45ea82",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "misbound_support"
+          ]
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q50fc791137",
+          "attempt_id": 123,
+          "world": "wbf8849ab",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        }
+      }
+    },
+    "typed": {
+      "positive": {
+        "supported_recommendation": 30,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 0,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 4,
+        "inapplicable_choice_with_complete_witness": 13,
+        "invalid_support_with_complete_witness": 1
+      },
+      "negative": {
+        "correct_withhold": 29,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 19
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 0,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 18,
+        "available_1_correct_1": 30
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/supported_recommendation": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 12,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 101,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q14a950056f",
+          "attempt_id": 34,
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q183637723a",
+          "attempt_id": 169,
+          "world": "w3d45ea82",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "positive/invalid_support_with_complete_witness": {
+          "case_id": "q1c366e6ee1",
+          "attempt_id": 50,
+          "world": "wb34037eb",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": [
+            "misbound_support",
+            "incomplete_support",
+            "irrelevant_citation"
+          ]
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q451609855e",
+          "attempt_id": 189,
+          "world": "wd6c72d6a",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": []
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "typed minus prompt_hybrid": {
+      "counts": {
+        "both_correct": 38,
+        "left_only": 21,
+        "right_only": 4,
+        "both_wrong": 33
+      },
+      "disagreements": [
+        {
+          "case_id": "q0b2e9ee8ab",
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 12,
+          "right_attempt_id": 74
+        },
+        {
+          "case_id": "q10f0e1e88b",
+          "world": "wb3a4ee1b",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 79,
+          "right_attempt_id": 97
+        },
+        {
+          "case_id": "q237c43fc8d",
+          "world": "wd6c72d6a",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 24,
+          "right_attempt_id": 98
+        },
+        {
+          "case_id": "q2947d75880",
+          "world": "w0b261e4e",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 78,
+          "right_attempt_id": 10
+        },
+        {
+          "case_id": "q30e8e54ceb",
+          "world": "w692891c2",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 158,
+          "right_attempt_id": 140
+        },
+        {
+          "case_id": "q4763dba521",
+          "world": "wb34037eb",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 93,
+          "right_attempt_id": 106
+        },
+        {
+          "case_id": "q4d53c8ed08",
+          "world": "w5f803d84",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 15,
+          "right_attempt_id": 107
+        },
+        {
+          "case_id": "q50fc791137",
+          "world": "wbf8849ab",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "inapplicable_choice_with_complete_witness",
+          "left_attempt_id": 16,
+          "right_attempt_id": 123
+        },
+        {
+          "case_id": "q513d157394",
+          "world": "wd6c72d6a",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 100,
+          "right_attempt_id": 135
+        },
+        {
+          "case_id": "q5a7fee5ed9",
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 31,
+          "right_attempt_id": 115
+        },
+        {
+          "case_id": "q5ef9688c96",
+          "world": "wb34037eb",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 168,
+          "right_attempt_id": 157
+        },
+        {
+          "case_id": "q6c981cc8d0",
+          "world": "wbf8849ab",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 155,
+          "right_attempt_id": 85
+        },
+        {
+          "case_id": "q6ec50f7f4c",
+          "world": "wd6c72d6a",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 134,
+          "right_attempt_id": 108
+        },
+        {
+          "case_id": "q8cf1434218",
+          "world": "w5f803d84",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 7,
+          "right_attempt_id": 33
+        },
+        {
+          "case_id": "qa12a24a6f9",
+          "world": "w3d45ea82",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 92,
+          "right_attempt_id": 117
+        },
+        {
+          "case_id": "qa8d72b1941",
+          "world": "wbf8849ab",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 184,
+          "right_attempt_id": 6
+        },
+        {
+          "case_id": "qacd5b83c4d",
+          "world": "w3d45ea82",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 41,
+          "right_attempt_id": 45
+        },
+        {
+          "case_id": "qb3238c62ad",
+          "world": "wbf8849ab",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "inapplicable_choice_with_complete_witness",
+          "left_attempt_id": 121,
+          "right_attempt_id": 144
+        },
+        {
+          "case_id": "qc5e9b7e6b0",
+          "world": "w5f803d84",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 70,
+          "right_attempt_id": 3
+        },
+        {
+          "case_id": "qc71fafcbbc",
+          "world": "w928ad8c3",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "inapplicable_choice_with_complete_witness",
+          "left_attempt_id": 161,
+          "right_attempt_id": 23
+        },
+        {
+          "case_id": "qcddfcbd3e8",
+          "world": "wbf8849ab",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 60,
+          "right_attempt_id": 177
+        },
+        {
+          "case_id": "qda3600d906",
+          "world": "wd6c72d6a",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 186,
+          "right_attempt_id": 89
+        },
+        {
+          "case_id": "qe0585141a2",
+          "world": "wb34037eb",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 112,
+          "right_attempt_id": 96
+        },
+        {
+          "case_id": "qe10b7bc4d4",
+          "world": "w0b261e4e",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 119,
+          "right_attempt_id": 103
+        },
+        {
+          "case_id": "qe9438460c5",
+          "world": "w5f803d84",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "inapplicable_choice_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 87,
+          "right_attempt_id": 104
+        }
+      ]
+    }
+  },
+  "interpretation": "Descriptive post-freeze, pre-results diagnostic. Categories preserve the original score and all planned denominators; they are not causal mediation estimates or new hypothesis tests. Failure precedes missing support in the exclusive category order. Examples are the first case ID per category, not independently representative selections. All paired disagreements are retained."
+}

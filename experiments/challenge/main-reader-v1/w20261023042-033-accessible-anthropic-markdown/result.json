@@ -1,0 +1,114 @@
+{
+  "id": "w20261023042-033-accessible-anthropic-markdown",
+  "case_id": "w20261023042-033-accessible",
+  "world": "w20261023042-033",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:52:39.485639+00:00",
+  "evidence_bytes": 16262,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:52:42Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:52:51Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:52:40Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:52:42Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJea6p8u2ZLnB7TEukW5",
+  "usage": {
+    "input_tokens": 8678,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1233,
+    "output_tokens_details": {
+      "thinking_tokens": 581
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.059372",
+    "total_input_tokens": 8678,
+    "output_tokens": 1233,
+    "regular_input_tokens": 8678,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-33",
+        "action": "workshop",
+        "sources": [
+          "ee34033b7e1ce63",
+          "eea3810d2f6b965",
+          "ec091f62bf4ed8a",
+          "e886777c65899ce",
+          "e86262a28b53782",
+          "e26306d2a255543",
+          "ecf0613cbf8d58a",
+          "eda634d075d9320",
+          "e0e790424ac34fd",
+          "e9fce515f1764a5",
+          "e8bceaf3794cc2c"
+        ]
+      },
+      {
+        "account": "Juniper-33",
+        "action": "renewal_review",
+        "sources": [
+          "ee34033b7e1ce63",
+          "ef8c1218c233ee6",
+          "e8be4c379b74ec0",
+          "e3187e428d384b9",
+          "e097805d1ec75ea",
+          "e675c9901f51250",
+          "e41ac50d4fbf003",
+          "ee1e30df38ad6bc",
+          "e6ee28b37e328f3",
+          "e74c7eba24f0ae3"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-33: no proof link for offering-3 and no approved verified proof, so the chain is incomplete.",
+      "Pine-33: the offering-3 assurance value is approved false, which blocks assurance_pack.",
+      "Iris-33: no profile, consent, signal, priority, initiative chain or proof records were supplied."
+    ],
+    "reasoning_summary": "The approved seller policy allows US, DE and UK. Birch-33 (US services, consent true, launch signal, priority 2) has a complete verified chain and approved capacity, so a workshop scores 2x4=8 at cost 3. Juniper-33 (DE software, consent true, renewal signal, priority 1) has a complete verified chain. A renewal_review scores 3 at cost 2. A reference_intro would score 5, but at cost 4 it would exceed the budget of 6 when combined with the Birch workshop. The best alternative mix scores only 7. The chosen plan totals 11 points at a cost of 5. Pine-33 is blocked because its proof chain is missing, and Iris-33 has no evidence."
+  },
+  "score": {
+    "optimum": 36,
+    "recoverable_value": 11,
+    "returned_value": 11,
+    "normalized_value": 0.3055555555555556,
+    "context_normalized_value": 0.3055555555555556,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 5
+  },
+  "finished_at": "2026-10-23T05:52:51.855567+00:00",
+  "seconds": 12.369953914996586
+}

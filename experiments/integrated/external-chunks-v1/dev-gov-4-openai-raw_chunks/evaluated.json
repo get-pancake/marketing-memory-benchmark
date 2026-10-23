@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.614076+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_044a34cda6ef384c016adaaddd248c87d1af6e74c4e1c5574b",
+  "usage": {
+    "input_tokens": 6631,
+    "input_tokens_details": {
+      "cache_write_tokens": 6628,
+      "cached_tokens": 0
+    },
+    "output_tokens": 77,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6708
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017346",
+    "total_input_tokens": 6631,
+    "output_tokens": 77,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6628
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\"],\"explanation\":\"The signed affiliate amendment set Marrow Agrisupply\u2019s support SLA to Tier 1 effective 2025-10-15. The 2026 renewal expressly preserved that SLA, overriding the inconsistent Tier 2 claim in the weekly note.\"}",
+  "finished_at": "2026-10-23T00:44:15.847261+00:00",
+  "seconds": 3.233187044999795,
+  "id": "dev-gov-4-openai-raw_chunks",
+  "case_id": "dev-gov-4",
+  "arm": "raw_chunks",
+  "context_bytes": 24574,
+  "answer_correct": true,
+  "answer": "Tier 1",
+  "citations": [
+    "D033",
+    "D042"
+  ],
+  "explanation": "The signed affiliate amendment set Marrow Agrisupply\u2019s support SLA to Tier 1 effective 2025-10-15. The 2026 renewal expressly preserved that SLA, overriding the inconsistent Tier 2 claim in the weekly note.",
+  "citation_ids_valid": true
+}

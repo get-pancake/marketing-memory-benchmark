@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-055-constrained-anthropic-company",
+  "case_id": "w20261023042-055-constrained",
+  "world": "w20261023042-055",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:51:20.902144+00:00",
+  "evidence_bytes": 12286,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:51:24Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:51:35Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9997",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:51:21Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:51:24Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeUK4AVhnDcFr4SFtpQ",
+  "usage": {
+    "input_tokens": 6969,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 975,
+    "output_tokens_details": {
+      "thinking_tokens": 431
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.047376",
+    "total_input_tokens": 6969,
+    "output_tokens": 975,
+    "regular_input_tokens": 6969,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-55",
+        "action": "assurance_pack",
+        "sources": [
+          "e8afefb794a03e3",
+          "e685a954084390e",
+          "e4d2ca7b89c4f5a",
+          "ed0beeaffc2fe26",
+          "eb2b7bc6ed5e8b6",
+          "eac58f4cab4ca8e",
+          "ea1df8c6e437b5f",
+          "e0d39cc00bd07b0",
+          "e9f7a1faf043867",
+          "e9763159fdd211a",
+          "e12096e6cf15a97"
+        ]
+      }
+    ],
+    "missing": [
+      "Elm-55: approved verified status for proof-0",
+      "Cedar-55: observed profile, consent, signal and initiative chain",
+      "Kestrel-55: all eligibility evidence and approved priority",
+      "Grove-55: all eligibility evidence and approved priority",
+      "Harbor-55: all eligibility evidence and approved priority"
+    ],
+    "reasoning_summary": "Only North-55 has a complete eligibility chain: approved seller policy, a DE manufacturing profile, observed consent, a risk signal, and the chain initiative-4 -> need-4 -> offering-4 -> proof-4 with approved verification. North-55 also has approved priority 7. A workshop is blocked because offering-4 has approved capacity set to false. The assurance pack is allowed because assurance is approved true; it scores 7 x 4 = 28 at cost 3, which fits the budget of 7. Elm-55 is blocked because proof-0 has no approved verified record. Cedar-55 has a priority but no other eligibility facts. Kestrel-55, Grove-55 and Harbor-55 have no supplied evidence. The proposed policy was ignored."
+  },
+  "score": {
+    "optimum": 32,
+    "recoverable_value": 28,
+    "returned_value": 28,
+    "normalized_value": 0.875,
+    "context_normalized_value": 0.875,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:51:35.557748+00:00",
+  "seconds": 14.655625396000687
+}

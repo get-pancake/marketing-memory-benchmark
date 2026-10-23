@@ -1,0 +1,86 @@
+{
+  "id": "w20261023042-106-constrained-openai-markdown",
+  "case_id": "w20261023042-106-constrained",
+  "world": "w20261023042-106",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:01:09.675286+00:00",
+  "evidence_bytes": 12268,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999622",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_041a83716c7ec581016adaf8267cd487d193021035e7ac01f5",
+  "usage": {
+    "input_tokens": 4465,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 4462
+    },
+    "output_tokens": 521,
+    "output_tokens_details": {
+      "reasoning_tokens": 184
+    },
+    "total_tokens": 4986
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0056622",
+    "total_input_tokens": 4465,
+    "output_tokens": 521,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 4462,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Pine-106",
+        "action": "diagnostic",
+        "sources": [
+          "eeae3d550102fd6",
+          "e1a52317657e434",
+          "eb5c8e6a2087322",
+          "e0985d39a59142a",
+          "e2ede83e59b6e30",
+          "ef7ec1c02277177",
+          "e09eb390fb60c22",
+          "e5081cafb0d0f17",
+          "e7f219f4e7972d5",
+          "e720f4e3ee1eaf4"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-106, Larch-106, Mesa-106 and Elm-106: supply observed profile, consent, signal and complete initiative-to-proof chain, plus approved integer priority and approved proof verification.",
+      "Cedar-106: approved verification for proof-2 is missing. Its observed region DE is not allowed by the approved seller policy, independently blocking all actions."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 2 of 7 and scores 18 synthetic priority points (9 × 2). Pine-106 diagnostic outperforms its eligible research brief; reference introduction is blocked by shareable=false, and its growth signal does not match workshop, renewal review or assurance pack. No other account supports an eligible action. The proposed policy is not approved evidence."
+  },
+  "score": {
+    "optimum": 18,
+    "recoverable_value": 18,
+    "returned_value": 18,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T06:01:23.624255+00:00",
+  "seconds": 13.949070739006856
+}

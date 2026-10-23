@@ -1,0 +1,122 @@
+{
+  "id": "qf0266a11cf-openai-generic",
+  "case_id": "qf0266a11cf",
+  "world": "w4a4f0929",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 0.8888888888888888,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2041,
+  "status": "completed",
+  "started_at": "2026-10-23T00:30:28.349760+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999822",
+    "x-ratelimit-reset-requests": "8ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_05bc3d0f214b4397016adaaaa49a0087d1ab6f9dfa98c47914",
+  "usage": {
+    "input_tokens": 2022,
+    "input_tokens_details": {
+      "cache_write_tokens": 2019,
+      "cached_tokens": 0
+    },
+    "output_tokens": 321,
+    "output_tokens_details": {
+      "reasoning_tokens": 65
+    },
+    "total_tokens": 2343
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0082635",
+    "total_input_tokens": 2022,
+    "output_tokens": 321,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 2019
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (S19).",
+      "Provide seller.approved_geo:approved matching the observed EU geography (S12).",
+      "Provide current account.certification:observed=ISO27001 evidence resolving the withdrawn certification (S14).",
+      "For P4 only, provide account.procurement_stage:observed=approved."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S12",
+      "account.account_role:observed": "S19",
+      "account.certification:observed": "S14",
+      "account.observed_signal:observed": "S8",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S17",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (S19).",
+      "Provide seller.approved_geo:approved matching the observed EU geography (S12).",
+      "Provide current account.certification:observed=ISO27001 evidence resolving the withdrawn certification (S14).",
+      "For P4 only, provide account.procurement_stage:observed=approved."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (S19).",
+      "Provide seller.approved_geo:approved matching the observed EU geography (S12).",
+      "Provide current account.certification:observed=ISO27001 evidence resolving the withdrawn certification (S14).",
+      "For P4 only, provide account.procurement_stage:observed=approved."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action qualifies: approved-role evidence conflicts (S2, S3), approved geography is missing, and certification is withdrawn rather than ISO27001 (S14). P4 additionally lacks observed procurement approval; the other compliance candidates do not require it.",
+  "finished_at": "2026-10-23T00:30:37.959387+00:00",
+  "seconds": 9.609568890009541
+}

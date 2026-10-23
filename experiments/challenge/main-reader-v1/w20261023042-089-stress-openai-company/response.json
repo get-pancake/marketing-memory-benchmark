@@ -1,0 +1,162 @@
+{
+  "id": "resp_05b1c6182a9a95a7016adaf71766d487d1a3f163c1dfcfb9f2",
+  "object": "response",
+  "created_at": 1792734999,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735005,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_05b1c6182a9a95a7016adaf718975c87d18380e9740207367a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Juniper-89: resolve conflicting current observed consent values and provide an eligible observed profile; its current region DE is not allowed and its sector restricted is blocked.\",\n    \"Pine-89: provide an eligible observed profile, observed consent=true, an approved integer priority, an observed signal, and the observed initiative \u2192 need \u2192 offering \u2192 proof chain with approved verified=true. Its current sector restricted is blocked.\",\n    \"Iris-89, Orchid-89, Flint-89, Larch-89, Aster-89, Grove-89: provide observed profiles, consent=true, signals, and initiative \u2192 need \u2192 offering \u2192 proof chains, plus approved integer priorities and approved proof verified=true.\",\n    \"For actions requiring extras, provide approved offering capacity=true for workshop, approved offering assurance=true for assurance_pack, or approved proof shareable=true for reference_intro.\"\n  ],\n  \"reasoning_summary\": \"No supported action is eligible. The approved seller policy allows FR, UK and US and blocks restricted sectors; the proposed policy does not override it. Juniper-89 fails profile eligibility and has conflicting current consent records, which timestamps cannot resolve. Pine-89 has a blocked sector and lacks other required evidence. The remaining accounts lack required eligibility and priority evidence. Thus no action can be selected within the budget of 8.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Iris-89",
+                    "Pine-89",
+                    "Juniper-89",
+                    "Orchid-89",
+                    "Flint-89",
+                    "Larch-89",
+                    "Aster-89",
+                    "Grove-89"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3190,
+    "input_tokens_details": {
+      "cache_write_tokens": 3187,
+      "cached_tokens": 0
+    },
+    "output_tokens": 287,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3477
+  },
+  "user": null,
+  "metadata": {}
+}

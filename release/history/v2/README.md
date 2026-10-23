@@ -1,0 +1,1 @@
+Archived v2 preliminary report and receipts, from revision 440ea39fe2ecc454eed4cd1dc5dd82e45b194fe7. Its source and complete tested companion remain in Git and exports/marketing-memory-preliminary-companion-v2.zip. These receipts do not certify later revisions.

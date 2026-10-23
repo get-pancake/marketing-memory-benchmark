@@ -1,0 +1,103 @@
+{
+  "id": "w20261023042-081-stress-openai-full",
+  "case_id": "w20261023042-081-stress",
+  "world": "w20261023042-081",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:09:38.428603+00:00",
+  "evidence_bytes": 69100,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999457",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0617bdff16b356e9016adafa231ff087d185a8efbd4e16bf53",
+  "usage": {
+    "input_tokens": 21652,
+    "input_tokens_details": {
+      "cache_write_tokens": 21649,
+      "cached_tokens": 0
+    },
+    "output_tokens": 686,
+    "output_tokens_details": {
+      "reasoning_tokens": 217
+    },
+    "total_tokens": 22338
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0609885",
+    "total_input_tokens": 21652,
+    "output_tokens": 686,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 21649
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Mesa-81",
+        "action": "reference_intro",
+        "sources": [
+          "e5a42cfcc078352",
+          "efbbd577a81eb40",
+          "eeab3c45bd37a44",
+          "e222017b4832ef9",
+          "e8d158e030e2c5b",
+          "e74e87fc65c0eb4",
+          "ec1957c5c1b7acb",
+          "eb668b24899a0f1",
+          "eed6360276c482b",
+          "e83ea0134f19f16",
+          "e5c6a118e5c58cf"
+        ]
+      },
+      {
+        "account": "Flint-81",
+        "action": "reference_intro",
+        "sources": [
+          "e5a42cfcc078352",
+          "eb60410de488119",
+          "ecbfef51c63969a",
+          "e6dab329d4ef2ae",
+          "eff3358f4d6acb2",
+          "ee9acfe8d78c2f8",
+          "e69e335a1251b75",
+          "effea07f18f1b4a",
+          "eadc0c9d87e9060",
+          "e7e64b2b799555f",
+          "e51c3e54b73e76f"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-81: reconcile conflicting current observed consent records e8a3d3adb55ad6a (true) and e65fec944f446f6 (false); neither supersedes the other."
+    ],
+    "reasoning_summary": "The optimal supported plan uses two distinct accounts and costs 8 of 8. Each reference_intro scores 9 × 5 = 45, totaling 90 synthetic priority points, not expected revenue. Both satisfy all eligibility requirements, including approved shareable proof. No eligible combination of up to three actions scores higher within budget."
+  },
+  "score": {
+    "optimum": 90,
+    "recoverable_value": 90,
+    "returned_value": 90,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T06:09:53.373332+00:00",
+  "seconds": 14.944736933990498
+}

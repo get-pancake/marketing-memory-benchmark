@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "cases": 3,
+  "packets": 18,
+  "fresh_native_search": true,
+  "fresh_api_calls": 0,
+  "credential_variables_removed": true,
+  "comparison": "Exact input hashes, native GBrain ranking order and every packet byte; native timing fields may differ. The auxiliary Markdown full ranking can differ at near-ties due to unordered floating-point BM25 summation; full ranking equality is recorded separately. The frozen code is unchanged, and saved-output reproduction uses original rankings. Same host, freshly created PGLite instances, released vector snapshot.",
+  "records": [
+    {
+      "case_id": "w20261023042-000-accessible",
+      "native_input_sha256": "2b19b5f2059450e5dea7f8faf8e2095d854e347e7952a6e320a06ce99f8968e6",
+      "packets_sha256": "2b799db54e17f28e1bbe597994dabbc55a578190dd0e2f1b56bc311ddfe73290",
+      "native_candidates": 100,
+      "markdown_full_ranking_identical": false
+    },
+    {
+      "case_id": "w20261023042-000-constrained",
+      "native_input_sha256": "dc5ba25db235e8f1158e75b7847742af50eecc1b80b5fc8a3c16416d5fecc626",
+      "packets_sha256": "57541f769480954f6cb54759507336dca7b1288d5db42b6b79c62457c2e8eff4",
+      "native_candidates": 100,
+      "markdown_full_ranking_identical": false
+    },
+    {
+      "case_id": "w20261023042-000-stress",
+      "native_input_sha256": "954a56eeb727ebc5919ca599c86200b8d9ca2d65ffba982c1506fc699af6f0f9",
+      "packets_sha256": "3aeb604fe710b1cf4d06da8ca326eabe4b64090280de572cb6957da17cd8a6a4",
+      "native_candidates": 100,
+      "markdown_full_ranking_identical": true
+    }
+  ]
+}

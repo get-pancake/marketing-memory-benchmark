@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:37.192475+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0dbca1119043abf6016adaacc9647c87d19943aa361611f1b5",
+  "usage": {
+    "input_tokens": 17584,
+    "input_tokens_details": {
+      "cache_write_tokens": 17581,
+      "cached_tokens": 0
+    },
+    "output_tokens": 78,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17662
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0447385",
+    "total_input_tokens": 17584,
+    "output_tokens": 78,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17581
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\",\"D115\"],\"explanation\":\"The executed affiliate amendment established Tier 1 effective October 15, 2025, and the May 1, 2026 renewal retained that SLA. The May weekly's Tier 2 claim is unsupported by an executed change.\"}",
+  "finished_at": "2026-10-23T00:39:39.707035+00:00",
+  "seconds": 2.514574367000023,
+  "id": "dev-gov-4-openai-wiki_generic",
+  "case_id": "dev-gov-4",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tier 1",
+  "explanation": "The executed affiliate amendment established Tier 1 effective October 15, 2025, and the May 1, 2026 renewal retained that SLA. The May weekly's Tier 2 claim is unsupported by an executed change.",
+  "citations": [
+    "D033",
+    "D042",
+    "D115"
+  ]
+}

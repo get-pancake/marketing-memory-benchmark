@@ -1,0 +1,95 @@
+{
+  "id": "resp_0ab6ea5f4b8f02ae016adaa3f9bc9c87d1ad6b0f6760ac4a4a",
+  "object": "response",
+  "created_at": 1792713721,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792713726,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0ab6ea5f4b8f02ae016adaa3fb2b4887d1bb6a72e5a2a4d5aa",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"support\":{\"seller.approved_role:approved\":\"S1\",\"seller.approved_geo:approved\":\"S16\",\"account.account_role:observed\":\"S7\",\"account.account_geo:observed\":\"S13\",\"account.observed_signal:observed\":\"S14\",\"seller.offering_pain:observed\":\"S4\",\"seller.proof_for_pain:observed\":\"S12\",\"account.procurement_stage:observed\":null},\"status\":\"request_evidence\",\"template\":null,\"missing\":[\"Evidence satisfying approved_geo=account_geo; current approved geography is CA while account geography is US.\",\"account.procurement_stage:observed=approved (required only for P1)\"],\"explanation\":\"P4, P2 and P1 fail the common geography equality: S16 approves CA, while S13 observes US for the account; P1 also lacks approved procurement-stage evidence. P3 does not match the hiring objective.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1145,
+    "input_tokens_details": {
+      "cache_write_tokens": 1142,
+      "cached_tokens": 0
+    },
+    "output_tokens": 192,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1337
+  },
+  "user": null,
+  "metadata": {}
+}

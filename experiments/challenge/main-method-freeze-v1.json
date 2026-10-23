@@ -1,0 +1,39 @@
+{
+  "code_revision": "54ac3c01c7df5a45d90a9bdfa15c873b99221716",
+  "code_sha256": {
+    "analysis/challenge_audit.py": "20a8f6f2198dcf12fa7247797baf299d7197933a4b5946103019cad73f022cbf",
+    "analysis/challenge_budget.py": "e9646c2e9e52d3f3bcdcc3576c0b02ea167115e06f80072eef9ce9610acba901",
+    "analysis/challenge_trace_audit.py": "ccb32e8aa3215549d5e5171d556729fa71ba5eadd3167feda5da74e2b38c6e41",
+    "benchmarks/challenge/__init__.py": "a35eb754fa52708e5a0678ae63fa1cfe3c9b47982b14379ccf1e02bab2fa009c",
+    "benchmarks/challenge/analyze.py": "0d9e76530568bea89a1680d8fa021d12419316fbb1b354b13420cfd5e838aeca",
+    "benchmarks/challenge/check_oracle.py": "2500e567fa474c65eedc20779653915be0f2f3dcc61917664de830fd95d2f982",
+    "benchmarks/challenge/core.py": "b435ede72c15efc82ae58e7a6c6ec7e221ad5eebf7cf45b65c0178c59a61456f",
+    "benchmarks/challenge/generate.py": "28ae605d3abd5a894255fa83f599fc86e84f117c8097a25db9ddfc30a838d0c1",
+    "benchmarks/challenge/prepare.py": "b9c32947f778c52789d5af993cdabc49c6b121efb01e82c7821ab55d7d7d60c5",
+    "benchmarks/challenge/prompt_control.py": "0f405864d0a260c2df143dce81f63990c29d9961883be67d4d362f57ecb21698",
+    "benchmarks/challenge/providers.json": "31349519ce93427a8404fa7924d55ac4707932b3512004f4215581c16728e83e",
+    "benchmarks/challenge/retrieve.py": "65ac1e8147030912b804517b0c4719899d1576c73efd82ba6186e49c7500e997",
+    "benchmarks/challenge/run.py": "7232f4b21243521a320057aa00caba0c4882b1168620e2022df889404b092a39",
+    "benchmarks/challenge/smoke_providers.py": "a6dc367c1eeef7b27519f6e83130fba4639b411e2c4896e969e3379168912d87",
+    "benchmarks/integrated/gbrain-search.ts": "f409617d302865833596b666b653e8519217d1910cde2f4a7106f606abfb6614",
+    "benchmarks/integrated/run.py": "f298eb8b2ae858032ec2b282a0f7dde1b726cd61eb13423d2c922b67e96800f2",
+    "benchmarks/recommendation/run.py": "c87fcc10da2b3fa400f7efbe8197f9ebc2da1eadcbc16914076a59994266c2d2"
+  },
+  "data_index_sha256": "fee5f8328e2438bc6017cee82094d4450d3b04b22933c2019e0cc84a941428b6",
+  "worlds": 120,
+  "cases": 360,
+  "planned_reader_attempts": 4320,
+  "main_seed": 20261023042,
+  "reader_workers": 64,
+  "native_preparation_workers": 4,
+  "researcher_operational_cap_usd": 1500,
+  "user_numeric_budget": null,
+  "pilot_precision_artifact": "analysis/challenge/pilot-v1/summary.json",
+  "protocol": [
+    "papers/company-memory/protocol/challenge-v1.md",
+    "papers/company-memory/protocol/challenge-amendment-01.md",
+    "papers/company-memory/protocol/challenge-amendment-02.md"
+  ],
+  "main_results_inspected": false,
+  "status": "methods_and_data_frozen; awaiting completion of native context preparation"
+}

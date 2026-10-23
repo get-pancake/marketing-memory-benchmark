@@ -1,0 +1,11 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "at": "2026-10-22T23:50:02.532358+00:00",
+  "kind": "API availability smoke, not benchmark",
+  "status": "http_error",
+  "code": 400,
+  "error_type": "invalid_request_error",
+  "message": "`temperature` is deprecated for this model.",
+  "seconds": 0.15277800700278021
+}

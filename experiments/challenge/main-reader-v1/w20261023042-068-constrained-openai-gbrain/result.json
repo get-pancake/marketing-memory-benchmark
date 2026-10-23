@@ -1,0 +1,70 @@
+{
+  "id": "w20261023042-068-constrained-openai-gbrain",
+  "case_id": "w20261023042-068-constrained",
+  "world": "w20261023042-068",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T05:52:39.507469+00:00",
+  "evidence_bytes": 12196,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999876",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_051bd1a88226ca2c016adaf628b38487d19df8394f67cd3169",
+  "usage": {
+    "input_tokens": 4397,
+    "input_tokens_details": {
+      "cache_write_tokens": 4394,
+      "cached_tokens": 0
+    },
+    "output_tokens": 267,
+    "output_tokens_details": {
+      "reasoning_tokens": 81
+    },
+    "total_tokens": 4664
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.013661",
+    "total_input_tokens": 4397,
+    "output_tokens": 267,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4394
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "For each queried account (Larch-68, Mesa-68, North-68, Orchid-68, Aster-68, Grove-68): observed profile showing an allowed region and an unblocked sector.",
+      "For each queried account: observed consent=true and an observed signal matching the proposed catalog action.",
+      "For each queried account: observed account.initiative → initiative.need → need.offering → offering.proof links, plus approved proof.verified=true for the linked proof."
+    ],
+    "reasoning_summary": "All six accounts were checked separately. Approved seller policy and integer priorities are supplied, but every account lacks required observed eligibility evidence and a verified proof chain. No action is supported; budget used is 0 of 7. Proposed policy and unrelated records do not establish eligibility."
+  },
+  "score": {
+    "optimum": 40,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T05:52:46.839120+00:00",
+  "seconds": 7.331660337003996
+}

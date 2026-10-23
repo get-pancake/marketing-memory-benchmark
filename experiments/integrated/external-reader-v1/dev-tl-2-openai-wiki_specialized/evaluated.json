@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:02.854499+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0968a04317d8c843016adaace3346087d19af99232bf3f3733",
+  "usage": {
+    "input_tokens": 16147,
+    "input_tokens_details": {
+      "cache_write_tokens": 16144,
+      "cached_tokens": 0
+    },
+    "output_tokens": 61,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16208
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.040976",
+    "total_input_tokens": 16147,
+    "output_tokens": 61,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16144
+  },
+  "text": "{\"answer\":\"2026-01-12\",\"citations\":[\"D067\",\"D039\"],\"explanation\":\"Orrin Mills was renamed Thornbury Cloth Co. on January 12, 2026, remaining the same legal entity and tax ID.\"}",
+  "finished_at": "2026-10-23T00:40:06.237736+00:00",
+  "seconds": 3.3832478399999673,
+  "id": "dev-tl-2-openai-wiki_specialized",
+  "case_id": "dev-tl-2",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-01-12",
+  "explanation": "Orrin Mills was renamed Thornbury Cloth Co. on January 12, 2026, remaining the same legal entity and tax ID.",
+  "citations": [
+    "D067",
+    "D039"
+  ]
+}

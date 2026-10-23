@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:54.613620+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b2059891858bcc5016adaac9ed29c87d1bf89c118f09c1d3f",
+  "usage": {
+    "input_tokens": 17593,
+    "input_tokens_details": {
+      "cache_write_tokens": 17590,
+      "cached_tokens": 0
+    },
+    "output_tokens": 72,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17665
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044701",
+    "total_input_tokens": 17593,
+    "output_tokens": 72,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17590
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D004\",\"D059\"],\"explanation\":\"The notes describe the September 16 meeting, despite the September 12 filing date. QFL was Dana\u2019s freight account then; Brackenwater had transferred to Marcus effective September 15.\"}",
+  "finished_at": "2026-10-23T00:38:57.674166+00:00",
+  "seconds": 3.060557136006537,
+  "id": "dev-op-3-openai-wiki_generic",
+  "case_id": "dev-op-3",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The notes describe the September 16 meeting, despite the September 12 filing date. QFL was Dana\u2019s freight account then; Brackenwater had transferred to Marcus effective September 15.",
+  "citations": [
+    "D079",
+    "D004",
+    "D059"
+  ]
+}

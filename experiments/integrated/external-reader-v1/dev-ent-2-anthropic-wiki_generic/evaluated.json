@@ -1,0 +1,47 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:45.263487+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEdh1EFFwWAr1dYcYkB",
+  "usage": {
+    "input_tokens": 28193,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 137,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057756",
+    "total_input_tokens": 28193,
+    "output_tokens": 137,
+    "regular_input_tokens": 28193,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\"],\"explanation\":\"The entity directory says Quarendon Freightways is a Duluth-area trucking company using competitor yard software and is not a Pemberline customer. It is distinct from Quarrendon Freight Lines (QFL), which is a customer. It does appear as a carrier delivering to Tansleigh and Marrow locations, but that does not make it a customer.\"}",
+  "finished_at": "2026-10-23T00:38:48.765900+00:00",
+  "seconds": 3.502425359998597,
+  "id": "dev-ent-2-anthropic-wiki_generic",
+  "case_id": "dev-ent-2",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "false",
+  "explanation": "The entity directory says Quarendon Freightways is a Duluth-area trucking company using competitor yard software and is not a Pemberline customer. It is distinct from Quarrendon Freight Lines (QFL), which is a customer. It does appear as a carrier delivering to Tansleigh and Marrow locations, but that does not make it a customer.",
+  "citations": [
+    "D088"
+  ]
+}

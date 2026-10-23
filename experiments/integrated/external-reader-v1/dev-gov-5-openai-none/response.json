@@ -1,0 +1,128 @@
+{
+  "id": "resp_0a69ca178060ee36016adaac956f2887d1a25c7b5212865fee",
+  "object": "response",
+  "created_at": 1792715925,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715927,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a69ca178060ee36016adaac96826c87d1b77c075256870720",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qyXAb0WDIP_uHUQpRW17J9FKGbmzjFnnkxGg7xKYEHfYkx8DtsDMmVNxf8AhDFZynd6hha5iuQ2HNhX4P4zXsKCCSqJXcfWka_1fMZNa0J4ke1M3hpwjDvy3sxgl17lXxf7qhBmHmqR9VkqoCT6dbPRBbVh9DiFhhwxyYLqVXc9oyhEMKbwZBC1jdz5lqyS32ji4RK9CWem-RPzTbfNw5tVGbM3rrrx3vDJ3nflMDj87vvfoz5pbtYm7E-ynOALjn5QKwUbOBVbrpCslM1pdgz77BHNbc1kIk74YDpcbOgWNLguwB3oDqCL5_SCYWs8j0DGd1hd4A6siUqQ5q2nyPZ-h_uTDSi-JNK6xsoSw6ixriMJidOjTNiaeTf04E1bRbrono28S7Zxtc30Dx5QyJ21z512LHnaJwrmoLfhuZwAcvns71-9AhDCGxSSm6K-kUxad95E7j-F1RpLVhn8XqUEPF0FkD-XaefleWiYTPm1-o_DU32lIduK8Hhazbz0YSdQ9nappb7rhCzKtmW1eaY8tc2wlGry2ffOffrhOS8X0rk9aaA5btidO86rjd-Qeg3jr4uRqRM2qpeURsbXdgObxrr13RjfK4yMj7ARpSFvYb39wzxL80tCFxMQds3MoYp7JZ7WEYTh7V0txuJ88wRGWsWNeiCfMcJ1FmMJu6pMXIkDhylVj3xMFyBXc4OZ3eRe1hpTbFTdQPmUz3Dj0vUOD93z12VGAYeonpI7NWINgDMKJ1n3d-GZlSfVEPdOMHYxFBuG_sZf-6Uvf5eRf9zssgBXoyIGUywa520VJ0NIjE5nnzp8QydgaEfsJG2CkH8bdjQTdi3tsBRzld6Ogjp9IY8iu1vhBXHw6GrDVM0p7nL9ARx1kYSJMilJzV7SrQAMddK4QNSX5UsApD0xRVSYsVMKRCQNM0NdqSzSxzYjxCPJJgn33zXBfNK0lQ-ZU7TYzFqkHXPVFoRzKcblJCGSwBm_eKJKgQDIUmuu-17qwUrGOhItmB4O_YseIIk58xABi6j0JfRguOR03A3hJTOAS-hrSLod9YnvJ3J9pmWFcseWWIc7_-JE51zy_l1Juu9BiM01qIPbGsOCVKuFOt2WxI2b8G71XMxbSXdLg-rEVj8NsE-JflaWV5E4drLv3sfP5zsN-z_E6abm72A0XXeDgEPrAWjGXpMJBB9cnf_swPGZo4p09Ut5woTCu5AnB9GqYyZZ3WkaaNV7OZyu_YM_q7mOk24ZWvdE15AdCIot2MKAsv467iaDFNy-0rUBEw9wAq-tZOgJLJjedvDmShun0zZU9zxLQc-3DZwBPWODCn60F2f0tPqqaO2CGttm7mFf-nUlxQxATfZsQvWnqYkQdeOQBVxDolD0fyCBfCKcziZtZ97C71ZFbZqrN-_WWS0d8SO-zH93b0ngDAQJRG8UGA8fNaltRab3P3aKrIGxomSpHBZnXloFc2pqow8ULPH_9KLL6YfLtI8wfm59X2R_AzKqSGie0xsnl48_tmHSHnX_QTM6_ok69FYB2f57SgzFZ9DJL5jITQivV08t4PCLjQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_0a69ca178060ee36016adaac970fcc87d1b6064702d7a4065f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Tansley Parcel\u2019s discount on March 1, 2026.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 258,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 58,
+    "output_tokens_details": {
+      "reasoning_tokens": 12
+    },
+    "total_tokens": 316
+  },
+  "user": null,
+  "metadata": {}
+}

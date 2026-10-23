@@ -1,0 +1,119 @@
+{
+  "id": "w20261023042-057-stress-openai-full",
+  "case_id": "w20261023042-057-stress",
+  "world": "w20261023042-057",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:54:13.379903+00:00",
+  "evidence_bytes": 69157,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999173",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "1ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a361395c0e21050016adaf68605d487d19a5300b9dfbba0b9",
+  "usage": {
+    "input_tokens": 21741,
+    "input_tokens_details": {
+      "cache_write_tokens": 21738,
+      "cached_tokens": 0
+    },
+    "output_tokens": 970,
+    "output_tokens_details": {
+      "reasoning_tokens": 354
+    },
+    "total_tokens": 22711
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.064051",
+    "total_input_tokens": 21741,
+    "output_tokens": 970,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 21738
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Elm-57",
+        "action": "workshop",
+        "sources": [
+          "e121336395b4ef2",
+          "ea6ab5c6d6f3aa0",
+          "e562ceaed31d78b",
+          "ebc457ebaadfc4b",
+          "efab623bd34c4bb",
+          "e017d6b53b792ed",
+          "e21a4029eb7badb",
+          "e9b4c513b5bf499",
+          "ec4e4b3790db314",
+          "e772722bdda0ad2",
+          "eff62eba98ed47a"
+        ]
+      },
+      {
+        "account": "Larch-57",
+        "action": "reference_intro",
+        "sources": [
+          "e121336395b4ef2",
+          "ee58516343ec508",
+          "eccc77c0c0dec81",
+          "ef4a2e37cd966cf",
+          "e2e5b27f1cab677",
+          "eaa636ef5df6939",
+          "e706912415d9b05",
+          "eface514d83ea87",
+          "e7a4248b4f8b34d",
+          "e277dc3c7e8716c",
+          "e7b066219237b8f"
+        ]
+      },
+      {
+        "account": "Aster-57",
+        "action": "research_brief",
+        "sources": [
+          "e121336395b4ef2",
+          "e45e0ea8407ac1b",
+          "ecf2006557c76da",
+          "ed5d112658ad217",
+          "e55ea0194096ff4",
+          "e8ab27dca2c34c7",
+          "e114828a96b93dd",
+          "e39236f69c657f3",
+          "ea61ca20d3c6b30",
+          "e5aed99198c4e29"
+        ]
+      }
+    ],
+    "missing": [
+      "Resolve conflicting current observed consent values for Grove-57 and Cedar-57; later timestamps do not supersede the conflicting records."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 8 of 8 across three distinct accounts and scores 79 synthetic priority points: Elm workshop 7×4=28, Larch reference introduction 9×5=45, and Aster research brief 6×1=6. Grove is also sector-blocked; Orchid fails region and sector policy; Birch fails region policy. Kestrel is eligible but does not improve the optimal total. Priority points are not expected revenue."
+  },
+  "score": {
+    "optimum": 79,
+    "recoverable_value": 79,
+    "returned_value": 79,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T05:54:29.560169+00:00",
+  "seconds": 16.180275692007854
+}

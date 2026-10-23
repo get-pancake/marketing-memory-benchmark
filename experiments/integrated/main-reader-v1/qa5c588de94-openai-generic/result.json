@@ -1,0 +1,119 @@
+{
+  "id": "qa5c588de94-openai-generic",
+  "case_id": "qa5c588de94",
+  "world": "wcacc6315",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.55,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1990,
+  "status": "completed",
+  "started_at": "2026-10-23T00:49:45.343384+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999928",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_082a60692d7f7b73016adaaf29ca3c87d1a73f0538939dd445",
+  "usage": {
+    "input_tokens": 2047,
+    "input_tokens_details": {
+      "cache_write_tokens": 939,
+      "cached_tokens": 1105
+    },
+    "output_tokens": 215,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2262
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.004614",
+    "total_input_tokens": 2047,
+    "output_tokens": 215,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1105,
+    "cache_write_tokens": 939
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with the account role operations_director.",
+      "Provide current account.certification:observed=ISO27001 evidence.",
+      "P2 additionally requires account.procurement_stage:observed=approved."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S4",
+      "account.account_role:observed": "S6",
+      "account.certification:observed": "S20",
+      "account.observed_signal:observed": "S5",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S12",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with the account role operations_director.",
+      "Provide current account.certification:observed=ISO27001 evidence.",
+      "P2 additionally requires account.procurement_stage:observed=approved."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with the account role operations_director.",
+      "Provide current account.certification:observed=ISO27001 evidence.",
+      "P2 additionally requires account.procurement_stage:observed=approved."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action is supported: approved-role evidence conflicts (S10, S16), and the account certification is withdrawn rather than ISO27001 (S20). P4 does not match the requested compliance objective.",
+  "finished_at": "2026-10-23T00:49:50.882789+00:00",
+  "seconds": 5.53942142399319
+}

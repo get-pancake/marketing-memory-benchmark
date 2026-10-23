@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:37.188745+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_044efd646450196b016adaacc95da087d186b56a249c5bee64",
+  "usage": {
+    "input_tokens": 261,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 320
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001112",
+    "total_input_tokens": 261,
+    "output_tokens": 59,
+    "regular_input_tokens": 261,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki identify the account manager for Tamsin Cold Chain on October 10, 2025.\"}",
+  "finished_at": "2026-10-23T00:39:39.586941+00:00",
+  "seconds": 2.3982073759980267,
+  "id": "dev-own-1-openai-none",
+  "case_id": "dev-own-1",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki identify the account manager for Tamsin Cold Chain on October 10, 2025.",
+  "citations": []
+}

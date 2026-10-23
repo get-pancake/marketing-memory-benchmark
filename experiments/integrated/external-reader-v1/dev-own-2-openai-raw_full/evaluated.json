@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:32.628091+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0d1552ec73e0d679016adaacc5061c87d18c65734aad505198",
+  "usage": {
+    "input_tokens": 72921,
+    "input_tokens_details": {
+      "cache_write_tokens": 72918,
+      "cached_tokens": 0
+    },
+    "output_tokens": 72,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72993
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.183021",
+    "total_input_tokens": 72921,
+    "output_tokens": 72,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72918
+  },
+  "text": "{\"answer\":\"Ilse Varga\",\"citations\":[\"D070\",\"D112\"],\"explanation\":\"Ilse Varga was acting account manager for Quarrendon Freight Lines during Dana Okafor\u2019s leave from February 2 through March 13, 2026. Dana remained the CRM owner of record.\"}",
+  "finished_at": "2026-10-23T00:39:35.376672+00:00",
+  "seconds": 2.7485921240004245,
+  "id": "dev-own-2-openai-raw_full",
+  "case_id": "dev-own-2",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Ilse Varga",
+  "explanation": "Ilse Varga was acting account manager for Quarrendon Freight Lines during Dana Okafor\u2019s leave from February 2 through March 13, 2026. Dana remained the CRM owner of record.",
+  "citations": [
+    "D070",
+    "D112"
+  ]
+}

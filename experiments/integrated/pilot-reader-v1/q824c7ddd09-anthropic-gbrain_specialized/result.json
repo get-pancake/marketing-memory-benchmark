@@ -1,0 +1,111 @@
+{
+  "id": "q824c7ddd09-anthropic-gbrain_specialized",
+  "case_id": "q824c7ddd09",
+  "world": "wc26a095a",
+  "arm": "gbrain_specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3888888888888889,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2009,
+  "status": "completed",
+  "started_at": "2026-10-23T00:03:50.999887+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJByJqSLCVyKTYw1TaDG",
+  "usage": {
+    "input_tokens": 1684,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1127,
+    "output_tokens_details": {
+      "thinking_tokens": 767
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.014638",
+    "total_input_tokens": 1684,
+    "output_tokens": 1127,
+    "regular_input_tokens": 1684,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "account.observed_signal:observed=hiring (current observation S7 says withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P3, which also exceeds the 2-unit limit)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S15",
+      "account.observed_signal:observed": "S7",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S6"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.observed_signal:observed=hiring (current observation S7 says withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P3, which also exceeds the 2-unit limit)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.observed_signal:observed=hiring (current observation S7 says withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P3, which also exceeds the 2-unit limit)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The role and geo equalities hold (operations_director/US), and onboarding pain and proof are observed. But the current signal observation S7 is 'withdrawn', not 'hiring', so P2 fails, while P4 and P3 exceed the 2-unit limit and P1 has a different objective. The remaining notes and hypotheses (S2, S5, S9 and similar) are not approved evidence and cannot fill the gap.",
+  "finished_at": "2026-10-23T00:03:59.531927+00:00",
+  "seconds": 8.53205145400716
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:07.100721+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0908bec6b70191bb016adaadd76d4887d1a487f5b922eec3cd",
+  "usage": {
+    "input_tokens": 6183,
+    "input_tokens_details": {
+      "cache_write_tokens": 6180,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6249
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016116",
+    "total_input_tokens": 6183,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6180
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\",\"D113\"],\"explanation\":\"Quarendon Freightways is explicitly identified as not a Pemberline customer and as using a competitor\u2019s yard software. It is distinct from Quarrendon Freight Lines, which is a customer.\"}",
+  "finished_at": "2026-10-23T00:44:09.737801+00:00",
+  "seconds": 2.6370758789998945
+}

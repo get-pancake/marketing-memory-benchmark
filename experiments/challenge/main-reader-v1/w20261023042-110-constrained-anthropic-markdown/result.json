@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-110-constrained-anthropic-markdown",
+  "case_id": "w20261023042-110-constrained",
+  "world": "w20261023042-110",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:01:52.097937+00:00",
+  "evidence_bytes": 12237,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:01:54Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:02:05Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:01:52Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:01:54Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfGpdSvw1bwqeRsydTX",
+  "usage": {
+    "input_tokens": 6918,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1491,
+    "output_tokens_details": {
+      "thinking_tokens": 740
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057492",
+    "total_input_tokens": 6918,
+    "output_tokens": 1491,
+    "regular_input_tokens": 6918,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Harbor-110",
+        "action": "workshop",
+        "sources": [
+          "e256021ea1024f6",
+          "e638c538d474102",
+          "e2c66ac2b808e35",
+          "e4892a2b9399652",
+          "e633ea844e854a7",
+          "ee52c52e75f23ea",
+          "ec54096e0abe2bd",
+          "e7fa9fb73584d3e",
+          "e1cb94ae6104615",
+          "efcef054633a6d0",
+          "e71049dd53c2355"
+        ]
+      },
+      {
+        "account": "Grove-110",
+        "action": "reference_intro",
+        "sources": [
+          "e256021ea1024f6",
+          "e79586822616f8b",
+          "ed33465cacea46c",
+          "ea2cc332d8dcd69",
+          "ed37e5ab9102ce5",
+          "ea606da98122cb7",
+          "ed7190344983516",
+          "e2af1ca0d1a6d3c",
+          "ecc3f0b332cfd5a",
+          "e1c9910ed14604e",
+          "e2f0ce6baafd9c3"
+        ]
+      }
+    ],
+    "missing": [
+      "North-110: consent records conflict (true on day 15, false on day 24); profile and approved priority are missing; the chain from initiative-1 onward is missing",
+      "Elm-110: no profile, consent, priority, signal, or initiative chain evidence",
+      "Flint-110: no profile, consent, priority, signal, or initiative chain evidence",
+      "Cedar-110: no profile, consent, priority, signal, or initiative chain evidence"
+    ],
+    "reasoning_summary": "The approved seller policy allows UK, DE and FR and permits all actions; the proposed policy is ignored. Harbor-110 (FR, manufacturing, priority 11, risk signal, consent true) has a fully verified chain to proof-5, with approved capacity and assurance. Its workshop scores 44 at cost 3; assurance_pack ties at 44. Grove-110 (UK, services, priority 3, renewal signal, consent true) has a verified chain to proof-0 with an approved shareable proof. Its reference_intro scores 15 at cost 4. The total is 59 points at cost 7, which uses the full budget of 7. This beats the alternative of pairing Harbor's workshop with Grove's renewal_review (53 points). North-110 is blocked by conflicting current consent records. Elm-110, Flint-110 and Cedar-110 have no supporting evidence."
+  },
+  "score": {
+    "optimum": 59,
+    "recoverable_value": 59,
+    "returned_value": 59,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T06:02:05.591339+00:00",
+  "seconds": 13.493412871001055
+}

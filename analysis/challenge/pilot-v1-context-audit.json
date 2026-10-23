@@ -1,0 +1,562 @@
+{
+  "status": "passed",
+  "cases": 36,
+  "packets_verified": 216,
+  "query_word_exact_equal_cases": 36,
+  "query_word_extra_model_calls": 0,
+  "independent_control_observations": 0,
+  "control_interpretation": "When exact inputs match, this is a mechanistic alias; no new observations and no measured architectural superiority over the generic task-word selector.",
+  "levels": {
+    "accessible": {
+      "records": {
+        "min": 192,
+        "median": 192.0,
+        "max": 192
+      },
+      "all_records": {
+        "min": 217,
+        "median": 217.0,
+        "max": 217
+      },
+      "accounts": {
+        "min": 4,
+        "median": 4.0,
+        "max": 4
+      },
+      "full_evidence_bytes": {
+        "min": 28436,
+        "median": 28533.0,
+        "max": 28592
+      },
+      "budget_bytes": {
+        "min": 16384,
+        "median": 16384.0,
+        "max": 16384
+      }
+    },
+    "constrained": {
+      "records": {
+        "min": 277,
+        "median": 278.0,
+        "max": 280
+      },
+      "all_records": {
+        "min": 302,
+        "median": 303.0,
+        "max": 305
+      },
+      "accounts": {
+        "min": 6,
+        "median": 6.0,
+        "max": 6
+      },
+      "full_evidence_bytes": {
+        "min": 41850,
+        "median": 42052.5,
+        "max": 42239
+      },
+      "budget_bytes": {
+        "min": 12288,
+        "median": 12288.0,
+        "max": 12288
+      }
+    },
+    "stress": {
+      "records": {
+        "min": 448,
+        "median": 449.5,
+        "max": 452
+      },
+      "all_records": {
+        "min": 473,
+        "median": 474.5,
+        "max": 477
+      },
+      "accounts": {
+        "min": 8,
+        "median": 8.0,
+        "max": 8
+      },
+      "full_evidence_bytes": {
+        "min": 68747,
+        "median": 69128.0,
+        "max": 69516
+      },
+      "budget_bytes": {
+        "min": 8192,
+        "median": 8192.0,
+        "max": 8192
+      }
+    }
+  },
+  "rows": [
+    {
+      "case_id": "w20261023041-000-accessible",
+      "world": "w20261023041-000",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28531,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "f03b4eafec89a0bf0974f4bc8dd59e11d89db5cc9cb75de30df7932acf9cb496",
+      "query_word_packet_sha256": "f03b4eafec89a0bf0974f4bc8dd59e11d89db5cc9cb75de30df7932acf9cb496"
+    },
+    {
+      "case_id": "w20261023041-000-constrained",
+      "world": "w20261023041-000",
+      "level": "constrained",
+      "records": 280,
+      "all_records": 305,
+      "accounts": 6,
+      "full_evidence_bytes": 42099,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "23f3807a9db3faae840c7845e51cf8d4b31859ecc6beac985344a50b03c67c66",
+      "query_word_packet_sha256": "23f3807a9db3faae840c7845e51cf8d4b31859ecc6beac985344a50b03c67c66"
+    },
+    {
+      "case_id": "w20261023041-000-stress",
+      "world": "w20261023041-000",
+      "level": "stress",
+      "records": 449,
+      "all_records": 474,
+      "accounts": 8,
+      "full_evidence_bytes": 68962,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "40e665c4e145b29304bcfc97720ef7859f2270187c9051c64bab101c25b881de",
+      "query_word_packet_sha256": "40e665c4e145b29304bcfc97720ef7859f2270187c9051c64bab101c25b881de"
+    },
+    {
+      "case_id": "w20261023041-001-accessible",
+      "world": "w20261023041-001",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28562,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "205a5657691f9620e9f9aa562b65be738aeed4d36cd43157fb7251560f1fcbfa",
+      "query_word_packet_sha256": "205a5657691f9620e9f9aa562b65be738aeed4d36cd43157fb7251560f1fcbfa"
+    },
+    {
+      "case_id": "w20261023041-001-constrained",
+      "world": "w20261023041-001",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 41988,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "abd0c06aac118efe28e3af665e44cd8cadece9299c303495479b979ed61eaf8a",
+      "query_word_packet_sha256": "abd0c06aac118efe28e3af665e44cd8cadece9299c303495479b979ed61eaf8a"
+    },
+    {
+      "case_id": "w20261023041-001-stress",
+      "world": "w20261023041-001",
+      "level": "stress",
+      "records": 452,
+      "all_records": 477,
+      "accounts": 8,
+      "full_evidence_bytes": 69363,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "fed669def99309c8a85280cafff374fc2fe13792f8727c23e0364f465065657f",
+      "query_word_packet_sha256": "fed669def99309c8a85280cafff374fc2fe13792f8727c23e0364f465065657f"
+    },
+    {
+      "case_id": "w20261023041-002-accessible",
+      "world": "w20261023041-002",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28478,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "f6be1df40863316e94eaee7e334c4e08fee015be2fe1df8f706ed145dacac215",
+      "query_word_packet_sha256": "f6be1df40863316e94eaee7e334c4e08fee015be2fe1df8f706ed145dacac215"
+    },
+    {
+      "case_id": "w20261023041-002-constrained",
+      "world": "w20261023041-002",
+      "level": "constrained",
+      "records": 277,
+      "all_records": 302,
+      "accounts": 6,
+      "full_evidence_bytes": 41934,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "a6aebd97c503bc2511760e8702ac7dce4a84590cf861db0ab6b5e64ef5128054",
+      "query_word_packet_sha256": "a6aebd97c503bc2511760e8702ac7dce4a84590cf861db0ab6b5e64ef5128054"
+    },
+    {
+      "case_id": "w20261023041-002-stress",
+      "world": "w20261023041-002",
+      "level": "stress",
+      "records": 452,
+      "all_records": 477,
+      "accounts": 8,
+      "full_evidence_bytes": 69396,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "e170ee958016d202c84334abf78188131438a72cd349b98f43e7709cf27b7a86",
+      "query_word_packet_sha256": "e170ee958016d202c84334abf78188131438a72cd349b98f43e7709cf27b7a86"
+    },
+    {
+      "case_id": "w20261023041-003-accessible",
+      "world": "w20261023041-003",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28564,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "bacfd0daa73d1d27543a72a94ab852f176d9faaa693288e4b2d26f39295fee9a",
+      "query_word_packet_sha256": "bacfd0daa73d1d27543a72a94ab852f176d9faaa693288e4b2d26f39295fee9a"
+    },
+    {
+      "case_id": "w20261023041-003-constrained",
+      "world": "w20261023041-003",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 42009,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "b2a2ca5ad71adf2e2e62a6307967b7dd30cf64265c2a8d94168dd4c589961b75",
+      "query_word_packet_sha256": "b2a2ca5ad71adf2e2e62a6307967b7dd30cf64265c2a8d94168dd4c589961b75"
+    },
+    {
+      "case_id": "w20261023041-003-stress",
+      "world": "w20261023041-003",
+      "level": "stress",
+      "records": 450,
+      "all_records": 475,
+      "accounts": 8,
+      "full_evidence_bytes": 69288,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "a3ec058894d1841190806455f5556b43c501442e8a028af35594dfab278e4ea0",
+      "query_word_packet_sha256": "a3ec058894d1841190806455f5556b43c501442e8a028af35594dfab278e4ea0"
+    },
+    {
+      "case_id": "w20261023041-004-accessible",
+      "world": "w20261023041-004",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28482,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "4dc1a3e7c8d3d467d096b495183a23b4f646067cc3c7ef55cecc31587f8ab493",
+      "query_word_packet_sha256": "4dc1a3e7c8d3d467d096b495183a23b4f646067cc3c7ef55cecc31587f8ab493"
+    },
+    {
+      "case_id": "w20261023041-004-constrained",
+      "world": "w20261023041-004",
+      "level": "constrained",
+      "records": 280,
+      "all_records": 305,
+      "accounts": 6,
+      "full_evidence_bytes": 42239,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "b48db47cda54dbd3f519afa628ee5190a21c60ca05505f15b700aa52800c4229",
+      "query_word_packet_sha256": "b48db47cda54dbd3f519afa628ee5190a21c60ca05505f15b700aa52800c4229"
+    },
+    {
+      "case_id": "w20261023041-004-stress",
+      "world": "w20261023041-004",
+      "level": "stress",
+      "records": 448,
+      "all_records": 473,
+      "accounts": 8,
+      "full_evidence_bytes": 68778,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "f2968dedbba0a29bddb573e53b0e4d63bdcbbdf7db3bd81428d16a9c13b640f3",
+      "query_word_packet_sha256": "f2968dedbba0a29bddb573e53b0e4d63bdcbbdf7db3bd81428d16a9c13b640f3"
+    },
+    {
+      "case_id": "w20261023041-005-accessible",
+      "world": "w20261023041-005",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28451,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "958b960e11bdd65ccf1e4eea5fe93ce7c028ee28a9ec648edf53bbf2e64798f7",
+      "query_word_packet_sha256": "958b960e11bdd65ccf1e4eea5fe93ce7c028ee28a9ec648edf53bbf2e64798f7"
+    },
+    {
+      "case_id": "w20261023041-005-constrained",
+      "world": "w20261023041-005",
+      "level": "constrained",
+      "records": 279,
+      "all_records": 304,
+      "accounts": 6,
+      "full_evidence_bytes": 42162,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "248cd1830747433df1958bb933086867755a2ca1d120aad12a8997141a2ab1cd",
+      "query_word_packet_sha256": "248cd1830747433df1958bb933086867755a2ca1d120aad12a8997141a2ab1cd"
+    },
+    {
+      "case_id": "w20261023041-005-stress",
+      "world": "w20261023041-005",
+      "level": "stress",
+      "records": 448,
+      "all_records": 473,
+      "accounts": 8,
+      "full_evidence_bytes": 68747,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "dd89e62218e979c157376f240897a5d943236e8f1a0df4c83d8bd7838eb1b835",
+      "query_word_packet_sha256": "dd89e62218e979c157376f240897a5d943236e8f1a0df4c83d8bd7838eb1b835"
+    },
+    {
+      "case_id": "w20261023041-006-accessible",
+      "world": "w20261023041-006",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28436,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "77013e8236cbab5f94dad6e5e7655d77f071239bdc2e30f08fec0abaf8d2aabb",
+      "query_word_packet_sha256": "77013e8236cbab5f94dad6e5e7655d77f071239bdc2e30f08fec0abaf8d2aabb"
+    },
+    {
+      "case_id": "w20261023041-006-constrained",
+      "world": "w20261023041-006",
+      "level": "constrained",
+      "records": 277,
+      "all_records": 302,
+      "accounts": 6,
+      "full_evidence_bytes": 41850,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "3bf841f76f971b038123e9fe7f76c9e4215e5632bea266b235b18fbf0716d5a2",
+      "query_word_packet_sha256": "3bf841f76f971b038123e9fe7f76c9e4215e5632bea266b235b18fbf0716d5a2"
+    },
+    {
+      "case_id": "w20261023041-006-stress",
+      "world": "w20261023041-006",
+      "level": "stress",
+      "records": 450,
+      "all_records": 475,
+      "accounts": 8,
+      "full_evidence_bytes": 69147,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "ff05107b1fa24548d73fd600a1581d0f0c10138dddf08fefbc3454466f3ab7b1",
+      "query_word_packet_sha256": "ff05107b1fa24548d73fd600a1581d0f0c10138dddf08fefbc3454466f3ab7b1"
+    },
+    {
+      "case_id": "w20261023041-007-accessible",
+      "world": "w20261023041-007",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28497,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "b7c07fd8c674125507644f4d4dbc736f1aca40f3440e9beb323ca9b083f549fd",
+      "query_word_packet_sha256": "b7c07fd8c674125507644f4d4dbc736f1aca40f3440e9beb323ca9b083f549fd"
+    },
+    {
+      "case_id": "w20261023041-007-constrained",
+      "world": "w20261023041-007",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 41982,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "bad593d3b0efe4a01808e3fb4acf140803d5e474a5f8c20967c0f089ae931669",
+      "query_word_packet_sha256": "bad593d3b0efe4a01808e3fb4acf140803d5e474a5f8c20967c0f089ae931669"
+    },
+    {
+      "case_id": "w20261023041-007-stress",
+      "world": "w20261023041-007",
+      "level": "stress",
+      "records": 449,
+      "all_records": 474,
+      "accounts": 8,
+      "full_evidence_bytes": 68982,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "93ee4afe2e9d3ea786f16d74ef36bc2fc88521a52804f1558e717282c0048f49",
+      "query_word_packet_sha256": "93ee4afe2e9d3ea786f16d74ef36bc2fc88521a52804f1558e717282c0048f49"
+    },
+    {
+      "case_id": "w20261023041-008-accessible",
+      "world": "w20261023041-008",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28535,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "df41b7f4ddc180f6e6f4361fb3a11407d8bbf1fec84432c1ab2f883a90a77cff",
+      "query_word_packet_sha256": "df41b7f4ddc180f6e6f4361fb3a11407d8bbf1fec84432c1ab2f883a90a77cff"
+    },
+    {
+      "case_id": "w20261023041-008-constrained",
+      "world": "w20261023041-008",
+      "level": "constrained",
+      "records": 277,
+      "all_records": 302,
+      "accounts": 6,
+      "full_evidence_bytes": 41932,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "bfbcd5214fef5f3c479b612455ba9cd1d69886d5432eb72f5e630acce538fc4a",
+      "query_word_packet_sha256": "bfbcd5214fef5f3c479b612455ba9cd1d69886d5432eb72f5e630acce538fc4a"
+    },
+    {
+      "case_id": "w20261023041-008-stress",
+      "world": "w20261023041-008",
+      "level": "stress",
+      "records": 451,
+      "all_records": 476,
+      "accounts": 8,
+      "full_evidence_bytes": 69353,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "3379fecab1904e1dad14f8156c2e43337f24f458b30983bbb85253fd2acf056c",
+      "query_word_packet_sha256": "3379fecab1904e1dad14f8156c2e43337f24f458b30983bbb85253fd2acf056c"
+    },
+    {
+      "case_id": "w20261023041-009-accessible",
+      "world": "w20261023041-009",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28536,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "d5d9e41a533b9f54ee6279ff280ab884578c5002ae04f8c04b7a69ff3390ba66",
+      "query_word_packet_sha256": "d5d9e41a533b9f54ee6279ff280ab884578c5002ae04f8c04b7a69ff3390ba66"
+    },
+    {
+      "case_id": "w20261023041-009-constrained",
+      "world": "w20261023041-009",
+      "level": "constrained",
+      "records": 279,
+      "all_records": 304,
+      "accounts": 6,
+      "full_evidence_bytes": 42096,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "5a313bd1d81a1da22cdde6d15405eed25f27caf45b0fd60824fc9150b229c1cc",
+      "query_word_packet_sha256": "5a313bd1d81a1da22cdde6d15405eed25f27caf45b0fd60824fc9150b229c1cc"
+    },
+    {
+      "case_id": "w20261023041-009-stress",
+      "world": "w20261023041-009",
+      "level": "stress",
+      "records": 452,
+      "all_records": 477,
+      "accounts": 8,
+      "full_evidence_bytes": 69516,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "27657f685d6776acec0ccffcfaa1ca52404e30b3a5ce82008d4264eaf158b997",
+      "query_word_packet_sha256": "27657f685d6776acec0ccffcfaa1ca52404e30b3a5ce82008d4264eaf158b997"
+    },
+    {
+      "case_id": "w20261023041-010-accessible",
+      "world": "w20261023041-010",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28592,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "b644295ecb68860f286528e048a5bb0747e16ef8f7a5415e31ecc2487918b6d5",
+      "query_word_packet_sha256": "b644295ecb68860f286528e048a5bb0747e16ef8f7a5415e31ecc2487918b6d5"
+    },
+    {
+      "case_id": "w20261023041-010-constrained",
+      "world": "w20261023041-010",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 42149,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "66b86b9369c0ba7c16bcc20c1cfa1fc14aaaaa9e84fa52c26da8c858a91acc99",
+      "query_word_packet_sha256": "66b86b9369c0ba7c16bcc20c1cfa1fc14aaaaa9e84fa52c26da8c858a91acc99"
+    },
+    {
+      "case_id": "w20261023041-010-stress",
+      "world": "w20261023041-010",
+      "level": "stress",
+      "records": 449,
+      "all_records": 474,
+      "accounts": 8,
+      "full_evidence_bytes": 69058,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "3119782610ce66042166ff70e421dc4ac59274be40644a81cfe56202e5fd59c3",
+      "query_word_packet_sha256": "3119782610ce66042166ff70e421dc4ac59274be40644a81cfe56202e5fd59c3"
+    },
+    {
+      "case_id": "w20261023041-011-accessible",
+      "world": "w20261023041-011",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28565,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "d470b63ed27cb2ceb5ca10aa01ab4f6cab7de38aee7f118da7b9751a47d6bda3",
+      "query_word_packet_sha256": "d470b63ed27cb2ceb5ca10aa01ab4f6cab7de38aee7f118da7b9751a47d6bda3"
+    },
+    {
+      "case_id": "w20261023041-011-constrained",
+      "world": "w20261023041-011",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 42108,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "48dee6f2d93af2383da32c0222b9e72cf5f82026743e8abe2af8792108583292",
+      "query_word_packet_sha256": "48dee6f2d93af2383da32c0222b9e72cf5f82026743e8abe2af8792108583292"
+    },
+    {
+      "case_id": "w20261023041-011-stress",
+      "world": "w20261023041-011",
+      "level": "stress",
+      "records": 449,
+      "all_records": 474,
+      "accounts": 8,
+      "full_evidence_bytes": 69109,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "4beb0d655f6641b2a9ef61a015113e4cd9e49e196fe54d31c86eaab41c1e97bf",
+      "query_word_packet_sha256": "4beb0d655f6641b2a9ef61a015113e4cd9e49e196fe54d31c86eaab41c1e97bf"
+    }
+  ]
+}

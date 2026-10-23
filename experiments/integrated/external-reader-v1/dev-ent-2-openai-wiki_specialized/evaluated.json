@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:32.537925+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00e02e1f35d37b15016adaac88b94c87d194e0a291df7ef63a",
+  "usage": {
+    "input_tokens": 16147,
+    "input_tokens_details": {
+      "cache_write_tokens": 16144,
+      "cached_tokens": 0
+    },
+    "output_tokens": 49,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16196
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.040856",
+    "total_input_tokens": 16147,
+    "output_tokens": 49,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16144
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\"],\"explanation\":\"Quarendon Freightways is explicitly identified as a noncustomer using competitor yard software, distinct from Quarrendon Freight Lines.\"}",
+  "finished_at": "2026-10-23T00:38:34.840000+00:00",
+  "seconds": 2.302084848997765,
+  "id": "dev-ent-2-openai-wiki_specialized",
+  "case_id": "dev-ent-2",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "false",
+  "explanation": "Quarendon Freightways is explicitly identified as a noncustomer using competitor yard software, distinct from Quarrendon Freight Lines.",
+  "citations": [
+    "D088"
+  ]
+}

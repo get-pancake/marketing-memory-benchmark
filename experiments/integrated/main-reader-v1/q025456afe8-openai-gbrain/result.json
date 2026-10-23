@@ -1,0 +1,115 @@
+{
+  "id": "q025456afe8-openai-gbrain",
+  "case_id": "q025456afe8",
+  "world": "w39a50ef7",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.75,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.2222222222222222,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2020,
+  "status": "completed",
+  "started_at": "2026-10-23T00:41:25.747646+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999949",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_082ce32e166f6e2c016adaad362f3887d189e0484e7b307f98",
+  "usage": {
+    "input_tokens": 1979,
+    "input_tokens_details": {
+      "cache_write_tokens": 924,
+      "cached_tokens": 1052
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2173
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0043612",
+    "total_input_tokens": 1979,
+    "output_tokens": 194,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1052,
+    "cache_write_tokens": 924
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S1",
+      "account.customer_state:observed": "S10",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": null,
+      "seller.approved_geo:approved": "S12",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the qualification_audit objective and the 3-unit allowance, but seller.approved_role:approved is missing, so role equality cannot be verified against the observed commercial_director role (S1). Approved and observed geography match at CA (S12, S15); the other catalog actions have a different objective.",
+  "finished_at": "2026-10-23T00:41:30.831807+00:00",
+  "seconds": 5.084170694986824
+}

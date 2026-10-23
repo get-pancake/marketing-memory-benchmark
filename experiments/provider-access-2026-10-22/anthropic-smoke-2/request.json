@@ -1,0 +1,10 @@
+{
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return exactly this JSON object, with no markdown: {\"ready\":true}"
+    }
+  ],
+  "max_tokens": 256
+}

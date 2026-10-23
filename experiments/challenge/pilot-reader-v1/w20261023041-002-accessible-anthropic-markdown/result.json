@@ -1,0 +1,113 @@
+{
+  "id": "w20261023041-002-accessible-anthropic-markdown",
+  "case_id": "w20261023041-002-accessible",
+  "world": "w20261023041-002",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:18:45.252613+00:00",
+  "evidence_bytes": 16261,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:18:47Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:18:58Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:18:45Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11995000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:18:47Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbz6AX3D5UySfw1R5Qg",
+  "usage": {
+    "input_tokens": 8708,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1374,
+    "output_tokens_details": {
+      "thinking_tokens": 764
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.062312",
+    "total_input_tokens": 8708,
+    "output_tokens": 1374,
+    "regular_input_tokens": 8708,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Kestrel-2",
+        "action": "reference_intro",
+        "sources": [
+          "e27cad1244b95db",
+          "ec74da379af0c0e",
+          "eac0a1c2ca7f0e4",
+          "e82bbfeaad2ecac",
+          "eb191ca5de28871",
+          "eb423edf606bc11",
+          "e1b7570d5e88107",
+          "e014d93238e4091",
+          "e7263eae57c4e69",
+          "eedece9190f5ca4",
+          "e95fd3ac4d0498a"
+        ]
+      },
+      {
+        "account": "Grove-2",
+        "action": "renewal_review",
+        "sources": [
+          "e27cad1244b95db",
+          "edc069f12906555",
+          "e8fc0fef9b33091",
+          "e993a4ebd49aa52",
+          "e6ca9f75deda32f",
+          "e7c59eb538fcff1",
+          "e1ae8db2b71478f",
+          "eebd66ca0a36f23",
+          "ea6de25d009c131",
+          "ea4de4b71233fb3"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-2: observed current consent record",
+      "Aster-2: observed initiative -> need -> offering -> proof chain with approved verified proof"
+    ],
+    "reasoning_summary": "Under the approved day-12 seller policy (the day-25 policy is only proposed), Kestrel-2 (US, manufacturing, consent true, growth signal, priority 9) has a complete verified chain with an approved shareable proof-2, so reference_intro scores 9x5=45 at cost 4. Grove-2 (US, services, consent true, renewal signal, priority 4) has a verified chain, but proof-3 is not shareable, so reference_intro is ruled out. Its renewal_review scores 4x3=12 at cost 2. The total is 57 at cost 6, which equals the budget. Juniper-2 is blocked because its sector is restricted. Aster-2 lacks consent and an initiative chain. Feedback records were not treated as facts."
+  },
+  "score": {
+    "optimum": 57,
+    "recoverable_value": 57,
+    "returned_value": 57,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:18:58.292738+00:00",
+  "seconds": 13.0401358740055
+}

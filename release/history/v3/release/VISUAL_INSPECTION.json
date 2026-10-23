@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "created_at": "2026-10-23T01:24:46.058951+00:00",
+  "reviewer": "Research assistant; not independent human review",
+  "scope": "Layout and visual accuracy, not peer review. Source-linked numeric verification is recorded separately.",
+  "renderer": "pdftoppm version 26.05.0",
+  "render_options": [
+    "-scale-to",
+    "1250",
+    "-png"
+  ],
+  "documents": {
+    "paper/report.pdf": {
+      "pdf_sha256": "49cb879bb336038bfdcb9bb085bac3768be7760b236826c4bbf0a97273f32583",
+      "pages": 13,
+      "checked_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "rendered_page_sha256": {
+        "1": "afdf17d11a2dc4c9eb523440f54fcf8a89d97eefc87038d21685ea6095a8be73",
+        "2": "86617862d4f8b6d4318f91c0ff72850d413a3a467e149a076af9d99bf4b77a68",
+        "3": "784de2dc514a72d42f52bb853afcea3e5ce44f0a270570a8977d81554b49c322",
+        "4": "de4f85130d1eade731e28f2dab0ccfbc1676af18a1d9048114f4a7939d60321c",
+        "5": "1f37fc80752d487ec3825b21790caf920a4bc03a7a2a971f6c0889e6d14d3789",
+        "6": "3352058a4f8f1e19c550f80a3ac79c3f5a53fc34365bca3b64383b21ac4c8597",
+        "7": "47e8aec034555e0b62ea1cd9259b4f2f3fc196f618194aaebcc99030190d2689",
+        "8": "d5fecbd8b51c914b34397d22244101111bdf091cb961e9f151d66369856a86f5",
+        "9": "e6be980f03eb2cb4de87b7695c19f165e24a79f4def0ea0248b476937bd2b875",
+        "10": "57f4b39854c50e0560fb02fe508573922a362db819e176553d3bc27a84d29bff",
+        "11": "9c586d3de5497d35a96cd189114b2b03fd242c06abf7e26f1af537f20718fe99",
+        "12": "ef8b7f0cd01bf303a425c36292873fb89cfcaa7f69f43f3fe9ab8964c53a11ae",
+        "13": "1c50dc354931215797d8d2e95888987d5ab67d76a500f8415e754ab1036c0fc9"
+      },
+      "observations": "Every page visually inspected: text, numerical labels, figures, tables, references and footnotes are legible; no clipping or overlapping axes labels remains.",
+      "inspection_detail": "Final report pages2\u201313 were viewed directly after layout corrections. Page1 and the two investor pages are pixel-identical to the earlier directly inspected render. Diagram border clipping and paired-effect axis-label collision were repaired before this receipt."
+    },
+    "paper/investor-note.pdf": {
+      "pdf_sha256": "742f43aa58b2d56e0177e9fec89696126f36210e288254d570ea20556d3c1ebf",
+      "pages": 2,
+      "checked_pages": [
+        1,
+        2
+      ],
+      "rendered_page_sha256": {
+        "1": "0318c0b019b938112712ecff87669a4757515d50d8df96dd2eed604db1466ae2",
+        "2": "f55738eb4319bc409b802e7decc3723c4c907b0f6e1d25a74d12668ab2fb73aa"
+      },
+      "observations": "Every page visually inspected: text, numerical labels, figures, tables, references and footnotes are legible; no clipping or overlapping axes labels remains.",
+      "inspection_detail": "Final report pages2\u201313 were viewed directly after layout corrections. Page1 and the two investor pages are pixel-identical to the earlier directly inspected render. Diagram border clipping and paired-effect axis-label collision were repaired before this receipt."
+    }
+  }
+}

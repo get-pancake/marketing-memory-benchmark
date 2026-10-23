@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-103-accessible-openai-markdown",
+  "case_id": "w20261023042-103-accessible",
+  "world": "w20261023042-103",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:05:08.222838+00:00",
+  "evidence_bytes": 16271,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999697",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0d280c699f396a02016adaf915259487d181f992ecbbe758b0",
+  "usage": {
+    "input_tokens": 5630,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 5627
+    },
+    "output_tokens": 446,
+    "output_tokens_details": {
+      "reasoning_tokens": 109
+    },
+    "total_tokens": 6076
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0050287",
+    "total_input_tokens": 5630,
+    "output_tokens": 446,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 5627,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Delta-103",
+        "action": "workshop",
+        "sources": [
+          "e08fa43c3449426",
+          "e170659a799b808",
+          "e37608289f93ede",
+          "e44657bad952812",
+          "e5d18cbbf3d0a47",
+          "e8a164053a3788f",
+          "ee56b859bd0239f",
+          "e4cdcf9fca3c5f3",
+          "e193f902e07450d",
+          "e3601afda7cf9f0",
+          "e876aec50f633dc"
+        ]
+      }
+    ],
+    "missing": [
+      "Elm-103: observed profile, consent, signal, and complete initiative-to-proof chain, plus approved integer priority and approved proof verification are missing.",
+      "Larch-103: proof-1 is approved as verified=false; eligibility requires approved verified=true in a nonconflicting current view."
+    ],
+    "reasoning_summary": "Delta-103 workshop maximizes supported priority points: 1 × 4 = 4, costing 3 of the shared budget of 6. Its launch signal and approved capacity support the action. Larch-103 fails proof verification; Pine-103 has a disallowed region and blocked sector; Elm-103 lacks required evidence. The proposed seller policy is not approved and does not override the approved policy. No additional distinct account is eligible."
+  },
+  "score": {
+    "optimum": 4,
+    "recoverable_value": 4,
+    "returned_value": 4,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T06:05:19.764201+00:00",
+  "seconds": 11.541369630998815
+}

@@ -1,0 +1,102 @@
+{
+  "id": "w20261023041-002-accessible-openai-company",
+  "case_id": "w20261023041-002-accessible",
+  "world": "w20261023041-002",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:20:13.797385+00:00",
+  "evidence_bytes": 16383,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999592",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0287eb0cd25c1386016adaee8e019887d18d47cda744a1fd8d",
+  "usage": {
+    "input_tokens": 5681,
+    "input_tokens_details": {
+      "cache_write_tokens": 5678,
+      "cached_tokens": 0
+    },
+    "output_tokens": 551,
+    "output_tokens_details": {
+      "reasoning_tokens": 94
+    },
+    "total_tokens": 6232
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.019711",
+    "total_input_tokens": 5681,
+    "output_tokens": 551,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5678
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Kestrel-2",
+        "action": "reference_intro",
+        "sources": [
+          "e27cad1244b95db",
+          "ec74da379af0c0e",
+          "eac0a1c2ca7f0e4",
+          "e95fd3ac4d0498a",
+          "eedece9190f5ca4",
+          "e82bbfeaad2ecac",
+          "eb191ca5de28871",
+          "eb423edf606bc11",
+          "e1b7570d5e88107",
+          "e014d93238e4091",
+          "e7263eae57c4e69"
+        ]
+      },
+      {
+        "account": "Aster-2",
+        "action": "diagnostic",
+        "sources": [
+          "e27cad1244b95db",
+          "e63e84d62bbb42c",
+          "ef96f4c60d27a5a",
+          "e09684e1e8c5d81",
+          "e4c8a92687ff369",
+          "ea437a80d99bd69",
+          "e19526f84b2099c",
+          "e33da35942e9872",
+          "e8955e1261030a2",
+          "e5779042311acec"
+        ]
+      }
+    ],
+    "missing": [
+      "Grove-2: provide current observed profile, consent, signal, and initiative → need → offering → proof links, plus approved integer priority and approved proof verification."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 6 of 6 and scores 51 synthetic priority points: Kestrel-2 reference_intro contributes 9×5=45; Aster-2 diagnostic contributes 3×2=6. Both satisfy all eligibility requirements. Juniper-2 is blocked by its restricted sector; Grove-2 lacks required evidence. The proposed seller policy is not an approved fact."
+  },
+  "score": {
+    "optimum": 57,
+    "recoverable_value": 51,
+    "returned_value": 51,
+    "normalized_value": 0.8947368421052632,
+    "context_normalized_value": 0.8947368421052632,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:20:23.710401+00:00",
+  "seconds": 9.913027870003134
+}

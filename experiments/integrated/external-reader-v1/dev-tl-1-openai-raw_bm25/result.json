@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:50.179212+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0cd4e2f056f1b4ae016adaacd6616c87d18fb45b56ad86453b",
+  "usage": {
+    "input_tokens": 6523,
+    "input_tokens_details": {
+      "cache_write_tokens": 6520,
+      "cached_tokens": 0
+    },
+    "output_tokens": 74,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6597
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017046",
+    "total_input_tokens": 6523,
+    "output_tokens": 74,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6520
+  },
+  "text": "{\"answer\":\"2025-11-04;2025-11-06\",\"citations\":[\"D018\",\"D064\"],\"explanation\":\"The Quarrendon Sev 1 occurred on November 4, 2025. The executive-call summary dated November 6 confirms the follow-up call took place that day.\"}",
+  "finished_at": "2026-10-23T00:39:52.680880+00:00",
+  "seconds": 2.501677635998931
+}

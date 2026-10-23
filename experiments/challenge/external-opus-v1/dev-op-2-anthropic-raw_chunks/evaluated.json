@@ -1,0 +1,52 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:49:46.441950+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeMK1jjBq5fD9ct3RVZ",
+  "usage": {
+    "input_tokens": 10619,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1058,
+    "output_tokens_details": {
+      "thinking_tokens": 829
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.063636",
+    "total_input_tokens": 10619,
+    "output_tokens": 1058,
+    "regular_input_tokens": 10619,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D104\",\"D016\",\"D106\",\"D100\"],\"explanation\":\"The July 28, 2025 update covers Dana and Ilse's July 22 Duluth trip for the Quarrendon Freight Lines QBR, which it calls an on-site with Dana's biggest customer, so the travel expenses for \\\"Dana's freight account\\\" point to that account. This reading is an inference: Dana also still held Brackenwater Freight Co. until it moved to Marcus on Sep 15, 2025, and Quarrendon had earlier been Marcus's freight account, called \\\"Marcus's old freight account\\\" by Aug 20, 2025.\"}",
+  "finished_at": "2026-10-23T05:49:59.525580+00:00",
+  "seconds": 13.08364100298786,
+  "id": "dev-op-2-anthropic-raw_chunks",
+  "case_id": "dev-op-2",
+  "arm": "raw_chunks",
+  "context_bytes": 24543,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "output": {
+    "answer": "Quarrendon Freight Lines",
+    "citations": [
+      "D104",
+      "D016",
+      "D106",
+      "D100"
+    ],
+    "explanation": "The July 28, 2025 update covers Dana and Ilse's July 22 Duluth trip for the Quarrendon Freight Lines QBR, which it calls an on-site with Dana's biggest customer, so the travel expenses for \"Dana's freight account\" point to that account. This reading is an inference: Dana also still held Brackenwater Freight Co. until it moved to Marcus on Sep 15, 2025, and Quarrendon had earlier been Marcus's freight account, called \"Marcus's old freight account\" by Aug 20, 2025."
+  }
+}

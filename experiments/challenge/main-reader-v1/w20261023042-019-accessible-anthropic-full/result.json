@@ -1,0 +1,110 @@
+{
+  "id": "w20261023042-019-accessible-anthropic-full",
+  "case_id": "w20261023042-019-accessible",
+  "world": "w20261023042-019",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:02:34.385803+00:00",
+  "evidence_bytes": 28538,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9990000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:02:36Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:02:50Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:02:35Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11990000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:02:36Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfKwBAhn8XYYJTDH35a",
+  "usage": {
+    "input_tokens": 14241,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1851,
+    "output_tokens_details": {
+      "thinking_tokens": 1251
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.093984",
+    "total_input_tokens": 14241,
+    "output_tokens": 1851,
+    "regular_input_tokens": 14241,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-19",
+        "action": "reference_intro",
+        "sources": [
+          "ec2934acdcb3361",
+          "e284080a549f069",
+          "efc867748812419",
+          "ec6861f52e73dc8",
+          "ef39938070e0244",
+          "e67aacb2251c206",
+          "e45ed1874e854bd",
+          "e2ec20bb55de955",
+          "e8e8fe89fd74290",
+          "e69fe342cbf23a7",
+          "e60a60e7f39c2dc"
+        ]
+      },
+      {
+        "account": "Iris-19",
+        "action": "renewal_review",
+        "sources": [
+          "ec2934acdcb3361",
+          "eaa4116bdc2b62c",
+          "e78eda77a8a788c",
+          "e1bdd55a764c837",
+          "e19ebafa7a9ea29",
+          "e05938c269de5dd",
+          "e12b9f596370c97",
+          "e3e72ccb568ac24",
+          "e03a541e78692c8",
+          "e77bfefb8dd329c"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Approved seller policy allows all actions in DE/FR/UK and blocks restricted sectors; the proposed policy and feedback records were ignored. All four queried accounts pass profile, consent and verified-proof chain checks. Kestrel (priority 6, risk) cannot take a workshop because offering-0 capacity is false. Larch (priority 10, growth, proof-1 shareable) qualifies for reference_intro worth 50 at cost 4. Iris (priority 8, renewal) qualifies for renewal_review worth 24 at cost 2. North has priority 1. The best plan within the budget of 6 is Larch reference_intro plus Iris renewal_review, for a total of 74 policy points at cost 6, which beats alternatives such as Larch reference_intro plus Kestrel diagnostic (62) or Iris reference_intro plus Larch diagnostic (60)."
+  },
+  "score": {
+    "optimum": 74,
+    "recoverable_value": 74,
+    "returned_value": 74,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:02:50.916150+00:00",
+  "seconds": 16.53035624101176
+}

@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:19.127148+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01b4f78d523b1a69016adaacb7a42087d19e0b4577391403aa",
+  "usage": {
+    "input_tokens": 6103,
+    "input_tokens_details": {
+      "cache_write_tokens": 6100,
+      "cached_tokens": 0
+    },
+    "output_tokens": 67,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6170
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.015926",
+    "total_input_tokens": 6103,
+    "output_tokens": 67,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6100
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D032\",\"D041\",\"D044\"],\"explanation\":\"The supplied Quarrendon amendments and renewal order preserve earlier agreement provisions but do not state a written non-renewal notice deadline. The underlying agreement containing any such deadline is not supplied.\"}",
+  "finished_at": "2026-10-23T00:39:22.831059+00:00",
+  "seconds": 3.7039221209997777,
+  "id": "dev-gov-3-openai-raw_bm25",
+  "case_id": "dev-gov-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24306,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "The supplied Quarrendon amendments and renewal order preserve earlier agreement provisions but do not state a written non-renewal notice deadline. The underlying agreement containing any such deadline is not supplied.",
+  "citations": [
+    "D032",
+    "D041",
+    "D044"
+  ]
+}

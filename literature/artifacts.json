@@ -1,0 +1,179 @@
+{
+  "observed_at": "2026-10-22",
+  "artifacts": [
+    {
+      "repository": "https://github.com/enterprisemem-bench/enterprisemem-bench",
+      "revision": "819a8bc99db576a21828c2a8e6d273ae2ff023c4",
+      "review_depth": "Full manuscript source, README, bibliography, code/data licenses, four scorer modules and ten-item subset; executed deterministic scorer probes",
+      "reproduced": false,
+      "scorer_diagnostics": "literature/diagnostics/enterprisemem-scorer.json",
+      "model_results_reproduced": false,
+      "code_license": "MIT",
+      "data_license": "CC-BY-4.0"
+    },
+    {
+      "repository": "https://github.com/xiaowu0162/LongMemEval",
+      "revision": "9e0b455f4ef0e2ab8f2e582289761153549043fc",
+      "review_depth": "Pinned README/license plus main-paper methods/results; see critical review limits.",
+      "reproduced": false,
+      "code_license": "MIT"
+    },
+    {
+      "repository": "https://github.com/vectorize-io/hindsight",
+      "revision": "5ecc639c275b8bd3df9f50a29d5cc96965fe8183",
+      "review_depth": "Pinned README/license plus main-paper methods/results; implementation/appendices incomplete.",
+      "reproduced": false,
+      "code_license": "MIT"
+    },
+    {
+      "repository": "https://github.com/getzep/graphiti",
+      "revision": "8e320f880e7d169a907dbf2a7ac4188586c03b55",
+      "review_depth": "Pinned README/license plus Zep main paper; not hosted-system reproduction.",
+      "reproduced": false,
+      "code_license": "Apache-2.0"
+    },
+    {
+      "repository": "https://github.com/microsoft/graphrag",
+      "revision": "c600ff80b77b9b62c47d539a3ac9569e95d8949b",
+      "review_depth": "README and license inspected; full paper/code pending",
+      "reproduced": false,
+      "code_license": "MIT"
+    },
+    {
+      "repository": "https://github.com/xiaowu0162/LongMemEval-V2",
+      "revision": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+      "review_depth": "Pinned README/license plus main-paper methods/results; see critical review limits.",
+      "reproduced": false
+    },
+    {
+      "repository": "https://github.com/MINE-USTC/MemCompile",
+      "revision": "118a26f7a5f4e3f19488e24e093f6bd19e855c73",
+      "review_depth": "README, main paper and src/packet_scheduler.py; not all implementation",
+      "code_license": "unresolved; root LICENSE fetch 404, tree API blocked",
+      "reproduced": false
+    },
+    {
+      "repository": "https://github.com/ielab/memory-systems-vs-rag",
+      "revision": "d67e4b15daedd3e79bb03a6ebb9f57bf46244e5a",
+      "review_depth": "Main paper, README, LICENSE and vendor/VERSIONS.md",
+      "code_license": "MIT for harness; vendored packages retain individual licenses",
+      "reproduced": false
+    },
+    {
+      "repository": "https://github.com/mem0ai/mem0",
+      "revision": "2c81af3bbe27d9bccb09c772d583df9e9be72ee5",
+      "review_depth": "Current README and Apache-2.0 LICENSE; 2025 paper full main/appendices separately reviewed, not the same evaluated version.",
+      "code_license": "Apache-2.0",
+      "reproduced": false
+    },
+    {
+      "repository": "https://github.com/mem0ai/memory-benchmarks",
+      "revision": "4b61c5d31b9c668a12b4f5e78064248a02c82d2b",
+      "review_depth": "README and Apache-2.0 LICENSE only; no code execution, hosted results or dataset subset independently verified.",
+      "code_license": "Apache-2.0",
+      "reproduced": false
+    }
+  ],
+  "pdf_artifact_link_check": {
+    "checked_at": "2026-10-22T08:26:43.549049+00:00",
+    "main_quality_outcomes_inspected": false,
+    "records": [
+      {
+        "arxiv": "2508.11120",
+        "pdf_url": "https://arxiv.org/pdf/2508.11120",
+        "pdf_sha256": "6c2405448abfa06eddf69ecaba6d79c1cd66d9a33e109d2cd6fc1ffe448ffd57",
+        "command": "pdfinfo -url <reviewed PDF>",
+        "https_annotations": [
+          "https://arxiv.org/abs/2508.11120v2"
+        ],
+        "conclusion": "No attributable benchmark repository link identified in these PDF annotations or visible URL text; not proof that code is unavailable."
+      },
+      {
+        "arxiv": "2607.26072",
+        "pdf_url": "https://arxiv.org/pdf/2607.26072",
+        "pdf_sha256": "d82778c14f609db3728174bbf203b30c15e19522afbace7fd52bf3c808d90915",
+        "command": "pdfinfo -url <reviewed PDF>",
+        "https_annotations": [
+          "https://arxiv.org/abs/2607.26072v1",
+          "https://www.anthropic.com/claude-code",
+          "https://doi.org/10.48550/arXiv.2504.19413",
+          "https://doi.org/10.48550/arXiv.2506.07217",
+          "https://doi.org/10.1061/JCCEE5.CPENG-6386",
+          "https://doi.org/10.1061/JCCEE5.CPENG-6386",
+          "https://mediatum.ub.tum.de/node?id=1743921",
+          "https://doi.org/10.1016/j.autcon.2026.106888",
+          "https://doi.org/10.1016/j.autcon.2025.106374",
+          "https://doi.org/10.48550/arXiv.2602.16313",
+          "https://doi.org/10.48550/arXiv.2605.01698",
+          "https://doi.org/10.35490/EC3.2025.265",
+          "https://doi.org/10.35490/EC3.2025.265",
+          "https://doi.org/10.48550/arXiv.2507.05257",
+          "https://ifcopenshell.org/",
+          "https://github.com/langchain-ai/deepagents",
+          "https://doi.org/10.48550/arXiv.2501.13956",
+          "https://doi.org/10.48550/arXiv.2309.02427",
+          "https://doi.org/10.5281/zenodo.20543002",
+          "https://doi.org/10.1080/01621459.1927.10502953",
+          "https://doi.org/10.1080/01621459.1927.10502953",
+          "https://doi.org/10.48550/arXiv.2410.10813",
+          "https://doi.org/10.48550/arXiv.2410.10813",
+          "https://doi.org/10.48550/arXiv.2504.15965",
+          "https://doi.org/10.48550/arXiv.2504.15965",
+          "https://doi.org/10.1016/j.autcon.2023.105067",
+          "https://doi.org/10.1609/aaai.v38i17.29946",
+          "https://doi.org/10.1609/aaai.v38i17.29946"
+        ],
+        "conclusion": "No attributable benchmark repository link identified in these PDF annotations or visible URL text; not proof that code is unavailable."
+      },
+      {
+        "arxiv": "2605.14401",
+        "pdf_url": "https://arxiv.org/pdf/2605.14401",
+        "pdf_sha256": "165bf17237a3820749da75cc0b154abd91a56848e012d8c04f8901ae10828a4d",
+        "command": "pdfinfo -url <reviewed PDF>",
+        "https_annotations": [
+          "https://arxiv.org/abs/2605.14401v2",
+          "https://deepmind.google/models/gemini/",
+          "https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md",
+          "https://www.yelp.com/dataset"
+        ],
+        "conclusion": "No attributable benchmark repository link identified in these PDF annotations or visible URL text; not proof that code is unavailable."
+      }
+    ]
+  },
+  "selected_table_visual_checks": {
+    "checked_at": "2026-10-22T08:33:44.044388+00:00",
+    "reviewer": "Research assistant; not an independent human reviewer",
+    "main_quality_outcomes_inspected": false,
+    "records": [
+      {
+        "arxiv": "2508.11120",
+        "pdf_url": "https://arxiv.org/pdf/2508.11120",
+        "pdf_sha256": "6c2405448abfa06eddf69ecaba6d79c1cd66d9a33e109d2cd6fc1ffe448ffd57",
+        "pdf_pages": [
+          5
+        ],
+        "conclusion": "Visually checked Tables 1\u20133 and the adjacent user-study description. Numerical table values match the review; clarified eight evaluated questions plus two practice questions and separated challenge-table uncertainty from human ratings."
+      },
+      {
+        "arxiv": "2607.26072",
+        "pdf_url": "https://arxiv.org/pdf/2607.26072",
+        "pdf_sha256": "d82778c14f609db3728174bbf203b30c15e19522afbace7fd52bf3c808d90915",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "conclusion": "Visually checked dataset counts, Table 2 answer accuracies, Table 3 ingestion scope, and Figure 3 mixed customization effects against the review."
+      },
+      {
+        "arxiv": "2605.14401",
+        "pdf_url": "https://arxiv.org/pdf/2605.14401",
+        "pdf_sha256": "165bf17237a3820749da75cc0b154abd91a56848e012d8c04f8901ae10828a4d",
+        "pdf_pages": [
+          8
+        ],
+        "conclusion": "Visually checked Table 3: fixed MARS Light User H@1 is .510 and i2Agent is .600; agentic MARS is .620. The reviewed counterexample matches the printed table."
+      }
+    ]
+  }
+}

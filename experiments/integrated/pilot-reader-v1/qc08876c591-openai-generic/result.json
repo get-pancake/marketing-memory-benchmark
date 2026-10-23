@@ -1,0 +1,182 @@
+{
+  "id": "qc08876c591-openai-generic",
+  "case_id": "qc08876c591",
+  "world": "wd25e532f",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P2",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2023,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:30.257400+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f3e56ec109a4412016adaa48e5f8487d198dbb76360c44b3b",
+  "usage": {
+    "input_tokens": 1144,
+    "input_tokens_details": {
+      "cache_write_tokens": 1141,
+      "cached_tokens": 0
+    },
+    "output_tokens": 186,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1330
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047185",
+    "total_input_tokens": 1144,
+    "output_tokens": 186,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1141
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S14",
+      "account.account_role:observed": "S8",
+      "account.observed_signal:observed": "S16",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S7",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S13"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0854fa6",
+          "e44a4882",
+          "e57771ed",
+          "ebd2e8f2",
+          "ecdd4fa3",
+          "e359b769",
+          "e9ae8049"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-790",
+      "objective": "hiring",
+      "template": "P4",
+      "policy_versions": [
+        "e0854fa6",
+        "e44a4882"
+      ],
+      "evidence": [
+        "e0854fa6",
+        "e359b769",
+        "e44a4882",
+        "e57771ed",
+        "e9ae8049",
+        "ebd2e8f2",
+        "ecdd4fa3"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed hiring context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0854fa6",
+          "e44a4882",
+          "e57771ed",
+          "ebd2e8f2",
+          "ecdd4fa3",
+          "e359b769",
+          "e9ae8049"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-790",
+      "objective": "hiring",
+      "template": "P4",
+      "policy_versions": [
+        "e0854fa6",
+        "e44a4882"
+      ],
+      "evidence": [
+        "e0854fa6",
+        "e359b769",
+        "e44a4882",
+        "e57771ed",
+        "e9ae8049",
+        "ebd2e8f2",
+        "ecdd4fa3"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed hiring context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 satisfies the hiring objective within the three-unit allowance, with matching approved and observed role and geography (S1, S7, S8, S14) and the required hiring signal and onboarding offering and proof (S16, S4, S13). S17 is a proposal and does not change approved geography; the missing procurement stage blocks P1, not P4.",
+  "finished_at": "2026-10-23T00:04:34.234299+00:00",
+  "seconds": 3.976921964000212
+}

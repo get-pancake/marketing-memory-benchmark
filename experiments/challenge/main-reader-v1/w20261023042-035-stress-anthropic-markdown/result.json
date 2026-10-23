@@ -1,0 +1,102 @@
+{
+  "id": "w20261023042-035-stress-anthropic-markdown",
+  "case_id": "w20261023042-035-stress",
+  "world": "w20261023042-035",
+  "family": "professional_services",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:56:57.869756+00:00",
+  "evidence_bytes": 8081,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9997000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:56:59Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:57:06Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:56:58Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:56:59Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeu85p8nH1izTr9vzd2",
+  "usage": {
+    "input_tokens": 5117,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 860,
+    "output_tokens_details": {
+      "thinking_tokens": 260
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.037668",
+    "total_input_tokens": 5117,
+    "output_tokens": 860,
+    "regular_input_tokens": 5117,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Delta-35",
+        "action": "diagnostic",
+        "sources": [
+          "e1833a9cb62bcf8",
+          "e9179d0f1d73c96",
+          "e9d3997de027f19",
+          "e59fd6cf637214d",
+          "ec4a0487a84c11b",
+          "ed6e694e1b83441",
+          "e302046c8227cf2",
+          "e4ff083181b570d",
+          "e5eccc83ea1b00c",
+          "ed2db1e4e26c516"
+        ]
+      }
+    ],
+    "missing": [
+      "Approved shareable flag on proof-0, needed for a reference_intro for Delta-35",
+      "All eligibility evidence (profile, consent, signal, initiative chain, approved priority) for Harbor-35",
+      "All eligibility evidence for Mesa-35",
+      "All eligibility evidence for Orchid-35",
+      "All eligibility evidence for Larch-35",
+      "All eligibility evidence for Grove-35",
+      "All eligibility evidence for Birch-35",
+      "All eligibility evidence for Pine-35"
+    ],
+    "reasoning_summary": "The approved seller policy allows all actions in US, DE and UK and blocks only the restricted sector. The proposed policy is not approved, so it was ignored. Delta-35 qualifies: its profile is US/services, consent is observed true, and its observed signal is growth. Its chain is complete: initiative-0 to need-0 to offering-0 to proof-0, and proof-0 is approved verified true. Its approved priority is 8. Two higher-value growth actions do not work: reference_intro needs an approved shareable flag on the proof, which is missing, and workshop and assurance_pack do not match the growth signal. Diagnostic scores 8 x 2 = 16 at a cost of 2, which beats research_brief at 8. No other queried account has any supplied evidence, so only one action is supported. Total cost is 2 of the budget of 8."
+  },
+  "score": {
+    "optimum": 80,
+    "recoverable_value": 16,
+    "returned_value": 16,
+    "normalized_value": 0.2,
+    "context_normalized_value": 0.2,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T05:57:06.830483+00:00",
+  "seconds": 8.960737561996211
+}

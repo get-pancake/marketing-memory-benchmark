@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.614528+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0074221bf8202c3e016adaaddd243887d18380d5378cbd2310",
+  "usage": {
+    "input_tokens": 6526,
+    "input_tokens_details": {
+      "cache_write_tokens": 6523,
+      "cached_tokens": 0
+    },
+    "output_tokens": 73,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6599
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0170435",
+    "total_input_tokens": 6526,
+    "output_tokens": 73,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6523
+  },
+  "text": "{\"answer\":\"10\",\"citations\":[\"D041\",\"D082\"],\"explanation\":\"The signed renewal establishes a 10% discount effective 2026-04-01, so it applies on 2026-05-01. Its controlling terms override the conflicting 12% stated in the renewal debrief.\"}",
+  "finished_at": "2026-10-23T00:44:15.871894+00:00",
+  "seconds": 3.257370221996098,
+  "id": "dev-gov-2-openai-raw_chunks",
+  "case_id": "dev-gov-2",
+  "arm": "raw_chunks",
+  "context_bytes": 24543,
+  "answer_correct": true,
+  "answer": "10",
+  "citations": [
+    "D041",
+    "D082"
+  ],
+  "explanation": "The signed renewal establishes a 10% discount effective 2026-04-01, so it applies on 2026-05-01. Its controlling terms override the conflicting 12% stated in the renewal debrief.",
+  "citation_ids_valid": true
+}

@@ -1,0 +1,48 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:43.776599+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEi1t9XEKj9P9t2APbv",
+  "usage": {
+    "input_tokens": 120886,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 143,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.243202",
+    "total_input_tokens": 120886,
+    "output_tokens": 143,
+    "regular_input_tokens": 120886,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D034\",\"D035\"],\"explanation\":\"The Brackenwater customer redline dated 2025-10-28 (D034) is marked unsigned and for review only, with all signature blocks blank and pending CFO sign-off. The renewal that was actually executed on 2025-11-21 is a separate order form (D035) with 64 seats at an 8% discount, not the redline's 75 seats at 15%.\"}",
+  "finished_at": "2026-10-23T00:39:46.290262+00:00",
+  "seconds": 2.5136721770104486,
+  "id": "dev-st-1-anthropic-raw_full",
+  "case_id": "dev-st-1",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "false",
+  "explanation": "The Brackenwater customer redline dated 2025-10-28 (D034) is marked unsigned and for review only, with all signature blocks blank and pending CFO sign-off. The renewal that was actually executed on 2025-11-21 is a separate order form (D035) with 64 seats at an 8% discount, not the redline's 75 seats at 15%.",
+  "citations": [
+    "D034",
+    "D035"
+  ]
+}

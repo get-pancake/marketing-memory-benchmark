@@ -1,0 +1,115 @@
+{
+  "id": "q5f5e1afd71-openai-gbrain",
+  "case_id": "q5f5e1afd71",
+  "world": "w3cc12387",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.75,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.2222222222222222,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2021,
+  "status": "completed",
+  "started_at": "2026-10-23T00:39:59.492331+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39995353",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "6ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01a466747f2b37cc016adaacdfc4cc87d1aa34f074c269e1cd",
+  "usage": {
+    "input_tokens": 1966,
+    "input_tokens_details": {
+      "cache_write_tokens": 912,
+      "cached_tokens": 1051
+    },
+    "output_tokens": 184,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2150
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0042311",
+    "total_input_tokens": 1966,
+    "output_tokens": 184,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1051,
+    "cache_write_tokens": 912
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_geo:approved"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S7",
+      "account.certification:observed": "S1",
+      "account.observed_signal:observed": "S16",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": "S2",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_geo:approved"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_geo:approved"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 matches the qualification_audit objective and fits the resource allowance, but seller.approved_geo:approved is missing, so geographic alignment with the account's UK location (S17) cannot be verified. The approved and observed roles match (S2, S7).",
+  "finished_at": "2026-10-23T00:40:03.605727+00:00",
+  "seconds": 4.113406161995954
+}

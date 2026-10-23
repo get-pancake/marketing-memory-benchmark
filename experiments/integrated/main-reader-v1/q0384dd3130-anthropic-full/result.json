@@ -1,0 +1,129 @@
+{
+  "id": "q0384dd3130-anthropic-full",
+  "case_id": "q0384dd3130",
+  "world": "w91790027",
+  "arm": "full",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.3023255813953488,
+    "selected_sources": 43,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 4864,
+  "status": "completed",
+  "started_at": "2026-10-23T00:51:12.475599+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9998000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:51:14Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:51:21Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:51:12Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11997000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:51:14Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJFankHnrPBSciHJiFhn",
+  "usage": {
+    "input_tokens": 6234,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 986,
+    "output_tokens_details": {
+      "thinking_tokens": 641
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.022328",
+    "total_input_tokens": 6234,
+    "output_tokens": 986,
+    "regular_input_tokens": 6234,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Resolved current approved seller role that equals the account role (S5 and S22 conflict)",
+      "account.partner_status:observed=verified (S37 shows withdrawn)",
+      "account.procurement_stage:observed (needed only for P3)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S2",
+      "account.account_role:observed": "S19",
+      "account.channel_fit:observed": "S23",
+      "account.partner_status:observed": "S37",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S38",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S4"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolved current approved seller role that equals the account role (S5 and S22 conflict)",
+      "account.partner_status:observed=verified (S37 shows withdrawn)",
+      "account.procurement_stage:observed (needed only for P3)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolved current approved seller role that equals the account role (S5 and S22 conflict)",
+      "account.partner_status:observed=verified (S37 shows withdrawn)",
+      "account.procurement_stage:observed (needed only for P3)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "All partner templates are blocked. Approved role conflicts (S5 operations_director vs S22 unrelated_role), so the role equality with account role (S19) cannot be confirmed, and partner status is withdrawn (S37) rather than verified. P4 is a qualification_audit, which does not match the partner objective.",
+  "finished_at": "2026-10-23T00:51:21.249401+00:00",
+  "seconds": 8.773811808001483
+}

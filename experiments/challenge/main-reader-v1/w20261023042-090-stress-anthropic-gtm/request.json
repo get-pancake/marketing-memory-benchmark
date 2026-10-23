@@ -1,0 +1,84 @@
+{
+  "model": "claude-opus-5-5",
+  "system": "You are a marketing decision-support analyst. Use only supplied current company evidence and the common action catalog. Select up to three actions for distinct accounts to maximize the SUM of approved priority times catalog multiplier under the query's shared cost budget. These policy points are synthetic priorities, NOT expected revenue. Check every action separately; do not let one ineligible account block another.\nEligibility for every action requires: seller policy is approved, the account profile region is allowed and sector not blocked, the action is approved by policy, current observed consent is true, and the signal matches the catalog. Follow account.initiative -> initiative.need -> need.offering -> offering.proof -> proof.verified; verified must be approved true. Account priority must be approved and an integer. Profile, consent, initiative, need, offering, proof and signal require observed authority. Additional capacity and assurance are approved true on the offering; shareable is approved true on the proof. The account itself must be in the query. Missing facts and conflicting current values at the required authority block the affected action. Proposed policies and feedback are not approved facts. Never assume a missing fact.\nAll supplied records have already passed the current-view filter. A later timestamp alone NEVER supersedes another supplied current record. If supplied values conflict at the required authority, abstain for that requirement even when one record has a later date.\nFor each chosen action cite ALL supplied source IDs required for its eligibility AND priority, including policy and every link in the chain. Do not cite unrelated records as proof. Distinct-account, cost and maximum-action constraints apply to the whole plan. When no supported action is available return an empty actions list and request missing evidence. Return the exact JSON schema, with a short reasoning summary and a missing-evidence list. Do not invent company facts or predicted conversion rates.",
+  "messages": [
+    {
+      "content": "{\"catalog\":[{\"cost\":2,\"extra\":[],\"id\":\"diagnostic\",\"multiplier\":2,\"signals\":[\"risk\",\"growth\"]},{\"cost\":3,\"extra\":[\"capacity\"],\"id\":\"workshop\",\"multiplier\":4,\"signals\":[\"risk\",\"launch\"]},{\"cost\":2,\"extra\":[],\"id\":\"renewal_review\",\"multiplier\":3,\"signals\":[\"renewal\"]},{\"cost\":4,\"extra\":[\"shareable\"],\"id\":\"reference_intro\",\"multiplier\":5,\"signals\":[\"growth\",\"renewal\"]},{\"cost\":3,\"extra\":[\"assurance\"],\"id\":\"assurance_pack\",\"multiplier\":4,\"signals\":[\"risk\"]},{\"cost\":1,\"extra\":[],\"id\":\"research_brief\",\"multiplier\":1,\"signals\":[\"risk\",\"growth\",\"renewal\",\"launch\"]}],\"company_evidence\":[{\"authority\":\"approved\",\"entity\":\"seller\",\"id\":\"e7c45b240873856\",\"observed_day\":12,\"relation\":\"policy\",\"valid_day\":12,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[\"US\",\"FR\",\"UK\"],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"proposed\",\"entity\":\"seller\",\"id\":\"eb3c9bc2f1cc090\",\"observed_day\":25,\"relation\":\"policy\",\"valid_day\":25,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"approved\",\"entity\":\"Juniper-90\",\"id\":\"e18223ae0e26d30\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":12},{\"authority\":\"observed\",\"entity\":\"Juniper-90\",\"id\":\"e50f2478051d315\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-7\"},{\"authority\":\"observed\",\"entity\":\"Juniper-90\",\"id\":\"ea32039496c5a7a\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"renewal\"},{\"authority\":\"observed\",\"entity\":\"Juniper-90\",\"id\":\"ed0caa84e3a90dc\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":false},{\"authority\":\"observed\",\"entity\":\"Juniper-90\",\"id\":\"ee401616c51846e\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"services\"}},{\"authority\":\"observed\",\"entity\":\"initiative-7\",\"id\":\"e20668b2a8f9874\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-7\"},{\"authority\":\"observed\",\"entity\":\"need-7\",\"id\":\"e2fb92e2b7e87cd\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-7\"},{\"authority\":\"observed\",\"entity\":\"offering-7\",\"id\":\"e7582cd4c679eb3\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-7\"},{\"authority\":\"approved\",\"entity\":\"offering-7\",\"id\":\"eb5905ca62c359d\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-7\",\"id\":\"ec4e627eb1f3a0b\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-7\",\"id\":\"e0138c43ef88d27\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-7\",\"id\":\"e2693354bb6acee\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"Delta-90\",\"id\":\"e1c6d5ca1e14a45\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":2},{\"authority\":\"observed\",\"entity\":\"Delta-90\",\"id\":\"e5842127ff60229\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"growth\"},{\"authority\":\"observed\",\"entity\":\"Delta-90\",\"id\":\"e71edb90dcefa60\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"DE\",\"sector\":\"manufacturing\"}},{\"authority\":\"observed\",\"entity\":\"Delta-90\",\"id\":\"ec0fe9f6282ab9c\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Delta-90\",\"id\":\"ed48d6ab3e9a092\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-2\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e4cf8f6c8dbba45\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-2\"},{\"authority\":\"observed\",\"entity\":\"need-2\",\"id\":\"e9f8e9913445207\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-2\"},{\"authority\":\"approved\",\"entity\":\"offering-2\",\"id\":\"e4e1989c3260855\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-2\",\"id\":\"e6103d7da71557d\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"ece32f9e7fecdb0\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-2\"},{\"authority\":\"approved\",\"entity\":\"proof-2\",\"id\":\"eb25b8b2c67d385\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":false},{\"authority\":\"approved\",\"entity\":\"proof-2\",\"id\":\"ef669c5e3c27840\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"North-90\",\"id\":\"e08a3e27352f2a8\",\"observed_day\":24,\"relation\":\"consent\",\"valid_day\":24,\"value\":false},{\"authority\":\"observed\",\"entity\":\"North-90\",\"id\":\"e66e84ff610ab54\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"North-90\",\"id\":\"e24a7a61008b267\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"restricted\"}},{\"authority\":\"observed\",\"entity\":\"North-90\",\"id\":\"ec3eebc76a14ec0\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-3\"},{\"authority\":\"approved\",\"entity\":\"North-90\",\"id\":\"ed3383058f4de22\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":12},{\"authority\":\"observed\",\"entity\":\"North-90\",\"id\":\"ed541946162270e\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"renewal\"},{\"authority\":\"observed\",\"entity\":\"initiative-3\",\"id\":\"e6a242817fdac9b\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-3\"},{\"authority\":\"observed\",\"entity\":\"need-3\",\"id\":\"e5aab5eb4a13324\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-3\"},{\"authority\":\"approved\",\"entity\":\"offering-3\",\"id\":\"e118b48c833ff0f\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"offering-3\",\"id\":\"e44fab041c4b871\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-3\"},{\"authority\":\"approved\",\"entity\":\"offering-3\",\"id\":\"e8091b7f5fc514e\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-3\",\"id\":\"ecd5079977231e5\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-3\",\"id\":\"eed982929e0d2d2\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Cedar-90\",\"id\":\"e2716b6bedbcc41\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"launch\"},{\"authority\":\"observed\",\"entity\":\"Cedar-90\",\"id\":\"e7f852a1d916762\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"manufacturing\"}},{\"authority\":\"approved\",\"entity\":\"Cedar-90\",\"id\":\"ea465d67702f5e6\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":1},{\"authority\":\"observed\",\"entity\":\"Cedar-90\",\"id\":\"eac14436d6d1c58\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-6\"},{\"authority\":\"observed\",\"entity\":\"Cedar-90\",\"id\":\"ecf87a780249744\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"initiative-6\",\"id\":\"e49e1eaa02c3c2c\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-6\"},{\"authority\":\"observed\",\"entity\":\"need-6\",\"id\":\"eade3014c42379d\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-6\"},{\"authority\":\"approved\",\"entity\":\"offering-6\",\"id\":\"e0266fae7de8c8d\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-6\",\"id\":\"e72aab83804805f\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"offering-6\",\"id\":\"e9ede88f1c04e9d\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-6\"},{\"authority\":\"approved\",\"entity\":\"proof-6\",\"id\":\"e34af3c088a2eba\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":false},{\"authority\":\"approved\",\"entity\":\"proof-6\",\"id\":\"ec5c9db3c473f39\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Elm-90\",\"id\":\"e022009145107f0\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Elm-90\",\"id\":\"ebfe05f61456c06\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-5\"},{\"authority\":\"approved\",\"entity\":\"Elm-90\",\"id\":\"ec65dca30ab761f\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":4},{\"authority\":\"observed\",\"entity\":\"Elm-90\",\"id\":\"edec9ae45669d06\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"renewal\"},{\"authority\":\"observed\",\"entity\":\"Elm-90\",\"id\":\"ee6550656d39e75\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"manufacturing\"}}],\"query\":{\"access\":[\"public\"],\"accounts\":[\"Iris-90\",\"Flint-90\",\"Delta-90\",\"North-90\",\"Mesa-90\",\"Elm-90\",\"Cedar-90\",\"Juniper-90\"],\"budget\":8,\"day\":30,\"objective\":\"Maximize approved marketing priority within the shared cost allowance; each account at most once.\"}}",
+      "role": "user"
+    }
+  ],
+  "max_tokens": 8192,
+  "thinking": {
+    "type": "adaptive"
+  },
+  "output_config": {
+    "effort": "high",
+    "format": {
+      "type": "json_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "account": {
+                  "type": "string",
+                  "enum": [
+                    "Iris-90",
+                    "Flint-90",
+                    "Delta-90",
+                    "North-90",
+                    "Mesa-90",
+                    "Elm-90",
+                    "Cedar-90",
+                    "Juniper-90"
+                  ]
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reasoning_summary": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "w20261023042-114-accessible-openai-markdown",
+  "case_id": "w20261023042-114-accessible",
+  "world": "w20261023042-114",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:02:56.814537+00:00",
+  "evidence_bytes": 16350,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999562",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08646d4c6bac8611016adaf891ac0487d1bc7b52c43b3dc5ea",
+  "usage": {
+    "input_tokens": 5702,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 5699
+    },
+    "output_tokens": 580,
+    "output_tokens_details": {
+      "reasoning_tokens": 110
+    },
+    "total_tokens": 6282
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0063759",
+    "total_input_tokens": 5702,
+    "output_tokens": 580,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 5699,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-114",
+        "action": "workshop",
+        "sources": [
+          "e37ba4a40924e0f",
+          "e4c55727004fd8b",
+          "eeec30054706065",
+          "e9c1286116aa25b",
+          "eb553030c19f955",
+          "e9e40f9a623580f",
+          "e935288bab081e6",
+          "e97fe84fdff9fcd",
+          "eaa26c7d3e24aca",
+          "e2f7312ad06d079",
+          "e5fca07fab28e7f"
+        ]
+      },
+      {
+        "account": "Cedar-114",
+        "action": "renewal_review",
+        "sources": [
+          "e37ba4a40924e0f",
+          "e55f6a5ed6813b0",
+          "ece9d954c63a65a",
+          "e92b42c4c11ddf0",
+          "ead1c79e5e49c4c",
+          "ec5c6055a93389e",
+          "eec5201b564ab8c",
+          "e995e927ef00f53",
+          "ed20bda001c221c",
+          "e8d7c294d5c2070"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-114: observed account-to-initiative, initiative-to-need, need-to-offering and offering-to-proof links, plus approved proof.verified=true. A workshop additionally requires approved offering.capacity=true."
+    ],
+    "reasoning_summary": "The optimal supported plan scores 50 synthetic priority points: North workshop 11×4=44 and Cedar renewal review 2×3=6. Total cost is 5 of 6, with distinct accounts. Harbor is ineligible because its sector is blocked, consent is false and proof verification is false. Aster lacks the required evidence chain. The proposed seller policy is not approved evidence."
+  },
+  "score": {
+    "optimum": 68,
+    "recoverable_value": 50,
+    "returned_value": 50,
+    "normalized_value": 0.7352941176470589,
+    "context_normalized_value": 0.7352941176470589,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 5
+  },
+  "finished_at": "2026-10-23T06:03:08.293647+00:00",
+  "seconds": 11.479119633993832
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.611127+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c787a9375fc1800016adaaddd1f3887d1bec88906b27bcd96",
+  "usage": {
+    "input_tokens": 6344,
+    "input_tokens_details": {
+      "cache_write_tokens": 6341,
+      "cached_tokens": 0
+    },
+    "output_tokens": 71,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6415
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0165685",
+    "total_input_tokens": 6344,
+    "output_tokens": 71,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6341
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D106\"],\"explanation\":\"The September 15, 2025 update uses \u201cDana's freight account\u201d within the Quarrendon Freight Lines section, where Dana Okafor is checking user invitations against Thea Ramaswell\u2019s roster.\"}",
+  "finished_at": "2026-10-23T00:44:15.541347+00:00",
+  "seconds": 2.93025592599588
+}

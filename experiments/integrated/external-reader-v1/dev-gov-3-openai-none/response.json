@@ -1,0 +1,128 @@
+{
+  "id": "resp_00f7c70b1b5216e5016adaace3081c87d190b49005069faacd",
+  "object": "response",
+  "created_at": 1792716003,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792716005,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00f7c70b1b5216e5016adaace40f3887d1869e41393b4fb111",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzlDvHE4irfyOVDjB-9oNOXNGNmDLFauQbFOXLRXNKqJg5o_4Hrd80FjQLgPR2Ynm2_O8cHOMw-OVXg4z-FHPxHaxa5Y7eQ6iC9gQqqH-y7MIBYAicSZDcHDvO1wCcfSY3fp8o0PLc5c60Oaz_qNqm41TF9j3nJJ_hDATB5Lde0ackXCsjJVRiBK-DU-KzBr-SFinXDUdEX91_y1u-90Pg6nsl2k0sS4H1yeENRQD_W51_sKXP85D5YqZ8NiYo3lG1K2wjEhqKbri1HxI-0J_jQlU_xn_WdahNsrntOGHte11yecNkd4bDLI7ziDx5cG0UUwyKY8z-NvQHWJA5O4rTWrtQoVoDjGQAV2YcPJyDzPP06darZbG7X_MA5oa4OuKV8NuxajAcgiAyaMnsA8X5FBmLd15ZxEyCMDuiT1AD6E0u3UCF-aOg-4XDWd0YdjBclLtuUW7dV6bT2M5tALAPaVb23_KxVfjQvMWjdZYIqbXeA0RHCx0OSGYZEAd8exMeTU5SEMSyBUa51PQmd5udJexZLCtYVk_znyDqdlg6aVzE-okjg2Sr_0a0LS9v3azM6JSyyl8OL92QjGRrXvxtoYYfRv8gZSvd0Ez4leFopUgF0Pc_jLKswDRM575NWzi3EynlS_HDj9ch35GuxtvnXYAoc6AqrWFnGHKHUFeaTGCHovsNldBZEo1-CYhI1Yurh4LaJ1dieyNjknMtU8lk4aWvnnkd-8EPs-x4nz8Ph9CV2pKHE5DywfUO-L7s9bOzHkM9_d49jRkA1bSSFDAFSPSAsdY1NvP_trjcn755XBc1hXarAw5jWmcLu6rpL9uAEfJjcpkTY8hjvdaoXMqSdGnXJcq2mSTCpxxGMnYE6I7uhNTpcl8Ur3bHVKBm_ieOLpqcH3cnYrCiS1BRG3myjigy8p5Fh2W71PVTpzck1StaLWYZkSM7_79RMW1muM-BV-xrhsfhAeUwcXxQ5oSE14O7Oo1ReXHrx3RvjM3XzkPtymXGh8FHBuSI2a-moe3J2T9ZRhwgeQszcQuzIiLKfL7eFtiB3nHHp_G-mu7YjLVjsrup2OdLiFR5Dvvf8aoRc-M6VuUNE_-eswA5GtSkez4iS88c-a2OrUjx8028CC6CfoIGQOdhdaUko0LVey8uHT-gFW6mBON15Nrd4rpXPr_zMBUqpmrEnz6gjHUFB0AnfGIF9X9rKkYlnJgNmTY01uhGzRcMHg_PZNsGMzYNYKqQ0_vtqLXHJ3PIBfD0QsAqN7RHWU0iUyP4vN2mWpt7IyfZMBiC0_fz2uZgumV04_6jushTaDqK93QWKhB-kaLEqz-tCLx0muk7K50XK0ozJNTl7d4cvKdUx_9GLOQszYOIYZYGfyfHwx3UL1xnlpWie2guoLHCv5dDK4lqnJE3EKubtaAeCy3pJ71Xv583lS-Fa3lee8LcE7XAeigC2uLw1MfpPK6GYaqdXAVkr9LKYiMl1HlZHOOxPjbvRI5drTa5RuJ5HDxWNtTk7aVKYgLHteN3VmyJcvxqZ5-dS3Qdp",
+      "summary": []
+    },
+    {
+      "id": "msg_00f7c70b1b5216e5016adaace4466487d191415e3516f93fa5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied documents record the written notice period required for Quarrendon to prevent continuation of the agreement with Pemberline.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 270,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 58,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 328
+  },
+  "user": null,
+  "metadata": {}
+}

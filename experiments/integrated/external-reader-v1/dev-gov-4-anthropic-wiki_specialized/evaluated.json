@@ -1,0 +1,50 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:05.228925+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfBwZ675g4pvbYgPNg",
+  "usage": {
+    "input_tokens": 26476,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 159,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.054542",
+    "total_input_tokens": 26476,
+    "output_tokens": 159,
+    "regular_input_tokens": 26476,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\",\"D002\",\"D115\"],\"explanation\":\"The executed affiliate amendment (effective Oct 15, 2025) set Marrow Agrisupply to Tier 1 (40 seats), and the May 1, 2026 shared renewal preserved MAS seats/SLA, with the September page still showing Tier 1. The May 11 weekly claiming Tier 2 like the parent is not backed by any executed reversion.\"}",
+  "finished_at": "2026-10-23T00:39:08.263775+00:00",
+  "seconds": 3.034848442999646,
+  "id": "dev-gov-4-anthropic-wiki_specialized",
+  "case_id": "dev-gov-4",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tier 1",
+  "explanation": "The executed affiliate amendment (effective Oct 15, 2025) set Marrow Agrisupply to Tier 1 (40 seats), and the May 1, 2026 shared renewal preserved MAS seats/SLA, with the September page still showing Tier 1. The May 11 weekly claiming Tier 2 like the parent is not backed by any executed reversion.",
+  "citations": [
+    "D033",
+    "D042",
+    "D002",
+    "D115"
+  ]
+}

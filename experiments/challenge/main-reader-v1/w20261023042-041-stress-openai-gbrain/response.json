@@ -1,0 +1,162 @@
+{
+  "id": "resp_08b58d8e5f2e46ec016adaf661327087d1bcdd0aaefbaa7ab9",
+  "object": "response",
+  "created_at": 1792734817,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734821,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_08b58d8e5f2e46ec016adaf66252bc87d1b548926d8eabcf28",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"For each queried account, provide observed profile evidence showing region and sector, current observed consent=true, and an observed signal matching a catalog action.\",\"For each queried account, provide the observed account.initiative \u2192 initiative.need \u2192 need.offering \u2192 offering.proof chain, plus approved proof.verified=true for the linked proof.\",\"For reference_intro, also provide approved shareable=true on the linked proof. For workshop or assurance_pack, provide approved capacity=true or assurance=true, respectively, on the linked offering wherever not already supported.\"],\"reasoning_summary\":\"No action is eligible: all eight accounts lack required observed profile, consent, signal, and chain evidence, and no linked proof has approved verification. Approved priorities and seller policy are supplied, but cannot establish eligibility alone. The proposed policy does not override the approved policy. No budget is spent.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Iris-41",
+                    "Mesa-41",
+                    "Elm-41",
+                    "Grove-41",
+                    "Delta-41",
+                    "North-41",
+                    "Kestrel-41",
+                    "Flint-41"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3101,
+    "input_tokens_details": {
+      "cache_write_tokens": 3098,
+      "cached_tokens": 0
+    },
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3283
+  },
+  "user": null,
+  "metadata": {}
+}

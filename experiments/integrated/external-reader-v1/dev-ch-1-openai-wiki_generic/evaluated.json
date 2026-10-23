@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:02.858660+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c6caafc7c583314016adaace3308087d19c47e9506c77aff0",
+  "usage": {
+    "input_tokens": 17580,
+    "input_tokens_details": {
+      "cache_write_tokens": 17577,
+      "cached_tokens": 0
+    },
+    "output_tokens": 80,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17660
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0447485",
+    "total_input_tokens": 17580,
+    "output_tokens": 80,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17577
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D001\",\"D051\"],\"explanation\":\"The executed renewal sets the term end to November 30, 2026, corroborated by the account page. The February CRM note's December 31 date conflicts with the signed terms and does not establish a contractual change.\"}",
+  "finished_at": "2026-10-23T00:40:06.762564+00:00",
+  "seconds": 3.9039157070073998,
+  "id": "dev-ch-1-openai-wiki_generic",
+  "case_id": "dev-ch-1",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-11-30",
+  "explanation": "The executed renewal sets the term end to November 30, 2026, corroborated by the account page. The February CRM note's December 31 date conflicts with the signed terms and does not establish a contractual change.",
+  "citations": [
+    "D035",
+    "D001",
+    "D051"
+  ]
+}

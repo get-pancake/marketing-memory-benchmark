@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-004-stress-openai-markdown",
+  "case_id": "w20261023042-004-stress",
+  "world": "w20261023042-004",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:52:18.089798+00:00",
+  "evidence_bytes": 8153,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999658",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e5f869bd5e2c4f7016adaf612d49087d18e283e0ba73aa725",
+  "usage": {
+    "input_tokens": 3222,
+    "input_tokens_details": {
+      "cache_write_tokens": 3219,
+      "cached_tokens": 0
+    },
+    "output_tokens": 485,
+    "output_tokens_details": {
+      "reasoning_tokens": 139
+    },
+    "total_tokens": 3707
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0129035",
+    "total_input_tokens": 3222,
+    "output_tokens": 485,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3219
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-4",
+        "action": "workshop",
+        "sources": [
+          "e38083eabfd0828",
+          "e454d9c32904b18",
+          "ea77e58a376b59f",
+          "ecb8e23c761fae6",
+          "ed15a5c240a50df",
+          "ed238281fa0e355",
+          "e29900783844c5f",
+          "eede5583aceabc0",
+          "eec9c342df250f4",
+          "e397da813d4829b",
+          "e98186f35f77027"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-4: provide an observed profile, signal, and complete initiative → need → offering → proof chain, plus approved true proof verification.",
+      "Birch-4, Juniper-4, Kestrel-4, Grove-4, Aster-4 and Orchid-4: provide observed profiles, true consent, signals and complete initiative → need → offering → proof chains, plus approved integer priorities and approved true proof verification."
+    ],
+    "reasoning_summary": "Larch-4's workshop is eligible and maximizes supported priority points: 4 × 4 = 16, at cost 3 within budget 8. Its launch signal matches the catalog and offering capacity is approved true. No other account has sufficient evidence for an eligible action. The proposed policy and feedback do not alter approved eligibility."
+  },
+  "score": {
+    "optimum": 77,
+    "recoverable_value": 16,
+    "returned_value": 16,
+    "normalized_value": 0.2077922077922078,
+    "context_normalized_value": 0.2077922077922078,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:52:27.848435+00:00",
+  "seconds": 9.758648713992443
+}

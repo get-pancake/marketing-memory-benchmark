@@ -1,0 +1,129 @@
+{
+  "id": "w20261023041-004-accessible-anthropic-markdown",
+  "case_id": "w20261023041-004-accessible",
+  "world": "w20261023041-004",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:14:20.441988+00:00",
+  "evidence_bytes": 16312,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:14:22Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:14:37Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:14:20Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:14:22Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbea21rZWuXnGohqnmy",
+  "usage": {
+    "input_tokens": 8768,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1971,
+    "output_tokens_details": {
+      "thinking_tokens": 1153
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.074492",
+    "total_input_tokens": 8768,
+    "output_tokens": 1971,
+    "regular_input_tokens": 8768,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-4",
+        "action": "workshop",
+        "sources": [
+          "ecd9405362b6dd6",
+          "e43e2389908cc06",
+          "e300260caf83565",
+          "e1a69a9d6599651",
+          "efcf7d23ea53f51",
+          "e0eaa35669cf6e4",
+          "ed2b97cbe382654",
+          "eedeb2a78b06b6d",
+          "e7a043c194c863a",
+          "ef38b168af1493e",
+          "e96ee7267099c64"
+        ]
+      },
+      {
+        "account": "Pine-4",
+        "action": "renewal_review",
+        "sources": [
+          "ecd9405362b6dd6",
+          "e95616b2a52eaed",
+          "e7f14e215baf5f8",
+          "e3ac0da928baacd",
+          "e9a4c0abed2d83a",
+          "e27a23fe7e91d03",
+          "e63e650369c8eaa",
+          "e696049f6af4283",
+          "ecbf70c32a235fa",
+          "e54c1893e1043dc"
+        ]
+      },
+      {
+        "account": "Mesa-4",
+        "action": "research_brief",
+        "sources": [
+          "ecd9405362b6dd6",
+          "ed1d660b9dcd9de",
+          "e6923c57a4c2a19",
+          "e8b534979c07d81",
+          "ea34f09a87c7273",
+          "e42f3966c685783",
+          "e8eb46b6df33ab4",
+          "eea50094f61e19a",
+          "ecf58c679fdb933",
+          "e155499d2d27934"
+        ]
+      }
+    ],
+    "missing": [
+      "Kestrel-4: profile region US is not in the approved allowed regions (FR, DE, UK); an approved policy change or corrected profile would be needed before any action",
+      "Kestrel-4: no need/offering/proof chain from initiative-1 was supplied"
+    ],
+    "reasoning_summary": "The approved seller policy (ecd9405362b6dd6) allows FR, DE and UK; the proposed policy was ignored. Kestrel-4 is ineligible because its region is US. Birch-4 (FR, risk, priority 11) has a full verified chain with approved capacity, so a workshop scores 11x4=44 at cost 3. Pine-4 (FR, renewal, priority 8) is eligible for renewal_review, scoring 24 at cost 2. Mesa-4 (DE, launch, priority 7) is eligible for research_brief, scoring 7 at cost 1. The total is 75 policy points at cost 6 of the 6 budget, which beats the alternatives: Birch workshop plus Mesa workshop gives 72, and Pine reference_intro plus Birch diagnostic gives 62. These are synthetic priority points, not expected revenue."
+  },
+  "score": {
+    "optimum": 75,
+    "recoverable_value": 75,
+    "returned_value": 75,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:14:37.617365+00:00",
+  "seconds": 17.17538703799073
+}

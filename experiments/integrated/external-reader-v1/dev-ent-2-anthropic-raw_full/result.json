@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:53.848206+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEikwWD2S6VfC5xfGpC",
+  "usage": {
+    "input_tokens": 120879,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 91,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.242668",
+    "total_input_tokens": 120879,
+    "output_tokens": 91,
+    "regular_input_tokens": 120879,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\",\"D075\",\"D113\"],\"explanation\":\"Sources state Quarendon Freightways is not a Pemberline customer and runs a competitor's yard software. It is a different company from Quarrendon Freight Lines, which is a customer.\"}",
+  "finished_at": "2026-10-23T00:39:56.050398+00:00",
+  "seconds": 2.202201956999488
+}

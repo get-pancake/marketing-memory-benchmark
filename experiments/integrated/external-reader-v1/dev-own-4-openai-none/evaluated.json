@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:51.486178+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0eb25613584a595e016adaac9bdc0487d1ae6298e8a16989de",
+  "usage": {
+    "input_tokens": 256,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 44,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 300
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.000952",
+    "total_input_tokens": 256,
+    "output_tokens": 44,
+    "regular_input_tokens": 256,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki identify who managed Tansleigh Packaging on September 1, 2025.\"}",
+  "finished_at": "2026-10-23T00:38:53.611737+00:00",
+  "seconds": 2.125569531999645,
+  "id": "dev-own-4-openai-none",
+  "case_id": "dev-own-4",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki identify who managed Tansleigh Packaging on September 1, 2025.",
+  "citations": []
+}

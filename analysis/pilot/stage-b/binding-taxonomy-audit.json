@@ -1,0 +1,194 @@
+{
+  "primary_outcomes_unchanged": true,
+  "calls_checked": 48,
+  "changed_diagnostics": [
+    {
+      "attempt_id": 14,
+      "method": "typed",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": false,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "inapplicable_template",
+          "misbound_support"
+        ],
+        "dry_run": null
+      }
+    },
+    {
+      "attempt_id": 16,
+      "method": "facet_hybrid",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": false,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "inapplicable_template",
+          "misbound_support"
+        ],
+        "dry_run": null
+      }
+    },
+    {
+      "attempt_id": 19,
+      "method": "prompt_hybrid",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": true,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "misbound_support",
+          "incomplete_support",
+          "irrelevant_citation"
+        ],
+        "dry_run": null
+      }
+    },
+    {
+      "attempt_id": 29,
+      "method": "prompt_hybrid",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": false,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "inapplicable_template",
+          "misbound_support"
+        ],
+        "dry_run": null
+      }
+    },
+    {
+      "attempt_id": 32,
+      "method": "prompt_hybrid",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": false,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "inapplicable_template",
+          "misbound_support"
+        ],
+        "dry_run": null
+      }
+    },
+    {
+      "attempt_id": 47,
+      "method": "prompt_hybrid",
+      "old_score": {
+        "choice_correct": false,
+        "correct_withhold": false,
+        "decision_correct": false,
+        "dry_run": null,
+        "inappropriate_abstention": false,
+        "recommended": false,
+        "schema_valid": false,
+        "supported_recommendation": false,
+        "violations": [
+          "play_schema"
+        ]
+      },
+      "corrected_taxonomy": {
+        "schema_valid": true,
+        "decision_correct": false,
+        "choice_correct": false,
+        "recommended": true,
+        "supported_recommendation": false,
+        "inappropriate_abstention": false,
+        "correct_withhold": false,
+        "violations": [
+          "inapplicable_template",
+          "misbound_support"
+        ],
+        "dry_run": null
+      }
+    }
+  ],
+  "note": "Original run/scores retained. New materialization deduplicates a citation set but preserves all per-slot bindings, classifying wrong repeated bindings as semantic errors instead of JSON/shape errors."
+}

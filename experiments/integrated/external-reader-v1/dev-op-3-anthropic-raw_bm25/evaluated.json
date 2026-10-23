@@ -1,0 +1,48 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:19.136266+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEgDHSTrgnuDUKx1MEk",
+  "usage": {
+    "input_tokens": 10302,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 556,
+    "output_tokens_details": {
+      "thinking_tokens": 400
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.026164",
+    "total_input_tokens": 10302,
+    "output_tokens": 556,
+    "regular_input_tokens": 10302,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D106\"],\"explanation\":\"In D079, Ilse's comment about \\\"Dana's freight account\\\" comes right after the Quarrendon Freight Lines item, where Dana Okafor holds the screenshot list. D106 supports this: Brackenwater Freight Co. is Marcus's freight account after the handoff, while \\\"Dana's freight account\\\" appears in the Quarrendon section.\"}",
+  "finished_at": "2026-10-23T00:39:24.649255+00:00",
+  "seconds": 5.512998363003135,
+  "id": "dev-op-3-anthropic-raw_bm25",
+  "case_id": "dev-op-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24500,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "In D079, Ilse's comment about \"Dana's freight account\" comes right after the Quarrendon Freight Lines item, where Dana Okafor holds the screenshot list. D106 supports this: Brackenwater Freight Co. is Marcus's freight account after the handoff, while \"Dana's freight account\" appears in the Quarrendon section.",
+  "citations": [
+    "D079",
+    "D106"
+  ]
+}

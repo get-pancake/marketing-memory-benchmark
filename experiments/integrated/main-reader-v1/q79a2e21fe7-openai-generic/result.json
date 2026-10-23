@@ -1,0 +1,116 @@
+{
+  "id": "q79a2e21fe7-openai-generic",
+  "case_id": "q79a2e21fe7",
+  "world": "wacc7f06b",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.45,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2036,
+  "status": "completed",
+  "started_at": "2026-10-23T00:39:41.063249+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999862",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01051f1d3b24230c016adaaccd715087d1b567bbf8837819f5",
+  "usage": {
+    "input_tokens": 2045,
+    "input_tokens_details": {
+      "cache_write_tokens": 937,
+      "cached_tokens": 1105
+    },
+    "output_tokens": 281,
+    "output_tokens_details": {
+      "reasoning_tokens": 58
+    },
+    "total_tokens": 2326
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.005269",
+    "total_input_tokens": 2045,
+    "output_tokens": 281,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1105,
+    "cache_write_tokens": 937
+  },
+  "raw_output": {
+    "missing": [
+      "Unambiguous approved seller role matching the account's IT_manager role (S8), resolving S6 and S16.",
+      "Observed ISO27001 certification for Oriole-343; S1 records withdrawn certification."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S20",
+      "account.account_role:observed": "S8",
+      "account.certification:observed": "S1",
+      "account.observed_signal:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S10",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S15",
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Unambiguous approved seller role matching the account's IT_manager role (S8), resolving S6 and S16.",
+      "Observed ISO27001 certification for Oriole-343; S1 records withdrawn certification."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Unambiguous approved seller role matching the account's IT_manager role (S8), resolving S6 and S16.",
+      "Observed ISO27001 certification for Oriole-343; S1 records withdrawn certification."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the compliance objective and two-unit allowance, but approved-role evidence conflicts (S6, S16), and the account certification is withdrawn rather than ISO27001 (S1). P4 and P2 exceed the allowance, while P1 has a different objective.",
+  "finished_at": "2026-10-23T00:39:48.992532+00:00",
+  "seconds": 7.929286027996568
+}

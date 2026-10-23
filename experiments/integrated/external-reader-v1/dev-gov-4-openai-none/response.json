@@ -1,0 +1,128 @@
+{
+  "id": "resp_0f10abe80a87aefb016adaacb7a7a487d19283089abc9c3a81",
+  "object": "response",
+  "created_at": 1792715959,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715961,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f10abe80a87aefb016adaacb8dc3487d1a55f6bf0cbf7068c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qy5RmAg9rsAA1KLBX1uzxx8DL6yqVJ1q0Dfk8LcTniAe2tS94GP1OLpp_-mVQNNThQGS2m6VVn88sh3VC5HvfrxTKcpkAtJ5KpgdplvbGgePJpdwjn_G1ZXlF2w2UsRSKT7xU9W5zdx5ABBX80TxmruoDNf4BLkMYviCReghKz_Ca2D_xuo02ETVh10hKPAsesayqVHFKXDEUPU6dUMi04cmdhiqJ3b0QRm5RtWStZE8xR9B7sI4c1sx51Zm8bq1TcsG0MyrMzcmS2luqfPb-tk9k_J5uCmf5t2uLfDXAsaMjUny2Hfp_k6xdJMMyBaDZRP_WS0T52YmsLknKn7BEIb6f829judIJKO_GQUOuUiKJ1IZABc8niocRjOTC9EUxbrROaUVQqjwRM9OtEaz7ncyxwW9dgKB5iFuhIl5_JekeH-8X1kHr1c6e5e8B2M7PlzPDuSedYQnMJVeGN7Rp-0aAmpgjuxz8pnk-mXfrdoddDIwKo8u3ujBy5sBBk3JF7xgR2-Q5sBTppkVskPWZa2rLI652Ms1gt67MCcs6RnLmu1hw6mRjvHO8uEFiQdaTjfgdpvi1yBqMdAoAZihUKzlVpgAls4mlhOHHsKYlC2PZTGGBBMueEW91rU-DPBJiVCGaR4U14Wc-2EsQ_GoQo3yZ5vqlgX0C25fEktWNK_re8DMBkac6zjEgeQ8_WH8yM9ZIP325NKd9u3F9kJB1fGt7If5ibXKH0MfanUvh34s9I2ERCFFt_F_tGyshSzOfSFoGQ1xtBNp7c87sGHtXToHl2IHkBRc5e72-cAi2GdCAYg4fUzBOk6AtXCmC5bp8aC22ZzypEhMCZMnCCf95Z0lU02WvHw6IFhs11ZK8MHEudUxW7db8XorzTZg0Kx3t586X_9OHyPJYiyQnZ0_sMM6NWThQ4Q9bXwZe-OhbFwrssHNTobRNSmGURvXAal7ajAFRYyGLfDD7payjurjw8UstIQ766M2gd3SjDCwE7cp-99poO9ZsHRt8weKvNVhBxcle0Z90sxbmP4JoWVY71xQbEkL0eUncS6NHLO87U67yyb2rj-ebB_0ew61utaEAoIobUUTuP3rfLRlFq7Ilg2YRtEyYWv-NVb0CnZbuluBF_jPGll65rEVvvIpUjK_IoPiUAzxGcsvf5iKXabO6fMzZ3YAYXPKc8AaYbuQS9t8WEKkwQPE1PgAVbYxCTj7RDHrGYe4cP7GKiTRiemZFoJ-Jpio3onxzvgxrbkTKvZbVES4OGv11W9iv-Msf7h06TH17YpmWEtt9oZgzoXJZ-WJ2VyhUJJqVQpigx2UUd65x_DjCjwaurYi-19Haocy5DEtecMM6Irz2Qe0Tr9lvqo7zjEDousSrUpzR1xqorEgLbDvrX_w34DKOTEozq325fwizP_L-dM3oy-pCijvcC7HQRzCAYiCc80u00g0If_h7fk95FSDvwPckYS6Mi-Q-JoQgdyc5m5TVZiCucdTQK2pefxdOTN2WL_Fw8uGdTaIgVSELyCDmD4dCI_EHf23Vgz",
+      "summary": []
+    },
+    {
+      "id": "msg_0f10abe80a87aefb016adaacb9241087d184f06f62665d29bc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Marrow Agrisupply\u2019s support SLA tier on June 1, 2026.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 261,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 60,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 321
+  },
+  "user": null,
+  "metadata": {}
+}

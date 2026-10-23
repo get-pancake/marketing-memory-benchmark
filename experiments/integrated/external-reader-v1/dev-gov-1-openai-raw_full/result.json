@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:54.603693+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_088a9a68c2b2a6fe016adaac9ed49c87d183e071049cfa8f2a",
+  "usage": {
+    "input_tokens": 72917,
+    "input_tokens_details": {
+      "cache_write_tokens": 72914,
+      "cached_tokens": 0
+    },
+    "output_tokens": 84,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 73001
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.183131",
+    "total_input_tokens": 72917,
+    "output_tokens": 84,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72914
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D044\"],\"explanation\":\"Amendment No. 1 set the contracted quantity at 185 seats effective 2025-09-01. Amendment No. 3 increases it to 230 only on 2027-01-01, so 185 applies on 2026-10-14.\"}",
+  "finished_at": "2026-10-23T00:38:58.485324+00:00",
+  "seconds": 3.881640788007644
+}

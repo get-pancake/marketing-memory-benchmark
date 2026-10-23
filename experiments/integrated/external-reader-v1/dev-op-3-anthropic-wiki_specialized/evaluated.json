@@ -1,0 +1,50 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:05.238811+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfC12WogaQtHUFehBx",
+  "usage": {
+    "input_tokens": 26488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 817,
+    "output_tokens_details": {
+      "thinking_tokens": 606
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.061146",
+    "total_input_tokens": 26488,
+    "output_tokens": 817,
+    "regular_input_tokens": 26488,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D001\",\"D004\",\"D005\"],\"explanation\":\"The pipeline review's body is dated Sept 16, 2025, after Brackenwater moved to Marcus on Sept 15, so the Sept 12 filing date does not make Brackenwater Dana's. Of Dana's accounts, Quarrendon Freight Lines is the freight account, since Tamsin is cold chain. This is an inference: the wiki does not record the exact phrase \\\"Dana's freight account\\\" in the pipeline review, and the only place it appears (D023) is explicitly unresolved.\"}",
+  "finished_at": "2026-10-23T00:39:12.231296+00:00",
+  "seconds": 6.99249436899845,
+  "id": "dev-op-3-anthropic-wiki_specialized",
+  "case_id": "dev-op-3",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The pipeline review's body is dated Sept 16, 2025, after Brackenwater moved to Marcus on Sept 15, so the Sept 12 filing date does not make Brackenwater Dana's. Of Dana's accounts, Quarrendon Freight Lines is the freight account, since Tamsin is cold chain. This is an inference: the wiki does not record the exact phrase \"Dana's freight account\" in the pipeline review, and the only place it appears (D023) is explicitly unresolved.",
+  "citations": [
+    "D079",
+    "D001",
+    "D004",
+    "D005"
+  ]
+}

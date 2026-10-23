@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:51.487957+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a300be8fed81c9d016adaac9be3c087d1a3e1c6d535f42a96",
+  "usage": {
+    "input_tokens": 72913,
+    "input_tokens_details": {
+      "cache_write_tokens": 72910,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72979
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.182941",
+    "total_input_tokens": 72913,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72910
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D001\",\"D059\"],\"explanation\":\"Dana Okafor\u2019s start date is explicitly not recorded. The handoff email says she managed Brackenwater before the North team existed, but the oldest CRM import only says \u201clegacy migration.\u201d\"}",
+  "finished_at": "2026-10-23T00:38:54.592872+00:00",
+  "seconds": 3.1049229119962547
+}

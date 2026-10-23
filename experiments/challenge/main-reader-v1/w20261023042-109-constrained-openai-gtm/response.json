@@ -1,0 +1,160 @@
+{
+  "id": "resp_0e21c122ef65efdb016adaf58fd09087d192e50e07ac7fb784",
+  "object": "response",
+  "created_at": 1792734607,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734612,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0e21c122ef65efdb016adaf590defc87d1a1953ab63353a206",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"Resolve Birch-109's conflicting current observed consent records (ee17296ae9c1968=false; eec6a86114e0ad1=true); the later timestamp does not supersede the other record.\",\"Current observed consent=true is required for Orchid-109, Mesa-109, Elm-109, Harbor-109 and Juniper-109; their supplied consent is false.\",\"Harbor-109 requires approved proof verification=true; proof-3 is currently verified=false.\",\"Mesa-109's observed restricted sector is blocked by the approved seller policy; it cannot be targeted under the supplied profile and policy.\"],\"reasoning_summary\":\"No action is eligible, so the optimal supported plan is empty with cost 0 and priority score 0. Every queried account fails the consent requirement, including Birch-109 because its current observed values conflict. Harbor-109 also fails proof verification, and Mesa-109 is in a blocked sector. The proposed policy is not an approved fact.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Orchid-109",
+                    "Mesa-109",
+                    "Elm-109",
+                    "Harbor-109",
+                    "Birch-109",
+                    "Juniper-109"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4509,
+    "input_tokens_details": {
+      "cache_write_tokens": 4506,
+      "cached_tokens": 0
+    },
+    "output_tokens": 210,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4719
+  },
+  "user": null,
+  "metadata": {}
+}

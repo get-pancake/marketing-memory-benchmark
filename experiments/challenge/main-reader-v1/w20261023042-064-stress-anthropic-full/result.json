@@ -1,0 +1,132 @@
+{
+  "id": "w20261023042-064-stress-anthropic-full",
+  "case_id": "w20261023042-064-stress",
+  "world": "w20261023042-064",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:59:21.457751+00:00",
+  "evidence_bytes": 69236,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9983000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:59:25Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:59:43Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9996",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:59:22Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11982000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:59:25Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJf5j9jgJHj8uZvX5JaX",
+  "usage": {
+    "input_tokens": 32117,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2368,
+    "output_tokens_details": {
+      "thinking_tokens": 1555
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.175828",
+    "total_input_tokens": 32117,
+    "output_tokens": 2368,
+    "regular_input_tokens": 32117,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Juniper-64",
+        "action": "workshop",
+        "sources": [
+          "ee1497841342bca",
+          "e7c0b19d5976409",
+          "e22fe269d9319f8",
+          "e01e60b60f72d5b",
+          "e0f6ffaf791c904",
+          "ee978c13bc78f8c",
+          "e807a5d259ffe6e",
+          "e89c5730f1d6e57",
+          "ee8ff8a5a653523",
+          "eba3babc81b9ade",
+          "eac7976ff6f63bc"
+        ]
+      },
+      {
+        "account": "Delta-64",
+        "action": "workshop",
+        "sources": [
+          "ee1497841342bca",
+          "ead01d95f1f0b6b",
+          "e3a34271cf4c361",
+          "ec144031eda9a22",
+          "e8fbffb1fb8463c",
+          "e45e2da84b9f054",
+          "ecd97de898c17a1",
+          "e29ebdd8f5ec19a",
+          "e3ea2137e44e79a",
+          "e36cb948396f855",
+          "eaf3914eb6605fb"
+        ]
+      },
+      {
+        "account": "Harbor-64",
+        "action": "renewal_review",
+        "sources": [
+          "ee1497841342bca",
+          "e2439839fc71d26",
+          "eb5e77841c9898a",
+          "effc622a143d5c9",
+          "edd878dcc3704f9",
+          "e7d79bbafe66c5b",
+          "e6824291b87d023",
+          "ecf57f9622f747c",
+          "e34544ac5cda6e0",
+          "eaf9cee65c5fd39"
+        ]
+      }
+    ],
+    "missing": [
+      "North-64: conflicting observed consent records (true vs false) must be resolved before any action",
+      "Elm-64: sector is restricted (blocked by approved policy); no action possible unless profile/policy changes",
+      "Cedar-64: offering-0 capacity is approved false, so workshop is unavailable for its launch signal",
+      "Harbor-64: proof-3 shareable is approved false, so reference_intro is unavailable"
+    ],
+    "reasoning_summary": "Using the approved seller policy (proposed policy and nonresponse feedback ignored), plan scores: Juniper-64 workshop 11x4=44 (cost 3), Delta-64 workshop 4x4=16 (cost 3), Harbor-64 renewal_review 1x3=3 (cost 2); total 63 at cost 8 of 8. Alternatives (e.g., Grove-64 workshop 8 or research briefs) yield lower totals. Elm-64 blocked by restricted sector; North-64 blocked by conflicting consent; Cedar-64 only eligible for research_brief (1); Birch-64 eligible but lower value within budget."
+  },
+  "score": {
+    "optimum": 63,
+    "recoverable_value": 63,
+    "returned_value": 63,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T05:59:43.641173+00:00",
+  "seconds": 22.183489408998867
+}

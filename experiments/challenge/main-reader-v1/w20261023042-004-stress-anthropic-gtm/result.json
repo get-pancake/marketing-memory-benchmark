@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-004-stress-anthropic-gtm",
+  "case_id": "w20261023042-004-stress",
+  "world": "w20261023042-004",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:44.128016+00:00",
+  "evidence_bytes": 8108,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9994000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:50:47Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:50:58Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:50:44Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:50:47Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeRZsZPkqxbzT3QdgXg",
+  "usage": {
+    "input_tokens": 5224,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1406,
+    "output_tokens_details": {
+      "thinking_tokens": 715
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.049016",
+    "total_input_tokens": 5224,
+    "output_tokens": 1406,
+    "regular_input_tokens": 5224,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-4",
+        "action": "reference_intro",
+        "sources": [
+          "e38083eabfd0828",
+          "e731f2d82f220b6",
+          "e2b9c65152fa38d",
+          "ed4310025bacfa2",
+          "edb0588a7fabbc5",
+          "efa4d55b3f5b6ae",
+          "e5c30dacf3abf4e",
+          "e857b83e371d754",
+          "e7810e48c6cba58",
+          "e1efd35e64ad33a",
+          "e5ec06a6cd40a2e"
+        ]
+      },
+      {
+        "account": "Larch-4",
+        "action": "workshop",
+        "sources": [
+          "e38083eabfd0828",
+          "e454d9c32904b18",
+          "ed238281fa0e355",
+          "ea77e58a376b59f",
+          "ed15a5c240a50df",
+          "ecb8e23c761fae6",
+          "e29900783844c5f",
+          "eede5583aceabc0",
+          "eec9c342df250f4",
+          "e397da813d4829b",
+          "e98186f35f77027"
+        ]
+      }
+    ],
+    "missing": [
+      "Grove-4: observed need-5 -> offering link (and downstream proof/verified evidence)",
+      "Kestrel-4: profile, consent, priority, signal and initiative chain",
+      "Aster-4: profile, consent, priority, signal and initiative chain",
+      "Orchid-4: profile, consent, priority, signal and initiative chain"
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) allows US, FR and UK; the proposed policy is ignored. Pine-4 and Juniper-4 are in region DE, which is not allowed, so they are ineligible. Grove-4 has no evidence for the need-5 -> offering link. Kestrel-4, Aster-4 and Orchid-4 have no evidence. Birch-4 (US, renewal signal, priority 5, verified and shareable proof) is eligible for reference_intro: cost 4, 5x5 = 25. Larch-4 (FR, launch signal, priority 4, verified proof, approved capacity) is eligible for workshop: cost 3, 4x4 = 16. The plan totals cost 7 of the budget of 8, for 41 points. That is the maximum, because no other eligible account remains."
+  },
+  "score": {
+    "optimum": 77,
+    "recoverable_value": 41,
+    "returned_value": 41,
+    "normalized_value": 0.5324675324675324,
+    "context_normalized_value": 0.5324675324675324,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:50:58.261719+00:00",
+  "seconds": 14.133528720994946
+}

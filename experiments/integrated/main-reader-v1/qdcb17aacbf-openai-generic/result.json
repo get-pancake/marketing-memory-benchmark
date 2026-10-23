@@ -1,0 +1,116 @@
+{
+  "id": "qdcb17aacbf-openai-generic",
+  "case_id": "qdcb17aacbf",
+  "world": "wd8e8338e",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.45,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1987,
+  "status": "completed",
+  "started_at": "2026-10-23T00:49:34.412493+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999862",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00c40b8a8f60e5df016adaaf1edbac87d193c4b73f4b8b29ca",
+  "usage": {
+    "input_tokens": 1997,
+    "input_tokens_details": {
+      "cache_write_tokens": 890,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 280,
+    "output_tokens_details": {
+      "reasoning_tokens": 62
+    },
+    "total_tokens": 2277
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0051414",
+    "total_input_tokens": 1997,
+    "output_tokens": 280,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 890
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (IT_manager).",
+      "Provide current account.partner_status:observed=verified evidence."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S19",
+      "account.account_role:observed": "S10",
+      "account.channel_fit:observed": "S8",
+      "account.partner_status:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (IT_manager).",
+      "Provide current account.partner_status:observed=verified evidence."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved values and establish equality with account.account_role:observed (IT_manager).",
+      "Provide current account.partner_status:observed=verified evidence."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 fits the partner objective and two-unit allowance, but approved-role evidence conflicts (S12, S17) and the account's partner status is withdrawn rather than verified (S14). P3 and P2 exceed the resource allowance, while P4 has a different objective.",
+  "finished_at": "2026-10-23T00:49:41.733715+00:00",
+  "seconds": 7.321229667009902
+}

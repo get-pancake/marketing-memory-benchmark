@@ -1,0 +1,146 @@
+{
+  "id": "qbc56f823f8-anthropic-none",
+  "case_id": "qbc56f823f8",
+  "world": "w2a5aeb37",
+  "arm": "none",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 0,
+    "current_value_group_coverage": 0.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.0,
+    "selected_sources": 0,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2,
+  "status": "completed",
+  "started_at": "2026-10-23T00:31:36.152333+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:31:37Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:31:39Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:31:36Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:31:37Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJE65NzCzekF6oSSQXKn",
+  "usage": {
+    "input_tokens": 1704,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 353,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.006938",
+    "total_input_tokens": 1704,
+    "output_tokens": 353,
+    "regular_input_tokens": 1704,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.customer_state:observed (active)",
+      "account.usage_trend:observed (declining)",
+      "seller.offering_pain:observed (adoption)",
+      "seller.proof_for_pain:observed (adoption)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": null,
+      "account.account_role:observed": null,
+      "account.customer_state:observed": null,
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.customer_state:observed (active)",
+      "account.usage_trend:observed (declining)",
+      "seller.offering_pain:observed (adoption)",
+      "seller.proof_for_pain:observed (adoption)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.customer_state:observed (active)",
+      "account.usage_trend:observed (declining)",
+      "seller.offering_pain:observed (adoption)",
+      "seller.proof_for_pain:observed (adoption)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No evidence was supplied for Velora-956 or the seller, so none of the common requirements or the candidate-specific prerequisites can be verified. P4 fits the 2-unit allowance and the renewal objective, but it needs supplied evidence for every prerequisite.",
+  "finished_at": "2026-10-23T00:31:39.283093+00:00",
+  "seconds": 3.130773731012596
+}

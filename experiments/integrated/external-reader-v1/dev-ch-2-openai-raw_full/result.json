@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:32.625216+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08c32722bd3cb0b1016adaacc4dfa887d1b3452820dfca2307",
+  "usage": {
+    "input_tokens": 72908,
+    "input_tokens_details": {
+      "cache_write_tokens": 72905,
+      "cached_tokens": 0
+    },
+    "output_tokens": 54,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72962
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.1828085",
+    "total_input_tokens": 72908,
+    "output_tokens": 54,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72905
+  },
+  "text": "{\"answer\":\"Ines Barrow\",\"citations\":[\"D047\"],\"explanation\":\"The kickoff follow-up identifies COO Ines Barrow as the real decision maker and clarifies that the CFO only signs off on budget.\"}",
+  "finished_at": "2026-10-23T00:39:35.457878+00:00",
+  "seconds": 2.8326722729980247
+}

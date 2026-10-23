@@ -1,0 +1,70 @@
+{
+  "id": "w20261023042-078-accessible-openai-gbrain",
+  "case_id": "w20261023042-078-accessible",
+  "world": "w20261023042-078",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T06:04:21.739251+00:00",
+  "evidence_bytes": 16302,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999832",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_009ad14f9392e12d016adaf8e693a087d19b414c30ba4ef07b",
+  "usage": {
+    "input_tokens": 5692,
+    "input_tokens_details": {
+      "cache_write_tokens": 5689,
+      "cached_tokens": 0
+    },
+    "output_tokens": 310,
+    "output_tokens_details": {
+      "reasoning_tokens": 109
+    },
+    "total_tokens": 6002
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0173285",
+    "total_input_tokens": 5692,
+    "output_tokens": 310,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5689
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "For Cedar-78, Pine-78, Harbor-78 and Mesa-78: observed consent=true, an observed catalog-matching signal, and an observed account-to-initiative link.",
+      "For Pine-78, Harbor-78 and Mesa-78: observed profiles establishing an allowed region and a nonblocked sector.",
+      "For each queried account: a complete observed initiative-to-need-to-offering-to-proof chain linking the account to an approved verified=true proof."
+    ],
+    "reasoning_summary": "Each queried account was checked independently; none has sufficient evidence for any action. Approved integer priorities and an approved seller policy are present, but every account lacks observed consent, a qualifying signal and a complete eligibility chain. Cedar-78 alone has a supplied profile. The proposed policy does not override the approved policy. No supported action can be selected within the budget of 6."
+  },
+  "score": {
+    "optimum": 73,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T06:04:32.933583+00:00",
+  "seconds": 11.194341212991276
+}

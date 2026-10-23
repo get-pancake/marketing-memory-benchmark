@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-22T23:57:27.099183+00:00",
+  "data_sha256": "276d6fd41c742dd236af1d0bf29888f61d14a9cb2d3207397a4b32c0559d0e25",
+  "upstream_pin": "531b3b1ab66c88f192abb51338028c44b80fbf21",
+  "embedding_model": "text-embedding-3-small",
+  "embedding_dimensions": 1024,
+  "embedding_price_usd_per_million": 0.02,
+  "embedding_price_source": "https://developers.openai.com/api/docs/models/text-embedding-3-small.md",
+  "embedding_operational_cap_usd": 1.0,
+  "embedding_reserved_usd": 0.00089348,
+  "cap_authority": "Researcher-selected guard under explicit user authorization, not a user-specified numerical budget.",
+  "source_sha256": {
+    "benchmarks/integrated/prepare.py": "6845e2ada7a7d0b2a06c8b279167a45e39f651870db67fd39bb0fdbf9088b315",
+    "benchmarks/integrated/common.py": "50d9578d87e2bda08e8193ce2faf88a43312bb8a312d274d6fbf079c8d49a450",
+    "benchmarks/integrated/gbrain-search.ts": "f409617d302865833596b666b653e8519217d1910cde2f4a7106f606abfb6614",
+    "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+    "study/retrieval.py": "8ed97d652d58b18e1f92df85d60a981a87a557373c20f662be2cc626d633be24",
+    "analysis/separate_context.py": "b944033e7e50d56a9b019e151e28945ce2b671a1a3588bc97f0e5733906fdd49"
+  },
+  "status": "completed",
+  "budgets_bytes": [
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "finished_at": "2026-10-22T23:58:41.830423+00:00",
+  "cases": 32,
+  "embedding_snapshot_sha256": "fd269a093f49b1b6857d96537e60d304b006bce4a0ff6ae57dd9d17e77c34e29"
+}

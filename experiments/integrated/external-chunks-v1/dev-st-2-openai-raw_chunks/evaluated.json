@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.614822+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0da5b861d31c5eaf016adaaddd291487d1afefe555d5c04535",
+  "usage": {
+    "input_tokens": 6302,
+    "input_tokens_details": {
+      "cache_write_tokens": 6299,
+      "cached_tokens": 0
+    },
+    "output_tokens": 50,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6352
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0162535",
+    "total_input_tokens": 6302,
+    "output_tokens": 50,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6299
+  },
+  "text": "{\"answer\":\"40\",\"citations\":[\"D039\",\"D038\"],\"explanation\":\"The executed renewal specifies 40 subscribed seats. The earlier 44-seat review form was unsigned and never countersigned.\"}",
+  "finished_at": "2026-10-23T00:44:15.694864+00:00",
+  "seconds": 3.080041593988426,
+  "id": "dev-st-2-openai-raw_chunks",
+  "case_id": "dev-st-2",
+  "arm": "raw_chunks",
+  "context_bytes": 24569,
+  "answer_correct": true,
+  "answer": "40",
+  "citations": [
+    "D039",
+    "D038"
+  ],
+  "explanation": "The executed renewal specifies 40 subscribed seats. The earlier 44-seat review form was unsigned and never countersigned.",
+  "citation_ids_valid": true
+}

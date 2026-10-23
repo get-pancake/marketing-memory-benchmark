@@ -1,0 +1,106 @@
+{
+  "id": "w20261023041-006-stress-openai-gtm",
+  "case_id": "w20261023041-006-stress",
+  "world": "w20261023041-006",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:15:08.780891+00:00",
+  "evidence_bytes": 8095,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999476",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_069f5a5b8febb707016adaed5d50a087d1b2930e25f7509842",
+  "usage": {
+    "input_tokens": 3252,
+    "input_tokens_details": {
+      "cache_write_tokens": 3249,
+      "cached_tokens": 0
+    },
+    "output_tokens": 667,
+    "output_tokens_details": {
+      "reasoning_tokens": 118
+    },
+    "total_tokens": 3919
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0147985",
+    "total_input_tokens": 3252,
+    "output_tokens": 667,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3249
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Grove-6",
+        "action": "workshop",
+        "sources": [
+          "ee9df4490ceff73",
+          "e2b7e5e2692319f",
+          "e373902a13969ec",
+          "e68aecdd1442781",
+          "ec9f931ee4115dd",
+          "ede47d9fb4a8b01",
+          "ead1e2c74f676e9",
+          "e732e665a4b1bcf",
+          "e7ac2960f82b77d",
+          "e2391cd4b900873",
+          "eecb45e33d58fc1"
+        ]
+      },
+      {
+        "account": "Pine-6",
+        "action": "reference_intro",
+        "sources": [
+          "ee9df4490ceff73",
+          "e58aea1b1c1af8c",
+          "e576fbb47ebe978",
+          "e7b2a4b9dd5991a",
+          "e8b7d676ca89ff1",
+          "e9b580d853e0a0f",
+          "ec0c2598f42b1cf",
+          "e37ad1796eff3f7",
+          "e1fb431ebdfb108",
+          "eb54e7df705d79e",
+          "ec39221d7921ada"
+        ]
+      }
+    ],
+    "missing": [
+      "Orchid-6: observed initiative-4 → need → offering → proof links and approved proof.verified=true.",
+      "Iris-6, Elm-6 and Harbor-6: approved integer priority; observed profile, consent=true, signal and complete initiative → need → offering → proof chain; approved proof.verified=true; any action-specific approvals.",
+      "Mesa-6: current observed consent=true is required; its latest consent is false.",
+      "Delta-6: current observed consent=true and approved proof-7.verified=true are required; both supplied values are false."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 7 of 8 and scores 28 synthetic priority points: Grove-6 workshop yields 2×4=8, and Pine-6 reference_intro yields 4×5=20. Both independently satisfy eligibility. No third account has a supported action. The approved seller policy applies; the later proposed policy is not approved evidence."
+  },
+  "score": {
+    "optimum": 40,
+    "recoverable_value": 28,
+    "returned_value": 28,
+    "normalized_value": 0.7,
+    "context_normalized_value": 0.7,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:15:22.056852+00:00",
+  "seconds": 13.275970666989451
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "exploratory controlled component comparison; all v1 cases were already available",
+  "source_attempts_sha256": "53424a956f664ad6b4199ef2945d06237072b1b1296bbef4004374e3c979c729",
+  "upstream_revision": "531b3b1ab66c88f192abb51338028c44b80fbf21",
+  "token_cap": 1024,
+  "methods": {
+    "facet_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 5,
+      "complete_positive_rate": 0.10416666666666667,
+      "mean_current_value_group_coverage": 0.5595031415343915,
+      "false_affordance_cases": 0,
+      "failures": 0
+    },
+    "gbrain_catalog_coverage": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 48,
+      "complete_positive_rate": 1,
+      "mean_current_value_group_coverage": 0.9861111111111112,
+      "false_affordance_cases": 0,
+      "failures": 0
+    },
+    "gbrain_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 0,
+      "complete_positive_rate": 0,
+      "mean_current_value_group_coverage": 0.19543650793650794,
+      "false_affordance_cases": 0,
+      "failures": 0
+    },
+    "generic_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 5,
+      "complete_positive_rate": 0.10416666666666667,
+      "mean_current_value_group_coverage": 0.5110160383597884,
+      "false_affordance_cases": 0,
+      "failures": 0
+    },
+    "prompt_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 2,
+      "complete_positive_rate": 0.041666666666666664,
+      "mean_current_value_group_coverage": 0.4173280423280423,
+      "false_affordance_cases": 0,
+      "failures": 0
+    },
+    "typed": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 48,
+      "complete_positive_rate": 1,
+      "mean_current_value_group_coverage": 0.9861111111111112,
+      "false_affordance_cases": 0,
+      "failures": 0
+    }
+  },
+  "contrasts": {
+    "typed minus gbrain_hybrid": {
+      "mean": 1,
+      "descriptive_world_ci95": [
+        1.0,
+        1.0
+      ],
+      "independent_worlds": 12
+    },
+    "typed minus gbrain_catalog_coverage": {
+      "mean": 0,
+      "descriptive_world_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_worlds": 12
+    },
+    "gbrain_catalog_coverage minus gbrain_hybrid": {
+      "mean": 1,
+      "descriptive_world_ci95": [
+        1.0,
+        1.0
+      ],
+      "independent_worlds": 12
+    }
+  },
+  "script_sha256": "633ec319a03ac40b3347a803140b8a1de1b24d8101dd3c25d6c56ae9a1c8f8bd",
+  "added_control": "gbrain_catalog_coverage reorders the saved real GBrain pool with the same public prerequisite-coverage module; no new native query is counted",
+  "limits": [
+    "Not full raw ingestion, default hosted GBrain, graph extraction or paid reranking.",
+    "Every system receives verified typed facts and a shared correct temporal/access view.",
+    "Coverage is not decision utility, strategic quality, revenue or evidence that GBrain must be replaced."
+  ]
+}

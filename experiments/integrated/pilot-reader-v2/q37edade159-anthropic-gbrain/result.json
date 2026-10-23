@@ -1,0 +1,137 @@
+{
+  "id": "q37edade159-anthropic-gbrain",
+  "case_id": "q37edade159",
+  "world": "w102aef1b",
+  "arm": "gbrain",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.42857142857142855,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2028,
+  "status": "completed",
+  "started_at": "2026-10-23T00:10:56.967652+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:10:57Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:11:02Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:10:57Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:10:57Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJCWiPPTte2MBjRFQe4o",
+  "usage": {
+    "input_tokens": 3569,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 744,
+    "output_tokens_details": {
+      "thinking_tokens": 383
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.014578",
+    "total_input_tokens": 3569,
+    "output_tokens": 744,
+    "regular_input_tokens": 3569,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S12",
+      "account.account_role:observed": "S2",
+      "account.observed_signal:observed": "S13",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The account side is partly supported: role is revenue_lead (S2), geo is EU (S12) and the signal is migration (S13). No approved seller role or geo is supplied, so the required equalities can't be checked. There is also no integration offering pain or proof, and no procurement stage, so none of the migration actions qualifies. P2 has a different objective (qualification_audit), so it doesn't fit the migration objective.",
+  "finished_at": "2026-10-23T00:11:02.392522+00:00",
+  "seconds": 5.424877700992511
+}

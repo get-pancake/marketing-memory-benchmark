@@ -1,0 +1,129 @@
+{
+  "id": "w20261023042-036-accessible-anthropic-full",
+  "case_id": "w20261023042-036-accessible",
+  "world": "w20261023042-036",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:58:40.055394+00:00",
+  "evidence_bytes": 28609,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9992000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:58:43Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:58:58Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:58:40Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11991000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:58:43Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJf2fHizGBRSXQ82F1gj",
+  "usage": {
+    "input_tokens": 14259,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1894,
+    "output_tokens_details": {
+      "thinking_tokens": 1041
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.094916",
+    "total_input_tokens": 14259,
+    "output_tokens": 1894,
+    "regular_input_tokens": 14259,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-36",
+        "action": "workshop",
+        "sources": [
+          "ed19f5e3ac8fb9b",
+          "e09f560ac739fdb",
+          "ec5c86f2e7daa6a",
+          "ed5aace659184af",
+          "e4eec64e6439d73",
+          "e0f7f7f3830e0be",
+          "e411dcdf092d26c",
+          "eb3ae2120e4fb5c",
+          "ee8b8cc8336d319",
+          "ecf2ad83db4e70f",
+          "e319c27d0d05d8c"
+        ]
+      },
+      {
+        "account": "Delta-36",
+        "action": "renewal_review",
+        "sources": [
+          "ed19f5e3ac8fb9b",
+          "ec1a62e1ed2aab5",
+          "e03caefa94a6718",
+          "e00e18a54b69625",
+          "eef8dfb6c0d8f07",
+          "ecdc73233401d3f",
+          "e536d6596aba006",
+          "ea4ca3457b1f141",
+          "e9991a0b48c22f3",
+          "ee9394c0d63580f"
+        ]
+      },
+      {
+        "account": "Flint-36",
+        "action": "research_brief",
+        "sources": [
+          "ed19f5e3ac8fb9b",
+          "e0d07ba70555fba",
+          "e523b4630150feb",
+          "e6cdf70eae969fd",
+          "e207f6c8e61c193",
+          "e54e4672f5eab90",
+          "e248b4484dcb641",
+          "e42efaccbbcbe38",
+          "efde97baabe1513",
+          "eb6a09d8a88e122"
+        ]
+      }
+    ],
+    "missing": [
+      "Juniper-36: proof-3 is approved verified=false, so no action is eligible; an approved verified=true proof would be required.",
+      "Flint-36: proof-0 shareable is approved false, so reference_intro is unavailable."
+    ],
+    "reasoning_summary": "Used the approved seller policy (FR/DE/US allowed, restricted blocked); the proposed policy was ignored. Larch-36 (launch, priority 9, offering-2 capacity true) supports workshop: 9x4=36 at cost 3. Delta-36 (renewal, priority 5, proof-1 verified and shareable) supports renewal_review at 15 for cost 2 or reference_intro at 25 for cost 4. Flint-36 (growth, priority 9, proof-0 verified but not shareable) supports diagnostic at 18 for cost 2 or research_brief at 9 for cost 1. Juniper-36 is blocked because proof-3 is not verified. Within the budget of 6, the best plan is Larch workshop (3) + Delta renewal_review (2) + Flint research_brief (1), for a total of 60 points. This beats Larch workshop + Flint diagnostic + Delta research_brief, which totals 59."
+  },
+  "score": {
+    "optimum": 60,
+    "recoverable_value": 60,
+    "returned_value": 60,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:58:58.240987+00:00",
+  "seconds": 18.18560283300758
+}

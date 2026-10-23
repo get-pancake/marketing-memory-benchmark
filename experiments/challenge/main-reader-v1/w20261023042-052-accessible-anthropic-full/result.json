@@ -1,0 +1,98 @@
+{
+  "id": "w20261023042-052-accessible-anthropic-full",
+  "case_id": "w20261023042-052-accessible",
+  "world": "w20261023042-052",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:48:41.345280+00:00",
+  "evidence_bytes": 28486,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9992000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:48:46Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:48:54Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:48:42Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11991000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:48:46Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeGXYQz5DcmLZqo5zqV",
+  "usage": {
+    "input_tokens": 14279,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1040,
+    "output_tokens_details": {
+      "thinking_tokens": 466
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.077916",
+    "total_input_tokens": 14279,
+    "output_tokens": 1040,
+    "regular_input_tokens": 14279,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-52",
+        "action": "workshop",
+        "sources": [
+          "e412096530ffcb5",
+          "eb36e31de7e44e9",
+          "e87695ce0e59bfb",
+          "ee375ef2a121b57",
+          "ecbbc4d11e18e13",
+          "e7348d58e8bbbb5",
+          "e1ad626d3ae4ecf",
+          "e71453768298ff1",
+          "e9ff4aac1fa6ab5",
+          "e01df8989c3c1d4",
+          "e9efd2710f6f263"
+        ]
+      }
+    ],
+    "missing": [
+      "Iris-52: approved policy blocks the 'restricted' sector shown on its observed profile, so an eligible profile is needed.",
+      "Kestrel-52: observed profile region is DE, which is not allowed, and its sector is 'restricted', which is blocked; an eligible profile is needed.",
+      "Cedar-52: observed profile region is DE, which is not in the allowed regions UK/FR/US; an eligible profile is needed."
+    ],
+    "reasoning_summary": "The approved seller policy allows the UK, FR and US regions and blocks the restricted sector. The proposed policy was ignored because it is not approved. Larch-52 is the only eligible account. Its profile is UK services, its consent is true and its signal is risk. Its approved priority is 12. Its chain runs initiative-0 to need-0 to offering-0 to proof-0, and proof-0 is approved as verified. Offering-0 has approved capacity and assurance. For Larch, workshop and assurance_pack tie as the best options at 12x4=48 points each, cost 3; workshop was chosen. The other accounts fail on profile, so the remaining budget cannot be used. Total cost is 3 of 6, and total score is 48 synthetic policy points, not revenue."
+  },
+  "score": {
+    "optimum": 48,
+    "recoverable_value": 48,
+    "returned_value": 48,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:48:54.975964+00:00",
+  "seconds": 13.630691971004126
+}

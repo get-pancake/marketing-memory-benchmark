@@ -1,0 +1,48 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:43.778565+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEi1DTXp4kqxESHramw",
+  "usage": {
+    "input_tokens": 28195,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 116,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.05755",
+    "total_input_tokens": 28195,
+    "output_tokens": 116,
+    "regular_input_tokens": 28195,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"14%\",\"citations\":[\"D037\",\"D031\"],\"explanation\":\"The TPCL-AMD-01 amendment (effective July 1, 2025) set Tansley Parcel's discount at 14% with CFO approval. The renewal effective February 1, 2026 carries the prior 14% forward, so it applies on March 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:46.206086+00:00",
+  "seconds": 2.4275317459978396,
+  "id": "dev-gov-5-anthropic-wiki_generic",
+  "case_id": "dev-gov-5",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "14%",
+  "explanation": "The TPCL-AMD-01 amendment (effective July 1, 2025) set Tansley Parcel's discount at 14% with CFO approval. The renewal effective February 1, 2026 carries the prior 14% forward, so it applies on March 1, 2026.",
+  "citations": [
+    "D037",
+    "D031"
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "schema": "error-localization-v1",
+  "created_at": "2026-10-22T09:01:20.636132+00:00",
+  "source_per_attempt_sha256": "afe7b12777dbbd5f645a84eafebfe7bb2c42aa29ea73046bf320e2c92986bdb4",
+  "source_summary_semantic_sha256": "842d8a05ee78c5ae1ec72d6aa2cd37a809ecdc466c3c3a970e85219e28b71f81",
+  "script_sha256": "9154abe4232ce0a1001249429da727d9267cf4800da2e063ec3e67d699a5cd34",
+  "methods": {
+    "typed_history": {
+      "positive": {
+        "supported_recommendation": 2,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 2,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 0,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 3,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 1
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 2,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 0,
+        "available_1_correct_1": 2
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/supported_recommendation": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 24,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/no_complete_witness_selected": {
+          "case_id": "q35398bd68a",
+          "attempt_id": 18,
+          "world": "w2bcf71ae",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 6,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "qc12da0f847",
+          "attempt_id": 25,
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "obsolete_or_ineligible_citation"
+          ]
+        }
+      }
+    },
+    "generic_hybrid": {
+      "positive": {
+        "supported_recommendation": 0,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 3,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 1,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 3,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 1
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 3,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 1,
+        "available_1_correct_1": 0
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 28,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 34,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q7a990ad1f5",
+          "attempt_id": 44,
+          "world": "w69bf7897",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "qc12da0f847",
+          "attempt_id": 20,
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        }
+      }
+    },
+    "full_context": {
+      "positive": {
+        "supported_recommendation": 2,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 0,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 0,
+        "inapplicable_choice_with_complete_witness": 2,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 3,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 1
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 0,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 2,
+        "available_1_correct_1": 2
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/supported_recommendation": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 5,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q35398bd68a",
+          "attempt_id": 13,
+          "world": "w2bcf71ae",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 26,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "qc12da0f847",
+          "attempt_id": 37,
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        }
+      }
+    },
+    "prompt_hybrid": {
+      "positive": {
+        "supported_recommendation": 0,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 2,
+        "invalid_output_with_complete_witness": 2,
+        "withheld_with_complete_witness": 0,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 3,
+        "execution_or_output_failure": 0,
+        "invalid_output": 1,
+        "unsupported_recommendation": 0
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 2,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 2,
+        "available_1_correct_1": 0
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 19,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": [
+            "play_schema"
+          ]
+        },
+        "positive/invalid_output_with_complete_witness": {
+          "case_id": "q35398bd68a",
+          "attempt_id": 47,
+          "world": "w2bcf71ae",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "play_schema"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 3,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/invalid_output": {
+          "case_id": "qc12da0f847",
+          "attempt_id": 29,
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "play_schema"
+          ]
+        }
+      }
+    },
+    "facet_hybrid": {
+      "positive": {
+        "supported_recommendation": 0,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 2,
+        "invalid_output_with_complete_witness": 1,
+        "withheld_with_complete_witness": 0,
+        "inapplicable_choice_with_complete_witness": 1,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 4,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 0
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 2,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 2,
+        "available_1_correct_1": 0
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 4,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": [
+            "incomplete_support"
+          ]
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q35398bd68a",
+          "attempt_id": 23,
+          "world": "w2bcf71ae",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "misbound_support"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 40,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/invalid_output_with_complete_witness": {
+          "case_id": "q7a990ad1f5",
+          "attempt_id": 16,
+          "world": "w69bf7897",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "play_schema"
+          ]
+        }
+      }
+    },
+    "typed": {
+      "positive": {
+        "supported_recommendation": 2,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 0,
+        "invalid_output_with_complete_witness": 1,
+        "withheld_with_complete_witness": 0,
+        "inapplicable_choice_with_complete_witness": 1,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 3,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 1
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 0,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 2,
+        "available_1_correct_1": 2
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/supported_recommendation": {
+          "case_id": "q2d3b8138f4",
+          "attempt_id": 17,
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q35398bd68a",
+          "attempt_id": 33,
+          "world": "w2bcf71ae",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "misbound_support"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q4789ca6172",
+          "attempt_id": 41,
+          "world": "w69bf7897",
+          "condition": "restricted_evidence",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/invalid_output_with_complete_witness": {
+          "case_id": "q7a990ad1f5",
+          "attempt_id": 14,
+          "world": "w69bf7897",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": [
+            "play_schema"
+          ]
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "qc12da0f847",
+          "attempt_id": 11,
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "typed minus prompt_hybrid": {
+      "counts": {
+        "both_correct": 3,
+        "left_only": 2,
+        "right_only": 0,
+        "both_wrong": 3
+      },
+      "disagreements": [
+        {
+          "case_id": "q2d3b8138f4",
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 17,
+          "right_attempt_id": 19
+        },
+        {
+          "case_id": "q9ebcd369cd",
+          "world": "w69bf7897",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 42,
+          "right_attempt_id": 9
+        }
+      ]
+    },
+    "typed minus facet_hybrid": {
+      "counts": {
+        "both_correct": 3,
+        "left_only": 2,
+        "right_only": 1,
+        "both_wrong": 2
+      },
+      "disagreements": [
+        {
+          "case_id": "q2d3b8138f4",
+          "world": "w2bcf71ae",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 17,
+          "right_attempt_id": 4
+        },
+        {
+          "case_id": "q9ebcd369cd",
+          "world": "w69bf7897",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 42,
+          "right_attempt_id": 12
+        },
+        {
+          "case_id": "qc12da0f847",
+          "world": "w2bcf71ae",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 11,
+          "right_attempt_id": 7
+        }
+      ]
+    },
+    "prompt_hybrid minus generic_hybrid": {
+      "counts": {
+        "both_correct": 3,
+        "left_only": 0,
+        "right_only": 0,
+        "both_wrong": 5
+      },
+      "disagreements": []
+    },
+    "typed minus typed_history": {
+      "counts": {
+        "both_correct": 5,
+        "left_only": 0,
+        "right_only": 0,
+        "both_wrong": 3
+      },
+      "disagreements": []
+    },
+    "full_context minus typed": {
+      "counts": {
+        "both_correct": 4,
+        "left_only": 1,
+        "right_only": 1,
+        "both_wrong": 2
+      },
+      "disagreements": [
+        {
+          "case_id": "q7a990ad1f5",
+          "world": "w69bf7897",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "invalid_output_with_complete_witness",
+          "left_attempt_id": 46,
+          "right_attempt_id": 14
+        },
+        {
+          "case_id": "q9ebcd369cd",
+          "world": "w69bf7897",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "inapplicable_choice_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 27,
+          "right_attempt_id": 42
+        }
+      ]
+    }
+  },
+  "interpretation": "Descriptive post-freeze, pre-results diagnostic. Categories preserve the original score and all planned denominators; they are not causal mediation estimates or new hypothesis tests. Failure precedes missing support in the exclusive category order. Examples are the first case ID per category, not independently representative selections. All paired disagreements are retained."
+}

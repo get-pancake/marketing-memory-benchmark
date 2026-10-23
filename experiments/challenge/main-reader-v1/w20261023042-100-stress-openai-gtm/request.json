@@ -1,0 +1,89 @@
+{
+  "model": "gpt-6.1-sol",
+  "input": [
+    {
+      "content": "You are a marketing decision-support analyst. Use only supplied current company evidence and the common action catalog. Select up to three actions for distinct accounts to maximize the SUM of approved priority times catalog multiplier under the query's shared cost budget. These policy points are synthetic priorities, NOT expected revenue. Check every action separately; do not let one ineligible account block another.\nEligibility for every action requires: seller policy is approved, the account profile region is allowed and sector not blocked, the action is approved by policy, current observed consent is true, and the signal matches the catalog. Follow account.initiative -> initiative.need -> need.offering -> offering.proof -> proof.verified; verified must be approved true. Account priority must be approved and an integer. Profile, consent, initiative, need, offering, proof and signal require observed authority. Additional capacity and assurance are approved true on the offering; shareable is approved true on the proof. The account itself must be in the query. Missing facts and conflicting current values at the required authority block the affected action. Proposed policies and feedback are not approved facts. Never assume a missing fact.\nAll supplied records have already passed the current-view filter. A later timestamp alone NEVER supersedes another supplied current record. If supplied values conflict at the required authority, abstain for that requirement even when one record has a later date.\nFor each chosen action cite ALL supplied source IDs required for its eligibility AND priority, including policy and every link in the chain. Do not cite unrelated records as proof. Distinct-account, cost and maximum-action constraints apply to the whole plan. When no supported action is available return an empty actions list and request missing evidence. Return the exact JSON schema, with a short reasoning summary and a missing-evidence list. Do not invent company facts or predicted conversion rates.",
+      "role": "system"
+    },
+    {
+      "content": "{\"catalog\":[{\"cost\":2,\"extra\":[],\"id\":\"diagnostic\",\"multiplier\":2,\"signals\":[\"risk\",\"growth\"]},{\"cost\":3,\"extra\":[\"capacity\"],\"id\":\"workshop\",\"multiplier\":4,\"signals\":[\"risk\",\"launch\"]},{\"cost\":2,\"extra\":[],\"id\":\"renewal_review\",\"multiplier\":3,\"signals\":[\"renewal\"]},{\"cost\":4,\"extra\":[\"shareable\"],\"id\":\"reference_intro\",\"multiplier\":5,\"signals\":[\"growth\",\"renewal\"]},{\"cost\":3,\"extra\":[\"assurance\"],\"id\":\"assurance_pack\",\"multiplier\":4,\"signals\":[\"risk\"]},{\"cost\":1,\"extra\":[],\"id\":\"research_brief\",\"multiplier\":1,\"signals\":[\"risk\",\"growth\",\"renewal\",\"launch\"]}],\"company_evidence\":[{\"authority\":\"approved\",\"entity\":\"seller\",\"id\":\"e66b9f18d79ee5c\",\"observed_day\":12,\"relation\":\"policy\",\"valid_day\":12,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[\"UK\",\"DE\",\"FR\"],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"proposed\",\"entity\":\"seller\",\"id\":\"e7070ea98497bd2\",\"observed_day\":25,\"relation\":\"policy\",\"valid_day\":25,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"approved\",\"entity\":\"Birch-100\",\"id\":\"e0a39ccd9a1eca2\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":12},{\"authority\":\"observed\",\"entity\":\"Birch-100\",\"id\":\"e3c6fae605eab07\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-0\"},{\"authority\":\"observed\",\"entity\":\"Birch-100\",\"id\":\"e72c73e5434eaf4\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Birch-100\",\"id\":\"ec5f49dcdc70e31\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"UK\",\"sector\":\"services\"}},{\"authority\":\"observed\",\"entity\":\"Birch-100\",\"id\":\"ecf19d4d66ce013\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"growth\"},{\"authority\":\"observed\",\"entity\":\"initiative-0\",\"id\":\"e4240407ed8f4f9\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-0\"},{\"authority\":\"observed\",\"entity\":\"need-0\",\"id\":\"e81cc72d30ce20d\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-0\"},{\"authority\":\"observed\",\"entity\":\"offering-0\",\"id\":\"e99091a56288b74\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-0\"},{\"authority\":\"approved\",\"entity\":\"offering-0\",\"id\":\"ec68d878224b773\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-0\",\"id\":\"efd4dc193a1fa0a\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":false},{\"authority\":\"approved\",\"entity\":\"proof-0\",\"id\":\"e96c8cb74ea8059\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-0\",\"id\":\"eae224e870b3bb4\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"Pine-100\",\"id\":\"e05a8acbc72b036\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":9},{\"authority\":\"observed\",\"entity\":\"Pine-100\",\"id\":\"e3c0fb5cdf9d577\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"launch\"},{\"authority\":\"observed\",\"entity\":\"Pine-100\",\"id\":\"e4a913f66e213d4\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-4\"},{\"authority\":\"observed\",\"entity\":\"Pine-100\",\"id\":\"ee8db1bf7e5ce21\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Pine-100\",\"id\":\"ef116755625f0cf\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"software\"}},{\"authority\":\"observed\",\"entity\":\"initiative-4\",\"id\":\"ead914a68037ff1\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-4\"},{\"authority\":\"observed\",\"entity\":\"need-4\",\"id\":\"eeec049026c9ed8\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-4\"},{\"authority\":\"approved\",\"entity\":\"offering-4\",\"id\":\"e1bb501f0338485\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-4\",\"id\":\"e98b34228ef483e\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"offering-4\",\"id\":\"eeab4bd0afd43d1\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-4\"},{\"authority\":\"approved\",\"entity\":\"proof-4\",\"id\":\"eed2e1a9d3061dc\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-4\",\"id\":\"efda3ad47201b25\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Larch-100\",\"id\":\"e1eb11ca7cabc33\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"FR\",\"sector\":\"restricted\"}},{\"authority\":\"observed\",\"entity\":\"Larch-100\",\"id\":\"e5cf18fe820612f\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"growth\"},{\"authority\":\"observed\",\"entity\":\"Larch-100\",\"id\":\"e682e75cd65086e\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"approved\",\"entity\":\"Larch-100\",\"id\":\"e6cb39930002464\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":2},{\"authority\":\"observed\",\"entity\":\"Larch-100\",\"id\":\"eb6706478be381d\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-1\"},{\"authority\":\"observed\",\"entity\":\"initiative-1\",\"id\":\"ed1d7295c520aae\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-1\"},{\"authority\":\"observed\",\"entity\":\"need-1\",\"id\":\"e9acead54fa484c\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-1\"},{\"authority\":\"approved\",\"entity\":\"offering-1\",\"id\":\"e15675399354691\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"offering-1\",\"id\":\"e51015f69d7b18d\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-1\"},{\"authority\":\"approved\",\"entity\":\"offering-1\",\"id\":\"ef8a18e1423eece\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":false},{\"authority\":\"approved\",\"entity\":\"proof-1\",\"id\":\"e953f815ce5a11c\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":false},{\"authority\":\"approved\",\"entity\":\"proof-1\",\"id\":\"ed6458dcaebd587\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"North-100\",\"id\":\"e56e4ed48ce23d5\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"North-100\",\"id\":\"e96aa57591ca203\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"FR\",\"sector\":\"software\"}},{\"authority\":\"approved\",\"entity\":\"North-100\",\"id\":\"ec7ebb6c6fc335c\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":3},{\"authority\":\"observed\",\"entity\":\"North-100\",\"id\":\"ede9d01ab02dd6c\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-7\"},{\"authority\":\"observed\",\"entity\":\"North-100\",\"id\":\"eef212d4ee7b118\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"growth\"},{\"authority\":\"observed\",\"entity\":\"initiative-7\",\"id\":\"e0141ebfee0f0b6\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-7\"},{\"authority\":\"observed\",\"entity\":\"need-7\",\"id\":\"e5e0c62445e1015\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-7\"},{\"authority\":\"approved\",\"entity\":\"offering-7\",\"id\":\"e266f884aa63672\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"offering-7\",\"id\":\"e43db0178b172e3\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-7\"},{\"authority\":\"approved\",\"entity\":\"offering-7\",\"id\":\"ecc8b8f79479a49\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-7\",\"id\":\"e516c02b147bf43\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-7\",\"id\":\"e81496f050b8f3d\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Grove-100\",\"id\":\"e1ecb58aa21f229\",\"observed_day\":24,\"relation\":\"consent\",\"valid_day\":24,\"value\":false},{\"authority\":\"observed\",\"entity\":\"Grove-100\",\"id\":\"edf596b18e99750\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Grove-100\",\"id\":\"e3ef5e9caf4f3cd\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"US\",\"sector\":\"services\"}},{\"authority\":\"observed\",\"entity\":\"Grove-100\",\"id\":\"e8908651df83ccc\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-3\"},{\"authority\":\"approved\",\"entity\":\"Grove-100\",\"id\":\"ea4b8d9dbcf72b9\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":2},{\"authority\":\"observed\",\"entity\":\"Grove-100\",\"id\":\"efc4201c7473835\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"growth\"}],\"query\":{\"access\":[\"public\"],\"accounts\":[\"Birch-100\",\"Larch-100\",\"Kestrel-100\",\"Grove-100\",\"Pine-100\",\"Delta-100\",\"Flint-100\",\"North-100\"],\"budget\":8,\"day\":30,\"objective\":\"Maximize approved marketing priority within the shared cost allowance; each account at most once.\"}}",
+      "role": "user"
+    }
+  ],
+  "max_output_tokens": 8192,
+  "store": false,
+  "reasoning": {
+    "effort": "medium"
+  },
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "marketing_plan",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "account": {
+                  "type": "string",
+                  "enum": [
+                    "Birch-100",
+                    "Larch-100",
+                    "Kestrel-100",
+                    "Grove-100",
+                    "Pine-100",
+                    "Delta-100",
+                    "Flint-100",
+                    "North-100"
+                  ]
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reasoning_summary": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

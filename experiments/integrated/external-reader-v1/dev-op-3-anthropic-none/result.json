@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:26.283700+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEgjxuhZwGx6rudBnAC",
+  "usage": {
+    "input_tokens": 626,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 79,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.002042",
+    "total_input_tokens": 626,
+    "output_tokens": 79,
+    "regular_input_tokens": 626,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or compiled wiki were supplied (company_context is empty), so the North pipeline review page and the meaning of \\\"Dana's freight account\\\" are not recorded.\"}",
+  "finished_at": "2026-10-23T00:39:29.166576+00:00",
+  "seconds": 2.8828841209906386
+}

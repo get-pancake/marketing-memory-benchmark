@@ -1,0 +1,122 @@
+{
+  "id": "q1542537384-anthropic-markdown",
+  "case_id": "q1542537384",
+  "world": "wf66aa99f",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2004,
+  "status": "completed",
+  "started_at": "2026-10-23T00:09:51.248599+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:09:52Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:09:56Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:09:51Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:09:52Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJCRu1U5VMetjCXvWRb4",
+  "usage": {
+    "input_tokens": 3644,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 624,
+    "output_tokens_details": {
+      "thinking_tokens": 328
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.013528",
+    "total_input_tokens": 3644,
+    "output_tokens": 624,
+    "regular_input_tokens": 3644,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "account.observed_signal:observed=migration"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S6",
+      "account.account_role:observed": "S14",
+      "account.observed_signal:observed": null,
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S4",
+      "seller.approved_role:approved": "S2",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S8"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.observed_signal:observed=migration"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.observed_signal:observed=migration"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Only P4 fits the migration objective within the 2-unit limit, since P1 and P3 cost 3 units and P2 is a qualification audit. P4 needs an observed migration signal, but the only current signal (S7) is 'withdrawn'. The other P4 prerequisites are met (role and geo match and the pain and proof are integration), so a verified migration signal is the missing evidence.",
+  "finished_at": "2026-10-23T00:09:56.839638+00:00",
+  "seconds": 5.591050503993756
+}

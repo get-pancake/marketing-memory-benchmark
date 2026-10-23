@@ -1,0 +1,128 @@
+{
+  "id": "resp_0604cbadda9960f8016adaade395a087d1b332c537a73188c9",
+  "object": "response",
+  "created_at": 1792716259,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792716262,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0604cbadda9960f8016adaade4968487d1b7c3e8cccd2d3652",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2q3mZXjZwL9K_A4Cl2VYgndrG_itItFM8meEvHSMBIcfnfa9-fWXRgnAdbWq0-bbqjb57g42elrEyhAt0j_RMjFDd1Vccp8qMCqow4NTpcfqc16xR2ngr8yDAGxXO-OylaC5EhZmBaAWVOqzurjMNuV3MnaBFhsaMzRYMRtRUQ7nd8UX0YexVvtoJvxciHe1ZhQp21QkQPpCDZ8C52nYuVxPrgIb8iVwdUabBBjHx0o7lOnmFVqdHyTsprhra35GeU2N9HFJk3zEiA-EW0w5B1ieCe_oaefeiZITrdwZL-xboJ1oRcAMTo4Hl8cmsVmi3Ek4pehHZ3zrljS5LP91OyTwjm5n_aA3q_0zhI82K8_weOD7B0Oiq-33H8YIa5JEqpSTwDqeq4S31cbag6MMhWSJcToxWhzxkhGdLgM5ZDrRrdOhs0bwoFZdKMr8OQZLnCKICFyTCEJItEYvgdu8EkCjjg_0AzR6K3RCnUtV7OWDfFUWG3WlwMxVu74VWQqAbV4cLLl0e8pIj5JOkkBu26ulIGQ7BjcrYGYuk4BI_ZwMdXhVnRliYHNxD9bvkLaILJinyMOSnUQy-CtZMT5GWUERxWW6_vJ0ctOs4EDYYBQmAjqtpZLJAfb4j_DUCEe4hAuUkqkn5-THxKvEfc3q_T_vfJPBTuCPBZAWdx-6NrsTBaol3SId4HJB1y-iY5VW3K0nsY3wRCA0EIgBfF6k2khJhmZ-U6G1786CjZZIWvea3I11F-T4KEiQYxKU3n86-CLNnjH_3Bs77UvLvDIYDrwKIgzMdtHiFoPNnGrWujlGjJVzsPSFnK842RFq8L_N6dPWBfGDDQ0d99NsoZy7pRb1r0OR-AIBORGyMVohspVd4iDB202AC8E4REJ0y8K9o7RPk4owznA960t-2K9JaVPyonVDhbZHUc4D744uwNgUIJB-cnDTzNu-kCmwc1Ru5c1_Fdqd16oO4RTk8W02n1lFzvlP012FgSz_diTjLxbye-l3loQzP3uMjij49XtnBEeTjk2F04i2xj6bve9yTm3DBtcDN3qlEvc-sGcuLpf78QkSSwjvCY_jMAFwqeupqHp1LOyvmM174QptugkQL349wEfy3SIXi6tL95_KXfK5yuT6LMDB0D_3NWwpTrGMTUIjgiCdADZFOakMvBpLTAr4q02_LjTsn3Vf8natDLhf4tu-ZYrwLVMJ8-ycdkOVq3GkUlijz9LKFJYsPrq4p82E9UMbewzIB9PkNgPQTw-QhaQi8eKyZVi_FfvJzL9Qo4KSav-7Vcu4OPfbDd8wi_KQSM5F9vrjOgKwFP3EsVhbIFvqor9nW0ih9x2EL24ZGZ4arbzwL8Lm7w3BmzT4Am5IW-DmT5v3MFwBYgAvBtGPYa2pwUnI734G46Xhn7iuXCda4Sc-FeIYgxCOukVIxS4s_syzvNN51PS2FsIeNAJr_CVvlOYECYE-m3Nh5Si8YlG6bJJWmoRM9YQfFKaifxrA3hEctt1xd5f82FcmvIeqKtTO7MMzGAJwcv-ogUDjzVztJtZ2TrPb1U0R14HXqAfJ-bOaCeKOjfhXDyc870DlDYgWJhrqIjQRLyBae4aKqTNBSwgvnljvvxn3BReU9kQ-wn76PWS_gpODKTZh2hfJEDv-zu_Rl0BlqJySPoAtMniJitaw-Cu79W_yZb5myuPV6mmYp9oVFJW3EUsTVKNpSRMDnCUSFa3Ge8xbynuOKSI8UFkjKR5ciMKQBDKgcx2FyA==",
+      "summary": []
+    },
+    {
+      "id": "msg_0604cbadda9960f8016adaade5353087d186ada48e78be07dc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"false\",\"citations\":[\"D034\",\"D035\"],\"explanation\":\"The October 28 customer redline is explicitly unsigned and for review only. The later executed renewal, signed November 21, records different terms, including 64 seats rather than the redline\u2019s 75.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 6098,
+    "input_tokens_details": {
+      "cache_write_tokens": 6095,
+      "cached_tokens": 0
+    },
+    "output_tokens": 95,
+    "output_tokens_details": {
+      "reasoning_tokens": 24
+    },
+    "total_tokens": 6193
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:57.246006+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0df7b5a676910e08016adaacdd696487d195c5779c213ef923",
+  "usage": {
+    "input_tokens": 17589,
+    "input_tokens_details": {
+      "cache_write_tokens": 17586,
+      "cached_tokens": 0
+    },
+    "output_tokens": 110,
+    "output_tokens_details": {
+      "reasoning_tokens": 33
+    },
+    "total_tokens": 17699
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.045071",
+    "total_input_tokens": 17589,
+    "output_tokens": 110,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17586
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D106\",\"D056\",\"D059\"],\"explanation\":\"The September 15 weekly update refers to Quarrendon Freight Lines, formally assigned to Dana effective June 2, 2025. Brackenwater Freight Co. transferred to Marcus effective September 15.\"}",
+  "finished_at": "2026-10-23T00:40:01.114153+00:00",
+  "seconds": 3.8681524580024416,
+  "id": "dev-op-1-openai-wiki_generic",
+  "case_id": "dev-op-1",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The September 15 weekly update refers to Quarrendon Freight Lines, formally assigned to Dana effective June 2, 2025. Brackenwater Freight Co. transferred to Marcus effective September 15.",
+  "citations": [
+    "D106",
+    "D056",
+    "D059"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "kind": "post-hoc descriptive sensitivity; original scoring unchanged",
+  "excluded_case": "dev-op-2",
+  "reason": "Upstream requires ambiguity, while nearby QBR prose motivates a plausible but non-unique account inference. This case drives some one-answer advantages.",
+  "groups": {
+    "anthropic/none": {
+      "all_correct": 1,
+      "all_cases": 22,
+      "sensitivity_correct": 1,
+      "sensitivity_cases": 21
+    },
+    "anthropic/raw_bm25": {
+      "all_correct": 20,
+      "all_cases": 22,
+      "sensitivity_correct": 20,
+      "sensitivity_cases": 21
+    },
+    "anthropic/raw_chunks": {
+      "all_correct": 21,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    },
+    "anthropic/raw_full": {
+      "all_correct": 21,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    },
+    "anthropic/wiki_generic": {
+      "all_correct": 20,
+      "all_cases": 22,
+      "sensitivity_correct": 20,
+      "sensitivity_cases": 21
+    },
+    "anthropic/wiki_specialized": {
+      "all_correct": 20,
+      "all_cases": 22,
+      "sensitivity_correct": 19,
+      "sensitivity_cases": 21
+    },
+    "openai/none": {
+      "all_correct": 1,
+      "all_cases": 22,
+      "sensitivity_correct": 1,
+      "sensitivity_cases": 21
+    },
+    "openai/raw_bm25": {
+      "all_correct": 20,
+      "all_cases": 22,
+      "sensitivity_correct": 20,
+      "sensitivity_cases": 21
+    },
+    "openai/raw_chunks": {
+      "all_correct": 21,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    },
+    "openai/raw_full": {
+      "all_correct": 21,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    },
+    "openai/wiki_generic": {
+      "all_correct": 21,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    },
+    "openai/wiki_specialized": {
+      "all_correct": 22,
+      "all_cases": 22,
+      "sensitivity_correct": 21,
+      "sensitivity_cases": 21
+    }
+  },
+  "input_sha256": {
+    "base": "3b6e52bcaf29e6efb6244b2e813ae3d46dfaac4e3ceefc3a93449548282cc5ad",
+    "chunks": "9df8634c2f880780fad912b52de9a332ac10220bbfcfd10fb4f07c41211fafb0"
+  }
+}

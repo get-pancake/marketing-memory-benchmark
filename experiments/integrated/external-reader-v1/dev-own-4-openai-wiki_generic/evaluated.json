@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:05.233970+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_05cdc4bebe2dd61d016adaaca9cd1487d185c024531be251d6",
+  "usage": {
+    "input_tokens": 17579,
+    "input_tokens_details": {
+      "cache_write_tokens": 17576,
+      "cached_tokens": 0
+    },
+    "output_tokens": 80,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17659
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044746",
+    "total_input_tokens": 17579,
+    "output_tokens": 80,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17576
+  },
+  "text": "{\"answer\":\"Tobias Rendle\",\"citations\":[\"D085\",\"D087\"],\"explanation\":\"The May 19, 2025 private note explicitly establishes Tobias Rendle as Tansleigh Packaging\u2019s owner, with the public announcement deferred. July onsite notes corroborate the management transition, and no subsequent change is recorded before September 1.\"}",
+  "finished_at": "2026-10-23T00:39:08.701401+00:00",
+  "seconds": 3.467442184992251,
+  "id": "dev-own-4-openai-wiki_generic",
+  "case_id": "dev-own-4",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tobias Rendle",
+  "explanation": "The May 19, 2025 private note explicitly establishes Tobias Rendle as Tansleigh Packaging\u2019s owner, with the public announcement deferred. July onsite notes corroborate the management transition, and no subsequent change is recorded before September 1.",
+  "citations": [
+    "D085",
+    "D087"
+  ]
+}

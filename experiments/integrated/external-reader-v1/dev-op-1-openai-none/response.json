@@ -1,0 +1,128 @@
+{
+  "id": "resp_0fc68380e1196add016adaacb0c7ec87d196ee94a2006c9ff4",
+  "object": "response",
+  "created_at": 1792715952,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715955,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fc68380e1196add016adaacb2006887d1a82de8bcc716af8f",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qyzxc6na4yx4DSAZumAbHQ53ijiB1OAhyq5VvOEXvudsL11yrKm4tcJglW5H-tnwXeaT5w_gQ3T8kqod0vwZFm81uTfk5_1fEQSes7j7ohshBpKw1cLZUT7UBnHQ4maXALD4-yyc0IO7r0i9vGzPHKNPNqCJv-PHM4JBbk51qOuJ_TpVuQz2rdNSwjAwbj4uFd0LO3Mvvm-9JisJu3yCz9m4Ka9jGyR5W-ZsNHrt6e8z8bSf5O51DsNqxitQPqXHgGdK3nna_MQ7Bm9ZX0boDHv-Bi_0ezU5KNaQnKByNYT8JwAsmQLD0duRyA7m6Zilt8vMQSzyCt4jvHzK9JKiU9ySFeCbZgzfHKrmkRsHLcdhskV6JZ3fbzHXiQ0RZDmJaYppFpexxe6TlgvSGIeVycwhu4x_TYZ2-ih4EVeKx10yJ7-v691AgMQbdvR3oqtM0HAo2_yP4FLfbBUDUKzk3FNUQ-ShTpBtZVe1FYhBf9xtw0PFhIvFZ0cc8MCbR7smXeye3LIg0oVTEvctl559jidXMiNFuF7kUlr6yO4yAeVOgMAfzGviTh11894IRKo718H-z1vZxbFgvR24d15RX5DS88K4OlDGWZ35zA5XNwbx5WT1gzmLgc7SV9C4jfBhb7FUqeezmScdZc4wBdPIM9SRy1aKyd_b-59QXjbsGZJeqAUErTN2Piu9rcGPK_Z6VHxTk5lae2CtpyKa9VsOYN-TG00apSTubPT9m3RKxHSczh7P6-gBmkVeClRTKLGn65UDGYP3Leme1mSt1xvCIh5zmqvOxhvoqChlQ9yJ5CkPMtnrg6KrGDdbbe0nyjLbg5mB2xotih54XQexvpy2Prmc68HdEMgPGM1LlxNFNBHzsAn3t7YTRlnRnfJIfvFnOY9WWuT4SMT5sH0PxxP5VgrRtxtPuI9Qqu-Uw_qeBkqYRLKkQERQgRLiyhfUjSMUS7kaVBs5prfk-G2HmlRgtiL04-7eGm5O4RnIYeBgYHH9jkVRidVtPaiGfDh9VgkiUDMx7O9bKMvU2hgVKptHWouYrPeRlCgHojORAG1m6tCPIVPGuKqvxleOZ_KMWbjmAl-2_28gJ1TAjFbZZCa1dU5AZ8DyGrmvGsQwNk0_EJhJHlu6b34kBG4XSfu7r0FzhlTIMQ0nGh5ucsTXKzie3BntGkwuLHvUHY61NUgphe0uleuC0Qian5TjVlO88Fp6KeSylMx34QBJv-0EFthSvy9W33lYl9vKeWl5aXNnZV9R0URvh5bCpiU9fPUUrkf8mPzGJ3783cIP3G-9EC2uNnvU2hzAnvp5GwoxrBkMh-t_26X9_QS_ON6q48adUNGTjBi16f7LhAJURl-emON1Rto1O10vD5oti31ERHhNJOG8tLQlRz56MkL7JTzmdQ2jwjRRvRquwiIIotcEikhg8Ig9x7eg2JVDPrvO-qrJhFf_Lai6VbqASq7U3q-3Bdr4DICYldc2IwRkNFeWBLOD3yrRQ_siQuBg98eUx08GQ-uJEf7ae_KuLyOJnUTkqBYW0kYVrSZrwj5e1_iaFKPuHp1ag==",
+      "summary": []
+    },
+    {
+      "id": "msg_0fc68380e1196add016adaacb272d887d18ed62ffdd7c26bca",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"The September 15, 2025 North team weekly update and supporting company documents were not supplied, so the account cannot be identified.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 266,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 62,
+    "output_tokens_details": {
+      "reasoning_tokens": 12
+    },
+    "total_tokens": 328
+  },
+  "user": null,
+  "metadata": {}
+}

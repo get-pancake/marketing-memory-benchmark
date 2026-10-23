@@ -1,0 +1,126 @@
+{
+  "id": "w20261023041-007-constrained-anthropic-gtm",
+  "case_id": "w20261023041-007-constrained",
+  "world": "w20261023041-007",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:18:09.801731+00:00",
+  "evidence_bytes": 12251,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9993000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:18:13Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:18:27Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:18:09Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11992000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:18:13Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbwUTs98YDMQAYmb2nZ",
+  "usage": {
+    "input_tokens": 6875,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1800,
+    "output_tokens_details": {
+      "thinking_tokens": 1028
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.0635",
+    "total_input_tokens": 6875,
+    "output_tokens": 1800,
+    "regular_input_tokens": 6875,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Grove-7",
+        "action": "renewal_review",
+        "sources": [
+          "e093f0605063dbf",
+          "e32627cda1d2c58",
+          "eec9de850069c8b",
+          "e7c7901ddbc7d91",
+          "ebeada34007f282",
+          "ef10cf4a168aa9f",
+          "ef891f5bb531ddf",
+          "e787083c7a3638c",
+          "e06008e72bbd07f",
+          "e5ed034854585cc"
+        ]
+      },
+      {
+        "account": "North-7",
+        "action": "workshop",
+        "sources": [
+          "e093f0605063dbf",
+          "ec15422261e0ab6",
+          "e80b5a66a079b89",
+          "e5dbeed21fa80bf",
+          "ede797e5300c2f9",
+          "ec3cfd7881a9351",
+          "e228d0a4b21fe5d",
+          "ea518f5f27d04c2",
+          "e1e53be46be5031",
+          "e81e315af06bb8f",
+          "e2f3e61d3c2cff5"
+        ]
+      },
+      {
+        "account": "Mesa-7",
+        "action": "diagnostic",
+        "sources": [
+          "e093f0605063dbf",
+          "ee258eb71bc65c9",
+          "e4cf2994019f290",
+          "eedddbc2f46908e",
+          "e3d9941f37843b8",
+          "e0a553c38f6c0fc",
+          "e90955982f03959",
+          "e5f804f42c59d54",
+          "e43efa23459bcd4",
+          "eb636947ca48dec"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Only the approved seller policy (day 12) was applied; the proposed policy was ignored. Pine-7 is blocked because its sector is restricted. Delta-7 is blocked because its region, FR, is not allowed. Orchid-7 cannot take a workshop because its offering capacity is false, leaving only a research_brief worth 3 points. Grove-7 cannot take a reference_intro because its proof is not shareable, so a renewal_review is its best option. North-7 and Mesa-7 both have a risk signal with capacity and assurance approved. Best plan within the budget of 7: Grove-7 renewal_review (cost 2, 12x3=36), North-7 workshop (cost 3, 3x4=12) and Mesa-7 diagnostic (cost 2, 3x2=6). Total cost is 7 and total policy points are 54, which are synthetic priorities, not revenue. Swapping the workshop and diagnostic between North-7 and Mesa-7 also scores 54."
+  },
+  "score": {
+    "optimum": 54,
+    "recoverable_value": 54,
+    "returned_value": 54,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:18:27.307198+00:00",
+  "seconds": 17.505476395992446
+}

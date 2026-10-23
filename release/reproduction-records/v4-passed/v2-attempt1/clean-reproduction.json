@@ -1,0 +1,310 @@
+{
+  "started_at": "2026-10-22T22:09:30.118946+00:00",
+  "passed": false,
+  "core_payload_sha256": "cf4c3588d29cd7961771826170f3935f5c1e9f6319e028eb86b1bd055a1ac8ff",
+  "package_files_verified": 998,
+  "package_manifest_sha256": "b67833fdf87fa087505c6009bd73db1768212ea8e5a959a89c7fb18e8c36d5e0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/tmp/marketing-companion-v2-venv/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "independent_hardware": false,
+  "fresh_runtime_compilation": false,
+  "fresh_full_main_inference": false,
+  "fresh_smoke_requested": false,
+  "upstream_scorer_requested": false,
+  "commands": [
+    {
+      "label": "tests-original",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "414078abd5cddaba8e4a0e2c5e44cfa914ae3b50aebeb3db02a9bf70fdd9326d"
+    },
+    {
+      "label": "tests-study",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "-m",
+        "unittest",
+        "study.test_contract",
+        "study.test_ledger",
+        "analysis.test_analysis",
+        "analysis.test_audit",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "040ad92ed7875ae108c02e10b1314ff82ff801763c6887b6d74dfe77d2175876"
+    },
+    {
+      "label": "data",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "12",
+        "--seed",
+        "2026102202",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/regenerated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4779a10b35e10264c0e54207d831c5cb62dd1a728856062c3340f791058e6b93"
+    },
+    {
+      "label": "input-capacity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/input_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/input-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "949f7fbd062f24a281310dd27da469daf585c013917e13867710f32422307a43"
+    },
+    {
+      "label": "output-capacity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/output_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/output-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "83125a161bd4b92f27253602e6b5bd2156972c827c49deb1c0b9dd4d17fcb604"
+    },
+    {
+      "label": "audit-primary",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/primary/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "da5963a666e6a4223303f1a8869a4cb7a9be500583b75b27e69a9b83556aaab9"
+    },
+    {
+      "label": "analysis-primary",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8829fc416354ba434c51702aabacc7ef9f275c9390fc6ba18070e13480aa94ff"
+    },
+    {
+      "label": "errors-primary",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/primary",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/primary/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "150bf3b79086ee3a01d993bb82c64ceeed75511530d36de4132b179a79693b93"
+    },
+    {
+      "label": "figures-primary",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/primary/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/figures/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f49b61c96d4837981a39c00f060bede36f953d2ce4bd0ecff6b603116dac872d"
+    },
+    {
+      "label": "audit-sensitivity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/sensitivity/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "343393a33b21d8f4896024e44637dbd62dbf8cce25befd62dd6b925436a6c3a8"
+    },
+    {
+      "label": "analysis-sensitivity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f1bc7235ad55d156bb39e8362e944a6485808e54c24a9c246b67e3d6cb6f6997"
+    },
+    {
+      "label": "errors-sensitivity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/sensitivity/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "bea9bf12cdd1c66b50d51896470a029676fbc00040d6d83dd23b97121a0e7538"
+    },
+    {
+      "label": "figures-sensitivity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v2-attempt1/analysis/sensitivity/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/figures/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f6520e3bb9abd780e6f041eb7a077174ba293915e634977017dd9919dff0f17d"
+    },
+    {
+      "label": "sql-reference",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "-m",
+        "study.reference",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/sql-reference"
+      ],
+      "exit_code": 0,
+      "output_sha256": "fed0f2359fdf7d1059f1298d4eca0d1c85c2a883b48c36aa5bc649ded5437827"
+    },
+    {
+      "label": "cost-accounting",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/cost_accounting.py",
+        "--runs",
+        "experiments/main/primary",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/cost-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "48822f59d7c6f3c9a08838ea08b68f37f025e82749d5b3bb8cda8e25d2ef44a0"
+    },
+    {
+      "label": "context-primary",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/primary",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/context-v1/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "1eb92731ff4d0ec73e9509cca9e50a520a13a2f10b53d44c8d052ce42408ed6d"
+    },
+    {
+      "label": "context-sensitivity",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/context-v1/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f5748f755e0935c49de0bbd266f64a7af6a48fe3f11746465e809b6a9eb92eb0"
+    },
+    {
+      "label": "gbrain-1024",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1024",
+        "--offline-token-counts",
+        "/tmp/marketing-companion-clean-v2-attempt1/analysis/gbrain/reproducible-1024/token-counts.json",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/gbrain/reproducible-1024"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8647869e46c58529c218ef0042323ccab07385678aa4397d16e9fb7ff1fa4945"
+    },
+    {
+      "label": "gbrain-1536",
+      "argv": [
+        "/tmp/marketing-companion-v2-venv/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1536",
+        "--offline-token-counts",
+        "/tmp/marketing-companion-clean-v2-attempt1/analysis/gbrain/reproducible-1536/token-counts.json",
+        "--output",
+        "/tmp/marketing-reproduction-v2-attempt1/gbrain/reproducible-1536"
+      ],
+      "exit_code": 1,
+      "output_sha256": "c2925b62a1a7e390717967a20dd544366ea4e72f948ea9f6daffe41de91dfe02"
+    }
+  ],
+  "checks": {
+    "main_dataset_byte_identical": true,
+    "input_capacity_receipts_verified_offline": true,
+    "output_capacity_receipts_verified_offline": true,
+    "primary_analysis_identical_excluding_timestamp_and_paths": true,
+    "primary_error_localization_identical_excluding_timestamp": true,
+    "primary_figure_and_table_bytes_identical": true,
+    "sensitivity_analysis_identical_excluding_timestamp_and_paths": true,
+    "sensitivity_error_localization_identical_excluding_timestamp": true,
+    "sensitivity_figure_and_table_bytes_identical": true,
+    "sql_reference_identical_excluding_timing": true,
+    "cost_accounting_identical_excluding_timestamp": true,
+    "context_decomposition_identical_excluding_timestamp": true
+  },
+  "scope": "Clean extracted code/data and isolated Python environment; system TeX and, if requested, existing pinned local model services remain external dependencies.",
+  "finished_at": "2026-10-22T22:09:39.669456+00:00"
+}

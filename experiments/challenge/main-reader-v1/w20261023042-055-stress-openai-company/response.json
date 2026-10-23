@@ -1,0 +1,162 @@
+{
+  "id": "resp_0c94a86bbef7d616016adaf891a35887d1b254bc3118c98758",
+  "object": "response",
+  "created_at": 1792735377,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735382,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0c94a86bbef7d616016adaf892f36887d1afcf75a0a460d730",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Cedar-55: observed consent is false, and its observed UK/restricted profile fails the approved region and sector policy. Eligibility requires affirmative observed consent and a policy-eligible observed profile.\",\n    \"Elm-55, Kestrel-55, Grove-55, Harbor-55, North-55, Pine-55 and Orchid-55: supply approved integer priorities; observed profiles, affirmative consent and catalog-matching signals; observed account-to-initiative-to-need-to-offering-to-proof links; and approved proof verification.\",\n    \"For workshop, assurance_pack or reference_intro on otherwise eligible accounts, also supply approved true offering capacity, offering assurance or proof shareability, respectively.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available. Cedar-55 fails mandatory consent, region and sector checks. Every other queried account lacks required eligibility and priority evidence. The proposed seller policy and unrelated corporate records cannot establish eligibility.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Elm-55",
+                    "Kestrel-55",
+                    "Grove-55",
+                    "Harbor-55",
+                    "North-55",
+                    "Cedar-55",
+                    "Pine-55",
+                    "Orchid-55"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3197,
+    "input_tokens_details": {
+      "cache_write_tokens": 3194,
+      "cached_tokens": 0
+    },
+    "output_tokens": 209,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3406
+  },
+  "user": null,
+  "metadata": {}
+}

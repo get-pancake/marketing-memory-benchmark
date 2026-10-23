@@ -1,0 +1,116 @@
+{
+  "id": "q53928991e7-openai-specialized",
+  "case_id": "q53928991e7",
+  "world": "w61b8ff16",
+  "arm": "specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.5238095238095238,
+    "selected_sources": 21,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2037,
+  "status": "completed",
+  "started_at": "2026-10-23T00:46:33.998932+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999865",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_018053d1caf78653016adaae6a30c087d190cb58019a780287",
+  "usage": {
+    "input_tokens": 2096,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2093
+    },
+    "output_tokens": 278,
+    "output_tokens_details": {
+      "reasoning_tokens": 62
+    },
+    "total_tokens": 2374
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0029953",
+    "total_input_tokens": 2096,
+    "output_tokens": 278,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 2093,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Unambiguous approved seller role matching the account role revenue_lead; S17 and S21 conflict.",
+      "Observed active customer state required by P4; S1 reports withdrawn."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S5",
+      "account.customer_state:observed": "S1",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S20",
+      "seller.approved_geo:approved": "S7",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Unambiguous approved seller role matching the account role revenue_lead; S17 and S21 conflict.",
+      "Observed active customer state required by P4; S1 reports withdrawn."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Unambiguous approved seller role matching the account role revenue_lead; S17 and S21 conflict.",
+      "Observed active customer state required by P4; S1 reports withdrawn."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 is within the resource allowance, but approved-role evidence conflicts (S17, S21), and the observed customer state is withdrawn rather than active (S1). P1 and P2 exceed the allowance, while P3 does not match the renewal objective.",
+  "finished_at": "2026-10-23T00:46:40.979247+00:00",
+  "seconds": 6.980327358993236
+}

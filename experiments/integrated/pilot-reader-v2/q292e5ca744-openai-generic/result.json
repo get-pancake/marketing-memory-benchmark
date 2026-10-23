@@ -1,0 +1,115 @@
+{
+  "id": "q292e5ca744-openai-generic",
+  "case_id": "q292e5ca744",
+  "world": "wd25e532f",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2005,
+  "status": "completed",
+  "started_at": "2026-10-23T00:13:07.611179+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999866",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a5773b443ba5ca6016adaa694074487d1b51700f57db668c8",
+  "usage": {
+    "input_tokens": 1890,
+    "input_tokens_details": {
+      "cache_write_tokens": 1887,
+      "cached_tokens": 0
+    },
+    "output_tokens": 276,
+    "output_tokens_details": {
+      "reasoning_tokens": 68
+    },
+    "total_tokens": 2166
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0074835",
+    "total_input_tokens": 1890,
+    "output_tokens": 276,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1887
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve the conflicting seller.approved_role:approved values and establish agreement with the account role in S6.",
+      "Provide account.observed_signal:observed=hiring."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S14",
+      "account.account_role:observed": "S6",
+      "account.observed_signal:observed": "S12",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S17",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S13"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve the conflicting seller.approved_role:approved values and establish agreement with the account role in S6.",
+      "Provide account.observed_signal:observed=hiring."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve the conflicting seller.approved_role:approved values and establish agreement with the account role in S6.",
+      "Provide account.observed_signal:observed=hiring."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No hiring action qualifies: S1 and S9 conflict on the approved role, and S12 records a withdrawn signal rather than hiring. Geography matches (S14, S17), and onboarding offering and proof are supported (S4, S13), but these do not resolve the blocked prerequisites.",
+  "finished_at": "2026-10-23T00:13:16.223747+00:00",
+  "seconds": 8.612579235006706
+}

@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:57.255612+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEj1EyiU7pxKzeSsLVi",
+  "usage": {
+    "input_tokens": 28202,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 146,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057864",
+    "total_input_tokens": 28202,
+    "output_tokens": 146,
+    "regular_input_tokens": 28202,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"The July 2 chat (D015) shows the ambiguous \\\"TP\\\" escalation was #88412, a Tier 2 Door 6 tablet BOL barcode freeze, and the mistaken \\\"Tansley Packaging\\\" was explicitly corrected to Tansleigh. It is not Tansley Parcel, which is a separate customer.\"}",
+  "finished_at": "2026-10-23T00:39:59.715333+00:00",
+  "seconds": 2.4597246939956676
+}

@@ -1,0 +1,89 @@
+{
+  "model": "gpt-6.1-sol",
+  "input": [
+    {
+      "content": "You are a marketing decision-support analyst. Use only supplied current company evidence and the common action catalog. Select up to three actions for distinct accounts to maximize the SUM of approved priority times catalog multiplier under the query's shared cost budget. These policy points are synthetic priorities, NOT expected revenue. Check every action separately; do not let one ineligible account block another.\nEligibility for every action requires: seller policy is approved, the account profile region is allowed and sector not blocked, the action is approved by policy, current observed consent is true, and the signal matches the catalog. Follow account.initiative -> initiative.need -> need.offering -> offering.proof -> proof.verified; verified must be approved true. Account priority must be approved and an integer. Profile, consent, initiative, need, offering, proof and signal require observed authority. Additional capacity and assurance are approved true on the offering; shareable is approved true on the proof. The account itself must be in the query. Missing facts and conflicting current values at the required authority block the affected action. Proposed policies and feedback are not approved facts. Never assume a missing fact.\nAll supplied records have already passed the current-view filter. A later timestamp alone NEVER supersedes another supplied current record. If supplied values conflict at the required authority, abstain for that requirement even when one record has a later date.\nFor each chosen action cite ALL supplied source IDs required for its eligibility AND priority, including policy and every link in the chain. Do not cite unrelated records as proof. Distinct-account, cost and maximum-action constraints apply to the whole plan. When no supported action is available return an empty actions list and request missing evidence. Return the exact JSON schema, with a short reasoning summary and a missing-evidence list. Do not invent company facts or predicted conversion rates.",
+      "role": "system"
+    },
+    {
+      "content": "{\"catalog\":[{\"cost\":2,\"extra\":[],\"id\":\"diagnostic\",\"multiplier\":2,\"signals\":[\"risk\",\"growth\"]},{\"cost\":3,\"extra\":[\"capacity\"],\"id\":\"workshop\",\"multiplier\":4,\"signals\":[\"risk\",\"launch\"]},{\"cost\":2,\"extra\":[],\"id\":\"renewal_review\",\"multiplier\":3,\"signals\":[\"renewal\"]},{\"cost\":4,\"extra\":[\"shareable\"],\"id\":\"reference_intro\",\"multiplier\":5,\"signals\":[\"growth\",\"renewal\"]},{\"cost\":3,\"extra\":[\"assurance\"],\"id\":\"assurance_pack\",\"multiplier\":4,\"signals\":[\"risk\"]},{\"cost\":1,\"extra\":[],\"id\":\"research_brief\",\"multiplier\":1,\"signals\":[\"risk\",\"growth\",\"renewal\",\"launch\"]}],\"company_evidence\":[{\"authority\":\"approved\",\"entity\":\"seller\",\"id\":\"e046bceb0e16925\",\"observed_day\":12,\"relation\":\"policy\",\"valid_day\":12,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[\"US\",\"FR\",\"DE\"],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"proposed\",\"entity\":\"seller\",\"id\":\"eb8567389580804\",\"observed_day\":25,\"relation\":\"policy\",\"valid_day\":25,\"value\":{\"actions\":[\"diagnostic\",\"workshop\",\"renewal_review\",\"reference_intro\",\"assurance_pack\",\"research_brief\"],\"allowed_regions\":[],\"blocked_sectors\":[\"restricted\"]}},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e0986b80cf7394e\",\"observed_day\":15,\"relation\":\"consent\",\"valid_day\":15,\"value\":false},{\"authority\":\"feedback\",\"entity\":\"Birch-28\",\"id\":\"e0ad9cd623d5a55\",\"observed_day\":5,\"relation\":\"nonresponse\",\"valid_day\":5,\"value\":true},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e0e27efeef377c0\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-180\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e253bc784a02fdc\",\"observed_day\":5,\"relation\":\"invoice\",\"valid_day\":5,\"value\":\"corporate-246\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"eba6a97dee266f1\",\"observed_day\":5,\"relation\":\"invoice\",\"valid_day\":5,\"value\":\"corporate-53\"},{\"authority\":\"approved\",\"entity\":\"Birch-28\",\"id\":\"e25c0ad330a7fc3\",\"observed_day\":5,\"relation\":\"priority\",\"valid_day\":5,\"value\":5},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e2ce35db39ad1b1\",\"observed_day\":5,\"relation\":\"hiring_plan\",\"valid_day\":5,\"value\":\"corporate-75\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e7985e456055cdb\",\"observed_day\":5,\"relation\":\"support_ticket\",\"valid_day\":5,\"value\":\"corporate-243\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"e8fa213f08563ef\",\"observed_day\":5,\"relation\":\"signal\",\"valid_day\":5,\"value\":\"risk\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"ebb7d3b7565ec8f\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-131\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"ee4ea2179347358\",\"observed_day\":5,\"relation\":\"brand_history\",\"valid_day\":5,\"value\":\"corporate-215\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"ecea39af5c73946\",\"observed_day\":5,\"relation\":\"supplier\",\"valid_day\":5,\"value\":\"corporate-25\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"ed129d56bdb3ef4\",\"observed_day\":5,\"relation\":\"supplier\",\"valid_day\":5,\"value\":\"corporate-225\"},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"ed034527557e0fd\",\"observed_day\":5,\"relation\":\"profile\",\"valid_day\":5,\"value\":{\"region\":\"UK\",\"sector\":\"services\"}},{\"authority\":\"observed\",\"entity\":\"Birch-28\",\"id\":\"eeea677945b42cc\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-2\"},{\"authority\":\"observed\",\"entity\":\"corporate-180\",\"id\":\"e349c7776e8989a\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-246\",\"id\":\"eecd3d874d5c3c1\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Engineering log with no proof approval.\"},{\"authority\":\"observed\",\"entity\":\"corporate-75\",\"id\":\"e5900a17d7be2c1\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-243\",\"id\":\"edb83045bbc9e43\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"observed\",\"entity\":\"corporate-225\",\"id\":\"e788742cd927e58\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Finance forecast is not an approved action priority.\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e08a8aa5447541b\",\"observed_day\":5,\"relation\":\"need\",\"valid_day\":5,\"value\":\"need-2\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e22b1857e2e3305\",\"observed_day\":5,\"relation\":\"budget_note\",\"valid_day\":5,\"value\":\"corporate-211\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"eeaf81290a01687\",\"observed_day\":5,\"relation\":\"budget_note\",\"valid_day\":5,\"value\":\"corporate-61\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e2b45c02905c21f\",\"observed_day\":5,\"relation\":\"incident\",\"valid_day\":5,\"value\":\"corporate-68\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e73a30ef1e492b3\",\"observed_day\":5,\"relation\":\"incident\",\"valid_day\":5,\"value\":\"corporate-212\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"e4305a6a43fd186\",\"observed_day\":5,\"relation\":\"office_lease\",\"valid_day\":5,\"value\":\"corporate-150\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"eb5292995953996\",\"observed_day\":5,\"relation\":\"office_lease\",\"valid_day\":5,\"value\":\"corporate-8\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"ea6b7d20380a27b\",\"observed_day\":5,\"relation\":\"support_ticket\",\"valid_day\":5,\"value\":\"corporate-60\"},{\"authority\":\"observed\",\"entity\":\"initiative-2\",\"id\":\"ec09f25bcf68721\",\"observed_day\":5,\"relation\":\"support_ticket\",\"valid_day\":5,\"value\":\"corporate-234\"},{\"authority\":\"observed\",\"entity\":\"need-2\",\"id\":\"e4258ad5c23f4e7\",\"observed_day\":5,\"relation\":\"offering\",\"valid_day\":5,\"value\":\"offering-2\"},{\"authority\":\"observed\",\"entity\":\"corporate-150\",\"id\":\"ecc662cf15c7a02\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Finance forecast is not an approved action priority.\"},{\"authority\":\"observed\",\"entity\":\"corporate-60\",\"id\":\"e2a0ddb0551c7ee\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Engineering log with no proof approval.\"},{\"authority\":\"observed\",\"entity\":\"corporate-234\",\"id\":\"e625772f4149e6c\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Finance forecast is not an approved action priority.\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"e04ead53262dc92\",\"observed_day\":5,\"relation\":\"office_lease\",\"valid_day\":5,\"value\":\"corporate-135\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"eb5a747bd7534cd\",\"observed_day\":5,\"relation\":\"office_lease\",\"valid_day\":5,\"value\":\"corporate-137\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"e13b1c58d20802c\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-125\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"e5e8645cc0a4d2e\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-106\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"e6a465f57f88b8a\",\"observed_day\":5,\"relation\":\"support_ticket\",\"valid_day\":5,\"value\":\"corporate-148\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"e8dd83e9c8f83bd\",\"observed_day\":5,\"relation\":\"proof\",\"valid_day\":5,\"value\":\"proof-2\"},{\"authority\":\"approved\",\"entity\":\"offering-2\",\"id\":\"ed1059a181ed4b3\",\"observed_day\":5,\"relation\":\"capacity\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"offering-2\",\"id\":\"ed6f7bf0e5d0f4b\",\"observed_day\":5,\"relation\":\"assurance\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"eda23c4c56e6056\",\"observed_day\":5,\"relation\":\"hiring_plan\",\"valid_day\":5,\"value\":\"corporate-86\"},{\"authority\":\"observed\",\"entity\":\"offering-2\",\"id\":\"efd5d243a74ba2b\",\"observed_day\":5,\"relation\":\"supplier\",\"valid_day\":5,\"value\":\"corporate-67\"},{\"authority\":\"observed\",\"entity\":\"corporate-135\",\"id\":\"e5d7b3e93887d9c\",\"observed_day\":5,\"relation\":\"summary\",\"valid_day\":5,\"value\":\"Marketing account review has no approved targeting change.\"},{\"authority\":\"approved\",\"entity\":\"proof-2\",\"id\":\"e8d9f5e374bf2b3\",\"observed_day\":5,\"relation\":\"verified\",\"valid_day\":5,\"value\":true},{\"authority\":\"approved\",\"entity\":\"proof-2\",\"id\":\"eb7b3f232edcaee\",\"observed_day\":5,\"relation\":\"shareable\",\"valid_day\":5,\"value\":false},{\"authority\":\"observed\",\"entity\":\"Kestrel-28\",\"id\":\"e08ac2665df6d8d\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-85\"},{\"authority\":\"observed\",\"entity\":\"Kestrel-28\",\"id\":\"e0b00562d746a01\",\"observed_day\":5,\"relation\":\"design_review\",\"valid_day\":5,\"value\":\"corporate-95\"},{\"authority\":\"observed\",\"entity\":\"Kestrel-28\",\"id\":\"e5fb8547f034175\",\"observed_day\":5,\"relation\":\"initiative\",\"valid_day\":5,\"value\":\"initiative-0\"}],\"query\":{\"access\":[\"public\"],\"accounts\":[\"Kestrel-28\",\"Grove-28\",\"Birch-28\",\"Elm-28\",\"Mesa-28\",\"Juniper-28\",\"Pine-28\",\"Flint-28\"],\"budget\":8,\"day\":30,\"objective\":\"Maximize approved marketing priority within the shared cost allowance; each account at most once.\"}}",
+      "role": "user"
+    }
+  ],
+  "max_output_tokens": 8192,
+  "store": false,
+  "reasoning": {
+    "effort": "medium"
+  },
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "marketing_plan",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "account": {
+                  "type": "string",
+                  "enum": [
+                    "Kestrel-28",
+                    "Grove-28",
+                    "Birch-28",
+                    "Elm-28",
+                    "Mesa-28",
+                    "Juniper-28",
+                    "Pine-28",
+                    "Flint-28"
+                  ]
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reasoning_summary": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

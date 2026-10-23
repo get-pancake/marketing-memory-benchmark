@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:50.185964+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEiUfxrdggwTa3uDvgC",
+  "usage": {
+    "input_tokens": 10483,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 96,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.021926",
+    "total_input_tokens": 10483,
+    "output_tokens": 96,
+    "regular_input_tokens": 10483,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"2026-01-12\",\"citations\":[\"D067\",\"D008\",\"D039\"],\"explanation\":\"The rebrand email states that Orrin Mills began operating as Thornbury Cloth Co. effective 2026-01-12. The account record and the signed renewal order form both confirm this date.\"}",
+  "finished_at": "2026-10-23T00:39:53.232647+00:00",
+  "seconds": 3.0466919780010357,
+  "id": "dev-tl-2-anthropic-raw_bm25",
+  "case_id": "dev-tl-2",
+  "arm": "raw_bm25",
+  "context_bytes": 24526,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-01-12",
+  "explanation": "The rebrand email states that Orrin Mills began operating as Thornbury Cloth Co. effective 2026-01-12. The account record and the signed renewal order form both confirm this date.",
+  "citations": [
+    "D067",
+    "D008",
+    "D039"
+  ]
+}

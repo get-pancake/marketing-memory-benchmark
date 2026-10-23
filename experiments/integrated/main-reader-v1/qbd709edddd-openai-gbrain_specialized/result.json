@@ -1,0 +1,119 @@
+{
+  "id": "qbd709edddd-openai-gbrain_specialized",
+  "case_id": "qbd709edddd",
+  "world": "we6155369",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.47368421052631576,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1946,
+  "status": "completed",
+  "started_at": "2026-10-23T00:49:20.221884+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999939",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0541062fb3ca2655016adaaf10715487d1b54c0274f0296e58",
+  "usage": {
+    "input_tokens": 1996,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 1993
+    },
+    "output_tokens": 204,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2200
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0022453",
+    "total_input_tokens": 1996,
+    "output_tokens": 204,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1993,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Nonconflicting approved seller role matching the observed account role operations_director",
+      "Observed ISO27001 certification",
+      "Observed procurement_stage=approved (P4 only)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S7",
+      "account.account_role:observed": "S8",
+      "account.certification:observed": "S5",
+      "account.observed_signal:observed": "S17",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S13"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Nonconflicting approved seller role matching the observed account role operations_director",
+      "Observed ISO27001 certification",
+      "Observed procurement_stage=approved (P4 only)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Nonconflicting approved seller role matching the observed account role operations_director",
+      "Observed ISO27001 certification",
+      "Observed procurement_stage=approved (P4 only)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action qualifies: S10 and S15 conflict on the approved seller role, and S5 records certification as withdrawn rather than ISO27001. P4 also lacks observed procurement approval; P3 does not match the requested objective.",
+  "finished_at": "2026-10-23T00:49:24.567602+00:00",
+  "seconds": 4.345659092999995
+}

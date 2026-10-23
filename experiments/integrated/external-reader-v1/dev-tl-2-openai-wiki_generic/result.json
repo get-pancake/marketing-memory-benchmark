@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:02.850164+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c257a1181380037016adaace2fff887d18d42c053fff00f7f",
+  "usage": {
+    "input_tokens": 17576,
+    "input_tokens_details": {
+      "cache_write_tokens": 17573,
+      "cached_tokens": 0
+    },
+    "output_tokens": 58,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17634
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0445185",
+    "total_input_tokens": 17576,
+    "output_tokens": 58,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17573
+  },
+  "text": "{\"answer\":\"2026-01-12\",\"citations\":[\"D067\"],\"explanation\":\"Orrin Mills was renamed Thornbury Cloth Co. on January 12, 2026, retaining the same legal entity and tax ID.\"}",
+  "finished_at": "2026-10-23T00:40:05.762934+00:00",
+  "seconds": 2.912781029008329
+}

@@ -1,0 +1,121 @@
+{
+  "id": "q7c06e82bb1-openai-gbrain",
+  "case_id": "q7c06e82bb1",
+  "world": "w61b8ff16",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 5,
+    "current_value_group_coverage": 0.625,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.3333333333333333,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2035,
+  "status": "completed",
+  "started_at": "2026-10-23T00:37:06.682955+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999910",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b8ce3155709675a016adaac3324a487d1856cbebef9b837ad",
+  "usage": {
+    "input_tokens": 1995,
+    "input_tokens_details": {
+      "cache_write_tokens": 940,
+      "cached_tokens": 1052
+    },
+    "output_tokens": 233,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2228
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047912",
+    "total_input_tokens": 1995,
+    "output_tokens": 233,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1052,
+    "cache_write_tokens": 940
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S16",
+      "account.account_role:observed": "S3",
+      "account.customer_state:observed": "S13",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S17",
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": "S18",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 fits the renewal objective and two-unit allowance, but lacks approved seller geography and observed adoption-related offering and proof evidence. Account role matches the approved role (S3, S18), and account geography, active status and declining usage are evidenced (S16, S13, S17); P1 and P2 exceed the allowance, while P3 has a different objective.",
+  "finished_at": "2026-10-23T00:37:12.668517+00:00",
+  "seconds": 5.985574809994432
+}

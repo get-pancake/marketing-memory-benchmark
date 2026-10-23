@@ -1,0 +1,113 @@
+{
+  "id": "qdc2ad91070-openai-generic",
+  "case_id": "qdc2ad91070",
+  "world": "w0826b0d8",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.45,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2003,
+  "status": "completed",
+  "started_at": "2026-10-23T00:49:27.915669+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999951",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c6531966c100372016adaaf18502c87d1a6c752225d4af57c",
+  "usage": {
+    "input_tokens": 2016,
+    "input_tokens_details": {
+      "cache_write_tokens": 909,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 192,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2208
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0043089",
+    "total_input_tokens": 2016,
+    "output_tokens": 192,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 909
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S4",
+      "account.channel_fit:observed": "S12",
+      "account.partner_status:observed": "S13",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S19",
+      "seller.approved_role:approved": "S9",
+      "seller.offering_pain:observed": "S5",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P2 and P1 lack observed proof that the seller addresses integration pain; P4 additionally lacks an observed approved procurement stage. Approved role and geography match the account (S9, S4, S19, S18); the geography proposal in S16 does not change approved policy.",
+  "finished_at": "2026-10-23T00:49:32.818407+00:00",
+  "seconds": 4.902747208994697
+}

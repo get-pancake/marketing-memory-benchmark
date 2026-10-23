@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "created_at": "2026-10-22T22:12:30.956234+00:00",
+  "reviewer": "Research assistant; not independent human review",
+  "scope": "Layout, legibility, clipping, overlap, figure/table placement and citation rendering. Numeric interpretation is separately checked against saved analyses; this is not peer review.",
+  "renderer": "pdftoppm version 26.05.0",
+  "raster_dpi": 96,
+  "documents": {
+    "paper/report.pdf": {
+      "pdf_sha256": "e56b0f34964fc346396d84301d0e8574b73a89a2c2279e84f12d86ba23bc3d19",
+      "pages": 19,
+      "checked_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "rendered_page_sha256": {
+        "1": "5cabc6632a3b9ef9b2164ce073117187081486b1dd47b9b9353e8b147f8d8e64",
+        "2": "bbdfac40663fd75fbb480f7b40a1a66ca9467c1f0c045c7d427cfd0577b1accf",
+        "3": "4ae305729942b08212980cba474df1ff847265da400b7d232334f08e8fd8bdd0",
+        "4": "2466c7ec4403961324bc8bcbebf48679455e661dccfaf733be7fcf437725c7e4",
+        "5": "be81c42965ab320fa273e0da49b516083b5d7e25913aa036a363d72da75c6dcf",
+        "6": "29c4d05c64e6dc736e65efc8555933de4042383e66e64a7ea1754ec975b88b96",
+        "7": "34221488736e669d6f14ce9116d72781e389cd67191ef79d2226e347cc64fa22",
+        "8": "7e61cb8f81985c4f24bd06e0d810a570ca06d07025ade26219b217d2e239ee30",
+        "9": "c401a6deb76754ea0dfb316d51b7010e609c14e04f0c7092d68832f32ef9ec51",
+        "10": "52f7466f583431b9d96d6bf58a309247878aa288f327dd21a6a1b21cfb891208",
+        "11": "6a555f85a14a9d56ed6d17598b1bd4911a6437fa8fa79422fde1b65d63b1aca8",
+        "12": "b0207abcec8533c714bc84ea72fa5b82ce7bd8d1968a1a3475959dae0a90c5a9",
+        "13": "d48546de460d0469cd6c8f90b510a3e39a0d9107c3310bc814f6eef0a43ecd8a",
+        "14": "6a9da8636993666d2e8ea4c9fc150a1b466aac011de5b4637447c462faf9c703",
+        "15": "6167fe2d8b1121d0b09731dbb863ac4e61aff17cd35916c69a7cb8c91192c409",
+        "16": "8949cca92fb1a2ab1804fb92e9e3f088b1caf2fab2286be88bd7a475c966af68",
+        "17": "1eb0aa86cabd7527eda8eddf932e5b8cddf02221781010a63d9872adbeba8929",
+        "18": "bba318a70cf45748ca02aa29eba32a0f59bf5c4e9b235a64073eff5ce94b20bc",
+        "19": "93a41d55ac365b1db775ec41ac8b99b4f959235e22259b9c2a2095948d212b22"
+      },
+      "observations": "Readable text, tables, vector figures and references; no clipping or overlap found.",
+      "inspection_detail": "Every page inspected. Final changed pages viewed directly; unchanged report pages verified byte-identical to the inspected render. The near-empty overflow page was removed by shortening the release-status paragraph. After the offline-replay code correction changed provenance hashes, the rebuilt PDF was rendered again and every page was pixel-identical to the inspected final render."
+    },
+    "paper/investor-note.pdf": {
+      "pdf_sha256": "1fbbd0d1421573481d964716013eaba3103f551f4e79ab89cb9705c6b9fb8cce",
+      "pages": 2,
+      "checked_pages": [
+        1,
+        2
+      ],
+      "rendered_page_sha256": {
+        "1": "cdf4411c82ef376a9bbd6fab60aced8ccf3abeb2193e57b0c2087c3f10a4685b",
+        "2": "749d45a282628d9f6d9f183da3ad83296fe7d685259e399c71b096981dec375a"
+      },
+      "observations": "Readable text, tables, vector figures and references; no clipping or overlap found.",
+      "inspection_detail": "Every page inspected. Final changed pages viewed directly; unchanged report pages verified byte-identical to the inspected render. The near-empty overflow page was removed by shortening the release-status paragraph."
+    }
+  }
+}

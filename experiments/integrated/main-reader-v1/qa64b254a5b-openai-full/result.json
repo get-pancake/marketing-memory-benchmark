@@ -1,0 +1,113 @@
+{
+  "id": "qa64b254a5b-openai-full",
+  "case_id": "qa64b254a5b",
+  "world": "w4a4f0929",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.15555555555555556,
+    "selected_sources": 45,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 5378,
+  "status": "completed",
+  "started_at": "2026-10-23T00:44:26.458583+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999940",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_048d01dcc8b77e12016adaadeab5c887d1a78e92b0ac2c9cf0",
+  "usage": {
+    "input_tokens": 3611,
+    "input_tokens_details": {
+      "cache_write_tokens": 3608,
+      "cached_tokens": 0
+    },
+    "output_tokens": 203,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3814
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.011056",
+    "total_input_tokens": 3611,
+    "output_tokens": 203,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3608
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S22",
+      "account.account_role:observed": "S45",
+      "account.certification:observed": "S37",
+      "account.observed_signal:observed": "S16",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S42",
+      "seller.approved_role:approved": "S10",
+      "seller.offering_pain:observed": "S34",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 and P2 fit the compliance objective and resource allowance, but neither has the required observed seller proof for audit_effort; P4 additionally lacks an observed approved procurement stage. The approved UK geography (S42) matches the account geography (S22); the EU proposal (S39) does not change that approval.",
+  "finished_at": "2026-10-23T00:44:31.622351+00:00",
+  "seconds": 5.163778696994996
+}

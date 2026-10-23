@@ -1,0 +1,162 @@
+{
+  "id": "resp_02404658aefe3c4f016adaf779d85087d194eb7f8c60290eb7",
+  "object": "response",
+  "created_at": 1792735097,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735105,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_02404658aefe3c4f016adaf77b3a3487d1993f05a7a6340773",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Larch-30 requires an observed profile establishing eligibility under the approved seller policy. Its supplied US region is not allowed, and its restricted sector is blocked; no action is eligible.\",\n    \"For Harbor-30, Iris-30, Delta-30, Flint-30, Mesa-30, Birch-30 and Juniper-30, supply observed eligible profiles, true consent, catalog-matching signals, and complete observed initiative \u2192 need \u2192 offering \u2192 proof links, plus approved true proof verification and approved integer account priorities. Workshop, assurance_pack and reference_intro additionally require approved true capacity, assurance and shareable evidence, respectively.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available. The approved seller policy (eea642ec65de6dc) excludes Larch-30's observed profile (e17ee190bcbc1cf). The proposed policy is not authoritative. The other seven queried accounts lack required evidence, so none can independently qualify within the shared budget of 8.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Harbor-30",
+                    "Iris-30",
+                    "Delta-30",
+                    "Flint-30",
+                    "Larch-30",
+                    "Mesa-30",
+                    "Birch-30",
+                    "Juniper-30"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3199,
+    "input_tokens_details": {
+      "cache_write_tokens": 3196,
+      "cached_tokens": 0
+    },
+    "output_tokens": 223,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3422
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,26 @@
+\section{Execution, provenance and reproduction}
+\label{sec:reproduction}
+The companion stores \texttt{main-freeze-v1.json} in \texttt{experiments/challenge/}, with methods/data revision \texttt{54ac3c01}. It records 17 code/configuration hashes, the data index and every prepared packet hash before main generation. Main seed 20261023042 creates 120 worlds and 360 cases; development seed 20261023041 creates 12 worlds and 36 cases. All 4,320 requests are reconstructed exactly, each response has a distinct provider ID, and returned model IDs match the requested frozen IDs. Source/label files remain separate; labels do not enter preparation or prompts.
+
+The first development pilot completes 432 calls. Six unsupported decisions on two negative cases reveal timestamp-only conflict resolution. The common prompt is clarified: later dates do not supersede another supplied current record without explicit retirement. A targeted 72-call validation reuses six development cases and produces no unsupported plans. Original pilot traces, labels and source snapshots are retained; only the original pilot's paired SD (0.21244) enters the prospective sample rule. Its rounded calculation gives 72 worlds, so the declared minimum selects 120. A diagnostic field in the shared analyzer repeats the precision calculation for any analyzed run; its main-run value is not used to resize the sample.
+
+An initial embedding receipt-path failure saves 67 actual responses before cache processing fails. Recovery loads those exact responses without reissuing them. Subsequent preparation reuses their vectors and adds 472 responses. The released vector snapshots are losslessly split into Git-sized gzip parts with per-part hashes and verification against the original compressed and uncompressed arrays. Failures, recovery notes and raw responses remain available.
+
+GBrain is pinned at \texttt{531b3b1}; the external corpus at \texttt{6999ebc}. Fresh native execution on the first world replays three cases from released vectors with zero provider calls: native rankings and all 18 context packets match exactly. Two auxiliary Markdown full rankings differ at floating-point near-ties, while their selected packets remain identical. The frozen BM25 code iterates query terms through a Python set; saved-ranking reproduction is exact, but broader fresh-run tie stability is not claimed. The failed overly strict checker and its amended scope are retained.
+
+Original code is MIT; specified original data/documentation are CC BY 4.0. Upstream company documents retain MIT and author credits. Proprietary services are not licensed by the companion. No production source, customer records, credentials, model weights, third-party paper PDFs or private planning history are bundled. The working repository remains private; public distribution and paper submission are separate milestones.
+
+The companion README separates inexpensive tests, saved-output reproduction, fresh native retrieval, fresh paid inference and PDF compilation. Clean reproduction uses an extracted allowlisted package and an isolated pinned Python environment on the same host with system TeX/Pandoc/Poppler. It regenerates original datasets, reference labels, contexts, raw scores, statistics, costs and figures, verifies every file hash, and recompiles the paper and two-page investor note. It is not independent-hardware replication or fresh model inference. The final manifest and acceptance receipt identify the exact tested payload.
+
+\section{Reader operating points and prior evidence}
+\begin{table}[ht]
+\centering\footnotesize\input{figures/challenge/resource-table}
+\caption{Means across 360 main calls per treatment. Input/output are provider-reported tokens; elapsed seconds are observed response durations in the concurrent batch, not summed CPU time or service-level guarantees. USD includes recorded cache rates. Full context has a larger input footprint by design.}
+\label{tab:resources}
+\end{table}
+
+Recorded base rates per million input/output tokens are \$2/\$10 for GPT and \$4/\$20 for Opus; cache accounting follows the saved provider usage categories and dated official pricing evidence. The new generation/embedding subtotal is \$183.66335244, including \$147.6757387 for main readers. These are list-price calculations, not invoices; hardware, preparation labor, maintenance and taxes are not included.
+
+Earlier Qwen component experiments and the previous 33-world GPT/Sonnet study remain archived with their own PDFs, failures, methods and reproduction receipts. They motivated the larger sample, explicit positive-value denominator, stronger generic control and harder multi-account task. Their responses are not additional independent observations in the present analysis. The current primary and external provider experiments use Opus 5.5; Sonnet appears only in retained history.
+
+The literature record includes bounded search queries, source dates, inclusion decisions, review depth and remaining access gaps. The new benchmark-methodology reading examines selected methods/evaluation passages of $\tau$-bench, AppWorld and $\tau^2$-bench; it is not a reproduction of their leaderboards. All 38 BibTeX records have metadata-verification receipts. Verification of citation keys and numbers does not constitute exhaustive literature coverage or peer review.

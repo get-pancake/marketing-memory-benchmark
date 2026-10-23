@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-10-23T00:32:19.456244+00:00",
+  "kind": "externally authored synthetic development corpus; query-blind compilation",
+  "corpus_files": 118,
+  "corpus_bytes": 286999,
+  "source_index_sha256": "6bc9df0dd7c9453b777999a3c69deb4eeb50f84b48e9f479629fc130ca4837c2",
+  "model": {
+    "provider": "openai",
+    "model": "gpt-6.1-sol",
+    "input_usd_per_million": 2,
+    "output_usd_per_million": 10,
+    "cache_read_usd_per_million": 0.1,
+    "price_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol.md",
+    "price_checked_at": "2026-10-22",
+    "request_options": {
+      "reasoning": {
+        "effort": "low"
+      }
+    },
+    "cache_write_usd_per_million": 2.5,
+    "cache_write_extended_usd_per_million": 5,
+    "reservation_input_usd_per_million": 5,
+    "cache_duration_note": "OpenAI standard30min/$2.50 and extended12h/$5 writes; default only"
+  },
+  "questions_supplied_to_compiler": false,
+  "same_raw_documents_both_arms": true,
+  "max_output_tokens": 32000,
+  "operational_cap_usd": 5.0,
+  "reserved_usd": 3.6792550000000004,
+  "source_sha256": "47217b1d81f807a92a9436b5783bf1ca83b875b02cff08d650cd211fe9336426",
+  "status": "completed",
+  "finished_at": "2026-10-23T00:37:41.592350+00:00",
+  "estimated_usage_cost_usd": 0.3385819
+}

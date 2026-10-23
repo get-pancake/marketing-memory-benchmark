@@ -1,0 +1,123 @@
+{
+  "id": "qa4ff283503-anthropic-full",
+  "case_id": "qa4ff283503",
+  "world": "w716bfd4c",
+  "arm": "full",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.35294117647058826,
+    "selected_sources": 34,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 3742,
+  "status": "completed",
+  "started_at": "2026-10-23T00:45:28.224078+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9998000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:45:30Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:45:37Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:45:28Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11997000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:45:30Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF9Qoyj5sM5J1xbXotm",
+  "usage": {
+    "input_tokens": 5419,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 925,
+    "output_tokens_details": {
+      "thinking_tokens": 628
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.020088",
+    "total_input_tokens": 5419,
+    "output_tokens": 925,
+    "regular_input_tokens": 5419,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "account.certification:observed=ISO27001 (current evidence S16 shows withdrawn)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S19",
+      "account.certification:observed": "S16",
+      "account.observed_signal:observed": "S18",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S14",
+      "seller.approved_role:approved": "S10",
+      "seller.offering_pain:observed": "S12",
+      "seller.proof_for_pain:observed": "S21"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.certification:observed=ISO27001 (current evidence S16 shows withdrawn)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.certification:observed=ISO27001 (current evidence S16 shows withdrawn)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Role and geo prerequisites are met (S10, S14, S19, S15), but the current certification evidence S16 shows 'withdrawn', not ISO27001. That blocks P1, the only compliance candidate within 2 units. P4 and P2 need 3 units, and P3 has a different objective.",
+  "finished_at": "2026-10-23T00:45:37.253699+00:00",
+  "seconds": 9.029632366000442
+}

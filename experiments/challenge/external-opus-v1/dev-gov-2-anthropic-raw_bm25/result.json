@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:50:50.350946+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeS1bt8y5b8c2ZfqaFN",
+  "usage": {
+    "input_tokens": 11135,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 134,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.04722",
+    "total_input_tokens": 11135,
+    "output_tokens": 134,
+    "regular_input_tokens": 11135,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"10\",\"citations\":[\"D041\",\"D036\"],\"explanation\":\"The signed 2026 Renewal Order Form, which took effect 2026-04-01 and runs through 2027-03-31, sets a 10% discount on the USD 1,920 per-seat price. The 15% discount appears only in the unsigned Amendment No. 2 draft, which states it has no binding force, so it does not apply.\"}",
+  "finished_at": "2026-10-23T05:50:54.276496+00:00",
+  "seconds": 3.9255575760034844
+}

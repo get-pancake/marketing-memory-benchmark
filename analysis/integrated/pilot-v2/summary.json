@@ -1,0 +1,663 @@
+{
+  "created_at": "2026-10-23T00:13:18.155816+00:00",
+  "run_status": "completed",
+  "worlds": 4,
+  "planned_calls": 448,
+  "completed": 448,
+  "failed_or_missing": 0,
+  "groups": {
+    "anthropic/none": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 16,
+      "correct_rate": 0.5,
+      "correct_world_ci95": [
+        0.5,
+        0.5
+      ],
+      "supported": 0,
+      "supported_positive_rate": 0.0,
+      "recommended": 0,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 16,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 0,
+      "complete_support_rate": 0.0,
+      "false_affordance": 0,
+      "validated_correct": 16,
+      "validator_rejected": 0,
+      "estimated_usd": 0.20561,
+      "usage_known_count": 32,
+      "input_tokens": 52170,
+      "output_tokens": 10127,
+      "mean_input_tokens": 1630.3125,
+      "mean_seconds": 3.2990507079684903,
+      "mean_evidence_bytes": 2
+    },
+    "anthropic/generic": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 26,
+      "correct_rate": 0.8125,
+      "correct_world_ci95": [
+        0.625,
+        1
+      ],
+      "supported": 10,
+      "supported_positive_rate": 0.625,
+      "recommended": 10,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 6,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 10,
+      "complete_support_rate": 0.625,
+      "false_affordance": 0,
+      "validated_correct": 26,
+      "validator_rejected": 0,
+      "estimated_usd": 0.399946,
+      "usage_known_count": 32,
+      "input_tokens": 117573,
+      "output_tokens": 16480,
+      "mean_input_tokens": 3674.15625,
+      "mean_seconds": 5.219680555529976,
+      "mean_evidence_bytes": 2018.96875
+    },
+    "anthropic/markdown": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.43886000000000003,
+      "usage_known_count": 32,
+      "input_tokens": 117555,
+      "output_tokens": 20375,
+      "mean_input_tokens": 3673.59375,
+      "mean_seconds": 5.749656236531791,
+      "mean_evidence_bytes": 2013.03125
+    },
+    "anthropic/gbrain": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 19,
+      "correct_rate": 0.59375,
+      "correct_world_ci95": [
+        0.5625,
+        0.625
+      ],
+      "supported": 3,
+      "supported_positive_rate": 0.1875,
+      "recommended": 3,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 13,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 3,
+      "complete_support_rate": 0.1875,
+      "false_affordance": 0,
+      "validated_correct": 19,
+      "validator_rejected": 0,
+      "estimated_usd": 0.363638,
+      "usage_known_count": 32,
+      "input_tokens": 114899,
+      "output_tokens": 13384,
+      "mean_input_tokens": 3590.59375,
+      "mean_seconds": 4.504021495718916,
+      "mean_evidence_bytes": 2026.9375
+    },
+    "anthropic/specialized": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.435506,
+      "usage_known_count": 32,
+      "input_tokens": 117663,
+      "output_tokens": 20018,
+      "mean_input_tokens": 3676.96875,
+      "mean_seconds": 5.929674689937656,
+      "mean_evidence_bytes": 2013.84375
+    },
+    "anthropic/gbrain_specialized": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.442164,
+      "usage_known_count": 32,
+      "input_tokens": 117282,
+      "output_tokens": 20760,
+      "mean_input_tokens": 3665.0625,
+      "mean_seconds": 6.135425596844925,
+      "mean_evidence_bytes": 2012.03125
+    },
+    "anthropic/full": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.557858,
+      "usage_known_count": 32,
+      "input_tokens": 165044,
+      "output_tokens": 22777,
+      "mean_input_tokens": 5157.625,
+      "mean_seconds": 7.26726309625019,
+      "mean_evidence_bytes": 3988.75
+    },
+    "openai/none": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 16,
+      "correct_rate": 0.5,
+      "correct_world_ci95": [
+        0.5,
+        0.5
+      ],
+      "supported": 0,
+      "supported_positive_rate": 0.0,
+      "recommended": 0,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 16,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 0,
+      "complete_support_rate": 0.0,
+      "false_affordance": 0,
+      "validated_correct": 16,
+      "validator_rejected": 0,
+      "estimated_usd": 0.11341,
+      "usage_known_count": 32,
+      "input_tokens": 24350,
+      "output_tokens": 6471,
+      "mean_input_tokens": 760.9375,
+      "mean_seconds": 4.693801387499661,
+      "mean_evidence_bytes": 2
+    },
+    "openai/generic": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 26,
+      "correct_rate": 0.8125,
+      "correct_world_ci95": [
+        0.625,
+        1
+      ],
+      "supported": 10,
+      "supported_positive_rate": 0.625,
+      "recommended": 10,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 6,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 10,
+      "complete_support_rate": 0.625,
+      "false_affordance": 0,
+      "validated_correct": 26,
+      "validator_rejected": 0,
+      "estimated_usd": 0.1987881,
+      "usage_known_count": 32,
+      "input_tokens": 60185,
+      "output_tokens": 6238,
+      "mean_input_tokens": 1880.78125,
+      "mean_seconds": 5.03352085356255,
+      "mean_evidence_bytes": 2018.96875
+    },
+    "openai/markdown": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.1475436,
+      "usage_known_count": 32,
+      "input_tokens": 60064,
+      "output_tokens": 6041,
+      "mean_input_tokens": 1877,
+      "mean_seconds": 4.772815413215994,
+      "mean_evidence_bytes": 2013.03125
+    },
+    "openai/gbrain": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 19,
+      "correct_rate": 0.59375,
+      "correct_world_ci95": [
+        0.5625,
+        0.625
+      ],
+      "supported": 3,
+      "supported_positive_rate": 0.1875,
+      "recommended": 3,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 13,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 3,
+      "complete_support_rate": 0.1875,
+      "false_affordance": 0,
+      "validated_correct": 19,
+      "validator_rejected": 0,
+      "estimated_usd": 0.212337,
+      "usage_known_count": 32,
+      "input_tokens": 58570,
+      "output_tokens": 6596,
+      "mean_input_tokens": 1830.3125,
+      "mean_seconds": 5.101643219187736,
+      "mean_evidence_bytes": 2026.9375
+    },
+    "openai/specialized": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.1251714,
+      "usage_known_count": 32,
+      "input_tokens": 60138,
+      "output_tokens": 6036,
+      "mean_input_tokens": 1879.3125,
+      "mean_seconds": 4.859291227217,
+      "mean_evidence_bytes": 2013.84375
+    },
+    "openai/gbrain_specialized": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.1737248,
+      "usage_known_count": 32,
+      "input_tokens": 59912,
+      "output_tokens": 6006,
+      "mean_input_tokens": 1872.25,
+      "mean_seconds": 4.7283903081247445,
+      "mean_evidence_bytes": 2012.03125
+    },
+    "openai/full": {
+      "cases": 32,
+      "positive_cases": 16,
+      "negative_cases": 16,
+      "correct": 32,
+      "correct_rate": 1.0,
+      "correct_world_ci95": [
+        1,
+        1
+      ],
+      "supported": 16,
+      "supported_positive_rate": 1.0,
+      "recommended": 16,
+      "unsupported": 0,
+      "negative_recommendations": 0,
+      "inappropriate_abstentions": 0,
+      "correct_withhold": 16,
+      "failures": 0,
+      "complete_support": 16,
+      "complete_support_rate": 1.0,
+      "false_affordance": 0,
+      "validated_correct": 32,
+      "validator_rejected": 0,
+      "estimated_usd": 0.2308116,
+      "usage_known_count": 32,
+      "input_tokens": 88908,
+      "output_tokens": 6162,
+      "mean_input_tokens": 2778.375,
+      "mean_seconds": 5.073651210593198,
+      "mean_evidence_bytes": 3988.75
+    }
+  },
+  "contrasts": {
+    "anthropic/specialized-minus-none": {
+      "difference": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "world_differences": {
+        "wd25e532f": 0.5,
+        "wf66aa99f": 0.5,
+        "wc26a095a": 0.5,
+        "w102aef1b": 0.5
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 0.125,
+      "scope": "secondary descriptive contrast"
+    },
+    "anthropic/specialized-minus-generic": {
+      "difference": 0.1875,
+      "ci95": [
+        0,
+        0.375
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0.375,
+        "w102aef1b": 0.375
+      },
+      "sd_world_difference": 0.21650635094610965,
+      "exact_paired_sign_test_p_two_sided": 0.5,
+      "scope": "primary within-model contrast",
+      "holm_p": 1
+    },
+    "anthropic/specialized-minus-markdown": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    },
+    "anthropic/specialized-minus-gbrain": {
+      "difference": 0.40625,
+      "ci95": [
+        0.375,
+        0.4375
+      ],
+      "world_differences": {
+        "wd25e532f": 0.375,
+        "wf66aa99f": 0.375,
+        "wc26a095a": 0.375,
+        "w102aef1b": 0.5
+      },
+      "sd_world_difference": 0.0625,
+      "exact_paired_sign_test_p_two_sided": 0.125,
+      "scope": "secondary descriptive contrast"
+    },
+    "anthropic/specialized-minus-gbrain_specialized": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    },
+    "anthropic/specialized-minus-full": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    },
+    "openai/specialized-minus-none": {
+      "difference": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "world_differences": {
+        "wd25e532f": 0.5,
+        "wf66aa99f": 0.5,
+        "wc26a095a": 0.5,
+        "w102aef1b": 0.5
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 0.125,
+      "scope": "secondary descriptive contrast"
+    },
+    "openai/specialized-minus-generic": {
+      "difference": 0.1875,
+      "ci95": [
+        0,
+        0.375
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0.375,
+        "w102aef1b": 0.375
+      },
+      "sd_world_difference": 0.21650635094610965,
+      "exact_paired_sign_test_p_two_sided": 0.5,
+      "scope": "primary within-model contrast",
+      "holm_p": 1
+    },
+    "openai/specialized-minus-markdown": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    },
+    "openai/specialized-minus-gbrain": {
+      "difference": 0.40625,
+      "ci95": [
+        0.375,
+        0.4375
+      ],
+      "world_differences": {
+        "wd25e532f": 0.375,
+        "wf66aa99f": 0.375,
+        "wc26a095a": 0.375,
+        "w102aef1b": 0.5
+      },
+      "sd_world_difference": 0.0625,
+      "exact_paired_sign_test_p_two_sided": 0.125,
+      "scope": "secondary descriptive contrast"
+    },
+    "openai/specialized-minus-gbrain_specialized": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    },
+    "openai/specialized-minus-full": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "world_differences": {
+        "wd25e532f": 0,
+        "wf66aa99f": 0,
+        "wc26a095a": 0,
+        "w102aef1b": 0
+      },
+      "sd_world_difference": 0.0,
+      "exact_paired_sign_test_p_two_sided": 1.0,
+      "scope": "secondary descriptive contrast"
+    }
+  },
+  "cost_estimate_usd": 4.0453685,
+  "billed_cost_verified": false,
+  "primary_correction": "Holm over two exact paired sign tests; CIs are per-contrast family-stratified world bootstrap.",
+  "prospective_size_rule": {
+    "max_pilot_world_sd": 0.21650635094610965,
+    "target_normal_halfwidth": 0.075,
+    "unclipped_n": 33,
+    "selected_worlds": 33,
+    "note": "Use only for pilot; main results never change sample size."
+  },
+  "evidence_sha256": {
+    "manifest": "5b6a01ba154509b5a7d2f0e994441cdc6b08ff5d22d86164c0d07f67ddd95c1a",
+    "ledger": "1d4c7d08a367afa32bac146a19f69d7da88452ec5f05e9631f9937eca699b7d5",
+    "inputs": "276d6fd41c742dd236af1d0bf29888f61d14a9cb2d3207397a4b32c0559d0e25",
+    "labels": "67070d8c345ffcbdcc84d72d8de3dae1bd9f32dd7eaaaa3ab5695ec5adc0464f"
+  },
+  "analysis_sha256": "e30745c9d7cc9042a224e763d644cf2094ae00a2ea8164405e52b846c673a0f0",
+  "limits": [
+    "Fictional repeated templates, not real-company sampling.",
+    "Eligibility and evidence grounding, not revenue or optimal strategy.",
+    "No context is an information reference, not specialization evidence.",
+    "Native search component and lossless structured files, not whole-product ranking."
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "status": "passed",
+  "worlds": 12,
+  "cases": 36,
+  "attempts": 432,
+  "completed": 432,
+  "failed": 0,
+  "reconstructed_context_packets": 216,
+  "estimated_usage_usd": "15.4590443",
+  "primary_unit": "equal-company mean of normalized grounded policy value on positive cases; bootstrap companies stratified by administrative sector labels",
+  "independent_human_validation": false,
+  "summary": [
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "none",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "context_value": 0.0,
+      "exact_positive": 0,
+      "actionable_positive": 0,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 29,
+      "failed": 0,
+      "estimated_usd": 0.106896,
+      "mean_seconds": 5.359605851832587,
+      "input_tokens": 25268,
+      "output_tokens": 5636,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "company",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.3929833094374238,
+      "ci95": [
+        0.2722539082571288,
+        0.5062299783819212
+      ],
+      "context_value": 0.3929833094374238,
+      "exact_positive": 3,
+      "actionable_positive": 23,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 6,
+      "failed": 0,
+      "estimated_usd": 0.5434778,
+      "mean_seconds": 10.418323698582551,
+      "input_tokens": 159094,
+      "output_tokens": 16696,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.8168388684267223,
+          "context_value": 0.8168388684267223
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.24488199192032364,
+          "context_value": 0.24488199192032364
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.16567575717458777,
+          "context_value": 0.16567575717458777
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "gtm",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.875280791200935,
+      "ci95": [
+        0.7888901202573372,
+        0.9506530825496342
+      ],
+      "context_value": 0.875280791200935,
+      "exact_positive": 23,
+      "actionable_positive": 29,
+      "unsafe_all": 1,
+      "unsafe_negative": 1,
+      "safe_negative": 6,
+      "abstained_positive": 0,
+      "failed": 0,
+      "estimated_usd": 0.616631,
+      "mean_seconds": 11.843960473722595,
+      "input_tokens": 160958,
+      "output_tokens": 21429,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.6474920807004259,
+          "context_value": 0.6474920807004259
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "markdown",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.38068916433174316,
+      "ci95": [
+        0.23824346421675438,
+        0.5204679830753123
+      ],
+      "context_value": 0.38068916433174316,
+      "exact_positive": 5,
+      "actionable_positive": 21,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 8,
+      "failed": 0,
+      "estimated_usd": 0.5406565,
+      "mean_seconds": 10.210045232418148,
+      "input_tokens": 159125,
+      "output_tokens": 16865,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.8586162063391665,
+          "context_value": 0.8586162063391665
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.21354349435231787,
+          "context_value": 0.21354349435231787
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.17887223811300418,
+          "context_value": 0.17887223811300418
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "gbrain",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "context_value": 0.0,
+      "exact_positive": 0,
+      "actionable_positive": 0,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 29,
+      "failed": 0,
+      "estimated_usd": 0.511411,
+      "mean_seconds": 9.294874650833663,
+      "input_tokens": 156530,
+      "output_tokens": 12014,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "arm": "full",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "context_value": 1.0,
+      "exact_positive": 29,
+      "actionable_positive": 29,
+      "unsafe_all": 2,
+      "unsafe_negative": 2,
+      "safe_negative": 5,
+      "abstained_positive": 0,
+      "failed": 0,
+      "estimated_usd": 1.575636,
+      "mean_seconds": 12.892690807583778,
+      "input_tokens": 535396,
+      "output_tokens": 23720,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "none",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "context_value": 0.0,
+      "exact_positive": 0,
+      "actionable_positive": 0,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 29,
+      "failed": 0,
+      "estimated_usd": 0.434588,
+      "mean_seconds": 5.026051297581741,
+      "input_tokens": 51802,
+      "output_tokens": 11369,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "company",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.3929833094374238,
+      "ci95": [
+        0.27809263371527065,
+        0.5055181262667306
+      ],
+      "context_value": 0.3929833094374238,
+      "exact_positive": 3,
+      "actionable_positive": 23,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 6,
+      "failed": 0,
+      "estimated_usd": 1.687584,
+      "mean_seconds": 10.066228543943806,
+      "input_tokens": 248421,
+      "output_tokens": 34695,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.8168388684267223,
+          "context_value": 0.8168388684267223
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.24488199192032364,
+          "context_value": 0.24488199192032364
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.16567575717458777,
+          "context_value": 0.16567575717458777
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "gtm",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.875280791200935,
+      "ci95": [
+        0.7897722373383315,
+        0.952422480620155
+      ],
+      "context_value": 0.875280791200935,
+      "exact_positive": 23,
+      "actionable_positive": 29,
+      "unsafe_all": 1,
+      "unsafe_negative": 1,
+      "safe_negative": 6,
+      "abstained_positive": 0,
+      "failed": 0,
+      "estimated_usd": 2.02314,
+      "mean_seconds": 13.743356444750841,
+      "input_tokens": 249500,
+      "output_tokens": 51257,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.6474920807004259,
+          "context_value": 0.6474920807004259
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "markdown",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.38068916433174316,
+      "ci95": [
+        0.23735192081879858,
+        0.519560135040967
+      ],
+      "context_value": 0.38068916433174316,
+      "exact_positive": 5,
+      "actionable_positive": 21,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 8,
+      "failed": 0,
+      "estimated_usd": 1.689528,
+      "mean_seconds": 10.294406973832439,
+      "input_tokens": 248502,
+      "output_tokens": 34776,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.8586162063391665,
+          "context_value": 0.8586162063391665
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.21354349435231787,
+          "context_value": 0.21354349435231787
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.1788722381130042,
+          "context_value": 0.17887223811300418
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "gbrain",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "context_value": 0.0,
+      "exact_positive": 0,
+      "actionable_positive": 0,
+      "unsafe_all": 0,
+      "unsafe_negative": 0,
+      "safe_negative": 7,
+      "abstained_positive": 29,
+      "failed": 0,
+      "estimated_usd": 1.346,
+      "mean_seconds": 6.943894398583426,
+      "input_tokens": 244085,
+      "output_tokens": 18483,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 0.0,
+          "context_value": 0.0
+        }
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "arm": "full",
+      "worlds": 12,
+      "cases": 36,
+      "positive_cases": 29,
+      "negative_cases": 7,
+      "mean_normalized_value": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "context_value": 1.0,
+      "exact_positive": 29,
+      "actionable_positive": 29,
+      "unsafe_all": 2,
+      "unsafe_negative": 2,
+      "safe_negative": 5,
+      "abstained_positive": 0,
+      "failed": 0,
+      "estimated_usd": 4.383496,
+      "mean_seconds": 15.987777046333779,
+      "input_tokens": 797764,
+      "output_tokens": 59622,
+      "by_level": {
+        "accessible": {
+          "cases": 12,
+          "positive_cases": 9,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "constrained": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        },
+        "stress": {
+          "cases": 12,
+          "positive_cases": 10,
+          "mean_normalized_value": 1.0,
+          "context_value": 1.0
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "provider": "openai",
+      "treatment": "gtm",
+      "control": "company",
+      "difference": 0.4822974817635112,
+      "ci95": [
+        0.37456754819125315,
+        0.5989957642499001
+      ],
+      "world_sd": 0.21244437546799833,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0004999500049995,
+      "confirmatory": true,
+      "holm_p": 0.000999900009999
+    },
+    {
+      "provider": "openai",
+      "treatment": "gtm",
+      "control": "markdown",
+      "difference": 0.49459162686919184,
+      "ci95": [
+        0.379587619455215,
+        0.6120199216069444
+      ],
+      "world_sd": 0.22241360027679685,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0004999500049995,
+      "confirmatory": false
+    },
+    {
+      "provider": "openai",
+      "treatment": "gtm",
+      "control": "gbrain",
+      "difference": 0.875280791200935,
+      "ci95": [
+        0.7879168570061794,
+        0.9510841170323929
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0004999500049995,
+      "confirmatory": false
+    },
+    {
+      "provider": "openai",
+      "treatment": "gtm",
+      "control": "none",
+      "difference": 0.875280791200935,
+      "ci95": [
+        0.7896289805209924,
+        0.952422480620155
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0006999300069993001,
+      "confirmatory": false
+    },
+    {
+      "provider": "openai",
+      "treatment": "gtm",
+      "control": "full",
+      "difference": -0.12471920879906495,
+      "ci95": [
+        -0.21016901952760916,
+        -0.049346917450365714
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 0,
+      "worlds_tied": 6,
+      "worlds_worse": 6,
+      "random_sign_p": 0.0326967303269673,
+      "confirmatory": false
+    },
+    {
+      "provider": "anthropic",
+      "treatment": "gtm",
+      "control": "company",
+      "difference": 0.4822974817635112,
+      "ci95": [
+        0.373518764517124,
+        0.6010933333963572
+      ],
+      "world_sd": 0.21244437546799833,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0004999500049995,
+      "confirmatory": true,
+      "holm_p": 0.000999900009999
+    },
+    {
+      "provider": "anthropic",
+      "treatment": "gtm",
+      "control": "markdown",
+      "difference": 0.49459162686919184,
+      "ci95": [
+        0.37946310909729464,
+        0.6137321111540968
+      ],
+      "world_sd": 0.22241360027679685,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0013998600139986002,
+      "confirmatory": false
+    },
+    {
+      "provider": "anthropic",
+      "treatment": "gtm",
+      "control": "gbrain",
+      "difference": 0.875280791200935,
+      "ci95": [
+        0.7888901202573372,
+        0.9506530825496342
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.00039996000399960006,
+      "confirmatory": false
+    },
+    {
+      "provider": "anthropic",
+      "treatment": "gtm",
+      "control": "none",
+      "difference": 0.875280791200935,
+      "ci95": [
+        0.7888901202573372,
+        0.9506530825496342
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 12,
+      "worlds_tied": 0,
+      "worlds_worse": 0,
+      "random_sign_p": 0.0005999400059994001,
+      "confirmatory": false
+    },
+    {
+      "provider": "anthropic",
+      "treatment": "gtm",
+      "control": "full",
+      "difference": -0.12471920879906495,
+      "ci95": [
+        -0.21110987974266293,
+        -0.0489158829676071
+      ],
+      "world_sd": 0.15939581557050678,
+      "worlds_improved": 0,
+      "worlds_tied": 6,
+      "worlds_worse": 6,
+      "random_sign_p": 0.032896710328967106,
+      "confirmatory": false
+    }
+  ],
+  "precision_rule": {
+    "pilot_max_world_sd": 0.21244437546799833,
+    "raw_required_rounded": 72,
+    "selected_main_worlds": 120,
+    "minimum": 120,
+    "maximum": 192,
+    "target_halfwidth": 0.05
+  },
+  "source_hashes": {
+    "data_index": "a16e38d89ccfd6e73ceb44d864d9c45895b44dde41cc96497dbc27227f413dcb",
+    "run_manifest": "35dfa66905621e890a6e66a9426728d67f17f9cfc9735e2ce8eb4d03e786d56a"
+  }
+}

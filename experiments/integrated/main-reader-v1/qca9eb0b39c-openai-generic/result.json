@@ -1,0 +1,119 @@
+{
+  "id": "qca9eb0b39c-openai-generic",
+  "case_id": "qca9eb0b39c",
+  "world": "w6cf131b0",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 0.8888888888888888,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2026,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:55.476954+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999914",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_029ae16544a78e06016adab23fbbe087d19e68e73078a7126a",
+  "usage": {
+    "input_tokens": 2015,
+    "input_tokens_details": {
+      "cache_write_tokens": 908,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 229,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2244
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0046764",
+    "total_input_tokens": 2015,
+    "output_tokens": 229,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 908
+  },
+  "raw_output": {
+    "missing": [
+      "Approved-role/account-role equality: S17 specifies unrelated_role, while S9 specifies IT_manager.",
+      "Current observed account.partner_status=verified; S5 reports withdrawn.",
+      "account.procurement_stage:observed=approved (required only for P2)."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S13",
+      "account.account_role:observed": "S9",
+      "account.channel_fit:observed": "S6",
+      "account.partner_status:observed": "S5",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S7",
+      "seller.approved_role:approved": "S17",
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": "S10"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved-role/account-role equality: S17 specifies unrelated_role, while S9 specifies IT_manager.",
+      "Current observed account.partner_status=verified; S5 reports withdrawn.",
+      "account.procurement_stage:observed=approved (required only for P2)."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved-role/account-role equality: S17 specifies unrelated_role, while S9 specifies IT_manager.",
+      "Current observed account.partner_status=verified; S5 reports withdrawn.",
+      "account.procurement_stage:observed=approved (required only for P2)."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 fits the partner objective and two-unit allowance, but the approved role in S17 differs from the account role in S9, and S5 reports withdrawn rather than verified partner status. P2 and P4 exceed the allowance; P3 does not match the objective.",
+  "finished_at": "2026-10-23T01:03:00.798095+00:00",
+  "seconds": 5.321151064999867
+}

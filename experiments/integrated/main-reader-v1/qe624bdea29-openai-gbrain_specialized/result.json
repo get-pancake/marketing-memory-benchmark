@@ -1,0 +1,195 @@
+{
+  "id": "qe624bdea29-openai-gbrain_specialized",
+  "case_id": "qe624bdea29",
+  "world": "w5ade1729",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P2",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 1949,
+  "status": "completed",
+  "started_at": "2026-10-23T00:52:28.193809+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999944",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_049313729981249d016adaafcc662887d1a4a12f52a48268f8",
+  "usage": {
+    "input_tokens": 2036,
+    "input_tokens_details": {
+      "cache_write_tokens": 927,
+      "cached_tokens": 1106
+    },
+    "output_tokens": 199,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2235
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0044241",
+    "total_input_tokens": 2036,
+    "output_tokens": 199,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1106,
+    "cache_write_tokens": 927
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S9",
+      "account.customer_state:observed": "S6",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S12",
+      "seller.approved_geo:approved": "S10",
+      "seller.approved_role:approved": "S4",
+      "seller.offering_pain:observed": "S5",
+      "seller.proof_for_pain:observed": "S20"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e1ec6d31",
+          "e9f9086f",
+          "e87521cf",
+          "ed1dc633",
+          "e41fe6c1",
+          "ea66d7db",
+          "e38dd266",
+          "efc24b27"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-563",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "e1ec6d31",
+        "e9f9086f"
+      ],
+      "evidence": [
+        "e1ec6d31",
+        "e38dd266",
+        "e41fe6c1",
+        "e87521cf",
+        "e9f9086f",
+        "ea66d7db",
+        "ed1dc633",
+        "efc24b27"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e1ec6d31",
+          "e9f9086f",
+          "e87521cf",
+          "ed1dc633",
+          "e41fe6c1",
+          "ea66d7db",
+          "e38dd266",
+          "efc24b27"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-563",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "e1ec6d31",
+        "e9f9086f"
+      ],
+      "evidence": [
+        "e1ec6d31",
+        "e38dd266",
+        "e41fe6c1",
+        "e87521cf",
+        "e9f9086f",
+        "ea66d7db",
+        "ed1dc633",
+        "efc24b27"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 satisfies the renewal objective within the 3-unit allowance: approved role and geography match the account (S4, S9, S10, S15), and active status, declining usage, adoption pain and adoption proof are supported (S6, S12, S5, S20). It requires 2 units and does not require procurement-stage evidence.",
+  "finished_at": "2026-10-23T00:52:32.413100+00:00",
+  "seconds": 4.219302332989173
+}

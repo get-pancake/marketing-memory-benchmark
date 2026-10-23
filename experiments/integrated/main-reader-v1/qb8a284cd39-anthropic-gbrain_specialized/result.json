@@ -1,0 +1,203 @@
+{
+  "id": "qb8a284cd39-anthropic-gbrain_specialized",
+  "case_id": "qb8a284cd39",
+  "world": "w09550ffd",
+  "arm": "gbrain_specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P3"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.4444444444444444,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 1939,
+  "status": "completed",
+  "started_at": "2026-10-23T00:31:36.145568+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:31:37Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:31:40Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:31:36Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:31:37Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJE64ZNTSrGEJJq7Kcd6",
+  "usage": {
+    "input_tokens": 3838,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 507,
+    "output_tokens_details": {
+      "thinking_tokens": 220
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.012746",
+    "total_input_tokens": 3838,
+    "output_tokens": 507,
+    "regular_input_tokens": 3838,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S11",
+      "account.account_role:observed": "S13",
+      "account.certification:observed": "S8",
+      "account.observed_signal:observed": "S15",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S10",
+      "seller.approved_role:approved": "S18",
+      "seller.offering_pain:observed": "S12",
+      "seller.proof_for_pain:observed": "S2"
+    },
+    "template": "P3"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "ecf73f35",
+          "e80afc4b",
+          "e8dc918b",
+          "e82ce99a",
+          "e7d5db6c",
+          "e958a68e",
+          "e895b41f",
+          "e106372d"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-693",
+      "objective": "compliance",
+      "template": "P3",
+      "policy_versions": [
+        "e80afc4b",
+        "ecf73f35"
+      ],
+      "evidence": [
+        "e106372d",
+        "e7d5db6c",
+        "e80afc4b",
+        "e82ce99a",
+        "e895b41f",
+        "e8dc918b",
+        "e958a68e",
+        "ecf73f35"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed compliance context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "ecf73f35",
+          "e80afc4b",
+          "e8dc918b",
+          "e82ce99a",
+          "e7d5db6c",
+          "e958a68e",
+          "e895b41f",
+          "e106372d"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-693",
+      "objective": "compliance",
+      "template": "P3",
+      "policy_versions": [
+        "e80afc4b",
+        "ecf73f35"
+      ],
+      "evidence": [
+        "e106372d",
+        "e7d5db6c",
+        "e80afc4b",
+        "e82ce99a",
+        "e895b41f",
+        "e8dc918b",
+        "e958a68e",
+        "ecf73f35"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed compliance context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P3 is the only compliance action within the 2-unit limit (P2 and P4 cost 3, and P1 has a different objective). Its prerequisites are met: approved role and geo match the account's (revenue_lead, US), and ISO27001, the compliance_review signal, and audit_effort pain with proof are all observed. No procurement stage is needed for P3.",
+  "finished_at": "2026-10-23T00:31:40.717361+00:00",
+  "seconds": 4.571801871003117
+}

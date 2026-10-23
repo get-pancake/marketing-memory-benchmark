@@ -1,0 +1,51 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:12.240219+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfhpuCaQK3boZLm1RU",
+  "usage": {
+    "input_tokens": 11319,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 129,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.023928",
+    "total_input_tokens": 11319,
+    "output_tokens": 129,
+    "regular_input_tokens": 11319,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\",\"D075\",\"D113\",\"D014\",\"D036\"],\"explanation\":\"Several sources state that Quarendon Freightways is not a Pemberline customer and runs a competitor's yard software (D088, D075, D113, D014). D036 describes it as an unaffiliated carrier on competing yard software, separate from the customer Quarrendon Freight Lines.\"}",
+  "finished_at": "2026-10-23T00:39:17.244965+00:00",
+  "seconds": 5.004756780996104,
+  "id": "dev-ent-2-anthropic-raw_bm25",
+  "case_id": "dev-ent-2",
+  "arm": "raw_bm25",
+  "context_bytes": 24531,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "false",
+  "explanation": "Several sources state that Quarendon Freightways is not a Pemberline customer and runs a competitor's yard software (D088, D075, D113, D014). D036 describes it as an unaffiliated carrier on competing yard software, separate from the customer Quarrendon Freight Lines.",
+  "citations": [
+    "D088",
+    "D075",
+    "D113",
+    "D014",
+    "D036"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "w20261023042-021-accessible-openai-full",
+  "case_id": "w20261023042-021-accessible",
+  "world": "w20261023042-021",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:51:20.930243+00:00",
+  "evidence_bytes": 28532,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999704",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_018a8965776779ee016adaf5d9fdc487d1b452877b4976c124",
+  "usage": {
+    "input_tokens": 9502,
+    "input_tokens_details": {
+      "cache_write_tokens": 9499,
+      "cached_tokens": 0
+    },
+    "output_tokens": 438,
+    "output_tokens_details": {
+      "reasoning_tokens": 151
+    },
+    "total_tokens": 9940
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0281335",
+    "total_input_tokens": 9502,
+    "output_tokens": 438,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 9499
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Juniper-21",
+        "action": "assurance_pack",
+        "sources": [
+          "e8d0f4324b2f615",
+          "e9d4ae32933e8a0",
+          "e055288fec0292f",
+          "e02b96ca782e6a7",
+          "e16bba90ecdcb78",
+          "e8e6f42e04aeab7",
+          "ef2cd9b9159c23e",
+          "e264a8528b9a143",
+          "e1ae12c51de40f0",
+          "e04bf0d0baa1646",
+          "eefef775fe265f4"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Juniper-21's assurance_pack maximizes supported priority points: 9 × 4 = 36, costing 3 of the shared budget of 6. Its eligibility chain and assurance approval are complete. Mesa-21 and Birch-21 are blocked by their restricted sectors; Iris-21 is outside the approved regions. Juniper-21's workshop is ineligible because capacity is approved false. These points are synthetic priorities, not expected revenue."
+  },
+  "score": {
+    "optimum": 36,
+    "recoverable_value": 36,
+    "returned_value": 36,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:51:29.510992+00:00",
+  "seconds": 8.580758955999045
+}

@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-086-constrained-anthropic-gtm",
+  "case_id": "w20261023042-086-constrained",
+  "world": "w20261023042-086",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:52:18.099619+00:00",
+  "evidence_bytes": 12246,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9969000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:52:20Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:52:30Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9995",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:52:19Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11968000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:52:20Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeYWyNr7bJvEJRyt6CF",
+  "usage": {
+    "input_tokens": 6955,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1296,
+    "output_tokens_details": {
+      "thinking_tokens": 625
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.05374",
+    "total_input_tokens": 6955,
+    "output_tokens": 1296,
+    "regular_input_tokens": 6955,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-86",
+        "action": "workshop",
+        "sources": [
+          "efe647fef80621f",
+          "e4d9c1b5d846371",
+          "e9da236de99fb8d",
+          "ec23ad9799bfba7",
+          "eddcacc9f6129ea",
+          "e398ff666935e08",
+          "e8b7db4c9934495",
+          "e1dd3e0f0159994",
+          "ea24959f80a29ff",
+          "e09d0d2d4330b2e",
+          "e26e1e2c0ac61fe"
+        ]
+      },
+      {
+        "account": "North-86",
+        "action": "reference_intro",
+        "sources": [
+          "efe647fef80621f",
+          "ee518800b204a52",
+          "ea670a798691532",
+          "efe9ee9346ef16f",
+          "edc0e79dc1c2c00",
+          "e7adb7165d1c085",
+          "e3f2ce2afc09e32",
+          "e8385973a565f51",
+          "ef2e92eb3d7b21e",
+          "e1c2f39847ed7ea",
+          "e9a4befd63730c8"
+        ]
+      }
+    ],
+    "missing": [
+      "Cedar-86: conflicting current observed consent (false vs true) and proof-3 verified is false",
+      "Mesa-86: conflicting current observed consent (true vs false) and proof-2 verified is false",
+      "Kestrel-86: region UK not allowed by approved policy, consent false",
+      "Grove-86: region UK not allowed by approved policy"
+    ],
+    "reasoning_summary": "Only the approved seller policy (US/FR/DE) applies; the proposed policy is ignored. Orchid-86 (US, consent true, launch signal, verified proof, capacity true, priority 9) qualifies for workshop: 9x4=36, cost 3. North-86 (US, consent true, renewal signal, verified and shareable proof, priority 6) qualifies for reference_intro: 6x5=30, cost 4. Total cost 7 within budget 7, total 66, beating alternatives such as workshop plus renewal_review (54). Cedar-86 and Mesa-86 are blocked by conflicting consent and unverified proofs; Kestrel-86 and Grove-86 are in disallowed region UK."
+  },
+  "score": {
+    "optimum": 66,
+    "recoverable_value": 66,
+    "returned_value": 66,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:52:30.672541+00:00",
+  "seconds": 12.572932199997013
+}

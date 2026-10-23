@@ -1,0 +1,125 @@
+{
+  "id": "qc2cfa18827-openai-gbrain",
+  "case_id": "qc2cfa18827",
+  "world": "w5ade1729",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.375,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.23529411764705882,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2022,
+  "status": "completed",
+  "started_at": "2026-10-23T01:01:13.413642+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999906",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01c01431c5f86ce7016adab1d9d62c87d1a16b1fbb232d7f72",
+  "usage": {
+    "input_tokens": 1946,
+    "input_tokens_details": {
+      "cache_write_tokens": 918,
+      "cached_tokens": 1025
+    },
+    "output_tokens": 237,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2183
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047735",
+    "total_input_tokens": 1946,
+    "output_tokens": 237,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1025,
+    "cache_write_tokens": 918
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S8",
+      "account.customer_state:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Caldera-563 is active (S2), with observed role IT_manager (S8) and geography US (S9), but no renewal action has all required evidence. Provide approved seller role and geography matching the account, declining usage evidence, and observed adoption pain and supporting proof; P1 additionally requires approved procurement stage.",
+  "finished_at": "2026-10-23T01:01:18.667589+00:00",
+  "seconds": 5.2539591530075995
+}

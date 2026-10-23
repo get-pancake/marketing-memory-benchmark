@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:19.139006+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f10abe80a87aefb016adaacb7a7a487d19283089abc9c3a81",
+  "usage": {
+    "input_tokens": 261,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 60,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 321
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001122",
+    "total_input_tokens": 261,
+    "output_tokens": 60,
+    "regular_input_tokens": 261,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Marrow Agrisupply\u2019s support SLA tier on June 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:22.000090+00:00",
+  "seconds": 2.861075801003608
+}

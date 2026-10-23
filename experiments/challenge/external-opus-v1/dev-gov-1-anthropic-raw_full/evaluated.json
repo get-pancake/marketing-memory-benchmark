@@ -1,0 +1,52 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:50:50.352061+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeRzeL8zvAMViRScAfN",
+  "usage": {
+    "input_tokens": 120889,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 234,
+    "output_tokens_details": {
+      "thinking_tokens": 100
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.488236",
+    "total_input_tokens": 120889,
+    "output_tokens": 234,
+    "regular_input_tokens": 120889,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D041\",\"D044\",\"D004\"],\"explanation\":\"Amendment No. 1 set Quarrendon Freight Lines at 185 seats effective 2025-09-01, and the 2026 renewal did not change the seat count. Amendment No. 3 raises seats to 230, but only from 2027-01-01, so 185 seats applied on 2026-10-14.\"}",
+  "finished_at": "2026-10-23T05:50:57.580636+00:00",
+  "seconds": 7.228584639990004,
+  "id": "dev-gov-1-anthropic-raw_full",
+  "case_id": "dev-gov-1",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "output": {
+    "answer": "185",
+    "citations": [
+      "D032",
+      "D041",
+      "D044",
+      "D004"
+    ],
+    "explanation": "Amendment No. 1 set Quarrendon Freight Lines at 185 seats effective 2025-09-01, and the 2026 renewal did not change the seat count. Amendment No. 3 raises seats to 230, but only from 2027-01-01, so 185 seats applied on 2026-10-14."
+  }
+}

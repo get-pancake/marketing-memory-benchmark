@@ -1,0 +1,46 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:19.079217+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_026c99fa1847c06e016adaade3a0b087d1a2bba7f7e9d79211",
+  "usage": {
+    "input_tokens": 6685,
+    "input_tokens_details": {
+      "cache_write_tokens": 6682,
+      "cached_tokens": 0
+    },
+    "output_tokens": 76,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6761
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017471",
+    "total_input_tokens": 6685,
+    "output_tokens": 76,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6682
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D068\",\"D072\",\"D007\"],\"explanation\":\"The signed 2026 renewal covered 120 subscribed seats beginning February 1, 2026. The March email reported 125 operational seats and requested a true-up, but does not establish a contractual seat increase.\"}",
+  "finished_at": "2026-10-23T00:44:22.505361+00:00",
+  "seconds": 3.426155174995074,
+  "id": "dev-ch-3-openai-raw_chunks",
+  "case_id": "dev-ch-3",
+  "arm": "raw_chunks",
+  "context_bytes": 24543,
+  "answer_correct": true,
+  "answer": "120",
+  "citations": [
+    "D037",
+    "D068",
+    "D072",
+    "D007"
+  ],
+  "explanation": "The signed 2026 renewal covered 120 subscribed seats beginning February 1, 2026. The March email reported 125 operational seats and requested a true-up, but does not establish a contractual seat increase.",
+  "citation_ids_valid": true
+}

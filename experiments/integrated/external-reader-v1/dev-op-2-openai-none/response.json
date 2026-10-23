@@ -1,0 +1,128 @@
+{
+  "id": "resp_04154b20a43661f5016adaaca59c4087d1a5905fe856dd156e",
+  "object": "response",
+  "created_at": 1792715941,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715944,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_04154b20a43661f5016adaaca69ab087d195c0549e90c6c06c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qyoMLK2hHj4ASMU1tOBwf2Y9g2m98HlwIPK35wxQVMfBQgA7SZ_6asNybay7XxJ35EY6NmiAwmcV1aa6aY2SNo1lisnJlx3vOvvHJ9-c51ELtZRSJCquTAR9_ZPlsrn20dJoZh76CqCVYx4ILduc3PeKOcJdrM8ZGpLdj_fEUwMP7g-gh3UuhhnHFPEb0yDrtBcduyVP41pDtk0rw3wdD755NKs1Gxp09OeMp_fc4EHUQo21kkIJAFExNmnBm4UY7bIKTaX3qdz36v6pWC6P1ZDOgr27ZGAmtktEBBfBPGOuC8vEySeU1ZwXnaqSUP5_Z_bx9gzm9JIJKnp3gZoqDFsdunIu6NiO57q46OS7WrE4y3s0YlF9ywzdkM8k5uTAyfEc1HpkEKXJLAyn6c44jyYhkcQ4e7uMBFxV7YVl2DXLq_KgMduDgQfxxa7DFHri61U7PTdk-30a5YAfksTNKKimfmbwiRUMcaYrimzqYajG3rKq3ztUL_JUwmeU6CWDygt2IfG9OS1gETJ4lO1zWFyeSP-9E_we674UNeI7U6CTZgJmR_KJaE5csU_Nk-8j6X-lWFPJNgpPdQleVIP2RRlO5aVF4u7r3D6SA3mEfeT2RFcjfckAYCjut78DwLeZpGxGOP5q5BMNJKo1EPr_hNGJRszIFLM2ES7dmhfoXuO1aw-CXVN9NmIfFuZrOtJmVphFbOntefO29PW7GSlf8s7BD4eT0G7kvLWSfw-hnbKgxa3lj10F_PM3t_iTBh_bpmTCxcLBBO7VWJM1wK6sL3GENck0XMSXHZPkI5BrVO8L1fgSedrxQh2UUyESrOwxTxwmhdjEPTENSY1mukZdtbvrj4mgWw9gpTR9hVmf-tqlH0z2delXW637oHLkDMQHRiwIhhiLBJuQaZeV00kQdVsZVBXQ9TgmNTIn1YnJs6i4LAVdxtjh15en6E5akraU-UGXYWv0oRyw5s2nph24NUhGvkjSmVwFzbtpTsPQNzMQdf_HvmaO7NWJVZ7x1ppf8jvHEQn88UOtUF7xMAq9E8k_JT611j9TcgP8t8uDK4FjGZbXjcQDllSO_unuZA6ulJ7Arn5IHQJ4JGNeGJfPwtSLcyJM7J13tY21lm8ESzVpOYcALpq_HSS9nXYNIWq6daVSXG_AQpv7YoaybJauhSu0E8uwYcj4MWArcGOtAI-bOzKmVZbSurJQvNbpIInrDuW5j5d9aSg7QJmHAwRVRlSuymh5zQapIn7moewaOWT-SriJvoD8byNkIA8Ev_tOVbqWX9tcCdnBD8epSMqmnR2FCL1klHv78QXjYj9Kb6H95vTOobloygJnMaTfuIX34vpKAepUf8xUAXITFB3Ve9RJdRDVqFn12vkqe4xc7EBooc-WAqDn2Q9FUQH2zAVRc9odX7EFw559IJPrStUaTncWzC6_lMgp0573_nQHZtFzzpusgmWg8K9GFuNvdFR1LCJeHYBTj4RA3RZd034mSJMx03dbCOMT17uLcX_Ml-Ayc8mlqyUewamCOjzsI2VvRtR7ELcobK8GVOcEk5-S-AxFoGM2z7aNv2gYoxwoLHH2gt6wCPjNuHvuuLVYrCSGxPsj2RSoDqunhz7nTJ_cYcOVuK5rCjQGroY8Rp0HdJ0dv4Id2myiLhQHQPXCj3hYLuPEiBt0CHqoV9I-u_RGbSgVw==",
+      "summary": []
+    },
+    {
+      "id": "msg_04154b20a43661f5016adaaca741cc87d1b6b6cfb1d7bb60f6",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"The July 28, 2025 North team weekly update and any documents identifying \u201cDana's freight account\u201d were not supplied.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 268,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 68,
+    "output_tokens_details": {
+      "reasoning_tokens": 19
+    },
+    "total_tokens": 336
+  },
+  "user": null,
+  "metadata": {}
+}

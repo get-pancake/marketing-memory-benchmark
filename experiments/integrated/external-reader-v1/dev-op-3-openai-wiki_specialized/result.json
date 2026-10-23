@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:50.186334+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_03ec1fa022a305d9016adaacd6651887d1a37d3d6a5bc9b556",
+  "usage": {
+    "input_tokens": 16164,
+    "input_tokens_details": {
+      "cache_write_tokens": 16161,
+      "cached_tokens": 0
+    },
+    "output_tokens": 117,
+    "output_tokens_details": {
+      "reasoning_tokens": 40
+    },
+    "total_tokens": 16281
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0415785",
+    "total_input_tokens": 16164,
+    "output_tokens": 117,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16161
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D004\",\"D001\"],\"explanation\":\"Although filed September 12, the review body is dated September 16, after Brackenwater transferred to Marcus on September 15. Quarrendon Freight Lines was Dana\u2019s freight account at that time.\"}",
+  "finished_at": "2026-10-23T00:39:53.764786+00:00",
+  "seconds": 3.578461936005624
+}

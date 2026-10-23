@@ -1,0 +1,126 @@
+{
+  "id": "qb00d0baff0-anthropic-markdown",
+  "case_id": "qb00d0baff0",
+  "world": "w09f17fd1",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1941,
+  "status": "completed",
+  "started_at": "2026-10-23T00:46:10.436640+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:46:11Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:46:13Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:46:10Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:46:11Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJFCWbq1qYLeQFF9iSz3",
+  "usage": {
+    "input_tokens": 3962,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 338,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.011304",
+    "total_input_tokens": 3962,
+    "output_tokens": 338,
+    "regular_input_tokens": 3962,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Matching geography: approved seller geo is US (S9) but observed account geo is UK (S2); need an approved geo covering UK or a corrected account geo observation",
+      "account.procurement_stage:observed=approved (only needed for P2)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S2",
+      "account.account_role:observed": "S12",
+      "account.certification:observed": "S13",
+      "account.observed_signal:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S9",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": "S16"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Matching geography: approved seller geo is US (S9) but observed account geo is UK (S2); need an approved geo covering UK or a corrected account geo observation",
+      "account.procurement_stage:observed=approved (only needed for P2)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Matching geography: approved seller geo is US (S9) but observed account geo is UK (S2); need an approved geo covering UK or a corrected account geo observation",
+      "account.procurement_stage:observed=approved (only needed for P2)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Approved role (revenue_lead, S3) matches the observed account role, and the certification, signal, pain and proof for P1 are all supported. But the approved seller geo is US (S9) while the account geo is observed as UK (S2), so the geo equality fails and blocks every compliance candidate.",
+  "finished_at": "2026-10-23T00:46:13.966989+00:00",
+  "seconds": 3.5303589470131556
+}

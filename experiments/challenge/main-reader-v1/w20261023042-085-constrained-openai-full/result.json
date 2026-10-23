@@ -1,0 +1,101 @@
+{
+  "id": "w20261023042-085-constrained-openai-full",
+  "case_id": "w20261023042-085-constrained",
+  "world": "w20261023042-085",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:44.186876+00:00",
+  "evidence_bytes": 41779,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999338",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08984e57c6fa5c20016adaf5b51b7c87d1826e0912c12d1a75",
+  "usage": {
+    "input_tokens": 13476,
+    "input_tokens_details": {
+      "cache_write_tokens": 13473,
+      "cached_tokens": 0
+    },
+    "output_tokens": 805,
+    "output_tokens_details": {
+      "reasoning_tokens": 361
+    },
+    "total_tokens": 14281
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0417385",
+    "total_input_tokens": 13476,
+    "output_tokens": 805,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 13473
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Kestrel-85",
+        "action": "workshop",
+        "sources": [
+          "e412a8d8e7074ba",
+          "efefee43c431c2b",
+          "ee8374d3bb57ed8",
+          "e3fe7c918c4453b",
+          "e84d8acd444a930",
+          "e86a9fb0edf2a59",
+          "ee698014b8b858e",
+          "e257b934429d31e",
+          "ea90b7d12591397",
+          "ef71b9e105fddd0",
+          "e8c896d540f00df"
+        ]
+      },
+      {
+        "account": "North-85",
+        "action": "reference_intro",
+        "sources": [
+          "e412a8d8e7074ba",
+          "ea906d685a74960",
+          "e2760cd0399cfa1",
+          "ecfa02d4ba820d8",
+          "e099ac24503aa92",
+          "eedfa3494dd3811",
+          "e8bf429c32d0610",
+          "ed7f38000eefa4f",
+          "ec84c039ba54d27",
+          "e3d29fcea9606f3",
+          "ea7522ada63e7b4"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Maximum supported priority score is 58: Kestrel workshop contributes 7×4=28 and North reference introduction contributes 6×5=30. Total cost is 7, within budget, for two distinct accounts. Kestrel assurance_pack is an equally optimal alternative. Elm, Birch and Iris are ineligible because their observed US region is not allowed by approved policy. Larch is eligible but does not improve the optimum. Scores are synthetic policy points, not expected revenue."
+  },
+  "score": {
+    "optimum": 58,
+    "recoverable_value": 58,
+    "returned_value": 58,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:51:02.089369+00:00",
+  "seconds": 17.902502729004482
+}

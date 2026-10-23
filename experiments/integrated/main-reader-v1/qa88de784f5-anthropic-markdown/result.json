@@ -1,0 +1,205 @@
+{
+  "id": "qa88de784f5-anthropic-markdown",
+  "case_id": "qa88de784f5",
+  "world": "w1b5406ff",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P3",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 1930,
+  "status": "completed",
+  "started_at": "2026-10-23T00:32:19.062610+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:32:20Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:32:25Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:32:19Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:32:20Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJE9E4Tv9oYCcTyCn4Ew",
+  "usage": {
+    "input_tokens": 3864,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 879,
+    "output_tokens_details": {
+      "thinking_tokens": 574
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.016518",
+    "total_input_tokens": 3864,
+    "output_tokens": 879,
+    "regular_input_tokens": 3864,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S12",
+      "account.account_role:observed": "S6",
+      "account.channel_fit:observed": "S5",
+      "account.partner_status:observed": "S1",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": "S8",
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S17"
+    },
+    "template": "P3"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "e4cf637c",
+          "e248e10e",
+          "e3f200e3",
+          "e93f0ccd",
+          "e0c64076",
+          "e3a5eeb8",
+          "eb02cbb8",
+          "ecf05df0"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-498",
+      "objective": "partner",
+      "template": "P3",
+      "policy_versions": [
+        "e248e10e",
+        "e4cf637c"
+      ],
+      "evidence": [
+        "e0c64076",
+        "e248e10e",
+        "e3a5eeb8",
+        "e3f200e3",
+        "e4cf637c",
+        "e93f0ccd",
+        "eb02cbb8",
+        "ecf05df0"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "e4cf637c",
+          "e248e10e",
+          "e3f200e3",
+          "e93f0ccd",
+          "e0c64076",
+          "e3a5eeb8",
+          "eb02cbb8",
+          "ecf05df0"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-498",
+      "objective": "partner",
+      "template": "P3",
+      "policy_versions": [
+        "e248e10e",
+        "e4cf637c"
+      ],
+      "evidence": [
+        "e0c64076",
+        "e248e10e",
+        "e3a5eeb8",
+        "e3f200e3",
+        "e4cf637c",
+        "e93f0ccd",
+        "eb02cbb8",
+        "ecf05df0"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P3 and P4 both meet the partner objective and every prerequisite, using the approved role and geo matching the account's observed role and geo, plus verified partner status, reseller channel fit, and integration pain with integration proof. P3 uses 2 of the 3 allowed units. P1 is blocked because no procurement stage is supplied, P2 targets a different objective, and the S19 proposal does not change approved policy.",
+  "finished_at": "2026-10-23T00:32:25.981394+00:00",
+  "seconds": 6.918793482007459
+}

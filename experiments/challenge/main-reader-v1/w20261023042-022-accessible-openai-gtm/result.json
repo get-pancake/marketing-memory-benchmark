@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-022-accessible-openai-gtm",
+  "case_id": "w20261023042-022-accessible",
+  "world": "w20261023042-022",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T06:08:29.091365+00:00",
+  "evidence_bytes": 16329,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999442",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ce830a7640c3a50016adaf9ddccac87d19dab05d89106aa44",
+  "usage": {
+    "input_tokens": 5749,
+    "input_tokens_details": {
+      "cache_write_tokens": 5746,
+      "cached_tokens": 0
+    },
+    "output_tokens": 700,
+    "output_tokens_details": {
+      "reasoning_tokens": 123
+    },
+    "total_tokens": 6449
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.021371",
+    "total_input_tokens": 5749,
+    "output_tokens": 700,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5746
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Elm-22",
+        "action": "workshop",
+        "sources": [
+          "ec771fece0deb10",
+          "e536f5e706ad16e",
+          "ed13911c9b7d3c2",
+          "e5f53110dbb2680",
+          "e583c0206537c96",
+          "e6a25927b43f107",
+          "eddce977ef3a73d",
+          "e416f478baa5123",
+          "efe25d2dce43032",
+          "e45e005f70db783",
+          "e064619989fcb7d"
+        ]
+      },
+      {
+        "account": "Larch-22",
+        "action": "renewal_review",
+        "sources": [
+          "ec771fece0deb10",
+          "e8bbdc1c4eeca9f",
+          "e37828d1793732a",
+          "e3059d5001ea8a6",
+          "ef1d8093565f4dc",
+          "e5c1e626e238de2",
+          "e2f43fdd2374fff",
+          "e3ecea1d3636ae1",
+          "e3b854440cd518d",
+          "e6689914cf5f6f0"
+        ]
+      },
+      {
+        "account": "Mesa-22",
+        "action": "research_brief",
+        "sources": [
+          "ec771fece0deb10",
+          "ef82a5256f59c77",
+          "ee4cd62a34e0d03",
+          "e81029fb39db790",
+          "e8a5f44cbe41e14",
+          "e2e4a08c7f958d4",
+          "eb1f4a9e0bb5a55",
+          "e3f29f8605b4105",
+          "eeca4f22c0b350b",
+          "ef80a66c68d08c4"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Maximum supported score is 65 synthetic priority points: Elm workshop 10×4=40, Larch renewal review 7×3=21, and Mesa research brief 4×1=4. Total cost is 6, with three distinct accounts. Elm assurance pack is an equally optimal alternative. Pine is ineligible because DE is not an allowed region. The proposed seller policy does not override the approved policy."
+  },
+  "score": {
+    "optimum": 65,
+    "recoverable_value": 65,
+    "returned_value": 65,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:08:41.723153+00:00",
+  "seconds": 12.631798261005315
+}

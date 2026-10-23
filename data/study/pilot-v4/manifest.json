@@ -1,0 +1,16 @@
+{
+  "schema": "gtm-verified-events-v1",
+  "split": "pilot",
+  "worlds": 2,
+  "queries": 16,
+  "seed": 2026102201,
+  "created_at": "2026-10-22T02:14:14.243294+00:00",
+  "files": {
+    "inputs.json": "bdb779abefefbc59f27b7da03fe9bd7d4907be5ed4be338069f73d0ba17fbd48",
+    "labels.json": "f0a512ce6aec8388b15af21613e2cb897ef0b3dccd8edb6d540266e01d345d69"
+  },
+  "provenance": "Original programmatically authored fictional worlds; no customer data, human annotations or model-generated fact prose.",
+  "checks": "Construction labels agree with independent Python and SQLite contract implementations; not human validation.",
+  "license": "CC-BY-4.0",
+  "scope": "Verified-event controlled experiment, not raw-document ingestion or commercial outcomes."
+}

@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:19.080473+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ee539cb1d3a3574016adaade39be487d19ac2f89adb61656b",
+  "usage": {
+    "input_tokens": 6713,
+    "input_tokens_details": {
+      "cache_write_tokens": 6710,
+      "cached_tokens": 0
+    },
+    "output_tokens": 81,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6794
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017591",
+    "total_input_tokens": 6713,
+    "output_tokens": 81,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6710
+  },
+  "text": "{\"answer\":\"2025-11-04;2025-11-06\",\"citations\":[\"D018\",\"D064\"],\"explanation\":\"The incident war-room export dates the Quarrendon Sev 1 to November 4, 2025. Ruth Calloway\u2019s November 6 email summarizes the executive call held that day following the incident.\"}",
+  "finished_at": "2026-10-23T00:44:22.051344+00:00",
+  "seconds": 2.9708831480093068,
+  "id": "dev-tl-1-openai-raw_chunks",
+  "case_id": "dev-tl-1",
+  "arm": "raw_chunks",
+  "context_bytes": 24524,
+  "answer_correct": true,
+  "answer": "2025-11-04;2025-11-06",
+  "citations": [
+    "D018",
+    "D064"
+  ],
+  "explanation": "The incident war-room export dates the Quarrendon Sev 1 to November 4, 2025. Ruth Calloway\u2019s November 6 email summarizes the executive call held that day following the incident.",
+  "citation_ids_valid": true
+}

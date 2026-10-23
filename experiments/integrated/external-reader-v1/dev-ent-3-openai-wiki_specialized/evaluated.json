@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:45.262868+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ad781bb2cfcc118016adaac95a5f887d18699471b2af44174",
+  "usage": {
+    "input_tokens": 16158,
+    "input_tokens_details": {
+      "cache_write_tokens": 16155,
+      "cached_tokens": 0
+    },
+    "output_tokens": 55,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16213
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0409435",
+    "total_input_tokens": 16158,
+    "output_tokens": 55,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16155
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"The July 2 chat explicitly corrected the ambiguous \u201cTP\u201d escalation to Tansleigh Packaging / TSP, not Tansley Parcel.\"}",
+  "finished_at": "2026-10-23T00:38:48.385242+00:00",
+  "seconds": 3.1223839050071547,
+  "id": "dev-ent-3-openai-wiki_specialized",
+  "case_id": "dev-ent-3",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tansleigh Packaging",
+  "explanation": "The July 2 chat explicitly corrected the ambiguous \u201cTP\u201d escalation to Tansleigh Packaging / TSP, not Tansley Parcel.",
+  "citations": [
+    "D015"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "resp_054b63659bb09529016adaf83ae8e087d1b2c9b42803609e26",
+  "object": "response",
+  "created_at": 1792735290,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735298,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_054b63659bb09529016adaf83c1ff887d1b8df66a05bdbff0b",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Elm-8, Orchid-8, Larch-8 and Cedar-8: current observed consent must be true; supplied consent is false.\",\n    \"Orchid-8: proof-2 requires approved verified=true; supplied verification is false.\",\n    \"Grove-8: resolve conflicting current observed consent values; the later true record does not supersede the false record.\",\n    \"Grove-8: supply an observed profile in an approved region or an approved policy permitting UK; the current UK profile is not allowed.\",\n    \"Grove-8: supply the observed initiative-6-to-need-to-offering-to-proof chain and approved proof verification.\",\n    \"Iris-8, Harbor-8 and Kestrel-8: supply observed profile, consent=true, signal and initiative-to-need-to-offering-to-proof links, plus approved integer priority and proof verification.\",\n    \"For any action requiring extras not already evidenced, supply approved offering capacity or assurance, or approved proof shareability, as applicable.\"\n  ],\n  \"reasoning_summary\": \"No action is eligible, so the maximum supported score is 0 at cost 0. Elm-8, Orchid-8, Larch-8 and Cedar-8 lack true consent; Orchid-8 also lacks verified proof. Grove-8 has conflicting consent, a disallowed region and an incomplete evidence chain. The other queried accounts have no supplied evidence. The proposed seller policy is not approved and was not used.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Elm-8",
+                    "Iris-8",
+                    "Orchid-8",
+                    "Larch-8",
+                    "Cedar-8",
+                    "Harbor-8",
+                    "Grove-8",
+                    "Kestrel-8"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3305,
+    "input_tokens_details": {
+      "cache_write_tokens": 3302,
+      "cached_tokens": 0
+    },
+    "output_tokens": 319,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3624
+  },
+  "user": null,
+  "metadata": {}
+}

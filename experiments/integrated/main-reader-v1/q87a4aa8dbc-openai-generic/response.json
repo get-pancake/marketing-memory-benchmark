@@ -1,0 +1,421 @@
+{
+  "id": "resp_06929f9a19393a79016adaabe6f23087d18d3a0d0db790036f",
+  "object": "response",
+  "created_at": 1792715750,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715756,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_06929f9a19393a79016adaabe8575887d183f88606126b48e1",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"explanation\":\"P3 fits the renewal objective and two-unit allowance, but approved role and geography, adoption pain and proof, and an active customer state are not established; S11 instead records the customer state as withdrawn. P1 and P4 exceed the allowance, and P2 has a different objective.\",\"missing\":[\"seller.approved_role:approved matching account_role=commercial_director\",\"seller.approved_geo:approved matching account_geo=EU\",\"seller.offering_pain:observed=adoption\",\"seller.proof_for_pain:observed=adoption\",\"account.customer_state:observed=active (S11 records withdrawn)\"],\"status\":\"request_evidence\",\"support\":{\"account.account_geo:observed\":\"S12\",\"account.account_role:observed\":\"S2\",\"account.customer_state:observed\":\"S11\",\"account.procurement_stage:observed\":null,\"account.usage_trend:observed\":\"S10\",\"seller.approved_geo:approved\":null,\"seller.approved_role:approved\":null,\"seller.offering_pain:observed\":null,\"seller.proof_for_pain:observed\":null},\"template\":null}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_recommendation",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "explanation": {
+            "type": "string"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "recommend",
+              "request_evidence"
+            ],
+            "type": "string"
+          },
+          "support": {
+            "additionalProperties": false,
+            "properties": {
+              "account.account_geo:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "account.account_role:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "account.customer_state:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "account.procurement_stage:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "account.usage_trend:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "seller.approved_geo:approved": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "seller.approved_role:approved": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "seller.offering_pain:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "seller.proof_for_pain:observed": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6",
+                      "S7",
+                      "S8",
+                      "S9",
+                      "S10",
+                      "S11",
+                      "S12",
+                      "S13",
+                      "S14",
+                      "S15",
+                      "S16",
+                      "S17"
+                    ],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "seller.approved_role:approved",
+              "seller.approved_geo:approved",
+              "account.account_role:observed",
+              "account.account_geo:observed",
+              "account.customer_state:observed",
+              "account.usage_trend:observed",
+              "seller.offering_pain:observed",
+              "seller.proof_for_pain:observed",
+              "account.procurement_stage:observed"
+            ],
+            "type": "object"
+          },
+          "template": {
+            "anyOf": [
+              {
+                "enum": [
+                  "P1",
+                  "P2",
+                  "P4",
+                  "P3"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "support",
+          "status",
+          "template",
+          "missing",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1955,
+    "input_tokens_details": {
+      "cache_write_tokens": 927,
+      "cached_tokens": 1025
+    },
+    "output_tokens": 246,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2201
+  },
+  "user": null,
+  "metadata": {}
+}

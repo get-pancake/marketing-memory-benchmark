@@ -1,0 +1,126 @@
+{
+  "id": "q5860b89769-anthropic-markdown",
+  "case_id": "q5860b89769",
+  "world": "wf0df0441",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2000,
+  "status": "completed",
+  "started_at": "2026-10-23T00:40:40.367779+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:40:41Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:40:45Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:40:40Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:40:41Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEnB9sXP6tf6RYng1k9",
+  "usage": {
+    "input_tokens": 3966,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 660,
+    "output_tokens_details": {
+      "thinking_tokens": 324
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.014532",
+    "total_input_tokens": 3966,
+    "output_tokens": 660,
+    "regular_input_tokens": 3966,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence that Ilex-700's geo matches the approved geo (US), or an approved geo that covers the account's observed UK geo",
+      "account.procurement_stage:observed (only needed for P4)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S1",
+      "account.channel_fit:observed": "S5",
+      "account.partner_status:observed": "S12",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S10",
+      "seller.approved_role:approved": "S19",
+      "seller.offering_pain:observed": "S18",
+      "seller.proof_for_pain:observed": "S14"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence that Ilex-700's geo matches the approved geo (US), or an approved geo that covers the account's observed UK geo",
+      "account.procurement_stage:observed (only needed for P4)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence that Ilex-700's geo matches the approved geo (US), or an approved geo that covers the account's observed UK geo",
+      "account.procurement_stage:observed (only needed for P4)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The approved geo is US (S10), but the account's observed geo is UK (S9), so the required approved_geo=account_geo equality fails for every partner template (P1, P3, P4). P2 is a qualification audit, which does not match the partner objective. The proposal S4 and the non-response S20 do not change approved policy.",
+  "finished_at": "2026-10-23T00:40:45.480114+00:00",
+  "seconds": 5.112345842993818
+}

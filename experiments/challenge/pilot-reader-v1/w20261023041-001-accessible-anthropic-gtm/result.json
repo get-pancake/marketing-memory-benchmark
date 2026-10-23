@@ -1,0 +1,126 @@
+{
+  "id": "w20261023041-001-accessible-anthropic-gtm",
+  "case_id": "w20261023041-001-accessible",
+  "world": "w20261023041-001",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:18:27.313982+00:00",
+  "evidence_bytes": 16297,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:18:29Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:18:45Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:18:27Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:18:29Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbxmPdRbGfRWNeSMouq",
+  "usage": {
+    "input_tokens": 8665,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1925,
+    "output_tokens_details": {
+      "thinking_tokens": 1121
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.07316",
+    "total_input_tokens": 8665,
+    "output_tokens": 1925,
+    "regular_input_tokens": 8665,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Juniper-1",
+        "action": "assurance_pack",
+        "sources": [
+          "e3d75dd2faa44a6",
+          "e0cb93a8c15bb54",
+          "e4137b2e51ec62b",
+          "eed1071e534d204",
+          "eb3de652cc7c238",
+          "e96b190e0aab145",
+          "e33ef620da56065",
+          "e0c1fa8c9711c1e",
+          "eea207a54f9481d",
+          "eba85a2ab1d53e3",
+          "ee4531bdb96ab9f"
+        ]
+      },
+      {
+        "account": "Delta-1",
+        "action": "renewal_review",
+        "sources": [
+          "e3d75dd2faa44a6",
+          "ee47961c455095e",
+          "e19827974d06251",
+          "e4f3ba4b6e9f870",
+          "e6951698cfae2e1",
+          "e1ea3247d723dde",
+          "e3eee5dbd570600",
+          "e0a3a8339bd465e",
+          "eb9569a248a0529",
+          "ef8abc170e8af16"
+        ]
+      },
+      {
+        "account": "Grove-1",
+        "action": "research_brief",
+        "sources": [
+          "e3d75dd2faa44a6",
+          "e4d8109afeeda98",
+          "ede94f817071d1a",
+          "e482f8a00afe9fa",
+          "e2aad375d1eda2b",
+          "efbea5caf9bcdc7",
+          "e4d3de01c24cbf6",
+          "e6215c3032344ea",
+          "ef673187c8ee970",
+          "e0f37293365b6fb"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Approved seller policy (day 12) governs; the day-25 proposed policy is ignored. All four accounts pass region/sector, consent and verified-proof chain checks. Juniper-1 (priority 9, risk): workshop blocked by capacity=false; assurance_pack scores 36 at cost 3. Delta-1 (priority 7, renewal): reference_intro blocked by shareable=false; renewal_review scores 21 at cost 2. Larch-1 (priority 3, renewal): best options are reference_intro 15 (cost 4) or renewal_review 9. Grove-1 (priority 5, launch): workshop 20 (cost 3) or research_brief 5 (cost 1). Within budget 6 and three distinct accounts, the optimal plan is Juniper-1 assurance_pack + Delta-1 renewal_review + Grove-1 research_brief = 62 policy points at cost 6, beating alternatives such as Juniper assurance_pack + Grove workshop (56). Points are synthetic priorities, not revenue."
+  },
+  "score": {
+    "optimum": 62,
+    "recoverable_value": 62,
+    "returned_value": 62,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:18:45.231079+00:00",
+  "seconds": 17.91710669299937
+}

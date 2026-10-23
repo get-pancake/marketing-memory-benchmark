@@ -1,0 +1,70 @@
+{
+  "id": "w20261023042-041-stress-openai-gbrain",
+  "case_id": "w20261023042-041-stress",
+  "world": "w20261023042-041",
+  "family": "professional_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:36.913520+00:00",
+  "evidence_bytes": 8131,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999960",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08b58d8e5f2e46ec016adaf661327087d1bcdd0aaefbaa7ab9",
+  "usage": {
+    "input_tokens": 3101,
+    "input_tokens_details": {
+      "cache_write_tokens": 3098,
+      "cached_tokens": 0
+    },
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3283
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.009571",
+    "total_input_tokens": 3101,
+    "output_tokens": 182,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3098
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "For each queried account, provide observed profile evidence showing region and sector, current observed consent=true, and an observed signal matching a catalog action.",
+      "For each queried account, provide the observed account.initiative → initiative.need → need.offering → offering.proof chain, plus approved proof.verified=true for the linked proof.",
+      "For reference_intro, also provide approved shareable=true on the linked proof. For workshop or assurance_pack, provide approved capacity=true or assurance=true, respectively, on the linked offering wherever not already supported."
+    ],
+    "reasoning_summary": "No action is eligible: all eight accounts lack required observed profile, consent, signal, and chain evidence, and no linked proof has approved verification. Approved priorities and seller policy are supplied, but cannot establish eligibility alone. The proposed policy does not override the approved policy. No budget is spent."
+  },
+  "score": {
+    "optimum": 62,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T05:53:41.522453+00:00",
+  "seconds": 4.608943283004919
+}

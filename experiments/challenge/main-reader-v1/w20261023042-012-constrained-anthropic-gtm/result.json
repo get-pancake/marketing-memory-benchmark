@@ -1,0 +1,132 @@
+{
+  "id": "w20261023042-012-constrained-anthropic-gtm",
+  "case_id": "w20261023042-012-constrained",
+  "world": "w20261023042-012",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:18.951303+00:00",
+  "evidence_bytes": 12246,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9974000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:53:21Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:53:35Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:53:19Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11973000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:53:21Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeczuGZf6GbYmGPzLzj",
+  "usage": {
+    "input_tokens": 6989,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1842,
+    "output_tokens_details": {
+      "thinking_tokens": 934
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.064796",
+    "total_input_tokens": 6989,
+    "output_tokens": 1842,
+    "regular_input_tokens": 6989,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Aster-12",
+        "action": "workshop",
+        "sources": [
+          "e4cfa946f87d006",
+          "e1df188e8b9ec28",
+          "e4744bc628900b8",
+          "e478424c563a854",
+          "e5e4040a8c23316",
+          "e6c4b27267ee9da",
+          "ecf2a10bac2abf3",
+          "e842753ca42458b",
+          "e9e777b70f1b492",
+          "e5ca775e89e5c1e",
+          "e096e4da68eeb36"
+        ]
+      },
+      {
+        "account": "Harbor-12",
+        "action": "renewal_review",
+        "sources": [
+          "e4cfa946f87d006",
+          "ee06d5b8cab7952",
+          "ef35a60f888da58",
+          "ebd7c30645970cf",
+          "ebfd745dda2c448",
+          "e610c28321369e8",
+          "e9b24f5d8269848",
+          "e881e94f44e7943",
+          "edf4c5ef14aceca",
+          "e712255d92e87bc"
+        ]
+      },
+      {
+        "account": "Kestrel-12",
+        "action": "diagnostic",
+        "sources": [
+          "e4cfa946f87d006",
+          "e7847c11ba31965",
+          "e6ddbbe9fa932e8",
+          "e6f9f73d33c7559",
+          "ec025c393dc663f",
+          "e69e64b8818b2fa",
+          "ed537eb8c9f0596",
+          "e0e153b919c69d8",
+          "e2c4a71dee95a6e",
+          "eacce7cfe2a5a9e"
+        ]
+      }
+    ],
+    "missing": [
+      "Orchid-12: conflicting observed consent records (true and false) must be resolved to a single current value",
+      "Flint-12: observed consent is false and proof-3 verification is false",
+      "Larch-12: sector 'restricted' is blocked by approved seller policy",
+      "Harbor-12: proof-0 is not shareable, so reference_intro is not supported",
+      "Aster-12: offering-5 assurance is false, so assurance_pack is not supported"
+    ],
+    "reasoning_summary": "Only the approved seller policy is used; the proposed policy is ignored. Larch-12 is in a blocked sector, Flint-12 has no consent and an unverified proof, and Orchid-12 has conflicting consent records, so these accounts are excluded. Aster-12 (priority 6, risk signal, verified chain, capacity approved) qualifies for workshop: 6x4=24, cost 3. Harbor-12 (priority 4, renewal signal, verified chain) qualifies for renewal_review: 4x3=12, cost 2. Kestrel-12 (priority 3, risk signal, verified chain) qualifies for diagnostic: 3x2=6, cost 2. The total cost is 7, which uses the full budget of 7, for a score of 42. This beats the alternatives within budget, such as Aster workshop plus Kestrel workshop plus Harbor research_brief, which scores 40. The points are synthetic priorities, not expected revenue."
+  },
+  "score": {
+    "optimum": 42,
+    "recoverable_value": 42,
+    "returned_value": 42,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:53:35.471633+00:00",
+  "seconds": 16.52043761499226
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.850353+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f52d8f15e0695af016adaacda37b887d1bf4dd6a0e1e623eb",
+  "usage": {
+    "input_tokens": 16152,
+    "input_tokens_details": {
+      "cache_write_tokens": 16149,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16218
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0410385",
+    "total_input_tokens": 16152,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16149
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D001\",\"D059\"],\"explanation\":\"Dana managed Brackenwater before its transfer to Marcus on 2025-09-15, but her management start date is not recorded. The oldest CRM import reportedly says only \u201clegacy migration.\u201d\"}",
+  "finished_at": "2026-10-23T00:39:56.865400+00:00",
+  "seconds": 3.0150574759900337
+}

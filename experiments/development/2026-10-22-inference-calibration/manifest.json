@@ -1,0 +1,64 @@
+{
+  "kind": "actual_model_development_pilot",
+  "started_at": "2026-10-22T01:18:01.778456+00:00",
+  "code_revision": "295c0731f29a6f9932ae4a32e45907dd0df5dad1",
+  "working_tree_dirty": true,
+  "dataset_manifest": {
+    "split": "development_only",
+    "generator": "prototype/fixtures.py",
+    "worlds": 2,
+    "cases": 12,
+    "independent_human_validation": false,
+    "model_generation": false,
+    "files": {
+      "inputs.json": {
+        "sha256": "cc647d269429a926967eb44e1d1ac8a3ceaa26040b22ac88dd025efe5aba615d",
+        "bytes": 33837
+      },
+      "labels.json": {
+        "sha256": "581b30c537991cb53efa683ad24315ed25df8010491e10eca84655b327dd2dd2",
+        "bytes": 2061
+      }
+    }
+  },
+  "methods": [
+    "generic_bm25",
+    "prompt_specialized",
+    "typed_coverage",
+    "full_context"
+  ],
+  "case_count": 2,
+  "planned_cases": [
+    {
+      "case_id": "31f889f7-66c6-5130-aae4-94670d325ffb",
+      "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca"
+    },
+    {
+      "case_id": "d9f90f57-c8e3-5242-86e8-2420a8aec172",
+      "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca"
+    }
+  ],
+  "evidence_budget_utf8_bytes": 20000,
+  "model_config": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "qwen3-4b-instruct-2507-q4_k_m",
+    "max_output_tokens": 600,
+    "temperature": 0,
+    "seed": 20261022,
+    "timeout_seconds": 900
+  },
+  "source_sha256": {
+    "prototype/__init__.py": "241f403585091b74837b514076bda182c7b63cb3815ff6df31964ce40adc05da",
+    "prototype/core.py": "8b4221b3ddf514c6608f50b8029de6c72559bb7b44942e1e2309f3583d0464bf",
+    "prototype/fixtures.py": "ec6d97a257305258b549014b3bca034d92fbf586f3c573159e2a3a75775750cf",
+    "prototype/run.py": "9e46500460dacbef0042ad853ee8280d7d2c3e7029f506f2f591e415361f72c8",
+    "prototype/summarize.py": "8dc9846541d93a3cb0d1e56675a949b25d5cd6c93870e3ef105d924f7289754d"
+  },
+  "model_calls": 8,
+  "complete": true,
+  "seed": 20261022,
+  "scope": "Controlled verified-event development track; no raw-document ingestion, no independent human assessment, no commercial outcomes.",
+  "completed_at": "2026-10-22T01:43:55.288935+00:00",
+  "attempts": 8,
+  "spending_reservations_usd": 0.0
+}

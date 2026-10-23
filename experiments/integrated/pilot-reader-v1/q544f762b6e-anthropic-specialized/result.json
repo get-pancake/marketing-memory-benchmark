@@ -1,0 +1,111 @@
+{
+  "id": "q544f762b6e-anthropic-specialized",
+  "case_id": "q544f762b6e",
+  "world": "wf66aa99f",
+  "arm": "specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2045,
+  "status": "completed",
+  "started_at": "2026-10-23T00:05:17.326827+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJC5fx75TqHyTz7zWDD1",
+  "usage": {
+    "input_tokens": 1644,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 961,
+    "output_tokens_details": {
+      "thinking_tokens": 605
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.012898",
+    "total_input_tokens": 1644,
+    "output_tokens": 961,
+    "regular_input_tokens": 1644,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Geo match: seller approved_geo is CA (S6) but account_geo is UK (S5), so the approved_geo=account_geo equality fails",
+      "account.procurement_stage:observed=approved (needed only for P1, which also exceeds the 2-unit limit)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S5",
+      "account.account_role:observed": "S15",
+      "account.observed_signal:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S9"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Geo match: seller approved_geo is CA (S6) but account_geo is UK (S5), so the approved_geo=account_geo equality fails",
+      "account.procurement_stage:observed=approved (needed only for P1, which also exceeds the 2-unit limit)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Geo match: seller approved_geo is CA (S6) but account_geo is UK (S5), so the approved_geo=account_geo equality fails",
+      "account.procurement_stage:observed=approved (needed only for P1, which also exceeds the 2-unit limit)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 and P3 need 3 units, over the 2-unit limit, and P2 has the wrong objective (qualification_audit). P4 fits the objective and budget, but it fails the common geo equality (approved CA vs observed UK). The CA proposal in S7 cannot override approved policy, so no action is supported until the geo mismatch is resolved.",
+  "finished_at": "2026-10-23T00:05:24.011990+00:00",
+  "seconds": 6.685175657999935
+}

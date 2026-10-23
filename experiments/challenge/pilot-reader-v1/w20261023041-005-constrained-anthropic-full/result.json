@@ -1,0 +1,116 @@
+{
+  "id": "w20261023041-005-constrained-anthropic-full",
+  "case_id": "w20261023041-005-constrained",
+  "world": "w20261023041-005",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:20:27.740314+00:00",
+  "evidence_bytes": 42162,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9989000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:20:30Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:20:42Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:20:27Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11989000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:20:30Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJc7eJj3jvuj5qAZPLKe",
+  "usage": {
+    "input_tokens": 20264,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1613,
+    "output_tokens_details": {
+      "thinking_tokens": 939
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.113316",
+    "total_input_tokens": 20264,
+    "output_tokens": 1613,
+    "regular_input_tokens": 20264,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Cedar-5",
+        "action": "reference_intro",
+        "sources": [
+          "eb6815d982bf6b4",
+          "e3cbe8a931bc9b7",
+          "e55aa186a702093",
+          "e4cb582816e3c99",
+          "e58ffe77eaabe79",
+          "ea17849dd5200e9",
+          "e0914cefd0da3f2",
+          "e610f4b51633124",
+          "ee426dab5c03cb5",
+          "e324d174758c83e",
+          "ec9169c08865170"
+        ]
+      },
+      {
+        "account": "Grove-5",
+        "action": "research_brief",
+        "sources": [
+          "eb6815d982bf6b4",
+          "eeafa89df50da63",
+          "e514db77d6d27d3",
+          "ed1d0b914b55b87",
+          "e2b14ec15e07300",
+          "e3389d0f5c2f1d4",
+          "e6ced90523ab6e9",
+          "e5bcf11b28892d1",
+          "e40f9a9cfd9dc53",
+          "ee224d29f6784c7"
+        ]
+      }
+    ],
+    "missing": [
+      "Birch-5: restricted sector is blocked by the approved policy.",
+      "Kestrel-5: region UK is not in allowed regions.",
+      "Elm-5: latest observed consent (day 24) is false.",
+      "Larch-5: proof-5 is approved verified false.",
+      "Grove-5: offering-3 capacity is approved false, so workshop is unavailable; only research_brief fits the launch signal."
+    ],
+    "reasoning_summary": "Applied the approved day-12 seller policy (allowed regions US/FR/DE; restricted sector blocked); the proposed policy was ignored. Only Cedar-5 and Grove-5 have fully supported chains. Cedar-5 has a renewal signal, verified and shareable proof-0, and priority 4, so reference_intro scores 4x5=20 at cost 4. Grove-5 has a launch signal, verified proof-3, and priority 8, but no capacity, so research_brief scores 8x1=8 at cost 1. The plan totals 28 points at cost 5, within the budget of 7, which is the best feasible plan. Each other account is blocked by a single failed check, listed in missing."
+  },
+  "score": {
+    "optimum": 28,
+    "recoverable_value": 28,
+    "returned_value": 28,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 5
+  },
+  "finished_at": "2026-10-23T05:20:42.733765+00:00",
+  "seconds": 14.993461561010918
+}

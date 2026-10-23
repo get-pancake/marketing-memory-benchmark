@@ -1,0 +1,177 @@
+{
+  "id": "qa2bf8a0ff8-openai-markdown",
+  "case_id": "qa2bf8a0ff8",
+  "world": "wc1aa55ff",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.2222222222222222,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1"
+    ]
+  },
+  "evidence_bytes": 2002,
+  "status": "completed",
+  "started_at": "2026-10-23T00:59:58.282988+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999976",
+    "x-ratelimit-reset-requests": "10ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0905238f582a12b3016adab18eb76887d1a9d737be77608b8b",
+  "usage": {
+    "input_tokens": 1975,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 1972
+    },
+    "output_tokens": 167,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2142
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0018732",
+    "total_input_tokens": 1975,
+    "output_tokens": 167,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1972,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S3",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S12",
+      "account.observed_signal:observed": "S11",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S15",
+      "seller.approved_role:approved": "S5",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P1"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "e2f3c9ff",
+          "ecc9830d",
+          "e040d0da",
+          "e23a470d"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Norvale-753",
+      "objective": "qualification_audit",
+      "template": "P1",
+      "policy_versions": [
+        "e2f3c9ff",
+        "ecc9830d"
+      ],
+      "evidence": [
+        "e040d0da",
+        "e23a470d",
+        "e2f3c9ff",
+        "ecc9830d"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "e2f3c9ff",
+          "ecc9830d",
+          "e040d0da",
+          "e23a470d"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Norvale-753",
+      "objective": "qualification_audit",
+      "template": "P1",
+      "policy_versions": [
+        "e2f3c9ff",
+        "ecc9830d"
+      ],
+      "evidence": [
+        "e040d0da",
+        "e23a470d",
+        "e2f3c9ff",
+        "ecc9830d"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P1 supports the qualification_audit objective within the 3-unit allowance: the observed account role and geography match approved seller policy (S1, S3, S5, S15). P1 requires no additional evidence.",
+  "finished_at": "2026-10-23T01:00:02.856202+00:00",
+  "seconds": 4.573255380004412
+}

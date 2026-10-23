@@ -1,0 +1,167 @@
+{
+  "schema": "study-analysis-v1",
+  "analyzed_at": "2026-10-22T02:54:59.850536+00:00",
+  "run": "experiments/pilot/qwen3-moe-support-table",
+  "dataset": "data/study/pilot-v5",
+  "source_run_complete": true,
+  "planned_attempts": 4,
+  "recorded_terminal_attempts": 4,
+  "model_calls_started": 4,
+  "methods": {
+    "full_context": {
+      "planned": 2,
+      "completed": 2,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 2,
+      "negative_cases": 0,
+      "primary": 0.0,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.0,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 1.0,
+      "correct_negative_withhold": null,
+      "negative_recommendations": null,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 3020,
+      "output_tokens": 319,
+      "generation_seconds": 98.0916927090002,
+      "retrieval_seconds": 0.044033242998921196,
+      "generation_p50_seconds": 49.0458463545001,
+      "generation_p95_seconds": 54.91701610814871,
+      "truncations": 0,
+      "violations": {},
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 0
+        }
+      }
+    },
+    "typed": {
+      "planned": 2,
+      "completed": 2,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 2,
+      "negative_cases": 0,
+      "primary": 0.0,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.0,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 1.0,
+      "correct_negative_withhold": null,
+      "negative_recommendations": null,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 2013,
+      "output_tokens": 318,
+      "generation_seconds": 71.3921235129983,
+      "retrieval_seconds": 0.20681955399959406,
+      "generation_p50_seconds": 35.69606175649915,
+      "generation_p95_seconds": 36.69030213124961,
+      "truncations": 0,
+      "violations": {},
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "full_context minus typed": {
+      "mean": 0,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0,
+        "w2bcf71ae": 0
+      },
+      "sd": 0.0,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    }
+  },
+  "world_means": {
+    "full_context": {
+      "w69bf7897": 0,
+      "w2bcf71ae": 0
+    },
+    "typed": {
+      "w69bf7897": 0,
+      "w2bcf71ae": 0
+    }
+  },
+  "transitions": {
+    "full_context": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "typed": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    }
+  },
+  "unique_embedding_origin_seconds": {
+    "event": 4.223179231998074,
+    "query": 0.6790006620003624
+  },
+  "embedding_cost_note": "Unique observed cache origins across this run, counted once; common reusable index cost, not a per-method cache-order advantage. Infrastructure dollars/energy unknown.",
+  "uncertainty_note": "Conditional on fictional generator/families and tested model. World bootstrap does not represent commercial-population uncertainty. Fewer than six worlds: descriptive pilot, CI suppressed. Degenerate bootstrap intervals are not guarantees.",
+  "analysis_sha256": "d9664fc57e3fa018845c63d75d326e4649fc68e37e906dfa290056d80de4395e"
+}

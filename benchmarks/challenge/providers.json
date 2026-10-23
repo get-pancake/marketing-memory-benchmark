@@ -1,0 +1,48 @@
+{
+  "status": "Both exact models and structured output settings passed actual availability calls",
+  "max_output_tokens": 8192,
+  "max_input_upper_bound": 300000,
+  "max_requests": 12000,
+  "order_seed": 2026102304,
+  "providers": [
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "input_usd_per_million": 2,
+      "output_usd_per_million": 10,
+      "cache_read_usd_per_million": 0.1,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol.md",
+      "price_checked_at": "2026-10-22",
+      "request_options": {
+        "reasoning": {
+          "effort": "medium"
+        }
+      },
+      "cache_write_usd_per_million": 2.5,
+      "cache_write_extended_usd_per_million": 5,
+      "reservation_input_usd_per_million": 5,
+      "cache_duration_note": "OpenAI standard30min/$2.50 and extended12h/$5 writes; default only"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "input_usd_per_million": 4,
+      "output_usd_per_million": 20,
+      "cache_read_usd_per_million": 0.2,
+      "price_source": "https://claude.com/pricing",
+      "price_checked_at": "2026-10-23",
+      "request_options": {
+        "thinking": {
+          "type": "adaptive"
+        },
+        "output_config": {
+          "effort": "high"
+        }
+      },
+      "cache_write_usd_per_million": 5,
+      "cache_write_extended_usd_per_million": null,
+      "reservation_input_usd_per_million": 8,
+      "cache_duration_note": "5-minute write rate verified; no extended caching requested"
+    }
+  ]
+}

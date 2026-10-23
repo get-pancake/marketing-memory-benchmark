@@ -1,0 +1,116 @@
+{
+  "id": "q6494a422b6-openai-specialized",
+  "case_id": "q6494a422b6",
+  "world": "w655e0a64",
+  "arm": "specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 0.8888888888888888,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1996,
+  "status": "completed",
+  "started_at": "2026-10-23T00:43:38.469577+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999934",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0475806a9f277608016adaadba9ec887d1b79cd27d2c0252c0",
+  "usage": {
+    "input_tokens": 2006,
+    "input_tokens_details": {
+      "cache_write_tokens": 899,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 209,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2215
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0044539",
+    "total_input_tokens": 2006,
+    "output_tokens": 209,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 899
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence of current verified partner status.",
+      "Approved seller role matching the observed account role, or observed account role matching the approved seller role."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S16",
+      "account.account_role:observed": "S8",
+      "account.channel_fit:observed": "S14",
+      "account.partner_status:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": "S12",
+      "seller.offering_pain:observed": "S18",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence of current verified partner status.",
+      "Approved seller role matching the observed account role, or observed account role matching the approved seller role."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence of current verified partner status.",
+      "Approved seller role matching the observed account role, or observed account role matching the approved seller role."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the partner objective and two-unit allowance, but partner status is withdrawn (S4), not verified, and the approved role (S12) does not match the account role (S8). P2 and P4 exceed the allowance, while P1 has a different objective.",
+  "finished_at": "2026-10-23T00:43:43.143510+00:00",
+  "seconds": 4.673932303994661
+}

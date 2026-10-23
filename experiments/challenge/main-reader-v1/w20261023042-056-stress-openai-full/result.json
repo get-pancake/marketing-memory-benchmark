@@ -1,0 +1,119 @@
+{
+  "id": "w20261023042-056-stress-openai-full",
+  "case_id": "w20261023042-056-stress",
+  "world": "w20261023042-056",
+  "family": "professional_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:03:38.244220+00:00",
+  "evidence_bytes": 69267,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999290",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "1ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0edd65bccdb7f240016adaf8baec3c87d1a5c7a3a85e958a12",
+  "usage": {
+    "input_tokens": 21756,
+    "input_tokens_details": {
+      "cache_write_tokens": 21753,
+      "cached_tokens": 0
+    },
+    "output_tokens": 853,
+    "output_tokens_details": {
+      "reasoning_tokens": 233
+    },
+    "total_tokens": 22609
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0629185",
+    "total_input_tokens": 21756,
+    "output_tokens": 853,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 21753
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Aster-56",
+        "action": "workshop",
+        "sources": [
+          "e1b6e3fb8e6112e",
+          "e03344b4f9ea70a",
+          "ef11e29203877b9",
+          "e79184f60e746de",
+          "e81e4be6c4e28d1",
+          "e232a3ef576853b",
+          "e4fb9b61abf49c6",
+          "eb0eda0d7781459",
+          "efa1b436a0ddcc8",
+          "e97a49f43035832",
+          "e3ef80c30db129a"
+        ]
+      },
+      {
+        "account": "Kestrel-56",
+        "action": "diagnostic",
+        "sources": [
+          "e1b6e3fb8e6112e",
+          "efa17f7ce125fb2",
+          "e9a9d66fb337650",
+          "eb5dd051fe8308e",
+          "e8d20eebb00b188",
+          "ef1d0ea1bf4af4b",
+          "e59d9bad4b33973",
+          "ecc2dd228f37024",
+          "e46fcf1d8d05a1a",
+          "ee23725acd78262"
+        ]
+      },
+      {
+        "account": "Elm-56",
+        "action": "diagnostic",
+        "sources": [
+          "e1b6e3fb8e6112e",
+          "e2728158f42a8c4",
+          "e699a641ea57d30",
+          "eaa386aa81f7162",
+          "ea1c9d199e9c3e7",
+          "e31a182fe432ae3",
+          "e1ac1cd3a61514b",
+          "eb23dec744511a4",
+          "e1235f441721b92",
+          "ee99afd64a105d1"
+        ]
+      }
+    ],
+    "missing": [
+      "Resolve conflicting current observed consent for Cedar-56; its restricted sector independently blocks eligibility.",
+      "Resolve conflicting current observed consent for Orchid-56; the later true record does not supersede the supplied false record."
+    ],
+    "reasoning_summary": "Maximum supported score is 66 synthetic priority points: Aster workshop 10×4, Kestrel diagnostic 12×2, and Elm diagnostic 1×2. Total cost is 7 of 8, across three distinct accounts. Aster assurance_pack is an equally optimal alternative. Other accounts fail region, sector, or consent requirements; the proposed policy is not approved evidence."
+  },
+  "score": {
+    "optimum": 66,
+    "recoverable_value": 66,
+    "returned_value": 66,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T06:03:55.840449+00:00",
+  "seconds": 17.59623761801049
+}

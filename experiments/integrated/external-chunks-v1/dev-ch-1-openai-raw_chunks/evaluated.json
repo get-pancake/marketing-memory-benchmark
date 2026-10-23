@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:07.107702+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0098d188286ce248016adaadd77ac087d1986dd4809da1002e",
+  "usage": {
+    "input_tokens": 6171,
+    "input_tokens_details": {
+      "cache_write_tokens": 6168,
+      "cached_tokens": 0
+    },
+    "output_tokens": 88,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6259
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016306",
+    "total_input_tokens": 6171,
+    "output_tokens": 88,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6168
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D024\",\"D001\"],\"explanation\":\"The executed 2025\u20132026 renewal order expressly sets the current term end to 2026-11-30, superseding the earlier order\u2019s 2025-11-30 date. The current account record confirms 2026-11-30.\"}",
+  "finished_at": "2026-10-23T00:44:09.989516+00:00",
+  "seconds": 2.8818218009982957,
+  "id": "dev-ch-1-openai-raw_chunks",
+  "case_id": "dev-ch-1",
+  "arm": "raw_chunks",
+  "context_bytes": 24525,
+  "answer_correct": true,
+  "answer": "2026-11-30",
+  "citations": [
+    "D035",
+    "D024",
+    "D001"
+  ],
+  "explanation": "The executed 2025\u20132026 renewal order expressly sets the current term end to 2026-11-30, superseding the earlier order\u2019s 2025-11-30 date. The current account record confirms 2026-11-30.",
+  "citation_ids_valid": true
+}

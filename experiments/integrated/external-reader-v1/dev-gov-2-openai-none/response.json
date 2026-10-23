@@ -1,0 +1,128 @@
+{
+  "id": "resp_020c1f209189ec7e016adaacdd6b8087d19668cdc9ecafac66",
+  "object": "response",
+  "created_at": 1792715997,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715999,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_020c1f209189ec7e016adaacde8b0887d1948d73badcdf9bd2",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzfeILwSkw3Vz3AvzvtmAyXCYpVUb2IY1BldE2nKkiKSQbAU5adpxA5ktQKSB9Vl0GR4FtIjjd4Z9dWUSwfHJk575Bbjpa7vpPzpsnEhtN5pecRLthNjPQX_wSYm3ax-rSdsO-SP-2YzKscISeqdxT8_uI4n8lr-RBNaddcbukWtjEtbofUDUoGTjRzvTJEbpBQch6SLOMUmfHeWHd4hmQkkkTei5Tzyk24OYv6Tzo6TegwPUuD8uLjx6WieCNjk1cyXTZjaYfpFTr-bSurI3bVduuc6EK8etEECFr1j03ONY-9vyr2hLWz8CJUrsHyMJhlE7Jdo8P83VJ0mSMtGF58rSQxs5SRt9AwUA6Fu80kD6qYQoBMyFs1EAEs4Xzza52EEnQyidykhE2TqerPd_WjE2lpTPII8dCNvKtpxHIypr8avKeFUQCob0LayAjeJq0p1Sdi_n4_55acWkn7FhplWejkrR-kz8t1xAhN7giEUjwgW4b1MhctGBcXiyejsThY7BWbWcI7s7ISL-KnjMQ7q15Wq-Du2WkpUWQSave6gehrSEI0AIqPMIeBcFt1B7meRHwpz1Hd03p_kovvAPUiPck3HsBAtjb-OnYyvD9nTMIK0Uzlv0kDLNnPqvcV0jPXN95z9OV6oGCUwTyPGbnaH2U6d8NdZqvOVvkdSRU01Pf_ZDEzOV9l0w9vJ3nxItJiGAxvFwFHlCkItQArWT61XJAC94opEF_MbmKbSoltocU5ZQyAxzShyC66nX_-h6ETFU3rij9M5Z6mYjp3ELQPUJO14ALjLoArMYX6yDCeSbNsnkFq1AvfVSnSoptDNc07ZoPHyUilJNTdpoBeODRFFGXKAUeq6q5VcXMr-tnGLpLvfwYdE72_QjlaDUu2-_qw1PUcWTf6wNtaQ8YPlxzw8wp4315ozE9-kNpPRhiAktjqkjFhbqA7f5Y8Jo-AwiyNghsItU9IYYpYdFK41tOWMZbfvGPIUnnKuRVWhhy2Q8yYSZWgG1PpKaNhueBmXbAmg_DTC-NtP3vEqdrPt0gjKjgJISnTPx5KLWQUlY9XYfOfFFFXBVBeFcTNNAI-TqE5KYLxxzLE43Y90AwBVuwpZAUMVQVFSS2O033YqhYorchLxA1OumK0cUE4Y94luTYf-DhUlq70chgvhZMmzac-bzNzBPIUUg3yu-XY3OcoKzxNgKwFX4fLDjddOspvfhrzgvbAn12r5ic_7xEDDWaMmmaMDeH5HWfmoh9FKcx_5EfwPLTMtegbuiGFJjxAbi3IuWg3U8vu4YbVLqwO5YT3AaeEAwcvUd_24XvyVQnG6fKK5SUY3W0Z0FCrgi2Iy9q0bOKqFhAWzDGvRh30I0tgxiFPambnD9IOmfB2QyvFRlAdVwS_8W5jzKBlUlbLIRCO7sHDEhC2KC3aKu9S9feOtUk_k60I0-pnJQ-qxckYcuJ2sBzTldlTDMVTaEXYa9lsKpxi5q7AFGvm4xw4O2mbYGORUCtoOo-CP2tB87pI9JpzqNg9FfYZab0sHYI3Q7JH",
+      "summary": []
+    },
+    {
+      "id": "msg_020c1f209189ec7e016adaacdefdc487d1a5e7e68cd89b8376",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Quarrendon Freight Lines\u2019 discount on May 1, 2026.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 259,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 58,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 317
+  },
+  "user": null,
+  "metadata": {}
+}

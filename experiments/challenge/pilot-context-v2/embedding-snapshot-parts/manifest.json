@@ -1,0 +1,21 @@
+{
+  "rows": 6380,
+  "original_compressed_sha256": "ce3b93c2d929dd5c6670f47c0972cf63d4cffc0ece6d8b5717626aa812c55659",
+  "original_uncompressed_sha256": "9ede87b1cb3ec5d36558e03d8275f32a92f147de9cbac8131231e60ebc911253",
+  "original_path": "embedding-snapshot.json.gz",
+  "parts": [
+    {
+      "path": "part-000.json.gz",
+      "rows": 4096,
+      "sha256": "8de7b7f5c31760258355a9bb256b24d77f33ea5179bf03fb41dd90608b049b98",
+      "uncompressed_sha256": "4a6d7387ebf7261f0f9235212207eda58455d7ee8582425f0309e7a44423f5ec"
+    },
+    {
+      "path": "part-001.json.gz",
+      "rows": 2284,
+      "sha256": "f0aebf805939e35a5f5c629da83402d16a83df035007a350bbc0a2b0e8c40482",
+      "uncompressed_sha256": "249c83887d51a725a9ed7c594488cf1150e8c8e173d70c400a01c0113dae8484"
+    }
+  ],
+  "note": "Lossless storage transformation only. Original concatenated array is reconstructed in part order; no new embedding calls or changed vector values."
+}

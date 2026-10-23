@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:50.182318+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_07bc9348181ab01e016adaacd6665487d196cc1396c32c0514",
+  "usage": {
+    "input_tokens": 17591,
+    "input_tokens_details": {
+      "cache_write_tokens": 17588,
+      "cached_tokens": 0
+    },
+    "output_tokens": 76,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17667
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044736",
+    "total_input_tokens": 17591,
+    "output_tokens": 76,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17588
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D104\",\"D004\",\"D056\"],\"explanation\":\"The July 28 North weekly identifies Dana and Ilse as attending the QFL QBR and describes QFL as her biggest customer. QFL formally transferred to Dana effective June 2, 2025.\"}",
+  "finished_at": "2026-10-23T00:39:53.642529+00:00",
+  "seconds": 3.460221091998392
+}

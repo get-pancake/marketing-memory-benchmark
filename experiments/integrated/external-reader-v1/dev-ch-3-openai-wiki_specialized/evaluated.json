@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.835903+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_051b320e2ca846be016adaacd9f73c87d1aba0b055ca69d14a",
+  "usage": {
+    "input_tokens": 16152,
+    "input_tokens_details": {
+      "cache_write_tokens": 16149,
+      "cached_tokens": 0
+    },
+    "output_tokens": 64,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16216
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0410185",
+    "total_input_tokens": 16152,
+    "output_tokens": 64,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16149
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D072\"],\"explanation\":\"The executed renewal effective February 1, 2026 established 120 seats. The March customer report of 125 seats prompted a true-up request, but no executed increase is supplied.\"}",
+  "finished_at": "2026-10-23T00:39:56.230803+00:00",
+  "seconds": 2.394911790994229,
+  "id": "dev-ch-3-openai-wiki_specialized",
+  "case_id": "dev-ch-3",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "The executed renewal effective February 1, 2026 established 120 seats. The March customer report of 125 seats prompted a true-up request, but no executed increase is supplied.",
+  "citations": [
+    "D037",
+    "D072"
+  ]
+}

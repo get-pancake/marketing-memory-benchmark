@@ -1,0 +1,162 @@
+{
+  "id": "resp_0044d53954874f12016adaf5b5040887d18715098deca7d049",
+  "object": "response",
+  "created_at": 1792734645,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734650,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0044d53954874f12016adaf5b5de4887d18fcbb42f93e0b80d",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"Birch-85: Resolve conflicting current observed consent records e328b13b8445bb4 (true) and e9557d71252344d (false). Its observed US profile is also outside approved allowed regions; eligibility requires an allowed-region observed profile or an approved policy permitting its region.\",\"Larch-85, Elm-85, Iris-85, Kestrel-85, North-85, Aster-85 and Pine-85: Supply observed profile, true consent, catalog-matching signal, and the complete observed initiative \u2192 need \u2192 offering \u2192 proof chain; supply approved true proof verification and an approved integer account priority.\",\"For workshop, assurance_pack or reference_intro on otherwise eligible accounts, also supply approved true offering capacity, offering assurance or proof shareability, respectively.\"],\"reasoning_summary\":\"No supported action is available within the budget of 8. Birch-85 is blocked for every action by its disallowed US region and conflicting current consent; the later consent record does not supersede the earlier one. All other queried accounts lack required eligibility and priority evidence. The proposed seller policy and feedback are not approved facts.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Larch-85",
+                    "Elm-85",
+                    "Birch-85",
+                    "Iris-85",
+                    "Kestrel-85",
+                    "North-85",
+                    "Aster-85",
+                    "Pine-85"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3244,
+    "input_tokens_details": {
+      "cache_write_tokens": 3241,
+      "cached_tokens": 0
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3488
+  },
+  "user": null,
+  "metadata": {}
+}

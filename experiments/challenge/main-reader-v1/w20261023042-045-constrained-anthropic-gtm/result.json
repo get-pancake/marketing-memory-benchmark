@@ -1,0 +1,111 @@
+{
+  "id": "w20261023042-045-constrained-anthropic-gtm",
+  "case_id": "w20261023042-045-constrained",
+  "world": "w20261023042-045",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:48:41.371653+00:00",
+  "evidence_bytes": 12287,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:48:44Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:48:55Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9995",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:48:42Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:48:44Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeGY4vJ419BD62aZAPy",
+  "usage": {
+    "input_tokens": 6974,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1393,
+    "output_tokens_details": {
+      "thinking_tokens": 768
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.055756",
+    "total_input_tokens": 6974,
+    "output_tokens": 1393,
+    "regular_input_tokens": 6974,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-45",
+        "action": "reference_intro",
+        "sources": [
+          "e8d95ce784f45e9",
+          "ee684e56e2a1da6",
+          "e6a8cce6314dd48",
+          "ed803a258f95349",
+          "ef1989c7c7e564a",
+          "ea9821c3e6e4b14",
+          "e9dacc5c2782b18",
+          "e9937777feb604c",
+          "efd95eecd555d91",
+          "e1bfb25ae0a748c",
+          "e54551b6e3d411c"
+        ]
+      },
+      {
+        "account": "Iris-45",
+        "action": "workshop",
+        "sources": [
+          "e8d95ce784f45e9",
+          "e79fcdf02ec1f55",
+          "e28bfc28573aacd",
+          "ec71eedc09721b4",
+          "ef07b2dd474bb62",
+          "e4305e402179c52",
+          "e4f4080aee9ab58",
+          "ed61c5fd323189a",
+          "e6c0a815a751214",
+          "e003192dccac128",
+          "ea3e9876b199702"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Only the approved seller policy was used; the proposed policy was ignored. That policy allows US, UK and DE and blocks the restricted sector. Pine-45 is excluded because its region is FR. Birch-45 and Larch-45 are excluded because their sector is restricted. Orchid-45 (US, growth signal, priority 7) has a verified proof that is shareable, so reference_intro qualifies: 7 x 5 = 35 points at cost 4. Iris-45 (US, risk signal, priority 5) has a verified proof and approved capacity, so workshop qualifies: 5 x 4 = 20 points at cost 3. Assurance_pack would score the same for Iris-45. Delta-45 qualifies only for research_brief (6 points at cost 1), because its offering lacks capacity for a workshop. The chosen plan uses the full budget of 7 for a total of 55 points, which beats every alternative combination."
+  },
+  "score": {
+    "optimum": 55,
+    "recoverable_value": 55,
+    "returned_value": 55,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:48:55.979149+00:00",
+  "seconds": 14.607505366002442
+}

@@ -1,0 +1,95 @@
+{
+  "id": "resp_098d57f86551585a016adaa460efc087d1b354ea573539abeb",
+  "object": "response",
+  "created_at": 1792713824,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792713828,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_098d57f86551585a016adaa461d90087d18348d78b093db684",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"support\":{\"seller.approved_role:approved\":\"S1\",\"seller.approved_geo:approved\":\"S21\",\"account.account_role:observed\":\"S32\",\"account.account_geo:observed\":\"S10\",\"account.observed_signal:observed\":\"S9\",\"seller.offering_pain:observed\":\"S5\",\"seller.proof_for_pain:observed\":\"S11\",\"account.procurement_stage:observed\":null},\"status\":\"recommend\",\"template\":\"P2\",\"missing\":[],\"explanation\":\"P2 matches the hiring objective and fits the two-unit allowance: approved role and geography match the account observations (S1, S32, S21, S10), and its hiring signal and onboarding pain and proof requirements are supported (S9, S5, S11). Procurement-stage evidence is not required for P2.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1725,
+    "input_tokens_details": {
+      "cache_write_tokens": 1722,
+      "cached_tokens": 0
+    },
+    "output_tokens": 175,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1900
+  },
+  "user": null,
+  "metadata": {}
+}

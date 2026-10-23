@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-096-accessible-openai-gtm",
+  "case_id": "w20261023042-096-accessible",
+  "world": "w20261023042-096",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T06:01:29.981674+00:00",
+  "evidence_bytes": 16314,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999620",
+    "x-ratelimit-reset-requests": "8ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e05c3adad5c491b016adaf83ac7dc87d19b1a17f607b4a60f",
+  "usage": {
+    "input_tokens": 5722,
+    "input_tokens_details": {
+      "cache_write_tokens": 5719,
+      "cached_tokens": 0
+    },
+    "output_tokens": 523,
+    "output_tokens_details": {
+      "reasoning_tokens": 86
+    },
+    "total_tokens": 6245
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0195335",
+    "total_input_tokens": 5722,
+    "output_tokens": 523,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5719
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Flint-96",
+        "action": "reference_intro",
+        "sources": [
+          "e63257e0faa8b84",
+          "e722b4f64de860d",
+          "e36e3d92d5f0d07",
+          "eb4b2e4e07fb96b",
+          "e1f0a4fc869139d",
+          "ec0d4f8a0752fba",
+          "e37d1b515a42662",
+          "e53b4aeeb37f0e5",
+          "e3601491dbc8ced",
+          "e3bc65eeae17dd2",
+          "e3351abdf7cd440"
+        ]
+      },
+      {
+        "account": "Aster-96",
+        "action": "diagnostic",
+        "sources": [
+          "e63257e0faa8b84",
+          "e2b96b219ac795f",
+          "ef6a73562840d69",
+          "e2dc725391d7a51",
+          "ea971d6fd3ba8de",
+          "e31d953ba978298",
+          "e17cdf8882f984c",
+          "ecc49c409761a81",
+          "e216d339f98e723",
+          "ef69ce9e4787f85"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Maximum supported priority score is 54: Flint-96 reference_intro contributes 10×5=50 at cost 4; Aster-96 diagnostic contributes 2×2=4 at cost 2. Total cost is 6, within budget, with distinct accounts. Juniper-96 is blocked by its restricted sector; Cedar-96 is blocked by approved verified=false. The proposed seller policy is not an approved fact. Scores are synthetic priority points, not expected revenue."
+  },
+  "score": {
+    "optimum": 54,
+    "recoverable_value": 54,
+    "returned_value": 54,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:01:39.444327+00:00",
+  "seconds": 9.462663238999085
+}

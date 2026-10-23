@@ -1,0 +1,113 @@
+{
+  "id": "q3563424a26-openai-gbrain",
+  "case_id": "q3563424a26",
+  "world": "w102aef1b",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.42857142857142855,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2014,
+  "status": "completed",
+  "started_at": "2026-10-23T00:02:20.557595+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_052d8a7f99bfd013016adaa40ca99087d1a2d2582f432e2019",
+  "usage": {
+    "input_tokens": 1112,
+    "input_tokens_details": {
+      "cache_write_tokens": 1109,
+      "cached_tokens": 0
+    },
+    "output_tokens": 211,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1323
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0048885",
+    "total_input_tokens": 1112,
+    "output_tokens": 211,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1109
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S2",
+      "account.observed_signal:observed": "S12",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "S12 establishes the migration signal, and S2 and S17 establish the account role and geography, but P1 and P4 lack approved seller targeting and observed integration offering and proof evidence. P3 additionally lacks observed approved procurement stage; P2 does not match the migration objective.",
+  "finished_at": "2026-10-23T00:02:25.102989+00:00",
+  "seconds": 4.545402553994791
+}

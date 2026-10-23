@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-22T12:54:01.291241+00:00",
+  "pages": 2,
+  "source": "paper/investor-note.md",
+  "source_sha256": "4591d6bb3c2cf289774363bee0491f7249c609af5601aec67acb6e2ec612ac71",
+  "generated_tex_sha256": "75d6ea9fc09a9068ecffc06d481cba825e03e45307212f5c94a6c641698b93c6",
+  "pdf_sha256": "a6c2d31512fbe4a11815e2ffc8fe62a9c82c1bc923fd28c32cdd598d1ed203ac",
+  "commands": [
+    {
+      "argv": [
+        "pandoc",
+        "note.md",
+        "--from=markdown+raw_tex",
+        "--to=latex",
+        "--standalone",
+        "--variable=fontsize:11pt",
+        "--variable=geometry:margin=0.9in",
+        "--output=note.tex"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "note.tex"
+      ],
+      "exit_code": 0,
+      "log_sha256": "32b6feffcb80777c879a4a73876a711e732ee5da54668a71ce66807714e836aa"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "note.tex"
+      ],
+      "exit_code": 0,
+      "log_sha256": "972891e9ff7fc165766c23e19319ca25aa70779191e72eb6fa0e5f9c63296d70"
+    }
+  ],
+  "pandoc": "pandoc 3.1.11.1",
+  "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "note": "Single Markdown content source; successful rendering does not imply visual inspection or independent review."
+}

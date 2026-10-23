@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:02.861927+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_04e6499b061770d2016adaace33d9087d19860b340f77f112b",
+  "usage": {
+    "input_tokens": 72924,
+    "input_tokens_details": {
+      "cache_write_tokens": 72921,
+      "cached_tokens": 0
+    },
+    "output_tokens": 53,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72977
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.1828385",
+    "total_input_tokens": 72924,
+    "output_tokens": 53,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72921
+  },
+  "text": "{\"answer\":\"Thornbury Cloth Co.\",\"citations\":[\"D019\"],\"explanation\":\"Marcus explicitly clarified that the invoice belonged to Thornbury Cloth Co., the Carolinas mill, not Tamsin Cold Chain.\"}",
+  "finished_at": "2026-10-23T00:40:06.595745+00:00",
+  "seconds": 3.7338286839949433,
+  "id": "dev-ent-1-openai-raw_full",
+  "case_id": "dev-ent-1",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Thornbury Cloth Co.",
+  "explanation": "Marcus explicitly clarified that the invoice belonged to Thornbury Cloth Co., the Carolinas mill, not Tamsin Cold Chain.",
+  "citations": [
+    "D019"
+  ]
+}

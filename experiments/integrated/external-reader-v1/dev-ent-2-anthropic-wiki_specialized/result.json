@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:12.237451+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfhjgaDhpQrGXDeuwn",
+  "usage": {
+    "input_tokens": 26468,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 127,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.054206",
+    "total_input_tokens": 26468,
+    "output_tokens": 127,
+    "regular_input_tokens": 26468,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D088\",\"D014\"],\"explanation\":\"Quarendon Freightways (one 'r' after 'Qua') is recorded as a noncustomer that uses competitor yard software, and it is distinct from Quarrendon Freight Lines (QFL). The August 11 dispatcher conversation was informal competitive intelligence, not a customer relationship.\"}",
+  "finished_at": "2026-10-23T00:39:14.650193+00:00",
+  "seconds": 2.4127515730069717
+}

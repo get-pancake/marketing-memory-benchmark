@@ -1,0 +1,115 @@
+{
+  "id": "q4997485556-openai-none",
+  "case_id": "q4997485556",
+  "world": "wf66aa99f",
+  "arm": "none",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 0,
+    "current_value_group_coverage": 0.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.0,
+    "selected_sources": 0,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2,
+  "status": "completed",
+  "started_at": "2026-10-23T00:02:20.557912+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_07c2d4ec4107dc57016adaa40cb7fc87d1ba40f3223b250bad",
+  "usage": {
+    "input_tokens": 557,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 751
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.003054",
+    "total_input_tokens": 557,
+    "output_tokens": 194,
+    "regular_input_tokens": 557,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Seller approved role and geography, and account observed role and geography, with matching role and geography values.",
+      "Account observed signal=migration.",
+      "Seller observed offering_pain=integration.",
+      "Seller observed proof_for_pain=integration."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": null,
+      "account.account_role:observed": null,
+      "account.observed_signal:observed": null,
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved role and geography, and account observed role and geography, with matching role and geography values.",
+      "Account observed signal=migration.",
+      "Seller observed offering_pain=integration.",
+      "Seller observed proof_for_pain=integration."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved role and geography, and account observed role and geography, with matching role and geography values.",
+      "Account observed signal=migration.",
+      "Seller observed offering_pain=integration.",
+      "Seller observed proof_for_pain=integration."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No company evidence was supplied. P4 matches the migration objective and two-unit allowance, but its common prerequisites, equalities, and additional requirements need evidence; P1 and P3 exceed the allowance, and P2 has a different objective.",
+  "finished_at": "2026-10-23T00:02:25.282717+00:00",
+  "seconds": 4.724815984009183
+}

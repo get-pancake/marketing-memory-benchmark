@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:01.184112+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0bf0b450ac7073d5016adaaca55e0087d190efeacbe72186fc",
+  "usage": {
+    "input_tokens": 6288,
+    "input_tokens_details": {
+      "cache_write_tokens": 6285,
+      "cached_tokens": 0
+    },
+    "output_tokens": 93,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6381
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0166485",
+    "total_input_tokens": 6288,
+    "output_tokens": 93,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6285
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D024\",\"D001\"],\"explanation\":\"The signed 2025\u20132026 renewal sets the current term end to 2026-11-30, superseding the 2025-11-30 date in the earlier 2024\u20132025 order. The current account record confirms 2026-11-30.\"}",
+  "finished_at": "2026-10-23T00:39:04.044874+00:00",
+  "seconds": 2.860770275001414,
+  "id": "dev-ch-1-openai-raw_bm25",
+  "case_id": "dev-ch-1",
+  "arm": "raw_bm25",
+  "context_bytes": 24573,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-11-30",
+  "explanation": "The signed 2025\u20132026 renewal sets the current term end to 2026-11-30, superseding the 2025-11-30 date in the earlier 2024\u20132025 order. The current account record confirms 2026-11-30.",
+  "citations": [
+    "D035",
+    "D024",
+    "D001"
+  ]
+}

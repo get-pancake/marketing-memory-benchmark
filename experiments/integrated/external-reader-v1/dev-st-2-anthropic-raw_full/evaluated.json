@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:40:12.400734+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEk7JPW1fDMMHvDjuAt",
+  "usage": {
+    "input_tokens": 120891,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 128,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.243062",
+    "total_input_tokens": 120891,
+    "output_tokens": 128,
+    "regular_input_tokens": 120891,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"40\",\"citations\":[\"D039\",\"D038\",\"D114\"],\"explanation\":\"The signed Renewal Order Form executed 2026-02-24 sets Thornbury Cloth Co. at 40 subscribed seats effective 3/1/26. The 44-seat version (D038) was an unsigned review draft that was never countersigned, and D114 confirms the count settled at 40.\"}",
+  "finished_at": "2026-10-23T00:40:14.030668+00:00",
+  "seconds": 1.6299439019931015,
+  "id": "dev-st-2-anthropic-raw_full",
+  "case_id": "dev-st-2",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "40",
+  "explanation": "The signed Renewal Order Form executed 2026-02-24 sets Thornbury Cloth Co. at 40 subscribed seats effective 3/1/26. The 44-seat version (D038) was an unsigned review draft that was never countersigned, and D114 confirms the count settled at 40.",
+  "citations": [
+    "D039",
+    "D038",
+    "D114"
+  ]
+}

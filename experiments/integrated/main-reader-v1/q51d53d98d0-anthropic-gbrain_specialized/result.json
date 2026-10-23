@@ -1,0 +1,193 @@
+{
+  "id": "q51d53d98d0-anthropic-gbrain_specialized",
+  "case_id": "q51d53d98d0",
+  "world": "wedcf7e7c",
+  "arm": "gbrain_specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.2,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2047,
+  "status": "completed",
+  "started_at": "2026-10-23T00:39:52.706805+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:39:54Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:39:56Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:39:52Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:39:54Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEifFwovKfkJcPCSUa2",
+  "usage": {
+    "input_tokens": 4000,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 486,
+    "output_tokens_details": {
+      "thinking_tokens": 190
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.01286",
+    "total_input_tokens": 4000,
+    "output_tokens": 486,
+    "regular_input_tokens": 4000,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "account.procurement_stage:observed (not needed for P4)"
+    ],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S1",
+      "account.account_role:observed": "S5",
+      "account.customer_state:observed": "S17",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S15",
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": "S7",
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S20"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e314af0f",
+          "e708bf3a",
+          "e1a501ca",
+          "e012e297"
+        ]
+      }
+    ],
+    "missing": [
+      "account.procurement_stage:observed (not needed for P4)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Oriole-395",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e314af0f",
+        "e708bf3a"
+      ],
+      "evidence": [
+        "e012e297",
+        "e1a501ca",
+        "e314af0f",
+        "e708bf3a"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e314af0f",
+          "e708bf3a",
+          "e1a501ca",
+          "e012e297"
+        ]
+      }
+    ],
+    "missing": [
+      "account.procurement_stage:observed (not needed for P4)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Oriole-395",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e314af0f",
+        "e708bf3a"
+      ],
+      "evidence": [
+        "e012e297",
+        "e1a501ca",
+        "e314af0f",
+        "e708bf3a"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 matches the qualification_audit objective, fits the 2-unit allowance, and has no extra prerequisites. The common requirements hold: approved role commercial_director (S7) equals observed role (S5), and approved geo EU (S11) equals observed geo (S1). The S3 proposal was not used for approved geo.",
+  "finished_at": "2026-10-23T00:39:56.984312+00:00",
+  "seconds": 4.277512316009961
+}

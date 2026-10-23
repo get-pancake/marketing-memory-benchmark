@@ -1,0 +1,33 @@
+{
+  "model": "gpt-6.1-sol",
+  "input": [
+    {
+      "role": "user",
+      "content": "Return ready true."
+    }
+  ],
+  "max_output_tokens": 512,
+  "store": false,
+  "reasoning": {
+    "effort": "medium"
+  },
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "readiness",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "ready": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "ready"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

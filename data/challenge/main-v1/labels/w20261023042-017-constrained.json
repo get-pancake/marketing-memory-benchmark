@@ -1,0 +1,287 @@
+{
+  "case_id": "w20261023042-017-constrained",
+  "world": "w20261023042-017",
+  "eligible": [
+    {
+      "account": "Grove-17",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 8,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "eaf99a1e4dd2253"
+        ],
+        [
+          "e5adc2f6f1a4614"
+        ],
+        [
+          "ea1b28dc319f765"
+        ],
+        [
+          "e1b83bafc16d239"
+        ],
+        [
+          "ecb236dfc28655e"
+        ],
+        [
+          "e1fbdc26e143869"
+        ],
+        [
+          "e6063cf80ccc76d"
+        ],
+        [
+          "eb2661cb27de26d"
+        ],
+        [
+          "ef1b892738a58b3"
+        ]
+      ]
+    },
+    {
+      "account": "Grove-17",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 16,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "eaf99a1e4dd2253"
+        ],
+        [
+          "e5adc2f6f1a4614"
+        ],
+        [
+          "ea1b28dc319f765"
+        ],
+        [
+          "e1b83bafc16d239"
+        ],
+        [
+          "ecb236dfc28655e"
+        ],
+        [
+          "e1fbdc26e143869"
+        ],
+        [
+          "e6063cf80ccc76d"
+        ],
+        [
+          "eb2661cb27de26d"
+        ],
+        [
+          "e81b84576a3e481"
+        ],
+        [
+          "ef1b892738a58b3"
+        ]
+      ]
+    },
+    {
+      "account": "Grove-17",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 4,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "eaf99a1e4dd2253"
+        ],
+        [
+          "e5adc2f6f1a4614"
+        ],
+        [
+          "ea1b28dc319f765"
+        ],
+        [
+          "e1b83bafc16d239"
+        ],
+        [
+          "ecb236dfc28655e"
+        ],
+        [
+          "e1fbdc26e143869"
+        ],
+        [
+          "e6063cf80ccc76d"
+        ],
+        [
+          "eb2661cb27de26d"
+        ],
+        [
+          "ef1b892738a58b3"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-17",
+      "action": "workshop",
+      "cost": 3,
+      "value": 32,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "ebbd2f159b5db7c"
+        ],
+        [
+          "e9d9c0b536faf4a"
+        ],
+        [
+          "ebaf5d64291392d"
+        ],
+        [
+          "e0e5d6fc56935a0"
+        ],
+        [
+          "edc019e3f08fceb"
+        ],
+        [
+          "ed61dd4dda5941d"
+        ],
+        [
+          "efd3a3d70103b0c"
+        ],
+        [
+          "e6b9a6f5e803284"
+        ],
+        [
+          "e84070a0230814f"
+        ],
+        [
+          "e612835cfeff2d5"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-17",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 8,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "ebbd2f159b5db7c"
+        ],
+        [
+          "e9d9c0b536faf4a"
+        ],
+        [
+          "ebaf5d64291392d"
+        ],
+        [
+          "e0e5d6fc56935a0"
+        ],
+        [
+          "edc019e3f08fceb"
+        ],
+        [
+          "ed61dd4dda5941d"
+        ],
+        [
+          "efd3a3d70103b0c"
+        ],
+        [
+          "e6b9a6f5e803284"
+        ],
+        [
+          "e612835cfeff2d5"
+        ]
+      ]
+    }
+  ],
+  "optimum": 48,
+  "reference_plan": [
+    {
+      "account": "Cedar-17",
+      "action": "workshop",
+      "cost": 3,
+      "value": 32,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "ebbd2f159b5db7c"
+        ],
+        [
+          "e9d9c0b536faf4a"
+        ],
+        [
+          "ebaf5d64291392d"
+        ],
+        [
+          "e0e5d6fc56935a0"
+        ],
+        [
+          "edc019e3f08fceb"
+        ],
+        [
+          "ed61dd4dda5941d"
+        ],
+        [
+          "efd3a3d70103b0c"
+        ],
+        [
+          "e6b9a6f5e803284"
+        ],
+        [
+          "e84070a0230814f"
+        ],
+        [
+          "e612835cfeff2d5"
+        ]
+      ]
+    },
+    {
+      "account": "Grove-17",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 16,
+      "support_groups": [
+        [
+          "ea5ee9c2aa564e9"
+        ],
+        [
+          "eaf99a1e4dd2253"
+        ],
+        [
+          "e5adc2f6f1a4614"
+        ],
+        [
+          "ea1b28dc319f765"
+        ],
+        [
+          "e1b83bafc16d239"
+        ],
+        [
+          "ecb236dfc28655e"
+        ],
+        [
+          "e1fbdc26e143869"
+        ],
+        [
+          "e6063cf80ccc76d"
+        ],
+        [
+          "eb2661cb27de26d"
+        ],
+        [
+          "e81b84576a3e481"
+        ],
+        [
+          "ef1b892738a58b3"
+        ]
+      ]
+    }
+  ]
+}

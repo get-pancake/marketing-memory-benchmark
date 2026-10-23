@@ -1,0 +1,126 @@
+{
+  "id": "q042b56b3c5-anthropic-gbrain_specialized",
+  "case_id": "q042b56b3c5",
+  "world": "we6155369",
+  "arm": "gbrain_specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2010,
+  "status": "completed",
+  "started_at": "2026-10-23T00:38:49.631522+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:38:52Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:38:57Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:38:50Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:38:52Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEe2YE2w5an19PNZyHV",
+  "usage": {
+    "input_tokens": 3914,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 791,
+    "output_tokens_details": {
+      "thinking_tokens": 468
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.015738",
+    "total_input_tokens": 3914,
+    "output_tokens": 791,
+    "regular_input_tokens": 3914,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "account.certification:observed=ISO27001 (current value is withdrawn per S5)",
+      "account.procurement_stage:observed=approved (needed only for P4)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S8",
+      "account.account_role:observed": "S9",
+      "account.certification:observed": null,
+      "account.observed_signal:observed": "S17",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": "S11",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S14"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.certification:observed=ISO27001 (current value is withdrawn per S5)",
+      "account.procurement_stage:observed=approved (needed only for P4)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.certification:observed=ISO27001 (current value is withdrawn per S5)",
+      "account.procurement_stage:observed=approved (needed only for P4)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The common role and geo prerequisites hold (S11, S3, S9, S8), but the latest certification observation (S5) says withdrawn, not ISO27001, so P1, P2 and P4 all fail. P3 has a different objective (qualification_audit) than the compliance objective, so nothing in the catalog is supported.",
+  "finished_at": "2026-10-23T00:38:57.370725+00:00",
+  "seconds": 7.739211861000513
+}

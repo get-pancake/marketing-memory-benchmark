@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "cases": 6,
+  "packets_verified": 36,
+  "query_word_exact_equal_cases": 6,
+  "query_word_extra_model_calls": 0,
+  "independent_control_observations": 0,
+  "control_interpretation": "When exact inputs match, this is a mechanistic alias; no new observations and no measured architectural superiority over the generic task-word selector.",
+  "levels": {
+    "accessible": {
+      "records": {
+        "min": 192,
+        "median": 192.0,
+        "max": 192
+      },
+      "all_records": {
+        "min": 217,
+        "median": 217.0,
+        "max": 217
+      },
+      "accounts": {
+        "min": 4,
+        "median": 4.0,
+        "max": 4
+      },
+      "full_evidence_bytes": {
+        "min": 28531,
+        "median": 28546.5,
+        "max": 28562
+      },
+      "budget_bytes": {
+        "min": 16384,
+        "median": 16384.0,
+        "max": 16384
+      }
+    },
+    "constrained": {
+      "records": {
+        "min": 278,
+        "median": 279.0,
+        "max": 280
+      },
+      "all_records": {
+        "min": 303,
+        "median": 304.0,
+        "max": 305
+      },
+      "accounts": {
+        "min": 6,
+        "median": 6.0,
+        "max": 6
+      },
+      "full_evidence_bytes": {
+        "min": 41988,
+        "median": 42113.5,
+        "max": 42239
+      },
+      "budget_bytes": {
+        "min": 12288,
+        "median": 12288.0,
+        "max": 12288
+      }
+    },
+    "stress": {
+      "records": {
+        "min": 450,
+        "median": 451.0,
+        "max": 452
+      },
+      "all_records": {
+        "min": 475,
+        "median": 476.0,
+        "max": 477
+      },
+      "accounts": {
+        "min": 8,
+        "median": 8.0,
+        "max": 8
+      },
+      "full_evidence_bytes": {
+        "min": 69288,
+        "median": 69325.5,
+        "max": 69363
+      },
+      "budget_bytes": {
+        "min": 8192,
+        "median": 8192.0,
+        "max": 8192
+      }
+    }
+  },
+  "rows": [
+    {
+      "case_id": "w20261023041-000-accessible",
+      "world": "w20261023041-000",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28531,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "a49ceab650c90e91b98f6bb5f1f82ed0f106f3758324caca613f71359c41060f",
+      "query_word_packet_sha256": "a49ceab650c90e91b98f6bb5f1f82ed0f106f3758324caca613f71359c41060f"
+    },
+    {
+      "case_id": "w20261023041-001-accessible",
+      "world": "w20261023041-001",
+      "level": "accessible",
+      "records": 192,
+      "all_records": 217,
+      "accounts": 4,
+      "full_evidence_bytes": 28562,
+      "budget_bytes": 16384,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "b375c0a4bcac38ee27001a8a90fff7ddddf9ab958d3904cb79c9f5c0eb25d4c5",
+      "query_word_packet_sha256": "b375c0a4bcac38ee27001a8a90fff7ddddf9ab958d3904cb79c9f5c0eb25d4c5"
+    },
+    {
+      "case_id": "w20261023041-001-constrained",
+      "world": "w20261023041-001",
+      "level": "constrained",
+      "records": 278,
+      "all_records": 303,
+      "accounts": 6,
+      "full_evidence_bytes": 41988,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "dcb93e2a8bfaa12bc571eebd9754e4b594fbfabc37758b859f0d1e6968ca13d5",
+      "query_word_packet_sha256": "dcb93e2a8bfaa12bc571eebd9754e4b594fbfabc37758b859f0d1e6968ca13d5"
+    },
+    {
+      "case_id": "w20261023041-001-stress",
+      "world": "w20261023041-001",
+      "level": "stress",
+      "records": 452,
+      "all_records": 477,
+      "accounts": 8,
+      "full_evidence_bytes": 69363,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "00dde552c9c4cd8c9a5c63780ea75181294eb46c321097a71a6a49047d6fe19b",
+      "query_word_packet_sha256": "00dde552c9c4cd8c9a5c63780ea75181294eb46c321097a71a6a49047d6fe19b"
+    },
+    {
+      "case_id": "w20261023041-003-stress",
+      "world": "w20261023041-003",
+      "level": "stress",
+      "records": 450,
+      "all_records": 475,
+      "accounts": 8,
+      "full_evidence_bytes": 69288,
+      "budget_bytes": 8192,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "64433ee6afd5a4a2e1222058c9847840fefd45a76dc9dda9211ef3815fcf28ec",
+      "query_word_packet_sha256": "64433ee6afd5a4a2e1222058c9847840fefd45a76dc9dda9211ef3815fcf28ec"
+    },
+    {
+      "case_id": "w20261023041-004-constrained",
+      "world": "w20261023041-004",
+      "level": "constrained",
+      "records": 280,
+      "all_records": 305,
+      "accounts": 6,
+      "full_evidence_bytes": 42239,
+      "budget_bytes": 12288,
+      "query_word_control_exact_input_equal": true,
+      "gtm_packet_sha256": "0b34f6b8c6d775d0229e070339b7181a7d97f2000b2297f29de3a22bd1e88b4c",
+      "query_word_packet_sha256": "0b34f6b8c6d775d0229e070339b7181a7d97f2000b2297f29de3a22bd1e88b4c"
+    }
+  ]
+}

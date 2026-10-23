@@ -1,0 +1,47 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:51.490907+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEeAXwedF6Mcqrj3GZS",
+  "usage": {
+    "input_tokens": 10333,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 148,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.022146",
+    "total_input_tokens": 10333,
+    "output_tokens": 148,
+    "regular_input_tokens": 10333,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D104\"],\"explanation\":\"The July 28, 2025 weekly (D104) says Dana Okafor and Ilse were at the Quarrendon Freight Lines QBR with Thea Ramaswell, and later mentions travel expenses from \\\"Dana's freight account\\\". That ties the phrase to Quarrendon Freight Lines, which was Dana's account at that time.\"}",
+  "finished_at": "2026-10-23T00:38:53.616792+00:00",
+  "seconds": 2.125886569992872,
+  "id": "dev-op-2-anthropic-raw_bm25",
+  "case_id": "dev-op-2",
+  "arm": "raw_bm25",
+  "context_bytes": 24462,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The July 28, 2025 weekly (D104) says Dana Okafor and Ilse were at the Quarrendon Freight Lines QBR with Thea Ramaswell, and later mentions travel expenses from \"Dana's freight account\". That ties the phrase to Quarrendon Freight Lines, which was Dana's account at that time.",
+  "citations": [
+    "D104"
+  ]
+}

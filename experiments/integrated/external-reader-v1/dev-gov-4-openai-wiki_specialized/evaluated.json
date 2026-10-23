@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:50.197868+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0052770e359315c2016adaacd69bc887d1a1d681baf8909d37",
+  "usage": {
+    "input_tokens": 16155,
+    "input_tokens_details": {
+      "cache_write_tokens": 16152,
+      "cached_tokens": 0
+    },
+    "output_tokens": 78,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16233
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.041166",
+    "total_input_tokens": 16155,
+    "output_tokens": 78,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16152
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\"],\"explanation\":\"The executed affiliate amendment set Marrow Agrisupply to Tier 1 effective October 15, 2025. The renewal effective May 1, 2026 preserved that SLA; the conflicting May weekly report did not amend the executed terms.\"}",
+  "finished_at": "2026-10-23T00:39:53.834471+00:00",
+  "seconds": 3.6366131069953553,
+  "id": "dev-gov-4-openai-wiki_specialized",
+  "case_id": "dev-gov-4",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tier 1",
+  "explanation": "The executed affiliate amendment set Marrow Agrisupply to Tier 1 effective October 15, 2025. The renewal effective May 1, 2026 preserved that SLA; the conflicting May weekly report did not amend the executed terms.",
+  "citations": [
+    "D033",
+    "D042"
+  ]
+}

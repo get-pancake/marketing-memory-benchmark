@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-006-constrained-openai-full",
+  "case_id": "w20261023042-006-constrained",
+  "world": "w20261023042-006",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:07:27.549672+00:00",
+  "evidence_bytes": 41963,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999556",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0fb4abf83b417a0e016adaf9a0601487d192afcd5425a23b58",
+  "usage": {
+    "input_tokens": 13541,
+    "input_tokens_details": {
+      "cache_write_tokens": 13538,
+      "cached_tokens": 0
+    },
+    "output_tokens": 587,
+    "output_tokens_details": {
+      "reasoning_tokens": 167
+    },
+    "total_tokens": 14128
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.039721",
+    "total_input_tokens": 13541,
+    "output_tokens": 587,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 13538
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Harbor-6",
+        "action": "reference_intro",
+        "sources": [
+          "ee0c62869ea79d3",
+          "ee02972df378156",
+          "e4fd2a8747ca3b4",
+          "e193da1a1fa80d6",
+          "e737bccb1db53ed",
+          "e78a8e014fd5981",
+          "e64f9200a16a73e",
+          "e6ebfd5225cb899",
+          "eb4e9869b6ba367",
+          "e46ebe45b08b35a",
+          "eca5a269bd557dc"
+        ]
+      },
+      {
+        "account": "Birch-6",
+        "action": "diagnostic",
+        "sources": [
+          "ee0c62869ea79d3",
+          "ee4d909cb67f03c",
+          "ea8ff695b21d2d2",
+          "e651ebe429f116b",
+          "e373ba6e0833ee7",
+          "e6153c1688bb5a8",
+          "e423d8a93e403f6",
+          "ee4e36e4c3d61f3",
+          "e7d8a8eb2ee30bc",
+          "ef8b36e416d4d7b"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The optimal supported plan costs 6 of 7 and yields 42 synthetic priority points: Harbor-6 reference_intro (8×5=40) plus Birch-6 diagnostic (1×2=2). Other queried accounts are ineligible under the approved region or sector rules; Iris-6 also lacks consent. No additional eligible distinct account can use the remaining budget."
+  },
+  "score": {
+    "optimum": 42,
+    "recoverable_value": 42,
+    "returned_value": 42,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:07:39.915720+00:00",
+  "seconds": 12.366056983999442
+}

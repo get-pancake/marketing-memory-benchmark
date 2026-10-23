@@ -1,0 +1,3653 @@
+{
+  "kind": "actual_local_model_test",
+  "started_at": "2026-10-22T03:58:20.538102+00:00",
+  "complete": true,
+  "code_revision": "eeede44635c996216a1d8e6e930e6f8df321b1c2",
+  "source_sha256": {
+    "analysis/analyze_study.py": "3dce30df983ae0face1d8916a279a61f6a2218d105c5142c7830956f66f63ad2",
+    "prototype/core.py": "8b4221b3ddf514c6608f50b8029de6c72559bb7b44942e1e2309f3583d0464bf",
+    "prototype/run.py": "2795de8c305283e6e39d97f44a2295f2d59d634d14ca8498f511b9362fe102fa",
+    "study/__init__.py": "ebf596b56899d66d83c6a09b7523f4f09c87192d14f5ff506db499c3397f27a1",
+    "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+    "study/dryrun.py": "b27f0a05519d473df2693e5c6ae53fd94a9e290054e3d7a0b8b2c9d333662d67",
+    "study/fixtures.py": "54e677a01a8ae2626e7c4b387ac4a90c0ee7445c35c4059884ded13e34c29a2e",
+    "study/ledger.py": "3f345850512a71be074e24f42af530eda2f50b8643350e6b292e3c86f6a0965a",
+    "study/reference.py": "666f1f00a8282afb63e3b53c92fb3008d519ecb09d124d7b6a76233df6f1c505",
+    "study/retrieval.py": "8ed97d652d58b18e1f92df85d60a981a87a557373c20f662be2cc626d633be24",
+    "study/run.py": "059d138d6c89d663df9a192c61d9df895d32b2477a13dd918949b57ab539f528",
+    "study/test_contract.py": "4dca3bfa026d6255c3929c58bd21926a0134042b8ac88a6992aaa1d4340ad0a4",
+    "study/test_ledger.py": "3e9014b2da9a6fc7739481b8bd171eca02b5e71a9d21eac87578d54e1e2a84af"
+  },
+  "working_tree_dirty": true,
+  "dataset_manifest": {
+    "schema": "gtm-verified-events-v1",
+    "split": "test",
+    "worlds": 12,
+    "queries": 96,
+    "seed": 2026102202,
+    "created_at": "2026-10-22T03:44:18.546240+00:00",
+    "files": {
+      "inputs.json": "d5e748b725746b578a19f7819961ac339abe0cb174bf7d3282bd28fc8eb8238a",
+      "labels.json": "5ccad97cdb71c6fbc84e543ef1cbd145bd2605f793454fdc17518d126df099b4"
+    },
+    "provenance": "Original fictional worlds instantiated deterministically from AI-assisted authored templates; no customer data or human annotations; no separate narrative-generation model calls.",
+    "checks": "Construction labels agree with independent Python and SQLite contract implementations; not human validation.",
+    "license": "CC-BY-4.0",
+    "scope": "Verified-event controlled experiment, not raw-document ingestion or commercial outcomes."
+  },
+  "model_config": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+    "max_output_tokens": 280,
+    "temperature": 0,
+    "seed": 20261022,
+    "timeout_seconds": 900
+  },
+  "methods": [
+    "generic_hybrid",
+    "prompt_hybrid",
+    "facet_hybrid",
+    "typed",
+    "full_context",
+    "typed_history"
+  ],
+  "token_cap": 1024,
+  "full_context_cap": 15000,
+  "order_seed": 20261022,
+  "planned": [
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 0
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 1
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 2
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 3
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 4
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 5
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 6
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 7
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 8
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 9
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 10
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 11
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 12
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 13
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 14
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 15
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 16
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 17
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 18
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 19
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 20
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 21
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 22
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 23
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 24
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 25
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 26
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 27
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 28
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 29
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 30
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 31
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 32
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 33
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 34
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 35
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 36
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 37
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 38
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 39
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 40
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 41
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 42
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 43
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 44
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 45
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 46
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 47
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 48
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 49
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 50
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 51
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 52
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 53
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 54
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 55
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 56
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 57
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 58
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 59
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 60
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 61
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 62
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 63
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 64
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 65
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 66
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 67
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 68
+    },
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 69
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 70
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 71
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 72
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 73
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 74
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 75
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 76
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 77
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 78
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 79
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 80
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 81
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 82
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 83
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 84
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 85
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 86
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 87
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 88
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 89
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 90
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 91
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 92
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 93
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 94
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 95
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 96
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 97
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 98
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 99
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 100
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 101
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 102
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 103
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 104
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 105
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 106
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 107
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 108
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 109
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 110
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 111
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 112
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 113
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 114
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 115
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 116
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 117
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 118
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 119
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 120
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 121
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 122
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 123
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 124
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 125
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 126
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 127
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 128
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 129
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 130
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 131
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 132
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 133
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 134
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 135
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 136
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 137
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 138
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 139
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 140
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 141
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 142
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 143
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 144
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 145
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 146
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 147
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 148
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 149
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 150
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 151
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 152
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 153
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 154
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 155
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 156
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 157
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 158
+    },
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 159
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 160
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 161
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 162
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 163
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 164
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 165
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 166
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 167
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 168
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 169
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 170
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 171
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 172
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 173
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 174
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 175
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 176
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 177
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 178
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 179
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 180
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 181
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 182
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 183
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 184
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 185
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 186
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 187
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 188
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 189
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 190
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 191
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 192
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 193
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 194
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 195
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 196
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 197
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 198
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 199
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 200
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 201
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 202
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 203
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 204
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 205
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 206
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 207
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 208
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 209
+    },
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 210
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 211
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 212
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 213
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 214
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 215
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 216
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 217
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 218
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 219
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 220
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 221
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 222
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 223
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 224
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 225
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 226
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 227
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 228
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 229
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 230
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 231
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 232
+    },
+    {
+      "case_id": "q0b2e9ee8ab",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 233
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 234
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 235
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 236
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 237
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 238
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 239
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 240
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 241
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 242
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 243
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 244
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 245
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 246
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 247
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 248
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 249
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 250
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 251
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 252
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 253
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 254
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 255
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 256
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 257
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 258
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 259
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 260
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 261
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 262
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 263
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 264
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 265
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 266
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 267
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 268
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 269
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 270
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 271
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 272
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 273
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 274
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 275
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 276
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 277
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 278
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 279
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 280
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 281
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 282
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 283
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 284
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 285
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 286
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 287
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 288
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 289
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 290
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 291
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 292
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 293
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 294
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 295
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 296
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 297
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 298
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 299
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 300
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 301
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 302
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "generic_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 303
+    },
+    {
+      "case_id": "qc71fafcbbc",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 304
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 305
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 306
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 307
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 308
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 309
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 310
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 311
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 312
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 313
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 314
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 315
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 316
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 317
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 318
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 319
+    },
+    {
+      "case_id": "qa8d72b1941",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 320
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 321
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 322
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 323
+    },
+    {
+      "case_id": "q237c43fc8d",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 324
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 325
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 326
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 327
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 328
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 329
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 330
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 331
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 332
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 333
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 334
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 335
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 336
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 337
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 338
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 339
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 340
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 341
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 342
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 343
+    },
+    {
+      "case_id": "q6525ff8cc8",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 344
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 345
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 346
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 347
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 348
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 349
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 350
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 351
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 352
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 353
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 354
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "facet_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 355
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 356
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 357
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "facet_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 358
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 359
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 360
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 361
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 362
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 363
+    },
+    {
+      "case_id": "q39f3347dea",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 364
+    },
+    {
+      "case_id": "qc8e0361f5d",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 365
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 366
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 367
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 368
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 369
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 370
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 371
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 372
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 373
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 374
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 375
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 376
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 377
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 378
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 379
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 380
+    },
+    {
+      "case_id": "q829ce1bf8d",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 381
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 382
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 383
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "full_context",
+      "world": "wd6c72d6a",
+      "attempt_id": 384
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 385
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 386
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 387
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "typed_history",
+      "world": "w3d45ea82",
+      "attempt_id": 388
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 389
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 390
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 391
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 392
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 393
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 394
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 395
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 396
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 397
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 398
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 399
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 400
+    },
+    {
+      "case_id": "q5ef9688c96",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 401
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 402
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 403
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 404
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 405
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 406
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 407
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 408
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 409
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 410
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 411
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 412
+    },
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 413
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 414
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 415
+    },
+    {
+      "case_id": "q1a1cc252be",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 416
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 417
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 418
+    },
+    {
+      "case_id": "qbcd3a74865",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 419
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 420
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 421
+    },
+    {
+      "case_id": "q5710bc421d",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 422
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "full_context",
+      "world": "wbf8849ab",
+      "attempt_id": 423
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 424
+    },
+    {
+      "case_id": "q4763dba521",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 425
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 426
+    },
+    {
+      "case_id": "qb06173b020",
+      "method": "prompt_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 427
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 428
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 429
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 430
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 431
+    },
+    {
+      "case_id": "q9320cdc3b0",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 432
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 433
+    },
+    {
+      "case_id": "qae9aa1fb87",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 434
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 435
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 436
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 437
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 438
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 439
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 440
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 441
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 442
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 443
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "facet_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 444
+    },
+    {
+      "case_id": "qf92bd83873",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 445
+    },
+    {
+      "case_id": "q4d53c8ed08",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 446
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 447
+    },
+    {
+      "case_id": "q8cf1434218",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 448
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 449
+    },
+    {
+      "case_id": "q6c981cc8d0",
+      "method": "typed",
+      "world": "wbf8849ab",
+      "attempt_id": 450
+    },
+    {
+      "case_id": "q183637723a",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 451
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "facet_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 452
+    },
+    {
+      "case_id": "qacd5b83c4d",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 453
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 454
+    },
+    {
+      "case_id": "q9417e647e1",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 455
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "generic_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 456
+    },
+    {
+      "case_id": "q1c366e6ee1",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 457
+    },
+    {
+      "case_id": "qc6e41f8f9b",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 458
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 459
+    },
+    {
+      "case_id": "q8bb96bcf5e",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 460
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 461
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 462
+    },
+    {
+      "case_id": "q98b6a45b73",
+      "method": "typed_history",
+      "world": "w0b261e4e",
+      "attempt_id": 463
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 464
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 465
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 466
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 467
+    },
+    {
+      "case_id": "q50fc791137",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 468
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 469
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 470
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 471
+    },
+    {
+      "case_id": "q57ed5e2256",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 472
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "facet_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 473
+    },
+    {
+      "case_id": "q7746548fa0",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 474
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 475
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "typed",
+      "world": "wb34037eb",
+      "attempt_id": 476
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 477
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 478
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 479
+    },
+    {
+      "case_id": "qeb57ee5185",
+      "method": "prompt_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 480
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 481
+    },
+    {
+      "case_id": "q9f7ca5ca81",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 482
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 483
+    },
+    {
+      "case_id": "q374175c9a9",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 484
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 485
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 486
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 487
+    },
+    {
+      "case_id": "qb56a7d99bb",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 488
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 489
+    },
+    {
+      "case_id": "qf952280c1c",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 490
+    },
+    {
+      "case_id": "qcddfcbd3e8",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 491
+    },
+    {
+      "case_id": "qdb92970073",
+      "method": "prompt_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 492
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "typed_history",
+      "world": "wd6c72d6a",
+      "attempt_id": 493
+    },
+    {
+      "case_id": "qddca4958a4",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 494
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "typed",
+      "world": "w5f803d84",
+      "attempt_id": 495
+    },
+    {
+      "case_id": "qf9374bbd6d",
+      "method": "facet_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 496
+    },
+    {
+      "case_id": "qdff759adba",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 497
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 498
+    },
+    {
+      "case_id": "qe10b7bc4d4",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 499
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "generic_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 500
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "typed_history",
+      "world": "wbf8849ab",
+      "attempt_id": 501
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "generic_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 502
+    },
+    {
+      "case_id": "qe0585141a2",
+      "method": "full_context",
+      "world": "wb34037eb",
+      "attempt_id": 503
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 504
+    },
+    {
+      "case_id": "qa3fbdcc205",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 505
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 506
+    },
+    {
+      "case_id": "q0b7d592c00",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 507
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "full_context",
+      "world": "wfc5d07df",
+      "attempt_id": 508
+    },
+    {
+      "case_id": "q9ea1d160a4",
+      "method": "typed",
+      "world": "w928ad8c3",
+      "attempt_id": 509
+    },
+    {
+      "case_id": "q445cd67eca",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 510
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 511
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "prompt_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 512
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "typed_history",
+      "world": "w692891c2",
+      "attempt_id": 513
+    },
+    {
+      "case_id": "q1d9a4325f2",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 514
+    },
+    {
+      "case_id": "qfaefd01ef4",
+      "method": "typed",
+      "world": "w5e59e4e5",
+      "attempt_id": 515
+    },
+    {
+      "case_id": "q0d8088c402",
+      "method": "typed",
+      "world": "wfc5d07df",
+      "attempt_id": 516
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 517
+    },
+    {
+      "case_id": "q0eb207260c",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 518
+    },
+    {
+      "case_id": "q62ade66e18",
+      "method": "facet_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 519
+    },
+    {
+      "case_id": "q8c847d66d2",
+      "method": "full_context",
+      "world": "w5e59e4e5",
+      "attempt_id": 520
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 521
+    },
+    {
+      "case_id": "qa12a24a6f9",
+      "method": "full_context",
+      "world": "w3d45ea82",
+      "attempt_id": 522
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 523
+    },
+    {
+      "case_id": "qa692ea311a",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 524
+    },
+    {
+      "case_id": "q91996663b2",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 525
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "typed_history",
+      "world": "wf579faf9",
+      "attempt_id": 526
+    },
+    {
+      "case_id": "q741bc163e4",
+      "method": "facet_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 527
+    },
+    {
+      "case_id": "q942b925365",
+      "method": "typed_history",
+      "world": "wfc5d07df",
+      "attempt_id": 528
+    },
+    {
+      "case_id": "q3ef54f5ab4",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 529
+    },
+    {
+      "case_id": "q5b71bb3ea5",
+      "method": "full_context",
+      "world": "w928ad8c3",
+      "attempt_id": 530
+    },
+    {
+      "case_id": "q3a11afac6d",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 531
+    },
+    {
+      "case_id": "qfcd0e1d672",
+      "method": "full_context",
+      "world": "wb3a4ee1b",
+      "attempt_id": 532
+    },
+    {
+      "case_id": "q1eb38e4ec3",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 533
+    },
+    {
+      "case_id": "q392704196b",
+      "method": "generic_hybrid",
+      "world": "wfc5d07df",
+      "attempt_id": 534
+    },
+    {
+      "case_id": "q14a950056f",
+      "method": "typed",
+      "world": "wb3a4ee1b",
+      "attempt_id": 535
+    },
+    {
+      "case_id": "qda3600d906",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 536
+    },
+    {
+      "case_id": "qe5892e8650",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 537
+    },
+    {
+      "case_id": "qc5e9b7e6b0",
+      "method": "typed_history",
+      "world": "w5f803d84",
+      "attempt_id": 538
+    },
+    {
+      "case_id": "qd5744d7c75",
+      "method": "generic_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 539
+    },
+    {
+      "case_id": "qad2ed7a4f4",
+      "method": "typed",
+      "world": "w692891c2",
+      "attempt_id": 540
+    },
+    {
+      "case_id": "q52cab06465",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 541
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 542
+    },
+    {
+      "case_id": "qb6faf25cc7",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 543
+    },
+    {
+      "case_id": "q10f0e1e88b",
+      "method": "generic_hybrid",
+      "world": "wb3a4ee1b",
+      "attempt_id": 544
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 545
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "prompt_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 546
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "typed",
+      "world": "wf579faf9",
+      "attempt_id": 547
+    },
+    {
+      "case_id": "q81792df900",
+      "method": "full_context",
+      "world": "wf579faf9",
+      "attempt_id": 548
+    },
+    {
+      "case_id": "q1669a98ab0",
+      "method": "generic_hybrid",
+      "world": "w692891c2",
+      "attempt_id": 549
+    },
+    {
+      "case_id": "q5a7fee5ed9",
+      "method": "facet_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 550
+    },
+    {
+      "case_id": "q6ec50f7f4c",
+      "method": "generic_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 551
+    },
+    {
+      "case_id": "qe9438460c5",
+      "method": "full_context",
+      "world": "w5f803d84",
+      "attempt_id": 552
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "typed",
+      "world": "w0b261e4e",
+      "attempt_id": 553
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "typed_history",
+      "world": "w928ad8c3",
+      "attempt_id": 554
+    },
+    {
+      "case_id": "qc3340ce466",
+      "method": "typed_history",
+      "world": "wb3a4ee1b",
+      "attempt_id": 555
+    },
+    {
+      "case_id": "qd3cecd512c",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 556
+    },
+    {
+      "case_id": "q39edf7cdba",
+      "method": "full_context",
+      "world": "w0b261e4e",
+      "attempt_id": 557
+    },
+    {
+      "case_id": "q30e8e54ceb",
+      "method": "full_context",
+      "world": "w692891c2",
+      "attempt_id": 558
+    },
+    {
+      "case_id": "q451609855e",
+      "method": "typed",
+      "world": "wd6c72d6a",
+      "attempt_id": 559
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "typed_history",
+      "world": "wb34037eb",
+      "attempt_id": 560
+    },
+    {
+      "case_id": "q98ccbbe888",
+      "method": "prompt_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 561
+    },
+    {
+      "case_id": "q3bb77fc6f0",
+      "method": "typed",
+      "world": "w3d45ea82",
+      "attempt_id": 562
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "generic_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 563
+    },
+    {
+      "case_id": "qa8f7889bef",
+      "method": "typed_history",
+      "world": "w5e59e4e5",
+      "attempt_id": 564
+    },
+    {
+      "case_id": "qccd1eb22a1",
+      "method": "generic_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 565
+    },
+    {
+      "case_id": "q2947d75880",
+      "method": "facet_hybrid",
+      "world": "w0b261e4e",
+      "attempt_id": 566
+    },
+    {
+      "case_id": "q6d801872ac",
+      "method": "prompt_hybrid",
+      "world": "wb34037eb",
+      "attempt_id": 567
+    },
+    {
+      "case_id": "qeccf8d22c2",
+      "method": "facet_hybrid",
+      "world": "w928ad8c3",
+      "attempt_id": 568
+    },
+    {
+      "case_id": "q5dd8f58e1e",
+      "method": "generic_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 569
+    },
+    {
+      "case_id": "q5ccb975649",
+      "method": "prompt_hybrid",
+      "world": "w5e59e4e5",
+      "attempt_id": 570
+    },
+    {
+      "case_id": "qb3238c62ad",
+      "method": "prompt_hybrid",
+      "world": "wbf8849ab",
+      "attempt_id": 571
+    },
+    {
+      "case_id": "qc84949b451",
+      "method": "prompt_hybrid",
+      "world": "wf579faf9",
+      "attempt_id": 572
+    },
+    {
+      "case_id": "q513d157394",
+      "method": "facet_hybrid",
+      "world": "wd6c72d6a",
+      "attempt_id": 573
+    },
+    {
+      "case_id": "qbf4671e4f9",
+      "method": "prompt_hybrid",
+      "world": "w3d45ea82",
+      "attempt_id": 574
+    },
+    {
+      "case_id": "q708b99596b",
+      "method": "prompt_hybrid",
+      "world": "w5f803d84",
+      "attempt_id": 575
+    }
+  ],
+  "freeze": {
+    "schema": "frozen-gtm-study-v1",
+    "frozen_at": "2026-10-22T03:55:06.863611+00:00",
+    "source_sha256": {
+      "analysis/analyze_study.py": "3dce30df983ae0face1d8916a279a61f6a2218d105c5142c7830956f66f63ad2",
+      "prototype/core.py": "8b4221b3ddf514c6608f50b8029de6c72559bb7b44942e1e2309f3583d0464bf",
+      "prototype/run.py": "2795de8c305283e6e39d97f44a2295f2d59d634d14ca8498f511b9362fe102fa",
+      "study/__init__.py": "ebf596b56899d66d83c6a09b7523f4f09c87192d14f5ff506db499c3397f27a1",
+      "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+      "study/dryrun.py": "b27f0a05519d473df2693e5c6ae53fd94a9e290054e3d7a0b8b2c9d333662d67",
+      "study/fixtures.py": "54e677a01a8ae2626e7c4b387ac4a90c0ee7445c35c4059884ded13e34c29a2e",
+      "study/ledger.py": "3f345850512a71be074e24f42af530eda2f50b8643350e6b292e3c86f6a0965a",
+      "study/reference.py": "666f1f00a8282afb63e3b53c92fb3008d519ecb09d124d7b6a76233df6f1c505",
+      "study/retrieval.py": "8ed97d652d58b18e1f92df85d60a981a87a557373c20f662be2cc626d633be24",
+      "study/run.py": "059d138d6c89d663df9a192c61d9df895d32b2477a13dd918949b57ab539f528",
+      "study/test_contract.py": "4dca3bfa026d6255c3929c58bd21926a0134042b8ac88a6992aaa1d4340ad0a4",
+      "study/test_ledger.py": "3e9014b2da9a6fc7739481b8bd171eca02b5e71a9d21eac87578d54e1e2a84af"
+    },
+    "dataset_files": {
+      "inputs.json": "d5e748b725746b578a19f7819961ac339abe0cb174bf7d3282bd28fc8eb8238a",
+      "labels.json": "5ccad97cdb71c6fbc84e543ef1cbd145bd2605f793454fdc17518d126df099b4"
+    },
+    "model_config": {
+      "base_url": "http://127.0.0.1:8080/v1",
+      "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+      "max_output_tokens": 280,
+      "temperature": 0,
+      "seed": 20261022,
+      "timeout_seconds": 900
+    },
+    "runtime_manifest": {
+      "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+      "model_sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+      "repository": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+      "revision": "eea7b2be5805a5f151f8847ede8e5f9a9284bf77",
+      "base_repository": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "base_revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+      "license": "Apache-2.0",
+      "llama_cpp": "a37cc46104eb50900d5ab4a9ba02a0abdac039db",
+      "threads": 4,
+      "context": 16384,
+      "parallel": 1,
+      "prompt_cache": false,
+      "cpu_model": "AMD EPYC 9V74",
+      "generation_instruction_set": "AVX2+AVX512+VBMI+VNNI+BF16",
+      "embedding_instruction_set": "AVX2",
+      "binary_sha256": {
+        "libggml-base.so": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+        "libggml-base.so.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+        "libggml-base.so.0.27.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+        "libggml-cpu.so": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+        "libggml-cpu.so.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+        "libggml-cpu.so.0.27.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+        "libggml.so": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+        "libggml.so.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+        "libggml.so.0.27.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+        "libllama-common.so": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+        "libllama-common.so.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+        "libllama-common.so.0.7.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+        "libllama-server-impl.so": "8b9ed36b93310227cfe25236cc9ff9a65cdc9d9b8107a47d0003f5b35d13c497",
+        "libllama.so": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+        "libllama.so.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+        "libllama.so.0.7.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+        "libmtmd.so": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+        "libmtmd.so.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+        "libmtmd.so.0.7.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+        "llama-server": "3f25e4a07086e0f5bed97950aef360c23b9b28572f062737482798147f07b5a3"
+      },
+      "build_recipe": "worklog/avx512-build.md",
+      "non_thinking_checkpoint": true
+    },
+    "methods": [
+      "generic_hybrid",
+      "prompt_hybrid",
+      "facet_hybrid",
+      "typed",
+      "full_context",
+      "typed_history"
+    ],
+    "token_cap": 1024,
+    "order_seed": 20261022,
+    "reuse_identical": true,
+    "protocol": "papers/company-memory/protocol/main-v1.md",
+    "protocol_sha256": "13b6df58e364054c2826b7dab54fb634713172f42a3223ba444b46f72e0cb9fa",
+    "scope": "Primary six-method 1024-token block",
+    "planned_logical_attempts": 576,
+    "analysis": "analysis/analyze_study.py",
+    "input_labels_not_model_context": true
+  },
+  "scope": "Controlled fictional verified events; same model and planner; no human utility ratings or observed commercial outcomes.",
+  "runtime": {
+    "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+    "model_sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+    "repository": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "revision": "eea7b2be5805a5f151f8847ede8e5f9a9284bf77",
+    "base_repository": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+    "license": "Apache-2.0",
+    "llama_cpp": "a37cc46104eb50900d5ab4a9ba02a0abdac039db",
+    "threads": 4,
+    "context": 16384,
+    "parallel": 1,
+    "prompt_cache": false,
+    "cpu_model": "AMD EPYC 9V74",
+    "generation_instruction_set": "AVX2+AVX512+VBMI+VNNI+BF16",
+    "embedding_instruction_set": "AVX2",
+    "binary_sha256": {
+      "libggml-base.so": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-base.so.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-base.so.0.27.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-cpu.so": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml-cpu.so.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml-cpu.so.0.27.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml.so": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libggml.so.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libggml.so.0.27.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libllama-common.so": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-common.so.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-common.so.0.7.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-server-impl.so": "8b9ed36b93310227cfe25236cc9ff9a65cdc9d9b8107a47d0003f5b35d13c497",
+      "libllama.so": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libllama.so.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libllama.so.0.7.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libmtmd.so": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "libmtmd.so.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "libmtmd.so.0.7.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "llama-server": "3f25e4a07086e0f5bed97950aef360c23b9b28572f062737482798147f07b5a3"
+    },
+    "build_recipe": "worklog/avx512-build.md",
+    "non_thinking_checkpoint": true
+  },
+  "reuse_identical": true,
+  "embedding_cache_path": "experiments/main/primary/embeddings.jsonl",
+  "model_sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+  "embedding_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+  "cost_methodology": "Local CPU seconds and measured tokens; API spend zero, infrastructure price/energy unavailable. Identical requests, when enabled, reuse actual returned outputs including errors; logical token/time charges use the origin call, physical calls/time are separate. Embedding cache origins preserved.",
+  "finished_at": "2026-10-22T09:49:24.070363+00:00",
+  "attempt_count": 576
+}

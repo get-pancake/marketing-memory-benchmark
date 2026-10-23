@@ -1,0 +1,328 @@
+{
+  "case_id": "w20261023042-027-stress",
+  "world": "w20261023042-027",
+  "eligible": [
+    {
+      "account": "Pine-27",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 10,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "e763ba6b113b958"
+        ],
+        [
+          "ed194684cf63c62"
+        ],
+        [
+          "e3d97511646b03c"
+        ],
+        [
+          "e41e881713efdc9"
+        ],
+        [
+          "e6ebfc038f654a3"
+        ],
+        [
+          "e7b9b521f2484bc"
+        ],
+        [
+          "e409385e670dfeb"
+        ],
+        [
+          "e0fe9eb56de805e"
+        ],
+        [
+          "e40699ccdf00f46"
+        ]
+      ]
+    },
+    {
+      "account": "Pine-27",
+      "action": "workshop",
+      "cost": 3,
+      "value": 20,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "e763ba6b113b958"
+        ],
+        [
+          "ed194684cf63c62"
+        ],
+        [
+          "e3d97511646b03c"
+        ],
+        [
+          "e41e881713efdc9"
+        ],
+        [
+          "e6ebfc038f654a3"
+        ],
+        [
+          "e7b9b521f2484bc"
+        ],
+        [
+          "e409385e670dfeb"
+        ],
+        [
+          "e0fe9eb56de805e"
+        ],
+        [
+          "e8edc45fffcd604"
+        ],
+        [
+          "e40699ccdf00f46"
+        ]
+      ]
+    },
+    {
+      "account": "Pine-27",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 20,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "e763ba6b113b958"
+        ],
+        [
+          "ed194684cf63c62"
+        ],
+        [
+          "e3d97511646b03c"
+        ],
+        [
+          "e41e881713efdc9"
+        ],
+        [
+          "e6ebfc038f654a3"
+        ],
+        [
+          "e7b9b521f2484bc"
+        ],
+        [
+          "e409385e670dfeb"
+        ],
+        [
+          "e0fe9eb56de805e"
+        ],
+        [
+          "e495926c31fdb70"
+        ],
+        [
+          "e40699ccdf00f46"
+        ]
+      ]
+    },
+    {
+      "account": "Pine-27",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 5,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "e763ba6b113b958"
+        ],
+        [
+          "ed194684cf63c62"
+        ],
+        [
+          "e3d97511646b03c"
+        ],
+        [
+          "e41e881713efdc9"
+        ],
+        [
+          "e6ebfc038f654a3"
+        ],
+        [
+          "e7b9b521f2484bc"
+        ],
+        [
+          "e409385e670dfeb"
+        ],
+        [
+          "e0fe9eb56de805e"
+        ],
+        [
+          "e40699ccdf00f46"
+        ]
+      ]
+    },
+    {
+      "account": "Juniper-27",
+      "action": "workshop",
+      "cost": 3,
+      "value": 36,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "ea81717a9b4bd1e"
+        ],
+        [
+          "eeff0cde0cca089"
+        ],
+        [
+          "e96e572d3405d4a"
+        ],
+        [
+          "e3b2b91a3ca75c5"
+        ],
+        [
+          "ed7f41e29813d54"
+        ],
+        [
+          "eba461a897ccb2e"
+        ],
+        [
+          "e69a4e9be2fe839"
+        ],
+        [
+          "ee11b8a0fb4ee1f"
+        ],
+        [
+          "ecfa9de36c67853"
+        ],
+        [
+          "e8f263b6d2d56e9"
+        ]
+      ]
+    },
+    {
+      "account": "Juniper-27",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 9,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "ea81717a9b4bd1e"
+        ],
+        [
+          "eeff0cde0cca089"
+        ],
+        [
+          "e96e572d3405d4a"
+        ],
+        [
+          "e3b2b91a3ca75c5"
+        ],
+        [
+          "ed7f41e29813d54"
+        ],
+        [
+          "eba461a897ccb2e"
+        ],
+        [
+          "e69a4e9be2fe839"
+        ],
+        [
+          "ee11b8a0fb4ee1f"
+        ],
+        [
+          "e8f263b6d2d56e9"
+        ]
+      ]
+    }
+  ],
+  "optimum": 56,
+  "reference_plan": [
+    {
+      "account": "Juniper-27",
+      "action": "workshop",
+      "cost": 3,
+      "value": 36,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "ea81717a9b4bd1e"
+        ],
+        [
+          "eeff0cde0cca089"
+        ],
+        [
+          "e96e572d3405d4a"
+        ],
+        [
+          "e3b2b91a3ca75c5"
+        ],
+        [
+          "ed7f41e29813d54"
+        ],
+        [
+          "eba461a897ccb2e"
+        ],
+        [
+          "e69a4e9be2fe839"
+        ],
+        [
+          "ee11b8a0fb4ee1f"
+        ],
+        [
+          "ecfa9de36c67853"
+        ],
+        [
+          "e8f263b6d2d56e9"
+        ]
+      ]
+    },
+    {
+      "account": "Pine-27",
+      "action": "workshop",
+      "cost": 3,
+      "value": 20,
+      "support_groups": [
+        [
+          "ee702ac9c57af89"
+        ],
+        [
+          "e763ba6b113b958"
+        ],
+        [
+          "ed194684cf63c62"
+        ],
+        [
+          "e3d97511646b03c"
+        ],
+        [
+          "e41e881713efdc9"
+        ],
+        [
+          "e6ebfc038f654a3"
+        ],
+        [
+          "e7b9b521f2484bc"
+        ],
+        [
+          "e409385e670dfeb"
+        ],
+        [
+          "e0fe9eb56de805e"
+        ],
+        [
+          "e8edc45fffcd604"
+        ],
+        [
+          "e40699ccdf00f46"
+        ]
+      ]
+    }
+  ]
+}

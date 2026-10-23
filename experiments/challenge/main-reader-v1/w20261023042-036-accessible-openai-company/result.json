@@ -1,0 +1,103 @@
+{
+  "id": "w20261023042-036-accessible-openai-company",
+  "case_id": "w20261023042-036-accessible",
+  "world": "w20261023042-036",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T06:02:14.779693+00:00",
+  "evidence_bytes": 16308,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999484",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_069db8f675787941016adaf867a49887d1a5f3bc9c24c608db",
+  "usage": {
+    "input_tokens": 5677,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 5674
+    },
+    "output_tokens": 658,
+    "output_tokens_details": {
+      "reasoning_tokens": 158
+    },
+    "total_tokens": 6335
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0071534",
+    "total_input_tokens": 5677,
+    "output_tokens": 658,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 5674,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Flint-36",
+        "action": "diagnostic",
+        "sources": [
+          "ed19f5e3ac8fb9b",
+          "e0d07ba70555fba",
+          "e523b4630150feb",
+          "e6cdf70eae969fd",
+          "e207f6c8e61c193",
+          "e54e4672f5eab90",
+          "e248b4484dcb641",
+          "e42efaccbbcbe38",
+          "efde97baabe1513",
+          "eb6a09d8a88e122"
+        ]
+      },
+      {
+        "account": "Delta-36",
+        "action": "reference_intro",
+        "sources": [
+          "ed19f5e3ac8fb9b",
+          "ec1a62e1ed2aab5",
+          "e03caefa94a6718",
+          "e00e18a54b69625",
+          "eef8dfb6c0d8f07",
+          "ecdc73233401d3f",
+          "e536d6596aba006",
+          "ea4ca3457b1f141",
+          "eadc12fbd2d4bd8",
+          "e9991a0b48c22f3",
+          "ee9394c0d63580f"
+        ]
+      }
+    ],
+    "missing": [
+      "Larch-36: supply observed initiative-2 → need → offering → proof links and approved proof.verified=true.",
+      "Juniper-36: proof-3 has approved verified=false, blocking every action. Eligibility requires an unambiguous current approved verified=true; a later conflicting record alone would not resolve this."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 6 of 6 across two distinct accounts and scores 43 synthetic priority points: Flint-36 diagnostic earns 9×2=18 and Delta-36 reference_intro earns 5×5=25. Each selected action satisfies policy, consent, signal, chain and proof requirements; Delta's proof is also approved shareable. Larch-36 lacks its required chain, and Juniper-36 lacks approved verified proof."
+  },
+  "score": {
+    "optimum": 60,
+    "recoverable_value": 43,
+    "returned_value": 43,
+    "normalized_value": 0.7166666666666667,
+    "context_normalized_value": 0.7166666666666667,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:02:31.480966+00:00",
+  "seconds": 16.70128257200122
+}

@@ -1,0 +1,116 @@
+{
+  "id": "q4a15116ca4-openai-generic",
+  "case_id": "q4a15116ca4",
+  "world": "wc1aa55ff",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.47368421052631576,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2028,
+  "status": "completed",
+  "started_at": "2026-10-23T00:35:10.012276+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999930",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_02ad4ae8a7d63bf1016adaabbe6fc487d1b142bdd83d01f518",
+  "usage": {
+    "input_tokens": 2024,
+    "input_tokens_details": {
+      "cache_write_tokens": 943,
+      "cached_tokens": 1078
+    },
+    "output_tokens": 212,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2236
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0045913",
+    "total_input_tokens": 2024,
+    "output_tokens": 212,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1078,
+    "cache_write_tokens": 943
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (required only for P3)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S14",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S13",
+      "account.observed_signal:observed": "S10",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S9",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S15",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (required only for P3)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (required only for P3)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action is supported because seller.proof_for_pain:observed=audit_effort is missing; S15 and S19 establish offering_pain only, not proof_for_pain. P3 additionally lacks observed procurement approval, while P1 does not match the compliance objective.",
+  "finished_at": "2026-10-23T00:35:14.561306+00:00",
+  "seconds": 4.549039324003388
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:07.112979+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c7b85d18827b9a6016adaadd7808c87d18ad50256ac4a721d",
+  "usage": {
+    "input_tokens": 5720,
+    "input_tokens_details": {
+      "cache_write_tokens": 5717,
+      "cached_tokens": 0
+    },
+    "output_tokens": 49,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 5769
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0147885",
+    "total_input_tokens": 5720,
+    "output_tokens": 49,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5717
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"Section 16.1 requires written election against continuation at least 120 calendar days before the close of the then-current period.\"}",
+  "finished_at": "2026-10-23T00:44:09.144084+00:00",
+  "seconds": 2.031114924000576
+}

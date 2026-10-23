@@ -1,0 +1,86 @@
+{
+  "id": "w20261023042-049-stress-openai-company",
+  "case_id": "w20261023042-049-stress",
+  "world": "w20261023042-049",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:54:13.385474+00:00",
+  "evidence_bytes": 8090,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999716",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06aba041781173f2016adaf68608b887d18f359b1cec823498",
+  "usage": {
+    "input_tokens": 3200,
+    "input_tokens_details": {
+      "cache_write_tokens": 3197,
+      "cached_tokens": 0
+    },
+    "output_tokens": 427,
+    "output_tokens_details": {
+      "reasoning_tokens": 76
+    },
+    "total_tokens": 3627
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0122685",
+    "total_input_tokens": 3200,
+    "output_tokens": 427,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3197
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Pine-49",
+        "action": "workshop",
+        "sources": [
+          "e783d9e7970b043",
+          "e05f3383003240b",
+          "efa42fe66207694",
+          "e7c43ac1582dbde",
+          "e6362d0ebc4bdb7",
+          "eb33f329f32289f",
+          "ea2b0bf600696d9",
+          "e48c241c1773cab",
+          "e62877e82ff8e17",
+          "e2549a28f5191cd",
+          "eff4161bbc1b9a9"
+        ]
+      }
+    ],
+    "missing": [
+      "For Harbor-49, Kestrel-49, Aster-49, Larch-49, Cedar-49, Juniper-49 and Flint-49: supply approved integer priorities; observed profiles, true consent, signals and complete initiative-to-need-to-offering-to-proof links; and approved true proof verification. Supply approved true capacity, assurance or proof shareability where required by the action."
+    ],
+    "reasoning_summary": "Pine-49's workshop is eligible and maximizes the supported total: approved priority 8 × multiplier 4 = 32 synthetic priority points, costing 3 of the shared budget of 8. Its launch signal and approved offering capacity support the workshop. Research brief is eligible but scores only 8; other actions do not match its signal. No other queried account has sufficient evidence."
+  },
+  "score": {
+    "optimum": 56,
+    "recoverable_value": 32,
+    "returned_value": 32,
+    "normalized_value": 0.5714285714285714,
+    "context_normalized_value": 0.5714285714285714,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:54:23.269145+00:00",
+  "seconds": 9.883681300998433
+}

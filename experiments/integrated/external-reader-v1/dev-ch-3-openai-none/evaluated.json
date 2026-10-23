@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:09.086418+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f101d11f45a2a32016adaace99f9c87d18dedde5981edae2c",
+  "usage": {
+    "input_tokens": 258,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 43,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 301
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.000946",
+    "total_input_tokens": 258,
+    "output_tokens": 43,
+    "regular_input_tokens": 258,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Tansley Parcel\u2019s contracted seat count in March 2026.\"}",
+  "finished_at": "2026-10-23T00:40:11.545628+00:00",
+  "seconds": 2.459220926000853,
+  "id": "dev-ch-3-openai-none",
+  "case_id": "dev-ch-3",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki record Tansley Parcel\u2019s contracted seat count in March 2026.",
+  "citations": []
+}

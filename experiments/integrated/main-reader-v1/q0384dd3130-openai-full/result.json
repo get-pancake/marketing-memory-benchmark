@@ -1,0 +1,119 @@
+{
+  "id": "q0384dd3130-openai-full",
+  "case_id": "q0384dd3130",
+  "world": "w91790027",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.3023255813953488,
+    "selected_sources": 43,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 4864,
+  "status": "completed",
+  "started_at": "2026-10-23T00:53:43.131506+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999886",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e8006795235ffde016adab017597487d188a7b048bc3ff6df",
+  "usage": {
+    "input_tokens": 3374,
+    "input_tokens_details": {
+      "cache_write_tokens": 3371,
+      "cached_tokens": 0
+    },
+    "output_tokens": 257,
+    "output_tokens_details": {
+      "reasoning_tokens": 31
+    },
+    "total_tokens": 3631
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0110035",
+    "total_input_tokens": 3374,
+    "output_tokens": 257,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3371
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role.",
+      "Provide current account.partner_status:observed=verified evidence that supersedes the withdrawn status.",
+      "For P3, provide account.procurement_stage:observed=approved evidence."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S2",
+      "account.account_role:observed": "S19",
+      "account.channel_fit:observed": "S23",
+      "account.partner_status:observed": "S37",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S38",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S4"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role.",
+      "Provide current account.partner_status:observed=verified evidence that supersedes the withdrawn status.",
+      "For P3, provide account.procurement_stage:observed=approved evidence."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role.",
+      "Provide current account.partner_status:observed=verified evidence that supersedes the withdrawn status.",
+      "For P3, provide account.procurement_stage:observed=approved evidence."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No partner action qualifies: approved-role evidence conflicts (S5, S22), and the account's partner status is withdrawn rather than verified (S37). P3 also lacks observed procurement approval; P4 does not match the requested partner objective.",
+  "finished_at": "2026-10-23T00:53:49.806188+00:00",
+  "seconds": 6.6746929820074
+}

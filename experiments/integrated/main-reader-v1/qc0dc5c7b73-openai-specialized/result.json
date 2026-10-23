@@ -1,0 +1,113 @@
+{
+  "id": "qc0dc5c7b73-openai-specialized",
+  "case_id": "qc0dc5c7b73",
+  "world": "w5ca3af01",
+  "arm": "specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2048,
+  "status": "completed",
+  "started_at": "2026-10-23T01:01:13.405621+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999929",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c7764f38bcd23a2016adab1d99f7c87d18c05410aef943751",
+  "usage": {
+    "input_tokens": 2021,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2018
+    },
+    "output_tokens": 214,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2235
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0023478",
+    "total_input_tokens": 2021,
+    "output_tokens": 214,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 2018,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S5",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S18",
+      "account.observed_signal:observed": "S19",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S15",
+      "seller.approved_role:approved": "S14",
+      "seller.offering_pain:observed": "S9",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P2 meets the compliance objective and two-unit allowance, with matching approved role and geography (S14, S15; S1, S5) and the required certification, signal and offering pain (S18, S19, S9), but lacks observed proof for audit_effort. P4 and P3 exceed the unit allowance, and P1 has a different objective.",
+  "finished_at": "2026-10-23T01:01:18.444172+00:00",
+  "seconds": 5.038552626996534
+}

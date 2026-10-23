@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:19.072810+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0604cbadda9960f8016adaade395a087d1b332c537a73188c9",
+  "usage": {
+    "input_tokens": 6098,
+    "input_tokens_details": {
+      "cache_write_tokens": 6095,
+      "cached_tokens": 0
+    },
+    "output_tokens": 95,
+    "output_tokens_details": {
+      "reasoning_tokens": 24
+    },
+    "total_tokens": 6193
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0161935",
+    "total_input_tokens": 6098,
+    "output_tokens": 95,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6095
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D034\",\"D035\"],\"explanation\":\"The October 28 customer redline is explicitly unsigned and for review only. The later executed renewal, signed November 21, records different terms, including 64 seats rather than the redline\u2019s 75.\"}",
+  "finished_at": "2026-10-23T00:44:22.417710+00:00",
+  "seconds": 3.3449094539973885
+}

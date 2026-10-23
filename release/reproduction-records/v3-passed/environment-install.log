@@ -1,0 +1,34 @@
+Collecting contourpy==1.4.0 (from -r release/requirements-analysis.lock (line 3))
+  Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Collecting cycler==0.12.1 (from -r release/requirements-analysis.lock (line 75))
+  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools==4.67.0 (from -r release/requirements-analysis.lock (line 79))
+  Downloading fonttools-4.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 51.3 MB/s eta 0:00:00
+Collecting kiwisolver==1.5.1 (from -r release/requirements-analysis.lock (line 139))
+  Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 39.4 MB/s eta 0:00:00
+Collecting matplotlib==3.10.8 (from -r release/requirements-analysis.lock (line 282))
+  Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 22.2 MB/s eta 0:00:00
+Collecting numpy==2.3.5 (from -r release/requirements-analysis.lock (line 339))
+  Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 29.7 MB/s eta 0:00:00
+Collecting packaging==26.3 (from -r release/requirements-analysis.lock (line 418))
+  Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Collecting pillow==13.0.0 (from -r release/requirements-analysis.lock (line 422))
+  Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 20.4 MB/s eta 0:00:00
+Collecting pyparsing==3.3.3 (from -r release/requirements-analysis.lock (line 507))
+  Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Collecting python-dateutil==3.0.0 (from -r release/requirements-analysis.lock (line 511))
+  Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Collecting six==1.17.0 (from -r release/requirements-analysis.lock (line 515))
+  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting tzdata==2026.5 (from -r release/requirements-analysis.lock (line 519))
+  Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, python-dateutil, contourpy, matplotlib
+Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.67.0 kiwisolver-1.5.1 matplotlib-3.10.8 numpy-2.3.5 packaging-26.3 pillow-13.0.0 pyparsing-3.3.3 python-dateutil-3.0.0 six-1.17.0 tzdata-2026.5
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip

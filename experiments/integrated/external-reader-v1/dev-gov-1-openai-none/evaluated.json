@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:05.228525+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0add931d1fc9a8be016adaaca9c27c87d1987976e54c481551",
+  "usage": {
+    "input_tokens": 262,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 321
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001114",
+    "total_input_tokens": 262,
+    "output_tokens": 59,
+    "regular_input_tokens": 262,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Quarrendon Freight Lines\u2019 contracted seat count on October 14, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:08.046300+00:00",
+  "seconds": 2.8176440759998513,
+  "id": "dev-gov-1-openai-none",
+  "case_id": "dev-gov-1",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki record Quarrendon Freight Lines\u2019 contracted seat count on October 14, 2026.",
+  "citations": []
+}

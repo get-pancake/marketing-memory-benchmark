@@ -1,0 +1,125 @@
+{
+  "id": "qf818d4ba31-openai-gbrain",
+  "case_id": "qf818d4ba31",
+  "world": "we9acaa46",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.42857142857142855,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.23529411764705882,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2044,
+  "status": "completed",
+  "started_at": "2026-10-23T00:52:52.609115+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999896",
+    "x-ratelimit-reset-requests": "8ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0d9d931f8d353ff3016adaafe4c85487d19e62137a69c9b612",
+  "usage": {
+    "input_tokens": 1958,
+    "input_tokens_details": {
+      "cache_write_tokens": 930,
+      "cached_tokens": 1025
+    },
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2205
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0049035",
+    "total_input_tokens": 1958,
+    "output_tokens": 247,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1025,
+    "cache_write_tokens": 930
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved=commercial_director",
+      "seller.approved_geo:approved=CA",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S7",
+      "account.account_role:observed": "S2",
+      "account.customer_state:observed": "S9",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=commercial_director",
+      "seller.approved_geo:approved=CA",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=commercial_director",
+      "seller.approved_geo:approved=CA",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the renewal objective and two-unit allowance, but lacks approved role and geography, observed declining usage, and adoption-specific offering and proof evidence; S2, S7, and S9 establish only the account role, geography, and active state. P1 and P4 exceed the resource allowance, while P2 has a different objective.",
+  "finished_at": "2026-10-23T00:52:58.768870+00:00",
+  "seconds": 6.159762975003105
+}

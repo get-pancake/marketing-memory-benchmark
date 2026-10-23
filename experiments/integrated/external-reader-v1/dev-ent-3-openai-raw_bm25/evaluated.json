@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:40.297380+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0df922b5db11d3fa016adaac9084f487d1b8870524d3c29d5e",
+  "usage": {
+    "input_tokens": 6368,
+    "input_tokens_details": {
+      "cache_write_tokens": 6365,
+      "cached_tokens": 0
+    },
+    "output_tokens": 60,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6428
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0165185",
+    "total_input_tokens": 6368,
+    "output_tokens": 60,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6365
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"Tobias clarified that the escalation was not about Tansley Parcel and explicitly confirmed Tansleigh Packaging for ticket #88412 after Hollis corrected the name.\"}",
+  "finished_at": "2026-10-23T00:38:42.532847+00:00",
+  "seconds": 2.2354776739957742,
+  "id": "dev-ent-3-openai-raw_bm25",
+  "case_id": "dev-ent-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24409,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tansleigh Packaging",
+  "explanation": "Tobias clarified that the escalation was not about Tansley Parcel and explicitly confirmed Tansleigh Packaging for ticket #88412 after Hollis corrected the name.",
+  "citations": [
+    "D015"
+  ]
+}

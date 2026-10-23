@@ -1,0 +1,177 @@
+{
+  "id": "q4a9938e06e-openai-generic",
+  "case_id": "q4a9938e06e",
+  "world": "w716bfd4c",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P3"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.3157894736842105,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 1982,
+  "status": "completed",
+  "started_at": "2026-10-23T00:49:05.329321+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999970",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0daa27b86ad38862016adaaf01c14c87d19a5aa247af6f411d",
+  "usage": {
+    "input_tokens": 2011,
+    "input_tokens_details": {
+      "cache_write_tokens": 930,
+      "cached_tokens": 1078
+    },
+    "output_tokens": 173,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2184
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0041688",
+    "total_input_tokens": 2011,
+    "output_tokens": 173,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1078,
+    "cache_write_tokens": 930
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S12",
+      "account.certification:observed": "S18",
+      "account.observed_signal:observed": "S11",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S8",
+      "seller.approved_role:approved": "S6",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P3"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "e3cd762f",
+          "e65cfc90",
+          "e755f988",
+          "e66334b6"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Ilex-895",
+      "objective": "qualification_audit",
+      "template": "P3",
+      "policy_versions": [
+        "e3cd762f",
+        "e65cfc90"
+      ],
+      "evidence": [
+        "e3cd762f",
+        "e65cfc90",
+        "e66334b6",
+        "e755f988"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P3",
+        "evidence": [
+          "e3cd762f",
+          "e65cfc90",
+          "e755f988",
+          "e66334b6"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Ilex-895",
+      "objective": "qualification_audit",
+      "template": "P3",
+      "policy_versions": [
+        "e3cd762f",
+        "e65cfc90"
+      ],
+      "evidence": [
+        "e3cd762f",
+        "e65cfc90",
+        "e66334b6",
+        "e755f988"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P3 satisfies the qualification_audit objective and two-unit allowance: the approved role matches the observed account role (S6, S12), and the approved geography matches the observed account geography (S8, S9). P3 has no additional prerequisites.",
+  "finished_at": "2026-10-23T00:49:09.715268+00:00",
+  "seconds": 4.3859516919910675
+}

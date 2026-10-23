@@ -1,0 +1,79 @@
+{
+  "kind": "deterministic_development_diagnostic",
+  "run_complete": true,
+  "planned_attempts": 48,
+  "terminal_attempts": 48,
+  "independent_human_validated_worlds": 0,
+  "methods": {
+    "generic_bm25": {
+      "planned": 12,
+      "terminal_attempts": 12,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 12,
+      "grounded_applicable": 6,
+      "coverage": 6,
+      "inappropriate_abstention": 0
+    },
+    "prompt_specialized": {
+      "planned": 12,
+      "terminal_attempts": 12,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 12,
+      "grounded_applicable": 6,
+      "coverage": 6,
+      "inappropriate_abstention": 0
+    },
+    "typed_coverage": {
+      "planned": 12,
+      "terminal_attempts": 12,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 12,
+      "grounded_applicable": 6,
+      "coverage": 6,
+      "inappropriate_abstention": 0
+    },
+    "full_context": {
+      "planned": 12,
+      "terminal_attempts": 12,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 12,
+      "grounded_applicable": 6,
+      "coverage": 6,
+      "inappropriate_abstention": 0
+    }
+  },
+  "descriptive_paired_differences": {
+    "prompt_specialized_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0,
+        "c77f1927-739b-50a3-b546-53eece2e5543": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    },
+    "typed_coverage_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0,
+        "c77f1927-739b-50a3-b546-53eece2e5543": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    },
+    "full_context_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0,
+        "c77f1927-739b-50a3-b546-53eece2e5543": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    }
+  },
+  "interpretation": "Software contract diagnostics"
+}

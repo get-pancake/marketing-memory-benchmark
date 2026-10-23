@@ -1,0 +1,162 @@
+{
+  "id": "resp_068f364ee507a7b5016adaf9dd65b887d1ad972faba792c7d7",
+  "object": "response",
+  "created_at": 1792735709,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735715,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_068f364ee507a7b5016adaf9de994c87d19c2c0824a41d4694",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Pine-36: its observed UK region is not allowed by the approved seller policy. Eligibility requires an approved policy permitting that region or a supported eligible profile.\",\n    \"Pine-36: observed proof-4 verification and approved verified=true are missing.\",\n    \"Pine-36 reference_intro: approved shareable=true on proof-4 is missing.\",\n    \"Flint-36, Delta-36, Larch-36, Juniper-36, Elm-36, Grove-36 and Birch-36: observed profiles, consent=true, signals and complete initiative-to-verified-proof chains, plus approved integer priorities, are missing. Workshop additionally requires approved offering capacity=true; assurance_pack requires approved offering assurance=true; reference_intro requires approved proof shareable=true.\"\n  ],\n  \"reasoning_summary\": \"No action is supported. Pine-36 is excluded by the approved policy's allowed regions and lacks required proof verification; its renewal signal matches only renewal_review, reference_intro and research_brief. The proposed policy cannot establish eligibility. The other queried accounts lack required evidence, so no supported plan can use the budget of 8.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Flint-36",
+                    "Delta-36",
+                    "Larch-36",
+                    "Juniper-36",
+                    "Pine-36",
+                    "Elm-36",
+                    "Grove-36",
+                    "Birch-36"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3211,
+    "input_tokens_details": {
+      "cache_write_tokens": 3208,
+      "cached_tokens": 0
+    },
+    "output_tokens": 249,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3460
+  },
+  "user": null,
+  "metadata": {}
+}

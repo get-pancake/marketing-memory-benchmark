@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-002-constrained-anthropic-markdown",
+  "case_id": "w20261023042-002-constrained",
+  "world": "w20261023042-002",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:44.155065+00:00",
+  "evidence_bytes": 12187,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:50:46Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:50:56Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:50:45Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:50:46Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeRbZGUFqCrpC2M2FXB",
+  "usage": {
+    "input_tokens": 6969,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1322,
+    "output_tokens_details": {
+      "thinking_tokens": 640
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.054316",
+    "total_input_tokens": 6969,
+    "output_tokens": 1322,
+    "regular_input_tokens": 6969,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Mesa-2",
+        "action": "assurance_pack",
+        "sources": [
+          "e381e66484a98e2",
+          "e1c440372634852",
+          "ec00027ac6f5dd7",
+          "e12a68891ce804d",
+          "ec0b0d5f2dcc812",
+          "ecf66d25ac6162a",
+          "ef27a0bc2418070",
+          "ecf247a4a9407c8",
+          "ed073080fbf84bb",
+          "e4af7ca9c6de44d",
+          "e37fc2682ae2173"
+        ]
+      },
+      {
+        "account": "Birch-2",
+        "action": "assurance_pack",
+        "sources": [
+          "e381e66484a98e2",
+          "e23f072766e17a1",
+          "e7f002ac7d6f5e7",
+          "ebc72794317e348",
+          "ee9ce9fb58ddc8c",
+          "e27a4e7439276c7",
+          "e054cc5403e2086",
+          "ed0c6abbdd9e0b1",
+          "e881f19be6b79a5",
+          "e73aefdbf8d13dd",
+          "e69c0491406712d"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-2: observed profile (region/sector) and the initiative-2 -> need -> offering -> proof -> verified chain",
+      "North-2: priority, profile, consent, signal and initiative chain",
+      "Elm-2: priority, profile, consent, signal and initiative chain",
+      "Orchid-2: priority, profile, consent, signal and initiative chain"
+    ],
+    "reasoning_summary": "The approved seller policy allows UK and all actions; the proposed policy is ignored. Mesa-2 (priority 4, UK manufacturing, consent true, risk signal, verified proof-3, approved assurance) and Birch-2 (priority 3, UK services, consent true, risk signal, verified proof-0, approved assurance) are each eligible for assurance_pack. Workshop is blocked for both because capacity is false. Two assurance_packs cost 6 of the budget of 7 and score 16+12=28, which beats any mix that includes a diagnostic. Flint-2 lacks a profile and a complete chain. North-2, Elm-2 and Orchid-2 have no evidence. No third account is eligible."
+  },
+  "score": {
+    "optimum": 47,
+    "recoverable_value": 28,
+    "returned_value": 28,
+    "normalized_value": 0.5957446808510638,
+    "context_normalized_value": 0.5957446808510638,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:50:57.003495+00:00",
+  "seconds": 12.848440999005106
+}

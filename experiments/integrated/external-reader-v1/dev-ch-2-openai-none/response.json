@@ -1,0 +1,128 @@
+{
+  "id": "resp_038e5634e34ecf81016adaacb0c29887d19186a3d845a35ee7",
+  "object": "response",
+  "created_at": 1792715952,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715955,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_038e5634e34ecf81016adaacb1bb9487d18363b0ba51b8c6a9",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qyzcAMD7iTKIyQrUhzQUZoyw6-MEi7i5SUeCzBKwyO17ImWJ7hLeHb9lIs5ZXsdeIZN-q3Bcyw9Ytn5161hileMQAGCG-P-ZFu9JnMricIDdgsx8a25Avcaso17VLomBQk8SaZaAiyrk47QC2LV3tAgD2ZBnJfWWPENhfSnvrFktprGul4lslseKiBitdinZ7LMxelblzsn5m82sXQ8zxrx22EKbazWOz1Z45v0fyPSgmObHN6VgdoVmYB4oxisWcY6Kc9MtEmQSyl7RXa_mnlYg3ADEW4h_my4BJKoeJnLdAX8PBwTYjqwFk4qRo6rn895lzbyhVbEIGEqxkCs-dxtyx3BkPyJUlrJFH_A8C-WueCnlPksyoUVPHIhkkXqXBUGEbqRRLelijfWkBRPj_2J6h5qRQmQFn8QFm4YzAWrFUhOsowLQaYwi2mYXSTMZ2WgG_vizcH8NdjdhX0ktmDbABqORDcrpMRwfdCMYRm2Ju60UWWrL2wlva0c9WJjBJeb5nS0M6Bd7YJVWueb53arqsjShscG4Uw6TJID6NQlRgLKS0PAFuUuFPqFViMQQI3XGsggEm22zieuU-zmbWvJHlp34yjlCyDDE3rMhWk7BNZHojmdm_DtpDVOgoJ6mUzjd81HmB2-dEmzXEeOT7mjMePcsxr_KGdKrQwMCOnGnVDI7Ff-RopwxKdX-1zb8kAqdHdNMuaF0mR24HK_DzPaZiYSp8o6aj7YahKiqrDWxBv7x2o7bZru-rMD4rowGPPkuRB9DW2dBRUw-jQzyyKCXsnJFF8InAFv9ZvBN__Us6_4jndeMkPgTuOStUcPmlT4CDXqTajrjnrqF_4_m1x_YNobUilTQr-ep_k67b4w6fLofoQV5fK5jIqoBvsj1viW9Bd1Dw-WazLB3QUgjeszm1GNFLeK9-I3q00oAtX80YerMhM3BwKI8XbQHuMyTFC78F14FGD1jC4pWfl8SCsf9mutUW_bQ9kjM2T3OoHA0wtCPTxWqRC0uf3PMnw1PABF7rHXw8TpPhVuHtIgM-1Cam1McCUEseQ_4X9KSgCo70rIkOmT8uUrG7pqLsolJ95trlY5QhpT-z_f8eDWT1j3CDjhcToiUlYDKeLUAZaPldzbIGAatCZL9CM2dbicFxjII3GsETTh8nYAKFz3mnXJCwVftjQf9vSLDqZaPvu75spGCm2-VP_r7Ratq1da7gfAjAKukJinxNnH645UnwuuiuzJIgADVJZbcH4GaEWQ4tRMnRhTw-EcB_9_VkkRR0YW9Rb5suhaoPa85FHNLbENMtcE-r9hTvxD_QXIFL_XcnY198gbdoLGrjztqK34COskRytKx90wRmb6K81rnts7DvVjqZouZm6SrTf3QXXjUJq87_n4fgeTb6MqC27izoKGQM_K0z-0lhkOEvnIc1tytVecENmaionuOQjXEzlxd_h6-nvspliF5sO1L7NxJEsLYnwt5XTgbQ2b_uGVMCPOBMpx-d06jivwjtHMNKTdU32ZQ-iuANLWVUxEEtPJxk38",
+      "summary": []
+    },
+    {
+      "id": "msg_038e5634e34ecf81016adaacb2186c87d18e3abffff682b16e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki identify the decision maker at Tamsin Cold Chain.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 253,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 52,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 305
+  },
+  "user": null,
+  "metadata": {}
+}

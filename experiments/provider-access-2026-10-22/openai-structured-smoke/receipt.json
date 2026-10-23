@@ -1,0 +1,36 @@
+{
+  "provider": "openai",
+  "kind": "structured-output integration check on development case",
+  "case_id": "q3563424a26",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999942",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "status": "completed",
+  "usage": {
+    "input_tokens": 1829,
+    "input_tokens_details": {
+      "cache_write_tokens": 1826,
+      "cached_tokens": 0
+    },
+    "output_tokens": 200,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2029
+  },
+  "finish": "completed",
+  "complete": true,
+  "keys": [
+    "explanation",
+    "missing",
+    "status",
+    "support",
+    "template"
+  ],
+  "seconds": 4.335837229999015
+}

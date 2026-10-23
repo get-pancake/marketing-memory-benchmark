@@ -1,0 +1,116 @@
+{
+  "id": "q2f3055f0f5-openai-full",
+  "case_id": "q2f3055f0f5",
+  "world": "w09f17fd1",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.44,
+    "selected_sources": 25,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2580,
+  "status": "completed",
+  "started_at": "2026-10-23T00:54:37.787502+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999872",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e61be2488f41df2016adab04e365487d19def1059e79c24a4",
+  "usage": {
+    "input_tokens": 2351,
+    "input_tokens_details": {
+      "cache_write_tokens": 2348,
+      "cached_tokens": 0
+    },
+    "output_tokens": 270,
+    "output_tokens_details": {
+      "reasoning_tokens": 55
+    },
+    "total_tokens": 2621
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.008576",
+    "total_input_tokens": 2351,
+    "output_tokens": 270,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 2348
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve the conflicting seller approved-role evidence and confirm an approved role matching the account's revenue_lead role.",
+      "Provide current observed evidence of ISO27001 certification for the account."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S21",
+      "account.account_role:observed": "S13",
+      "account.certification:observed": "S17",
+      "account.observed_signal:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S10",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": "S18"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve the conflicting seller approved-role evidence and confirm an approved role matching the account's revenue_lead role.",
+      "Provide current observed evidence of ISO27001 certification for the account."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve the conflicting seller approved-role evidence and confirm an approved role matching the account's revenue_lead role.",
+      "Provide current observed evidence of ISO27001 certification for the account."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 fits the compliance objective and two-unit allowance, but approved-role evidence conflicts (S3, S14), and certification is withdrawn rather than ISO27001 (S17). P3 has a different objective, while P4 and P2 exceed the resource allowance.",
+  "finished_at": "2026-10-23T00:54:43.827323+00:00",
+  "seconds": 6.039833197006374
+}

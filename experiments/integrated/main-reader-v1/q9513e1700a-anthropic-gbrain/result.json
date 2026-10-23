@@ -1,0 +1,138 @@
+{
+  "id": "q9513e1700a-anthropic-gbrain",
+  "case_id": "q9513e1700a",
+  "world": "wc1aa55ff",
+  "arm": "gbrain",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 0.5,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2048,
+  "status": "completed",
+  "started_at": "2026-10-23T00:37:27.413652+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:37:29Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:37:31Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:37:27Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:37:29Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEXx9PrEV5T2TBwJ3MQ",
+  "usage": {
+    "input_tokens": 3826,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 395,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.011602",
+    "total_input_tokens": 3826,
+    "output_tokens": 395,
+    "regular_input_tokens": 3826,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.certification:observed=ISO27001 (current value is withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S3",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": null,
+      "account.observed_signal:observed": "S9",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.certification:observed=ISO27001 (current value is withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.certification:observed=ISO27001 (current value is withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (needed only for P3)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Observed account facts exist (role S1, geo S3, signal S9), but there is no approved seller role or geo, so the common requirements and equalities fail. The certification was withdrawn (S13, not ISO27001), no audit_effort pain or proof is supplied, and no procurement stage is given, so P2, P3 and P4 are blocked; P1 has a different objective than compliance.",
+  "finished_at": "2026-10-23T00:37:31.776758+00:00",
+  "seconds": 4.363117863002117
+}

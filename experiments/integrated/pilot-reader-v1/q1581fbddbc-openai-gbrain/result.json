@@ -1,0 +1,116 @@
+{
+  "id": "q1581fbddbc-openai-gbrain",
+  "case_id": "q1581fbddbc",
+  "world": "w102aef1b",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.42857142857142855,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2014,
+  "status": "completed",
+  "started_at": "2026-10-23T00:02:26.452964+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00ea3f9f6a4c80d4016adaa4129a7887d1952daeb0bd49c071",
+  "usage": {
+    "input_tokens": 1112,
+    "input_tokens_details": {
+      "cache_write_tokens": 1109,
+      "cached_tokens": 0
+    },
+    "output_tokens": 196,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1308
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047385",
+    "total_input_tokens": 1112,
+    "output_tokens": 196,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1109
+  },
+  "raw_output": {
+    "missing": [
+      "Seller approved role matching account role revenue_lead.",
+      "Seller approved geography matching account geography UK.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S2",
+      "account.observed_signal:observed": "S12",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved role matching account role revenue_lead.",
+      "Seller approved geography matching account geography UK.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved role matching account role revenue_lead.",
+      "Seller approved geography matching account geography UK.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "S2, S17 and S12 establish the account role, geography and migration signal, but P1 and P4 lack approved seller targeting and observed integration offering/proof evidence. P3 also lacks an observed approved procurement stage; P2 does not match the migration objective.",
+  "finished_at": "2026-10-23T00:02:31.098741+00:00",
+  "seconds": 4.6457869530131575
+}

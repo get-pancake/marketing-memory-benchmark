@@ -1,0 +1,195 @@
+{
+  "id": "q4bf016259b-openai-full",
+  "case_id": "q4bf016259b",
+  "world": "wf0df0441",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1",
+      "P3"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1",
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2073,
+  "status": "completed",
+  "started_at": "2026-10-23T00:54:22.219431+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999952",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f700266eb785dbb016adab03e724c87d1b1fb69970d84c04d",
+  "usage": {
+    "input_tokens": 2029,
+    "input_tokens_details": {
+      "cache_write_tokens": 922,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 191,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2220
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0043314",
+    "total_input_tokens": 2029,
+    "output_tokens": 191,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 922
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S1",
+      "account.channel_fit:observed": "S4",
+      "account.partner_status:observed": "S11",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S5",
+      "seller.approved_role:approved": "S20",
+      "seller.offering_pain:observed": "S19",
+      "seller.proof_for_pain:observed": "S13"
+    },
+    "template": "P1"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ef2ecc52",
+          "e4e14c73",
+          "e00c94e2",
+          "e8673e52",
+          "e9b68d8c",
+          "e4498ef7",
+          "eef05aae",
+          "eb41135c"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Ilex-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e4e14c73",
+        "ef2ecc52"
+      ],
+      "evidence": [
+        "e00c94e2",
+        "e4498ef7",
+        "e4e14c73",
+        "e8673e52",
+        "e9b68d8c",
+        "eb41135c",
+        "eef05aae",
+        "ef2ecc52"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ef2ecc52",
+          "e4e14c73",
+          "e00c94e2",
+          "e8673e52",
+          "e9b68d8c",
+          "e4498ef7",
+          "eef05aae",
+          "eb41135c"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Ilex-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e4e14c73",
+        "ef2ecc52"
+      ],
+      "evidence": [
+        "e00c94e2",
+        "e4498ef7",
+        "e4e14c73",
+        "e8673e52",
+        "e9b68d8c",
+        "eb41135c",
+        "eef05aae",
+        "ef2ecc52"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P1 satisfies the partner objective within the 3-unit allowance: approved role and geography match the account (S20, S1, S5, S9), and its partner, channel, pain and proof prerequisites are supported (S11, S4, S19, S13). P1 does not require procurement-stage evidence.",
+  "finished_at": "2026-10-23T00:54:26.935894+00:00",
+  "seconds": 4.716473113003303
+}

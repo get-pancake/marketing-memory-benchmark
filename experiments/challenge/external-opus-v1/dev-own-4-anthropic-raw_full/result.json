@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:50:37.491617+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeR3um64yB7fcUegZFn",
+  "usage": {
+    "input_tokens": 120882,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 409,
+    "output_tokens_details": {
+      "thinking_tokens": 246
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.491708",
+    "total_input_tokens": 120882,
+    "output_tokens": 409,
+    "regular_input_tokens": 120882,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tobias Rendle\",\"citations\":[\"D054\",\"D085\",\"D015\",\"D087\",\"D013\"],\"explanation\":\"Hollis Mbeki kept Tansleigh Packaging at the start of 2025. His private 1:1 note records that Tobias Rendle owned the account as of 2025-05-19, and no later record shows a transfer before September 1, 2025. Later references to \\\"Hollis's old packaging account\\\" and \\\"Tobias's packaging account\\\" are consistent with this.\"}",
+  "finished_at": "2026-10-23T05:50:49.284983+00:00",
+  "seconds": 11.79338266600098
+}

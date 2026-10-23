@@ -1,0 +1,187 @@
+{
+  "id": "resp_029a41774e0f429a016adaacbea7b087d1bb71f0ad95c5dc61",
+  "object": "response",
+  "created_at": 1792715966,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715970,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_029a41774e0f429a016adaacbfd81487d191d38efb971bffae",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"explanation\":\"No company evidence was supplied, so P1's prerequisites and role/geography equalities cannot be established. P4 and P2 exceed the resource allowance, and P3 does not match the compliance objective.\",\"missing\":[\"seller.approved_role:approved\",\"seller.approved_geo:approved\",\"account.account_role:observed\",\"account.account_geo:observed\",\"account.certification:observed=ISO27001\",\"account.observed_signal:observed=compliance_review\",\"seller.offering_pain:observed=audit_effort\",\"seller.proof_for_pain:observed=audit_effort\"],\"status\":\"request_evidence\",\"support\":{\"account.account_geo:observed\":null,\"account.account_role:observed\":null,\"account.certification:observed\":null,\"account.observed_signal:observed\":null,\"account.procurement_stage:observed\":null,\"seller.approved_geo:approved\":null,\"seller.approved_role:approved\":null,\"seller.offering_pain:observed\":null,\"seller.proof_for_pain:observed\":null},\"template\":null}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_recommendation",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "explanation": {
+            "type": "string"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "recommend",
+              "request_evidence"
+            ],
+            "type": "string"
+          },
+          "support": {
+            "additionalProperties": false,
+            "properties": {
+              "account.account_geo:observed": {
+                "type": "null"
+              },
+              "account.account_role:observed": {
+                "type": "null"
+              },
+              "account.certification:observed": {
+                "type": "null"
+              },
+              "account.observed_signal:observed": {
+                "type": "null"
+              },
+              "account.procurement_stage:observed": {
+                "type": "null"
+              },
+              "seller.approved_geo:approved": {
+                "type": "null"
+              },
+              "seller.approved_role:approved": {
+                "type": "null"
+              },
+              "seller.offering_pain:observed": {
+                "type": "null"
+              },
+              "seller.proof_for_pain:observed": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "seller.approved_role:approved",
+              "seller.approved_geo:approved",
+              "account.account_role:observed",
+              "account.account_geo:observed",
+              "account.certification:observed",
+              "account.observed_signal:observed",
+              "seller.offering_pain:observed",
+              "seller.proof_for_pain:observed",
+              "account.procurement_stage:observed"
+            ],
+            "type": "object"
+          },
+          "template": {
+            "anyOf": [
+              {
+                "enum": [
+                  "P1",
+                  "P4",
+                  "P2",
+                  "P3"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "support",
+          "status",
+          "template",
+          "missing",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 820,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 235,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1055
+  },
+  "user": null,
+  "metadata": {}
+}

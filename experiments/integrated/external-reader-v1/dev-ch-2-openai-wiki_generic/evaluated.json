@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:09.088769+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_090240ee3ab67261016adaace99c1487d19402d091fa18a416",
+  "usage": {
+    "input_tokens": 17576,
+    "input_tokens_details": {
+      "cache_write_tokens": 17573,
+      "cached_tokens": 0
+    },
+    "output_tokens": 68,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17644
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0446185",
+    "total_input_tokens": 17576,
+    "output_tokens": 68,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17573
+  },
+  "text": "{\"answer\":\"Ines Barrow\",\"citations\":[\"D047\",\"D046\"],\"explanation\":\"The May 2 kickoff follow-up explicitly identifies COO Ines Barrow as the real decision maker and CFO Pavel Ruud as the budget approver, clarifying the earlier March CRM listing.\"}",
+  "finished_at": "2026-10-23T00:40:12.076468+00:00",
+  "seconds": 2.987708867993206,
+  "id": "dev-ch-2-openai-wiki_generic",
+  "case_id": "dev-ch-2",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Ines Barrow",
+  "explanation": "The May 2 kickoff follow-up explicitly identifies COO Ines Barrow as the real decision maker and CFO Pavel Ruud as the budget approver, clarifying the earlier March CRM listing.",
+  "citations": [
+    "D047",
+    "D046"
+  ]
+}

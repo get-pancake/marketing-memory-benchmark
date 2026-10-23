@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:22.831926+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a156be564aaae61016adaade75abc87d18742f2586c18fc48",
+  "usage": {
+    "input_tokens": 6748,
+    "input_tokens_details": {
+      "cache_write_tokens": 6745,
+      "cached_tokens": 0
+    },
+    "output_tokens": 56,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6804
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0174285",
+    "total_input_tokens": 6748,
+    "output_tokens": 56,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6745
+  },
+  "text": "{\"answer\":\"14\",\"citations\":[\"D037\"],\"explanation\":\"The signed renewal effective February 1, 2026 carries forward the 14% discount for the renewal term, covering March 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:44:25.693743+00:00",
+  "seconds": 2.861828630004311,
+  "id": "dev-gov-5-openai-raw_chunks",
+  "case_id": "dev-gov-5",
+  "arm": "raw_chunks",
+  "context_bytes": 24528,
+  "answer_correct": true,
+  "answer": "14",
+  "citations": [
+    "D037"
+  ],
+  "explanation": "The signed renewal effective February 1, 2026 carries forward the 14% discount for the renewal term, covering March 1, 2026.",
+  "citation_ids_valid": true
+}

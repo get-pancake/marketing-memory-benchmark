@@ -1,0 +1,51 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:22.827173+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF4a2V9usaNrxjBo8mE",
+  "usage": {
+    "input_tokens": 11159,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 167,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.023988",
+    "total_input_tokens": 11159,
+    "output_tokens": 167,
+    "regular_input_tokens": 11159,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\",\"D002\",\"D061\",\"D115\"],\"explanation\":\"The signed Affiliate Amendment (D033) set Marrow Agrisupply to Tier 1 effective 2025-10-15, and the 2026-04-22 renewal (D042) left its SLA as set by that amendment. The 2026-05-11 weekly note (D115) saying Tier 2 is an informal note that conflicts with the signed contract terms and the account page (D002).\"}",
+  "finished_at": "2026-10-23T00:44:26.480834+00:00",
+  "seconds": 3.65367041999707,
+  "id": "dev-gov-4-anthropic-raw_chunks",
+  "case_id": "dev-gov-4",
+  "arm": "raw_chunks",
+  "context_bytes": 24574,
+  "answer_correct": true,
+  "answer": "Tier 1",
+  "citations": [
+    "D033",
+    "D042",
+    "D002",
+    "D061",
+    "D115"
+  ],
+  "explanation": "The signed Affiliate Amendment (D033) set Marrow Agrisupply to Tier 1 effective 2025-10-15, and the 2026-04-22 renewal (D042) left its SLA as set by that amendment. The 2026-05-11 weekly note (D115) saying Tier 2 is an informal note that conflicts with the signed contract terms and the account page (D002).",
+  "citation_ids_valid": true
+}

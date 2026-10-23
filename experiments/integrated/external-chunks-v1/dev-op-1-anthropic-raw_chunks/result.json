@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:19.076475+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF4KjFprr6wJDpJjyN3",
+  "usage": {
+    "input_tokens": 10644,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 159,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.022878",
+    "total_input_tokens": 10644,
+    "output_tokens": 159,
+    "regular_input_tokens": 10644,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D106\"],\"explanation\":\"In the 2025-09-15 North weekly, Brackenwater moves to Marcus that day, and the Quarrendon Freight Lines section says \\\"Dana's freight account needs the night-shift supervisors included in the roster check\\\", with Dana Okafor handling the 185-seat amendment rollout. So Dana's freight account in that update is Quarrendon Freight Lines.\"}",
+  "finished_at": "2026-10-23T00:44:21.383287+00:00",
+  "seconds": 2.3068223750015022
+}

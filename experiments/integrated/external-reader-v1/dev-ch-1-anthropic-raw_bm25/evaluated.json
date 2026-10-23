@@ -1,0 +1,50 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:45.255916+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEdhqLJK2DA6VDfczWS",
+  "usage": {
+    "input_tokens": 10286,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 136,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.021932",
+    "total_input_tokens": 10286,
+    "output_tokens": 136,
+    "regular_input_tokens": 10286,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D001\",\"D118\",\"D024\"],\"explanation\":\"The signed 2025-2026 renewal order form (D035) sets the term at 2025-12-01 to 2026-11-30, and it controls over earlier paperwork. D001 and D118 are consistent with it, while 2025-11-30 in D024 is the end of the prior 2024-2025 term.\"}",
+  "finished_at": "2026-10-23T00:38:47.541568+00:00",
+  "seconds": 2.2856628479930805,
+  "id": "dev-ch-1-anthropic-raw_bm25",
+  "case_id": "dev-ch-1",
+  "arm": "raw_bm25",
+  "context_bytes": 24573,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-11-30",
+  "explanation": "The signed 2025-2026 renewal order form (D035) sets the term at 2025-12-01 to 2026-11-30, and it controls over earlier paperwork. D001 and D118 are consistent with it, while 2025-11-30 in D024 is the end of the prior 2024-2025 term.",
+  "citations": [
+    "D035",
+    "D001",
+    "D118",
+    "D024"
+  ]
+}

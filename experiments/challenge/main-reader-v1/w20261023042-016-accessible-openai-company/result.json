@@ -1,0 +1,102 @@
+{
+  "id": "w20261023042-016-accessible-openai-company",
+  "case_id": "w20261023042-016-accessible",
+  "world": "w20261023042-016",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:57:55.855736+00:00",
+  "evidence_bytes": 16307,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999528",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0953c464a682ffdd016adaf764ca4487d1b71f2a22f43e8210",
+  "usage": {
+    "input_tokens": 5643,
+    "input_tokens_details": {
+      "cache_write_tokens": 5640,
+      "cached_tokens": 0
+    },
+    "output_tokens": 615,
+    "output_tokens_details": {
+      "reasoning_tokens": 153
+    },
+    "total_tokens": 6258
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.020256",
+    "total_input_tokens": 5643,
+    "output_tokens": 615,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5640
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Mesa-16",
+        "action": "workshop",
+        "sources": [
+          "e529699d07f77e3",
+          "e4e42d4ee839383",
+          "e99ec229be820a8",
+          "ea563c6de5f85d9",
+          "ee1983f1d87131c",
+          "e19fa5d2c1bfc49",
+          "ec62f9cd977f05a",
+          "ea0d37d2949d382",
+          "eef489ebb6e363d",
+          "e0bbe35b6467b99",
+          "e418940ebb45ad3"
+        ]
+      },
+      {
+        "account": "Harbor-16",
+        "action": "research_brief",
+        "sources": [
+          "e529699d07f77e3",
+          "ec5dcac736cb2b7",
+          "eeaa02b55d07707",
+          "efa72fca78311d6",
+          "e87d40c1946a832",
+          "e6acd24d39d629a",
+          "e15d6167b852625",
+          "ee0628cfc9eb1b2",
+          "e54e527f21a09b4",
+          "eca0656fb60754d"
+        ]
+      }
+    ],
+    "missing": [
+      "Orchid-16 requires observed consent=true, observed links from account to initiative to need to offering to proof, and approved proof.verified=true."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 4 of 6 and scores 25 synthetic priority points: Mesa-16 workshop contributes 4×4=16; Harbor-16 research brief contributes 9×1=9. Both launch signals match their selected actions. Harbor-16's workshop is blocked by approved capacity=false. Grove-16's US region is not allowed, and Orchid-16 lacks required evidence. No additional eligible distinct-account action can use the remaining budget."
+  },
+  "score": {
+    "optimum": 25,
+    "recoverable_value": 25,
+    "returned_value": 25,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 4
+  },
+  "finished_at": "2026-10-23T05:58:07.717117+00:00",
+  "seconds": 11.861390317993937
+}

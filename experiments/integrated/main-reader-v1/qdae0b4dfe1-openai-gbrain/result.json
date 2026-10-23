@@ -1,0 +1,125 @@
+{
+  "id": "qdae0b4dfe1-openai-gbrain",
+  "case_id": "qdae0b4dfe1",
+  "world": "wcacc6315",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 0.5714285714285714,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2032,
+  "status": "completed",
+  "started_at": "2026-10-23T00:32:25.998855+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999894",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b6df72478f2f4e5016adaab1a751087d1b6a7bdc7c143df3b",
+  "usage": {
+    "input_tokens": 1955,
+    "input_tokens_details": {
+      "cache_write_tokens": 928,
+      "cached_tokens": 1024
+    },
+    "output_tokens": 249,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2204
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0049184",
+    "total_input_tokens": 1955,
+    "output_tokens": 249,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1024,
+    "cache_write_tokens": 928
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S2",
+      "account.account_role:observed": "S8",
+      "account.certification:observed": "S9",
+      "account.observed_signal:observed": "S7",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "S2, S8, S9 and S7 establish the account\u2019s geography, role, certification and compliance-review signal, but no supplied sources establish the seller\u2019s approved geography or role, offering pain or proof for that pain. P3 and P1 therefore lack prerequisites; P2 also lacks procurement approval, while P4 does not match the compliance objective.",
+  "finished_at": "2026-10-23T00:32:31.454218+00:00",
+  "seconds": 5.455372296011774
+}

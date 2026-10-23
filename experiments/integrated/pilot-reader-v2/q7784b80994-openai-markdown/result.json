@@ -1,0 +1,188 @@
+{
+  "id": "q7784b80994-openai-markdown",
+  "case_id": "q7784b80994",
+  "world": "wf66aa99f",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 1990,
+  "status": "completed",
+  "started_at": "2026-10-23T00:10:15.853315+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999957",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00ee5d992d512552016adaa5e8188c87d1a821fe47d18953e1",
+  "usage": {
+    "input_tokens": 1855,
+    "input_tokens_details": {
+      "cache_write_tokens": 1852,
+      "cached_tokens": 0
+    },
+    "output_tokens": 186,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2041
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.006496",
+    "total_input_tokens": 1855,
+    "output_tokens": 186,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1852
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S7",
+      "account.account_role:observed": "S14",
+      "account.observed_signal:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S5",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S8"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e3804275",
+          "e5d79e84",
+          "ec44dae5",
+          "e6dc98f0",
+          "e28ef311",
+          "e3bc1e2d",
+          "e786bc2c"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-751",
+      "objective": "migration",
+      "template": "P4",
+      "policy_versions": [
+        "e3804275",
+        "e5d79e84"
+      ],
+      "evidence": [
+        "e28ef311",
+        "e3804275",
+        "e3bc1e2d",
+        "e5d79e84",
+        "e6dc98f0",
+        "e786bc2c",
+        "ec44dae5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed migration context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e3804275",
+          "e5d79e84",
+          "ec44dae5",
+          "e6dc98f0",
+          "e28ef311",
+          "e3bc1e2d",
+          "e786bc2c"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-751",
+      "objective": "migration",
+      "template": "P4",
+      "policy_versions": [
+        "e3804275",
+        "e5d79e84"
+      ],
+      "evidence": [
+        "e28ef311",
+        "e3804275",
+        "e3bc1e2d",
+        "e5d79e84",
+        "e6dc98f0",
+        "e786bc2c",
+        "ec44dae5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed migration context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 satisfies the migration objective within the 2-unit allowance: approved and observed role and geography match (S3, S14, S5, S7), and the migration signal, integration offering pain, and matching proof are supported (S2, S4, S8). Procurement-stage evidence is absent but is not a prerequisite for P4.",
+  "finished_at": "2026-10-23T00:10:21.026840+00:00",
+  "seconds": 5.173536553993472
+}

@@ -1,0 +1,162 @@
+{
+  "id": "resp_0d751ff64d939231016adaf72ab0ec87d19ce90155e951cf11",
+  "object": "response",
+  "created_at": 1792735018,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735026,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0d751ff64d939231016adaf72bfdf887d19e5dff34b6b1a476",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Elm-38, Pine-38, Grove-38, Delta-38 and Juniper-38: current observed consent must be true; supplied consent is false.\",\n    \"Pine-38: an observed profile with an allowed region is required; supplied region DE is not allowed.\",\n    \"Juniper-38: an observed profile with an allowed region and nonblocked sector is required; supplied region DE and sector restricted both fail policy.\",\n    \"Grove-38: missing observed need-to-offering and offering-to-proof links, and approved proof verification. Reference introduction also requires approved proof shareability.\",\n    \"Aster-38, Iris-38 and Kestrel-38: missing observed profile, true consent, signal, initiative, initiative-to-need, need-to-offering and offering-to-proof links; approved proof verification and integer priority are also missing. Workshop, assurance pack and reference introduction additionally require approved capacity, assurance and shareability, respectively.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available. Each account was checked independently: five have observed consent=false, while Aster-38, Iris-38 and Kestrel-38 have no supplied account evidence. Pine-38 and Juniper-38 also fail the approved profile policy, and Grove-38 lacks required chain evidence. The proposed seller policy is not authoritative. The empty plan costs 0 of 8 and has a supported priority score of 0.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Elm-38",
+                    "Aster-38",
+                    "Pine-38",
+                    "Grove-38",
+                    "Iris-38",
+                    "Delta-38",
+                    "Kestrel-38",
+                    "Juniper-38"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3299,
+    "input_tokens_details": {
+      "cache_write_tokens": 3296,
+      "cached_tokens": 0
+    },
+    "output_tokens": 314,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3613
+  },
+  "user": null,
+  "metadata": {}
+}

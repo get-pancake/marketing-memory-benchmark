@@ -1,0 +1,24 @@
+{
+  "post_hoc_development_control": true,
+  "run_status": "completed",
+  "planned_calls": 44,
+  "groups": {
+    "openai/raw_chunks": {
+      "cases": 22,
+      "correct": 21,
+      "failures": 0,
+      "estimated_usd": 0.370202,
+      "mean_context_bytes": 24544.272727272728,
+      "mean_input_tokens": 6446.636363636364
+    },
+    "anthropic/raw_chunks": {
+      "cases": 22,
+      "correct": 21,
+      "failures": 0,
+      "estimated_usd": 0.509426,
+      "mean_context_bytes": 24544.272727272728,
+      "mean_input_tokens": 10744.90909090909
+    }
+  },
+  "manifest_sha256": "a22ede08fe2b8a1c124f8d9cd711cf3316731dd1a3f607e46fb013df97883c2e"
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "openai",
+  "requested_model": "gpt-6.1-sol",
+  "started_at": "2026-10-23T04:55:07.314989+00:00",
+  "status": "completed",
+  "model": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 31,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 13,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 44
+  },
+  "finish": "completed",
+  "accounting": {
+    "estimated_usd": "0.000192",
+    "total_input_tokens": 31,
+    "output_tokens": 13,
+    "regular_input_tokens": 31,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "parsed": {
+    "ready": true
+  },
+  "seconds": 3.2030796030012425,
+  "finished_at": "2026-10-23T04:55:10.517916+00:00"
+}

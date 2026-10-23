@@ -1,0 +1,45 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:57.252933+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEizudcjmdm7AHmhRJK",
+  "usage": {
+    "input_tokens": 616,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 80,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.002032",
+    "total_input_tokens": 616,
+    "output_tokens": 80,
+    "regular_input_tokens": 616,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or compiled wiki were supplied with the question, so the number of seats Quarrendon Freight Lines has under contract on October 14, 2026 is not recorded.\"}",
+  "finished_at": "2026-10-23T00:39:59.297291+00:00",
+  "seconds": 2.04436716499913,
+  "id": "dev-gov-1-anthropic-none",
+  "case_id": "dev-gov-1",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No company documents or compiled wiki were supplied with the question, so the number of seats Quarrendon Freight Lines has under contract on October 14, 2026 is not recorded.",
+  "citations": []
+}

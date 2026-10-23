@@ -1,0 +1,162 @@
+{
+  "id": "resp_0efd1141c3af95ba016adaf790f04c87d19f37a01c6a7021c9",
+  "object": "response",
+  "created_at": 1792735121,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735128,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0efd1141c3af95ba016adaf792883487d1a89bfc2f12b9d6c7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Juniper-7: current observed consent is false (eaea07702627abc), blocking every action. Eligibility requires current observed consent true without conflicting current values.\",\n    \"Cedar-7: missing observed profile, consent, signal, and account-to-initiative-to-need-to-offering-to-proof links, plus approved proof verification.\",\n    \"Aster-7, North-7, Elm-7, Orchid-7, Harbor-7, Kestrel-7: missing approved integer priorities, observed profiles, consent, signals, and complete initiative-to-proof chains with approved proof verification.\",\n    \"For workshop, assurance_pack, or reference_intro on otherwise eligible accounts, supply approved true offering capacity, offering assurance, or proof shareability, respectively. Juniper-7's offering capacity is currently approved false.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available within the budget of 8. The approved seller policy permits the catalog actions, but Juniper-7 lacks consent and every other queried account lacks required baseline evidence. The proposed policy and unrelated corporate records do not establish eligibility.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Cedar-7",
+                    "Aster-7",
+                    "Juniper-7",
+                    "North-7",
+                    "Elm-7",
+                    "Orchid-7",
+                    "Harbor-7",
+                    "Kestrel-7"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3232,
+    "input_tokens_details": {
+      "cache_write_tokens": 3229,
+      "cached_tokens": 0
+    },
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3477
+  },
+  "user": null,
+  "metadata": {}
+}

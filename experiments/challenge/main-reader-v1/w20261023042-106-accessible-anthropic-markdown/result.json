@@ -1,0 +1,102 @@
+{
+  "id": "w20261023042-106-accessible-anthropic-markdown",
+  "case_id": "w20261023042-106-accessible",
+  "world": "w20261023042-106",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:00:08.023532+00:00",
+  "evidence_bytes": 16356,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:00:12Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:00:19Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:00:08Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:00:12Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJf9A9jDMX4bGWGESVav",
+  "usage": {
+    "input_tokens": 8766,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 964,
+    "output_tokens_details": {
+      "thinking_tokens": 347
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.054344",
+    "total_input_tokens": 8766,
+    "output_tokens": 964,
+    "regular_input_tokens": 8766,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Pine-106",
+        "action": "diagnostic",
+        "sources": [
+          "ebcdfa6ebd7ddb0",
+          "e9ae891a81d88d6",
+          "ecf1da9d03ecc79",
+          "eda094dc6393fe4",
+          "e322c7fa5806365",
+          "eda64955ba2e9fb",
+          "efdbf9f0f79f872",
+          "ee316bdef1c5538",
+          "e5db06aec58e322",
+          "e33ae72465a5a32"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-106: observed profile (region/sector)",
+      "Aster-106: observed current consent",
+      "Aster-106: observed signal",
+      "Aster-106: approved integer priority",
+      "Aster-106: observed initiative-1 need/offering/proof chain and approved proof verification",
+      "Cedar-106: profile region DE is not in approved allowed regions; an approved policy allowing DE would be needed",
+      "Larch-106: current observed consent is false; true consent would be needed (proof-3 is also not verified)",
+      "Pine-106: approved shareable proof would be needed for reference_intro (proof-0 shareable is false)"
+    ],
+    "reasoning_summary": "Only the approved seller policy (day 12) is used; the proposed policy is ignored. Pine-106 is eligible: UK/services allowed, consent true, growth signal, full chain initiative-0 -> need-0 -> offering-0 -> proof-0 verified true, approved priority 9. Growth-eligible actions are diagnostic (9x2=18, cost 2) and research_brief (9x1=9); reference_intro is blocked because proof-0 shareable is false. Cedar-106 is blocked by region DE, Larch-106 by consent false (and unverified proof-3), and Aster-106 lacks profile, consent, signal, priority, and chain evidence. Best plan: Pine-106 diagnostic, total 18 points at cost 2 within budget 6."
+  },
+  "score": {
+    "optimum": 18,
+    "recoverable_value": 18,
+    "returned_value": 18,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T06:00:19.295719+00:00",
+  "seconds": 11.272192779011675
+}

@@ -1,0 +1,45 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:50.178925+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEiUfiCZTSLkQodRGKF",
+  "usage": {
+    "input_tokens": 606,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 70,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.001912",
+    "total_input_tokens": 606,
+    "output_tokens": 70,
+    "regular_input_tokens": 606,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or compiled wiki were supplied with the question, so there is no record of whether Quarendon Freightways is a Pemberline customer.\"}",
+  "finished_at": "2026-10-23T00:39:51.721178+00:00",
+  "seconds": 1.5422530719952192,
+  "id": "dev-ent-2-anthropic-none",
+  "case_id": "dev-ent-2",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No company documents or compiled wiki were supplied with the question, so there is no record of whether Quarendon Freightways is a Pemberline customer.",
+  "citations": []
+}

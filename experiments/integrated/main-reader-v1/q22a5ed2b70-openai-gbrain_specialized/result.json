@@ -1,0 +1,119 @@
+{
+  "id": "q22a5ed2b70-openai-gbrain_specialized",
+  "case_id": "q22a5ed2b70",
+  "world": "wf0df0441",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.45,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1991,
+  "status": "completed",
+  "started_at": "2026-10-23T00:52:08.661708+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999922",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06e760e33221219c016adaafb9189c87d1872dabad7120dae1",
+  "usage": {
+    "input_tokens": 2014,
+    "input_tokens_details": {
+      "cache_write_tokens": 907,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2234
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0045839",
+    "total_input_tokens": 2014,
+    "output_tokens": 220,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 907
+  },
+  "raw_output": {
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role (revenue_lead).",
+      "Provide current account.partner_status:observed=verified evidence.",
+      "For P4, provide account.procurement_stage:observed=approved evidence."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S1",
+      "account.channel_fit:observed": "S7",
+      "account.partner_status:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S18",
+      "seller.proof_for_pain:observed": "S13"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role (revenue_lead).",
+      "Provide current account.partner_status:observed=verified evidence.",
+      "For P4, provide account.procurement_stage:observed=approved evidence."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Resolve conflicting seller.approved_role:approved evidence and establish approved_role=account_role (revenue_lead).",
+      "Provide current account.partner_status:observed=verified evidence.",
+      "For P4, provide account.procurement_stage:observed=approved evidence."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No partner action qualifies: approved-role evidence conflicts (S2, S19), and partner status is withdrawn rather than verified (S4). P4 also lacks observed procurement approval; P2 does not match the requested objective.",
+  "finished_at": "2026-10-23T00:52:14.227944+00:00",
+  "seconds": 5.566245781999896
+}

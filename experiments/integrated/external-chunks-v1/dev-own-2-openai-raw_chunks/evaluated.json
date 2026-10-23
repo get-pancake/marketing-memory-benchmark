@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:07.105195+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01fa82c5f34f4469016adaadd7799487d19eb874d1cfb6feb3",
+  "usage": {
+    "input_tokens": 6978,
+    "input_tokens_details": {
+      "cache_write_tokens": 6975,
+      "cached_tokens": 0
+    },
+    "output_tokens": 78,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7056
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0182235",
+    "total_input_tokens": 6978,
+    "output_tokens": 78,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6975
+  },
+  "text": "{\"answer\":\"Ilse Varga\",\"citations\":[\"D070\",\"D112\"],\"explanation\":\"Ilse Varga was designated acting account manager for Quarrendon Freight Lines during Dana Okafor\u2019s leave from February 2 through March 13, 2026. The February 9 weekly update confirms she was covering the account.\"}",
+  "finished_at": "2026-10-23T00:44:09.725591+00:00",
+  "seconds": 2.6204777189996094,
+  "id": "dev-own-2-openai-raw_chunks",
+  "case_id": "dev-own-2",
+  "arm": "raw_chunks",
+  "context_bytes": 24529,
+  "answer_correct": true,
+  "answer": "Ilse Varga",
+  "citations": [
+    "D070",
+    "D112"
+  ],
+  "explanation": "Ilse Varga was designated acting account manager for Quarrendon Freight Lines during Dana Okafor\u2019s leave from February 2 through March 13, 2026. The February 9 weekly update confirms she was covering the account.",
+  "citation_ids_valid": true
+}

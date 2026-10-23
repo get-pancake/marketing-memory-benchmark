@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:50.193867+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEiVWJuegGRB7tX3yBs",
+  "usage": {
+    "input_tokens": 120886,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 128,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.243052",
+    "total_input_tokens": 120886,
+    "output_tokens": 128,
+    "regular_input_tokens": 120886,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D001\",\"D059\"],\"explanation\":\"The account page says Dana Okafor held Brackenwater until Sep 15, 2025 but that her start date is not recorded, and her handoff email says nobody remembers when she picked it up (the oldest CRM import just says \\\"legacy migration\\\"). She had it before the North team existed, so no start date can be given.\"}",
+  "finished_at": "2026-10-23T00:39:52.444757+00:00",
+  "seconds": 2.250896661003935
+}

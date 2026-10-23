@@ -1,0 +1,103 @@
+{
+  "id": "w20261023042-086-constrained-openai-company",
+  "case_id": "w20261023042-086-constrained",
+  "world": "w20261023042-086",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:59:02.741272+00:00",
+  "evidence_bytes": 12189,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999516",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_021287829713d054016adaf7a79aa087d1b8e45db11b549747",
+  "usage": {
+    "input_tokens": 4441,
+    "input_tokens_details": {
+      "cache_write_tokens": 4438,
+      "cached_tokens": 0
+    },
+    "output_tokens": 626,
+    "output_tokens_details": {
+      "reasoning_tokens": 113
+    },
+    "total_tokens": 5067
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017361",
+    "total_input_tokens": 4441,
+    "output_tokens": 626,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4438
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-86",
+        "action": "workshop",
+        "sources": [
+          "efe647fef80621f",
+          "e4d9c1b5d846371",
+          "e9da236de99fb8d",
+          "e398ff666935e08",
+          "e8b7db4c9934495",
+          "e1dd3e0f0159994",
+          "ea24959f80a29ff",
+          "e09d0d2d4330b2e",
+          "ec23ad9799bfba7",
+          "eddcacc9f6129ea",
+          "e26e1e2c0ac61fe"
+        ]
+      },
+      {
+        "account": "North-86",
+        "action": "renewal_review",
+        "sources": [
+          "efe647fef80621f",
+          "ee518800b204a52",
+          "ea670a798691532",
+          "e7adb7165d1c085",
+          "e3f2ce2afc09e32",
+          "e8385973a565f51",
+          "ef2e92eb3d7b21e",
+          "e1c2f39847ed7ea",
+          "efe9ee9346ef16f",
+          "edc0e79dc1c2c00"
+        ]
+      }
+    ],
+    "missing": [
+      "North-86 reference_intro requires approved shareable=true on proof-5; no such evidence was supplied.",
+      "Kestrel-86, Mesa-86, Cedar-86 and Grove-86 each require observed profile, consent=true, signal and initiative-to-need-to-offering-to-proof links, approved proof verification=true, and an approved integer priority. No account evidence was supplied for them; action-specific approvals would also be required where applicable."
+    ],
+    "reasoning_summary": "The optimal supported plan scores 54 synthetic priority points: Orchid-86 workshop contributes 9×4=36 and North-86 renewal_review contributes 6×3=18. Total cost is 5 of 7, with distinct accounts. Both satisfy approved policy and all eligibility requirements. The proposed policy is not authoritative. North-86 reference_intro is blocked by missing shareability approval."
+  },
+  "score": {
+    "optimum": 66,
+    "recoverable_value": 54,
+    "returned_value": 54,
+    "normalized_value": 0.8181818181818182,
+    "context_normalized_value": 0.8181818181818182,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 5
+  },
+  "finished_at": "2026-10-23T05:59:16.972648+00:00",
+  "seconds": 14.23138578099315
+}

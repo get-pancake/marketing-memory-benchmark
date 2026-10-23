@@ -1,0 +1,128 @@
+{
+  "id": "resp_0add931d1fc9a8be016adaaca9c27c87d1987976e54c481551",
+  "object": "response",
+  "created_at": 1792715945,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715947,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0add931d1fc9a8be016adaacaaa73487d1a4016d708892ca68",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qyrAD3JjmBqd0EURNrkVoWIs0K7BYmX9rHmUc3PP5-xpYFR2z9dQ6suN2fHyp-7GJFKcUeo65sQq3mJSKeAjMPO365c6twaCSIsatbLnYmMvVlRWppYZ-KnXQ0x-xPBeh_a_zR5Gy2O9Je5xeoHbJ3dIOfTd8Jov8i9-6qjJMEwyM0YeUByeyXanbe8lA0K8KvuzpxPnb8wvBS9Fg2qUj8dhNDCVe9VflwZ7DynjcKKrVgSqGC2eAnl91e0jt4e0tYk5zfevaYWLT-ZcGMEfHDH657WnG669dgzfCkMXvRXtJTpMRxKGj0Bu-gfQOgnuqS0EjmqkGcgPqAUGDvWhEdxkXtjN8Cp2h3whd_lgviHMONwj1iVLsT4-yk2tePmGf5BLukSvJs7CGhuI9-b1EfPoLThZi8ZGjbrB5edJt2mZ4rH7pOpu1zFCYcmakrd0MnRcBbnjlamUanfWi5oDYMxGAZ9RuiHvxnrweEFpp5IGxNEDEXfzX2Z2jQEkO2YbzAvozESHiv6eiBxwuJnEr9J_rVqjjScwweZtRV3T5nuqDnOYWAVAC7wAgCAH7Tu_gSgDeZ-0bMO8E-BjAG_iY-Emk4l48VhxkBJW-tOsdDUwPP1x8Re6ZkC5J6UQJ6_zo2a-DwfXnkR1gek1HvOnRdLXpxgRSZoiXScll4zfkeXNqDn3kUbaK_zXqiutxakjNXV1MKNpThfyk2zcR_dcj7P92LH_kO2c3IWDHjjH0eRS4T-4pDa_6BYEu_0Kq5ifFf76FbdiDLWtP-ylc1ulCW3nqjTSjxiXegJrm6wJJzw9H0q4VwcLQwAyf47p5APtJBtKqNYcCD012rHlfA5WWGICSWbGvkl-wWzWFIC6qNp-1bci_A0sFjHkIg0nDAqLdmXP4_ZroWAqN0iAaaKuVc66yAM8KFkQi9KIcSPZkZOKXKIO5AIZ2e1cn6bPmiJuqzOYeJahTSq6QyphJi98ErMyKluSBk5_GnO-lT9NfYkphxiCSEVnglyojjhT0RcK3aSJZfYf1IrNMn09o2qnDRm-BnE5zi5tZZsOEUcCRR4IKOwHpRPwAodEGC1y46HmsjieUC6NJOAiCmd-30322lOlTtLDTQCgdCClm8ac_5-L0NQQODe_LHgr3auTkGpQpPILIr4PKkTZToH_RZYK3jMPJz-Kw86RmYSyiZlSX4UdEOnVHn6PLXw_uYOHljCX-Y0UNgLt00uOQptO9YHaZZootE5vN2LspJ8B8Seh2yycB6OccEy5B1eO123GdOJH84s39QUqzybrBOya_lZK_jbCKflJi-lWJg21vFaHGSja3bp_YvmTO0y96-aZouaIlQlfMSN_JnMKJR28dt3LfRu3wr0z6RTaYCEvy5jkfs9RJbWhrkV7Rk04ZNVrlFFLMxa5fVTvJTfC-ZP8SLjw_135G3ZT3UvaV8wdBq1xew80L_QIq9ZplybwBR_80oyG3Eern5bG73zb9j06sAukxtupxubGxN2KytdJfHHiYY6v8VYrgOx-SM2ulfEf9dZQyAt",
+      "summary": []
+    },
+    {
+      "id": "msg_0add931d1fc9a8be016adaacab1ac087d1aeac6ab9cac3eea2",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Quarrendon Freight Lines\u2019 contracted seat count on October 14, 2026.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 262,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 321
+  },
+  "user": null,
+  "metadata": {}
+}

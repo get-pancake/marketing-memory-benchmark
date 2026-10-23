@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:51.487144+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_077043624b6cc5ee016adaac9bdbc087d196c529d4fc38ec03",
+  "usage": {
+    "input_tokens": 16151,
+    "input_tokens_details": {
+      "cache_write_tokens": 16148,
+      "cached_tokens": 0
+    },
+    "output_tokens": 67,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16218
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.041046",
+    "total_input_tokens": 16151,
+    "output_tokens": 67,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16148
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D051\"],\"explanation\":\"The executed renewal establishes November 30, 2026 as the term end. The CRM's December 31, 2026 date is unsupported by any supplied signed extension.\"}",
+  "finished_at": "2026-10-23T00:38:54.586044+00:00",
+  "seconds": 3.098911286011571,
+  "id": "dev-ch-1-openai-wiki_specialized",
+  "case_id": "dev-ch-1",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "2026-11-30",
+  "explanation": "The executed renewal establishes November 30, 2026 as the term end. The CRM's December 31, 2026 date is unsupported by any supplied signed extension.",
+  "citations": [
+    "D035",
+    "D051"
+  ]
+}

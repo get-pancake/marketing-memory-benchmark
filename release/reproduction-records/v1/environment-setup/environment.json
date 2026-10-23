@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-10-22T09:23:29.598953+00:00",
+  "finished_at": "2026-10-22T09:23:39.728730+00:00",
+  "command": [
+    "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-input",
+    "--disable-pip-version-check",
+    "--no-cache-dir",
+    "--index-url",
+    "https://pypi.org/simple",
+    "--require-hashes",
+    "-r",
+    "release/requirements-analysis.lock"
+  ],
+  "exit_code": 0,
+  "requirements_sha256": "1d458865c094a8e525727ec4bd61f82c94bf385ce43483f6bc3fb4116f2281fc",
+  "scope": "Fresh isolated Python environment prepared for later clean-companion reproduction; no research code or model benchmark has run in it.",
+  "python": "Python 3.12.14",
+  "installed": [
+    "contourpy==1.4.0",
+    "cycler==0.12.1",
+    "fonttools==4.67.0",
+    "kiwisolver==1.5.1",
+    "matplotlib==3.10.8",
+    "numpy==2.3.5",
+    "packaging==26.3",
+    "pillow==13.0.0",
+    "pip==25.0.1",
+    "pyparsing==3.3.3",
+    "python-dateutil==3.0.0",
+    "six==1.17.0",
+    "tzdata==2026.5"
+  ],
+  "install_log_sha256": "2237727a2c06df0dd3b6ac63fdc88097610e8859d43411873a5b9896986bcf3d"
+}

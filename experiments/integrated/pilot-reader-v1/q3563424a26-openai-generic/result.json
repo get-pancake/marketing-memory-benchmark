@@ -1,0 +1,107 @@
+{
+  "id": "q3563424a26-openai-generic",
+  "case_id": "q3563424a26",
+  "world": "w102aef1b",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 5,
+    "current_value_group_coverage": 0.7142857142857143,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.47368421052631576,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2026,
+  "status": "completed",
+  "started_at": "2026-10-23T00:02:59.991651+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0db124b6dd50662f016adaa434201c87d19472d1c330f40c92",
+  "usage": {
+    "input_tokens": 1136,
+    "input_tokens_details": {
+      "cache_write_tokens": 1133,
+      "cached_tokens": 0
+    },
+    "output_tokens": 188,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1324
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047185",
+    "total_input_tokens": 1136,
+    "output_tokens": 188,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1133
+  },
+  "raw_output": {
+    "missing": [
+      "Seller approved_role matching the observed account_role revenue_lead.",
+      "Seller approved_geo matching the observed account_geo UK."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S2",
+      "account.observed_signal:observed": "S10",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": "S16"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved_role matching the observed account_role revenue_lead.",
+      "Seller approved_geo matching the observed account_geo UK."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Seller approved_role matching the observed account_role revenue_lead.",
+      "Seller approved_geo matching the observed account_geo UK."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "S10, S1 and S16 support the migration prerequisites for P1 and P4, but neither action can pass the common equalities without approved seller role and geography matching S2 and S17. P3 additionally lacks observed procurement approval; P2 does not match the migration objective.",
+  "finished_at": "2026-10-23T00:03:04.176964+00:00",
+  "seconds": 4.1853240489872405
+}

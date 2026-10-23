@@ -1,0 +1,95 @@
+{
+  "id": "resp_013e15b0c6e6613e016adaa4c4295087d1916c4ec0d86f2c23",
+  "object": "response",
+  "created_at": 1792713924,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792713928,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_013e15b0c6e6613e016adaa4c5c0a087d183f6f13d0dfb5f32",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"support\":{\"seller.approved_role:approved\":\"S1\",\"seller.approved_geo:approved\":\"S18\",\"account.account_role:observed\":\"S8\",\"account.account_geo:observed\":\"S15\",\"account.observed_signal:observed\":\"S13\",\"seller.offering_pain:observed\":\"S4\",\"seller.proof_for_pain:observed\":\"S14\",\"account.procurement_stage:observed\":null},\"status\":\"request_evidence\",\"template\":null,\"missing\":[\"account.observed_signal:observed=hiring\"],\"explanation\":\"The approved role and geography match the account observations, and onboarding pain and proof are supported (S1, S18, S8, S15, S4, S14), but S13 records the signal as withdrawn rather than hiring. Provide a current observed hiring signal to satisfy P4 or P2; P1 additionally requires observed procurement approval, while P3 does not match the hiring objective.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1219,
+    "input_tokens_details": {
+      "cache_write_tokens": 1216,
+      "cached_tokens": 0
+    },
+    "output_tokens": 200,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1419
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:19.073733+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF4KVcKfmp1vneMu2rK",
+  "usage": {
+    "input_tokens": 11095,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 144,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.02363",
+    "total_input_tokens": 11095,
+    "output_tokens": 144,
+    "regular_input_tokens": 11095,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Dana Okafor\",\"citations\":[\"D063\",\"D005\",\"D055\"],\"explanation\":\"Dana Okafor took over Tamsin Cold Chain from Marcus Lindqvist on 2025-04-14 (D055, D005). The 2025-10-01 announcement of a move to Marcus was corrected on 2025-10-03, which kept the account with Dana, and Orrin Mills moved instead (D063).\"}",
+  "finished_at": "2026-10-23T00:44:21.592806+00:00",
+  "seconds": 2.519082917002379
+}

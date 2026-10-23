@@ -1,0 +1,88 @@
+{
+  "id": "w20261023042-043-accessible-openai-markdown",
+  "case_id": "w20261023042-043-accessible",
+  "world": "w20261023042-043",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:18.982936+00:00",
+  "evidence_bytes": 16259,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999632",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ed726813807983a016adaf64fd30887d19fc83355a8eda565",
+  "usage": {
+    "input_tokens": 5642,
+    "input_tokens_details": {
+      "cache_write_tokens": 5639,
+      "cached_tokens": 0
+    },
+    "output_tokens": 511,
+    "output_tokens_details": {
+      "reasoning_tokens": 143
+    },
+    "total_tokens": 6153
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0192135",
+    "total_input_tokens": 5642,
+    "output_tokens": 511,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5639
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-43",
+        "action": "reference_intro",
+        "sources": [
+          "e411ecaec6c51aa",
+          "e06416c906e40a9",
+          "e08e58d07159401",
+          "e76557eb42bc803",
+          "e83b224bdf2904b",
+          "ea37a4776ad45a7",
+          "e32d73e1431c215",
+          "e8118c1bba20fbe",
+          "e0642e7fa11082f",
+          "e20e6ae08529522",
+          "e272c79e35249f7"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-43: missing observed profile, consent, initiative, initiative-to-need, need-to-offering and offering-to-proof links; approved integer priority and approved proof verification are also missing.",
+      "Cedar-43: proof-3 is approved verified=false; eligibility requires approved verified=true with no conflicting current value.",
+      "Birch-43: the observed US region is not allowed, and proof-1 is approved verified=false. Eligibility requires policy-compatible region evidence and approved verified=true without current conflicts. Workshop and assurance_pack additionally fail their respective approved capacity and assurance requirements."
+    ],
+    "reasoning_summary": "North-43 reference_intro maximizes the supported total: 12 × 5 = 60 synthetic priority points at cost 4 within budget 6. No other account supports an eligible action, so the remaining budget cannot improve the plan. The proposed seller policy and feedback do not establish approved eligibility."
+  },
+  "score": {
+    "optimum": 60,
+    "recoverable_value": 60,
+    "returned_value": 60,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 4
+  },
+  "finished_at": "2026-10-23T05:53:32.231667+00:00",
+  "seconds": 13.248740233000717
+}

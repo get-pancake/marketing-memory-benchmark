@@ -1,0 +1,287 @@
+{
+  "case_id": "w20261023042-025-constrained",
+  "world": "w20261023042-025",
+  "eligible": [
+    {
+      "account": "Cedar-25",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 18,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "e6244391d167931"
+        ],
+        [
+          "ebfcdb8662ef75f"
+        ],
+        [
+          "e9346da8305726a"
+        ],
+        [
+          "e7fe2fceaa606ef"
+        ],
+        [
+          "edf08d9bdca632e"
+        ],
+        [
+          "e61a3028002acad"
+        ],
+        [
+          "ea079e71d8333eb"
+        ],
+        [
+          "e14ec50f448ccb3"
+        ],
+        [
+          "ecba0a4d59e67ce"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-25",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 45,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "e6244391d167931"
+        ],
+        [
+          "ebfcdb8662ef75f"
+        ],
+        [
+          "e9346da8305726a"
+        ],
+        [
+          "e7fe2fceaa606ef"
+        ],
+        [
+          "edf08d9bdca632e"
+        ],
+        [
+          "e61a3028002acad"
+        ],
+        [
+          "ea079e71d8333eb"
+        ],
+        [
+          "e14ec50f448ccb3"
+        ],
+        [
+          "e7611975b13284f"
+        ],
+        [
+          "ecba0a4d59e67ce"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-25",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 9,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "e6244391d167931"
+        ],
+        [
+          "ebfcdb8662ef75f"
+        ],
+        [
+          "e9346da8305726a"
+        ],
+        [
+          "e7fe2fceaa606ef"
+        ],
+        [
+          "edf08d9bdca632e"
+        ],
+        [
+          "e61a3028002acad"
+        ],
+        [
+          "ea079e71d8333eb"
+        ],
+        [
+          "e14ec50f448ccb3"
+        ],
+        [
+          "ecba0a4d59e67ce"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-25",
+      "action": "workshop",
+      "cost": 3,
+      "value": 28,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "ea4945bef4768dc"
+        ],
+        [
+          "ef44c7c9c64969c"
+        ],
+        [
+          "e8ee50d44e8d61b"
+        ],
+        [
+          "ead92275ae1f0db"
+        ],
+        [
+          "ee5dabbe9be8082"
+        ],
+        [
+          "efb43ce4638a15f"
+        ],
+        [
+          "e12af73ea215606"
+        ],
+        [
+          "e91f51ea174c1ec"
+        ],
+        [
+          "e0f59c2871d96c6"
+        ],
+        [
+          "e3a8fceaf8454e0"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-25",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 7,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "ea4945bef4768dc"
+        ],
+        [
+          "ef44c7c9c64969c"
+        ],
+        [
+          "e8ee50d44e8d61b"
+        ],
+        [
+          "ead92275ae1f0db"
+        ],
+        [
+          "ee5dabbe9be8082"
+        ],
+        [
+          "efb43ce4638a15f"
+        ],
+        [
+          "e12af73ea215606"
+        ],
+        [
+          "e91f51ea174c1ec"
+        ],
+        [
+          "e3a8fceaf8454e0"
+        ]
+      ]
+    }
+  ],
+  "optimum": 73,
+  "reference_plan": [
+    {
+      "account": "Cedar-25",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 45,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "e6244391d167931"
+        ],
+        [
+          "ebfcdb8662ef75f"
+        ],
+        [
+          "e9346da8305726a"
+        ],
+        [
+          "e7fe2fceaa606ef"
+        ],
+        [
+          "edf08d9bdca632e"
+        ],
+        [
+          "e61a3028002acad"
+        ],
+        [
+          "ea079e71d8333eb"
+        ],
+        [
+          "e14ec50f448ccb3"
+        ],
+        [
+          "e7611975b13284f"
+        ],
+        [
+          "ecba0a4d59e67ce"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-25",
+      "action": "workshop",
+      "cost": 3,
+      "value": 28,
+      "support_groups": [
+        [
+          "e1f0577ec6a01e9"
+        ],
+        [
+          "ea4945bef4768dc"
+        ],
+        [
+          "ef44c7c9c64969c"
+        ],
+        [
+          "e8ee50d44e8d61b"
+        ],
+        [
+          "ead92275ae1f0db"
+        ],
+        [
+          "ee5dabbe9be8082"
+        ],
+        [
+          "efb43ce4638a15f"
+        ],
+        [
+          "e12af73ea215606"
+        ],
+        [
+          "e91f51ea174c1ec"
+        ],
+        [
+          "e0f59c2871d96c6"
+        ],
+        [
+          "e3a8fceaf8454e0"
+        ]
+      ]
+    }
+  ]
+}

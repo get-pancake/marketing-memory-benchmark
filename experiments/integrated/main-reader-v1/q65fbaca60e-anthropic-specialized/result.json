@@ -1,0 +1,205 @@
+{
+  "id": "q65fbaca60e-anthropic-specialized",
+  "case_id": "q65fbaca60e",
+  "world": "w0ebbb750",
+  "arm": "specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P2",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.45,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2040,
+  "status": "completed",
+  "started_at": "2026-10-23T00:51:28.458815+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:51:30Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:51:35Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:51:28Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:51:30Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJFbyBt2U71xRctgakk3",
+  "usage": {
+    "input_tokens": 3981,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 915,
+    "output_tokens_details": {
+      "thinking_tokens": 596
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.017112",
+    "total_input_tokens": 3981,
+    "output_tokens": 915,
+    "regular_input_tokens": 3981,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S5",
+      "account.customer_state:observed": "S3",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S8",
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S9",
+      "seller.offering_pain:observed": "S16",
+      "seller.proof_for_pain:observed": "S12"
+    },
+    "template": "P2"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e6f72f54",
+          "e560c666",
+          "e3a72ed0",
+          "ea38506d",
+          "e1b8e26f",
+          "e5fcc69b",
+          "ebedc256",
+          "e8d9b58f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-258",
+      "objective": "renewal",
+      "template": "P2",
+      "policy_versions": [
+        "e560c666",
+        "e6f72f54"
+      ],
+      "evidence": [
+        "e1b8e26f",
+        "e3a72ed0",
+        "e560c666",
+        "e5fcc69b",
+        "e6f72f54",
+        "e8d9b58f",
+        "ea38506d",
+        "ebedc256"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e6f72f54",
+          "e560c666",
+          "e3a72ed0",
+          "ea38506d",
+          "e1b8e26f",
+          "e5fcc69b",
+          "ebedc256",
+          "e8d9b58f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-258",
+      "objective": "renewal",
+      "template": "P2",
+      "policy_versions": [
+        "e560c666",
+        "e6f72f54"
+      ],
+      "evidence": [
+        "e1b8e26f",
+        "e3a72ed0",
+        "e560c666",
+        "e5fcc69b",
+        "e6f72f54",
+        "e8d9b58f",
+        "ea38506d",
+        "ebedc256"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P2 is supported: approved role (S9) matches account role (S5), approved geo (S6) matches account geo (S15), the account is active (S3) and declining (S8), and the seller's adoption pain (S16) has adoption proof (S12). P3 is blocked because no procurement stage evidence exists, P1 has the wrong objective, and P4 has the same prerequisites as P2 but costs more units, so P2 is chosen as the cheaper option.",
+  "finished_at": "2026-10-23T00:51:35.587320+00:00",
+  "seconds": 7.128511438000714
+}

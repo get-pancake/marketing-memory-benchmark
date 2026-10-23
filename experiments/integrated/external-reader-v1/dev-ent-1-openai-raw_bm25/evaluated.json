@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.839308+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ef8b14ca8d21d28016adaacda36f887d1b8f2f9e87f189e1c",
+  "usage": {
+    "input_tokens": 6597,
+    "input_tokens_details": {
+      "cache_write_tokens": 6594,
+      "cached_tokens": 0
+    },
+    "output_tokens": 56,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6653
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.017051",
+    "total_input_tokens": 6597,
+    "output_tokens": 56,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6594
+  },
+  "text": "{\"answer\":\"Thornbury Cloth Co.\",\"citations\":[\"D019\"],\"explanation\":\"Marcus explicitly clarified that TCC on the invoice meant Thornbury Cloth Co., the renamed Orrin Mills, not Tamsin Cold Chain.\"}",
+  "finished_at": "2026-10-23T00:39:56.624992+00:00",
+  "seconds": 2.7856910069967853,
+  "id": "dev-ent-1-openai-raw_bm25",
+  "case_id": "dev-ent-1",
+  "arm": "raw_bm25",
+  "context_bytes": 24494,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Thornbury Cloth Co.",
+  "explanation": "Marcus explicitly clarified that TCC on the invoice meant Thornbury Cloth Co., the renamed Orrin Mills, not Tamsin Cold Chain.",
+  "citations": [
+    "D019"
+  ]
+}

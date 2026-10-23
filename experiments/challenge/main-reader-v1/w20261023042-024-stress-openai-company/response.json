@@ -1,0 +1,162 @@
+{
+  "id": "resp_0299f13500565145016adaf673e19c87d1a0792e736bfa8a59",
+  "object": "response",
+  "created_at": 1792734835,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734841,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0299f13500565145016adaf6752dd087d18be6d5cb4126350e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"Juniper-24: eligibility is blocked because its observed region, FR, is not allowed by the approved seller policy. An approved policy permitting FR or corrected observed profile evidence is required.\",\"Kestrel-24, Birch-24, North-24, Elm-24, Harbor-24, Mesa-24 and Aster-24: require observed profile, consent=true, catalog-matching signal, and the complete initiative \u2192 need \u2192 offering \u2192 proof chain; approved integer priority and proof verified=true are also missing. Workshop additionally requires approved offering capacity=true; assurance_pack requires approved offering assurance=true; reference_intro requires approved proof shareable=true.\"],\"reasoning_summary\":\"No supported action is eligible. Juniper-24 fails the approved region restriction for every action; the proposed policy is not authoritative. Each other queried account independently lacks required eligibility and priority evidence. No policy-priority points can therefore be selected within the budget of 8.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Kestrel-24",
+                    "Juniper-24",
+                    "Birch-24",
+                    "North-24",
+                    "Elm-24",
+                    "Harbor-24",
+                    "Mesa-24",
+                    "Aster-24"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3202,
+    "input_tokens_details": {
+      "cache_write_tokens": 3199,
+      "cached_tokens": 0
+    },
+    "output_tokens": 202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3404
+  },
+  "user": null,
+  "metadata": {}
+}

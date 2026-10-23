@@ -1,0 +1,114 @@
+{
+  "id": "q3563424a26-anthropic-markdown",
+  "case_id": "q3563424a26",
+  "world": "w102aef1b",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2046,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:43.768176+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJC3Cam2fK3ZmWrVCzj5",
+  "usage": {
+    "input_tokens": 1668,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 823,
+    "output_tokens_details": {
+      "thinking_tokens": 462
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.011566",
+    "total_input_tokens": 1668,
+    "output_tokens": 823,
+    "regular_input_tokens": 1668,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "approved_geo equals account_geo: approved seller geo is EU (S13) but observed account geo is UK (S17)",
+      "account.procurement_stage:observed=approved (needed only for P3)",
+      "Evidence of an approved geo that matches the account's geo, or a corrected account geo"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S5",
+      "account.observed_signal:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S13",
+      "seller.approved_role:approved": "S18",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S16"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "approved_geo equals account_geo: approved seller geo is EU (S13) but observed account geo is UK (S17)",
+      "account.procurement_stage:observed=approved (needed only for P3)",
+      "Evidence of an approved geo that matches the account's geo, or a corrected account geo"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "approved_geo equals account_geo: approved seller geo is EU (S13) but observed account geo is UK (S17)",
+      "account.procurement_stage:observed=approved (needed only for P3)",
+      "Evidence of an approved geo that matches the account's geo, or a corrected account geo"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The role equality holds (S18 and S5 are both revenue_lead). The geo equality fails, because approved geo is EU (S13) and the account's observed geo is UK (S17). This blocks P1, P3 and P4, and P3 also lacks procurement stage. P2 does not match the migration objective, and the S1 proposal cannot change approved policy.",
+  "finished_at": "2026-10-23T00:04:50.568436+00:00",
+  "seconds": 6.800269774990738
+}

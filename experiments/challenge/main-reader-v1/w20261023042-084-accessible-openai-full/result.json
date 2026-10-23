@@ -1,0 +1,83 @@
+{
+  "id": "w20261023042-084-accessible-openai-full",
+  "case_id": "w20261023042-084-accessible",
+  "world": "w20261023042-084",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:36.975602+00:00",
+  "evidence_bytes": 28560,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999726",
+    "x-ratelimit-reset-requests": "6ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0500c4c4fda3d74f016adaf661d12c87d18abb3751975364a0",
+  "usage": {
+    "input_tokens": 9505,
+    "input_tokens_details": {
+      "cache_write_tokens": 9502,
+      "cached_tokens": 0
+    },
+    "output_tokens": 417,
+    "output_tokens_details": {
+      "reasoning_tokens": 151
+    },
+    "total_tokens": 9922
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.027931",
+    "total_input_tokens": 9505,
+    "output_tokens": 417,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 9502
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-84",
+        "action": "diagnostic",
+        "sources": [
+          "eceebcde64da22c",
+          "e72c6de7f88f10a",
+          "e82ff403a9cd3fd",
+          "ebcde72de003305",
+          "ef15a2f50325f8f",
+          "eb2ddf01534df86",
+          "edc117cdf72936c",
+          "e7e364823fe14c5",
+          "e193be5cd07624b",
+          "e6109270547188e"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Birch-84 diagnostic maximizes the supported priority score: 1 × 2 = 2, at cost 2 within budget 6. Pine-84 is blocked by its region and sector; Elm-84 by its region and unverified proof; Flint-84 by false consent. Birch-84's other actions either mismatch its growth signal, lack required approval, or score lower. No required facts are missing; the exclusions reflect explicit current evidence."
+  },
+  "score": {
+    "optimum": 2,
+    "recoverable_value": 2,
+    "returned_value": 2,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T05:53:46.731753+00:00",
+  "seconds": 9.756154674993013
+}

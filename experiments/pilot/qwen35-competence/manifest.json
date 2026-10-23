@@ -1,0 +1,153 @@
+{
+  "kind": "actual_local_model_pilot",
+  "started_at": "2026-10-22T02:01:25.038519+00:00",
+  "complete": true,
+  "code_revision": "9a1d1118802478f97c01eaee9274bd6c3215753d",
+  "source_sha256": {
+    "prototype/core.py": "8b4221b3ddf514c6608f50b8029de6c72559bb7b44942e1e2309f3583d0464bf",
+    "prototype/run.py": "adb0dbf0a759fda78ea78fef4e9c98a266aee453d5b0446cf19c34c39c27430d",
+    "study/__init__.py": "ebf596b56899d66d83c6a09b7523f4f09c87192d14f5ff506db499c3397f27a1",
+    "study/contract.py": "353a712d980edb95b2034169364193de0a204a96d3dd513aa6a42826c1123506",
+    "study/dryrun.py": "b27f0a05519d473df2693e5c6ae53fd94a9e290054e3d7a0b8b2c9d333662d67",
+    "study/fixtures.py": "955093626f058aedf918fd75a5a27bb524cc0dd3bd644103b73197733f7d7e98",
+    "study/retrieval.py": "eedeec20f1a94aa78c7622644732df357b0435b51553524916b3b2e40a32b3c7",
+    "study/run.py": "b1bc3d44db40c6ddeb4e9d5d78ff4ea65b01c4aa3a3f22faf34a3c44f8090f2f",
+    "study/test_contract.py": "0bded8d0ed400e6236407f3cf23eac4ef7c73053c960b11941a60eda9be76f24"
+  },
+  "working_tree_dirty": true,
+  "dataset_manifest": {
+    "schema": "gtm-verified-events-v1",
+    "split": "pilot",
+    "worlds": 2,
+    "queries": 16,
+    "seed": 2026102201,
+    "created_at": "2026-10-22T01:58:59.913948+00:00",
+    "files": {
+      "inputs.json": "efb9ce9455284ae3eae70c420fcf73829e153bcb066418423ea6c88e2dcf3a2f",
+      "labels.json": "f0a512ce6aec8388b15af21613e2cb897ef0b3dccd8edb6d540266e01d345d69"
+    },
+    "provenance": "Original programmatically authored fictional worlds; no customer data, human annotations or model-generated fact prose.",
+    "checks": "Construction labels agree with independent Python and SQLite contract implementations; not human validation.",
+    "license": "CC-BY-4.0",
+    "scope": "Verified-event controlled experiment, not raw-document ingestion or commercial outcomes."
+  },
+  "model_config": {
+    "base_url": "http://127.0.0.1:8082/v1",
+    "model": "qwen3.5-9b-q4_k_m",
+    "max_output_tokens": 280,
+    "temperature": 0,
+    "seed": 20261022,
+    "timeout_seconds": 900,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "PlayRecommendation",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "recommend",
+                "request_evidence"
+              ]
+            },
+            "plays": {
+              "type": "array",
+              "maxItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "template": {
+                    "type": "string"
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "template",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "missing": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "status",
+            "plays",
+            "missing"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "methods": [
+    "full_context",
+    "typed"
+  ],
+  "token_cap": 900,
+  "full_context_cap": 15000,
+  "order_seed": 20261022,
+  "planned": [
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "full_context",
+      "world": "w69bf7897",
+      "attempt_id": 0
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "typed",
+      "world": "w69bf7897",
+      "attempt_id": 1
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "typed",
+      "world": "w2bcf71ae",
+      "attempt_id": 2
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "full_context",
+      "world": "w2bcf71ae",
+      "attempt_id": 3
+    }
+  ],
+  "freeze": null,
+  "scope": "Controlled fictional verified events; same model and planner; no human utility ratings or observed commercial outcomes.",
+  "runtime": {
+    "model": "qwen3.5-9b-q4_k_m",
+    "model_sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+    "repository": "unsloth/Qwen3.5-9B-GGUF",
+    "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+    "base_repository": "Qwen/Qwen3.5-9B",
+    "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "license": "Apache-2.0",
+    "llama_cpp": "a37cc46104eb50900d5ab4a9ba02a0abdac039db",
+    "threads": 4,
+    "context": 16384,
+    "parallel": 1,
+    "prompt_cache": false,
+    "enable_thinking": false,
+    "reasoning_budget": 0,
+    "vision_encoder_used": false
+  },
+  "model_sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+  "embedding_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+  "cost_methodology": "Local CPU seconds and measured tokens; API spend zero, infrastructure price/energy unavailable. Cache origin receipts preserved.",
+  "finished_at": "2026-10-22T02:06:03.503952+00:00",
+  "attempt_count": 4
+}

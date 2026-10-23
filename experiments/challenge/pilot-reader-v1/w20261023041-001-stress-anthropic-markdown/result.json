@@ -1,0 +1,98 @@
+{
+  "id": "w20261023041-001-stress-anthropic-markdown",
+  "case_id": "w20261023041-001-stress",
+  "world": "w20261023041-001",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:11:09.839101+00:00",
+  "evidence_bytes": 8073,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9997000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:11:14Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:11:22Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9996",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:11:10Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:11:14Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbQXt8XSyqa5h5ix5ig",
+  "usage": {
+    "input_tokens": 5040,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 974,
+    "output_tokens_details": {
+      "thinking_tokens": 387
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.03964",
+    "total_input_tokens": 5040,
+    "output_tokens": 974,
+    "regular_input_tokens": 5040,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Juniper-1",
+        "action": "assurance_pack",
+        "sources": [
+          "eb0376256cec50e",
+          "e20ac7142f13ede",
+          "e96293a30d31416",
+          "e238726a529d51e",
+          "e3982fa1369993a",
+          "ef7e6176cb3e904",
+          "ee78fc1a45a5db8",
+          "e5978f6e0654f4e",
+          "e7234e9362d40c8",
+          "eba9c8d9997a2cf",
+          "e403d28ed0188ec"
+        ]
+      }
+    ],
+    "missing": [
+      "Mesa-1: observed consent (true), observed initiative->need->offering->proof chain with approved verified proof, and observed signal",
+      "Delta-1, Larch-1, Grove-1, Aster-1, Kestrel-1, Harbor-1: observed profile, observed consent, approved integer priority, observed initiative chain with approved verified proof, and observed signal",
+      "offering-0: approved capacity=true would be needed for a workshop (currently approved false)"
+    ],
+    "reasoning_summary": "Only the approved seller policy (day 12) is used; the proposed policy is ignored. Juniper-1 is eligible: UK/services profile, current consent true, a fully observed chain initiative-0 -> need-0 -> offering-0 -> proof-0 with approved verified=true, a risk signal, and approved priority 9. Among risk actions, the workshop is blocked because capacity is approved false. The assurance_pack, with assurance approved true, scores the highest at 9x4=36 for a cost of 3, compared with 18 for the diagnostic and 9 for the research brief. Mesa-1 has priority 12 but lacks consent, an initiative chain and a signal, so it is blocked. The other queried accounts have no evidence. The plan uses a total cost of 3 of the budget of 8."
+  },
+  "score": {
+    "optimum": 51,
+    "recoverable_value": 36,
+    "returned_value": 36,
+    "normalized_value": 0.7058823529411765,
+    "context_normalized_value": 0.7058823529411765,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:11:22.581827+00:00",
+  "seconds": 12.742726035998203
+}

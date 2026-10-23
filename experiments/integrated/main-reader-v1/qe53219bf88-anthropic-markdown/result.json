@@ -1,0 +1,187 @@
+{
+  "id": "qe53219bf88-anthropic-markdown",
+  "case_id": "qe53219bf88",
+  "world": "w91790027",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.21052631578947367,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2043,
+  "status": "completed",
+  "started_at": "2026-10-23T01:00:07.110428+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T01:00:08Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T01:00:12Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T01:00:07Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T01:00:08Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJGGBUN3DQ1c6rtPodNv",
+  "usage": {
+    "input_tokens": 3916,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 694,
+    "output_tokens_details": {
+      "thinking_tokens": 389
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.014772",
+    "total_input_tokens": 3916,
+    "output_tokens": 694,
+    "regular_input_tokens": 3916,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S1",
+      "account.account_role:observed": "S10",
+      "account.channel_fit:observed": "S11",
+      "account.partner_status:observed": "S15",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S16",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S2",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0f03801",
+          "ef11d240",
+          "e887f030",
+          "e03366a8"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-948",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e0f03801",
+        "ef11d240"
+      ],
+      "evidence": [
+        "e03366a8",
+        "e0f03801",
+        "e887f030",
+        "ef11d240"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0f03801",
+          "ef11d240",
+          "e887f030",
+          "e03366a8"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-948",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e0f03801",
+        "ef11d240"
+      ],
+      "evidence": [
+        "e03366a8",
+        "e0f03801",
+        "e887f030",
+        "ef11d240"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 is the only candidate that matches the qualification_audit objective, and it fits the 3-unit allowance at 2 units. Its common requirements are met: the approved role (S3) matches the observed role (S10), and the approved geo (S16) matches the observed geo (S1). Partner-objective templates are not considered because their objective does not match, and the proposal S18 and hypotheses S9 and S17 do not change policy.",
+  "finished_at": "2026-10-23T01:00:12.835672+00:00",
+  "seconds": 5.725255865007057
+}

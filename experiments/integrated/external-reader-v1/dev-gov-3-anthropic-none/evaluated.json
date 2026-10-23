@@ -1,0 +1,45 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:51.490670+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEeAKYPjcVWGdzQnfMD",
+  "usage": {
+    "input_tokens": 625,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 91,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.00216",
+    "total_input_tokens": 625,
+    "output_tokens": 91,
+    "regular_input_tokens": 625,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or compiled wiki were supplied with the question (company_context is empty), so the notice period for Quarrendon to tell Pemberline in writing that it does not want the agreement to continue is not recorded.\"}",
+  "finished_at": "2026-10-23T00:38:53.165108+00:00",
+  "seconds": 1.6744495299935807,
+  "id": "dev-gov-3-anthropic-none",
+  "case_id": "dev-gov-3",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No company documents or compiled wiki were supplied with the question (company_context is empty), so the notice period for Quarrendon to tell Pemberline in writing that it does not want the agreement to continue is not recorded.",
+  "citations": []
+}

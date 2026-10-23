@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:01.199670+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEet7Vvs9BVErVEDVsR",
+  "usage": {
+    "input_tokens": 28209,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 111,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057528",
+    "total_input_tokens": 28209,
+    "output_tokens": 111,
+    "regular_input_tokens": 28209,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Ilse Varga\",\"citations\":[\"D070\",\"D092\",\"D012\"],\"explanation\":\"Dana Okafor was on leave from February 2 to March 13, 2026, and Ilse Varga acted for QFL and Tamsin during that time, while Dana remained the CRM owner. February 20 falls within that leave window.\"}",
+  "finished_at": "2026-10-23T00:39:04.255032+00:00",
+  "seconds": 3.0553502539987676,
+  "id": "dev-own-2-anthropic-wiki_generic",
+  "case_id": "dev-own-2",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Ilse Varga",
+  "explanation": "Dana Okafor was on leave from February 2 to March 13, 2026, and Ilse Varga acted for QFL and Tamsin during that time, while Dana remained the CRM owner. February 20 falls within that leave window.",
+  "citations": [
+    "D070",
+    "D092",
+    "D012"
+  ]
+}

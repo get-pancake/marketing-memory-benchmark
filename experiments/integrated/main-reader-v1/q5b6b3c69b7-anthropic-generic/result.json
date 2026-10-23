@@ -1,0 +1,203 @@
+{
+  "id": "q5b6b3c69b7-anthropic-generic",
+  "case_id": "q5b6b3c69b7",
+  "world": "wd8e8338e",
+  "arm": "generic",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1"
+    ]
+  },
+  "evidence_bytes": 1974,
+  "status": "completed",
+  "started_at": "2026-10-23T00:31:04.052111+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:31:05Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:31:06Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:31:04Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:31:05Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJE3iBiis2fr7WiquSZR",
+  "usage": {
+    "input_tokens": 3884,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 309,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.010858",
+    "total_input_tokens": 3884,
+    "output_tokens": 309,
+    "regular_input_tokens": 3884,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S10",
+      "account.channel_fit:observed": "S8",
+      "account.partner_status:observed": "S11",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S1",
+      "seller.approved_role:approved": "S13",
+      "seller.offering_pain:observed": "S14",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": "P1"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ea695cbc",
+          "e04d2eed",
+          "e8084c9e",
+          "efcaba0b",
+          "e85990e8",
+          "e6bb09df",
+          "ea9f37a4",
+          "e69b249f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e04d2eed",
+        "ea695cbc"
+      ],
+      "evidence": [
+        "e04d2eed",
+        "e69b249f",
+        "e6bb09df",
+        "e8084c9e",
+        "e85990e8",
+        "ea695cbc",
+        "ea9f37a4",
+        "efcaba0b"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ea695cbc",
+          "e04d2eed",
+          "e8084c9e",
+          "efcaba0b",
+          "e85990e8",
+          "e6bb09df",
+          "ea9f37a4",
+          "e69b249f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e04d2eed",
+        "ea695cbc"
+      ],
+      "evidence": [
+        "e04d2eed",
+        "e69b249f",
+        "e6bb09df",
+        "e8084c9e",
+        "e85990e8",
+        "ea695cbc",
+        "ea9f37a4",
+        "efcaba0b"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "Common requirements hold: approved role IT_manager (S13) equals account role (S10), and approved geo EU (S1) equals account geo (S18). P1 (2 units, within the max of 2) is satisfied by verified partner status (S11), reseller channel fit (S8), and integration pain (S14) with integration proof (S7); P3 and P2 exceed the 2-unit allowance, and P4 has a different objective.",
+  "finished_at": "2026-10-23T00:31:06.880755+00:00",
+  "seconds": 2.8286499560053926
+}

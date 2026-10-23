@@ -1,0 +1,132 @@
+{
+  "id": "w20261023042-069-stress-anthropic-gtm",
+  "case_id": "w20261023042-069-stress",
+  "world": "w20261023042-069",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:56:57.916809+00:00",
+  "evidence_bytes": 8136,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9994000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:57:00Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:57:14Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:56:58Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:57:00Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeu9E1t2wQ1rkJ4CD3c",
+  "usage": {
+    "input_tokens": 5223,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1841,
+    "output_tokens_details": {
+      "thinking_tokens": 933
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057712",
+    "total_input_tokens": 5223,
+    "output_tokens": 1841,
+    "regular_input_tokens": 5223,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-69",
+        "action": "renewal_review",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e2ec45b5cfb1fff",
+          "ec70da26c14ebc5",
+          "e2bd32fa19a0450",
+          "e6e3688b7f99417",
+          "ec9845d6cdda965",
+          "eb4856ad1caf98e",
+          "ed2a6a386fa558a",
+          "ecd1a1b500686e3",
+          "e5a0a3f011986f4"
+        ]
+      },
+      {
+        "account": "Juniper-69",
+        "action": "workshop",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e34c48186e93c58",
+          "e11485c2d451147",
+          "eb91055c897ffb5",
+          "ec6c6064a786f20",
+          "eabda94268259b4",
+          "e77f061826d525b",
+          "eea753c0cc4cf3a",
+          "e38f734c4e02cca",
+          "e40ff8fca81fdd3",
+          "e1d2cb7dbe3f2fb"
+        ]
+      },
+      {
+        "account": "North-69",
+        "action": "workshop",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e1367d36ce97029",
+          "eba090e1061bbe9",
+          "e6fbd09567cfb2a",
+          "ec04eb3ba51ae37",
+          "e2c7777dadf3a35",
+          "e9a11dc362722bf",
+          "eeb768534cb29f9",
+          "e99c28eefb1fa9b",
+          "e205b964452bd92",
+          "e8244b86fa0aef7"
+        ]
+      }
+    ],
+    "missing": [
+      "Harbor-69: need-3 has no observed offering link, so the offering, proof and verified-proof chain is missing and Harbor-69 is blocked.",
+      "Kestrel-69: no priority, profile, consent, signal or initiative chain records.",
+      "Orchid-69: no priority, profile, consent, signal or initiative chain records.",
+      "Iris-69: no priority, profile, consent, signal or initiative chain records."
+    ],
+    "reasoning_summary": "Only the approved seller policy (ec63dba1c4b63c1) was used; the proposed policy was ignored. Larch-69 (priority 10, renewal signal, full verified chain) gets renewal_review: cost 2, score 30. reference_intro is blocked because proof-5 is not shareable. Juniper-69 (priority 3, launch signal, capacity approved) gets workshop: cost 3, score 12. North-69 (priority 1, risk signal, capacity approved) gets workshop: cost 3, score 4. assurance_pack would score the same for North-69. The plan totals cost 8 against a budget of 8, for a score of 46 policy points. Grove-69 is eligible but scores lower. Harbor-69 is blocked by its incomplete chain, and Kestrel-69, Orchid-69 and Iris-69 have no evidence. These points are synthetic priorities, not expected revenue."
+  },
+  "score": {
+    "optimum": 78,
+    "recoverable_value": 46,
+    "returned_value": 46,
+    "normalized_value": 0.5897435897435898,
+    "context_normalized_value": 0.5897435897435898,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T05:57:14.315249+00:00",
+  "seconds": 16.398448353007552
+}

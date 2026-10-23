@@ -1,0 +1,281 @@
+{
+  "case_id": "w20261023042-082-constrained",
+  "world": "w20261023042-082",
+  "eligible": [
+    {
+      "account": "Elm-82",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 14,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e633492a97133a3"
+        ],
+        [
+          "e3da6d8dccf0b59"
+        ],
+        [
+          "e08f73c0fdc4295"
+        ],
+        [
+          "ecf15f6a0322b4f"
+        ],
+        [
+          "e3ecf30a42cb2bf"
+        ],
+        [
+          "e5be9b841847b57"
+        ],
+        [
+          "eae23a337943a8d"
+        ],
+        [
+          "eb8495f2b647e24"
+        ],
+        [
+          "e0fdf9f486b58f5"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-82",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 35,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e633492a97133a3"
+        ],
+        [
+          "e3da6d8dccf0b59"
+        ],
+        [
+          "e08f73c0fdc4295"
+        ],
+        [
+          "ecf15f6a0322b4f"
+        ],
+        [
+          "e3ecf30a42cb2bf"
+        ],
+        [
+          "e5be9b841847b57"
+        ],
+        [
+          "eae23a337943a8d"
+        ],
+        [
+          "eb8495f2b647e24"
+        ],
+        [
+          "ed8e381659608e4"
+        ],
+        [
+          "e0fdf9f486b58f5"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-82",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 7,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e633492a97133a3"
+        ],
+        [
+          "e3da6d8dccf0b59"
+        ],
+        [
+          "e08f73c0fdc4295"
+        ],
+        [
+          "ecf15f6a0322b4f"
+        ],
+        [
+          "e3ecf30a42cb2bf"
+        ],
+        [
+          "e5be9b841847b57"
+        ],
+        [
+          "eae23a337943a8d"
+        ],
+        [
+          "eb8495f2b647e24"
+        ],
+        [
+          "e0fdf9f486b58f5"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-82",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 22,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e11eeb4a1b6abc2"
+        ],
+        [
+          "eaa3e5c2ac589f5"
+        ],
+        [
+          "eb2b8bfb0ecae5e"
+        ],
+        [
+          "e8bad89903c32aa"
+        ],
+        [
+          "e0d7a8945e9139b"
+        ],
+        [
+          "e692ec1cd064808"
+        ],
+        [
+          "e9dc9e4c70bbaaa"
+        ],
+        [
+          "e00896e0f4c943d"
+        ],
+        [
+          "e4ed7260de1b907"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-82",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 11,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e11eeb4a1b6abc2"
+        ],
+        [
+          "eaa3e5c2ac589f5"
+        ],
+        [
+          "eb2b8bfb0ecae5e"
+        ],
+        [
+          "e8bad89903c32aa"
+        ],
+        [
+          "e0d7a8945e9139b"
+        ],
+        [
+          "e692ec1cd064808"
+        ],
+        [
+          "e9dc9e4c70bbaaa"
+        ],
+        [
+          "e00896e0f4c943d"
+        ],
+        [
+          "e4ed7260de1b907"
+        ]
+      ]
+    }
+  ],
+  "optimum": 57,
+  "reference_plan": [
+    {
+      "account": "Elm-82",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 35,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e633492a97133a3"
+        ],
+        [
+          "e3da6d8dccf0b59"
+        ],
+        [
+          "e08f73c0fdc4295"
+        ],
+        [
+          "ecf15f6a0322b4f"
+        ],
+        [
+          "e3ecf30a42cb2bf"
+        ],
+        [
+          "e5be9b841847b57"
+        ],
+        [
+          "eae23a337943a8d"
+        ],
+        [
+          "eb8495f2b647e24"
+        ],
+        [
+          "ed8e381659608e4"
+        ],
+        [
+          "e0fdf9f486b58f5"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-82",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 22,
+      "support_groups": [
+        [
+          "e68e14bd706c869"
+        ],
+        [
+          "e11eeb4a1b6abc2"
+        ],
+        [
+          "eaa3e5c2ac589f5"
+        ],
+        [
+          "eb2b8bfb0ecae5e"
+        ],
+        [
+          "e8bad89903c32aa"
+        ],
+        [
+          "e0d7a8945e9139b"
+        ],
+        [
+          "e692ec1cd064808"
+        ],
+        [
+          "e9dc9e4c70bbaaa"
+        ],
+        [
+          "e00896e0f4c943d"
+        ],
+        [
+          "e4ed7260de1b907"
+        ]
+      ]
+    }
+  ]
+}

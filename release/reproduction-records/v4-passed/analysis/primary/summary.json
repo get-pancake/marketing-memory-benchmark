@@ -1,0 +1,830 @@
+{
+  "schema": "study-analysis-v1",
+  "analyzed_at": "2026-10-23T01:27:09.222901+00:00",
+  "run": "experiments/main/primary",
+  "dataset": "data/study/main-v1",
+  "source_run_complete": true,
+  "planned_attempts": 576,
+  "recorded_terminal_attempts": 576,
+  "model_calls_started": 494,
+  "reused_identical_requests": 82,
+  "physical_calls_with_unknown_usage": 0,
+  "physical_generation_seconds": 20963.47653519,
+  "physical_input_tokens": 605210,
+  "physical_output_tokens": 88672,
+  "cost_accounting_note": "Per-method token and generation-time totals charge the observed origin call for identical-request reuse. Physical calls/tokens/time are reported separately; a reused response is not fresh inference. Missing usage is unknown, not proof of zero compute.",
+  "methods": {
+    "generic_hybrid": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 96,
+      "reused_requests": 0,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.5,
+      "primary_world_ci95": [
+        0.4791666666666667,
+        0.5208333333333334
+      ],
+      "applicable_choice": 0.5104166666666666,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.041666666666666664,
+      "positive_support_available": 0.10416666666666667,
+      "inappropriate_abstention": 0.8958333333333334,
+      "correct_negative_withhold": 0.9583333333333334,
+      "negative_recommendations": 0.041666666666666664,
+      "positive_dry_run_completion": 0.041666666666666664,
+      "input_tokens": 97421,
+      "output_tokens": 19236,
+      "generation_seconds": 3612.755070905014,
+      "retrieval_seconds": 27.149200899984862,
+      "generation_p50_seconds": 37.456248788001176,
+      "generation_p95_seconds": 42.88702249675134,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 4,
+        "misbound_support": 3,
+        "incomplete_support": 1
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 1
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 12
+        },
+        "initial": {
+          "n": 12,
+          "correct": 1
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 0
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 12
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 10
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 12
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 0
+        }
+      }
+    },
+    "prompt_hybrid": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 83,
+      "reused_requests": 13,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.4166666666666667,
+      "primary_world_ci95": [
+        0.3645833333333333,
+        0.46875
+      ],
+      "applicable_choice": 0.4895833333333333,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 0.041666666666666664,
+      "inappropriate_abstention": 0.7291666666666666,
+      "correct_negative_withhold": 0.8333333333333334,
+      "negative_recommendations": 0.16666666666666666,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 97251,
+      "output_tokens": 18137,
+      "generation_seconds": 3552.8900073319983,
+      "retrieval_seconds": 19.921160321006028,
+      "generation_p50_seconds": 36.5807250450016,
+      "generation_p95_seconds": 42.64754967375029,
+      "truncations": 0,
+      "violations": {
+        "misbound_support": 17,
+        "incomplete_support": 7,
+        "irrelevant_citation": 4,
+        "inapplicable_template": 14
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 0
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 9
+        },
+        "initial": {
+          "n": 12,
+          "correct": 0
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 0
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 10
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 9
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 12
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 0
+        }
+      }
+    },
+    "full_context": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 96,
+      "reused_requests": 0,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.5625,
+      "primary_world_ci95": [
+        0.4895833333333333,
+        0.6354166666666666
+      ],
+      "applicable_choice": 0.5833333333333334,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.5208333333333334,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.125,
+      "correct_negative_withhold": 0.6041666666666666,
+      "negative_recommendations": 0.3958333333333333,
+      "positive_dry_run_completion": 0.5208333333333334,
+      "input_tokens": 201463,
+      "output_tokens": 16068,
+      "generation_seconds": 6556.754064668001,
+      "retrieval_seconds": 0.7241982859777636,
+      "generation_p50_seconds": 67.1301216289985,
+      "generation_p95_seconds": 93.32832622925162,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 34,
+        "misbound_support": 6,
+        "incomplete_support": 2,
+        "irrelevant_citation": 1
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 5
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 8
+        },
+        "initial": {
+          "n": 12,
+          "correct": 8
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 8
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 11
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 9
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 4
+        }
+      }
+    },
+    "typed": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 68,
+      "reused_requests": 28,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.5520833333333334,
+      "primary_world_ci95": [
+        0.4479166666666667,
+        0.6666666666666666
+      ],
+      "applicable_choice": 0.5625,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.4375,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.2708333333333333,
+      "correct_negative_withhold": 0.6666666666666666,
+      "negative_recommendations": 0.3333333333333333,
+      "positive_dry_run_completion": 0.4375,
+      "input_tokens": 97502,
+      "output_tokens": 16157,
+      "generation_seconds": 3339.075149050981,
+      "retrieval_seconds": 12.545693272029894,
+      "generation_p50_seconds": 34.026035350500024,
+      "generation_p95_seconds": 40.76845216649963,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 29,
+        "misbound_support": 3,
+        "incomplete_support": 1,
+        "irrelevant_citation": 1
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 7
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 10
+        },
+        "initial": {
+          "n": 12,
+          "correct": 8
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 0
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 11
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 3
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 8
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    "typed_history": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 70,
+      "reused_requests": 26,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.3125,
+      "primary_world_ci95": [
+        0.23958333333333334,
+        0.3854166666666667
+      ],
+      "applicable_choice": 0.3645833333333333,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.3541666666666667,
+      "positive_support_available": 0.7083333333333334,
+      "inappropriate_abstention": 0.2916666666666667,
+      "correct_negative_withhold": 0.2708333333333333,
+      "negative_recommendations": 0.7291666666666666,
+      "positive_dry_run_completion": 0.3541666666666667,
+      "input_tokens": 97526,
+      "output_tokens": 15970,
+      "generation_seconds": 3287.5438928440017,
+      "retrieval_seconds": 19.099825137998778,
+      "generation_p50_seconds": 33.48470831600116,
+      "generation_p95_seconds": 38.97402899700137,
+      "truncations": 0,
+      "violations": {
+        "obsolete_or_ineligible_citation": 32,
+        "incomplete_support": 5,
+        "irrelevant_citation": 5,
+        "inapplicable_template": 47,
+        "misbound_support": 3
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 3
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 1
+        },
+        "initial": {
+          "n": 12,
+          "correct": 8
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 0
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 2
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 2
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 8
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    "facet_hybrid": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 81,
+      "reused_requests": 15,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.3541666666666667,
+      "primary_world_ci95": [
+        0.2708333333333333,
+        0.4270833333333333
+      ],
+      "applicable_choice": 0.4583333333333333,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 0.10416666666666667,
+      "inappropriate_abstention": 0.6666666666666666,
+      "correct_negative_withhold": 0.7083333333333334,
+      "negative_recommendations": 0.2916666666666667,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 97182,
+      "output_tokens": 17256,
+      "generation_seconds": 3435.6160429439824,
+      "retrieval_seconds": 16.61681687503369,
+      "generation_p50_seconds": 35.638383294999585,
+      "generation_p95_seconds": 41.67770142650079,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 20,
+        "misbound_support": 26,
+        "incomplete_support": 10,
+        "irrelevant_citation": 5
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 0
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 10
+        },
+        "initial": {
+          "n": 12,
+          "correct": 0
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 0
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 10
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 6
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 8
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "typed minus prompt_hybrid": {
+      "mean": 0.13541666666666666,
+      "ci95": [
+        0.0,
+        0.28125
+      ],
+      "world_differences": {
+        "w5e59e4e5": 0.375,
+        "wbf8849ab": -0.375,
+        "wfc5d07df": -0.125,
+        "wf579faf9": 0.125,
+        "w692891c2": 0.25,
+        "wd6c72d6a": 0.625,
+        "w0b261e4e": 0.125,
+        "w928ad8c3": -0.125,
+        "wb34037eb": 0.5,
+        "w5f803d84": 0.25,
+        "wb3a4ee1b": 0.0,
+        "w3d45ea82": 0.0
+      },
+      "sd": 0.2843370146125683,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "typed minus facet_hybrid": {
+      "mean": 0.19791666666666666,
+      "ci95": [
+        0.041666666666666664,
+        0.3854166666666667
+      ],
+      "world_differences": {
+        "w5e59e4e5": 0.375,
+        "wbf8849ab": -0.375,
+        "wfc5d07df": -0.25,
+        "wf579faf9": 0.25,
+        "w692891c2": 0.25,
+        "wd6c72d6a": 0.875,
+        "w0b261e4e": 0.125,
+        "w928ad8c3": -0.125,
+        "wb34037eb": 0.625,
+        "w5f803d84": 0.375,
+        "wb3a4ee1b": 0.125,
+        "w3d45ea82": 0.125
+      },
+      "sd": 0.3513704231184296,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "prompt_hybrid minus generic_hybrid": {
+      "mean": -0.08333333333333333,
+      "ci95": [
+        -0.15625,
+        -0.010416666666666666
+      ],
+      "world_differences": {
+        "wb34037eb": -0.25,
+        "wd6c72d6a": -0.25,
+        "wb3a4ee1b": 0.0,
+        "w692891c2": 0.0,
+        "w0b261e4e": 0.0,
+        "wfc5d07df": -0.25,
+        "w5f803d84": 0.0,
+        "w5e59e4e5": -0.25,
+        "wbf8849ab": 0.125,
+        "w3d45ea82": -0.125,
+        "w928ad8c3": 0.0,
+        "wf579faf9": 0.0
+      },
+      "sd": 0.13413584249716495,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "typed minus typed_history": {
+      "mean": 0.23958333333333334,
+      "ci95": [
+        0.17708333333333334,
+        0.3125
+      ],
+      "world_differences": {
+        "w5e59e4e5": 0.25,
+        "wbf8849ab": 0.0,
+        "wfc5d07df": 0.125,
+        "wf579faf9": 0.125,
+        "w692891c2": 0.125,
+        "wd6c72d6a": 0.5,
+        "w0b261e4e": 0.375,
+        "w928ad8c3": 0.25,
+        "wb34037eb": 0.25,
+        "w5f803d84": 0.375,
+        "wb3a4ee1b": 0.25,
+        "w3d45ea82": 0.25
+      },
+      "sd": 0.13545308368135395,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "full_context minus typed": {
+      "mean": 0.010416666666666666,
+      "ci95": [
+        -0.11458333333333333,
+        0.13541666666666666
+      ],
+      "world_differences": {
+        "wfc5d07df": 0.125,
+        "wf579faf9": -0.125,
+        "w0b261e4e": -0.125,
+        "wbf8849ab": 0.5,
+        "wd6c72d6a": -0.25,
+        "w5e59e4e5": 0.0,
+        "wb34037eb": -0.25,
+        "w692891c2": -0.125,
+        "w3d45ea82": 0.125,
+        "w5f803d84": -0.25,
+        "wb3a4ee1b": 0.375,
+        "w928ad8c3": 0.125
+      },
+      "sd": 0.24690316774481497,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    }
+  },
+  "world_means": {
+    "generic_hybrid": {
+      "wfc5d07df": 0.5,
+      "wbf8849ab": 0.375,
+      "w928ad8c3": 0.5,
+      "wf579faf9": 0.5,
+      "w5e59e4e5": 0.625,
+      "wd6c72d6a": 0.5,
+      "w0b261e4e": 0.5,
+      "w3d45ea82": 0.5,
+      "w692891c2": 0.5,
+      "wb34037eb": 0.5,
+      "w5f803d84": 0.5,
+      "wb3a4ee1b": 0.5
+    },
+    "prompt_hybrid": {
+      "wb34037eb": 0.25,
+      "wd6c72d6a": 0.25,
+      "wb3a4ee1b": 0.5,
+      "w692891c2": 0.5,
+      "w0b261e4e": 0.5,
+      "wfc5d07df": 0.25,
+      "w5f803d84": 0.5,
+      "w5e59e4e5": 0.375,
+      "wbf8849ab": 0.5,
+      "w3d45ea82": 0.375,
+      "w928ad8c3": 0.5,
+      "wf579faf9": 0.5
+    },
+    "full_context": {
+      "wfc5d07df": 0.25,
+      "wf579faf9": 0.5,
+      "w0b261e4e": 0.5,
+      "wbf8849ab": 0.625,
+      "wd6c72d6a": 0.625,
+      "w5e59e4e5": 0.75,
+      "wb34037eb": 0.5,
+      "w692891c2": 0.625,
+      "w3d45ea82": 0.5,
+      "w5f803d84": 0.5,
+      "wb3a4ee1b": 0.875,
+      "w928ad8c3": 0.5
+    },
+    "typed": {
+      "w5e59e4e5": 0.75,
+      "wbf8849ab": 0.125,
+      "wfc5d07df": 0.125,
+      "wf579faf9": 0.625,
+      "w692891c2": 0.75,
+      "wd6c72d6a": 0.875,
+      "w0b261e4e": 0.625,
+      "w928ad8c3": 0.375,
+      "wb34037eb": 0.75,
+      "w5f803d84": 0.75,
+      "wb3a4ee1b": 0.5,
+      "w3d45ea82": 0.375
+    },
+    "typed_history": {
+      "w692891c2": 0.625,
+      "wd6c72d6a": 0.375,
+      "wb34037eb": 0.5,
+      "w3d45ea82": 0.125,
+      "wbf8849ab": 0.125,
+      "w5e59e4e5": 0.5,
+      "wfc5d07df": 0,
+      "w0b261e4e": 0.25,
+      "w928ad8c3": 0.125,
+      "wb3a4ee1b": 0.25,
+      "wf579faf9": 0.5,
+      "w5f803d84": 0.375
+    },
+    "facet_hybrid": {
+      "w3d45ea82": 0.25,
+      "wb3a4ee1b": 0.375,
+      "wf579faf9": 0.375,
+      "w692891c2": 0.5,
+      "w5e59e4e5": 0.375,
+      "wbf8849ab": 0.5,
+      "wd6c72d6a": 0,
+      "w5f803d84": 0.375,
+      "wfc5d07df": 0.375,
+      "w928ad8c3": 0.5,
+      "wb34037eb": 0.125,
+      "w0b261e4e": 0.5
+    }
+  },
+  "transitions": {
+    "generic_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 1,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 10,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 1,
+        "correct_both": 1,
+        "unconditional_joint": 0.08333333333333333,
+        "conditional_preservation_or_refresh": 1.0
+      }
+    },
+    "prompt_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 9,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "full_context": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 8,
+        "correct_both": 4,
+        "unconditional_joint": 0.3333333333333333,
+        "conditional_preservation_or_refresh": 0.5
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 4,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 1,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 5,
+        "correct_both": 2,
+        "unconditional_joint": 0.16666666666666666,
+        "conditional_preservation_or_refresh": 0.4
+      }
+    },
+    "typed": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 8,
+        "correct_both": 6,
+        "unconditional_joint": 0.5,
+        "conditional_preservation_or_refresh": 0.75
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 6,
+        "correct_both": 1,
+        "unconditional_joint": 0.08333333333333333,
+        "conditional_preservation_or_refresh": 0.16666666666666666
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 3,
+        "correct_both": 2,
+        "unconditional_joint": 0.16666666666666666,
+        "conditional_preservation_or_refresh": 0.6666666666666666
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 7,
+        "correct_both": 7,
+        "unconditional_joint": 0.5833333333333334,
+        "conditional_preservation_or_refresh": 1.0
+      }
+    },
+    "typed_history": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 8,
+        "correct_both": 6,
+        "unconditional_joint": 0.5,
+        "conditional_preservation_or_refresh": 0.75
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 6,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 2,
+        "correct_both": 1,
+        "unconditional_joint": 0.08333333333333333,
+        "conditional_preservation_or_refresh": 0.5
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 3,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      }
+    },
+    "facet_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 6,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": null
+      }
+    }
+  },
+  "unique_embedding_origin_seconds": {
+    "event": 35.01532425498772,
+    "query": 6.748974347998228
+  },
+  "embedding_cost_note": "Unique observed cache origins across this run, counted once; common reusable index cost, not a per-method cache-order advantage. Infrastructure dollars/energy unknown.",
+  "uncertainty_note": "Conditional on fictional generator/families and tested model. World bootstrap does not represent commercial-population uncertainty. Fewer than six worlds: descriptive pilot, CI suppressed. Degenerate bootstrap intervals are not guarantees.",
+  "analysis_sha256": "3dce30df983ae0face1d8916a279a61f6a2218d105c5142c7830956f66f63ad2"
+}

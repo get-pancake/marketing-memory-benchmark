@@ -1,0 +1,120 @@
+{
+  "id": "w20261023042-069-stress-openai-gtm",
+  "case_id": "w20261023042-069-stress",
+  "world": "w20261023042-069",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T06:06:11.054370+00:00",
+  "evidence_bytes": 8136,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999266",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "1ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c2a2bd0a066f28a016adaf953eee487d1929bbae101fab0ed",
+  "usage": {
+    "input_tokens": 3296,
+    "input_tokens_details": {
+      "cache_write_tokens": 3293,
+      "cached_tokens": 0
+    },
+    "output_tokens": 877,
+    "output_tokens_details": {
+      "reasoning_tokens": 171
+    },
+    "total_tokens": 4173
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0170085",
+    "total_input_tokens": 3296,
+    "output_tokens": 877,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3293
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-69",
+        "action": "renewal_review",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e2ec45b5cfb1fff",
+          "ec70da26c14ebc5",
+          "e2bd32fa19a0450",
+          "e6e3688b7f99417",
+          "ec9845d6cdda965",
+          "eb4856ad1caf98e",
+          "ed2a6a386fa558a",
+          "ecd1a1b500686e3",
+          "e5a0a3f011986f4"
+        ]
+      },
+      {
+        "account": "Juniper-69",
+        "action": "workshop",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e34c48186e93c58",
+          "e11485c2d451147",
+          "eb91055c897ffb5",
+          "ec6c6064a786f20",
+          "eabda94268259b4",
+          "e77f061826d525b",
+          "eea753c0cc4cf3a",
+          "e38f734c4e02cca",
+          "e40ff8fca81fdd3",
+          "e1d2cb7dbe3f2fb"
+        ]
+      },
+      {
+        "account": "North-69",
+        "action": "workshop",
+        "sources": [
+          "ec63dba1c4b63c1",
+          "e1367d36ce97029",
+          "eba090e1061bbe9",
+          "e6fbd09567cfb2a",
+          "ec04eb3ba51ae37",
+          "e2c7777dadf3a35",
+          "e9a11dc362722bf",
+          "eeb768534cb29f9",
+          "e99c28eefb1fa9b",
+          "e205b964452bd92",
+          "e8244b86fa0aef7"
+        ]
+      }
+    ],
+    "missing": [
+      "Harbor-69: supply an observed offering link from need-3, an observed proof link from that offering, and approved true verification for that proof. Workshop additionally requires approved true offering capacity.",
+      "Kestrel-69, Orchid-69 and Iris-69: supply approved integer priorities; observed profiles, true consent, signals, and complete initiative-to-need-to-offering-to-proof chains; and approved true proof verification. Any action-specific capacity, assurance or shareability must also be approved true."
+    ],
+    "reasoning_summary": "The maximum supported score is 46 synthetic priority points: Larch-69 renewal_review contributes 30 at cost 2, Juniper-69 workshop contributes 12 at cost 3, and North-69 workshop contributes 4 at cost 3. Total cost is 8 across three distinct accounts. North-69 assurance_pack is an equally optimal alternative. The approved seller policy governs; the proposed policy does not. Incomplete evidence blocks only the affected accounts."
+  },
+  "score": {
+    "optimum": 78,
+    "recoverable_value": 46,
+    "returned_value": 46,
+    "normalized_value": 0.5897435897435898,
+    "context_normalized_value": 0.5897435897435898,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T06:06:27.213330+00:00",
+  "seconds": 16.15896861399233
+}

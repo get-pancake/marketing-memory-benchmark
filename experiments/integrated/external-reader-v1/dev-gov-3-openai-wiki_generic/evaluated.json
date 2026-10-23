@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:02.858167+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_031101e118ba2448016adaace3373087d1af6149bbf8bc6077",
+  "usage": {
+    "input_tokens": 17593,
+    "input_tokens_details": {
+      "cache_write_tokens": 17590,
+      "cached_tokens": 0
+    },
+    "output_tokens": 48,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17641
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044461",
+    "total_input_tokens": 17593,
+    "output_tokens": 48,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17590
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"Quarrendon\u2019s MSA requires written notice of noncontinuation at least 120 calendar days before the period ends.\"}",
+  "finished_at": "2026-10-23T00:40:06.150083+00:00",
+  "seconds": 3.2919301980000455,
+  "id": "dev-gov-3-openai-wiki_generic",
+  "case_id": "dev-gov-3",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "Quarrendon\u2019s MSA requires written notice of noncontinuation at least 120 calendar days before the period ends.",
+  "citations": [
+    "D028"
+  ]
+}

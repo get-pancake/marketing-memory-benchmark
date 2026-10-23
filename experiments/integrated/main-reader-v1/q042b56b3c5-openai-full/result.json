@@ -1,0 +1,116 @@
+{
+  "id": "q042b56b3c5-openai-full",
+  "case_id": "q042b56b3c5",
+  "world": "we6155369",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.36363636363636365,
+    "selected_sources": 22,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2414,
+  "status": "completed",
+  "started_at": "2026-10-23T00:44:18.530787+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999906",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0eb7e1c249967b9f016adaade2cedc87d1b8008d06764ec30c",
+  "usage": {
+    "input_tokens": 2194,
+    "input_tokens_details": {
+      "cache_write_tokens": 1032,
+      "cached_tokens": 1159
+    },
+    "output_tokens": 236,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2430
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0050619",
+    "total_input_tokens": 2194,
+    "output_tokens": 236,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1159,
+    "cache_write_tokens": 1032
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence of current account certification=ISO27001; S5 records certification=withdrawn.",
+      "For P4 only, account.procurement_stage:observed=approved."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S9",
+      "account.account_role:observed": "S10",
+      "account.certification:observed": "S5",
+      "account.observed_signal:observed": "S20",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": "S12",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S15"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence of current account certification=ISO27001; S5 records certification=withdrawn.",
+      "For P4 only, account.procurement_stage:observed=approved."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence of current account certification=ISO27001; S5 records certification=withdrawn.",
+      "For P4 only, account.procurement_stage:observed=approved."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The approved role and geography match the account, and the compliance signal, offering pain and proof are supported (S12, S10, S3, S9, S20, S4, S15). However, S5 records the certification as withdrawn, so P1, P2 and P4 fail their ISO27001 prerequisite; P3 does not match the compliance objective.",
+  "finished_at": "2026-10-23T00:44:23.576981+00:00",
+  "seconds": 5.046204283993575
+}

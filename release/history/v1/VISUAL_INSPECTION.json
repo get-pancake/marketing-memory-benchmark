@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "created_at": "2026-10-22T12:52:50.861878+00:00",
+  "reviewer": "Research assistant; not independent human review",
+  "scope": "Every delivered PDF page inspected for layout, legibility, clipping, overlap, figure/table placement and citation rendering. Numerical/prose interpretation was checked against saved analyses separately. This is not peer review.",
+  "renderer": "pdftoppm version 26.05.0",
+  "raster_dpi": 96,
+  "documents": {
+    "paper/report.pdf": {
+      "pdf_sha256": "b07c17a21f9ec6771df2decd740e4db25f48fd9edb5626b9e28b24d4d1302635",
+      "pages": 18,
+      "checked_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "rendered_page_sha256": {
+        "1": "54814756ef5271f4c7a3427ab8f70e30faba6f33af3c15a8e88438cd398605a7",
+        "2": "963af06d0b2021c93c4e885c121a1b752381f90744d005cc21f637aca9af768b",
+        "3": "e859aaafc1e940914c01fe2e7bd12c6e743d14b8bf2592a45a441d8713928bf3",
+        "4": "d9e17d92f20ed53e44fe4186b1996c7d9aac39174685e682c49a0fe26c24a6fd",
+        "5": "b075c07dc974705b98f992897118e7318ecf8aedb43e647a0bd4a110402638e8",
+        "6": "9c565961c2420752689fc81eb72fee3dae139dba59dad6435f7bb0eb93551e58",
+        "7": "4e0037a9c257dbdb2674f6086498e7815e869c2f7a3e06436bffdcfe06b5e869",
+        "8": "9d5fdf2bcf48ee465a0a6ca37326f55605401c7eea04557102020e2d9fae5136",
+        "9": "469f661498912af98641793e46ec8798acad4682d1703b87183cda4234ad13aa",
+        "10": "fd020d5f7eb2c31cc00d643c45ab502d2c7cfb2141a39a67f3a3fb415992f42e",
+        "11": "a0ddff14c2c30ed76a30cefaa63e15745ddccb6dc0274b184b9361acffec7984",
+        "12": "98b3efbc216b988857b1986ab61c59897814cb701bc2474fb423ba89d0a67b6c",
+        "13": "6f0d2d249e9ac2016ee54cbcb4f72c35223e5e5a14df0f2f485edbe0ea28b1fb",
+        "14": "d1eed5f213d067e350e862cd25d4f7d8c92f4755eb1970c3a2a1a9c924a002a7",
+        "15": "a8a73899a060f9fc28a4cbb3e3eb615ccfcf33f5cfe5e31619f02f07ccefdf69",
+        "16": "4f8c74aede5ab41b35a4cb657fa551368229cbb7b22ba3e4f1a255975f920aa0",
+        "17": "f06e89ebdf23e1c5bfe281670dea2ed23cadbe25a9e5dbc6d121265a7bfca8ff",
+        "18": "2e15791a30ca38d68c265d0782f94cd8e5415b3c7879e3626c99bd9577227667"
+      },
+      "observations": "Readable text and vector figures/tables; no clipping or overlapping elements found. References and page numbering render correctly.",
+      "inspection_detail": "Final pages7\u201318 viewed directly. Pages1\u20136 were viewed in the preceding render and verified byte-identical to the final raster images. Long diagnostic paths wrap, and the isolated one-word continuation was removed. Final TeX log has no overfull, underfull or unresolved-reference warnings."
+    },
+    "paper/investor-note.pdf": {
+      "pdf_sha256": "58158a708a48717b4e8696f1e49fa7853e20be2de0950ed68a610c831615f58e",
+      "pages": 2,
+      "checked_pages": [
+        1,
+        2
+      ],
+      "rendered_page_sha256": {
+        "1": "c7c1978f01fe0f37f2d0e9293b310749d5a3d7dabcbf5049b863e2a29620441f",
+        "2": "3ff477ce0edca02aa6459035c408d2a7f84d5e048748df22d4cf042ffca37343"
+      },
+      "observations": "Readable text and vector figures/tables; no clipping or overlapping elements found. References and page numbering render correctly.",
+      "inspection_detail": "Both pages viewed directly; deliberate pagebreak produces exactly two readable pages with no overflow."
+    }
+  }
+}

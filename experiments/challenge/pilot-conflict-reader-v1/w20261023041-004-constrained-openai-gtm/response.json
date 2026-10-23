@@ -1,0 +1,160 @@
+{
+  "id": "resp_06d80c45cb96e54f016adaef5393f487d1923c1996d7837d8f",
+  "object": "response",
+  "created_at": 1792733011,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792733017,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_06d80c45cb96e54f016adaef551a3c87d1a6edce19d50c809e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Pine-4: current observed consent must be true; supplied consent is false.\",\n    \"Kestrel-4: current observed consent must be true, and its profile region must be allowed by approved policy; supplied consent is false and US is not allowed.\",\n    \"Mesa-4: current observed consent must be true and proof-2 must have approved verified=true; supplied values are false.\",\n    \"Birch-4: current observed consent must be true and its sector must not be blocked; supplied consent is false and its sector is restricted.\",\n    \"Flint-4: resolve the conflicting current observed consent records (e49a27421442716 and ec656ee278dd149); eligibility requires unambiguous true consent.\",\n    \"Aster-4: resolve the conflicting current observed consent records (e319fde60173480 and e519ca15281cb77), and establish eligibility under the approved sector policy; its supplied sector is restricted.\"\n  ],\n  \"reasoning_summary\": \"No action is eligible for any queried account, so the supported plan is empty with cost and priority score both zero. Every account fails consent requirements; additional region, sector, or proof-verification blockers apply as listed. Later consent timestamps do not override conflicting current records, and the proposed policy is not approved evidence.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Pine-4",
+                    "Kestrel-4",
+                    "Mesa-4",
+                    "Birch-4",
+                    "Flint-4",
+                    "Aster-4"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4503,
+    "input_tokens_details": {
+      "cache_write_tokens": 4500,
+      "cached_tokens": 0
+    },
+    "output_tokens": 287,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4790
+  },
+  "user": null,
+  "metadata": {}
+}

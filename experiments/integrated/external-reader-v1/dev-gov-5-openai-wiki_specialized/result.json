@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:26.288477+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0bfa435ef501c546016adaacbed8fc87d1ad472bfdf61af584",
+  "usage": {
+    "input_tokens": 16152,
+    "input_tokens_details": {
+      "cache_write_tokens": 16149,
+      "cached_tokens": 0
+    },
+    "output_tokens": 54,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16206
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0409185",
+    "total_input_tokens": 16152,
+    "output_tokens": 54,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16149
+  },
+  "text": "{\"answer\":\"14\",\"citations\":[\"D037\",\"D031\"],\"explanation\":\"Tansley Parcel\u2019s renewal effective February 1, 2026 carries forward the 14% discount established by its executed amendment.\"}",
+  "finished_at": "2026-10-23T00:39:28.922692+00:00",
+  "seconds": 2.634225581990904
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/tmp/marketing-companion-clean-v2-attempt1/benchmarks/gbrain/analyze.py", line 120, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/tmp/marketing-companion-clean-v2-attempt1/benchmarks/gbrain/analyze.py", line 75, in main
+    evidence,receipt=retrieve(w['events'],q,w['catalog'],name,resources,cap)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/marketing-companion-clean-v2-attempt1/study/retrieval.py", line 227, in retrieve
+    if resources.tokens(messages(q,catalog,selected,method))>token_cap:raise ValueError('instructions exceed cap')
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/marketing-companion-clean-v2-attempt1/benchmarks/gbrain/analyze.py", line 41, in recorded_tokens
+    count=receipt['counts'][key]
+          ~~~~~~~^^^^^^^^^^
+KeyError: 'counts'

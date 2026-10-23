@@ -1,0 +1,98 @@
+{
+  "id": "w20261023042-001-accessible-anthropic-company",
+  "case_id": "w20261023042-001-accessible",
+  "world": "w20261023042-001",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:59:02.711742+00:00",
+  "evidence_bytes": 16370,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:59:04Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:59:11Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:59:03Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:59:04Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJf4L2uSL7n5WoUivT4N",
+  "usage": {
+    "input_tokens": 8862,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 850,
+    "output_tokens_details": {
+      "thinking_tokens": 318
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.052448",
+    "total_input_tokens": 8862,
+    "output_tokens": 850,
+    "regular_input_tokens": 8862,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Cedar-1",
+        "action": "diagnostic",
+        "sources": [
+          "e5a93ca24ab2f18",
+          "e306a126525b9d0",
+          "e6f0918cc0fd572",
+          "e5129529dc94c2f",
+          "e3d07ceca7620a5",
+          "e6d2ef5300a19d9",
+          "ed3833315653da1",
+          "ec494ea648ecb6f",
+          "edcc81b611ce1ff",
+          "e10c3bac3f096d9"
+        ]
+      }
+    ],
+    "missing": [
+      "Kestrel-1: current observed consent is false; the initiative-2 need/offering/proof chain is also absent",
+      "Larch-1: needs an allowed region and a non-blocked sector (profile is DE/restricted)",
+      "Harbor-1: needs an allowed region and a non-blocked sector (profile is DE/restricted)",
+      "Cedar-1: reference_intro would need proof-0 approved shareable=true (currently false)"
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) governs; the proposed policy is ignored. Cedar-1 (FR/services, consent true, growth signal, verified proof-0 chain, approved priority 3) is eligible for diagnostic (3x2=6, cost 2) or research_brief (3x1=3). reference_intro is blocked because the proof is not shareable, and assurance_pack and workshop do not match the growth signal. Larch-1 and Harbor-1 are blocked by region DE and the restricted sector. Kestrel-1 is blocked by consent=false and a missing chain. Best plan: Cedar-1 diagnostic, score 6, cost 2 within budget 6."
+  },
+  "score": {
+    "optimum": 6,
+    "recoverable_value": 6,
+    "returned_value": 6,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T05:59:11.375990+00:00",
+  "seconds": 8.664258418997633
+}

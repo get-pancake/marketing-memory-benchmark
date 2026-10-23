@@ -1,0 +1,107 @@
+{
+  "id": "qc52631eebd-openai-gbrain_specialized",
+  "case_id": "qc52631eebd",
+  "world": "w102aef1b",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 6,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 6,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2048,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:21.200094+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_022ffaee2cf2be29016adaa4854f5487d1b410ba8a1ad3d0e3",
+  "usage": {
+    "input_tokens": 1127,
+    "input_tokens_details": {
+      "cache_write_tokens": 1124,
+      "cached_tokens": 0
+    },
+    "output_tokens": 204,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1331
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.004856",
+    "total_input_tokens": 1127,
+    "output_tokens": 204,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1124
+  },
+  "raw_output": {
+    "missing": [
+      "Observed seller.proof_for_pain=integration is required for P1, P3, and P4.",
+      "Observed account.procurement_stage=approved is additionally required for P3."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S6",
+      "account.observed_signal:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S3",
+      "seller.approved_role:approved": "S18",
+      "seller.offering_pain:observed": "S5",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Observed seller.proof_for_pain=integration is required for P1, P3, and P4.",
+      "Observed account.procurement_stage=approved is additionally required for P3."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Observed seller.proof_for_pain=integration is required for P1, P3, and P4.",
+      "Observed account.procurement_stage=approved is additionally required for P3."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Approved role and geography match the account observations (S18, S6, S3, S17), and the migration signal and integration offering pain are supported (S14, S5). No supplied source establishes integration proof, blocking all migration candidates; P2 does not match the requested objective.",
+  "finished_at": "2026-10-23T00:04:25.602663+00:00",
+  "seconds": 4.402580337002291
+}

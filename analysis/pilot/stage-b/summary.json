@@ -1,0 +1,561 @@
+{
+  "schema": "study-analysis-v1",
+  "analyzed_at": "2026-10-22T03:28:05.214884+00:00",
+  "run": "experiments/pilot/stage-b",
+  "dataset": "data/study/pilot-v5",
+  "source_run_complete": true,
+  "planned_attempts": 48,
+  "recorded_terminal_attempts": 48,
+  "model_calls_started": 48,
+  "methods": {
+    "typed_history": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.625,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.625,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.5,
+      "positive_support_available": 0.5,
+      "inappropriate_abstention": 0.5,
+      "correct_negative_withhold": 0.75,
+      "negative_recommendations": 0.25,
+      "positive_dry_run_completion": 0.5,
+      "input_tokens": 8095,
+      "output_tokens": 1267,
+      "generation_seconds": 264.345219316001,
+      "retrieval_seconds": 0.7927308720009023,
+      "generation_p50_seconds": 32.589380801000516,
+      "generation_p95_seconds": 35.594134364950335,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 1,
+        "obsolete_or_ineligible_citation": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 2
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 0
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    },
+    "generic_hybrid": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.375,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.375,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 0.25,
+      "inappropriate_abstention": 1.0,
+      "correct_negative_withhold": 0.75,
+      "negative_recommendations": 0.25,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 8093,
+      "output_tokens": 1442,
+      "generation_seconds": 277.9843333189965,
+      "retrieval_seconds": 0.9983469389972015,
+      "generation_p50_seconds": 34.72215729849995,
+      "generation_p95_seconds": 35.96330432044924,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 0
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 0
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    },
+    "full_context": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.625,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.625,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.5,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.0,
+      "correct_negative_withhold": 0.75,
+      "negative_recommendations": 0.25,
+      "positive_dry_run_completion": 0.5,
+      "input_tokens": 12686,
+      "output_tokens": 1253,
+      "generation_seconds": 389.47717864600236,
+      "retrieval_seconds": 0.06299476800086268,
+      "generation_p50_seconds": 49.11733956050011,
+      "generation_p95_seconds": 53.58528629010088,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 3
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 1
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 1
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    },
+    "prompt_hybrid": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.375,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.375,
+      "schema_valid": 0.5,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 0.5,
+      "inappropriate_abstention": 0.25,
+      "correct_negative_withhold": 0.75,
+      "negative_recommendations": 0.0,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 8128,
+      "output_tokens": 1281,
+      "generation_seconds": 261.300649494,
+      "retrieval_seconds": 0.9399988200002554,
+      "generation_p50_seconds": 33.15481250850007,
+      "generation_p95_seconds": 34.22780664905058,
+      "truncations": 0,
+      "violations": {
+        "play_schema": 4
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 0
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 0
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    },
+    "facet_hybrid": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.5,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.625,
+      "schema_valid": 0.875,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 0.5,
+      "inappropriate_abstention": 0.25,
+      "correct_negative_withhold": 1.0,
+      "negative_recommendations": 0.0,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 8144,
+      "output_tokens": 1295,
+      "generation_seconds": 266.4101436140045,
+      "retrieval_seconds": 0.6808554279978125,
+      "generation_p50_seconds": 32.80659240600016,
+      "generation_p95_seconds": 34.87321068430074,
+      "truncations": 0,
+      "violations": {
+        "incomplete_support": 1,
+        "play_schema": 1,
+        "inapplicable_template": 1,
+        "misbound_support": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 0
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 0
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 2
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    },
+    "typed": {
+      "planned": 8,
+      "completed": 8,
+      "failures": 0,
+      "worlds": 2,
+      "positive_cases": 4,
+      "negative_cases": 4,
+      "primary": 0.625,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.625,
+      "schema_valid": 0.875,
+      "supported_positive_coverage": 0.5,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.0,
+      "correct_negative_withhold": 0.75,
+      "negative_recommendations": 0.25,
+      "positive_dry_run_completion": 0.5,
+      "input_tokens": 8107,
+      "output_tokens": 1216,
+      "generation_seconds": 259.2725702740008,
+      "retrieval_seconds": 0.8019713459980267,
+      "generation_p50_seconds": 32.186127998500524,
+      "generation_p95_seconds": 34.405011833549636,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 2,
+        "play_schema": 1,
+        "misbound_support": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 2,
+          "correct": 2
+        },
+        "objective_change": {
+          "n": 2,
+          "correct": 0
+        },
+        "policy_revision": {
+          "n": 2,
+          "correct": 1
+        },
+        "restricted_evidence": {
+          "n": 2,
+          "correct": 2
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "typed minus prompt_hybrid": {
+      "mean": 0.25,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0.25,
+        "w2bcf71ae": 0.25
+      },
+      "sd": 0.0,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "typed minus facet_hybrid": {
+      "mean": 0.125,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0.25,
+        "w2bcf71ae": 0.0
+      },
+      "sd": 0.1767766952966369,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "prompt_hybrid minus generic_hybrid": {
+      "mean": 0.0,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0.0,
+        "w2bcf71ae": 0.0
+      },
+      "sd": 0.0,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "typed minus typed_history": {
+      "mean": 0.0,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0.0,
+        "w2bcf71ae": 0.0
+      },
+      "sd": 0.0,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    },
+    "full_context minus typed": {
+      "mean": 0.0,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0.0,
+        "w2bcf71ae": 0.0
+      },
+      "sd": 0.0,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    }
+  },
+  "world_means": {
+    "typed_history": {
+      "w69bf7897": 0.75,
+      "w2bcf71ae": 0.5
+    },
+    "generic_hybrid": {
+      "w2bcf71ae": 0.25,
+      "w69bf7897": 0.5
+    },
+    "full_context": {
+      "w69bf7897": 0.75,
+      "w2bcf71ae": 0.5
+    },
+    "prompt_hybrid": {
+      "w69bf7897": 0.5,
+      "w2bcf71ae": 0.25
+    },
+    "facet_hybrid": {
+      "w2bcf71ae": 0.5,
+      "w69bf7897": 0.5
+    },
+    "typed": {
+      "w69bf7897": 0.75,
+      "w2bcf71ae": 0.5
+    }
+  },
+  "transitions": {
+    "typed_history": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "generic_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "full_context": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "prompt_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "facet_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "typed": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    }
+  },
+  "unique_embedding_origin_seconds": {
+    "event": 4.889055555002415,
+    "query": 1.0828303390017027
+  },
+  "embedding_cost_note": "Unique observed cache origins across this run, counted once; common reusable index cost, not a per-method cache-order advantage. Infrastructure dollars/energy unknown.",
+  "uncertainty_note": "Conditional on fictional generator/families and tested model. World bootstrap does not represent commercial-population uncertainty. Fewer than six worlds: descriptive pilot, CI suppressed. Degenerate bootstrap intervals are not guarantees.",
+  "analysis_sha256": "d9664fc57e3fa018845c63d75d326e4649fc68e37e906dfa290056d80de4395e"
+}

@@ -1,0 +1,50 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:43.781562+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEi27XzaXcaeW7KHoGD",
+  "usage": {
+    "input_tokens": 26471,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 132,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.054262",
+    "total_input_tokens": 26471,
+    "output_tokens": 132,
+    "regular_input_tokens": 26471,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D072\",\"D053\",\"D007\"],\"explanation\":\"Tansley Parcel's executed renewal, effective Feb 1, 2026, set 120 seats, and that was in force in March 2026. The customer's March 3 email claimed 125 seats and asked for a true-up, but no signed amendment increasing the count is supplied, and the September page still shows 120.\"}",
+  "finished_at": "2026-10-23T00:39:50.176778+00:00",
+  "seconds": 6.395225630985806,
+  "id": "dev-ch-3-anthropic-wiki_specialized",
+  "case_id": "dev-ch-3",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "Tansley Parcel's executed renewal, effective Feb 1, 2026, set 120 seats, and that was in force in March 2026. The customer's March 3 email claimed 125 seats and asked for a true-up, but no signed amendment increasing the count is supplied, and the September page still shows 120.",
+  "citations": [
+    "D037",
+    "D072",
+    "D053",
+    "D007"
+  ]
+}

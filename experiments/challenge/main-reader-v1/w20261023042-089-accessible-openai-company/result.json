@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-089-accessible-openai-company",
+  "case_id": "w20261023042-089-accessible",
+  "world": "w20261023042-089",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:56:38.463891+00:00",
+  "evidence_bytes": 16287,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999638",
+    "x-ratelimit-reset-requests": "7ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08ef2b4df9cf4286016adaf71750d487d18a79b15ba33d8fd6",
+  "usage": {
+    "input_tokens": 5674,
+    "input_tokens_details": {
+      "cache_write_tokens": 5671,
+      "cached_tokens": 0
+    },
+    "output_tokens": 504,
+    "output_tokens_details": {
+      "reasoning_tokens": 155
+    },
+    "total_tokens": 6178
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0192235",
+    "total_input_tokens": 5674,
+    "output_tokens": 504,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5671
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Iris-89",
+        "action": "workshop",
+        "sources": [
+          "e25074a6940a989",
+          "efa1c9fbfa99e13",
+          "e33dde173904ea2",
+          "e2fe83c579970a3",
+          "e4027330c1c919b",
+          "e1df99c969baa32",
+          "e6a56822a75dbe6",
+          "e598459b26d4322",
+          "ee8c2c6b1598a8f",
+          "ed6d5203a36ce78",
+          "efb501814e67cae"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-89: supply an observed profile, true consent, signal, and complete initiative → need → offering → proof chain, plus approved true proof verification and an approved integer priority.",
+      "Orchid-89: approved true verification for proof-3 is missing; observed consent is also false and must be true before any action is eligible."
+    ],
+    "reasoning_summary": "Iris-89 workshop costs 3 of the shared budget of 6 and scores 12 × 4 = 48 priority points, tying its assurance_pack for the optimal plan. No other account supports an eligible action: Pine-89 lacks required evidence, Juniper-89 has a disallowed region and blocked sector, and Orchid-89 has false consent and missing proof verification. Unused budget cannot support another eligible action."
+  },
+  "score": {
+    "optimum": 48,
+    "recoverable_value": 48,
+    "returned_value": 48,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:56:49.748882+00:00",
+  "seconds": 11.285001394993742
+}

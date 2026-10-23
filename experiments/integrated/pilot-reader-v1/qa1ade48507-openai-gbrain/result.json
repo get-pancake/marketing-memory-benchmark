@@ -1,0 +1,109 @@
+{
+  "id": "qa1ade48507-openai-gbrain",
+  "case_id": "qa1ade48507",
+  "world": "w102aef1b",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 2,
+    "current_value_group_coverage": 0.5,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.23529411764705882,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2"
+    ]
+  },
+  "evidence_bytes": 2030,
+  "status": "completed",
+  "started_at": "2026-10-23T00:03:44.809280+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0dbd24f63e077694016adaa460f1ec87d1b28d16a18c7c3df7",
+  "usage": {
+    "input_tokens": 1125,
+    "input_tokens_details": {
+      "cache_write_tokens": 1122,
+      "cached_tokens": 0
+    },
+    "output_tokens": 181,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1306
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.004621",
+    "total_input_tokens": 1125,
+    "output_tokens": 181,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1122
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=EU"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S11",
+      "account.account_role:observed": "S2",
+      "account.observed_signal:observed": "S12",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=EU"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=EU"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P2 matches the qualification_audit objective and fits the resource allowance, but requires approved seller role and geography evidence matching the account observations in S2 and S11. Missing migration-specific prerequisites do not block P2, which has no additional requirements.",
+  "finished_at": "2026-10-23T00:03:48.968875+00:00",
+  "seconds": 4.159604915010277
+}

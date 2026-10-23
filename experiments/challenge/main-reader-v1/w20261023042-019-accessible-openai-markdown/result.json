@@ -1,0 +1,102 @@
+{
+  "id": "w20261023042-019-accessible-openai-markdown",
+  "case_id": "w20261023042-019-accessible",
+  "world": "w20261023042-019",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:57:55.796822+00:00",
+  "evidence_bytes": 16304,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999554",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06856f33c3050768016adaf76480b087d1a38ff533642b5151",
+  "usage": {
+    "input_tokens": 5681,
+    "input_tokens_details": {
+      "cache_write_tokens": 5678,
+      "cached_tokens": 0
+    },
+    "output_tokens": 589,
+    "output_tokens_details": {
+      "reasoning_tokens": 138
+    },
+    "total_tokens": 6270
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.020091",
+    "total_input_tokens": 5681,
+    "output_tokens": 589,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5678
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-19",
+        "action": "reference_intro",
+        "sources": [
+          "ec2934acdcb3361",
+          "e284080a549f069",
+          "efc867748812419",
+          "ec6861f52e73dc8",
+          "e60a60e7f39c2dc",
+          "ef39938070e0244",
+          "e67aacb2251c206",
+          "e45ed1874e854bd",
+          "e2ec20bb55de955",
+          "e8e8fe89fd74290",
+          "e69fe342cbf23a7"
+        ]
+      },
+      {
+        "account": "Iris-19",
+        "action": "renewal_review",
+        "sources": [
+          "ec2934acdcb3361",
+          "eaa4116bdc2b62c",
+          "e78eda77a8a788c",
+          "e1bdd55a764c837",
+          "e77bfefb8dd329c",
+          "e19ebafa7a9ea29",
+          "e05938c269de5dd",
+          "e12b9f596370c97",
+          "e3e72ccb568ac24",
+          "e03a541e78692c8"
+        ]
+      }
+    ],
+    "missing": [
+      "North-19 requires an observed initiative-2 → need → offering → proof chain and approved proof.verified=true."
+    ],
+    "reasoning_summary": "The optimal supported plan costs 6 of 6 and scores 74 synthetic priority points: Larch-19 reference_intro contributes 10×5=50; Iris-19 renewal_review contributes 8×3=24. Both satisfy policy, consent, signal and verified-chain requirements; Larch-19 also has approved proof shareability. Accounts are distinct. North-19 is blocked by missing chain evidence; Kestrel-19's eligible alternatives do not improve the total."
+  },
+  "score": {
+    "optimum": 74,
+    "recoverable_value": 74,
+    "returned_value": 74,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:58:08.597780+00:00",
+  "seconds": 12.800969046002137
+}

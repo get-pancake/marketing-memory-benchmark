@@ -1,0 +1,252 @@
+{
+  "schema": "saved-computation-accounting-v1",
+  "blocks": {
+    "primary": {
+      "path": "experiments/main/primary",
+      "manifest_sha256": "4e83dd02f27a0743022900415268cbec1bbcd5229318d0844428182aed155125",
+      "ledger_sha256": "947eb779dc5b59ce364919d6c5b52e681a6851f0803952ddba0c4ed1862102fd",
+      "wall_seconds": 21063.532261,
+      "planned": 576,
+      "physical_calls": 494,
+      "reused_requests": 82,
+      "known_physical_generation_seconds": 20963.47653519,
+      "observed_retrieval_seconds": 96.05689479203102,
+      "known_new_embedding_seconds_inside_retrieval": 41.764298602985946,
+      "unique_associated_embedding_origins": {
+        "event": {
+          "items": 313,
+          "seconds": 35.01532425498772
+        },
+        "query": {
+          "items": 24,
+          "seconds": 6.748974347998228
+        }
+      },
+      "methods": {
+        "facet_hybrid": {
+          "planned": 96,
+          "physical_calls": 81,
+          "reused_requests": 15,
+          "charged_generation_seconds": 3435.6160429439824,
+          "observed_retrieval_seconds": 16.61681687503369,
+          "known_new_embedding_seconds_inside_retrieval": 5.820985394988384,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 10.795831480045308,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 3488.1761730270136,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "full_context": {
+          "planned": 96,
+          "physical_calls": 96,
+          "reused_requests": 0,
+          "charged_generation_seconds": 6556.754064668001,
+          "observed_retrieval_seconds": 0.7241982859777636,
+          "known_new_embedding_seconds_inside_retrieval": 0,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 0.7241982859777636,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 0,
+              "seconds": 0
+            },
+            "query": {
+              "items": 0,
+              "seconds": 0
+            }
+          },
+          "charged_component_estimate_seconds": 6557.478262953979,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "generic_hybrid": {
+          "planned": 96,
+          "physical_calls": 96,
+          "reused_requests": 0,
+          "charged_generation_seconds": 3612.755070905014,
+          "observed_retrieval_seconds": 27.149200899984862,
+          "known_new_embedding_seconds_inside_retrieval": 14.35255609801061,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 12.796644801974253,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 3667.316014309974,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "prompt_hybrid": {
+          "planned": 96,
+          "physical_calls": 83,
+          "reused_requests": 13,
+          "charged_generation_seconds": 3552.8900073319983,
+          "observed_retrieval_seconds": 19.921160321006028,
+          "known_new_embedding_seconds_inside_retrieval": 8.810228386992094,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 11.110931934013934,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 3605.765237868998,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "typed": {
+          "planned": 96,
+          "physical_calls": 68,
+          "reused_requests": 28,
+          "charged_generation_seconds": 3339.075149050981,
+          "observed_retrieval_seconds": 12.545693272029894,
+          "known_new_embedding_seconds_inside_retrieval": 3.5210895229938615,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 9.024603749036032,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 3389.864051403003,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "typed_history": {
+          "planned": 96,
+          "physical_calls": 70,
+          "reused_requests": 26,
+          "charged_generation_seconds": 3287.5438928440017,
+          "observed_retrieval_seconds": 19.099825137998778,
+          "known_new_embedding_seconds_inside_retrieval": 9.259439200000998,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 9.84038593799778,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 3339.1485773849854,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        }
+      }
+    },
+    "sensitivity": {
+      "path": "experiments/main/sensitivity",
+      "manifest_sha256": "b3260024d6e1c1ce9d0272a6bd2edbb7ebd9ccc1e58359ef9795c423cf6b29a7",
+      "ledger_sha256": "b480a0024e50930e60f6b33d609cc4a9fadc02712cd8de1e745d09872d5b30fd",
+      "wall_seconds": 9790.090146,
+      "planned": 192,
+      "physical_calls": 182,
+      "reused_requests": 10,
+      "known_physical_generation_seconds": 9759.239771236018,
+      "observed_retrieval_seconds": 29.438073420038563,
+      "known_new_embedding_seconds_inside_retrieval": 0,
+      "unique_associated_embedding_origins": {
+        "event": {
+          "items": 313,
+          "seconds": 35.01532425498772
+        },
+        "query": {
+          "items": 24,
+          "seconds": 6.748974347998228
+        }
+      },
+      "methods": {
+        "prompt_hybrid": {
+          "planned": 96,
+          "physical_calls": 90,
+          "reused_requests": 6,
+          "charged_generation_seconds": 5186.259149392012,
+          "observed_retrieval_seconds": 14.745401100997697,
+          "known_new_embedding_seconds_inside_retrieval": 0,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 14.745401100997697,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 5242.768849095995,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        },
+        "typed": {
+          "planned": 96,
+          "physical_calls": 92,
+          "reused_requests": 4,
+          "charged_generation_seconds": 5091.294895875006,
+          "observed_retrieval_seconds": 14.692672319040867,
+          "known_new_embedding_seconds_inside_retrieval": 0,
+          "selection_and_tokenization_seconds_excluding_new_embeddings": 14.692672319040867,
+          "unique_associated_embedding_origins": {
+            "event": {
+              "items": 313,
+              "seconds": 35.01532425498772
+            },
+            "query": {
+              "items": 24,
+              "seconds": 6.748974347998228
+            }
+          },
+          "charged_component_estimate_seconds": 5147.751866797033,
+          "terminal_attempts_without_retrieval_receipt": 0,
+          "issued_calls_without_usage": 0
+        }
+      }
+    }
+  },
+  "unique_associated_embedding_origins_across_blocks": {
+    "event": {
+      "items": 313,
+      "seconds": 35.01532425498772
+    },
+    "query": {
+      "items": 24,
+      "seconds": 6.748974347998228
+    }
+  },
+  "known_new_embedding_seconds_inside_retrieval_across_blocks": 41.764298602985946,
+  "known_physical_generation_seconds": 30722.716306426017,
+  "summed_block_wall_seconds": 30853.622407000003,
+  "notes": [
+    "All seconds are elapsed wall time, not summed CPU seconds or dollars. Shared-host timings are descriptive.",
+    "Embedding work is nested inside observed retrieval time: never add it again to measured retrieval totals.",
+    "Associated origins are deduplicated across both blocks; a warm sensitivity cache does not erase index work.",
+    "Method component estimates charge each associated embedding origin once plus non-embedding selection/tokenization overhead and each logical generation origin. They are estimates from shared execution, not measured standalone cold-start deployments.",
+    "Exact generation reuse charges the observed origin to each logical method comparison while physical totals count each request once. Unknown usage remains unknown.",
+    "Training, natural-language extraction, human curation, model download/build, hardware rental and energy are outside these timed query components. No amortized commercial lifecycle-cost advantage is established."
+  ],
+  "created_at": "2026-10-22T12:53:59.252459+00:00",
+  "script_sha256": "2fe8c336fe7bfd3d66b01b50b77f86fc8bd5258c0e2082646eed5a81659faf12"
+}

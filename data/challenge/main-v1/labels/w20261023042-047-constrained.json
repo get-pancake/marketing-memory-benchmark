@@ -1,0 +1,281 @@
+{
+  "case_id": "w20261023042-047-constrained",
+  "world": "w20261023042-047",
+  "eligible": [
+    {
+      "account": "Delta-47",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 8,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e0929c952f25afc"
+        ],
+        [
+          "ee352e8e55198a4"
+        ],
+        [
+          "eb99b2f8a2f0ce1"
+        ],
+        [
+          "ed5b9630ef97e5a"
+        ],
+        [
+          "e3f04e068c8880a"
+        ],
+        [
+          "e34906d7285737c"
+        ],
+        [
+          "eefc64c11b85695"
+        ],
+        [
+          "e06f24d71608779"
+        ],
+        [
+          "e88ea8559008f2d"
+        ]
+      ]
+    },
+    {
+      "account": "Delta-47",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 20,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e0929c952f25afc"
+        ],
+        [
+          "ee352e8e55198a4"
+        ],
+        [
+          "eb99b2f8a2f0ce1"
+        ],
+        [
+          "ed5b9630ef97e5a"
+        ],
+        [
+          "e3f04e068c8880a"
+        ],
+        [
+          "e34906d7285737c"
+        ],
+        [
+          "eefc64c11b85695"
+        ],
+        [
+          "e06f24d71608779"
+        ],
+        [
+          "e85d8b34f2c7dd5"
+        ],
+        [
+          "e88ea8559008f2d"
+        ]
+      ]
+    },
+    {
+      "account": "Delta-47",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 4,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e0929c952f25afc"
+        ],
+        [
+          "ee352e8e55198a4"
+        ],
+        [
+          "eb99b2f8a2f0ce1"
+        ],
+        [
+          "ed5b9630ef97e5a"
+        ],
+        [
+          "e3f04e068c8880a"
+        ],
+        [
+          "e34906d7285737c"
+        ],
+        [
+          "eefc64c11b85695"
+        ],
+        [
+          "e06f24d71608779"
+        ],
+        [
+          "e88ea8559008f2d"
+        ]
+      ]
+    },
+    {
+      "account": "Mesa-47",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 6,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e27ac63df7e03c2"
+        ],
+        [
+          "e77270ed1f66436"
+        ],
+        [
+          "eec9bc480e52a4b"
+        ],
+        [
+          "e6499711419e6f6"
+        ],
+        [
+          "e00a54be6c270ce"
+        ],
+        [
+          "e01fcff72bdf88e"
+        ],
+        [
+          "ecc66eee228d74a"
+        ],
+        [
+          "e31587a64e29b3b"
+        ],
+        [
+          "e842f1ddb732ff9"
+        ]
+      ]
+    },
+    {
+      "account": "Mesa-47",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 3,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e27ac63df7e03c2"
+        ],
+        [
+          "e77270ed1f66436"
+        ],
+        [
+          "eec9bc480e52a4b"
+        ],
+        [
+          "e6499711419e6f6"
+        ],
+        [
+          "e00a54be6c270ce"
+        ],
+        [
+          "e01fcff72bdf88e"
+        ],
+        [
+          "ecc66eee228d74a"
+        ],
+        [
+          "e31587a64e29b3b"
+        ],
+        [
+          "e842f1ddb732ff9"
+        ]
+      ]
+    }
+  ],
+  "optimum": 26,
+  "reference_plan": [
+    {
+      "account": "Delta-47",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 20,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e0929c952f25afc"
+        ],
+        [
+          "ee352e8e55198a4"
+        ],
+        [
+          "eb99b2f8a2f0ce1"
+        ],
+        [
+          "ed5b9630ef97e5a"
+        ],
+        [
+          "e3f04e068c8880a"
+        ],
+        [
+          "e34906d7285737c"
+        ],
+        [
+          "eefc64c11b85695"
+        ],
+        [
+          "e06f24d71608779"
+        ],
+        [
+          "e85d8b34f2c7dd5"
+        ],
+        [
+          "e88ea8559008f2d"
+        ]
+      ]
+    },
+    {
+      "account": "Mesa-47",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 6,
+      "support_groups": [
+        [
+          "ef417563bd434a2"
+        ],
+        [
+          "e27ac63df7e03c2"
+        ],
+        [
+          "e77270ed1f66436"
+        ],
+        [
+          "eec9bc480e52a4b"
+        ],
+        [
+          "e6499711419e6f6"
+        ],
+        [
+          "e00a54be6c270ce"
+        ],
+        [
+          "e01fcff72bdf88e"
+        ],
+        [
+          "ecc66eee228d74a"
+        ],
+        [
+          "e31587a64e29b3b"
+        ],
+        [
+          "e842f1ddb732ff9"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-22T21:24:31.578994+00:00",
+  "status": "complete",
+  "scope": "exploratory real GBrain hybrid component on existing verified-event fixtures",
+  "upstream_revision": "531b3b1ab66c88f192abb51338028c44b80fbf21",
+  "bun_version": "1.4.0",
+  "data_sha256": "8c49f8b5c4bc9c2e69bf82ee93480754b5efe3f92d8470e5c8a8f72999bdf554",
+  "protocol_sha256": "1dd670d46510990df323df1bc52e59541921e66a4c4b0f0917a64777f6281323",
+  "source_hashes": {
+    "benchmarks/gbrain/run.py": "5e74c06a2a89210311fb48b5fffab14730052996897728844d5d2dd1abf61276",
+    "benchmarks/gbrain/search.ts": "11ea9af3cd21c63ca2b8ef1a70ea12e46ad0416c217714a9b52eda408391c4a1",
+    "analysis/separate_context.py": "b944033e7e50d56a9b019e151e28945ce2b671a1a3588bc97f0e5733906fdd49",
+    "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+    "study/retrieval.py": "8ed97d652d58b18e1f92df85d60a981a87a557373c20f662be2cc626d633be24"
+  },
+  "token_cap": 1024,
+  "planned_cases": [
+    "q004392a85d",
+    "q0aa3eee322",
+    "q182ec20260",
+    "q2d3b8138f4",
+    "q35398bd68a",
+    "q4789ca6172",
+    "q48cb40f7a8",
+    "q4f02e27a9f",
+    "q7a990ad1f5",
+    "q94dd5751c2",
+    "q9ebcd369cd",
+    "q9f0ad7d4ae",
+    "qc12da0f847",
+    "qc6e235afe4",
+    "qcb9e82f3fd",
+    "qf8deb3d3ea"
+  ],
+  "zero_generation_calls": true,
+  "raw_ingestion": false,
+  "main_market_comparison": false,
+  "finished_at": "2026-10-22T21:25:13.531489+00:00",
+  "completed": 12,
+  "failed": 4
+}

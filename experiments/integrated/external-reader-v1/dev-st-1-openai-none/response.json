@@ -1,0 +1,128 @@
+{
+  "id": "resp_0b145ab535cc338b016adaacd0228487d1aebd3016ad9b4116",
+  "object": "response",
+  "created_at": 1792715984,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715986,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b145ab535cc338b016adaacd1196487d197aaefeb5275eab8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzSaw3Q6dnfBbpEOemFz1AvFr6ns4zypzF7GOhspYNl57n4FnwhseuEkBmPbbLqoRJApnoTXrRtZvYN8cAYYtN-hneJoFgHb_nJUsvJx-YmSBqzIVxJvcso3mU3DN64J8-1oGQvFo9g1eOlgV1RQe0s3wxWGR9emUnkTw9Yw6-U7eWuKn1WluwXpcYWovjNTUZSmsFjbeSKlbcoGBlNLVPpTOMWhZOyJ9uVvXhj6YrC4XLHwvcO3n-sVk0094ZTEpZvrmnpaD8noPgO-KUsff3lZljxOThBO_TuzyqysBGX4Ti7mduvClExsJsbzfmcjf0F-7Lsa4NpuJnKc5am-NOWWf4migHilaR9yirddrmDpDI52-pBU3_wdoDYFi5Taru69Bj7Vy6mo07ZObYdAxHR3m6lF7nJYIZtHnD1Y_vQ0EyN3zZz3H6zcMgXgEoP2ksp7g06PWXaKRwqDZyy1ChVUh5Zc9tAaThGFRwlUQWERk7L4C41OrPSZ88mO4VvOogfWg1pVzhK94O5Z5Y0JEZ6yK9shinBYJRC_0HN3_HYtR6B8_GI7S72fcI9ei4Y8s1kh61K5Tf2g4akFWzyH_ImT4VPOY-5_86_65tc51axHGE_btCsrozmCaQAa-GhOUUwCHWfBo07jAbMsDmm2A93664wMn9FzdA4Z8nGXTAyy9HUFJ70WLHnrpj26tLbNUfdNEN8NhIWkgJvLuyeE8Ck7VUKag7HnBqiPnLLLZazqvYLZUROYQWLuHUX0vrsbzWvZz45G50a8ZH7QfTElYsc-gQKOANgHdTTNc48uhi33Wjf2Yy3tY9ZnWYoXFmUbwY8GDlQJpmutzwM_pAiFW4dhCRyAEzliCGurAT-0gd6VaQP_DR1M-oZYIgH1XqvIjTEV5Jz4fkAyCh6ueqgupAnMALZASMst4ygOiM-aMR0ZPjpa_eANJp4omRYb4HsdLABupEl-4i3VX14JByZqinWQE0S3GyCj7266ZJ7iB7UNtqnTm-HFoXZrnxjKkMFeqE8DRnJJPm9QK6_7rnJPE3E_VVhh6OEibep6xQGqvV8IOkZoLJ-jO5nH0cO5s7XefOEW3uAcCWk-t72gL-h8RrTmJ0PFx0sZaac58TXZZxrolF9YcQoxHQBSOOMUuj8ilH_kaTusP3PbDPja6uRLk5HsWdxtHyOgVHl8WfidH1yYXju8tnKXh2GWtdGJuQCCKCsSWoeQfv0iBfvgSFAPuNFcs-V-mrBmoAxvqUAf1Bwf-66rAZvQMvLFo_P5pcibC0ZBz_5097ZdwSvbaNbVWOR2_Dp6PAuO-F9YqJ0Zsf7GqA4PIARRf7vGRnc3L550Lz5yxqHUmoSdGGZtgJ9UmupKOjANHbqJnEBC2jIT_0KO5DMhTB0dg0lzpE6wnCojZQwGsN_UWVKftUQukqkh3UPngSaI7qhd5rBDx0Cr6jprxtKOTR9GN9YeX1dPLwfdM8UpTDIatytmtxMzwxC9QEmjGudMPIcjcJUicb-T8CwPqtsPHkYQ5Meev7wGsT518kZ3VaJ_JHNBSOdjtguKmuHXqBM2LZg2JA9Mg1ATJuh8sg=",
+      "summary": []
+    },
+    {
+      "id": "msg_0b145ab535cc338b016adaacd1e3f887d1b921f8a004c31431",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied documents establish whether the Brackenwater customer redline of October 28, 2025 was ever signed.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 260,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 60,
+    "output_tokens_details": {
+      "reasoning_tokens": 13
+    },
+    "total_tokens": 320
+  },
+  "user": null,
+  "metadata": {}
+}

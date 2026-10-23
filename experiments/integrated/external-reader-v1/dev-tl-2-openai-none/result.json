@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:09.084133+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f3e7535abb2fd5c016adaace99e3887d19120eb121ee50c8a",
+  "usage": {
+    "input_tokens": 253,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 39,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 292
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.000896",
+    "total_input_tokens": 253,
+    "output_tokens": 39,
+    "regular_input_tokens": 253,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record when Orrin Mills became Thornbury Cloth Co.\"}",
+  "finished_at": "2026-10-23T00:40:11.581684+00:00",
+  "seconds": 2.4975579070014646
+}

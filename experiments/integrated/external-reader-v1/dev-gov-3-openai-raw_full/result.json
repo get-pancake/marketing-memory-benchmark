@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:40.286124+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_024b1bcc6d870228016adaac90936087d19e4476b0b57bafe2",
+  "usage": {
+    "input_tokens": 72925,
+    "input_tokens_details": {
+      "cache_write_tokens": 72922,
+      "cached_tokens": 0
+    },
+    "output_tokens": 51,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72976
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.182821",
+    "total_input_tokens": 72925,
+    "output_tokens": 51,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72922
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"Article 16.1 requires written notice electing against continuation at least 120 calendar days before the end of the then-current period.\"}",
+  "finished_at": "2026-10-23T00:38:43.698420+00:00",
+  "seconds": 3.4123055189993465
+}

@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:40:09.083039+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEjtsGi5QirWCfMKbKJ",
+  "usage": {
+    "input_tokens": 28200,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 110,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.0575",
+    "total_input_tokens": 28200,
+    "output_tokens": 110,
+    "regular_input_tokens": 28200,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D001\",\"D059\",\"D106\"],\"explanation\":\"The wiki says Dana held BWF before the North team existed, that her start date is unknown, and that the oldest CRM import reportedly says \\\"legacy migration.\\\" Only Marcus's takeover date (2025-09-15) is recorded.\"}",
+  "finished_at": "2026-10-23T00:40:11.187097+00:00",
+  "seconds": 2.1040629420022015,
+  "id": "dev-own-3-anthropic-wiki_generic",
+  "case_id": "dev-own-3",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "The wiki says Dana held BWF before the North team existed, that her start date is unknown, and that the oldest CRM import reportedly says \"legacy migration.\" Only Marcus's takeover date (2025-09-15) is recorded.",
+  "citations": [
+    "D001",
+    "D059",
+    "D106"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:40:09.085871+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEjtvFS5knj3T2S29Wa",
+  "usage": {
+    "input_tokens": 28212,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 112,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057544",
+    "total_input_tokens": 28212,
+    "output_tokens": 112,
+    "regular_input_tokens": 28212,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"The QFL original MSA runs April 1, 2025\u2013March 31, 2026 and renews automatically for successive 12-month periods unless written noncontinuation is given at least 120 calendar days before the period closes. No later amendment recorded in the wiki changes this notice period.\"}",
+  "finished_at": "2026-10-23T00:40:11.546503+00:00",
+  "seconds": 2.4606340899917996
+}

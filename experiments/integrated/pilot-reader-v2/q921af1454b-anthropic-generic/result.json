@@ -1,0 +1,122 @@
+{
+  "id": "q921af1454b-anthropic-generic",
+  "case_id": "q921af1454b",
+  "world": "wc26a095a",
+  "arm": "generic",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 6,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 6,
+    "required_slot_precision": 0.3333333333333333,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2040,
+  "status": "completed",
+  "started_at": "2026-10-23T00:13:07.610186+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:13:09Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:13:12Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:13:08Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:13:09Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJCgMpfeSnkUqFr2baHX",
+  "usage": {
+    "input_tokens": 3665,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 570,
+    "output_tokens_details": {
+      "thinking_tokens": 274
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.01303",
+    "total_input_tokens": 3665,
+    "output_tokens": 570,
+    "regular_input_tokens": 3665,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S6",
+      "account.account_role:observed": "S16",
+      "account.observed_signal:observed": "S5",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The common role and geo requirements are met (S1/S16 operations_director, S11/S6 UK), and S5 shows the hiring signal and S3 shows onboarding pain. P2 is the only hiring candidate within the 2-unit limit, and it needs observed proof for onboarding, which is not supplied. P1 has a different objective, and P3 and P4 need 3 units.",
+  "finished_at": "2026-10-23T00:13:12.626908+00:00",
+  "seconds": 5.016732108008
+}

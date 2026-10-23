@@ -1,0 +1,101 @@
+{
+  "id": "w20261023042-013-accessible-openai-full",
+  "case_id": "w20261023042-013-accessible",
+  "world": "w20261023042-013",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:09:38.460225+00:00",
+  "evidence_bytes": 28509,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999617",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_073c893ebff5bfd7016adafa234a7c87d18e6cf34b3168410e",
+  "usage": {
+    "input_tokens": 9524,
+    "input_tokens_details": {
+      "cache_write_tokens": 9521,
+      "cached_tokens": 0
+    },
+    "output_tokens": 526,
+    "output_tokens_details": {
+      "reasoning_tokens": 103
+    },
+    "total_tokens": 10050
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0290685",
+    "total_input_tokens": 9524,
+    "output_tokens": 526,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 9521
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Grove-13",
+        "action": "workshop",
+        "sources": [
+          "eced4ab6b419762",
+          "ebf745d6900b72b",
+          "e645a4e86619709",
+          "e04595b325ff150",
+          "e813f65094c9f60",
+          "ebcd91f1381a5d4",
+          "e2ef2c08d7f5e52",
+          "e49dc3fc6f52b00",
+          "ec5c8b2c6715914",
+          "e76398da848d791",
+          "e8793ceae02ed71"
+        ]
+      },
+      {
+        "account": "Aster-13",
+        "action": "workshop",
+        "sources": [
+          "eced4ab6b419762",
+          "ead0393ccfe283b",
+          "e3c18250a12cb5e",
+          "e82609d59d242e3",
+          "e38df0d2c2208f7",
+          "e29e158e9e9e989",
+          "ee190c920b62681",
+          "e28f5b6112ddc9b",
+          "ee8bb2c76cf4762",
+          "e90651c0ca1a87d",
+          "e22a24e3fac320d"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Two eligible workshops maximize total synthetic priority points: 12×4 + 12×4 = 96, at total cost 6 within budget. Pine-13 is ineligible because its region is not allowed and its sector is blocked. Elm-13 is ineligible because its proof is approved as unverified. No required evidence is missing."
+  },
+  "score": {
+    "optimum": 96,
+    "recoverable_value": 96,
+    "returned_value": 96,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:09:48.245613+00:00",
+  "seconds": 9.78539703100978
+}

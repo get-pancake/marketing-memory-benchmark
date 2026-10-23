@@ -1,0 +1,193 @@
+{
+  "id": "q038072be59-openai-specialized",
+  "case_id": "q038072be59",
+  "world": "w61b8ff16",
+  "arm": "specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 1920,
+  "status": "completed",
+  "started_at": "2026-10-23T00:48:10.611314+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999946",
+    "x-ratelimit-reset-requests": "7ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e9981ae86694b2e016adaaecb130c87d1bdbf2468b2f7b058",
+  "usage": {
+    "input_tokens": 2038,
+    "input_tokens_details": {
+      "cache_write_tokens": 929,
+      "cached_tokens": 1106
+    },
+    "output_tokens": 197,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2235
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0044091",
+    "total_input_tokens": 2038,
+    "output_tokens": 197,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1106,
+    "cache_write_tokens": 929
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S19",
+      "account.account_role:observed": "S5",
+      "account.customer_state:observed": "S15",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S18",
+      "seller.approved_geo:approved": "S1",
+      "seller.approved_role:approved": "S20",
+      "seller.offering_pain:observed": "S12",
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "efbee6b5",
+          "e0158b70",
+          "e31f649a",
+          "ef0959f2",
+          "ec058ef1",
+          "ee082b0b",
+          "ea268866",
+          "e1df9724"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-757",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "e0158b70",
+        "efbee6b5"
+      ],
+      "evidence": [
+        "e0158b70",
+        "e1df9724",
+        "e31f649a",
+        "ea268866",
+        "ec058ef1",
+        "ee082b0b",
+        "ef0959f2",
+        "efbee6b5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "efbee6b5",
+          "e0158b70",
+          "e31f649a",
+          "ef0959f2",
+          "ec058ef1",
+          "ee082b0b",
+          "ea268866",
+          "e1df9724"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-757",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "e0158b70",
+        "efbee6b5"
+      ],
+      "evidence": [
+        "e0158b70",
+        "e1df9724",
+        "e31f649a",
+        "ea268866",
+        "ec058ef1",
+        "ee082b0b",
+        "ef0959f2",
+        "efbee6b5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 meets the renewal objective and two-unit allowance: approved role and geography match the account (S20, S5, S1, S19), and active status, declining usage, adoption offering pain and adoption proof are supported (S15, S18, S12, S3). The geography proposal S17 does not alter the approved geography.",
+  "finished_at": "2026-10-23T00:48:14.937899+00:00",
+  "seconds": 4.326598174011451
+}

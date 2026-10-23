@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:07.107935+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF3R6gCBFnuwXZWRfYd",
+  "usage": {
+    "input_tokens": 10765,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 124,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.02277",
+    "total_input_tokens": 10765,
+    "output_tokens": 124,
+    "regular_input_tokens": 10765,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D044\",\"D004\"],\"explanation\":\"Amendment No. 1 set Quarrendon at 185 seats effective 2025-09-01, and D004 still lists 185 active seats. Amendment No. 3 raises the count to 230 only from 2027-01-01, so on 2026-10-14 the contracted count is still 185.\"}",
+  "finished_at": "2026-10-23T00:44:10.903271+00:00",
+  "seconds": 3.7953459459968144,
+  "id": "dev-gov-1-anthropic-raw_chunks",
+  "case_id": "dev-gov-1",
+  "arm": "raw_chunks",
+  "context_bytes": 24503,
+  "answer_correct": true,
+  "answer": "185",
+  "citations": [
+    "D032",
+    "D044",
+    "D004"
+  ],
+  "explanation": "Amendment No. 1 set Quarrendon at 185 seats effective 2025-09-01, and D004 still lists 185 active seats. Amendment No. 3 raises the count to 230 only from 2027-01-01, so on 2026-10-14 the contracted count is still 185.",
+  "citation_ids_valid": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "configuration required; no provider experiment has run",
+  "max_input_tokens": 4096,
+  "max_output_tokens": 768,
+  "max_requests": 64,
+  "providers": [
+    {"provider": "openai", "model": null, "input_usd_per_million": null,
+     "output_usd_per_million": null, "price_source": null, "price_checked_at": null,
+     "request_options": {}},
+    {"provider": "anthropic", "model": null, "input_usd_per_million": null,
+     "output_usd_per_million": null, "price_source": null, "price_checked_at": null,
+     "request_options": {}}
+  ]
+}

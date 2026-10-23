@@ -1,0 +1,88 @@
+{
+  "id": "w20261023042-036-stress-openai-gtm",
+  "case_id": "w20261023042-036-stress",
+  "world": "w20261023042-036",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:06.922520+00:00",
+  "evidence_bytes": 8123,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999632",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_094c8518bfd462ca016adaf58fa88887d181633351051960a1",
+  "usage": {
+    "input_tokens": 3291,
+    "input_tokens_details": {
+      "cache_write_tokens": 3288,
+      "cached_tokens": 0
+    },
+    "output_tokens": 511,
+    "output_tokens_details": {
+      "reasoning_tokens": 122
+    },
+    "total_tokens": 3802
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.013336",
+    "total_input_tokens": 3291,
+    "output_tokens": 511,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3288
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-36",
+        "action": "workshop",
+        "sources": [
+          "ec05fcb03faba12",
+          "efd682d96fc3f51",
+          "e9eeb2d27361398",
+          "eb3f421303354bb",
+          "e51de684bbd960e",
+          "e9d0fb504628b22",
+          "e163838b54ce3e1",
+          "ef58a0710588d6c",
+          "e7cf5de0e9f754b",
+          "e4d5a0945e8273f",
+          "ee6e4d38ac32b06"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-36, Delta-36 and Grove-36: observed profile, consent, signal and complete initiative-to-proof chain, plus approved integer priority and approved true proof verification.",
+      "Elm-36: observed initiative-5-to-need, need-to-offering and offering-to-proof links, plus approved true proof verification.",
+      "Juniper-36: resolution of conflicting current observed consent records and approved true proof verification are required."
+    ],
+    "reasoning_summary": "Larch-36 workshop maximizes supported priority points: 9 × 4 = 36, costing 3 of the shared budget of 8. Its launch signal and approved capacity satisfy workshop requirements. No other account supports an eligible action: Pine-36 has a disallowed region; Birch-36 has a blocked sector and false proof verification; Juniper-36 has conflicting consent and false proof verification; the remaining accounts lack required evidence. The proposed policy is not authoritative, and later timestamps do not resolve current conflicts."
+  },
+  "score": {
+    "optimum": 70,
+    "recoverable_value": 36,
+    "returned_value": 36,
+    "normalized_value": 0.5142857142857142,
+    "context_normalized_value": 0.5142857142857142,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:50:15.989594+00:00",
+  "seconds": 9.067077690997394
+}

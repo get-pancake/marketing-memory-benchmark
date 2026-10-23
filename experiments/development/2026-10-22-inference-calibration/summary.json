@@ -1,0 +1,76 @@
+{
+  "kind": "actual_model_development_pilot",
+  "run_complete": true,
+  "planned_attempts": 8,
+  "terminal_attempts": 8,
+  "independent_human_validated_worlds": 0,
+  "methods": {
+    "generic_bm25": {
+      "planned": 2,
+      "terminal_attempts": 2,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 0,
+      "grounded_applicable": 0,
+      "coverage": 2,
+      "inappropriate_abstention": 0
+    },
+    "prompt_specialized": {
+      "planned": 2,
+      "terminal_attempts": 2,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 0,
+      "grounded_applicable": 0,
+      "coverage": 2,
+      "inappropriate_abstention": 0
+    },
+    "typed_coverage": {
+      "planned": 2,
+      "terminal_attempts": 2,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 0,
+      "grounded_applicable": 0,
+      "coverage": 2,
+      "inappropriate_abstention": 0
+    },
+    "full_context": {
+      "planned": 2,
+      "terminal_attempts": 2,
+      "missing_or_interrupted": 0,
+      "failed": 0,
+      "decision_contract_correct": 0,
+      "grounded_applicable": 0,
+      "coverage": 2,
+      "inappropriate_abstention": 0
+    }
+  },
+  "descriptive_paired_differences": {
+    "prompt_specialized_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    },
+    "typed_coverage_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    },
+    "full_context_minus_generic_bm25": {
+      "world_differences": {
+        "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca": 0
+      },
+      "mean_paired_difference": 0,
+      "confidence_interval": null,
+      "reason": "Development-only authored fixtures; not independent main-study evidence"
+    }
+  },
+  "interpretation": "Actual model development pilot, not a frozen main evaluation"
+}

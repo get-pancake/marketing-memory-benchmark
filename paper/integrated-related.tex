@@ -1,0 +1,26 @@
+\section{Position relative to prior work}
+Our search covers agent memory, domain specialization, temporal/provenance handling, memory-to-action, marketing, evaluation and classical reasoning. The initial bounded search retained 399 unique arXiv records; an additional six-query search returned 113 unique identifiers, with overlap between searches. These are discovery counts, not full-text review counts. Dated queries, screening depth and nearest-work notes are released. Citation metadata is verified against owning sources; the latest search cutoff is 22 October 2026 (UTC). Access and coverage limits remain explicit.
+
+\begin{table}[t]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.19\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Work & What it already establishes or studies & Distinction in this experiment \\
+\midrule
+RAMP~\citep{p250811120} & Client memory, marketing plans, audience filtering and reflection & Fixed planner; separate evidence support and action eligibility; two readers \\
+CMC~\citep{p260932658} & Resolve state before retrieval; fixed-reader context interventions & Approved policy, conflicting values, permissions and action prerequisites \\
+WiCER~\citep{p260507068} & Raw versus compiled wiki; compilation loss and refinement & Query-blind compilation without test-driven refinement; strict saved-answer scoring \\
+LongMemEval~\citep{p241010813} & Updates, temporal reasoning and abstention & Grounded action specification as well as memory availability \\
+VehicleMemBench~\citep{p260323840} & Domain memory connected to executable agent behavior & Marketing research eligibility; no rich environment or commercial reward \\
+GBrain / file wiki & Public memory implementations, provenance and retrieval & Pinned component comparison; no whole-product ranking \\
+\bottomrule
+\end{tabularx}
+\caption{Nearest precedents. Their reported scores use different tasks and cannot be placed on our leaderboard.}
+\label{tab:related}
+\end{table}
+
+RAMP is the closest domain precedent. With GPT-4.1, its Table 1 reports audience accuracy 0.583 for actor-only and 0.870 with planner plus semantic memory; the combined intervention cannot isolate representation. Adding verification/reflection yields 0.853 in Table 2, illustrating that extra machinery need not help. Its 88 queries and small product-manager study are valuable evidence for audience curation, distinct from company-held-out memory specialization. We do not claim to introduce marketing memory plus planning.
+
+Contract Memory Compiler (CMC) is a strong methodological precedent: freeze the reader and extraction, change state resolution/retrieval, and include length controls~\citep{p260932658}. Its last-write-wins assertions differ from approved policy and unresolved disagreement. WiCER demonstrates that blind wiki compilation can lose facts and that raw full-context versus RAG direction changes across corpora~\citep{p260507068}. We therefore retain full-context references and a separate compilation diagnostic. Neither a graph nor Markdown alone defines specialization. Domain memory, fact/belief separation and recommendation have further precedents in IFCMemoryBench, Hindsight and belief-state recommendation~\citep{p260726072,p251212818,p260514401}; case-based reasoning and truth maintenance predate modern agents~\citep{aamodt1994,doyle1979}.
+
+Broader agent-memory surveys, temporal graph memory, GraphRAG and production-oriented memory systems span different storage, extraction and retrieval choices~\citep{p251213564,p250113956,p240416130,p250419413}. We do not rank these unexecuted systems against our selectors. The released review matrix distinguishes metadata screening, full-text inspection, artifact inspection and reproduced components; reported upstream headline scores remain separate from our measurements.

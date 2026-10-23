@@ -1,0 +1,89 @@
+{
+  "logical_attempts": 48,
+  "unique_prompts": 40,
+  "duplicate_groups": 7,
+  "duplicate_attempts": 15,
+  "identical_raw_output_groups": 7,
+  "groups": [
+    {
+      "attempt_ids": [
+        0,
+        42
+      ],
+      "methods": [
+        "typed_history",
+        "typed"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        6,
+        41
+      ],
+      "methods": [
+        "typed_history",
+        "typed"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        8,
+        43
+      ],
+      "methods": [
+        "typed",
+        "typed_history"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        14,
+        16
+      ],
+      "methods": [
+        "typed",
+        "facet_hybrid"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        15,
+        21,
+        39
+      ],
+      "methods": [
+        "typed",
+        "facet_hybrid",
+        "typed_history"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        17,
+        24
+      ],
+      "methods": [
+        "typed",
+        "typed_history"
+      ],
+      "raw_outputs_identical": true
+    },
+    {
+      "attempt_ids": [
+        23,
+        33
+      ],
+      "methods": [
+        "facet_hybrid",
+        "typed"
+      ],
+      "raw_outputs_identical": true
+    }
+  ],
+  "note": "Schema order reconstructed from matching frozen retrieval source and selected evidence because legacy ledger serialization sorts object keys."
+}

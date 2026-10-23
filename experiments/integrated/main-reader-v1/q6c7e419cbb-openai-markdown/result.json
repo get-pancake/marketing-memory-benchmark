@@ -1,0 +1,193 @@
+{
+  "id": "q6c7e419cbb-openai-markdown",
+  "case_id": "q6c7e419cbb",
+  "world": "wd8e8338e",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1"
+    ]
+  },
+  "evidence_bytes": 2017,
+  "status": "completed",
+  "started_at": "2026-10-23T00:41:01.507757+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999960",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_09747fe665f4cb37016adaad1db5ec87d1866e7c5df403828d",
+  "usage": {
+    "input_tokens": 2009,
+    "input_tokens_details": {
+      "cache_write_tokens": 902,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2191
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0041914",
+    "total_input_tokens": 2009,
+    "output_tokens": 182,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 902
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S20",
+      "account.account_role:observed": "S13",
+      "account.channel_fit:observed": "S11",
+      "account.partner_status:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S17",
+      "seller.offering_pain:observed": "S18",
+      "seller.proof_for_pain:observed": "S10"
+    },
+    "template": "P1"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ea695cbc",
+          "e3689cb1",
+          "e8084c9e",
+          "efbcfcf1",
+          "e85990e8",
+          "e6bb09df",
+          "ea9f37a4",
+          "e69b249f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e3689cb1",
+        "ea695cbc"
+      ],
+      "evidence": [
+        "e3689cb1",
+        "e69b249f",
+        "e6bb09df",
+        "e8084c9e",
+        "e85990e8",
+        "ea695cbc",
+        "ea9f37a4",
+        "efbcfcf1"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "ea695cbc",
+          "e3689cb1",
+          "e8084c9e",
+          "efbcfcf1",
+          "e85990e8",
+          "e6bb09df",
+          "ea9f37a4",
+          "e69b249f"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-700",
+      "objective": "partner",
+      "template": "P1",
+      "policy_versions": [
+        "e3689cb1",
+        "ea695cbc"
+      ],
+      "evidence": [
+        "e3689cb1",
+        "e69b249f",
+        "e6bb09df",
+        "e8084c9e",
+        "e85990e8",
+        "ea695cbc",
+        "ea9f37a4",
+        "efbcfcf1"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P1 meets the partner objective within the two-unit allowance. Approved role and geography match the account (S17/S13 and S6/S20), and verified partner status, reseller fit, integration pain and matching proof are supported by S14, S11, S18 and S10.",
+  "finished_at": "2026-10-23T00:41:06.278745+00:00",
+  "seconds": 4.770990347999032
+}

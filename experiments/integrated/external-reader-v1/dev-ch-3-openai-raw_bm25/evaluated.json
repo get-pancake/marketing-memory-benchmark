@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:54.597548+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e2c0636c2986d5a016adaac9ec54487d1b26b8dd1cba4518c",
+  "usage": {
+    "input_tokens": 6475,
+    "input_tokens_details": {
+      "cache_write_tokens": 6472,
+      "cached_tokens": 0
+    },
+    "output_tokens": 79,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6554
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016976",
+    "total_input_tokens": 6475,
+    "output_tokens": 79,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6472
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D072\",\"D053\"],\"explanation\":\"The executed renewal effective February 1, 2026 contracted 120 seats. The March email reported 125 provisioned seats and requested a true-up, but no executed change is recorded; the August note still expected a true-up at renewal.\"}",
+  "finished_at": "2026-10-23T00:38:57.726897+00:00",
+  "seconds": 3.1293582819926087,
+  "id": "dev-ch-3-openai-raw_bm25",
+  "case_id": "dev-ch-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24350,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "The executed renewal effective February 1, 2026 contracted 120 seats. The March email reported 125 provisioned seats and requested a true-up, but no executed change is recorded; the August note still expected a true-up at renewal.",
+  "citations": [
+    "D037",
+    "D072",
+    "D053"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "qd2a853627f-openai-full",
+  "case_id": "qd2a853627f",
+  "world": "w61b8ff16",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.4166666666666667,
+    "selected_sources": 24,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2481,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:16.838521+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999938",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e002af267b69d92016adab2194f9c87d192b6a014ca51793d",
+  "usage": {
+    "input_tokens": 2299,
+    "input_tokens_details": {
+      "cache_write_tokens": 1082,
+      "cached_tokens": 1214
+    },
+    "output_tokens": 205,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2504
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0048824",
+    "total_input_tokens": 2299,
+    "output_tokens": 205,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1214,
+    "cache_write_tokens": 1082
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence establishing seller.approved_geo:approved=account.account_geo:observed."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S23",
+      "account.account_role:observed": "S4",
+      "account.customer_state:observed": "S17",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S22",
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S24",
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S2"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence establishing seller.approved_geo:approved=account.account_geo:observed."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence establishing seller.approved_geo:approved=account.account_geo:observed."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 fits the renewal objective and two-unit allowance, but approved geography is EU (S6) while the account geography is UK (S23), so its required equality fails. P1 and P2 exceed the allowance, and P3 has a different objective; evidence establishing an approved geography match is needed.",
+  "finished_at": "2026-10-23T01:02:21.927963+00:00",
+  "seconds": 5.089446728990879
+}

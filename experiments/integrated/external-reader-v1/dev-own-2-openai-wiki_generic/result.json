@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:37.190748+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0d8dcc6e7b6e288e016adaacc9613087d1a0509c5b36ffdaa8",
+  "usage": {
+    "input_tokens": 17589,
+    "input_tokens_details": {
+      "cache_write_tokens": 17586,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17655
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044631",
+    "total_input_tokens": 17589,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17586
+  },
+  "text": "{\"answer\":\"Ilse Varga\",\"citations\":[\"D070\"],\"explanation\":\"Ilse Varga acted as account manager for Quarrendon Freight Lines during Dana Okafor\u2019s February 2\u2013March 13, 2026 leave. Dana remained the CRM owner.\"}",
+  "finished_at": "2026-10-23T00:39:40.304092+00:00",
+  "seconds": 3.113348507991759
+}

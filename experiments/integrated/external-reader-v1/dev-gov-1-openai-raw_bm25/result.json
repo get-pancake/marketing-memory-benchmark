@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:05.217233+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_04500d6ca4c556eb016adaaca9b9d887d1bd7372ffe12068cd",
+  "usage": {
+    "input_tokens": 6124,
+    "input_tokens_details": {
+      "cache_write_tokens": 6121,
+      "cached_tokens": 0
+    },
+    "output_tokens": 85,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6209
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0161585",
+    "total_input_tokens": 6124,
+    "output_tokens": 85,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6121
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D044\",\"D041\"],\"explanation\":\"Amendment No. 1 established 185 seats effective 2025-09-01, and the 2026 renewal left that quantity unchanged. Amendment No. 3 increases seats to 230 only on 2027-01-01, not when signed.\"}",
+  "finished_at": "2026-10-23T00:39:08.259278+00:00",
+  "seconds": 3.042053183002281
+}

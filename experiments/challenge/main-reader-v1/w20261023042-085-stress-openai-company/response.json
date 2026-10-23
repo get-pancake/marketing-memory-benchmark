@@ -1,0 +1,162 @@
+{
+  "id": "resp_067f737b249a11d8016adaf73e507c87d19c4b6773663ab9d5",
+  "object": "response",
+  "created_at": 1792735038,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735044,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_067f737b249a11d8016adaf73f878087d199c15831c9d495dc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Birch-85: resolve conflicting current observed consent records e328b13b8445bb4 (true) and e9557d71252344d (false). Its observed US region is also outside the approved policy's allowed regions (UK, DE, FR), independently blocking every action.\",\n    \"Larch-85, Elm-85, Iris-85, Kestrel-85, North-85, Aster-85 and Pine-85: supply observed profiles with allowed regions and nonblocked sectors, observed consent=true, observed catalog-matching signals, approved integer priorities, complete observed account\u2192initiative\u2192need\u2192offering\u2192proof links, and approved proof verification=true.\",\n    \"For those seven accounts, workshop additionally requires approved offering capacity=true; assurance_pack requires approved offering assurance=true; reference_intro requires approved proof shareable=true.\"\n  ],\n  \"reasoning_summary\": \"No supported action is eligible. Birch-85 is blocked by its disallowed region and conflicting consent; the later consent timestamp does not supersede another current record. All other queried accounts lack required evidence. The proposed seller policy and feedback do not establish approved facts, so no allocation can be made within the budget of 8.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Larch-85",
+                    "Elm-85",
+                    "Birch-85",
+                    "Iris-85",
+                    "Kestrel-85",
+                    "North-85",
+                    "Aster-85",
+                    "Pine-85"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3244,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 3241
+    },
+    "output_tokens": 267,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3511
+  },
+  "user": null,
+  "metadata": {}
+}

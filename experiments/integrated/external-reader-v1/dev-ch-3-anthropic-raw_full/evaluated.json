@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:37.187211+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEhWyar9Y6mVw64UHed",
+  "usage": {
+    "input_tokens": 120882,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 148,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.243244",
+    "total_input_tokens": 120882,
+    "output_tokens": 148,
+    "regular_input_tokens": 120882,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D072\",\"D007\"],\"explanation\":\"The signed renewal order form (effective 2026-02-01) set Tansley Parcel at 120 seats, and that term ran through 2027-01-31, so it covered March 2026. Lev Arkadin's 2026-03-03 email claiming 125 seats was only a true-up request, not a contract change, and the CRM note says the true-up is expected at renewal.\"}",
+  "finished_at": "2026-10-23T00:39:39.913698+00:00",
+  "seconds": 2.726497322990326,
+  "id": "dev-ch-3-anthropic-raw_full",
+  "case_id": "dev-ch-3",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "The signed renewal order form (effective 2026-02-01) set Tansley Parcel at 120 seats, and that term ran through 2027-01-31, so it covered March 2026. Lev Arkadin's 2026-03-03 email claiming 125 seats was only a true-up request, not a contract change, and the CRM note says the true-up is expected at renewal.",
+  "citations": [
+    "D037",
+    "D072",
+    "D007"
+  ]
+}

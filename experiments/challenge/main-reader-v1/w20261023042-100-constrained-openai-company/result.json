@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-100-constrained-openai-company",
+  "case_id": "w20261023042-100-constrained",
+  "world": "w20261023042-100",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:56:57.920316+00:00",
+  "evidence_bytes": 12190,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999654",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0845ca35359b8864016adaf72ad3e887d1b2a251f918311952",
+  "usage": {
+    "input_tokens": 4449,
+    "input_tokens_details": {
+      "cache_write_tokens": 4446,
+      "cached_tokens": 0
+    },
+    "output_tokens": 489,
+    "output_tokens_details": {
+      "reasoning_tokens": 123
+    },
+    "total_tokens": 4938
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016011",
+    "total_input_tokens": 4449,
+    "output_tokens": 489,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4446
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-100",
+        "action": "reference_intro",
+        "sources": [
+          "e1ae7a88a9dbc56",
+          "e1ee540c22b1c9d",
+          "ea0655f8eb9a90c",
+          "ec08b703c63c108",
+          "e785eaabb7a2749",
+          "e779e2e86b0bf5e",
+          "e5b4cd28881e570",
+          "ebf164f921de771",
+          "ec7b03fdb96c996",
+          "e333cb34acfc889",
+          "ed0520282e5b961"
+        ]
+      }
+    ],
+    "missing": [
+      "Larch-100, Kestrel-100, Grove-100 and Delta-100: supply observed profile, consent, signal and initiative-to-need-to-offering-to-proof links, approved proof verification, and approved integer priority; include action-specific approvals where required.",
+      "Pine-100: the observed US region is outside approved policy. Eligibility requires an allowed region supported by current observed evidence or an approved policy permitting US; also missing are the observed offering-4-to-proof link and approved proof verification."
+    ],
+    "reasoning_summary": "Birch-100 reference_intro maximizes supported priority points: 12 × 5 = 60, costing 4 of the shared budget of 7. Its consent, policy eligibility, full evidence chain, verification and shareability are supported. No other account has a supported eligible action. These are synthetic priority points, not expected revenue."
+  },
+  "score": {
+    "optimum": 60,
+    "recoverable_value": 60,
+    "returned_value": 60,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 4
+  },
+  "finished_at": "2026-10-23T05:57:10.812278+00:00",
+  "seconds": 12.891970754993963
+}

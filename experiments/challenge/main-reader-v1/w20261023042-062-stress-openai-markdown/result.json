@@ -1,0 +1,88 @@
+{
+  "id": "w20261023042-062-stress-openai-markdown",
+  "case_id": "w20261023042-062-stress",
+  "world": "w20261023042-062",
+  "family": "professional_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:55.546860+00:00",
+  "evidence_bytes": 8081,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999690",
+    "x-ratelimit-reset-requests": "9ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0736ef53b8d24115016adaf67455d887d1a6d78425cc00f73d",
+  "usage": {
+    "input_tokens": 3199,
+    "input_tokens_details": {
+      "cache_write_tokens": 3196,
+      "cached_tokens": 0
+    },
+    "output_tokens": 452,
+    "output_tokens_details": {
+      "reasoning_tokens": 63
+    },
+    "total_tokens": 3651
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.012516",
+    "total_input_tokens": 3199,
+    "output_tokens": 452,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3196
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-62",
+        "action": "workshop",
+        "sources": [
+          "ed99ee88b982be5",
+          "ee023f7b6295e29",
+          "ee60ac02b176d9c",
+          "e053a50c18a5454",
+          "e7c7be59146b00d",
+          "e911a39596cb9c3",
+          "e4e85aad20b34ec",
+          "ede18c7fd96379d",
+          "e58c99d327b0214",
+          "e9a82fc39e89204",
+          "efd1efb98fd54eb"
+        ]
+      }
+    ],
+    "missing": [
+      "Elm-62, Harbor-62, Iris-62, Aster-62, Kestrel-62 and Larch-62: observed profile, consent, signal and complete initiative → need → offering → proof chain; approved integer priority and proof verification.",
+      "Pine-62: observed profile, signal and complete initiative → need → offering → proof chain; approved integer priority and proof verification. Observed consent is already supplied.",
+      "For any additional workshop, assurance_pack or reference_intro, supply the corresponding approved true capacity, assurance or shareable evidence."
+    ],
+    "reasoning_summary": "North-62's workshop is eligible and maximizes the supported total: approved priority 1 × multiplier 4 = 4 synthetic policy points, at cost 3 within budget 8. Its launch signal and approved capacity support the workshop. The only other eligible North-62 action is research_brief, worth 1 point; the distinct-account rule prevents selecting both. No other queried account has sufficient evidence."
+  },
+  "score": {
+    "optimum": 16,
+    "recoverable_value": 4,
+    "returned_value": 4,
+    "normalized_value": 0.25,
+    "context_normalized_value": 0.25,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:54:04.015307+00:00",
+  "seconds": 8.468454242000007
+}

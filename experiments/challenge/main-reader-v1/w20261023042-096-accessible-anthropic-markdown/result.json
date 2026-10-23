@@ -1,0 +1,98 @@
+{
+  "id": "w20261023042-096-accessible-anthropic-markdown",
+  "case_id": "w20261023042-096-accessible",
+  "world": "w20261023042-096",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:44.189187+00:00",
+  "evidence_bytes": 16307,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:50:48Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:50:56Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:50:45Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:50:48Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeRbbWKMKoDxPaNmjiV",
+  "usage": {
+    "input_tokens": 8777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1060,
+    "output_tokens_details": {
+      "thinking_tokens": 511
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.056308",
+    "total_input_tokens": 8777,
+    "output_tokens": 1060,
+    "regular_input_tokens": 8777,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Aster-96",
+        "action": "diagnostic",
+        "sources": [
+          "e63257e0faa8b84",
+          "e2b96b219ac795f",
+          "ef6a73562840d69",
+          "e2dc725391d7a51",
+          "ef69ce9e4787f85",
+          "ea971d6fd3ba8de",
+          "e31d953ba978298",
+          "e17cdf8882f984c",
+          "ecc49c409761a81",
+          "e216d339f98e723"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-96: observed need link for initiative-3, plus the offering, proof and approved verified records that would follow it",
+      "Flint-96: observed signal",
+      "Cedar-96: proof-2 is approved verified=false, so a verified proof is needed before any action",
+      "Juniper-96: sector is restricted, which policy blocks, so no evidence can make it eligible under current policy"
+    ],
+    "reasoning_summary": "Only the approved seller policy applies (allowed regions UK, US, DE; restricted sector blocked); the proposed policy is ignored. Juniper-96 is blocked because its sector is restricted. Cedar-96 is blocked because its proof-2 is not verified. Flint-96 is blocked because the need link for initiative-3 and its signal are missing. Aster-96 (UK, services) has consent, a growth signal and priority 2, and its chain initiative-0 -> need-0 -> offering-0 -> proof-0 is verified. However, proof-0 is not shareable, which rules out reference_intro. Diagnostic (2x2=4, cost 2) beats research_brief (2x1=2, cost 1). Only one account is eligible, so the plan totals 4 points at a cost of 2, within the budget of 6."
+  },
+  "score": {
+    "optimum": 54,
+    "recoverable_value": 4,
+    "returned_value": 4,
+    "normalized_value": 0.07407407407407407,
+    "context_normalized_value": 0.07407407407407407,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T05:50:56.841212+00:00",
+  "seconds": 12.652028978001908
+}

@@ -1,0 +1,132 @@
+{
+  "id": "q7c83f7d67f-anthropic-gbrain_specialized",
+  "case_id": "q7c83f7d67f",
+  "world": "w1d7b3d8e",
+  "arm": "gbrain_specialized",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 0.8888888888888888,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2036,
+  "status": "completed",
+  "started_at": "2026-10-23T00:58:54.187031+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:58:55Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:58:57Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:58:54Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:58:55Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJGApjnqivPWMQZtohva",
+  "usage": {
+    "input_tokens": 3912,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 358,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.011404",
+    "total_input_tokens": 3912,
+    "output_tokens": 358,
+    "regular_input_tokens": 3912,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "Approved role matching the account role (approved unrelated_role vs observed operations_director)",
+      "Verified partner status (observed value is withdrawn)",
+      "Procurement stage observation (approved) for P3",
+      "Candidate matching the partner objective whose prerequisites are all satisfied"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S13",
+      "account.account_role:observed": "S8",
+      "account.channel_fit:observed": "S9",
+      "account.partner_status:observed": null,
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S2",
+      "seller.approved_role:approved": "S16",
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved role matching the account role (approved unrelated_role vs observed operations_director)",
+      "Verified partner status (observed value is withdrawn)",
+      "Procurement stage observation (approved) for P3",
+      "Candidate matching the partner objective whose prerequisites are all satisfied"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved role matching the account role (approved unrelated_role vs observed operations_director)",
+      "Verified partner status (observed value is withdrawn)",
+      "Procurement stage observation (approved) for P3",
+      "Candidate matching the partner objective whose prerequisites are all satisfied"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Approved role (unrelated_role, S16) does not equal the account role (operations_director, S8), so the common role equality fails for every candidate. Partner status is withdrawn (S19), not verified, so P1, P2 and P3 are blocked. P4 is a qualification_audit, which does not match the partner objective.",
+  "finished_at": "2026-10-23T00:58:57.848836+00:00",
+  "seconds": 3.6618147830013186
+}

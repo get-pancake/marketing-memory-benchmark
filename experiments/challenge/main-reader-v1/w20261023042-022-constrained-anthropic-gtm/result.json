@@ -1,0 +1,131 @@
+{
+  "id": "w20261023042-022-constrained-anthropic-gtm",
+  "case_id": "w20261023042-022-constrained",
+  "world": "w20261023042-022",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T06:01:09.710008+00:00",
+  "evidence_bytes": 12206,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:01:12Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:01:26Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9997",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:01:10Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11996000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:01:12Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfDiJrPhPV3WSbnX8pZ",
+  "usage": {
+    "input_tokens": 6957,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1779,
+    "output_tokens_details": {
+      "thinking_tokens": 965
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.063408",
+    "total_input_tokens": 6957,
+    "output_tokens": 1779,
+    "regular_input_tokens": 6957,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Larch-22",
+        "action": "renewal_review",
+        "sources": [
+          "e5ca34be9bd78a5",
+          "e1698ace3ebd2b4",
+          "e0b1d1e6fc2dc5d",
+          "e0bb96d310f2890",
+          "e6646cff7700cbf",
+          "e04666aa38467aa",
+          "ebb547dce7ce809",
+          "e27cc4c552cd8a1",
+          "e5355ba36a247d9",
+          "e55596c4f0a092c"
+        ]
+      },
+      {
+        "account": "Mesa-22",
+        "action": "workshop",
+        "sources": [
+          "e5ca34be9bd78a5",
+          "e269b6eba2a3c95",
+          "e297f7f90661afa",
+          "e753cef4728c3dd",
+          "eb70482168bdcdb",
+          "eef1335f0a8a1d3",
+          "e05d10497261732",
+          "e1a1f9eb0c983c0",
+          "e18d395f29b286e",
+          "ebb6670cb4543ac",
+          "ea03242bf351784"
+        ]
+      },
+      {
+        "account": "North-22",
+        "action": "diagnostic",
+        "sources": [
+          "e5ca34be9bd78a5",
+          "e6ef5475ebe6d62",
+          "ed165bd101e1f59",
+          "e4b51452b9e6832",
+          "e79f6ce4651684d",
+          "e0d133fcb46ac86",
+          "e1fc939103805f5",
+          "e3acfde6c375bf1",
+          "e9df7ac614b0a50",
+          "e074573aaa4f92b"
+        ]
+      }
+    ],
+    "missing": [
+      "Elm-22: conflicting observed consent records (true vs false); a single resolved current consent value is needed",
+      "Pine-22: conflicting observed consent records (true vs false); also region DE is not allowed by approved policy",
+      "Larch-22: proof-1 shareable is false, so reference_intro is unavailable",
+      "Birch-22: offering-5 assurance is false, so assurance_pack is unavailable"
+    ],
+    "reasoning_summary": "Approved seller policy (FR/US/UK, all actions) used; proposed policy ignored. Eligible: Larch (renewal, priority 7), Mesa (launch, priority 4, capacity true), North and Birch (risk, priority 3). Elm and Pine blocked by conflicting consent (Pine also region DE). Best plan within budget 7: Larch renewal_review 7x3=21 (cost 2) + Mesa workshop 4x4=16 (cost 3) + North diagnostic 3x2=6 (cost 2) = 43 points, cost 7. Birch diagnostic would tie with North; North chosen. Points are synthetic priorities, not revenue."
+  },
+  "score": {
+    "optimum": 43,
+    "recoverable_value": 43,
+    "returned_value": 43,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T06:01:26.877309+00:00",
+  "seconds": 17.167312221004977
+}

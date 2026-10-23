@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:12.399498+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0be527b70f7650cf016adaacec89d087d1a72e6ced1421adc8",
+  "usage": {
+    "input_tokens": 6088,
+    "input_tokens_details": {
+      "cache_write_tokens": 6085,
+      "cached_tokens": 0
+    },
+    "output_tokens": 90,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6178
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0161185",
+    "total_input_tokens": 6088,
+    "output_tokens": 90,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6085
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D106\"],\"explanation\":\"The review\u2019s stated meeting date is September 16, after the Brackenwater handoff, and its reference to Dana\u2019s freight account follows the Quarrendon discussion. The September 15 weekly explicitly assigns Quarrendon to Dana Okafor and Brackenwater to Marcus Lindqvist.\"}",
+  "finished_at": "2026-10-23T00:40:15.185324+00:00",
+  "seconds": 2.785834634996718,
+  "id": "dev-op-3-openai-raw_bm25",
+  "case_id": "dev-op-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24500,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The review\u2019s stated meeting date is September 16, after the Brackenwater handoff, and its reference to Dana\u2019s freight account follows the Quarrendon discussion. The September 15 weekly explicitly assigns Quarrendon to Dana Okafor and Brackenwater to Marcus Lindqvist.",
+  "citations": [
+    "D079",
+    "D106"
+  ]
+}

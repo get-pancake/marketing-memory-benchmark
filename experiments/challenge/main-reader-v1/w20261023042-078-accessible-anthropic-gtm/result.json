@@ -1,0 +1,110 @@
+{
+  "id": "w20261023042-078-accessible-anthropic-gtm",
+  "case_id": "w20261023042-078-accessible",
+  "world": "w20261023042-078",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:55.542998+00:00",
+  "evidence_bytes": 16353,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9990000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:53:57Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:54:08Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:53:56Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11989000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:53:57Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJefh5HyyFD7NH8A2nig",
+  "usage": {
+    "input_tokens": 8838,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1397,
+    "output_tokens_details": {
+      "thinking_tokens": 733
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.063292",
+    "total_input_tokens": 8838,
+    "output_tokens": 1397,
+    "regular_input_tokens": 8838,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Mesa-78",
+        "action": "reference_intro",
+        "sources": [
+          "e45d11559bc99a2",
+          "e8eb919e9c5157e",
+          "ebad74da7e27a80",
+          "ecb2229630ba1be",
+          "e05c6cf51aa9d68",
+          "e9619e0b9484953",
+          "e619a3f72e441c0",
+          "ef41760947c70fc",
+          "ef6d709a45f265f",
+          "eb95552ccaa8ba4",
+          "e101857e715d093"
+        ]
+      },
+      {
+        "account": "Cedar-78",
+        "action": "renewal_review",
+        "sources": [
+          "e45d11559bc99a2",
+          "eb73a23f19c96b5",
+          "e7d1261d80d4993",
+          "e0ccfdecd695626",
+          "e9ab08cb0f156d5",
+          "ea675afbbcaeeed",
+          "e7b2505cc1ec8c2",
+          "eb78e888667cde5",
+          "e42857860e6e2a7",
+          "ea3381e6fbf1cae"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The approved seller policy allows all actions, regions US/DE/FR, and blocks the restricted sector. The proposed policy was ignored because it is not approved. Pine-78 (FR) and Harbor-78 (US) are both in the restricted sector, so all their actions are ineligible. Mesa-78 (FR services, consent true, renewal signal, priority 11) has a fully verified chain and a shareable proof, so reference_intro scores 11x5=55 at cost 4. Its capacity is false, but no action that needs capacity is chosen. Cedar-78 (US services, consent true, renewal signal, priority 6) has a fully verified chain, so renewal_review scores 6x3=18 at cost 2. The total is 73 at cost 6, which fits the budget of 6. The swapped alternative (Cedar reference_intro plus Mesa renewal_review) scores 30+33=63, and Mesa reference_intro plus Cedar research_brief scores 55+6=61, so both are lower. These are synthetic policy points, not revenue."
+  },
+  "score": {
+    "optimum": 73,
+    "recoverable_value": 73,
+    "returned_value": 73,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:54:08.940893+00:00",
+  "seconds": 13.39790502699907
+}

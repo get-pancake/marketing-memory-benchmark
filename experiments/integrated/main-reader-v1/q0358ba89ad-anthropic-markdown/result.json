@@ -1,0 +1,126 @@
+{
+  "id": "q0358ba89ad-anthropic-markdown",
+  "case_id": "q0358ba89ad",
+  "world": "w2a5aeb37",
+  "arm": "markdown",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.5238095238095238,
+    "selected_sources": 21,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1992,
+  "status": "completed",
+  "started_at": "2026-10-23T00:35:25.988649+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:35:27Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:35:35Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:35:26Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:35:27Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEP28G1PY9zCERNScrn",
+  "usage": {
+    "input_tokens": 4027,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1143,
+    "output_tokens_details": {
+      "thinking_tokens": 795
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.019484",
+    "total_input_tokens": 4027,
+    "output_tokens": 1143,
+    "regular_input_tokens": 4027,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved (conflicting current values S16 vs S21, so approved_role=account_role cannot be confirmed)",
+      "account.customer_state:observed=active (S3 shows withdrawn)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S2",
+      "account.customer_state:observed": null,
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S10",
+      "seller.approved_geo:approved": "S15",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S5",
+      "seller.proof_for_pain:observed": "S18"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved (conflicting current values S16 vs S21, so approved_role=account_role cannot be confirmed)",
+      "account.customer_state:observed=active (S3 shows withdrawn)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved (conflicting current values S16 vs S21, so approved_role=account_role cannot be confirmed)",
+      "account.customer_state:observed=active (S3 shows withdrawn)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 is the only candidate that fits the objective and the 2-unit limit, but it is blocked. Approved role conflicts (S16 revenue_lead vs S21 unrelated_role), and the current customer state is withdrawn (S3), not active. P3 and P2 exceed the 2-unit allowance, and P1 has a different objective.",
+  "finished_at": "2026-10-23T00:35:35.019303+00:00",
+  "seconds": 9.030664386998978
+}

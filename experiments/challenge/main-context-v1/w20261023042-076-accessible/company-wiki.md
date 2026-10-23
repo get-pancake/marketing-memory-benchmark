@@ -1,0 +1,769 @@
+# Current company records
+
+## Birch-76 / consent
+
+{"authority":"observed","entity":"Birch-76","id":"e8940370be0c545","observed_day":15,"relation":"consent","valid_day":15,"value":false}
+
+## Birch-76 / initiative
+
+{"authority":"observed","entity":"Birch-76","id":"e9b24561cf722d3","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-7"}
+
+## Birch-76 / nonresponse
+
+{"authority":"feedback","entity":"Birch-76","id":"eb8cf36777980a4","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Birch-76 / priority
+
+{"authority":"approved","entity":"Birch-76","id":"e643ab01db11f6b","observed_day":5,"relation":"priority","valid_day":5,"value":9}
+
+## Birch-76 / profile
+
+{"authority":"observed","entity":"Birch-76","id":"ed3ad78dbfa140b","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"US","sector":"manufacturing"}}
+
+## Birch-76 / signal
+
+{"authority":"observed","entity":"Birch-76","id":"ead28ceeaee7022","observed_day":5,"relation":"signal","valid_day":5,"value":"risk"}
+
+## Delta-76 / consent
+
+{"authority":"observed","entity":"Delta-76","id":"e4eecb29e4ab6d0","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## Delta-76 / initiative
+
+{"authority":"observed","entity":"Delta-76","id":"e7d4468391faa6c","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-6"}
+
+## Delta-76 / nonresponse
+
+{"authority":"feedback","entity":"Delta-76","id":"e38f5c19370b4d6","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Delta-76 / priority
+
+{"authority":"approved","entity":"Delta-76","id":"e6768a7dd1a1d8d","observed_day":5,"relation":"priority","valid_day":5,"value":1}
+
+## Delta-76 / profile
+
+{"authority":"observed","entity":"Delta-76","id":"eaedbf8c53864c1","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"UK","sector":"manufacturing"}}
+
+## Delta-76 / signal
+
+{"authority":"observed","entity":"Delta-76","id":"e173c7237c1fef4","observed_day":5,"relation":"signal","valid_day":5,"value":"launch"}
+
+## Iris-76 / consent
+
+{"authority":"observed","entity":"Iris-76","id":"eadfa694fb6841e","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## Iris-76 / initiative
+
+{"authority":"observed","entity":"Iris-76","id":"ea88b0521da9120","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-5"}
+
+## Iris-76 / nonresponse
+
+{"authority":"feedback","entity":"Iris-76","id":"e3cbfa37a3cd8e4","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Iris-76 / priority
+
+{"authority":"approved","entity":"Iris-76","id":"ea41b8cf8460a24","observed_day":5,"relation":"priority","valid_day":5,"value":8}
+
+## Iris-76 / profile
+
+{"authority":"observed","entity":"Iris-76","id":"e9d07ab4ab74b8a","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"FR","sector":"manufacturing"}}
+
+## Iris-76 / signal
+
+{"authority":"observed","entity":"Iris-76","id":"e0e25ed47fe10be","observed_day":5,"relation":"signal","valid_day":5,"value":"risk"}
+
+## Juniper-76 / consent
+
+{"authority":"observed","entity":"Juniper-76","id":"e9c336fb9670af8","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## Juniper-76 / initiative
+
+{"authority":"observed","entity":"Juniper-76","id":"e94321b97cbf384","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-4"}
+
+## Juniper-76 / nonresponse
+
+{"authority":"feedback","entity":"Juniper-76","id":"e7256a2c2a169f3","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Juniper-76 / priority
+
+{"authority":"approved","entity":"Juniper-76","id":"e930c14cfc9b349","observed_day":5,"relation":"priority","valid_day":5,"value":8}
+
+## Juniper-76 / profile
+
+{"authority":"observed","entity":"Juniper-76","id":"e41bdd485311b24","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"US","sector":"restricted"}}
+
+## Juniper-76 / signal
+
+{"authority":"observed","entity":"Juniper-76","id":"eb05e8dacb49af8","observed_day":5,"relation":"signal","valid_day":5,"value":"launch"}
+
+## Larch-76 / brand_history
+
+{"authority":"observed","entity":"Larch-76","id":"ea7cfb18071eec5","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-45"}
+
+## Larch-76 / consent
+
+{"authority":"observed","entity":"Larch-76","id":"ef72dc71a26dfad","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## Larch-76 / incident
+
+{"authority":"observed","entity":"Larch-76","id":"eef311c12b91779","observed_day":5,"relation":"incident","valid_day":5,"value":"corporate-37"}
+
+## Larch-76 / initiative
+
+{"authority":"observed","entity":"Larch-76","id":"e69a12830bc8e8f","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-3"}
+
+## Larch-76 / invoice
+
+{"authority":"observed","entity":"Larch-76","id":"e2a9fb6f3198e7b","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-36"}
+
+## Larch-76 / invoice
+
+{"authority":"observed","entity":"Larch-76","id":"e5605b0c7510680","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-1"}
+
+## Larch-76 / nonresponse
+
+{"authority":"feedback","entity":"Larch-76","id":"e805e4e2c79032e","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Larch-76 / office_lease
+
+{"authority":"observed","entity":"Larch-76","id":"eb3c9c08c44b7c2","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-57"}
+
+## Larch-76 / priority
+
+{"authority":"approved","entity":"Larch-76","id":"e092516f057cd3f","observed_day":5,"relation":"priority","valid_day":5,"value":11}
+
+## Larch-76 / profile
+
+{"authority":"observed","entity":"Larch-76","id":"e0686c270ea858c","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"DE","sector":"restricted"}}
+
+## Larch-76 / signal
+
+{"authority":"observed","entity":"Larch-76","id":"e1630df3cbb1721","observed_day":5,"relation":"signal","valid_day":5,"value":"growth"}
+
+## Mesa-76 / consent
+
+{"authority":"observed","entity":"Mesa-76","id":"e56aa4dc73a06de","observed_day":15,"relation":"consent","valid_day":15,"value":false}
+
+## Mesa-76 / initiative
+
+{"authority":"observed","entity":"Mesa-76","id":"ea3a9779bfe77e8","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-2"}
+
+## Mesa-76 / invoice
+
+{"authority":"observed","entity":"Mesa-76","id":"e04843503af4be7","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-25"}
+
+## Mesa-76 / nonresponse
+
+{"authority":"feedback","entity":"Mesa-76","id":"e39b99a35afd483","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Mesa-76 / priority
+
+{"authority":"approved","entity":"Mesa-76","id":"ef08fef4fd3db59","observed_day":5,"relation":"priority","valid_day":5,"value":4}
+
+## Mesa-76 / profile
+
+{"authority":"observed","entity":"Mesa-76","id":"e94f251922c094f","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"FR","sector":"software"}}
+
+## Mesa-76 / signal
+
+{"authority":"observed","entity":"Mesa-76","id":"eb2e8a115c5ae4d","observed_day":5,"relation":"signal","valid_day":5,"value":"risk"}
+
+## Mesa-76 / support_ticket
+
+{"authority":"observed","entity":"Mesa-76","id":"e9b3de4febc6762","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-2"}
+
+## North-76 / budget_note
+
+{"authority":"observed","entity":"North-76","id":"ed8081ed8493b54","observed_day":5,"relation":"budget_note","valid_day":5,"value":"corporate-5"}
+
+## North-76 / consent
+
+{"authority":"observed","entity":"North-76","id":"e9c136e2b5ad194","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## North-76 / initiative
+
+{"authority":"observed","entity":"North-76","id":"e3bc90cc93b86b8","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-1"}
+
+## North-76 / meeting
+
+{"authority":"observed","entity":"North-76","id":"ee48ee8f410ca5c","observed_day":5,"relation":"meeting","valid_day":5,"value":"corporate-32"}
+
+## North-76 / nonresponse
+
+{"authority":"feedback","entity":"North-76","id":"e2b8901a0d47ce1","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## North-76 / priority
+
+{"authority":"approved","entity":"North-76","id":"e11e573ef803b6a","observed_day":5,"relation":"priority","valid_day":5,"value":7}
+
+## North-76 / profile
+
+{"authority":"observed","entity":"North-76","id":"e8371f55f403406","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"UK","sector":"restricted"}}
+
+## North-76 / signal
+
+{"authority":"observed","entity":"North-76","id":"ef9c7fba4c1b9b5","observed_day":5,"relation":"signal","valid_day":5,"value":"growth"}
+
+## Pine-76 / brand_history
+
+{"authority":"observed","entity":"Pine-76","id":"ec9a427aac0597e","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-30"}
+
+## Pine-76 / consent
+
+{"authority":"observed","entity":"Pine-76","id":"e6f2666a5acf1c9","observed_day":15,"relation":"consent","valid_day":15,"value":true}
+
+## Pine-76 / design_review
+
+{"authority":"observed","entity":"Pine-76","id":"e21f2a4831f1b0d","observed_day":5,"relation":"design_review","valid_day":5,"value":"corporate-47"}
+
+## Pine-76 / design_review
+
+{"authority":"observed","entity":"Pine-76","id":"eab062093934f49","observed_day":5,"relation":"design_review","valid_day":5,"value":"corporate-42"}
+
+## Pine-76 / initiative
+
+{"authority":"observed","entity":"Pine-76","id":"e039851c194b15d","observed_day":5,"relation":"initiative","valid_day":5,"value":"initiative-0"}
+
+## Pine-76 / nonresponse
+
+{"authority":"feedback","entity":"Pine-76","id":"e81eff0053fa82c","observed_day":5,"relation":"nonresponse","valid_day":5,"value":true}
+
+## Pine-76 / office_lease
+
+{"authority":"observed","entity":"Pine-76","id":"e0c2a37aeff4d3b","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-56"}
+
+## Pine-76 / office_lease
+
+{"authority":"observed","entity":"Pine-76","id":"e4e5daaecac6bf2","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-31"}
+
+## Pine-76 / priority
+
+{"authority":"approved","entity":"Pine-76","id":"e7a6eed426bb9b8","observed_day":5,"relation":"priority","valid_day":5,"value":5}
+
+## Pine-76 / profile
+
+{"authority":"observed","entity":"Pine-76","id":"e7caad21c6520b5","observed_day":5,"relation":"profile","valid_day":5,"value":{"region":"UK","sector":"services"}}
+
+## Pine-76 / signal
+
+{"authority":"observed","entity":"Pine-76","id":"e34c823a4c96856","observed_day":5,"relation":"signal","valid_day":5,"value":"growth"}
+
+## Pine-76 / supplier
+
+{"authority":"observed","entity":"Pine-76","id":"ece1b0fc003d325","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-7"}
+
+## Pine-76 / support_ticket
+
+{"authority":"observed","entity":"Pine-76","id":"ee08b0472fac4a5","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-41"}
+
+## corporate-0 / summary
+
+{"authority":"observed","entity":"corporate-0","id":"efb6ac094a34755","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-12 / summary
+
+{"authority":"observed","entity":"corporate-12","id":"e968b63342e74e4","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-15 / summary
+
+{"authority":"observed","entity":"corporate-15","id":"e480a1833dbd2b2","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-18 / summary
+
+{"authority":"observed","entity":"corporate-18","id":"eb9dfbd228ee90f","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-21 / summary
+
+{"authority":"observed","entity":"corporate-21","id":"e0d459b2cfa74c5","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-24 / summary
+
+{"authority":"observed","entity":"corporate-24","id":"e0fd316f03072da","observed_day":5,"relation":"summary","valid_day":5,"value":"Support observation, not customer permission."}
+
+## corporate-27 / summary
+
+{"authority":"observed","entity":"corporate-27","id":"ef2cd5c661bec57","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-3 / summary
+
+{"authority":"observed","entity":"corporate-3","id":"e9c74b4b63ea131","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-30 / summary
+
+{"authority":"observed","entity":"corporate-30","id":"e482bfe681e7da5","observed_day":5,"relation":"summary","valid_day":5,"value":"Support observation, not customer permission."}
+
+## corporate-33 / summary
+
+{"authority":"observed","entity":"corporate-33","id":"e18dbd739495d27","observed_day":5,"relation":"summary","valid_day":5,"value":"Support observation, not customer permission."}
+
+## corporate-36 / summary
+
+{"authority":"observed","entity":"corporate-36","id":"ee9a59be40465b4","observed_day":5,"relation":"summary","valid_day":5,"value":"Engineering log with no proof approval."}
+
+## corporate-39 / summary
+
+{"authority":"observed","entity":"corporate-39","id":"e25b4a68390e4f8","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-42 / summary
+
+{"authority":"observed","entity":"corporate-42","id":"e1c80e12c687ce3","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-45 / summary
+
+{"authority":"observed","entity":"corporate-45","id":"e08436672114087","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-48 / summary
+
+{"authority":"observed","entity":"corporate-48","id":"eb88b76f67e3db0","observed_day":5,"relation":"summary","valid_day":5,"value":"Engineering log with no proof approval."}
+
+## corporate-51 / summary
+
+{"authority":"observed","entity":"corporate-51","id":"edc2b96c10e7788","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-54 / summary
+
+{"authority":"observed","entity":"corporate-54","id":"ea6e29fdad15a31","observed_day":5,"relation":"summary","valid_day":5,"value":"Finance forecast is not an approved action priority."}
+
+## corporate-57 / summary
+
+{"authority":"observed","entity":"corporate-57","id":"e37eb511624107a","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-6 / summary
+
+{"authority":"observed","entity":"corporate-6","id":"ea5e3e557259bfc","observed_day":5,"relation":"summary","valid_day":5,"value":"Marketing account review has no approved targeting change."}
+
+## corporate-60 / summary
+
+{"authority":"observed","entity":"corporate-60","id":"e99feccd710e114","observed_day":5,"relation":"summary","valid_day":5,"value":"Engineering log with no proof approval."}
+
+## corporate-63 / summary
+
+{"authority":"observed","entity":"corporate-63","id":"ee7dc484db9a017","observed_day":5,"relation":"summary","valid_day":5,"value":"Support observation, not customer permission."}
+
+## corporate-9 / summary
+
+{"authority":"observed","entity":"corporate-9","id":"e47a255d5f806cf","observed_day":5,"relation":"summary","valid_day":5,"value":"Support observation, not customer permission."}
+
+## initiative-0 / incident
+
+{"authority":"observed","entity":"initiative-0","id":"e29f171fff14676","observed_day":5,"relation":"incident","valid_day":5,"value":"corporate-50"}
+
+## initiative-0 / need
+
+{"authority":"observed","entity":"initiative-0","id":"e4e3ca9c5c7d802","observed_day":5,"relation":"need","valid_day":5,"value":"need-0"}
+
+## initiative-0 / office_lease
+
+{"authority":"observed","entity":"initiative-0","id":"e7039ad5df3b709","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-13"}
+
+## initiative-0 / office_lease
+
+{"authority":"observed","entity":"initiative-0","id":"eec8e2c247cf32b","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-48"}
+
+## initiative-1 / design_review
+
+{"authority":"observed","entity":"initiative-1","id":"e0327ea44cb4536","observed_day":5,"relation":"design_review","valid_day":5,"value":"corporate-46"}
+
+## initiative-1 / invoice
+
+{"authority":"observed","entity":"initiative-1","id":"e218798270ac0ac","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-40"}
+
+## initiative-1 / invoice
+
+{"authority":"observed","entity":"initiative-1","id":"e82cbe4cfa6fe1f","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-58"}
+
+## initiative-1 / need
+
+{"authority":"observed","entity":"initiative-1","id":"e250716414a42b8","observed_day":5,"relation":"need","valid_day":5,"value":"need-1"}
+
+## initiative-1 / office_lease
+
+{"authority":"observed","entity":"initiative-1","id":"ead995ba32a2dad","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-11"}
+
+## initiative-1 / office_lease
+
+{"authority":"observed","entity":"initiative-1","id":"ee0d8ec91165ecc","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-10"}
+
+## initiative-1 / supplier
+
+{"authority":"observed","entity":"initiative-1","id":"ef7087e5ee5fe05","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-34"}
+
+## initiative-1 / support_ticket
+
+{"authority":"observed","entity":"initiative-1","id":"ee755cbc2e429df","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-18"}
+
+## initiative-2 / brand_history
+
+{"authority":"observed","entity":"initiative-2","id":"ef289634f1f1cf0","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-49"}
+
+## initiative-2 / incident
+
+{"authority":"observed","entity":"initiative-2","id":"efe1007cdc7517c","observed_day":5,"relation":"incident","valid_day":5,"value":"corporate-9"}
+
+## initiative-2 / invoice
+
+{"authority":"observed","entity":"initiative-2","id":"e1f02d465b29753","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-17"}
+
+## initiative-2 / need
+
+{"authority":"observed","entity":"initiative-2","id":"e0ba368e8555f90","observed_day":5,"relation":"need","valid_day":5,"value":"need-2"}
+
+## initiative-2 / supplier
+
+{"authority":"observed","entity":"initiative-2","id":"ec5a5853d1e5a1b","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-8"}
+
+## initiative-2 / support_ticket
+
+{"authority":"observed","entity":"initiative-2","id":"eefb7dc7683107b","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-21"}
+
+## initiative-3 / budget_note
+
+{"authority":"observed","entity":"initiative-3","id":"eb12bc68f049085","observed_day":5,"relation":"budget_note","valid_day":5,"value":"corporate-51"}
+
+## initiative-3 / design_review
+
+{"authority":"observed","entity":"initiative-3","id":"ea24dfbf9ab51db","observed_day":5,"relation":"design_review","valid_day":5,"value":"corporate-38"}
+
+## initiative-3 / invoice
+
+{"authority":"observed","entity":"initiative-3","id":"eb68a59c00f9b38","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-12"}
+
+## initiative-3 / invoice
+
+{"authority":"observed","entity":"initiative-3","id":"ed40733db385c46","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-63"}
+
+## initiative-3 / need
+
+{"authority":"observed","entity":"initiative-3","id":"e8b09bc3c71c534","observed_day":5,"relation":"need","valid_day":5,"value":"need-3"}
+
+## initiative-4 / need
+
+{"authority":"observed","entity":"initiative-4","id":"ee1eb73fc636506","observed_day":5,"relation":"need","valid_day":5,"value":"need-4"}
+
+## initiative-5 / need
+
+{"authority":"observed","entity":"initiative-5","id":"e7911e272f61b40","observed_day":5,"relation":"need","valid_day":5,"value":"need-5"}
+
+## initiative-6 / need
+
+{"authority":"observed","entity":"initiative-6","id":"e81a4a3d185e084","observed_day":5,"relation":"need","valid_day":5,"value":"need-6"}
+
+## initiative-7 / need
+
+{"authority":"observed","entity":"initiative-7","id":"eb9f89dd4cb1b66","observed_day":5,"relation":"need","valid_day":5,"value":"need-7"}
+
+## need-0 / offering
+
+{"authority":"observed","entity":"need-0","id":"e7b14df299b86b8","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-0"}
+
+## need-1 / offering
+
+{"authority":"observed","entity":"need-1","id":"ef8686438fb05cf","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-1"}
+
+## need-2 / offering
+
+{"authority":"observed","entity":"need-2","id":"e3bc8b0b98b2b2c","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-2"}
+
+## need-3 / offering
+
+{"authority":"observed","entity":"need-3","id":"ea24d2461dfb39b","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-3"}
+
+## need-4 / offering
+
+{"authority":"observed","entity":"need-4","id":"ed8fd8a2b5a5ad9","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-4"}
+
+## need-5 / offering
+
+{"authority":"observed","entity":"need-5","id":"e525f2077dad204","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-5"}
+
+## need-6 / offering
+
+{"authority":"observed","entity":"need-6","id":"ebad3e1b9f84521","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-6"}
+
+## need-7 / offering
+
+{"authority":"observed","entity":"need-7","id":"e0c881ea984f5b5","observed_day":5,"relation":"offering","valid_day":5,"value":"offering-7"}
+
+## offering-0 / assurance
+
+{"authority":"approved","entity":"offering-0","id":"e96d7bb9d8ab521","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-0 / capacity
+
+{"authority":"approved","entity":"offering-0","id":"e88b4deef6175b5","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-0 / design_review
+
+{"authority":"observed","entity":"offering-0","id":"e7d402f88256639","observed_day":5,"relation":"design_review","valid_day":5,"value":"corporate-22"}
+
+## offering-0 / hiring_plan
+
+{"authority":"observed","entity":"offering-0","id":"ea446a1d31c8ca6","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-0"}
+
+## offering-0 / hiring_plan
+
+{"authority":"observed","entity":"offering-0","id":"eef730dad341b2d","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-19"}
+
+## offering-0 / invoice
+
+{"authority":"observed","entity":"offering-0","id":"e51aab5917e24de","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-24"}
+
+## offering-0 / invoice
+
+{"authority":"observed","entity":"offering-0","id":"e87dee2ff5af1e9","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-6"}
+
+## offering-0 / meeting
+
+{"authority":"observed","entity":"offering-0","id":"e129a2a003f96bb","observed_day":5,"relation":"meeting","valid_day":5,"value":"corporate-23"}
+
+## offering-0 / proof
+
+{"authority":"observed","entity":"offering-0","id":"ee4341876aa4f4a","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-0"}
+
+## offering-1 / assurance
+
+{"authority":"approved","entity":"offering-1","id":"e0a84ca327f785f","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-1 / budget_note
+
+{"authority":"observed","entity":"offering-1","id":"e1bb50faecd0b7a","observed_day":5,"relation":"budget_note","valid_day":5,"value":"corporate-55"}
+
+## offering-1 / capacity
+
+{"authority":"approved","entity":"offering-1","id":"e350320783ef487","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-1 / hiring_plan
+
+{"authority":"observed","entity":"offering-1","id":"eae9d8d145c99ce","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-20"}
+
+## offering-1 / hiring_plan
+
+{"authority":"observed","entity":"offering-1","id":"ece8e33994864ed","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-4"}
+
+## offering-1 / meeting
+
+{"authority":"observed","entity":"offering-1","id":"e2e194e5f348efc","observed_day":5,"relation":"meeting","valid_day":5,"value":"corporate-15"}
+
+## offering-1 / office_lease
+
+{"authority":"observed","entity":"offering-1","id":"ea28b1ad59f82dc","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-33"}
+
+## offering-1 / proof
+
+{"authority":"observed","entity":"offering-1","id":"ebeb1b36b595535","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-1"}
+
+## offering-1 / support_ticket
+
+{"authority":"observed","entity":"offering-1","id":"ec0f99e00480c1c","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-26"}
+
+## offering-1 / support_ticket
+
+{"authority":"observed","entity":"offering-1","id":"eeea1788eff9073","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-44"}
+
+## offering-2 / assurance
+
+{"authority":"approved","entity":"offering-2","id":"e9663ce6073bdd3","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-2 / brand_history
+
+{"authority":"observed","entity":"offering-2","id":"e384e333a98fa9a","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-39"}
+
+## offering-2 / budget_note
+
+{"authority":"observed","entity":"offering-2","id":"e015763f1ab0b08","observed_day":5,"relation":"budget_note","valid_day":5,"value":"corporate-59"}
+
+## offering-2 / budget_note
+
+{"authority":"observed","entity":"offering-2","id":"e1f73b7661eb543","observed_day":5,"relation":"budget_note","valid_day":5,"value":"corporate-3"}
+
+## offering-2 / capacity
+
+{"authority":"approved","entity":"offering-2","id":"ec1488dcd4b8f93","observed_day":5,"relation":"capacity","valid_day":5,"value":false}
+
+## offering-2 / invoice
+
+{"authority":"observed","entity":"offering-2","id":"e4ecb51c665477f","observed_day":5,"relation":"invoice","valid_day":5,"value":"corporate-14"}
+
+## offering-2 / proof
+
+{"authority":"observed","entity":"offering-2","id":"e3c3db87c8827a8","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-2"}
+
+## offering-3 / assurance
+
+{"authority":"approved","entity":"offering-3","id":"e46c840bf4c72db","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-3 / brand_history
+
+{"authority":"observed","entity":"offering-3","id":"e0af6ff6805cc5c","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-29"}
+
+## offering-3 / brand_history
+
+{"authority":"observed","entity":"offering-3","id":"e794d114ab90e91","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-52"}
+
+## offering-3 / capacity
+
+{"authority":"approved","entity":"offering-3","id":"e24043f54e991e1","observed_day":5,"relation":"capacity","valid_day":5,"value":false}
+
+## offering-3 / hiring_plan
+
+{"authority":"observed","entity":"offering-3","id":"e8199aa06d05d60","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-27"}
+
+## offering-3 / office_lease
+
+{"authority":"observed","entity":"offering-3","id":"ec19ffa0df1de49","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-61"}
+
+## offering-3 / proof
+
+{"authority":"observed","entity":"offering-3","id":"e79528bb5359ad2","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-3"}
+
+## offering-3 / supplier
+
+{"authority":"observed","entity":"offering-3","id":"e321230587a68d2","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-35"}
+
+## offering-3 / support_ticket
+
+{"authority":"observed","entity":"offering-3","id":"e9ec8248a685825","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-16"}
+
+## offering-4 / assurance
+
+{"authority":"approved","entity":"offering-4","id":"ed95ee2d14e0ef4","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-4 / capacity
+
+{"authority":"approved","entity":"offering-4","id":"e65ca9904c3e27f","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-4 / proof
+
+{"authority":"observed","entity":"offering-4","id":"e85b1ac17ce3d64","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-4"}
+
+## offering-5 / assurance
+
+{"authority":"approved","entity":"offering-5","id":"e791c137f039ac8","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-5 / capacity
+
+{"authority":"approved","entity":"offering-5","id":"e494ae3657c4136","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-5 / proof
+
+{"authority":"observed","entity":"offering-5","id":"e53c6ac8a53ce39","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-5"}
+
+## offering-6 / assurance
+
+{"authority":"approved","entity":"offering-6","id":"e4aa0d70d85e0c3","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-6 / capacity
+
+{"authority":"approved","entity":"offering-6","id":"e506dc21fc1844b","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-6 / proof
+
+{"authority":"observed","entity":"offering-6","id":"e3bca3b94c03fe2","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-6"}
+
+## offering-7 / assurance
+
+{"authority":"approved","entity":"offering-7","id":"e4951fc8604594a","observed_day":5,"relation":"assurance","valid_day":5,"value":true}
+
+## offering-7 / capacity
+
+{"authority":"approved","entity":"offering-7","id":"e6849d0aeafc9a4","observed_day":5,"relation":"capacity","valid_day":5,"value":true}
+
+## offering-7 / proof
+
+{"authority":"observed","entity":"offering-7","id":"e19145948c7077a","observed_day":5,"relation":"proof","valid_day":5,"value":"proof-7"}
+
+## proof-0 / shareable
+
+{"authority":"approved","entity":"proof-0","id":"e085b6eec596766","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-0 / verified
+
+{"authority":"approved","entity":"proof-0","id":"e24184835616339","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-1 / shareable
+
+{"authority":"approved","entity":"proof-1","id":"ef1ef8ec9642d09","observed_day":5,"relation":"shareable","valid_day":5,"value":false}
+
+## proof-1 / verified
+
+{"authority":"approved","entity":"proof-1","id":"e93392ff8dfee37","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-2 / shareable
+
+{"authority":"approved","entity":"proof-2","id":"ebe847d496cce55","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-2 / verified
+
+{"authority":"approved","entity":"proof-2","id":"edc990d0d251014","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-3 / shareable
+
+{"authority":"approved","entity":"proof-3","id":"e6470fc2cd24e42","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-3 / verified
+
+{"authority":"approved","entity":"proof-3","id":"e20f871cb316521","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-4 / shareable
+
+{"authority":"approved","entity":"proof-4","id":"e4704dd6190c0ab","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-4 / verified
+
+{"authority":"approved","entity":"proof-4","id":"e0ce13884cc41ab","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-5 / shareable
+
+{"authority":"approved","entity":"proof-5","id":"ee87748ef9d1e1e","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-5 / verified
+
+{"authority":"approved","entity":"proof-5","id":"efd3175b1eb92c4","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-6 / shareable
+
+{"authority":"approved","entity":"proof-6","id":"eda47d42d7c8d66","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-6 / verified
+
+{"authority":"approved","entity":"proof-6","id":"e5611223fac2ac0","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## proof-7 / shareable
+
+{"authority":"approved","entity":"proof-7","id":"eb2a3710d1abc12","observed_day":5,"relation":"shareable","valid_day":5,"value":true}
+
+## proof-7 / verified
+
+{"authority":"approved","entity":"proof-7","id":"e23b36617817847","observed_day":5,"relation":"verified","valid_day":5,"value":true}
+
+## seller / brand_history
+
+{"authority":"observed","entity":"seller","id":"e9724fed597d8bd","observed_day":5,"relation":"brand_history","valid_day":5,"value":"corporate-54"}
+
+## seller / hiring_plan
+
+{"authority":"observed","entity":"seller","id":"ef3c0e29d39dbe5","observed_day":5,"relation":"hiring_plan","valid_day":5,"value":"corporate-62"}
+
+## seller / office_lease
+
+{"authority":"observed","entity":"seller","id":"e01de81973eb511","observed_day":5,"relation":"office_lease","valid_day":5,"value":"corporate-53"}
+
+## seller / policy
+
+{"authority":"proposed","entity":"seller","id":"e21abe22dadccb3","observed_day":25,"relation":"policy","valid_day":25,"value":{"actions":["diagnostic","workshop","renewal_review","reference_intro","assurance_pack","research_brief"],"allowed_regions":[],"blocked_sectors":["restricted"]}}
+
+## seller / policy
+
+{"authority":"approved","entity":"seller","id":"eb7e232bd601276","observed_day":12,"relation":"policy","valid_day":12,"value":{"actions":["diagnostic","workshop","renewal_review","reference_intro","assurance_pack","research_brief"],"allowed_regions":["UK","US","DE"],"blocked_sectors":["restricted"]}}
+
+## seller / supplier
+
+{"authority":"observed","entity":"seller","id":"e4d67b0d697e1a8","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-60"}
+
+## seller / supplier
+
+{"authority":"observed","entity":"seller","id":"e53474469724841","observed_day":5,"relation":"supplier","valid_day":5,"value":"corporate-28"}
+
+## seller / support_ticket
+
+{"authority":"observed","entity":"seller","id":"e01d2cfd661b60d","observed_day":5,"relation":"support_ticket","valid_day":5,"value":"corporate-43"}

@@ -1,0 +1,2062 @@
+{
+  "schema": "error-localization-v1",
+  "created_at": "2026-10-22T22:13:01.384671+00:00",
+  "source_per_attempt_sha256": "bce8ca79045e41993f76e15653028b7dd750743bdd408e5490070c0d6d3fe4c0",
+  "source_summary_semantic_sha256": "be7e492af0b403a56dff03cd7cc84a1852e105ab80f87a8744549cbbfc7532a8",
+  "script_sha256": "9154abe4232ce0a1001249429da727d9267cf4800da2e063ec3e67d699a5cd34",
+  "methods": {
+    "generic_hybrid": {
+      "positive": {
+        "supported_recommendation": 2,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 43,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 3,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 46,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 2
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 43,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 3,
+        "available_1_correct_1": 2
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 8,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/correct_withhold": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 467,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q52cab06465",
+          "attempt_id": 218,
+          "world": "w5e59e4e5",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/supported_recommendation": {
+          "case_id": "q741bc163e4",
+          "attempt_id": 193,
+          "world": "w5e59e4e5",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q829ce1bf8d",
+          "attempt_id": 112,
+          "world": "w5e59e4e5",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        }
+      }
+    },
+    "prompt_hybrid": {
+      "positive": {
+        "supported_recommendation": 0,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 46,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 2,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 40,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 8
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 46,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 2,
+        "available_1_correct_1": 0
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 233,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 375,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "misbound_support"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q14a950056f",
+          "attempt_id": 136,
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "qc71fafcbbc",
+          "attempt_id": 221,
+          "world": "w928ad8c3",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        }
+      }
+    },
+    "full_context": {
+      "positive": {
+        "supported_recommendation": 25,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 0,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 6,
+        "inapplicable_choice_with_complete_witness": 15,
+        "invalid_support_with_complete_witness": 2
+      },
+      "negative": {
+        "correct_withhold": 29,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 19
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 0,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 23,
+        "available_1_correct_1": 25
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/supported_recommendation": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 211,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 2,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q1669a98ab0",
+          "attempt_id": 386,
+          "world": "w692891c2",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q183637723a",
+          "attempt_id": 376,
+          "world": "w3d45ea82",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q1a1cc252be",
+          "attempt_id": 339,
+          "world": "w3d45ea82",
+          "condition": "policy_conflict",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/invalid_support_with_complete_witness": {
+          "case_id": "q5a7fee5ed9",
+          "attempt_id": 73,
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "misbound_support",
+            "incomplete_support"
+          ]
+        }
+      }
+    },
+    "typed": {
+      "positive": {
+        "supported_recommendation": 21,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 0,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 13,
+        "inapplicable_choice_with_complete_witness": 13,
+        "invalid_support_with_complete_witness": 1
+      },
+      "negative": {
+        "correct_withhold": 32,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 16
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 0,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 27,
+        "available_1_correct_1": 21
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 167,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/supported_recommendation": {
+          "case_id": "q0b7d592c00",
+          "attempt_id": 498,
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 516,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q183637723a",
+          "attempt_id": 368,
+          "world": "w3d45ea82",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q1a1cc252be",
+          "attempt_id": 281,
+          "world": "w3d45ea82",
+          "condition": "policy_conflict",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/invalid_support_with_complete_witness": {
+          "case_id": "q1c366e6ee1",
+          "attempt_id": 226,
+          "world": "wb34037eb",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": [
+            "misbound_support",
+            "incomplete_support",
+            "irrelevant_citation"
+          ]
+        }
+      }
+    },
+    "typed_history": {
+      "positive": {
+        "supported_recommendation": 17,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 14,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 6,
+        "inapplicable_choice_with_complete_witness": 10,
+        "invalid_support_with_complete_witness": 1
+      },
+      "negative": {
+        "correct_withhold": 13,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 35
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 14,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 17,
+        "available_1_correct_1": 17
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/no_complete_witness_selected": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 175,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 169,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "obsolete_or_ineligible_citation"
+          ]
+        },
+        "positive/supported_recommendation": {
+          "case_id": "q0eb207260c",
+          "attempt_id": 117,
+          "world": "w0b261e4e",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/inapplicable_choice_with_complete_witness": {
+          "case_id": "q183637723a",
+          "attempt_id": 388,
+          "world": "w3d45ea82",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template"
+          ]
+        },
+        "positive/invalid_support_with_complete_witness": {
+          "case_id": "q1c366e6ee1",
+          "attempt_id": 134,
+          "world": "wb34037eb",
+          "condition": "weak_feedback",
+          "status": "completed",
+          "violations": [
+            "misbound_support",
+            "incomplete_support",
+            "irrelevant_citation"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q1eb38e4ec3",
+          "attempt_id": 347,
+          "world": "wf579faf9",
+          "condition": "policy_conflict",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q30e8e54ceb",
+          "attempt_id": 56,
+          "world": "w692891c2",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        }
+      }
+    },
+    "facet_hybrid": {
+      "positive": {
+        "supported_recommendation": 0,
+        "execution_or_output_failure": 0,
+        "no_complete_witness_selected": 43,
+        "invalid_output_with_complete_witness": 0,
+        "withheld_with_complete_witness": 5,
+        "inapplicable_choice_with_complete_witness": 0,
+        "invalid_support_with_complete_witness": 0
+      },
+      "negative": {
+        "correct_withhold": 34,
+        "execution_or_output_failure": 0,
+        "invalid_output": 0,
+        "unsupported_recommendation": 14
+      },
+      "positive_availability_by_correctness": {
+        "available_0_correct_0": 43,
+        "available_0_correct_1": 0,
+        "available_1_correct_0": 5,
+        "available_1_correct_1": 0
+      },
+      "first_lexicographic_case_per_category": {
+        "positive/withheld_with_complete_witness": {
+          "case_id": "q0b2e9ee8ab",
+          "attempt_id": 18,
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "status": "completed",
+          "violations": []
+        },
+        "positive/no_complete_witness_selected": {
+          "case_id": "q0b7d592c00",
+          "attempt_id": 452,
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "status": "completed",
+          "violations": []
+        },
+        "negative/unsupported_recommendation": {
+          "case_id": "q0d8088c402",
+          "attempt_id": 215,
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": [
+            "inapplicable_template",
+            "misbound_support"
+          ]
+        },
+        "negative/correct_withhold": {
+          "case_id": "q14a950056f",
+          "attempt_id": 86,
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "status": "completed",
+          "violations": []
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "typed minus prompt_hybrid": {
+      "counts": {
+        "both_correct": 27,
+        "left_only": 26,
+        "right_only": 13,
+        "both_wrong": 30
+      },
+      "disagreements": [
+        {
+          "case_id": "q0b7d592c00",
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 498,
+          "right_attempt_id": 35
+        },
+        {
+          "case_id": "q0eb207260c",
+          "world": "w0b261e4e",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 146,
+          "right_attempt_id": 518
+        },
+        {
+          "case_id": "q14a950056f",
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 535,
+          "right_attempt_id": 136
+        },
+        {
+          "case_id": "q1669a98ab0",
+          "world": "w692891c2",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 39,
+          "right_attempt_id": 41
+        },
+        {
+          "case_id": "q1d9a4325f2",
+          "world": "w692891c2",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 260,
+          "right_attempt_id": 352
+        },
+        {
+          "case_id": "q237c43fc8d",
+          "world": "wd6c72d6a",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 79,
+          "right_attempt_id": 51
+        },
+        {
+          "case_id": "q39edf7cdba",
+          "world": "w0b261e4e",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 553,
+          "right_attempt_id": 49
+        },
+        {
+          "case_id": "q39f3347dea",
+          "world": "w3d45ea82",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 133,
+          "right_attempt_id": 364
+        },
+        {
+          "case_id": "q3a11afac6d",
+          "world": "wb3a4ee1b",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 471,
+          "right_attempt_id": 443
+        },
+        {
+          "case_id": "q3ef54f5ab4",
+          "world": "w0b261e4e",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 529,
+          "right_attempt_id": 52
+        },
+        {
+          "case_id": "q445cd67eca",
+          "world": "wd6c72d6a",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 486,
+          "right_attempt_id": 510
+        },
+        {
+          "case_id": "q451609855e",
+          "world": "wd6c72d6a",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 559,
+          "right_attempt_id": 546
+        },
+        {
+          "case_id": "q4763dba521",
+          "world": "wb34037eb",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 109,
+          "right_attempt_id": 46
+        },
+        {
+          "case_id": "q5a7fee5ed9",
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 350,
+          "right_attempt_id": 75
+        },
+        {
+          "case_id": "q5ef9688c96",
+          "world": "wb34037eb",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 348,
+          "right_attempt_id": 401
+        },
+        {
+          "case_id": "q62ade66e18",
+          "world": "wb34037eb",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 476,
+          "right_attempt_id": 403
+        },
+        {
+          "case_id": "q6525ff8cc8",
+          "world": "w692891c2",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 344,
+          "right_attempt_id": 163
+        },
+        {
+          "case_id": "q6c981cc8d0",
+          "world": "wbf8849ab",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 450,
+          "right_attempt_id": 298
+        },
+        {
+          "case_id": "q6ec50f7f4c",
+          "world": "wd6c72d6a",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 204,
+          "right_attempt_id": 280
+        },
+        {
+          "case_id": "q741bc163e4",
+          "world": "w5e59e4e5",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 77,
+          "right_attempt_id": 92
+        },
+        {
+          "case_id": "q81792df900",
+          "world": "wf579faf9",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 87,
+          "right_attempt_id": 377
+        },
+        {
+          "case_id": "q8bb96bcf5e",
+          "world": "wb34037eb",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 263,
+          "right_attempt_id": 235
+        },
+        {
+          "case_id": "q8c847d66d2",
+          "world": "w5e59e4e5",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 170,
+          "right_attempt_id": 504
+        },
+        {
+          "case_id": "q8cf1434218",
+          "world": "w5f803d84",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 114,
+          "right_attempt_id": 448
+        },
+        {
+          "case_id": "q9320cdc3b0",
+          "world": "wfc5d07df",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 394,
+          "right_attempt_id": 239
+        },
+        {
+          "case_id": "q9417e647e1",
+          "world": "w5f803d84",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 397,
+          "right_attempt_id": 143
+        },
+        {
+          "case_id": "q98ccbbe888",
+          "world": "w0b261e4e",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 229,
+          "right_attempt_id": 561
+        },
+        {
+          "case_id": "qa12a24a6f9",
+          "world": "w3d45ea82",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 506,
+          "right_attempt_id": 288
+        },
+        {
+          "case_id": "qa3fbdcc205",
+          "world": "w692891c2",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 243,
+          "right_attempt_id": 196
+        },
+        {
+          "case_id": "qa8f7889bef",
+          "world": "w5e59e4e5",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 33,
+          "right_attempt_id": 346
+        },
+        {
+          "case_id": "qc5e9b7e6b0",
+          "world": "w5f803d84",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 441,
+          "right_attempt_id": 200
+        },
+        {
+          "case_id": "qc6e41f8f9b",
+          "world": "wd6c72d6a",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 228,
+          "right_attempt_id": 172
+        },
+        {
+          "case_id": "qc84949b451",
+          "world": "wf579faf9",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 20,
+          "right_attempt_id": 572
+        },
+        {
+          "case_id": "qccd1eb22a1",
+          "world": "wf579faf9",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 547,
+          "right_attempt_id": 511
+        },
+        {
+          "case_id": "qcddfcbd3e8",
+          "world": "wbf8849ab",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 265,
+          "right_attempt_id": 291
+        },
+        {
+          "case_id": "qdff759adba",
+          "world": "w928ad8c3",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 477,
+          "right_attempt_id": 181
+        },
+        {
+          "case_id": "qe5892e8650",
+          "world": "w0b261e4e",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 198,
+          "right_attempt_id": 537
+        },
+        {
+          "case_id": "qf952280c1c",
+          "world": "wbf8849ab",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 144,
+          "right_attempt_id": 154
+        },
+        {
+          "case_id": "qfcd0e1d672",
+          "world": "wb3a4ee1b",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 363,
+          "right_attempt_id": 314
+        }
+      ]
+    },
+    "typed minus facet_hybrid": {
+      "counts": {
+        "both_correct": 24,
+        "left_only": 29,
+        "right_only": 10,
+        "both_wrong": 33
+      },
+      "disagreements": [
+        {
+          "case_id": "q0b7d592c00",
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 498,
+          "right_attempt_id": 452
+        },
+        {
+          "case_id": "q0eb207260c",
+          "world": "w0b261e4e",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 146,
+          "right_attempt_id": 354
+        },
+        {
+          "case_id": "q14a950056f",
+          "world": "wb3a4ee1b",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 535,
+          "right_attempt_id": 86
+        },
+        {
+          "case_id": "q1669a98ab0",
+          "world": "w692891c2",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 39,
+          "right_attempt_id": 336
+        },
+        {
+          "case_id": "q1d9a4325f2",
+          "world": "w692891c2",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 260,
+          "right_attempt_id": 88
+        },
+        {
+          "case_id": "q237c43fc8d",
+          "world": "wd6c72d6a",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 79,
+          "right_attempt_id": 135
+        },
+        {
+          "case_id": "q39edf7cdba",
+          "world": "w0b261e4e",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 553,
+          "right_attempt_id": 188
+        },
+        {
+          "case_id": "q3ef54f5ab4",
+          "world": "w0b261e4e",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 529,
+          "right_attempt_id": 293
+        },
+        {
+          "case_id": "q445cd67eca",
+          "world": "wd6c72d6a",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 486,
+          "right_attempt_id": 71
+        },
+        {
+          "case_id": "q451609855e",
+          "world": "wd6c72d6a",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 559,
+          "right_attempt_id": 140
+        },
+        {
+          "case_id": "q4763dba521",
+          "world": "wb34037eb",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 109,
+          "right_attempt_id": 305
+        },
+        {
+          "case_id": "q513d157394",
+          "world": "wd6c72d6a",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 55,
+          "right_attempt_id": 573
+        },
+        {
+          "case_id": "q5a7fee5ed9",
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 350,
+          "right_attempt_id": 550
+        },
+        {
+          "case_id": "q5ef9688c96",
+          "world": "wb34037eb",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 348,
+          "right_attempt_id": 164
+        },
+        {
+          "case_id": "q62ade66e18",
+          "world": "wb34037eb",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 476,
+          "right_attempt_id": 519
+        },
+        {
+          "case_id": "q6525ff8cc8",
+          "world": "w692891c2",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 344,
+          "right_attempt_id": 185
+        },
+        {
+          "case_id": "q6c981cc8d0",
+          "world": "wbf8849ab",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 450,
+          "right_attempt_id": 433
+        },
+        {
+          "case_id": "q6d801872ac",
+          "world": "wb34037eb",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 110,
+          "right_attempt_id": 269
+        },
+        {
+          "case_id": "q6ec50f7f4c",
+          "world": "wd6c72d6a",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 204,
+          "right_attempt_id": 331
+        },
+        {
+          "case_id": "q741bc163e4",
+          "world": "w5e59e4e5",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 77,
+          "right_attempt_id": 527
+        },
+        {
+          "case_id": "q81792df900",
+          "world": "wf579faf9",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 87,
+          "right_attempt_id": 156
+        },
+        {
+          "case_id": "q8bb96bcf5e",
+          "world": "wb34037eb",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 263,
+          "right_attempt_id": 340
+        },
+        {
+          "case_id": "q8c847d66d2",
+          "world": "w5e59e4e5",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 170,
+          "right_attempt_id": 369
+        },
+        {
+          "case_id": "q8cf1434218",
+          "world": "w5f803d84",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 114,
+          "right_attempt_id": 407
+        },
+        {
+          "case_id": "q9320cdc3b0",
+          "world": "wfc5d07df",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 394,
+          "right_attempt_id": 139
+        },
+        {
+          "case_id": "q98ccbbe888",
+          "world": "w0b261e4e",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 229,
+          "right_attempt_id": 542
+        },
+        {
+          "case_id": "q9f7ca5ca81",
+          "world": "wd6c72d6a",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 297,
+          "right_attempt_id": 245
+        },
+        {
+          "case_id": "qa12a24a6f9",
+          "world": "w3d45ea82",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 506,
+          "right_attempt_id": 473
+        },
+        {
+          "case_id": "qa3fbdcc205",
+          "world": "w692891c2",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 243,
+          "right_attempt_id": 272
+        },
+        {
+          "case_id": "qa8f7889bef",
+          "world": "w5e59e4e5",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 33,
+          "right_attempt_id": 61
+        },
+        {
+          "case_id": "qb06173b020",
+          "world": "wfc5d07df",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 366,
+          "right_attempt_id": 131
+        },
+        {
+          "case_id": "qc5e9b7e6b0",
+          "world": "w5f803d84",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 441,
+          "right_attempt_id": 237
+        },
+        {
+          "case_id": "qc6e41f8f9b",
+          "world": "wd6c72d6a",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 228,
+          "right_attempt_id": 345
+        },
+        {
+          "case_id": "qc84949b451",
+          "world": "wf579faf9",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 20,
+          "right_attempt_id": 355
+        },
+        {
+          "case_id": "qcddfcbd3e8",
+          "world": "wbf8849ab",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 265,
+          "right_attempt_id": 59
+        },
+        {
+          "case_id": "qdff759adba",
+          "world": "w928ad8c3",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 477,
+          "right_attempt_id": 497
+        },
+        {
+          "case_id": "qe5892e8650",
+          "world": "w0b261e4e",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 198,
+          "right_attempt_id": 523
+        },
+        {
+          "case_id": "qf952280c1c",
+          "world": "wbf8849ab",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 144,
+          "right_attempt_id": 68
+        },
+        {
+          "case_id": "qfcd0e1d672",
+          "world": "wb3a4ee1b",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 363,
+          "right_attempt_id": 12
+        }
+      ]
+    },
+    "prompt_hybrid minus generic_hybrid": {
+      "counts": {
+        "both_correct": 39,
+        "left_only": 1,
+        "right_only": 9,
+        "both_wrong": 47
+      },
+      "disagreements": [
+        {
+          "case_id": "q0d8088c402",
+          "world": "wfc5d07df",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 375,
+          "right_attempt_id": 467
+        },
+        {
+          "case_id": "q445cd67eca",
+          "world": "wd6c72d6a",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 510,
+          "right_attempt_id": 137
+        },
+        {
+          "case_id": "q62ade66e18",
+          "world": "wb34037eb",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 403,
+          "right_attempt_id": 428
+        },
+        {
+          "case_id": "q741bc163e4",
+          "world": "w5e59e4e5",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "no_complete_witness_selected",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 92,
+          "right_attempt_id": 193
+        },
+        {
+          "case_id": "q8bb96bcf5e",
+          "world": "wb34037eb",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 235,
+          "right_attempt_id": 460
+        },
+        {
+          "case_id": "q8c847d66d2",
+          "world": "w5e59e4e5",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "no_complete_witness_selected",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 504,
+          "right_attempt_id": 241
+        },
+        {
+          "case_id": "qa12a24a6f9",
+          "world": "w3d45ea82",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 288,
+          "right_attempt_id": 147
+        },
+        {
+          "case_id": "qb06173b020",
+          "world": "wfc5d07df",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 427,
+          "right_attempt_id": 38
+        },
+        {
+          "case_id": "qc6e41f8f9b",
+          "world": "wd6c72d6a",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 172,
+          "right_attempt_id": 168
+        },
+        {
+          "case_id": "qf952280c1c",
+          "world": "wbf8849ab",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 154,
+          "right_attempt_id": 14
+        }
+      ]
+    },
+    "typed minus typed_history": {
+      "counts": {
+        "both_correct": 30,
+        "left_only": 23,
+        "right_only": 0,
+        "both_wrong": 43
+      },
+      "disagreements": [
+        {
+          "case_id": "q0b7d592c00",
+          "world": "wb3a4ee1b",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 498,
+          "right_attempt_id": 507
+        },
+        {
+          "case_id": "q1a1cc252be",
+          "world": "w3d45ea82",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 281,
+          "right_attempt_id": 321
+        },
+        {
+          "case_id": "q237c43fc8d",
+          "world": "wd6c72d6a",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 79,
+          "right_attempt_id": 13
+        },
+        {
+          "case_id": "q374175c9a9",
+          "world": "w692891c2",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 449,
+          "right_attempt_id": 484
+        },
+        {
+          "case_id": "q392704196b",
+          "world": "wfc5d07df",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 313,
+          "right_attempt_id": 70
+        },
+        {
+          "case_id": "q39edf7cdba",
+          "world": "w0b261e4e",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 553,
+          "right_attempt_id": 80
+        },
+        {
+          "case_id": "q3bb77fc6f0",
+          "world": "w3d45ea82",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 562,
+          "right_attempt_id": 30
+        },
+        {
+          "case_id": "q445cd67eca",
+          "world": "wd6c72d6a",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 486,
+          "right_attempt_id": 205
+        },
+        {
+          "case_id": "q57ed5e2256",
+          "world": "w928ad8c3",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 194,
+          "right_attempt_id": 332
+        },
+        {
+          "case_id": "q5a7fee5ed9",
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "no_complete_witness_selected",
+          "left_attempt_id": 350,
+          "right_attempt_id": 251
+        },
+        {
+          "case_id": "q5b71bb3ea5",
+          "world": "w928ad8c3",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 383,
+          "right_attempt_id": 96
+        },
+        {
+          "case_id": "q5ccb975649",
+          "world": "w5e59e4e5",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 3,
+          "right_attempt_id": 481
+        },
+        {
+          "case_id": "q62ade66e18",
+          "world": "wb34037eb",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 476,
+          "right_attempt_id": 300
+        },
+        {
+          "case_id": "q708b99596b",
+          "world": "w5f803d84",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 495,
+          "right_attempt_id": 356
+        },
+        {
+          "case_id": "q8bb96bcf5e",
+          "world": "wb34037eb",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 263,
+          "right_attempt_id": 15
+        },
+        {
+          "case_id": "q91996663b2",
+          "world": "wf579faf9",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 395,
+          "right_attempt_id": 424
+        },
+        {
+          "case_id": "q98b6a45b73",
+          "world": "w0b261e4e",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 93,
+          "right_attempt_id": 463
+        },
+        {
+          "case_id": "q9f7ca5ca81",
+          "world": "wd6c72d6a",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 297,
+          "right_attempt_id": 454
+        },
+        {
+          "case_id": "qa692ea311a",
+          "world": "w5f803d84",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 173,
+          "right_attempt_id": 400
+        },
+        {
+          "case_id": "qbcd3a74865",
+          "world": "wb3a4ee1b",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 212,
+          "right_attempt_id": 209
+        },
+        {
+          "case_id": "qc6e41f8f9b",
+          "world": "wd6c72d6a",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 228,
+          "right_attempt_id": 458
+        },
+        {
+          "case_id": "qd3cecd512c",
+          "world": "w5e59e4e5",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 327,
+          "right_attempt_id": 556
+        },
+        {
+          "case_id": "qe10b7bc4d4",
+          "world": "w0b261e4e",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 283,
+          "right_attempt_id": 392
+        }
+      ]
+    },
+    "full_context minus typed": {
+      "counts": {
+        "both_correct": 38,
+        "left_only": 16,
+        "right_only": 15,
+        "both_wrong": 27
+      },
+      "disagreements": [
+        {
+          "case_id": "q0b2e9ee8ab",
+          "world": "wf579faf9",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 211,
+          "right_attempt_id": 167
+        },
+        {
+          "case_id": "q10f0e1e88b",
+          "world": "wb3a4ee1b",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 341,
+          "right_attempt_id": 249
+        },
+        {
+          "case_id": "q1669a98ab0",
+          "world": "w692891c2",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "withheld_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 386,
+          "right_attempt_id": 39
+        },
+        {
+          "case_id": "q1c366e6ee1",
+          "world": "wb34037eb",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "invalid_support_with_complete_witness",
+          "left_attempt_id": 457,
+          "right_attempt_id": 226
+        },
+        {
+          "case_id": "q1d9a4325f2",
+          "world": "w692891c2",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "inapplicable_choice_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 284,
+          "right_attempt_id": 260
+        },
+        {
+          "case_id": "q30e8e54ceb",
+          "world": "w692891c2",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 558,
+          "right_attempt_id": 373
+        },
+        {
+          "case_id": "q39f3347dea",
+          "world": "w3d45ea82",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 66,
+          "right_attempt_id": 133
+        },
+        {
+          "case_id": "q3a11afac6d",
+          "world": "wb3a4ee1b",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 76,
+          "right_attempt_id": 471
+        },
+        {
+          "case_id": "q451609855e",
+          "world": "wd6c72d6a",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "withheld_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 81,
+          "right_attempt_id": 559
+        },
+        {
+          "case_id": "q5710bc421d",
+          "world": "wfc5d07df",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 422,
+          "right_attempt_id": 44
+        },
+        {
+          "case_id": "q5a7fee5ed9",
+          "world": "w5f803d84",
+          "condition": "account_requalified",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "invalid_support_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 73,
+          "right_attempt_id": 350
+        },
+        {
+          "case_id": "q5dd8f58e1e",
+          "world": "wbf8849ab",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "inapplicable_choice_with_complete_witness",
+          "left_attempt_id": 329,
+          "right_attempt_id": 5
+        },
+        {
+          "case_id": "q62ade66e18",
+          "world": "wb34037eb",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 462,
+          "right_attempt_id": 476
+        },
+        {
+          "case_id": "q6c981cc8d0",
+          "world": "wbf8849ab",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 19,
+          "right_attempt_id": 450
+        },
+        {
+          "case_id": "q6d801872ac",
+          "world": "wb34037eb",
+          "condition": "restricted_evidence",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 152,
+          "right_attempt_id": 110
+        },
+        {
+          "case_id": "q81792df900",
+          "world": "wf579faf9",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "invalid_support_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 548,
+          "right_attempt_id": 87
+        },
+        {
+          "case_id": "q8bb96bcf5e",
+          "world": "wb34037eb",
+          "condition": "policy_conflict",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 259,
+          "right_attempt_id": 263
+        },
+        {
+          "case_id": "q8cf1434218",
+          "world": "w5f803d84",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "withheld_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 316,
+          "right_attempt_id": 114
+        },
+        {
+          "case_id": "q9f7ca5ca81",
+          "world": "wd6c72d6a",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 378,
+          "right_attempt_id": 297
+        },
+        {
+          "case_id": "qa12a24a6f9",
+          "world": "w3d45ea82",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 522,
+          "right_attempt_id": 506
+        },
+        {
+          "case_id": "qa8d72b1941",
+          "world": "wbf8849ab",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 318,
+          "right_attempt_id": 320
+        },
+        {
+          "case_id": "qacd5b83c4d",
+          "world": "w3d45ea82",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 453,
+          "right_attempt_id": 412
+        },
+        {
+          "case_id": "qc6e41f8f9b",
+          "world": "wd6c72d6a",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 380,
+          "right_attempt_id": 228
+        },
+        {
+          "case_id": "qc84949b451",
+          "world": "wf579faf9",
+          "condition": "initial",
+          "positive": true,
+          "outcome": "right_only",
+          "left_category": "inapplicable_choice_with_complete_witness",
+          "right_category": "supported_recommendation",
+          "left_attempt_id": 9,
+          "right_attempt_id": 20
+        },
+        {
+          "case_id": "qcddfcbd3e8",
+          "world": "wbf8849ab",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 267,
+          "right_attempt_id": 265
+        },
+        {
+          "case_id": "qd5744d7c75",
+          "world": "wb34037eb",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 207,
+          "right_attempt_id": 258
+        },
+        {
+          "case_id": "qda3600d906",
+          "world": "wd6c72d6a",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 138,
+          "right_attempt_id": 426
+        },
+        {
+          "case_id": "qdb92970073",
+          "world": "wb3a4ee1b",
+          "condition": "weak_feedback",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 306,
+          "right_attempt_id": 240
+        },
+        {
+          "case_id": "qdff759adba",
+          "world": "w928ad8c3",
+          "condition": "policy_revision",
+          "positive": false,
+          "outcome": "left_only",
+          "left_category": "correct_withhold",
+          "right_category": "unsupported_recommendation",
+          "left_attempt_id": 266,
+          "right_attempt_id": 477
+        },
+        {
+          "case_id": "qe0585141a2",
+          "world": "wb34037eb",
+          "condition": "objective_change",
+          "positive": true,
+          "outcome": "left_only",
+          "left_category": "supported_recommendation",
+          "right_category": "withheld_with_complete_witness",
+          "left_attempt_id": 503,
+          "right_attempt_id": 250
+        },
+        {
+          "case_id": "qe10b7bc4d4",
+          "world": "w0b261e4e",
+          "condition": "evidence_correction",
+          "positive": false,
+          "outcome": "right_only",
+          "left_category": "unsupported_recommendation",
+          "right_category": "correct_withhold",
+          "left_attempt_id": 118,
+          "right_attempt_id": 283
+        }
+      ]
+    }
+  },
+  "interpretation": "Descriptive post-freeze, pre-results diagnostic. Categories preserve the original score and all planned denominators; they are not causal mediation estimates or new hypothesis tests. Failure precedes missing support in the exclusive category order. Examples are the first case ID per category, not independently representative selections. All paired disagreements are retained."
+}

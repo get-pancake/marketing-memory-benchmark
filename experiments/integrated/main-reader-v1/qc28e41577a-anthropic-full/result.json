@@ -1,0 +1,129 @@
+{
+  "id": "qc28e41577a-anthropic-full",
+  "case_id": "qc28e41577a",
+  "world": "w5ade1729",
+  "arm": "full",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 9,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.2682926829268293,
+    "selected_sources": 41,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 4727,
+  "status": "completed",
+  "started_at": "2026-10-23T00:50:37.327424+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9998000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:50:39Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:50:45Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:50:37Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11997000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:50:39Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJFYCNmD35sjGuQFh2kF",
+  "usage": {
+    "input_tokens": 6140,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1011,
+    "output_tokens_details": {
+      "thinking_tokens": 639
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.02239",
+    "total_input_tokens": 6140,
+    "output_tokens": 1011,
+    "regular_input_tokens": 6140,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved conflict (S7 IT_manager vs S30 unrelated_role) and no match with account_role IT_manager",
+      "account.customer_state:observed=active (current value is withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P1)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S28",
+      "account.account_role:observed": "S18",
+      "account.customer_state:observed": "S31",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S22",
+      "seller.approved_geo:approved": "S19",
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S8",
+      "seller.proof_for_pain:observed": "S40"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved conflict (S7 IT_manager vs S30 unrelated_role) and no match with account_role IT_manager",
+      "account.customer_state:observed=active (current value is withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P1)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved conflict (S7 IT_manager vs S30 unrelated_role) and no match with account_role IT_manager",
+      "account.customer_state:observed=active (current value is withdrawn)",
+      "account.procurement_stage:observed=approved (only needed for P1)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "All renewal templates are blocked. The approved role is in conflict (S7 says IT_manager, S30 says unrelated_role, and neither supersedes the other) and S30 does not match the account role S18. Customer state is withdrawn (S31), not active, and no procurement stage is supplied for P1. P3 does not match the renewal objective.",
+  "finished_at": "2026-10-23T00:50:45.457595+00:00",
+  "seconds": 8.13018383301096
+}

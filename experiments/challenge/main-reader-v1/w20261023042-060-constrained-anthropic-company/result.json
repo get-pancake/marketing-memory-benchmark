@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-060-constrained-anthropic-company",
+  "case_id": "w20261023042-060-constrained",
+  "world": "w20261023042-060",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:55.557736+00:00",
+  "evidence_bytes": 12264,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9996000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:53:58Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:54:05Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:53:56Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11995000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:53:58Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJefhFxyPUSUu1cKHBof",
+  "usage": {
+    "input_tokens": 6905,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 938,
+    "output_tokens_details": {
+      "thinking_tokens": 361
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.04638",
+    "total_input_tokens": 6905,
+    "output_tokens": 938,
+    "regular_input_tokens": 6905,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-60",
+        "action": "renewal_review",
+        "sources": [
+          "e615aac5580304f",
+          "eb75fd160569487",
+          "e04c15d6884af44",
+          "e66d241971e2f94",
+          "e9bcd2f0a477df8",
+          "e8888d463a49ff1",
+          "ea35f857af90c6b",
+          "ebf3d1cf9d60e7c",
+          "ed0c7231bdad810",
+          "e6b1fdd085ab368"
+        ]
+      }
+    ],
+    "missing": [
+      "Mesa-60: observed need-0 -> offering link (and downstream offering proof, approved verified proof and approved capacity) required for any action",
+      "Birch-60: approved priority, observed profile, consent, signal and initiative chain",
+      "Aster-60: approved priority, observed profile, consent, signal and initiative chain",
+      "Kestrel-60: approved priority, observed profile, consent, signal and initiative chain",
+      "Cedar-60: approved priority, observed profile, consent, signal and initiative chain",
+      "North-60: reference_intro blocked because proof-1 is approved shareable=false"
+    ],
+    "reasoning_summary": "Only the approved seller policy (day 12) is used; the proposed policy is ignored. North-60 is eligible: FR/manufacturing allowed, consent true, renewal signal, and a full chain initiative-1 -> need-1 -> offering-1 -> proof-1 with approved verified=true and approved priority 3. Renewal_review (3x3=9, cost 2) is the best eligible option, since reference_intro requires shareable, which is approved false. Mesa-60 (priority 9, launch) is blocked because there is no offering record for need-0, which breaks the chain. The other accounts have no evidence. The plan uses a cost of 2 of the 7-point budget, for a total of 9."
+  },
+  "score": {
+    "optimum": 51,
+    "recoverable_value": 9,
+    "returned_value": 9,
+    "normalized_value": 0.17647058823529413,
+    "context_normalized_value": 0.17647058823529413,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T05:54:05.856972+00:00",
+  "seconds": 10.299244982990786
+}

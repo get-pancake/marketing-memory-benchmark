@@ -1,0 +1,116 @@
+{
+  "id": "q9c0eb17ac3-openai-gbrain_specialized",
+  "case_id": "q9c0eb17ac3",
+  "world": "w146d2cd6",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 0.8888888888888888,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1999,
+  "status": "completed",
+  "started_at": "2026-10-23T00:43:31.155013+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999949",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0351ffc100400e0b016adaadb3890487d18b19b97abe71b813",
+  "usage": {
+    "input_tokens": 1972,
+    "input_tokens_details": {
+      "cache_write_tokens": 892,
+      "cached_tokens": 1077
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2166
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0042837",
+    "total_input_tokens": 1972,
+    "output_tokens": 194,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1077,
+    "cache_write_tokens": 892
+  },
+  "raw_output": {
+    "missing": [
+      "account.partner_status:observed=verified",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S4",
+      "account.account_role:observed": "S1",
+      "account.channel_fit:observed": "S7",
+      "account.partner_status:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S17",
+      "seller.offering_pain:observed": "S12",
+      "seller.proof_for_pain:observed": "S8"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.partner_status:observed=verified",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.partner_status:observed=verified",
+      "account.procurement_stage:observed=approved (P2 only)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1, P4 and P2 require verified partner status, but S14 records withdrawn status; P2 also lacks observed approved procurement stage. P3 does not match the partner objective, so no catalog action is supported.",
+  "finished_at": "2026-10-23T00:43:35.479519+00:00",
+  "seconds": 4.32451611799479
+}

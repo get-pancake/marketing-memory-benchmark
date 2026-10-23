@@ -1,0 +1,162 @@
+{
+  "id": "resp_05db61b4c6c21408016adaf716ca0887d1a2ed94ab12b9b8c9",
+  "object": "response",
+  "created_at": 1792734998,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735004,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_05db61b4c6c21408016adaf718379c87d1ab83a8e0aa0fdcdb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Aster-18, Juniper-18, Birch-18, Iris-18 and Pine-18 require current observed consent=true; all supplied consent records are false.\",\n    \"Juniper-18 also requires a policy-eligible observed profile: its supplied region, DE, is not allowed.\",\n    \"Iris-18 also requires a policy-eligible observed profile and a complete evidence chain: its sector is blocked, and need-3 \u2192 offering \u2192 proof \u2192 approved verified=true is missing.\",\n    \"Flint-18, Mesa-18 and Kestrel-18 require observed profile, consent=true, signal and initiative \u2192 need \u2192 offering \u2192 proof links, plus approved integer priority and approved proof verification.\",\n    \"Any otherwise eligible workshop, assurance_pack or reference_intro also requires approved true capacity, assurance or shareable evidence, respectively.\"\n  ],\n  \"reasoning_summary\": \"No supported action is eligible, so the optimal supported plan is empty, with cost 0 and priority score 0. Every account with supplied consent has consent=false; the remaining accounts lack required evidence. Juniper-18 and Iris-18 have additional profile restrictions. The proposed seller policy is not approved and does not replace the approved policy.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Aster-18",
+                    "Juniper-18",
+                    "Birch-18",
+                    "Iris-18",
+                    "Flint-18",
+                    "Pine-18",
+                    "Mesa-18",
+                    "Kestrel-18"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3287,
+    "input_tokens_details": {
+      "cache_write_tokens": 3284,
+      "cached_tokens": 0
+    },
+    "output_tokens": 267,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3554
+  },
+  "user": null,
+  "metadata": {}
+}

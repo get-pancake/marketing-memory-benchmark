@@ -1,0 +1,124 @@
+{
+  "id": "qf9dc0e0bfe-openai-none",
+  "case_id": "qf9dc0e0bfe",
+  "world": "w14f03773",
+  "arm": "none",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 0,
+    "current_value_group_coverage": 0.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.0,
+    "selected_sources": 0,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2,
+  "status": "completed",
+  "started_at": "2026-10-23T00:30:57.185280+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999966",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0a872a6c42b57945016adaaac16e4c87d19df14c492c2a6a63",
+  "usage": {
+    "input_tokens": 793,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 177,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 970
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.003356",
+    "total_input_tokens": 793,
+    "output_tokens": 177,
+    "regular_input_tokens": 793,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": null,
+      "account.account_role:observed": null,
+      "account.channel_fit:observed": null,
+      "account.partner_status:observed": null,
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No company evidence was supplied. P4 matches the qualification_audit objective and two-unit allowance, but its common prerequisites and role/geography equalities cannot be verified.",
+  "finished_at": "2026-10-23T00:31:01.282473+00:00",
+  "seconds": 4.097194268004387
+}

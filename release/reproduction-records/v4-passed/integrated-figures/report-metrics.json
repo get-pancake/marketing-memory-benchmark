@@ -1,0 +1,24 @@
+{
+  "input_summary_semantic_sha256": "81f9a88134a7410c15af89fffc63c2814a010a5901e8912fa626a3541a568fa6",
+  "derived": {
+    "openai": {
+      "generic_correct_percent": 84.46969696969697,
+      "specialized_correct_percent": 100.0,
+      "correct_difference_percentage_points": 15.530303030303031,
+      "additional_supported_recommendations": 41,
+      "relative_supported_increase_percent": 45.05494505494505,
+      "positive_coverage_difference_percentage_points": 31.060606060606062,
+      "input_reduction_vs_full_percent": 31.733754797463064
+    },
+    "anthropic": {
+      "generic_correct_percent": 84.46969696969697,
+      "specialized_correct_percent": 100.0,
+      "correct_difference_percentage_points": 15.530303030303031,
+      "additional_supported_recommendations": 41,
+      "relative_supported_increase_percent": 45.05494505494505,
+      "positive_coverage_difference_percentage_points": 31.060606060606062,
+      "input_reduction_vs_full_percent": 28.373370041536184
+    }
+  },
+  "interpretation": "Percentages are formal fixture outcomes/input reductions, not commercial utility or total-cost reductions."
+}

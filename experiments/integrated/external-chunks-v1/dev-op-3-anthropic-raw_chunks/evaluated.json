@@ -1,0 +1,51 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:07.097966+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF3Qyk6XXFYutwPg6Kn",
+  "usage": {
+    "input_tokens": 10480,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 554,
+    "output_tokens_details": {
+      "thinking_tokens": 382
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.0265",
+    "total_input_tokens": 10480,
+    "output_tokens": 554,
+    "regular_input_tokens": 10480,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D102\",\"D106\",\"D118\",\"D012\"],\"explanation\":\"In D079 the line \\\"Dana's freight account needs the operational story first\\\" comes right after the Quarrendon Freight Lines item, where Dana Okafor holds the screenshot list. Other notes call Quarrendon Dana's biggest account (D102, D118, D012), and Brackenwater had already moved to Marcus Lindqvist (D106), so it is not Dana's.\"}",
+  "finished_at": "2026-10-23T00:44:12.604976+00:00",
+  "seconds": 5.507020603006822,
+  "id": "dev-op-3-anthropic-raw_chunks",
+  "case_id": "dev-op-3",
+  "arm": "raw_chunks",
+  "context_bytes": 24573,
+  "answer_correct": true,
+  "answer": "Quarrendon Freight Lines",
+  "citations": [
+    "D079",
+    "D102",
+    "D106",
+    "D118",
+    "D012"
+  ],
+  "explanation": "In D079 the line \"Dana's freight account needs the operational story first\" comes right after the Quarrendon Freight Lines item, where Dana Okafor holds the screenshot list. Other notes call Quarrendon Dana's biggest account (D102, D118, D012), and Brackenwater had already moved to Marcus Lindqvist (D106), so it is not Dana's.",
+  "citation_ids_valid": true
+}

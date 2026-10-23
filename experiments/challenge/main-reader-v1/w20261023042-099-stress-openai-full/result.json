@@ -1,0 +1,117 @@
+{
+  "id": "w20261023042-099-stress-openai-full",
+  "case_id": "w20261023042-099-stress",
+  "world": "w20261023042-099",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:07:09.337915+00:00",
+  "evidence_bytes": 68989,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999312",
+    "x-ratelimit-reset-requests": "7ms",
+    "x-ratelimit-reset-tokens": "1ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0f0220ad8d2df58a016adaf98e359487d1b02e9f5296d2a944",
+  "usage": {
+    "input_tokens": 21641,
+    "input_tokens_details": {
+      "cache_write_tokens": 21638,
+      "cached_tokens": 0
+    },
+    "output_tokens": 831,
+    "output_tokens_details": {
+      "reasoning_tokens": 233
+    },
+    "total_tokens": 22472
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.062411",
+    "total_input_tokens": 21641,
+    "output_tokens": 831,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 21638
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-99",
+        "action": "reference_intro",
+        "sources": [
+          "e479d00ec2f78f7",
+          "ec5adf99b496c07",
+          "e22e9c00736efd3",
+          "e26fc1db1d35f04",
+          "eb43577bb840dce",
+          "e450e8723873ea4",
+          "e60a957c7f10c2f",
+          "e930affd7d68279",
+          "e1dd66beccce2b8",
+          "e3868439b715a0e",
+          "e941863edce169a"
+        ]
+      },
+      {
+        "account": "Aster-99",
+        "action": "workshop",
+        "sources": [
+          "e479d00ec2f78f7",
+          "e771b81ab923a37",
+          "e875a37dba069a2",
+          "e61d574d2050cdf",
+          "e0a20e64dfee072",
+          "e1fe0a89e8751d6",
+          "eec0433238daea2",
+          "e6c933191c931f4",
+          "ea9a88e8a7b7d88",
+          "e6dbf765dded5b2",
+          "e46e8efff03571e"
+        ]
+      },
+      {
+        "account": "Pine-99",
+        "action": "research_brief",
+        "sources": [
+          "e479d00ec2f78f7",
+          "e9a5e1b0d511e80",
+          "e29a37118edbcab",
+          "e6c6bc66e848443",
+          "e40f855692ea5fe",
+          "ed399ef89df49e6",
+          "e6b27b62e83c240",
+          "e2983d13d7f6797",
+          "ef8523e3a8a087f",
+          "e6cfca8e2dd3d4f"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The optimal supported plan uses three distinct accounts and costs 8 of 8. Total synthetic priority points are 25: North 2×5=10, Aster 3×4=12, and Pine 3×1=3. All eligibility requirements are supported. Other accounts are independently excluded by disallowed regions, blocked sectors, false consent, or unverified proof. Proposed policy and feedback do not establish eligibility."
+  },
+  "score": {
+    "optimum": 25,
+    "recoverable_value": 25,
+    "returned_value": 25,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T06:07:25.789279+00:00",
+  "seconds": 16.451373595991754
+}

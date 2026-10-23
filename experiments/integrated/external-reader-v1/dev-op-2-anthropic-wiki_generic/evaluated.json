@@ -1,0 +1,49 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:12.243600+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfiNt4H91pbVJH4FaT",
+  "usage": {
+    "input_tokens": 28208,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 169,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.058106",
+    "total_input_tokens": 28208,
+    "output_tokens": 169,
+    "regular_input_tokens": 28208,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D057\",\"D104\",\"D004\"],\"explanation\":\"The July 28 team update says Dana and Ilse attended the QBR and calls QFL her biggest customer. The wiki notes that \\\"Dana's biggest\\\" meant BWF in March 2025 but QFL after the June 2025 handoff. The wiki does not quote the exact phrase \\\"Dana's freight account\\\", so this mapping is inferred from the \\\"biggest customer\\\" wording.\"}",
+  "finished_at": "2026-10-23T00:39:15.990405+00:00",
+  "seconds": 3.7468148970074253,
+  "id": "dev-op-2-anthropic-wiki_generic",
+  "case_id": "dev-op-2",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The July 28 team update says Dana and Ilse attended the QBR and calls QFL her biggest customer. The wiki notes that \"Dana's biggest\" meant BWF in March 2025 but QFL after the June 2025 handoff. The wiki does not quote the exact phrase \"Dana's freight account\", so this mapping is inferred from the \"biggest customer\" wording.",
+  "citations": [
+    "D057",
+    "D104",
+    "D004"
+  ]
+}

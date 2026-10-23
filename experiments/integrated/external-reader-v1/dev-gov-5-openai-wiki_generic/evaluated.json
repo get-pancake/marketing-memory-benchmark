@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.849501+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0419ee436bf21dfe016adaacda3d2887d1aa74ab0babd0b601",
+  "usage": {
+    "input_tokens": 17581,
+    "input_tokens_details": {
+      "cache_write_tokens": 17578,
+      "cached_tokens": 0
+    },
+    "output_tokens": 63,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17644
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044581",
+    "total_input_tokens": 17581,
+    "output_tokens": 63,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17578
+  },
+  "text": "{\"answer\":\"14\",\"citations\":[\"D031\",\"D037\"],\"explanation\":\"Tansley Parcel\u2019s renewal effective February 1, 2026 carries forward the prior 14% discount, so that discount applies on March 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:56.605286+00:00",
+  "seconds": 2.755796696001198,
+  "id": "dev-gov-5-openai-wiki_generic",
+  "case_id": "dev-gov-5",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "14",
+  "explanation": "Tansley Parcel\u2019s renewal effective February 1, 2026 carries forward the prior 14% discount, so that discount applies on March 1, 2026.",
+  "citations": [
+    "D031",
+    "D037"
+  ]
+}

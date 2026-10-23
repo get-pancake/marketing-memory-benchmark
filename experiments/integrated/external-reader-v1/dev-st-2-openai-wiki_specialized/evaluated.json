@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:51.481477+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0945092de84942ab016adaac9ba8ac87d1937e2b17eeae8e79",
+  "usage": {
+    "input_tokens": 16154,
+    "input_tokens_details": {
+      "cache_write_tokens": 16151,
+      "cached_tokens": 0
+    },
+    "output_tokens": 51,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16205
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0408935",
+    "total_input_tokens": 16154,
+    "output_tokens": 51,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16151
+  },
+  "text": "{\"answer\":\"40\",\"citations\":[\"D039\",\"D038\"],\"explanation\":\"The executed 2026 renewal specifies 40 named seats. The earlier 44-seat review form was never countersigned.\"}",
+  "finished_at": "2026-10-23T00:38:54.098105+00:00",
+  "seconds": 2.616629826996359,
+  "id": "dev-st-2-openai-wiki_specialized",
+  "case_id": "dev-st-2",
+  "arm": "wiki_specialized",
+  "context_bytes": 63942,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "40",
+  "explanation": "The executed 2026 renewal specifies 40 named seats. The earlier 44-seat review form was never countersigned.",
+  "citations": [
+    "D039",
+    "D038"
+  ]
+}

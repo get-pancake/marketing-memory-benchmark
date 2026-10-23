@@ -1,0 +1,142 @@
+{
+  "id": "q0cb5b61aa6-openai-none",
+  "case_id": "q0cb5b61aa6",
+  "world": "we9acaa46",
+  "arm": "none",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 0,
+    "current_value_group_coverage": 0.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.0,
+    "selected_sources": 0,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2,
+  "status": "completed",
+  "started_at": "2026-10-23T00:44:55.459461+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999908",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b0fe42411a455f4016adaae07e32887d1be23f67c5d67febc",
+  "usage": {
+    "input_tokens": 812,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 235,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1047
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.003974",
+    "total_input_tokens": 812,
+    "output_tokens": 235,
+    "regular_input_tokens": 812,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "approved_role=account_role",
+      "approved_geo=account_geo",
+      "account.customer_state:observed=active",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": null,
+      "account.account_role:observed": null,
+      "account.customer_state:observed": null,
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "approved_role=account_role",
+      "approved_geo=account_geo",
+      "account.customer_state:observed=active",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "approved_role=account_role",
+      "approved_geo=account_geo",
+      "account.customer_state:observed=active",
+      "account.usage_trend:observed=declining",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No company evidence was supplied. P3 fits the renewal objective and two-unit allowance, but its required observations and approved role/geography matches cannot be established.",
+  "finished_at": "2026-10-23T00:45:00.749629+00:00",
+  "seconds": 5.290175546993851
+}

@@ -1,0 +1,122 @@
+{
+  "id": "qaeedc8290c-openai-gbrain",
+  "case_id": "qaeedc8290c",
+  "world": "w09550ffd",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 5,
+    "current_value_group_coverage": 0.5555555555555556,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2047,
+  "status": "completed",
+  "started_at": "2026-10-23T00:47:57.013502+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999899",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_088399c81a81b0fb016adaaebd3c1c87d19d7bf59652638c8c",
+  "usage": {
+    "input_tokens": 1958,
+    "input_tokens_details": {
+      "cache_write_tokens": 931,
+      "cached_tokens": 1024
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2202
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0048759",
+    "total_input_tokens": 1958,
+    "output_tokens": 244,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1024,
+    "cache_write_tokens": 931
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved matching account.account_role=revenue_lead (S13)",
+      "seller.approved_geo:approved matching account.account_geo=CA (S10)",
+      "seller.offering_pain:observed=audit_effort",
+      "account.certification:observed=ISO27001 (S17 records withdrawn)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S10",
+      "account.account_role:observed": "S13",
+      "account.certification:observed": "S17",
+      "account.observed_signal:observed": "S15",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": "S3"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account.account_role=revenue_lead (S13)",
+      "seller.approved_geo:approved matching account.account_geo=CA (S10)",
+      "seller.offering_pain:observed=audit_effort",
+      "account.certification:observed=ISO27001 (S17 records withdrawn)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account.account_role=revenue_lead (S13)",
+      "seller.approved_geo:approved matching account.account_geo=CA (S10)",
+      "seller.offering_pain:observed=audit_effort",
+      "account.certification:observed=ISO27001 (S17 records withdrawn)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 fits the compliance objective and two-unit allowance, but approved role, approved geography, offering-pain evidence and ISO27001 certification are missing; S17 instead records certification as withdrawn. P2 and P4 exceed the allowance, while P1 has a different objective.",
+  "finished_at": "2026-10-23T00:48:01.947415+00:00",
+  "seconds": 4.933923026997945
+}

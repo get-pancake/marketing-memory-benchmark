@@ -1,0 +1,727 @@
+{
+  "started_at": "2026-10-23T08:14:18.750518+00:00",
+  "passed": true,
+  "core_payload_sha256": "b9e6ab8a34c89963ff0712a42d853e83357eed575bfa0175d143f20fd15e8a5f",
+  "package_files_verified": 36825,
+  "package_manifest_sha256": "20f58f061f53c1a5bea0890f0694fd898bd698db7cad94fc89df3a494343ac6b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/tmp/marketing-memory-public-env/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "independent_hardware": false,
+  "fresh_runtime_compilation": false,
+  "fresh_full_main_inference": false,
+  "fresh_smoke_requested": false,
+  "upstream_scorer_requested": false,
+  "commands": [
+    {
+      "label": "tests-original",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d7e5eeee80ffccb6154cd2ab2eb0a3c2766c1a0ea8672fd8acba0f0152d5ded9"
+    },
+    {
+      "label": "tests-study",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "unittest",
+        "study.test_contract",
+        "study.test_ledger",
+        "analysis.test_analysis",
+        "analysis.test_audit",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8754b95d9bee43d888ff52c5e16dd218a9851c38961d7aa8c7d7bd75612acde3"
+    },
+    {
+      "label": "data",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "12",
+        "--seed",
+        "2026102202",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/regenerated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0aee7eb61f99fbfa37d77203ce9fea1e03b368b8f515b43f1f0adc1b33073e5d"
+    },
+    {
+      "label": "input-capacity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/input_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/input-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "949f7fbd062f24a281310dd27da469daf585c013917e13867710f32422307a43"
+    },
+    {
+      "label": "output-capacity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/output_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/output-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "83125a161bd4b92f27253602e6b5bd2156972c827c49deb1c0b9dd4d17fcb604"
+    },
+    {
+      "label": "audit-primary",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/primary/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "da5963a666e6a4223303f1a8869a4cb7a9be500583b75b27e69a9b83556aaab9"
+    },
+    {
+      "label": "analysis-primary",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4572b96f8e9a2ab7ac18dc73ffd99b1f163d15a0c11bb87b7f8b75cd2d59a419"
+    },
+    {
+      "label": "errors-primary",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/primary",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/primary/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0006f5f8b29f20ae99128db8d503e39d29f5afc6e40e0b2d05bc0e86a1f4cedf"
+    },
+    {
+      "label": "figures-primary",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/primary/summary.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/figures/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3ed441234e62ceaae9789cb227b5240ee769ea288db098fbbaff616806d703d6"
+    },
+    {
+      "label": "audit-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/sensitivity/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "343393a33b21d8f4896024e44637dbd62dbf8cce25befd62dd6b925436a6c3a8"
+    },
+    {
+      "label": "analysis-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3ad568c344e6bf9bec0080dad0abe3957fd99fe4304a12ddc5ff7809c5ddbd61"
+    },
+    {
+      "label": "errors-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/sensitivity",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/sensitivity/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6e08293e900a1a742130dc63545aac35e2a358c90dda6286d052555ca88a4ff5"
+    },
+    {
+      "label": "figures-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-memory-public-reproduction-attempt2/analysis/sensitivity/summary.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/figures/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "68146b8a77fe4082bbe939bf591e4d458e30175339d5fce1968fd5d04f037beb"
+    },
+    {
+      "label": "sql-reference",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "study.reference",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/sql-reference"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5c281457a435d75bbb1d0cfba2d15e16d1aa5729c4a76339b3273c39f666113a"
+    },
+    {
+      "label": "cost-accounting",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/cost_accounting.py",
+        "--runs",
+        "experiments/main/primary",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/cost-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "fc98bd0882abf9d8b6d5245fd4ac072b2dd9ea2ec9feae2eb049fcaf81eee63b"
+    },
+    {
+      "label": "context-primary",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/primary",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/context-v1/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b4baf90ba2df7fd9ddef91163eb6699d1fc29c3711822209c08635f3215f4aa9"
+    },
+    {
+      "label": "context-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/context-v1/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d2d0c840a0ff17c57b4f13b5c264a1d653706a1e109600d871e8d0929c9c4dd9"
+    },
+    {
+      "label": "gbrain-1024",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1024",
+        "--offline-token-counts",
+        "/tmp/marketing-memory-public-clean2/analysis/gbrain/reproducible-1024/token-counts.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/gbrain/reproducible-1024"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8647869e46c58529c218ef0042323ccab07385678aa4397d16e9fb7ff1fa4945"
+    },
+    {
+      "label": "gbrain-1536",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1536",
+        "--offline-token-counts",
+        "/tmp/marketing-memory-public-clean2/analysis/gbrain/reproducible-1536/token-counts.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/gbrain/reproducible-1536"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0698d2ecb5dc8b2a94d452352e54941f28254552bffdc4a9849a3bc13d98cf46"
+    },
+    {
+      "label": "gbrain-4096",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "4096",
+        "--offline-token-counts",
+        "/tmp/marketing-memory-public-clean2/analysis/gbrain/reproducible-4096/token-counts.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/gbrain/reproducible-4096"
+      ],
+      "exit_code": 0,
+      "output_sha256": "cba4f549d4c0ba54610d01689649bc1d0283e9c7de9286a4a6d907e5308c2735"
+    },
+    {
+      "label": "context-budget-table",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/gbrain/table.py",
+        "--analysis-root",
+        "/tmp/marketing-memory-public-reproduction-attempt2/gbrain",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/context-budget-table.tex"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4c513d4936d2e5333355d3d7c1d9c52117c8513d23d33ef9b1878eaa73854ac5"
+    },
+    {
+      "label": "recommendation-plan",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/recommendation/run.py",
+        "--config",
+        "benchmarks/recommendation/providers.example.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/recommendation-plan"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b6fc1f461069898fa3451927563450e7c838361e457108f361163e6159cc3812"
+    },
+    {
+      "label": "integrated-data",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "33",
+        "--seed",
+        "2026102302",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b525564c68fce31d09db488a2688bf2080ea58b5e23eee658cadfa512b020c7e"
+    },
+    {
+      "label": "integrated-audit",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/audit.py",
+        "--data",
+        "data/integrated/main-v1",
+        "--packets",
+        "experiments/integrated/main-context-v1",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-audit"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9b2ea79dad775c07286e2966177cf5e720e02ad2a785b0086dcc361e6c50f174"
+    },
+    {
+      "label": "integrated-analysis",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/analyze.py",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--data",
+        "data/integrated/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-main"
+      ],
+      "exit_code": 0,
+      "output_sha256": "96fe602ac726b46741f0d40f758d971982cf053fdca5792d775112e8e2b0adcc"
+    },
+    {
+      "label": "external-wiki-analysis",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/external_analyze.py",
+        "--run",
+        "experiments/integrated/external-reader-v1",
+        "--wiki",
+        "experiments/integrated/external-wiki-compile-v4",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-external"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5f34f08fb1c7b7f3f1caa37c7d872d148087c2c827757f26e1843b972fc58c8c"
+    },
+    {
+      "label": "external-chunked-control",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/external_chunks.py",
+        "--analyze",
+        "experiments/integrated/external-chunks-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-chunks"
+      ],
+      "exit_code": 0,
+      "output_sha256": "687387f31cb94914dce0e98fbb67657dee91da385e0e5e8cc10fcb04cd70ac47"
+    },
+    {
+      "label": "external-label-sensitivity",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/external_sensitivity.py",
+        "--base",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-external/per-attempt.jsonl",
+        "--chunks",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-chunks/per-attempt.jsonl",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/external-sensitivity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "18064e1488dea0f560cb6cadf313b63fdc7ef531f7023cb3870b0bbf0dc6ef1b"
+    },
+    {
+      "label": "integrated-provider-accounting",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/accounting.py",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9e95345b8afc02c642b6b270d2f306f141bfab6dc7728692f21370a646225cf4"
+    },
+    {
+      "label": "integrated-figures",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/figures.py",
+        "--main",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-main/summary.json",
+        "--context",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-audit/contexts.jsonl",
+        "--external",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-external/summary.json",
+        "--chunks",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-chunks/summary.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-figures"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6c24e6f592f6ae32694838f2ccb1347d6b629fee40a1e5919f6ee0cbc76a265d"
+    },
+    {
+      "label": "integrated-mock-execution",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "benchmarks/integrated/dry_run.py",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--data",
+        "data/integrated/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/integrated-mock-execution"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2195c69635ccf78ac8af341440fffd75883be4dc1f28bb3bde6f6c4f960b24df"
+    },
+    {
+      "label": "challenge-data",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "benchmarks.challenge.generate",
+        "--worlds",
+        "120",
+        "--seed",
+        "20261023042",
+        "--split",
+        "held-out-worlds",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "29f9cb5c1c62656151c16187194834f59cf9b4e29fcc3414cc27796c0e47cb43"
+    },
+    {
+      "label": "challenge-oracle",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "benchmarks.challenge.check_oracle",
+        "--data",
+        "data/challenge/main-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-oracle.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5c36cd2c909370127b1af49fb8b49d14ec6bab0ca7ff59b75491218d3c36b9f1"
+    },
+    {
+      "label": "challenge-context-audit",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_audit.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-context-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b7325f2547a847a2ff5c81990e55e6d44ce0dfe19820570dd99d0566b28545f8"
+    },
+    {
+      "label": "challenge-trace-audit",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_trace_audit.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--run",
+        "experiments/challenge/main-reader-v1",
+        "--freeze",
+        "experiments/challenge/main-freeze-v1.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-trace-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e596431dda9f5943d56179adc724fff55a0c1e8c8103316e4c51154ff5319b31"
+    },
+    {
+      "label": "challenge-budget",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_budget.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-budget.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e0abbaf8207437f378d4c52bf49fb4d458d77fdcd226ca3077d9987d40fee512"
+    },
+    {
+      "label": "challenge-accounting",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_accounting.py",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b855793dfbc61e433527d1e3522e125218b1879b233a4441a5d833e6a2d20b1f"
+    },
+    {
+      "label": "challenge-diagnostics",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_diagnostics.py",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-diagnostics.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "abbcf39880be60a078172a48d39acfc5a44a0aa775f5dcf52516fa94a64935b9"
+    },
+    {
+      "label": "challenge-native-telemetry",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_native_telemetry.py",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-native-telemetry.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "697b3d931c07b92636841db782de518010a96bbf169a3aa809a9725ec5b6a4fb"
+    },
+    {
+      "label": "challenge-embeddings-pilot-context-v2",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "scripts/shard_embedding_snapshot.py",
+        "experiments/challenge/pilot-context-v2/embedding-snapshot.json.gz",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8729b0be66dd9c0ae888a9694cead4af59d94273163f166080140a9f9727b901"
+    },
+    {
+      "label": "challenge-embeddings-main-context-v1",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "scripts/shard_embedding_snapshot.py",
+        "experiments/challenge/main-context-v1/embedding-snapshot.json.gz",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output_sha256": "daa465363910d2f13105039a6e14d90d7d591420c95c8cb91f5af157b3c5ad44"
+    },
+    {
+      "label": "challenge-external-opus",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_external_opus.py",
+        "--analyze",
+        "experiments/challenge/external-opus-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/external-opus"
+      ],
+      "exit_code": 0,
+      "output_sha256": "77263ae8a1e585fad8a14edd768b488c6050ec47b9e5d2048763a7db604671f7"
+    },
+    {
+      "label": "challenge-raw-response-analysis",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "-m",
+        "benchmarks.challenge.analyze",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--run",
+        "experiments/challenge/main-reader-v1",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-main"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d7a7f8a5b15f1fc894a0f6e09fa9df0f1eef8ac4b8fbf4f247fc736ac5f9c1bc"
+    },
+    {
+      "label": "challenge-figures",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "analysis/challenge_figures.py",
+        "--summary",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-main/summary.json",
+        "--budget",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-budget.json",
+        "--external",
+        "/tmp/marketing-memory-public-reproduction-attempt2/external-opus/summary.json",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/challenge-figures"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e26af174dfca77c4c0e1a2f49d68fb0c787a80cf53e8fd4137d2a6b59b3c338a"
+    },
+    {
+      "label": "report-claims",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "scripts/verify_report_claims.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0f9be127ff71e9aa6e0d4b7eebefc5aff93c6194831025dcd53ecab6ed8e010d"
+    },
+    {
+      "label": "paper",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "scripts/compile_paper.py",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/report.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "13a14ff6477970a08d1ed183c10ab5bf3bdbce4b0ee08ae897da36c527a466b7"
+    },
+    {
+      "label": "investor-note",
+      "argv": [
+        "/tmp/marketing-memory-public-env/bin/python",
+        "scripts/compile_investor_note.py",
+        "--output",
+        "/tmp/marketing-memory-public-reproduction-attempt2/investor-note.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2616fd5104ab25b51cd847ce54c63af291d571c6a6346afbc2902daf73021f47"
+    }
+  ],
+  "checks": {
+    "main_dataset_byte_identical": true,
+    "input_capacity_receipts_verified_offline": true,
+    "output_capacity_receipts_verified_offline": true,
+    "primary_analysis_identical_excluding_timestamp_and_paths": true,
+    "primary_error_localization_identical_excluding_timestamp": true,
+    "primary_figure_and_table_bytes_identical": true,
+    "sensitivity_analysis_identical_excluding_timestamp_and_paths": true,
+    "sensitivity_error_localization_identical_excluding_timestamp": true,
+    "sensitivity_figure_and_table_bytes_identical": true,
+    "sql_reference_identical_excluding_timing": true,
+    "cost_accounting_identical_excluding_timestamp": true,
+    "context_decomposition_identical_excluding_timestamp": true,
+    "gbrain_saved_rankings_three_budgets_and_table_identical": true,
+    "external_development_files_verified": 123,
+    "frontier_pilot_plan_identical_zero_provider_requests": true,
+    "integrated_data_contexts_raw_scores_statistics_figures_identical": true,
+    "external_wiki_raw_scores_identical": true,
+    "mock_workflows_reexecuted_without_external_actions": true,
+    "challenge_data_oracles_requests_raw_scores_statistics_controls_figures_identical": true,
+    "challenge_sharded_embeddings_losslessly_reassembled": true,
+    "numeric_claim_register_and_citation_keys_verified": true,
+    "paper_recompiled_and_text_layout_identical": true,
+    "recompiled_pdf_sha256": "31c99a24ca41168e6bacfcdea402b3ccc0e2e5678479a174f7887c03eb5b41df",
+    "investor_note_two_pages_and_text_layout_identical": true,
+    "packaged_evidence_unchanged_after_reproduction": true
+  },
+  "scope": "Clean extracted code/data and isolated Python environment; system TeX and, if requested, existing pinned local model services remain external dependencies.",
+  "fresh_native_gbrain_search": false,
+  "fresh_frontier_api_calls": 0,
+  "finished_at": "2026-10-23T08:16:59.738550+00:00"
+}

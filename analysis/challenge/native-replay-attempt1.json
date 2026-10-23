@@ -1,0 +1,38 @@
+{
+  "status": "failed_auxiliary_full_ranking_assertion",
+  "fresh_native_cases": 3,
+  "fresh_api_calls": 0,
+  "records": [
+    {
+      "case_id": "w20261023042-000-accessible",
+      "equal": {
+        "native_input_sha256": true,
+        "gbrain_ranking": true,
+        "markdown_ranking": false,
+        "packets_sha256": true
+      },
+      "fresh_receipt_sha256": "400c0d4d3018c20bd456886ece401ca8446b5aa221e7c67d1aa9928b16d3bfca"
+    },
+    {
+      "case_id": "w20261023042-000-constrained",
+      "equal": {
+        "native_input_sha256": true,
+        "gbrain_ranking": true,
+        "markdown_ranking": false,
+        "packets_sha256": true
+      },
+      "fresh_receipt_sha256": "4948fcf2998a38560c6b1b825412c3517004c4e21e4b8ef9111f6627a3e3ca0c"
+    },
+    {
+      "case_id": "w20261023042-000-stress",
+      "equal": {
+        "native_input_sha256": true,
+        "gbrain_ranking": true,
+        "markdown_ranking": true,
+        "packets_sha256": true
+      },
+      "fresh_receipt_sha256": "2b023416fbbba125f30105afb7169cd0634b39454a466d5ed0f9f8c2b856e24a"
+    }
+  ],
+  "explanation": "All native GBrain ranks and 18 packets were byte-identical. Auxiliary Markdown full rankings differed in two cases, while its packets were unchanged. Frozen rank_hybrid sums BM25 terms through a Python set; floating-point near-tie order can vary. The replay checker was amended to report this separate fact, preserving the frozen experiment and saved rankings. The second analysis reads these same actual executions; it is not another fresh run."
+}

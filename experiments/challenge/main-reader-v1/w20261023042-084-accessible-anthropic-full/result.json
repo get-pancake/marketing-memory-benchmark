@@ -1,0 +1,98 @@
+{
+  "id": "w20261023042-084-accessible-anthropic-full",
+  "case_id": "w20261023042-084-accessible",
+  "world": "w20261023042-084",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:04:21.721433+00:00",
+  "evidence_bytes": 28560,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9992000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:04:26Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:04:34Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:04:22Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11991000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:04:26Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfTqzMq89wjHKHtGr5M",
+  "usage": {
+    "input_tokens": 14260,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 994,
+    "output_tokens_details": {
+      "thinking_tokens": 401
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.07692",
+    "total_input_tokens": 14260,
+    "output_tokens": 994,
+    "regular_input_tokens": 14260,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Birch-84",
+        "action": "diagnostic",
+        "sources": [
+          "eceebcde64da22c",
+          "e72c6de7f88f10a",
+          "e82ff403a9cd3fd",
+          "ebcde72de003305",
+          "ef15a2f50325f8f",
+          "eb2ddf01534df86",
+          "edc117cdf72936c",
+          "e7e364823fe14c5",
+          "e193be5cd07624b",
+          "e6109270547188e"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-84: an allowed region and a non-blocked sector. Its profile is DE/restricted, and the approved policy allows only UK, FR and US and blocks restricted.",
+      "Elm-84: an allowed region. Its profile region is DE, which the approved policy does not allow.",
+      "Flint-84: current observed consent of true. The observed consent value is false.",
+      "Birch-84: an approved shareable=true on proof-0 for reference_intro. The approved shareable value is false."
+    ],
+    "reasoning_summary": "The approved seller policy (eceebcde64da22c) allows UK, FR and US and blocks the restricted sector; the proposed policy was ignored. Only Birch-84 is eligible. It has a UK services profile, observed consent true, a growth signal and approved priority 1. Its full chain is verified: initiative-0 -> need-0 -> offering-0 -> proof-0, with proof-0 approved verified true. The diagnostic action matches the growth signal and scores 1 x 2 = 2 at cost 2, within the budget of 6. This beats research_brief (score 1). Reference_intro is blocked because proof-0 is approved shareable false. Pine-84 is blocked by its DE region and restricted sector, Elm-84 by its DE region, and Flint-84 by observed consent false. Nonresponse feedback records were not treated as approved facts."
+  },
+  "score": {
+    "optimum": 2,
+    "recoverable_value": 2,
+    "returned_value": 2,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T06:04:34.122704+00:00",
+  "seconds": 12.401279813988367
+}

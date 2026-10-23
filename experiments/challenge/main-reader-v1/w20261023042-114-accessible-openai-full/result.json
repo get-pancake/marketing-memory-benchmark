@@ -1,0 +1,101 @@
+{
+  "id": "w20261023042-114-accessible-openai-full",
+  "case_id": "w20261023042-114-accessible",
+  "world": "w20261023042-114",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:59:02.725340+00:00",
+  "evidence_bytes": 28627,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999586",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0232371b0f547c85016adaf7a77dd487d1ae342858e0c583ef",
+  "usage": {
+    "input_tokens": 9489,
+    "input_tokens_details": {
+      "cache_write_tokens": 9486,
+      "cached_tokens": 0
+    },
+    "output_tokens": 556,
+    "output_tokens_details": {
+      "reasoning_tokens": 130
+    },
+    "total_tokens": 10045
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.029281",
+    "total_input_tokens": 9489,
+    "output_tokens": 556,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 9486
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "North-114",
+        "action": "workshop",
+        "sources": [
+          "e37ba4a40924e0f",
+          "eeec30054706065",
+          "e9c1286116aa25b",
+          "e9e40f9a623580f",
+          "e935288bab081e6",
+          "e97fe84fdff9fcd",
+          "eaa26c7d3e24aca",
+          "e2f7312ad06d079",
+          "eb553030c19f955",
+          "e5fca07fab28e7f",
+          "e4c55727004fd8b"
+        ]
+      },
+      {
+        "account": "Aster-114",
+        "action": "workshop",
+        "sources": [
+          "e37ba4a40924e0f",
+          "e8b7a175235f88e",
+          "e84356a5a0f4315",
+          "ed3a75abcf1bdaa",
+          "e0c9ce2eb87698f",
+          "ef5e3de687eb9eb",
+          "ee036ccaa60291b",
+          "e0e41a48df18dc5",
+          "e984417425539b0",
+          "e45dfd364250c2e",
+          "e581c4b6d0f5bbd"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The optimal eligible plan uses the full budget of 6 across two distinct accounts. North's workshop scores 11 × 4 = 44 and Aster's scores 6 × 4 = 24, totaling 68 synthetic priority points, not expected revenue. Both satisfy all eligibility requirements. Harbor is ineligible; no feasible alternative involving Cedar improves the total."
+  },
+  "score": {
+    "optimum": 68,
+    "recoverable_value": 68,
+    "returned_value": 68,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:59:13.707257+00:00",
+  "seconds": 10.981923532992369
+}

@@ -1,0 +1,70 @@
+{
+  "id": "w20261023042-037-constrained-openai-markdown",
+  "case_id": "w20261023042-037-constrained",
+  "world": "w20261023042-037",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:57:55.844196+00:00",
+  "evidence_bytes": 12246,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999851",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_03207f0dcc6913d1016adaf764bd1c87d1aa8cf3fe95eae178",
+  "usage": {
+    "input_tokens": 4416,
+    "input_tokens_details": {
+      "cache_write_tokens": 4413,
+      "cached_tokens": 0
+    },
+    "output_tokens": 292,
+    "output_tokens_details": {
+      "reasoning_tokens": 101
+    },
+    "total_tokens": 4708
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0139585",
+    "total_input_tokens": 4416,
+    "output_tokens": 292,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4413
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "Harbor-37: approved verified=true evidence for proof-0 is missing, blocking every action.",
+      "Harbor-37: approved shareable=true evidence for proof-0 is also required for reference_intro.",
+      "Grove-37, Cedar-37, Larch-37 and Aster-37: observed profile, consent=true, signal and complete initiative-to-need-to-offering-to-proof links, plus approved integer priority and proof verified=true evidence, are missing."
+    ],
+    "reasoning_summary": "No supported action is available within the budget of 7. Harbor-37 lacks required proof verification. Pine-37 is independently ineligible because its observed UK region is not allowed and its proof is approved verified=false. The other four accounts lack required evidence. The proposed policy and feedback do not establish eligibility."
+  },
+  "score": {
+    "optimum": 45,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T05:58:04.592837+00:00",
+  "seconds": 8.748640698991949
+}

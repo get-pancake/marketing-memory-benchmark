@@ -1,0 +1,160 @@
+{
+  "id": "resp_0062ac80ee1a31b9016adafa232db487d194d961e6e77d9369",
+  "object": "response",
+  "created_at": 1792735779,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735785,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0062ac80ee1a31b9016adafa24c34c87d18af8f4536cffdd37",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Iris-94, Grove-94, Kestrel-94 and Cedar-94: supply observed profiles, true consent, signals and complete initiative \u2192 need \u2192 offering \u2192 proof chains, plus approved integer priorities and approved true proof verification. Supply action-specific approvals where required.\",\n    \"Larch-94: eligibility requires an allowed, nonblocked observed profile, observed true consent and approved true verification for proof-1; current evidence instead shows a restricted sector, false consent and false verification.\",\n    \"North-94: eligibility requires an allowed, nonblocked observed profile and observed true consent; current evidence shows a restricted sector and false consent.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available. Every catalog action was checked separately: Larch-94 is blocked by sector, consent and proof verification; North-94 is blocked by sector and consent. The other four queried accounts lack required evidence. The approved seller policy governs; the proposed policy and feedback do not establish eligibility. No priority points can be selected within the budget of 7.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Iris-94",
+                    "Larch-94",
+                    "North-94",
+                    "Grove-94",
+                    "Kestrel-94",
+                    "Cedar-94"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4459,
+    "input_tokens_details": {
+      "cache_write_tokens": 4456,
+      "cached_tokens": 0
+    },
+    "output_tokens": 234,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4693
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:01.189194+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0922e69ab0f61eb7016adaaca55f9c87d19e283e47dc8fb510",
+  "usage": {
+    "input_tokens": 260,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 12
+    },
+    "total_tokens": 319
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.00111",
+    "total_input_tokens": 260,
+    "output_tokens": 59,
+    "regular_input_tokens": 260,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record the seat count signed in Thornbury Cloth Co.\u2019s 2026 renewal.\"}",
+  "finished_at": "2026-10-23T00:39:03.694290+00:00",
+  "seconds": 2.505104684008984,
+  "id": "dev-st-2-openai-none",
+  "case_id": "dev-st-2",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki record the seat count signed in Thornbury Cloth Co.\u2019s 2026 renewal.",
+  "citations": []
+}

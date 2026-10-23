@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-015-constrained-anthropic-markdown",
+  "case_id": "w20261023042-015-constrained",
+  "world": "w20261023042-015",
+  "family": "enterprise_software",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:03:38.241079+00:00",
+  "evidence_bytes": 12285,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:03:41Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:03:48Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9996",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:03:38Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:03:41Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfQdLm4dFeMEzzqx6Sf",
+  "usage": {
+    "input_tokens": 6975,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 985,
+    "output_tokens_details": {
+      "thinking_tokens": 379
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.0476",
+    "total_input_tokens": 6975,
+    "output_tokens": 985,
+    "regular_input_tokens": 6975,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Elm-15",
+        "action": "renewal_review",
+        "sources": [
+          "e844e2a397ce65c",
+          "e6cc3493677d8b3",
+          "edefe3025435cb5",
+          "edf1d251ce69216",
+          "ea24ff025946c21",
+          "ecca40bc0090d2a",
+          "e82fa9a51e5775f",
+          "e5028ab0ea6de9b",
+          "e33ff62c19a6506",
+          "ed421c7c7d7c271"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-15: current observed consent is false; a true consent record is needed",
+      "North-15: profile region FR is not allowed; initiative-2 has no observed need, so the need->offering->proof->verified chain is missing",
+      "Mesa-15: no profile, consent, signal, priority or initiative chain evidence",
+      "Birch-15: no profile, consent, signal, priority or initiative chain evidence",
+      "Orchid-15: no profile, consent, signal, priority or initiative chain evidence",
+      "Elm-15: reference_intro would need proof-0 approved shareable=true (currently false)"
+    ],
+    "reasoning_summary": "Only Elm-15 is eligible. Its seller policy is approved, its profile is DE/services, observed consent is true, and its signal is renewal. Its chain is fully verified (initiative-0 -> need-0 -> offering-0 -> proof-0, verified true), and its approved priority is 10. Renewal_review scores 10 x 3 = 30 at cost 2, which beats research_brief (10). Reference_intro is blocked because proof-0 is not shareable. Pine-15 is blocked because its consent is false. North-15 is blocked because its region (FR) is not allowed and its chain is incomplete. Mesa-15, Birch-15 and Orchid-15 have no evidence. The plan uses 2 of the 7-point budget for a total of 30 policy points."
+  },
+  "score": {
+    "optimum": 74,
+    "recoverable_value": 30,
+    "returned_value": 30,
+    "normalized_value": 0.40540540540540543,
+    "context_normalized_value": 0.40540540540540543,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T06:03:48.793327+00:00",
+  "seconds": 10.55225748900557
+}

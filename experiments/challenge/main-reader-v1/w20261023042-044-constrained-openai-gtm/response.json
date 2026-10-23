@@ -1,0 +1,160 @@
+{
+  "id": "resp_09471b4c3369126e016adaf9a0536c87d1bd5c1c58588b833d",
+  "object": "response",
+  "created_at": 1792735648,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735653,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_09471b4c3369126e016adaf9a17f8c87d19b769303ef0becaa",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"Grove-44, North-44, Cedar-44, Iris-44 and Mesa-44: current observed consent must be true; supplied consent is false.\",\"Larch-44: resolve conflicting current observed consent records e9632304b7bfcb2 (false) and ebd49371afbab1d (true). The later timestamp does not supersede the other current record.\",\"North-44: eligibility also requires a policy-permitted sector and approved true proof verification; its sector is restricted and proof-1 verification is false. A workshop additionally requires approved true offering capacity, currently false.\",\"Cedar-44: eligibility also requires an allowed profile region or an approved policy permitting UK; the approved policy does not allow UK.\"],\"reasoning_summary\":\"No supported action is available: each queried account fails consent eligibility, including Larch-44 whose current consent values conflict. North-44 and Cedar-44 also have independent eligibility blockers. The proposed seller policy is not approved evidence. The empty plan costs 0 of 7 and has a synthetic priority score of 0.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Grove-44",
+                    "North-44",
+                    "Cedar-44",
+                    "Iris-44",
+                    "Mesa-44",
+                    "Larch-44"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4499,
+    "input_tokens_details": {
+      "cache_write_tokens": 4496,
+      "cached_tokens": 0
+    },
+    "output_tokens": 234,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4733
+  },
+  "user": null,
+  "metadata": {}
+}

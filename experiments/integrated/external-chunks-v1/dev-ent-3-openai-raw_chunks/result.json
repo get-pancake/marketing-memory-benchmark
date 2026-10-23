@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.613158+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_04b827624f557d25016adaaddd22c087d1b0fa9aa1d1b4b7be",
+  "usage": {
+    "input_tokens": 6442,
+    "input_tokens_details": {
+      "cache_write_tokens": 6439,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6508
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0167635",
+    "total_input_tokens": 6442,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6439
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"Tobias clarified that the escalation for ticket #88412 concerned the packaging company, not Tansley Parcel. Hollis corrected the name to Tansleigh Packaging, which Tobias then confirmed.\"}",
+  "finished_at": "2026-10-23T00:44:15.424184+00:00",
+  "seconds": 2.8110366640030406
+}

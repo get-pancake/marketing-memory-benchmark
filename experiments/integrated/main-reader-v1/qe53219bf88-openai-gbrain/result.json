@@ -1,0 +1,177 @@
+{
+  "id": "qe53219bf88-openai-gbrain",
+  "case_id": "qe53219bf88",
+  "world": "w91790027",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.3333333333333333,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2004,
+  "status": "completed",
+  "started_at": "2026-10-23T00:41:09.393853+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999970",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_03d000f12179aa54016adaad25a32887d1be4896d6d208db6c",
+  "usage": {
+    "input_tokens": 1944,
+    "input_tokens_details": {
+      "cache_write_tokens": 891,
+      "cached_tokens": 1050
+    },
+    "output_tokens": 172,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2116
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0040585",
+    "total_input_tokens": 1944,
+    "output_tokens": 172,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1050,
+    "cache_write_tokens": 891
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S1",
+      "account.account_role:observed": "S6",
+      "account.channel_fit:observed": "S7",
+      "account.partner_status:observed": "S13",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S16",
+      "seller.approved_role:approved": "S2",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0f03801",
+          "ef11d240",
+          "e887f030",
+          "e03366a8"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-948",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e0f03801",
+        "ef11d240"
+      ],
+      "evidence": [
+        "e03366a8",
+        "e0f03801",
+        "e887f030",
+        "ef11d240"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "e0f03801",
+          "ef11d240",
+          "e887f030",
+          "e03366a8"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-948",
+      "objective": "qualification_audit",
+      "template": "P4",
+      "policy_versions": [
+        "e0f03801",
+        "ef11d240"
+      ],
+      "evidence": [
+        "e03366a8",
+        "e0f03801",
+        "e887f030",
+        "ef11d240"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 satisfies the qualification_audit objective and uses 2 of the 3 allowed units. Approved and observed roles match (S2, S6), and approved and observed geographies match (S16, S1); no additional prerequisites are required.",
+  "finished_at": "2026-10-23T00:41:13.459611+00:00",
+  "seconds": 4.065767884007073
+}

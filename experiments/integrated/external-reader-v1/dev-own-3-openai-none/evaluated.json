@@ -1,0 +1,41 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:53.851339+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_03cb3d0014ce897e016adaacda389487d186e7018eeb9c19ae",
+  "usage": {
+    "input_tokens": 258,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 42,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 300
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.000936",
+    "total_input_tokens": 258,
+    "output_tokens": 42,
+    "regular_input_tokens": 258,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record when Dana Okafor started managing Brackenwater Freight Co.\"}",
+  "finished_at": "2026-10-23T00:39:56.298848+00:00",
+  "seconds": 2.447513123988756,
+  "id": "dev-own-3-openai-none",
+  "case_id": "dev-own-3",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No supplied company documents or compiled wiki record when Dana Okafor started managing Brackenwater Freight Co.",
+  "citations": []
+}

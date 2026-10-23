@@ -1,0 +1,115 @@
+{
+  "id": "w20261023042-069-accessible-anthropic-markdown",
+  "case_id": "w20261023042-069-accessible",
+  "world": "w20261023042-069",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:54:13.408777+00:00",
+  "evidence_bytes": 16300,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9994000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:54:15Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:54:28Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9995",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:54:14Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:54:15Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeh1rgbB1CdXaRSNBNe",
+  "usage": {
+    "input_tokens": 8706,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1614,
+    "output_tokens_details": {
+      "thinking_tokens": 1001
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.067104",
+    "total_input_tokens": 8706,
+    "output_tokens": 1614,
+    "regular_input_tokens": 8706,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Harbor-69",
+        "action": "workshop",
+        "sources": [
+          "e05ebd8d474082a",
+          "e859e0b20133c88",
+          "ee872c0f4dac055",
+          "e3065c664329cbd",
+          "e6b30729a946498",
+          "efc1296ed9362b2",
+          "e8499036ce846d8",
+          "ea0eab060eeea21",
+          "e68873f79a5be0f",
+          "e78379819b28b74",
+          "e8b7401dc0a03b7"
+        ]
+      },
+      {
+        "account": "Juniper-69",
+        "action": "workshop",
+        "sources": [
+          "e05ebd8d474082a",
+          "e8f6b93677b29ef",
+          "e4a1452be5d8a7b",
+          "e74560f59d4cd53",
+          "e25de0b8c63d1c8",
+          "eab2484ace44d98",
+          "e437da6d2ce8886",
+          "ef646500fcd5f44",
+          "ee70f6d06634971",
+          "e039ad50e244941",
+          "e0ab17c2af91e37"
+        ]
+      }
+    ],
+    "missing": [
+      "Grove-69: observed profile (region/sector)",
+      "Grove-69: observed current consent",
+      "Grove-69: observed initiative -> need -> offering -> proof chain with approved verified proof"
+    ],
+    "reasoning_summary": "Approved seller policy allows all actions in FR/US/UK. Harbor-69 (UK, priority 9, launch signal, full verified chain, approved capacity) is eligible for workshop: 9x4=36, cost 3. Juniper-69 (US, priority 3, launch, verified chain, approved capacity) is eligible for workshop: 3x4=12, cost 3. North-69 (priority 1, risk) is eligible for several actions, but no combination including it beats 48 within the budget of 6. Grove-69 lacks a profile, consent and an initiative chain, so it is ineligible. The proposed policy and nonresponse feedback were ignored. The chosen plan totals 48 policy points at cost 6."
+  },
+  "score": {
+    "optimum": 48,
+    "recoverable_value": 48,
+    "returned_value": 48,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:54:28.773303+00:00",
+  "seconds": 15.364536266992218
+}

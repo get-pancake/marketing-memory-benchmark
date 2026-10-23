@@ -1,0 +1,160 @@
+{
+  "id": "resp_01a6489d39f7a1ac016adaf81044b487d192e3ef173f037333",
+  "object": "response",
+  "created_at": 1792735248,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735254,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_01a6489d39f7a1ac016adaf81184a087d1a458a235476f2ca6",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"North-34 and Harbor-34: current observed consent=true is required; supplied consent is false.\",\n    \"Orchid-34: current observed consent=true and approved proof-1 verified=true are required; both supplied values are false.\",\n    \"Cedar-34: current observed consent=true and an observed profile satisfying approved sector restrictions are required.\",\n    \"Grove-34: current observed consent=true and an observed profile satisfying approved region and sector restrictions are required.\",\n    \"Delta-34: resolve conflicting current observed consent records e0676abe90ad80c and e0d661c82743508 to establish unambiguous consent=true. Workshop additionally requires approved offering-5 capacity=true.\"\n  ],\n  \"reasoning_summary\": \"No supported action is eligible, so the optimal supported plan has zero cost and zero priority points. Every queried account fails consent eligibility; Delta-34's later true record does not supersede its conflicting current false record. Cedar-34 and Grove-34 also fail profile restrictions, and Orchid-34 lacks approved verified proof. The proposed seller policy is not an approved fact.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "North-34",
+                    "Orchid-34",
+                    "Cedar-34",
+                    "Grove-34",
+                    "Harbor-34",
+                    "Delta-34"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4481,
+    "input_tokens_details": {
+      "cache_write_tokens": 4478,
+      "cached_tokens": 0
+    },
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4726
+  },
+  "user": null,
+  "metadata": {}
+}

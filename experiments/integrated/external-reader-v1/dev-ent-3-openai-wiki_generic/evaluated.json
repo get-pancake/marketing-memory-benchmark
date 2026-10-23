@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:40:09.082582+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06faf9e77f32252f016adaace998fc87d1a184bda2bafdcbf2",
+  "usage": {
+    "input_tokens": 17587,
+    "input_tokens_details": {
+      "cache_write_tokens": 17584,
+      "cached_tokens": 0
+    },
+    "output_tokens": 72,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17659
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044686",
+    "total_input_tokens": 17587,
+    "output_tokens": 72,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17584
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"The July 2 #central-team discussion explicitly corrected \u201cTansley Packaging\u201d to Tansleigh Packaging. The escalation concerned its Door 6 tablet BOL barcode freeze, not Tansley Parcel\u2019s separate login issue.\"}",
+  "finished_at": "2026-10-23T00:40:12.254101+00:00",
+  "seconds": 3.171527682003216,
+  "id": "dev-ent-3-openai-wiki_generic",
+  "case_id": "dev-ent-3",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tansleigh Packaging",
+  "explanation": "The July 2 #central-team discussion explicitly corrected \u201cTansley Packaging\u201d to Tansleigh Packaging. The escalation concerned its Door 6 tablet BOL barcode freeze, not Tansley Parcel\u2019s separate login issue.",
+  "citations": [
+    "D015"
+  ]
+}

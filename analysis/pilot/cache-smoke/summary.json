@@ -1,0 +1,178 @@
+{
+  "schema": "study-analysis-v1",
+  "analyzed_at": "2026-10-22T03:49:54.885371+00:00",
+  "run": "experiments/pilot/cache-smoke",
+  "dataset": "data/study/runtime-smoke-v1",
+  "source_run_complete": true,
+  "planned_attempts": 2,
+  "recorded_terminal_attempts": 2,
+  "model_calls_started": 1,
+  "reused_identical_requests": 1,
+  "physical_calls_with_unknown_usage": 0,
+  "physical_generation_seconds": 45.67835170299986,
+  "physical_input_tokens": 1387,
+  "physical_output_tokens": 158,
+  "cost_accounting_note": "Per-method token and generation-time totals charge the observed origin call for identical-request reuse. Physical calls/tokens/time are reported separately; a reused response is not fresh inference. Missing usage is unknown, not proof of zero compute.",
+  "methods": {
+    "full_context": {
+      "planned": 1,
+      "completed": 1,
+      "physical_calls": 1,
+      "reused_requests": 0,
+      "failures": 0,
+      "worlds": 1,
+      "positive_cases": 1,
+      "negative_cases": 0,
+      "primary": 0.0,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.0,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.0,
+      "correct_negative_withhold": null,
+      "negative_recommendations": null,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 1387,
+      "output_tokens": 158,
+      "generation_seconds": 45.67835170299986,
+      "retrieval_seconds": 0.04496243100038555,
+      "generation_p50_seconds": 45.67835170299986,
+      "generation_p95_seconds": 45.67835170299986,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    "typed": {
+      "planned": 1,
+      "completed": 1,
+      "physical_calls": 0,
+      "reused_requests": 1,
+      "failures": 0,
+      "worlds": 1,
+      "positive_cases": 1,
+      "negative_cases": 0,
+      "primary": 0.0,
+      "primary_world_ci95": null,
+      "applicable_choice": 0.0,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.0,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.0,
+      "correct_negative_withhold": null,
+      "negative_recommendations": null,
+      "positive_dry_run_completion": 0.0,
+      "input_tokens": 1387,
+      "output_tokens": 158,
+      "generation_seconds": 45.67835170299986,
+      "retrieval_seconds": 0.07498694800051453,
+      "generation_p50_seconds": 45.67835170299986,
+      "generation_p95_seconds": 45.67835170299986,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 1
+      },
+      "by_condition": {
+        "initial": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "full_context minus typed": {
+      "mean": 0,
+      "ci95": null,
+      "world_differences": {
+        "w69bf7897": 0
+      },
+      "sd": null,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    }
+  },
+  "world_means": {
+    "full_context": {
+      "w69bf7897": 0
+    },
+    "typed": {
+      "w69bf7897": 0
+    }
+  },
+  "transitions": {
+    "full_context": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    },
+    "typed": {
+      "initial -> weak_feedback": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 0,
+        "correct_before": 0,
+        "correct_both": 0,
+        "unconditional_joint": null,
+        "conditional_preservation_or_refresh": null
+      }
+    }
+  },
+  "unique_embedding_origin_seconds": {
+    "event": 1.78253018200121,
+    "query": 0.33367449400066107
+  },
+  "embedding_cost_note": "Unique observed cache origins across this run, counted once; common reusable index cost, not a per-method cache-order advantage. Infrastructure dollars/energy unknown.",
+  "uncertainty_note": "Conditional on fictional generator/families and tested model. World bootstrap does not represent commercial-population uncertainty. Fewer than six worlds: descriptive pilot, CI suppressed. Degenerate bootstrap intervals are not guarantees.",
+  "analysis_sha256": "3dce30df983ae0face1d8916a279a61f6a2218d105c5142c7830956f66f63ad2"
+}

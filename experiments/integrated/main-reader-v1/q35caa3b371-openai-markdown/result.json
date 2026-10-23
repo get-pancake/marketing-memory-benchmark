@@ -1,0 +1,113 @@
+{
+  "id": "q35caa3b371-openai-markdown",
+  "case_id": "q35caa3b371",
+  "world": "w6cf131b0",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2037,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:40.918450+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999947",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0557262eb2d7ef51016adab231571487d1a00bdbff6c1d660d",
+  "usage": {
+    "input_tokens": 2013,
+    "input_tokens_details": {
+      "cache_write_tokens": 906,
+      "cached_tokens": 1104
+    },
+    "output_tokens": 196,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2209
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0043414",
+    "total_input_tokens": 2013,
+    "output_tokens": 196,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1104,
+    "cache_write_tokens": 906
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S4",
+      "account.account_role:observed": "S9",
+      "account.channel_fit:observed": "S7",
+      "account.partner_status:observed": "S6",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S12",
+      "seller.approved_role:approved": "S15",
+      "seller.offering_pain:observed": "S1",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 fits the partner objective and two-unit allowance, and the approved role and geography match Arden-324 (S15, S9, S12, S4), but no observed proof for integration pain is supplied. P2 and P4 exceed the allowance, while P3 has a different objective.",
+  "finished_at": "2026-10-23T01:02:45.625888+00:00",
+  "seconds": 4.707444174011471
+}

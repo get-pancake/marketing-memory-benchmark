@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-23T00:19:03.894143+00:00",
+  "phase": "before main context generation and reader requests",
+  "worlds": 33,
+  "cases": 264,
+  "planned_reader_calls": 3696,
+  "seed": 2026102302,
+  "families": [
+    "renewal",
+    "partner",
+    "compliance"
+  ],
+  "selection_rule_source": "analysis/integrated/pilot-v2/summary.json",
+  "pilot_selected_worlds": 33,
+  "code_sha256": {
+    "benchmarks/integrated/analyze.py": "e30745c9d7cc9042a224e763d644cf2094ae00a2ea8164405e52b846c673a0f0",
+    "benchmarks/integrated/common.py": "50d9578d87e2bda08e8193ce2faf88a43312bb8a312d274d6fbf079c8d49a450",
+    "benchmarks/integrated/gbrain-search.ts": "f409617d302865833596b666b653e8519217d1910cde2f4a7106f606abfb6614",
+    "benchmarks/integrated/prepare.py": "6845e2ada7a7d0b2a06c8b279167a45e39f651870db67fd39bb0fdbf9088b315",
+    "benchmarks/integrated/providers.json": "c6835ede53d27a1fb1b69236ce5b51b1af51325ef29c5a12c871b08c1c5a27b1",
+    "benchmarks/integrated/run.py": "f298eb8b2ae858032ec2b282a0f7dde1b726cd61eb13423d2c922b67e96800f2",
+    "benchmarks/integrated/serialization.py": "2e8440b31a3db05d9239960fe85a6fb0df1f03701901f49774b7ca23d683cd52",
+    "benchmarks/recommendation/run.py": "c87fcc10da2b3fa400f7efbe8197f9ebc2da1eadcbc16914076a59994266c2d2",
+    "papers/marketing-memory/integrated-protocol-v0.1.md": "2e96eb20c47653f5ddb0619ba8bc1275bc1dd4dd4f3557241aa2e1ea062830af",
+    "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+    "study/fixtures.py": "54e677a01a8ae2626e7c4b387ac4a90c0ee7445c35c4059884ded13e34c29a2e",
+    "study/retrieval.py": "8ed97d652d58b18e1f92df85d60a981a87a557373c20f662be2cc626d633be24"
+  },
+  "data_sha256": {
+    "data/integrated/main-v1/inputs.json": "449072b7255fd2fc045c7e5a0e646f1511df23e2e0bac20d9e0a32c3e8e778b7",
+    "data/integrated/main-v1/labels.json": "80f0528929304ecc2a5c4dd67cc56a0f9956ed823f73a273627602142e957211",
+    "data/integrated/main-v1/manifest.json": "f88585ed0ec0abd467a75d66265efb1b85a6787ba269c76e6867e3517813d474"
+  },
+  "primary_analysis": "benchmarks/integrated/analyze.py",
+  "no_main_results_available": true,
+  "user_numeric_budget": null,
+  "researcher_operational_reader_cap_usd": 300
+}

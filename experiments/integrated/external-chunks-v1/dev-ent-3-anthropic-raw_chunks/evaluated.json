@@ -1,0 +1,47 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:44:19.074467+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJF4KfH8eZaT2oawLnAB",
+  "usage": {
+    "input_tokens": 10679,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 125,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.022608",
+    "total_input_tokens": 10679,
+    "output_tokens": 125,
+    "regular_input_tokens": 10679,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tansleigh Packaging\",\"citations\":[\"D015\"],\"explanation\":\"In the July 2, 2025 #central-team chat, Tobias first used \\\"TP\\\" ambiguously, then clarified it was Tansleigh Packaging (not Tansley Parcel) for ticket #88412, and later confirmed again that it was Tansleigh Packaging.\"}",
+  "finished_at": "2026-10-23T00:44:21.990566+00:00",
+  "seconds": 2.916112131992122,
+  "id": "dev-ent-3-anthropic-raw_chunks",
+  "case_id": "dev-ent-3",
+  "arm": "raw_chunks",
+  "context_bytes": 24530,
+  "answer_correct": true,
+  "answer": "Tansleigh Packaging",
+  "citations": [
+    "D015"
+  ],
+  "explanation": "In the July 2, 2025 #central-team chat, Tobias first used \"TP\" ambiguously, then clarified it was Tansleigh Packaging (not Tansley Parcel) for ticket #88412, and later confirmed again that it was Tansleigh Packaging.",
+  "citation_ids_valid": true
+}

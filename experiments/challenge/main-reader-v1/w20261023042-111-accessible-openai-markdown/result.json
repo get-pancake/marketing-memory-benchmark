@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-111-accessible-openai-markdown",
+  "case_id": "w20261023042-111-accessible",
+  "world": "w20261023042-111",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:09:59.193514+00:00",
+  "evidence_bytes": 16299,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999700",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0e89bae8e8f88544016adafa38015c87d1819f8036b5c8ab8e",
+  "usage": {
+    "input_tokens": 5711,
+    "input_tokens_details": {
+      "cache_write_tokens": 5708,
+      "cached_tokens": 0
+    },
+    "output_tokens": 442,
+    "output_tokens_details": {
+      "reasoning_tokens": 98
+    },
+    "total_tokens": 6153
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.018696",
+    "total_input_tokens": 5711,
+    "output_tokens": 442,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5708
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Kestrel-111",
+        "action": "assurance_pack",
+        "sources": [
+          "e25ed56ea5e4245",
+          "e4dfa4219eeecd3",
+          "e58e527e4e8b1c4",
+          "e5bb473d08cd29b",
+          "eba8bb7d5ed9175",
+          "eebdcd19bc639cf",
+          "eebc0207bcfcab5",
+          "e47ae4bad48b34b",
+          "e91b1d8e0132492",
+          "e67b45d118bc429",
+          "eef7048288ef2ca"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-111 requires an observed profile establishing an allowed region and nonblocked sector.",
+      "Flint-111 requires the observed account-to-initiative, initiative-to-need, need-to-offering and offering-to-proof links, plus approved proof verification=true."
+    ],
+    "reasoning_summary": "Kestrel-111 assurance_pack maximizes the supported total: priority 9 × multiplier 4 = 36 synthetic priority points, costing 3 of the shared budget of 6. Its risk signal and approved assurance satisfy the action requirements; workshop is blocked by approved capacity=false. Delta-111 is outside allowed regions and in a blocked sector; Grove-111 is in a blocked sector. Flint-111 lacks required evidence. No second distinct account supports an eligible action."
+  },
+  "score": {
+    "optimum": 57,
+    "recoverable_value": 36,
+    "returned_value": 36,
+    "normalized_value": 0.631578947368421,
+    "context_normalized_value": 0.631578947368421,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T06:10:09.734678+00:00",
+  "seconds": 10.541171333999955
+}

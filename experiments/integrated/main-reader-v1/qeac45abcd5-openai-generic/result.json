@@ -1,0 +1,113 @@
+{
+  "id": "qeac45abcd5-openai-generic",
+  "case_id": "qeac45abcd5",
+  "world": "wd8e8338e",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.42105263157894735,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2000,
+  "status": "completed",
+  "started_at": "2026-10-23T00:41:25.741069+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999967",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b61a581be556552016adaad36002087d197c7e05c39fb8d6f",
+  "usage": {
+    "input_tokens": 1968,
+    "input_tokens_details": {
+      "cache_write_tokens": 888,
+      "cached_tokens": 1077
+    },
+    "output_tokens": 176,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2144
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0040937",
+    "total_input_tokens": 1968,
+    "output_tokens": 176,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1077,
+    "cache_write_tokens": 888
+  },
+  "raw_output": {
+    "missing": [
+      "account.partner_status:observed=verified"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S10",
+      "account.channel_fit:observed": "S8",
+      "account.partner_status:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S4",
+      "seller.approved_role:approved": "S12",
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S7"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.partner_status:observed=verified"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "account.partner_status:observed=verified"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 fits the partner objective and two-unit allowance, but S14 records withdrawn partner status rather than the required verified status. P3 and P2 exceed the allowance, and P4 has a different objective.",
+  "finished_at": "2026-10-23T00:41:29.916120+00:00",
+  "seconds": 4.175061120986356
+}

@@ -1,0 +1,99 @@
+{
+  "id": "w20261023042-038-constrained-anthropic-markdown",
+  "case_id": "w20261023042-038-constrained",
+  "world": "w20261023042-038",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:05:08.249524+00:00",
+  "evidence_bytes": 12285,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9918000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:05:11Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:05:18Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9997",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:05:09Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11917000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:05:11Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfXHiViPSKnagnfaGrk",
+  "usage": {
+    "input_tokens": 6979,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1008,
+    "output_tokens_details": {
+      "thinking_tokens": 414
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.048076",
+    "total_input_tokens": 6979,
+    "output_tokens": 1008,
+    "regular_input_tokens": 6979,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Elm-38",
+        "action": "workshop",
+        "sources": [
+          "e9e895cf7cf9dc4",
+          "ecd95e53ed816cd",
+          "e76cb3550cd2532",
+          "ef1d592e3cd42fe",
+          "efd9bd7cf557b5d",
+          "e635707bd2abe3b",
+          "e1b60f694385d17",
+          "ee07a1d3a94e2a5",
+          "e85c635eb117aed",
+          "e6e20b28f312a64",
+          "ebfd83f93161499"
+        ]
+      }
+    ],
+    "missing": [
+      "Grove-38: observed profile, consent, signal and initiative chain (initiative, need, offering, proof, verified)",
+      "Aster-38: approved priority, observed profile, consent, signal and initiative chain",
+      "Pine-38: approved priority, observed profile, consent, signal and initiative chain",
+      "Iris-38: approved priority, observed profile, consent, signal and initiative chain"
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) allows UK, US and FR, blocks the restricted sector, and permits all actions. The proposed policy is not an approved fact and was ignored. Elm-38 is fully eligible: profile UK/services, observed consent true, launch signal, and a complete chain initiative-0 -> need-0 -> offering-0 -> proof-0 with verified approved true. Its approved priority is 6. For a launch signal, the workshop (cost 3, multiplier 4, capacity approved true) gives 24 points, compared with 6 for a research brief. Delta-38 is blocked because its sector is restricted. Grove-38 has an approved priority of 11 but no profile, consent, signal or chain evidence. Aster-38, Pine-38 and Iris-38 have no evidence. The plan uses 3 of the 7 budget, for a total of 24 priority points."
+  },
+  "score": {
+    "optimum": 29,
+    "recoverable_value": 24,
+    "returned_value": 24,
+    "normalized_value": 0.8275862068965517,
+    "context_normalized_value": 0.8275862068965517,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T06:05:18.431373+00:00",
+  "seconds": 10.181858288007788
+}

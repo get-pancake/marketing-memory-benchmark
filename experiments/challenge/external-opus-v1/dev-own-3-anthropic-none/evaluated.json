@@ -1,0 +1,47 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:49:38.477174+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeLhjTW35iNY8nQHB8N",
+  "usage": {
+    "input_tokens": 613,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 94,
+    "output_tokens_details": {
+      "thinking_tokens": 29
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.004332",
+    "total_input_tokens": 613,
+    "output_tokens": 94,
+    "regular_input_tokens": 613,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or wiki were supplied, so nothing records when Dana Okafor began managing Brackenwater Freight Co.\"}",
+  "finished_at": "2026-10-23T05:49:40.910864+00:00",
+  "seconds": 2.4336999990046024,
+  "id": "dev-own-3-anthropic-none",
+  "case_id": "dev-own-3",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "output": {
+    "answer": "unknown",
+    "citations": [],
+    "explanation": "No company documents or wiki were supplied, so nothing records when Dana Okafor began managing Brackenwater Freight Co."
+  }
+}

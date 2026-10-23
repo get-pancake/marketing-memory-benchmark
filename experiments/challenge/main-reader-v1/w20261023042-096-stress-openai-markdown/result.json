@@ -1,0 +1,87 @@
+{
+  "id": "w20261023042-096-stress-openai-markdown",
+  "case_id": "w20261023042-096-stress",
+  "world": "w20261023042-096",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:18.953147+00:00",
+  "evidence_bytes": 8176,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999654",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08427b549a8cef07016adaf64fbcfc87d19195ea0bfacd15d6",
+  "usage": {
+    "input_tokens": 3206,
+    "input_tokens_details": {
+      "cache_write_tokens": 3203,
+      "cached_tokens": 0
+    },
+    "output_tokens": 489,
+    "output_tokens_details": {
+      "reasoning_tokens": 92
+    },
+    "total_tokens": 3695
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0129035",
+    "total_input_tokens": 3206,
+    "output_tokens": 489,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3203
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Delta-96",
+        "action": "workshop",
+        "sources": [
+          "e5a7498b49f2a98",
+          "e284930c94d90be",
+          "ee94d22aab8f163",
+          "ec78cd15b40cf14",
+          "eafb8318ea3363a",
+          "efd35fe0ddd25d6",
+          "e273d0dfced615c",
+          "e939378a4257bcc",
+          "e6c34782ba9c233",
+          "efb582e0fffe41c",
+          "ef3b3340be34d4b"
+        ]
+      }
+    ],
+    "missing": [
+      "Aster-96, Juniper-96, Cedar-96, Flint-96, Harbor-96 and Grove-96: require approved integer priorities; observed profiles, true consent, catalog-matching signals and complete initiative-to-need-to-offering-to-proof links; and approved true proof verification. Workshops additionally require approved offering capacity, assurance packs require approved offering assurance, and reference introductions require approved proof shareability.",
+      "Elm-96: missing observed true consent, the observed initiative-to-need-to-offering-to-proof chain and approved true proof verification. Its FR region and restricted sector also fail the approved seller policy, independently blocking every action."
+    ],
+    "reasoning_summary": "Delta-96 workshop costs 3 of the shared budget of 8 and scores 9 × 4 = 36 synthetic priority points, tying its eligible assurance pack for the maximum. Its diagnostic and research brief score less; its risk signal does not support renewal review or reference introduction. No other account has a supported action. The proposed policy and feedback do not establish approved facts."
+  },
+  "score": {
+    "optimum": 95,
+    "recoverable_value": 36,
+    "returned_value": 36,
+    "normalized_value": 0.37894736842105264,
+    "context_normalized_value": 0.37894736842105264,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T05:53:29.461127+00:00",
+  "seconds": 10.507989466001163
+}

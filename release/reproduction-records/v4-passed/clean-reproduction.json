@@ -1,0 +1,727 @@
+{
+  "started_at": "2026-10-23T06:29:30.674788+00:00",
+  "passed": true,
+  "core_payload_sha256": "7ee92bd458aead5174de2c63b2772e2cf992173b399fa798e6a3ef1d81173de5",
+  "package_files_verified": 36704,
+  "package_manifest_sha256": "ad8f9deece6717ca75154b1395ee4beb842be962c2427e99360829aee751e6f1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/tmp/research-papers-v4-analysis-env/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "independent_hardware": false,
+  "fresh_runtime_compilation": false,
+  "fresh_full_main_inference": false,
+  "fresh_smoke_requested": false,
+  "upstream_scorer_requested": false,
+  "commands": [
+    {
+      "label": "tests-original",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6107447301451eca337ccd04f6445162e92101ae69b15e0ae166530b8b89d02d"
+    },
+    {
+      "label": "tests-study",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "unittest",
+        "study.test_contract",
+        "study.test_ledger",
+        "analysis.test_analysis",
+        "analysis.test_audit",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0b76baac2ba1b4777a3aef36205d891eca47ef02c2a640254b1b1d0851faa1be"
+    },
+    {
+      "label": "data",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "12",
+        "--seed",
+        "2026102202",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/regenerated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3f8a76949eaf52c7b30a3e73df5f02463fb41203a53e843522b70fec5c42a96b"
+    },
+    {
+      "label": "input-capacity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/input_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/input-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "949f7fbd062f24a281310dd27da469daf585c013917e13867710f32422307a43"
+    },
+    {
+      "label": "output-capacity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/output_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/output-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "83125a161bd4b92f27253602e6b5bd2156972c827c49deb1c0b9dd4d17fcb604"
+    },
+    {
+      "label": "audit-primary",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/primary/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "da5963a666e6a4223303f1a8869a4cb7a9be500583b75b27e69a9b83556aaab9"
+    },
+    {
+      "label": "analysis-primary",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8b8446618e693fb03e84bb89af645fe10dba4965ad915746e5fb9f915e0de4ba"
+    },
+    {
+      "label": "errors-primary",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/primary",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/primary/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4dce3cb8c6e8e3c99765004272c656168027e101859c009e7d56c175e45a40b2"
+    },
+    {
+      "label": "figures-primary",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/primary/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/figures/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2baf4f49ba695ea04cd4e717c5999fd7aefc22a024cbcc3e5f714d9a29673325"
+    },
+    {
+      "label": "audit-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/sensitivity/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "343393a33b21d8f4896024e44637dbd62dbf8cce25befd62dd6b925436a6c3a8"
+    },
+    {
+      "label": "analysis-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "63ed1cba3cdc2ea022414c603e803d9a4709a25a0268d95853699a0be3612939"
+    },
+    {
+      "label": "errors-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/sensitivity/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b1fdcd384eba0cffa59b7003152c5094f958d20ca3e4c2691d44c01f094cc209"
+    },
+    {
+      "label": "figures-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/marketing-reproduction-v4-attempt1/analysis/sensitivity/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/figures/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "12740cff9d5bf435629995a3b0962da3c0fccaf46fc05aaf1c22c18f9f03fd24"
+    },
+    {
+      "label": "sql-reference",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "study.reference",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/sql-reference"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d778d5c663588e8876f13649e523e433099ff0ca2bbf5a761b2c4fcee92a0695"
+    },
+    {
+      "label": "cost-accounting",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/cost_accounting.py",
+        "--runs",
+        "experiments/main/primary",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/cost-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "c54bfef97c5ecc3c9d67cfb072ecb8d189dde5a06ef25c7f59f427829adea226"
+    },
+    {
+      "label": "context-primary",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/primary",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/context-v1/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d8f0e9a3b4ca6b739165f4fc5a93cdcc0a7b51969dff8cd43d194d9272a6b317"
+    },
+    {
+      "label": "context-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/separate_context.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/context-v1/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "bf15c2153e654030858d5bc61a638ee3b98c2b0a8638cd9fa3fc00ff41fc18b4"
+    },
+    {
+      "label": "gbrain-1024",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1024",
+        "--offline-token-counts",
+        "/tmp/marketing-companion-clean-v4-attempt1/analysis/gbrain/reproducible-1024/token-counts.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/gbrain/reproducible-1024"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8647869e46c58529c218ef0042323ccab07385678aa4397d16e9fb7ff1fa4945"
+    },
+    {
+      "label": "gbrain-1536",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "1536",
+        "--offline-token-counts",
+        "/tmp/marketing-companion-clean-v4-attempt1/analysis/gbrain/reproducible-1536/token-counts.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/gbrain/reproducible-1536"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0698d2ecb5dc8b2a94d452352e54941f28254552bffdc4a9849a3bc13d98cf46"
+    },
+    {
+      "label": "gbrain-4096",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/gbrain/analyze.py",
+        "--run",
+        "experiments/gbrain/exploratory-96-v2",
+        "--data",
+        "data/study/main-v1",
+        "--cache",
+        "experiments/main/primary/embeddings.jsonl",
+        "--token-cap",
+        "4096",
+        "--offline-token-counts",
+        "/tmp/marketing-companion-clean-v4-attempt1/analysis/gbrain/reproducible-4096/token-counts.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/gbrain/reproducible-4096"
+      ],
+      "exit_code": 0,
+      "output_sha256": "cba4f549d4c0ba54610d01689649bc1d0283e9c7de9286a4a6d907e5308c2735"
+    },
+    {
+      "label": "context-budget-table",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/gbrain/table.py",
+        "--analysis-root",
+        "/tmp/marketing-reproduction-v4-attempt1/gbrain",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/context-budget-table.tex"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f0ee8d9cbed2cc27ec7714b307143ccd7e99ec512e9e7d82c3ad32aa384e5569"
+    },
+    {
+      "label": "recommendation-plan",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/recommendation/run.py",
+        "--config",
+        "benchmarks/recommendation/providers.example.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/recommendation-plan"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b6fc1f461069898fa3451927563450e7c838361e457108f361163e6159cc3812"
+    },
+    {
+      "label": "integrated-data",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "33",
+        "--seed",
+        "2026102302",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "17f176991ce40c19c76eefbbf5ddfff3a6ef3da29d2557a890fe02d3d774c047"
+    },
+    {
+      "label": "integrated-audit",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/audit.py",
+        "--data",
+        "data/integrated/main-v1",
+        "--packets",
+        "experiments/integrated/main-context-v1",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-audit"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9b2ea79dad775c07286e2966177cf5e720e02ad2a785b0086dcc361e6c50f174"
+    },
+    {
+      "label": "integrated-analysis",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/analyze.py",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--data",
+        "data/integrated/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-main"
+      ],
+      "exit_code": 0,
+      "output_sha256": "96fe602ac726b46741f0d40f758d971982cf053fdca5792d775112e8e2b0adcc"
+    },
+    {
+      "label": "external-wiki-analysis",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/external_analyze.py",
+        "--run",
+        "experiments/integrated/external-reader-v1",
+        "--wiki",
+        "experiments/integrated/external-wiki-compile-v4",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-external"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5f34f08fb1c7b7f3f1caa37c7d872d148087c2c827757f26e1843b972fc58c8c"
+    },
+    {
+      "label": "external-chunked-control",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/external_chunks.py",
+        "--analyze",
+        "experiments/integrated/external-chunks-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-chunks"
+      ],
+      "exit_code": 0,
+      "output_sha256": "687387f31cb94914dce0e98fbb67657dee91da385e0e5e8cc10fcb04cd70ac47"
+    },
+    {
+      "label": "external-label-sensitivity",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/external_sensitivity.py",
+        "--base",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-external/per-attempt.jsonl",
+        "--chunks",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-chunks/per-attempt.jsonl",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/external-sensitivity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "18064e1488dea0f560cb6cadf313b63fdc7ef531f7023cb3870b0bbf0dc6ef1b"
+    },
+    {
+      "label": "integrated-provider-accounting",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/accounting.py",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9e95345b8afc02c642b6b270d2f306f141bfab6dc7728692f21370a646225cf4"
+    },
+    {
+      "label": "integrated-figures",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/figures.py",
+        "--main",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-main/summary.json",
+        "--context",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-audit/contexts.jsonl",
+        "--external",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-external/summary.json",
+        "--chunks",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-chunks/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-figures"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6c24e6f592f6ae32694838f2ccb1347d6b629fee40a1e5919f6ee0cbc76a265d"
+    },
+    {
+      "label": "integrated-mock-execution",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "benchmarks/integrated/dry_run.py",
+        "--run",
+        "experiments/integrated/main-reader-v1",
+        "--data",
+        "data/integrated/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/integrated-mock-execution"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2195c69635ccf78ac8af341440fffd75883be4dc1f28bb3bde6f6c4f960b24df"
+    },
+    {
+      "label": "challenge-data",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "benchmarks.challenge.generate",
+        "--worlds",
+        "120",
+        "--seed",
+        "20261023042",
+        "--split",
+        "held-out-worlds",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a0ede065c130aa9ef2f69b89a003a69a8ee7de4093a8812c5d76730d3b90b013"
+    },
+    {
+      "label": "challenge-oracle",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "benchmarks.challenge.check_oracle",
+        "--data",
+        "data/challenge/main-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-oracle.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5c36cd2c909370127b1af49fb8b49d14ec6bab0ca7ff59b75491218d3c36b9f1"
+    },
+    {
+      "label": "challenge-context-audit",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_audit.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-context-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b7325f2547a847a2ff5c81990e55e6d44ce0dfe19820570dd99d0566b28545f8"
+    },
+    {
+      "label": "challenge-trace-audit",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_trace_audit.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--run",
+        "experiments/challenge/main-reader-v1",
+        "--freeze",
+        "experiments/challenge/main-freeze-v1.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-trace-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e596431dda9f5943d56179adc724fff55a0c1e8c8103316e4c51154ff5319b31"
+    },
+    {
+      "label": "challenge-budget",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_budget.py",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-budget.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e0abbaf8207437f378d4c52bf49fb4d458d77fdcd226ca3077d9987d40fee512"
+    },
+    {
+      "label": "challenge-accounting",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_accounting.py",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b855793dfbc61e433527d1e3522e125218b1879b233a4441a5d833e6a2d20b1f"
+    },
+    {
+      "label": "challenge-diagnostics",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_diagnostics.py",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-diagnostics.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "abbcf39880be60a078172a48d39acfc5a44a0aa775f5dcf52516fa94a64935b9"
+    },
+    {
+      "label": "challenge-native-telemetry",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_native_telemetry.py",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-native-telemetry.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "697b3d931c07b92636841db782de518010a96bbf169a3aa809a9725ec5b6a4fb"
+    },
+    {
+      "label": "challenge-embeddings-pilot-context-v2",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "scripts/shard_embedding_snapshot.py",
+        "experiments/challenge/pilot-context-v2/embedding-snapshot.json.gz",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8729b0be66dd9c0ae888a9694cead4af59d94273163f166080140a9f9727b901"
+    },
+    {
+      "label": "challenge-embeddings-main-context-v1",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "scripts/shard_embedding_snapshot.py",
+        "experiments/challenge/main-context-v1/embedding-snapshot.json.gz",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output_sha256": "daa465363910d2f13105039a6e14d90d7d591420c95c8cb91f5af157b3c5ad44"
+    },
+    {
+      "label": "challenge-external-opus",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_external_opus.py",
+        "--analyze",
+        "experiments/challenge/external-opus-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/external-opus"
+      ],
+      "exit_code": 0,
+      "output_sha256": "77263ae8a1e585fad8a14edd768b488c6050ec47b9e5d2048763a7db604671f7"
+    },
+    {
+      "label": "challenge-raw-response-analysis",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "-m",
+        "benchmarks.challenge.analyze",
+        "--data",
+        "data/challenge/main-v1",
+        "--packets",
+        "experiments/challenge/main-context-v1",
+        "--run",
+        "experiments/challenge/main-reader-v1",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-main"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d7a7f8a5b15f1fc894a0f6e09fa9df0f1eef8ac4b8fbf4f247fc736ac5f9c1bc"
+    },
+    {
+      "label": "challenge-figures",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "analysis/challenge_figures.py",
+        "--summary",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-main/summary.json",
+        "--budget",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-budget.json",
+        "--external",
+        "/tmp/marketing-reproduction-v4-attempt1/external-opus/summary.json",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/challenge-figures"
+      ],
+      "exit_code": 0,
+      "output_sha256": "aaec75b1f5259031a3c6ff88f5fc60cd80e13e6ceac400cb23590278ac3b0359"
+    },
+    {
+      "label": "report-claims",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "scripts/verify_report_claims.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0f9be127ff71e9aa6e0d4b7eebefc5aff93c6194831025dcd53ecab6ed8e010d"
+    },
+    {
+      "label": "paper",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "scripts/compile_paper.py",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/report.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e8da2414f5d4bfd9515514d0d25ec80b7f1b1c5417465edb71c7a387f6d2dd52"
+    },
+    {
+      "label": "investor-note",
+      "argv": [
+        "/tmp/research-papers-v4-analysis-env/bin/python",
+        "scripts/compile_investor_note.py",
+        "--output",
+        "/tmp/marketing-reproduction-v4-attempt1/investor-note.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "efab0de0acf51748be27903f98e8a002e24185af000d5a52760715756c32b02f"
+    }
+  ],
+  "checks": {
+    "main_dataset_byte_identical": true,
+    "input_capacity_receipts_verified_offline": true,
+    "output_capacity_receipts_verified_offline": true,
+    "primary_analysis_identical_excluding_timestamp_and_paths": true,
+    "primary_error_localization_identical_excluding_timestamp": true,
+    "primary_figure_and_table_bytes_identical": true,
+    "sensitivity_analysis_identical_excluding_timestamp_and_paths": true,
+    "sensitivity_error_localization_identical_excluding_timestamp": true,
+    "sensitivity_figure_and_table_bytes_identical": true,
+    "sql_reference_identical_excluding_timing": true,
+    "cost_accounting_identical_excluding_timestamp": true,
+    "context_decomposition_identical_excluding_timestamp": true,
+    "gbrain_saved_rankings_three_budgets_and_table_identical": true,
+    "external_development_files_verified": 123,
+    "frontier_pilot_plan_identical_zero_provider_requests": true,
+    "integrated_data_contexts_raw_scores_statistics_figures_identical": true,
+    "external_wiki_raw_scores_identical": true,
+    "mock_workflows_reexecuted_without_external_actions": true,
+    "challenge_data_oracles_requests_raw_scores_statistics_controls_figures_identical": true,
+    "challenge_sharded_embeddings_losslessly_reassembled": true,
+    "numeric_claim_register_and_citation_keys_verified": true,
+    "paper_recompiled_and_text_layout_identical": true,
+    "recompiled_pdf_sha256": "28100839ff833ddb7c663bd5dd17913c9cedba6411d38843ea34617d56741564",
+    "investor_note_two_pages_and_text_layout_identical": true,
+    "packaged_evidence_unchanged_after_reproduction": true
+  },
+  "scope": "Clean extracted code/data and isolated Python environment; system TeX and, if requested, existing pinned local model services remain external dependencies.",
+  "fresh_native_gbrain_search": false,
+  "fresh_frontier_api_calls": 0,
+  "finished_at": "2026-10-23T06:32:05.313439+00:00"
+}

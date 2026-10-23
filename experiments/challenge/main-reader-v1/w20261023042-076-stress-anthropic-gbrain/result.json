@@ -1,0 +1,88 @@
+{
+  "id": "w20261023042-076-stress-anthropic-gbrain",
+  "case_id": "w20261023042-076-stress",
+  "world": "w20261023042-076",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T06:07:09.318541+00:00",
+  "evidence_bytes": 8087,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9990000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:07:11Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:07:15Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9997",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:07:10Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11990000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:07:11Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfgDDsoST4o3NwNP9od",
+  "usage": {
+    "input_tokens": 5020,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 478,
+    "output_tokens_details": {
+      "thinking_tokens": 40
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.02964",
+    "total_input_tokens": 5020,
+    "output_tokens": 478,
+    "regular_input_tokens": 5020,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "Observed profile (region, sector) for each queried account: Pine-76, North-76, Mesa-76, Larch-76, Juniper-76, Iris-76, Delta-76, Birch-76",
+      "Observed current consent = true for each queried account",
+      "Observed signal for each queried account",
+      "Observed initiative links for each account",
+      "Observed need links from each initiative",
+      "Observed offering links from each need",
+      "Observed proof links from each offering",
+      "Approved verified = true for each proof",
+      "Approved shareable = true on the proof (for reference_intro)",
+      "Approved assurance = true on the offering (for assurance_pack)",
+      "Offering capacity for offering-4, offering-6 and offering-7 is approved, but no account chain links to these offerings"
+    ],
+    "reasoning_summary": "Seller policy e145f5fe115898d is approved; the later proposed policy e3cbcbe11a68b47 is not an approved fact. Approved integer priorities exist for all eight queried accounts. However, no account has an observed profile, consent, signal, or initiative-need-offering-proof chain with an approved verified proof. The available account records (budget notes, suppliers, brand history, hiring plans, design reviews) and corporate summaries do not satisfy these eligibility requirements. Every account and action was checked separately, and none is eligible, so no actions are recommended."
+  },
+  "score": {
+    "optimum": 29,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T06:07:15.893866+00:00",
+  "seconds": 6.575333608008805
+}

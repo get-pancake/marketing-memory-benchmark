@@ -1,0 +1,126 @@
+{
+  "id": "q437d79de17-anthropic-none",
+  "case_id": "q437d79de17",
+  "world": "w102aef1b",
+  "arm": "none",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 0,
+    "current_value_group_coverage": 0.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.0,
+    "selected_sources": 0,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:58.768711+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJC4JsZaS7iepJXM86XM",
+  "usage": {
+    "input_tokens": 872,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 338,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.005124",
+    "total_input_tokens": 872,
+    "output_tokens": 338,
+    "regular_input_tokens": 872,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.observed_signal:observed=migration",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": null,
+      "account.account_role:observed": null,
+      "account.observed_signal:observed": null,
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.observed_signal:observed=migration",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.account_role:observed",
+      "account.account_geo:observed",
+      "account.observed_signal:observed=migration",
+      "seller.offering_pain:observed=integration",
+      "seller.proof_for_pain:observed=integration"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No evidence rows were supplied, so no catalog relation for Caldera-224 has a supporting source and the common role/geo equalities cannot be checked. Evidence is needed before any migration action (P1, P3, or P4) can be recommended; P3 additionally needs account.procurement_stage:observed=approved.",
+  "finished_at": "2026-10-23T00:05:01.207399+00:00",
+  "seconds": 2.4386980720009888
+}

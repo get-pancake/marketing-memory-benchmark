@@ -1,0 +1,128 @@
+{
+  "id": "resp_044efd646450196b016adaacc95da087d186b56a249c5bee64",
+  "object": "response",
+  "created_at": 1792715977,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715979,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_044efd646450196b016adaacca40c887d19948dbe343600196",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzL0nHb95kw9VAgCnSqXAjY_ydVCf8xGGC6JrMnuAPm0Bl0sFtE8xgr1BWD3YkJ76a0JuHzlA4qpTa38mLUpMUa6sIFu33LHCGWFO2CACYBiwZrN7UIokipmuBBqrrZv1xX93UFzxC-KMD4648DFuu2eVvAgfdZzW32ck7aZfgwZywdxN5waCCVW8TqA5su9sWEXpPfIQrjMSnOj1cAFWlOl6j_e5ZJGBhozm07TT3Xx3-qoh776XZTQ0pcvBH7hxi1uC_vSWRq-FYtVEHv1svXfDKw86eAUB2Oyp9By8Bs6xef5Fx4We_OxiIUebhClk_D7-aNmGs04BWN2tbThZU3pH4KFlS9yjlxTSJVtQsEUivm38ACYcwXC7FloLRn8M-xCt7R_OKGS4KUUVqYGInoFn2fgL62nITXt-qG2UEMS7uL38LUTqIaR822BiYiUIAaV7OxWXyBsfF5IqoszxpGsxwYA24hLA7nRZxqVj6g_IEiBuUWzqQHXLPLrnmo4l1kjm74SUN5NiXlRHFcWrCrRHQ6rnUSllynnGBdyIfCkewTSSrsIf8-sbn8RSeHd2gZyCvsg0feRu-jNVzhFgbJVivn5a4nemeter5uTFMUwgqVtGqUJXfi16VLG-rF--Rr52-rCTMRRk2uG4zclDZRSbcozzv4YKbiY_hWWnd76V7N4MQ6uITJOnLZM1hQU2pJ26OhLki7G0vtbj5VUS2yY0F2aZPbytDXCOq0wRWrMuorLvAk6f58gBNKdwsBFI0elOARwBu0wqfjstP1B1AM-YkFoNyBOnfaEReY1z2Qx5pU8KkJHYET_4WVpbeEEOKIU8weTKRDw6Ftw253UZnpKA6LntWUKMLxIKFSBm8Sk5rcHUEQsBcuQXUrXNf1aUHZKeTKnh_Ljgv_8sVuNyzKvE1cz9ALhyHb7eX3Ukmvh7IFvoFAq7trVTzdOFYXYwfkSndOBA750KCXxBRR8-sE-OZVuvoiC9N2vlvuA2-6BG0Lzck9ZhJ8y_Rme2mHx0xzg5PfSwelrudtRdOcaUo1fvRqZOA2qu4lg2yCWnctfrveC32GOq7rhlfm5WyGqpsUcRWUi-q5Y6QL9SQWOTGraoXEe9o-5nKxFQsIb6Ie-qzlBTPHi-Xn_k7JxHLbCdXxhDov2VGYumZ7yq_tvlJiMfC2vZmO9KsfHuzeyNCHbkM4yNwQ8nIsyVr5fSuadO4REyVUaPM_IOYGNU-EZlgby63O-Cpi5iGiGZWpRTfwmGOJ6GmGdIp_vzahphC26ZQV84ARwYJVtdd7FblMeYyrxln3eiu7wnM4W8ozLH_EGoqYZmvQ11YLtgOdEBDjeRmMciu1NRWoJVihsf4f1CCP54MudJ7wqzXQV6fhHHTIEqs7aB8FW5HtQJP94AQXsD6uCQKDtTVcK1Tge2jQS_fMY_s0bHoMcjOddWj7LArjBKjmImC_f428lliu1sz3tVy6OND-ibF7uxDvc_ANFk8viK0tKbnmbqS9jA5OKBiANuQytYLWAuyEMNFVB976W8Lx",
+      "summary": []
+    },
+    {
+      "id": "msg_044efd646450196b016adaacca984c87d194e807d81cfe60e8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki identify the account manager for Tamsin Cold Chain on October 10, 2025.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 261,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 320
+  },
+  "user": null,
+  "metadata": {}
+}

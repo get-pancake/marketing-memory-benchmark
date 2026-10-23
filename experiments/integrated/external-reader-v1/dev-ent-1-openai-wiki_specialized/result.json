@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:01.187407+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_036912c5033dd32e016adaaca5660c87d1a07c1480de700076",
+  "usage": {
+    "input_tokens": 16163,
+    "input_tokens_details": {
+      "cache_write_tokens": 16160,
+      "cached_tokens": 0
+    },
+    "output_tokens": 69,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16232
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.041096",
+    "total_input_tokens": 16163,
+    "output_tokens": 69,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16160
+  },
+  "text": "{\"answer\":\"Thornbury Cloth Co.\",\"citations\":[\"D019\",\"D067\"],\"explanation\":\"Marcus confirmed the invoice belonged to the Carolinas mill, not Tamsin Cold Chain. Orrin Mills had renamed to Thornbury Cloth Co. on January 12, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:03.736943+00:00",
+  "seconds": 2.5495457619981607
+}

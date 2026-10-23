@@ -1,0 +1,45 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:40.288824+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEdKaP2h5TNSYe6a7SV",
+  "usage": {
+    "input_tokens": 607,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 77,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.001984",
+    "total_input_tokens": 607,
+    "output_tokens": 77,
+    "regular_input_tokens": 607,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or compiled wiki were supplied with the question, so neither of the two conflicting dates for Brackenwater's term end can be identified or checked against source authority.\"}",
+  "finished_at": "2026-10-23T00:38:42.358969+00:00",
+  "seconds": 2.07015455099463,
+  "id": "dev-ch-1-anthropic-none",
+  "case_id": "dev-ch-1",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No company documents or compiled wiki were supplied with the question, so neither of the two conflicting dates for Brackenwater's term end can be identified or checked against source authority.",
+  "citations": []
+}

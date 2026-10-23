@@ -1,0 +1,287 @@
+{
+  "case_id": "w20261023042-011-stress",
+  "world": "w20261023042-011",
+  "eligible": [
+    {
+      "account": "Birch-11",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 6,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "ecff7705e66f7cb"
+        ],
+        [
+          "e7d8a35072c2062"
+        ],
+        [
+          "e0a5fe1867c1ae1"
+        ],
+        [
+          "e82296826cac4d4"
+        ],
+        [
+          "e6bd2ca0c31f247"
+        ],
+        [
+          "e51c0829b157dc6"
+        ],
+        [
+          "e94e6f849bdf5f8"
+        ],
+        [
+          "ebf9f0c7fbdebaa"
+        ],
+        [
+          "e1b68b942d3dc71"
+        ]
+      ]
+    },
+    {
+      "account": "Birch-11",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 15,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "ecff7705e66f7cb"
+        ],
+        [
+          "e7d8a35072c2062"
+        ],
+        [
+          "e0a5fe1867c1ae1"
+        ],
+        [
+          "e82296826cac4d4"
+        ],
+        [
+          "e6bd2ca0c31f247"
+        ],
+        [
+          "e51c0829b157dc6"
+        ],
+        [
+          "e94e6f849bdf5f8"
+        ],
+        [
+          "ebf9f0c7fbdebaa"
+        ],
+        [
+          "e2a78511ff2d756"
+        ],
+        [
+          "e1b68b942d3dc71"
+        ]
+      ]
+    },
+    {
+      "account": "Birch-11",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 3,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "ecff7705e66f7cb"
+        ],
+        [
+          "e7d8a35072c2062"
+        ],
+        [
+          "e0a5fe1867c1ae1"
+        ],
+        [
+          "e82296826cac4d4"
+        ],
+        [
+          "e6bd2ca0c31f247"
+        ],
+        [
+          "e51c0829b157dc6"
+        ],
+        [
+          "e94e6f849bdf5f8"
+        ],
+        [
+          "ebf9f0c7fbdebaa"
+        ],
+        [
+          "e1b68b942d3dc71"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-11",
+      "action": "workshop",
+      "cost": 3,
+      "value": 28,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "e2b9abcaff936c4"
+        ],
+        [
+          "e3e1bd7269a02b7"
+        ],
+        [
+          "ef0b78a2c55cd35"
+        ],
+        [
+          "e468635824d1199"
+        ],
+        [
+          "e27b63c4993e387"
+        ],
+        [
+          "e11e5491ceaf8a8"
+        ],
+        [
+          "e7e9ceb99bea322"
+        ],
+        [
+          "eb7d7da07f2b17f"
+        ],
+        [
+          "e63df23ffb83967"
+        ],
+        [
+          "e14baf2d99ab97a"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-11",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 7,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "e2b9abcaff936c4"
+        ],
+        [
+          "e3e1bd7269a02b7"
+        ],
+        [
+          "ef0b78a2c55cd35"
+        ],
+        [
+          "e468635824d1199"
+        ],
+        [
+          "e27b63c4993e387"
+        ],
+        [
+          "e11e5491ceaf8a8"
+        ],
+        [
+          "e7e9ceb99bea322"
+        ],
+        [
+          "eb7d7da07f2b17f"
+        ],
+        [
+          "e14baf2d99ab97a"
+        ]
+      ]
+    }
+  ],
+  "optimum": 43,
+  "reference_plan": [
+    {
+      "account": "Birch-11",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 15,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "ecff7705e66f7cb"
+        ],
+        [
+          "e7d8a35072c2062"
+        ],
+        [
+          "e0a5fe1867c1ae1"
+        ],
+        [
+          "e82296826cac4d4"
+        ],
+        [
+          "e6bd2ca0c31f247"
+        ],
+        [
+          "e51c0829b157dc6"
+        ],
+        [
+          "e94e6f849bdf5f8"
+        ],
+        [
+          "ebf9f0c7fbdebaa"
+        ],
+        [
+          "e2a78511ff2d756"
+        ],
+        [
+          "e1b68b942d3dc71"
+        ]
+      ]
+    },
+    {
+      "account": "Flint-11",
+      "action": "workshop",
+      "cost": 3,
+      "value": 28,
+      "support_groups": [
+        [
+          "e163ec510aa4799"
+        ],
+        [
+          "e2b9abcaff936c4"
+        ],
+        [
+          "e3e1bd7269a02b7"
+        ],
+        [
+          "ef0b78a2c55cd35"
+        ],
+        [
+          "e468635824d1199"
+        ],
+        [
+          "e27b63c4993e387"
+        ],
+        [
+          "e11e5491ceaf8a8"
+        ],
+        [
+          "e7e9ceb99bea322"
+        ],
+        [
+          "eb7d7da07f2b17f"
+        ],
+        [
+          "e63df23ffb83967"
+        ],
+        [
+          "e14baf2d99ab97a"
+        ]
+      ]
+    }
+  ]
+}

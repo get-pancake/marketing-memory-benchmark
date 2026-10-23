@@ -1,0 +1,120 @@
+{
+  "id": "w20261023042-119-stress-openai-gtm",
+  "case_id": "w20261023042-119-stress",
+  "world": "w20261023042-119",
+  "family": "professional_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:49:17.094112+00:00",
+  "evidence_bytes": 8154,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999200",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "1ms"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0abc883e4e886c53016adaf55dff7887d18b70a7f3565f35ea",
+  "usage": {
+    "input_tokens": 3286,
+    "input_tokens_details": {
+      "cache_write_tokens": 3283,
+      "cached_tokens": 0
+    },
+    "output_tokens": 942,
+    "output_tokens_details": {
+      "reasoning_tokens": 248
+    },
+    "total_tokens": 4228
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0176335",
+    "total_input_tokens": 3286,
+    "output_tokens": 942,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3283
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Delta-119",
+        "action": "reference_intro",
+        "sources": [
+          "e93e2c6f9d6e895",
+          "e2075e5e415a208",
+          "e666bcf70e55f3e",
+          "e75ccd286db0585",
+          "ef66169fbc5a336",
+          "ef8b41bb08e02a4",
+          "efa9e03e4fa9181",
+          "ebbb0828aa86bb3",
+          "e4922dafe607a21",
+          "e1347b7c1c7fc24",
+          "eebf2c5b9de5453"
+        ]
+      },
+      {
+        "account": "Juniper-119",
+        "action": "assurance_pack",
+        "sources": [
+          "e93e2c6f9d6e895",
+          "e27f897e77dc2d6",
+          "ea022cc4376c463",
+          "ec26869c943453b",
+          "ed84920fbbdb1e5",
+          "ee605e001d85a71",
+          "ec1868cfaac3004",
+          "ebef50365601df1",
+          "e247b6a40a150a3",
+          "ec6c556a669a77e",
+          "e256cf6a99ff608"
+        ]
+      },
+      {
+        "account": "Aster-119",
+        "action": "research_brief",
+        "sources": [
+          "e93e2c6f9d6e895",
+          "e00309e7a2ec5d1",
+          "e2fa2adccb801a0",
+          "e3631d4b1f902dd",
+          "eb94f17f46498a9",
+          "ee926409cdf40fe",
+          "edcbdf7bddfed86",
+          "e6cb6801dfa1b14",
+          "edae226fab06d7f",
+          "e37829e8c021eae"
+        ]
+      }
+    ],
+    "missing": [
+      "Iris-119, Mesa-119 and Kestrel-119: supply observed profile, consent, signal and complete initiative-to-proof links, approved integer priority, and approved proof verification; action-specific approvals are also required where applicable.",
+      "Larch-119: resolve conflicting current observed consent values; the later false record does not supersede the true record. Supply observed initiative-7-to-need-to-offering-to-proof links and approved proof verification."
+    ],
+    "reasoning_summary": "The optimal supported plan uses three distinct accounts and the full budget of 8. Priority points are Delta 8×5=40, Juniper 5×4=20 and Aster 12×1=12, totaling 72 synthetic priority points, not expected revenue. Each selected action meets its signal and approval requirements. Grove is blocked by false consent and false proof verification; Larch is blocked by conflicting consent and incomplete evidence. The proposed policy is not used."
+  },
+  "score": {
+    "optimum": 92,
+    "recoverable_value": 74,
+    "returned_value": 72,
+    "normalized_value": 0.782608695652174,
+    "context_normalized_value": 0.8043478260869565,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 8
+  },
+  "finished_at": "2026-10-23T05:49:45.619974+00:00",
+  "seconds": 28.52587126099388
+}

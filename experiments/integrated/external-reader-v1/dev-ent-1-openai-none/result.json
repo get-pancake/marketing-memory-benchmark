@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:38:40.304310+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01d69eaea48386aa016adaac90b9e887d1ae44d6fc90665e50",
+  "usage": {
+    "input_tokens": 269,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 68,
+    "output_tokens_details": {
+      "reasoning_tokens": 13
+    },
+    "total_tokens": 337
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001218",
+    "total_input_tokens": 269,
+    "output_tokens": 68,
+    "regular_input_tokens": 269,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"The supplied material does not include Marcus and Ilse's January 13, 2026 chat or identify the company associated with the \\\"TCC\\\" invoice.\"}",
+  "finished_at": "2026-10-23T00:38:43.700107+00:00",
+  "seconds": 3.395798017998459
+}

@@ -1,0 +1,51 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-opus-5-5",
+  "started_at": "2026-10-23T05:49:38.485183+00:00",
+  "status": "completed",
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeLhfyvAsxZPf5GAwqG",
+  "usage": {
+    "input_tokens": 10606,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 199,
+    "output_tokens_details": {
+      "thinking_tokens": 68
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.046404",
+    "total_input_tokens": 10606,
+    "output_tokens": 199,
+    "regular_input_tokens": 10606,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D037\",\"D072\",\"D007\"],\"explanation\":\"The signed renewal effective 2026-02-01 through 2027-01-31 set Tansley Parcel at 120 subscribed seats. Lev Arkadin's 2026-03-03 email about being at 125 seats only requested a true-up and does not change the contracted count; the account page still lists 120 seats.\"}",
+  "finished_at": "2026-10-23T05:49:41.741723+00:00",
+  "seconds": 3.256544906005729,
+  "id": "dev-ch-3-anthropic-raw_bm25",
+  "case_id": "dev-ch-3",
+  "arm": "raw_bm25",
+  "context_bytes": 24350,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "output": {
+    "answer": "120",
+    "citations": [
+      "D037",
+      "D072",
+      "D007"
+    ],
+    "explanation": "The signed renewal effective 2026-02-01 through 2027-01-31 set Tansley Parcel at 120 subscribed seats. Lev Arkadin's 2026-03-03 email about being at 125 seats only requested a true-up and does not change the contracted count; the account page still lists 120 seats."
+  }
+}

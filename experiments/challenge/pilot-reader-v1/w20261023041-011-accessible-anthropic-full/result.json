@@ -1,0 +1,113 @@
+{
+  "id": "w20261023041-011-accessible-anthropic-full",
+  "case_id": "w20261023041-011-accessible",
+  "world": "w20261023041-011",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T05:17:07.407080+00:00",
+  "evidence_bytes": 28565,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9992000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:17:09Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:17:22Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:17:07Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11992000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:17:09Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbrsmSPLoN4WqvJ6hqt",
+  "usage": {
+    "input_tokens": 14222,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1761,
+    "output_tokens_details": {
+      "thinking_tokens": 919
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.092108",
+    "total_input_tokens": 14222,
+    "output_tokens": 1761,
+    "regular_input_tokens": 14222,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-11",
+        "action": "reference_intro",
+        "sources": [
+          "efa97de2caa4e06",
+          "e13c1df1f001dec",
+          "e58a1cbd4c93abd",
+          "e3312c74b442c4d",
+          "e407f6cba4e90b8",
+          "e5f1755ea66e5b7",
+          "eac69dfbdf0869b",
+          "ef12745cc413b3c",
+          "e804078d7be7414",
+          "e0ac1e2cffdfdd0",
+          "e01f7bcf04f0bba"
+        ]
+      },
+      {
+        "account": "Flint-11",
+        "action": "renewal_review",
+        "sources": [
+          "efa97de2caa4e06",
+          "e9825ceb850cc12",
+          "e94be002680f0fe",
+          "ed5beac2a4edacf",
+          "eb3a8cd48309edc",
+          "e5e06f46f46e6d1",
+          "ee91621ada34aa0",
+          "efd1d56f9fdfbb0",
+          "e519fbec7019da8",
+          "e90d190a24cabec"
+        ]
+      }
+    ],
+    "missing": [
+      "Cedar-11: observed profile sector is 'restricted', which the approved policy blocks; an action needs a current observed profile with a non-blocked sector.",
+      "Birch-11: proof-3 is approved verified=false; an action needs an approved verified=true proof on its initiative-3 -> need-3 -> offering-3 chain."
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) allows all six actions in regions FR, UK and DE and blocks the 'restricted' sector. The proposed policy and nonresponse feedback were not treated as approved facts.\n\nOrchid-11 is eligible: FR services profile, consent true, growth signal, priority 8. Its chain initiative-0 -> need-0 -> offering-0 -> proof-0 is complete, and proof-0 is approved verified and shareable. Its best action is reference_intro: cost 4, score 8x5=40.\n\nFlint-11 is eligible: FR manufacturing profile, consent true, renewal signal, priority 7. Its chain initiative-1 -> need-1 -> offering-1 -> proof-1 is complete and proof-1 is verified. renewal_review costs 2 and scores 7x3=21.\n\nCedar-11 is ineligible because its sector is restricted. Birch-11 is ineligible because proof-3 is not verified.\n\nWithin the budget of 6, the best plan is Orchid reference_intro plus Flint renewal_review: total cost 6, total score 61. The next-best alternative, Flint reference_intro plus Orchid diagnostic, scores only 51."
+  },
+  "score": {
+    "optimum": 61,
+    "recoverable_value": 61,
+    "returned_value": 61,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:17:22.715006+00:00",
+  "seconds": 15.30796239800111
+}

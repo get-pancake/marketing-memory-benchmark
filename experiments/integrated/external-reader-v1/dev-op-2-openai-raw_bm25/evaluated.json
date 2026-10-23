@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:43.780710+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08bf91d89a173312016adaacd01d5087d1b203b9ffe6712102",
+  "usage": {
+    "input_tokens": 6168,
+    "input_tokens_details": {
+      "cache_write_tokens": 6165,
+      "cached_tokens": 0
+    },
+    "output_tokens": 72,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6240
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0161385",
+    "total_input_tokens": 6168,
+    "output_tokens": 72,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6165
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D104\",\"D106\"],\"explanation\":\"The July 28 update describes Dana\u2019s visit to the Quarrendon Freight Lines QBR with Thea Ramaswell. The September 15 update explicitly identifies Quarrendon as Dana\u2019s freight account.\"}",
+  "finished_at": "2026-10-23T00:39:46.803957+00:00",
+  "seconds": 3.0232444330031285,
+  "id": "dev-op-2-openai-raw_bm25",
+  "case_id": "dev-op-2",
+  "arm": "raw_bm25",
+  "context_bytes": 24462,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The July 28 update describes Dana\u2019s visit to the Quarrendon Freight Lines QBR with Thea Ramaswell. The September 15 update explicitly identifies Quarrendon as Dana\u2019s freight account.",
+  "citations": [
+    "D104",
+    "D106"
+  ]
+}

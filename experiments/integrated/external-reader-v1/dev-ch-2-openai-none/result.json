@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:12.236857+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_038e5634e34ecf81016adaacb0c29887d19186a3d845a35ee7",
+  "usage": {
+    "input_tokens": 253,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 52,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 305
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001026",
+    "total_input_tokens": 253,
+    "output_tokens": 52,
+    "regular_input_tokens": 253,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki identify the decision maker at Tamsin Cold Chain.\"}",
+  "finished_at": "2026-10-23T00:39:15.458377+00:00",
+  "seconds": 3.2215306629950646
+}

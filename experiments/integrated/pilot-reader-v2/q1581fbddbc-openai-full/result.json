@@ -1,0 +1,190 @@
+{
+  "id": "q1581fbddbc-openai-full",
+  "case_id": "q1581fbddbc",
+  "world": "w102aef1b",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1",
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.23404255319148937,
+    "selected_sources": 47,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1",
+      "P4"
+    ]
+  },
+  "evidence_bytes": 5593,
+  "status": "completed",
+  "started_at": "2026-10-23T00:13:00.565909+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999958",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0fb88c742a27fbcf016adaa68d01c887d1be029d27401e3898",
+  "usage": {
+    "input_tokens": 3474,
+    "input_tokens_details": {
+      "cache_write_tokens": 3471,
+      "cached_tokens": 0
+    },
+    "output_tokens": 185,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3659
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0105335",
+    "total_input_tokens": 3474,
+    "output_tokens": 185,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3471
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S40",
+      "account.account_role:observed": "S8",
+      "account.observed_signal:observed": "S26",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S4",
+      "seller.approved_role:approved": "S42",
+      "seller.offering_pain:observed": "S7",
+      "seller.proof_for_pain:observed": "S38"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "ecd6906b",
+          "e15d9cb7",
+          "e4082ce1",
+          "ebb22f6e",
+          "e869a904",
+          "e387b5d0",
+          "eb840910"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-224",
+      "objective": "migration",
+      "template": "P4",
+      "policy_versions": [
+        "e15d9cb7",
+        "ecd6906b"
+      ],
+      "evidence": [
+        "e15d9cb7",
+        "e387b5d0",
+        "e4082ce1",
+        "e869a904",
+        "eb840910",
+        "ebb22f6e",
+        "ecd6906b"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed migration context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "ecd6906b",
+          "e15d9cb7",
+          "e4082ce1",
+          "ebb22f6e",
+          "e869a904",
+          "e387b5d0",
+          "eb840910"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Caldera-224",
+      "objective": "migration",
+      "template": "P4",
+      "policy_versions": [
+        "e15d9cb7",
+        "ecd6906b"
+      ],
+      "evidence": [
+        "e15d9cb7",
+        "e387b5d0",
+        "e4082ce1",
+        "e869a904",
+        "eb840910",
+        "ebb22f6e",
+        "ecd6906b"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed migration context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 meets the migration objective within the 3-unit allowance: approved role and geography match the account (S42, S8, S4, S40), and the migration signal, integration offering pain and integration proof are observed (S26, S7, S38). P4 uses 2 units and does not require procurement-stage evidence.",
+  "finished_at": "2026-10-23T00:13:05.828991+00:00",
+  "seconds": 5.263089266998577
+}

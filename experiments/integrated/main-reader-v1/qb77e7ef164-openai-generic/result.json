@@ -1,0 +1,177 @@
+{
+  "id": "qb77e7ef164-openai-generic",
+  "case_id": "qb77e7ef164",
+  "world": "w5ca3af01",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.2631578947368421,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1"
+    ]
+  },
+  "evidence_bytes": 2045,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:32.910330+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999982",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0aade5b5c67e68a1016adab229341487d199ef75910a96e46b",
+  "usage": {
+    "input_tokens": 2026,
+    "input_tokens_details": {
+      "cache_write_tokens": 945,
+      "cached_tokens": 1078
+    },
+    "output_tokens": 161,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2187
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0040863",
+    "total_input_tokens": 2026,
+    "output_tokens": 161,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1078,
+    "cache_write_tokens": 945
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S7",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S16",
+      "account.observed_signal:observed": "S19",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S2",
+      "seller.approved_role:approved": "S14",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P1"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "e9c700be",
+          "e0ce5044",
+          "e008c519",
+          "e30b8851"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-653",
+      "objective": "qualification_audit",
+      "template": "P1",
+      "policy_versions": [
+        "e0ce5044",
+        "e9c700be"
+      ],
+      "evidence": [
+        "e008c519",
+        "e0ce5044",
+        "e30b8851",
+        "e9c700be"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P1",
+        "evidence": [
+          "e9c700be",
+          "e0ce5044",
+          "e008c519",
+          "e30b8851"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-653",
+      "objective": "qualification_audit",
+      "template": "P1",
+      "policy_versions": [
+        "e0ce5044",
+        "e9c700be"
+      ],
+      "evidence": [
+        "e008c519",
+        "e0ce5044",
+        "e30b8851",
+        "e9c700be"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P1 matches the qualification_audit objective and the two-unit allowance. Approved role and geography match the account observations (S14/S1 and S2/S7), satisfying all P1 prerequisites.",
+  "finished_at": "2026-10-23T01:02:37.003212+00:00",
+  "seconds": 4.092893155000638
+}

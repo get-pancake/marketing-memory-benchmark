@@ -1,0 +1,195 @@
+{
+  "id": "q335ed3eb71-openai-gbrain_specialized",
+  "case_id": "q335ed3eb71",
+  "world": "w0826b0d8",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P1",
+      "P2"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.5,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P1",
+      "P2"
+    ]
+  },
+  "evidence_bytes": 2035,
+  "status": "completed",
+  "started_at": "2026-10-23T00:53:43.134222+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999948",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_05351cb293cea164016adab017903c87d1ac762054827fb556",
+  "usage": {
+    "input_tokens": 2024,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2021
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2218
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0021481",
+    "total_input_tokens": 2024,
+    "output_tokens": 194,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 2021,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S18",
+      "account.account_role:observed": "S5",
+      "account.channel_fit:observed": "S13",
+      "account.partner_status:observed": "S14",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S19",
+      "seller.approved_role:approved": "S10",
+      "seller.offering_pain:observed": "S6",
+      "seller.proof_for_pain:observed": "S2"
+    },
+    "template": "P2"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e9853bfd",
+          "efd8d178",
+          "e4a18690",
+          "efc8788a",
+          "eb85c5df",
+          "eaa9b3d0",
+          "e5dda817",
+          "e281515b"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-235",
+      "objective": "partner",
+      "template": "P2",
+      "policy_versions": [
+        "e9853bfd",
+        "efd8d178"
+      ],
+      "evidence": [
+        "e281515b",
+        "e4a18690",
+        "e5dda817",
+        "e9853bfd",
+        "eaa9b3d0",
+        "eb85c5df",
+        "efc8788a",
+        "efd8d178"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e9853bfd",
+          "efd8d178",
+          "e4a18690",
+          "efc8788a",
+          "eb85c5df",
+          "eaa9b3d0",
+          "e5dda817",
+          "e281515b"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-235",
+      "objective": "partner",
+      "template": "P2",
+      "policy_versions": [
+        "e9853bfd",
+        "efd8d178"
+      ],
+      "evidence": [
+        "e281515b",
+        "e4a18690",
+        "e5dda817",
+        "e9853bfd",
+        "eaa9b3d0",
+        "eb85c5df",
+        "efc8788a",
+        "efd8d178"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed partner context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P2 satisfies the partner objective within the 3-unit allowance: approved and observed role and geography match (S10, S5, S19, S18), and verified partner status, reseller fit, and integration offering and proof are supported (S14, S13, S6, S2). P2 does not require procurement-stage evidence.",
+  "finished_at": "2026-10-23T00:53:48.309412+00:00",
+  "seconds": 5.175245191989234
+}

@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:57.247548+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_020c1f209189ec7e016adaacdd6b8087d19668cdc9ecafac66",
+  "usage": {
+    "input_tokens": 259,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 58,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 317
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.001098",
+    "total_input_tokens": 259,
+    "output_tokens": 58,
+    "regular_input_tokens": 259,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record Quarrendon Freight Lines\u2019 discount on May 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:39:59.675037+00:00",
+  "seconds": 2.4275014540035045
+}

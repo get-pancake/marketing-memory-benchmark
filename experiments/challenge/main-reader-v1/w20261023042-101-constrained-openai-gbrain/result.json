@@ -1,0 +1,69 @@
+{
+  "id": "w20261023042-101-constrained-openai-gbrain",
+  "case_id": "w20261023042-101-constrained",
+  "world": "w20261023042-101",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T05:50:06.946838+00:00",
+  "evidence_bytes": 12269,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999911",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_07bfbc77ea2e3d1b016adaf58fbe6c87d1adbe486c91e5487c",
+  "usage": {
+    "input_tokens": 4404,
+    "input_tokens_details": {
+      "cache_write_tokens": 4401,
+      "cached_tokens": 0
+    },
+    "output_tokens": 232,
+    "output_tokens_details": {
+      "reasoning_tokens": 60
+    },
+    "total_tokens": 4636
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0133285",
+    "total_input_tokens": 4404,
+    "output_tokens": 232,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4401
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "For each queried account (Harbor-101, Grove-101, Juniper-101, Mesa-101, Orchid-101, Delta-101), supply observed profile region and sector, observed consent=true, and an observed catalog-matching signal.",
+      "For each queried account, supply the observed account.initiative → initiative.need → need.offering → offering.proof chain, plus approved proof.verified=true for the linked proof."
+    ],
+    "reasoning_summary": "Each account was checked independently. Approved seller policy and integer priorities are supplied, but every queried account lacks required observed eligibility evidence and a verified proof chain. No action is supported, so the plan is empty. The proposed policy does not override the approved policy."
+  },
+  "score": {
+    "optimum": 46,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T05:50:13.471506+00:00",
+  "seconds": 6.524674100990524
+}

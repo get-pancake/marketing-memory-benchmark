@@ -1,0 +1,65 @@
+{
+  "scope": "Six selected development source/label chains read by the same AI research agent before reader outputs; not human validation or independent external review.",
+  "selection": "Examples spanning future-effective terms, governing authority, ambiguity, private scope, contradictory CRM and alias collision.",
+  "cases": [
+    {
+      "case_id": "dev-gov-1",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "185",
+      "reason": "Amendment1 establishes185 seats from2025-09-01; Amendment3 changes to230 only on2027-01-01, after the query date.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/contracts/2025-08-19-qfl-a1.md": "07dc285a49b4b4e2199301ea457c807ca93939f2b45f74b697d2ab49de87e73a",
+        "data/external/messy-company-v1/corpus/dev/contracts/2026-09-22-qfl-a3.md": "78b199fef3e016e824dc56e780bd30eb15663e4ca0e5b9a9874353101acca8a9"
+      }
+    },
+    {
+      "case_id": "dev-gov-2",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "10",
+      "reason": "Signed2026 renewal Section3 states10 percent from2026-04-01; this supports the May1 answer.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/contracts/2026-03-20-qfl-renewal-2026.md": "e241520b45c13af4c165d6bb61f4cf4dd64af08854817c493a6e121b85a2dd29"
+      }
+    },
+    {
+      "case_id": "dev-op-2",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "ambiguous",
+      "reason": "Dana holds Quarrendon fromJune2 and Brackenwater untilSeptember15. The July28 expenses phrase does not uniquely identify either freight account despite nearby Quarrendon narrative.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/updates/2025-07-28-north-weekly.md": "662c713584bb0946ffd02a25b8bea8b64f9ce4dee3aa4abe6a2c7bc5e2e9f691",
+        "data/external/messy-company-v1/corpus/dev/emails/2025-05-28-quarrendon-handoff.md": "73523f33691e11921825355779d4e85b255de7b3bba401bb40e56557e676888f",
+        "data/external/messy-company-v1/corpus/dev/emails/2025-09-10-brackenwater-to-marcus.md": "8886952642563c5b259f555e6ecac26229e42b22cf879a9d5cbf43ce88388912"
+      }
+    },
+    {
+      "case_id": "dev-own-4",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "Tobias Rendle",
+      "reason": "PrivateMay19 note explicitly assigns Tansleigh to Tobias. This supports full-access labels only; it must not be used as public-only permission validation.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/notes/2025-05-19-hollis-1on1-tobias.md": "566a2476884f041ef7ca743e82821ffefb4ec6168862bc294c0dec63d00d66bd"
+      }
+    },
+    {
+      "case_id": "dev-ch-1",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "2026-11-30",
+      "reason": "Signed renewal Section5 explicitly ends2026-11-30; later CRM note saysDecember31 but is not an executed amendment.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/contracts/2025-11-21-bwf-renewal-2025.md": "1000d9107a1fa4b3d74b07112921596f9c05a474eea9b40d55c4f430b8cb19ad",
+        "data/external/messy-company-v1/corpus/dev/crm/2026-02-10-brackenwater-note.md": "12ef1453c503830df1c2266597a0b167919b480f0a5b419722ee8acd25f2d513"
+      }
+    },
+    {
+      "case_id": "dev-ent-1",
+      "assessment": "Listed source passages support the upstream full-access answer under the stated interpretation.",
+      "checked_answer": "Thornbury Cloth Co. / Orrin Mills",
+      "reason": "January13 chat explicitly assigns invoice to the renamed mill, not Tamsin; January12 notice establishes same legal entity.",
+      "sources": {
+        "data/external/messy-company-v1/corpus/dev/chats/2026-01-13-thornbury-rename.md": "32da843b5aa6dda58baca7f9f9a747ee17910a18b4dd0a85e917c48c56c76775",
+        "data/external/messy-company-v1/corpus/dev/emails/2026-01-12-orrin-rebrand-notice.md": "9f2d566ad33343b2e5e973bbe3cf01111c98990f916f96ef59da46d3b6d01c3b"
+      }
+    }
+  ]
+}

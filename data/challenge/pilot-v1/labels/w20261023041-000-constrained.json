@@ -1,0 +1,360 @@
+{
+  "case_id": "w20261023041-000-constrained",
+  "world": "w20261023041-000",
+  "eligible": [
+    {
+      "account": "Elm-0",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 1,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e95647e01755caa"
+        ],
+        [
+          "e7ad97c51185756"
+        ],
+        [
+          "ecbaa33bf439012"
+        ],
+        [
+          "ea2f6dddcc2fcdd"
+        ],
+        [
+          "e5626bf9139a8f7"
+        ],
+        [
+          "e069c650ae8e9bd"
+        ],
+        [
+          "e5104a6182b9285"
+        ],
+        [
+          "e72cd3a9b823076"
+        ],
+        [
+          "e743f7930c00b78"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-0",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 2,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e03ec3f83f2b4f1"
+        ],
+        [
+          "e0a16c71ac88721"
+        ],
+        [
+          "e3a6345bead2df1"
+        ],
+        [
+          "e008f23b5f77396"
+        ],
+        [
+          "ec93b40a374826b"
+        ],
+        [
+          "e7b339ff42f585c"
+        ],
+        [
+          "edea9573d1a2180"
+        ],
+        [
+          "e485ca63f1b0039"
+        ],
+        [
+          "eb926fb9ed3200e"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-0",
+      "action": "workshop",
+      "cost": 3,
+      "value": 4,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e03ec3f83f2b4f1"
+        ],
+        [
+          "e0a16c71ac88721"
+        ],
+        [
+          "e3a6345bead2df1"
+        ],
+        [
+          "e008f23b5f77396"
+        ],
+        [
+          "ec93b40a374826b"
+        ],
+        [
+          "e7b339ff42f585c"
+        ],
+        [
+          "edea9573d1a2180"
+        ],
+        [
+          "e485ca63f1b0039"
+        ],
+        [
+          "ed902892c62bb5f"
+        ],
+        [
+          "eb926fb9ed3200e"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-0",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 4,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e03ec3f83f2b4f1"
+        ],
+        [
+          "e0a16c71ac88721"
+        ],
+        [
+          "e3a6345bead2df1"
+        ],
+        [
+          "e008f23b5f77396"
+        ],
+        [
+          "ec93b40a374826b"
+        ],
+        [
+          "e7b339ff42f585c"
+        ],
+        [
+          "edea9573d1a2180"
+        ],
+        [
+          "e485ca63f1b0039"
+        ],
+        [
+          "efe973d1a5fc187"
+        ],
+        [
+          "eb926fb9ed3200e"
+        ]
+      ]
+    },
+    {
+      "account": "Cedar-0",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 1,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e03ec3f83f2b4f1"
+        ],
+        [
+          "e0a16c71ac88721"
+        ],
+        [
+          "e3a6345bead2df1"
+        ],
+        [
+          "e008f23b5f77396"
+        ],
+        [
+          "ec93b40a374826b"
+        ],
+        [
+          "e7b339ff42f585c"
+        ],
+        [
+          "edea9573d1a2180"
+        ],
+        [
+          "e485ca63f1b0039"
+        ],
+        [
+          "eb926fb9ed3200e"
+        ]
+      ]
+    },
+    {
+      "account": "Mesa-0",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 6,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "ed63f025095b2ba"
+        ],
+        [
+          "e07b74556725749"
+        ],
+        [
+          "ed0baa971739bc2"
+        ],
+        [
+          "e733a7186209260"
+        ],
+        [
+          "eb16d7c6ca0f200"
+        ],
+        [
+          "e6a6d0d8abd25e0"
+        ],
+        [
+          "e20e1db7c042433"
+        ],
+        [
+          "e23d374903fb4a9"
+        ],
+        [
+          "ec937ba018f5711"
+        ]
+      ]
+    }
+  ],
+  "optimum": 11,
+  "reference_plan": [
+    {
+      "account": "Cedar-0",
+      "action": "workshop",
+      "cost": 3,
+      "value": 4,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e03ec3f83f2b4f1"
+        ],
+        [
+          "e0a16c71ac88721"
+        ],
+        [
+          "e3a6345bead2df1"
+        ],
+        [
+          "e008f23b5f77396"
+        ],
+        [
+          "ec93b40a374826b"
+        ],
+        [
+          "e7b339ff42f585c"
+        ],
+        [
+          "edea9573d1a2180"
+        ],
+        [
+          "e485ca63f1b0039"
+        ],
+        [
+          "ed902892c62bb5f"
+        ],
+        [
+          "eb926fb9ed3200e"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-0",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 1,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "e95647e01755caa"
+        ],
+        [
+          "e7ad97c51185756"
+        ],
+        [
+          "ecbaa33bf439012"
+        ],
+        [
+          "ea2f6dddcc2fcdd"
+        ],
+        [
+          "e5626bf9139a8f7"
+        ],
+        [
+          "e069c650ae8e9bd"
+        ],
+        [
+          "e5104a6182b9285"
+        ],
+        [
+          "e72cd3a9b823076"
+        ],
+        [
+          "e743f7930c00b78"
+        ]
+      ]
+    },
+    {
+      "account": "Mesa-0",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 6,
+      "support_groups": [
+        [
+          "e43b2edf60e76cb"
+        ],
+        [
+          "ed63f025095b2ba"
+        ],
+        [
+          "e07b74556725749"
+        ],
+        [
+          "ed0baa971739bc2"
+        ],
+        [
+          "e733a7186209260"
+        ],
+        [
+          "eb16d7c6ca0f200"
+        ],
+        [
+          "e6a6d0d8abd25e0"
+        ],
+        [
+          "e20e1db7c042433"
+        ],
+        [
+          "e23d374903fb4a9"
+        ],
+        [
+          "ec937ba018f5711"
+        ]
+      ]
+    }
+  ]
+}

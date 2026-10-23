@@ -1,0 +1,69 @@
+{
+  "id": "w20261023042-067-constrained-openai-gbrain",
+  "case_id": "w20261023042-067-constrained",
+  "world": "w20261023042-067",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T06:04:21.711619+00:00",
+  "evidence_bytes": 12227,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999858",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ec5bd2fd626c262016adaf8e642e487d191a4cd7f55aead03",
+  "usage": {
+    "input_tokens": 4447,
+    "input_tokens_details": {
+      "cache_write_tokens": 4444,
+      "cached_tokens": 0
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 110
+    },
+    "total_tokens": 4732
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.013966",
+    "total_input_tokens": 4447,
+    "output_tokens": 285,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4444
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "For each queried account (Birch-67, Cedar-67, Orchid-67, Mesa-67, Grove-67 and Iris-67), provide an observed profile establishing region and sector, observed consent=true, and an observed catalog-matching signal.",
+      "For each queried account, provide the observed account.initiative → initiative.need → need.offering → offering.proof chain, plus approved proof.verified=true for the linked proof."
+    ],
+    "reasoning_summary": "No action is supported for any queried account. Approved seller policy and integer priorities are present, but every account lacks required observed eligibility evidence and a complete verified-proof chain. Standalone capacity, assurance and shareable approvals cannot establish those missing links. No budget is spent."
+  },
+  "score": {
+    "optimum": 24,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T06:04:30.085014+00:00",
+  "seconds": 8.373507823998807
+}

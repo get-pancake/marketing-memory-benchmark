@@ -1,0 +1,85 @@
+{
+  "id": "w20261023042-092-constrained-anthropic-gbrain",
+  "case_id": "w20261023042-092-constrained",
+  "world": "w20261023042-092",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T06:02:34.409228+00:00",
+  "evidence_bytes": 12216,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9994000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:02:36Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:02:40Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:02:35Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:02:36Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfKweTdV2CQx8EX4X7Y",
+  "usage": {
+    "input_tokens": 6832,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 421,
+    "output_tokens_details": {
+      "thinking_tokens": 77
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.035748",
+    "total_input_tokens": 6832,
+    "output_tokens": 421,
+    "regular_input_tokens": 6832,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "Observed profile (region, sector) for Pine-92, Harbor-92, North-92, Larch-92, Mesa-92, Juniper-92",
+      "Observed current consent=true for each queried account",
+      "Observed account.initiative link for each queried account",
+      "Observed initiative.need links",
+      "Observed need.offering links",
+      "Observed offering.proof links",
+      "Approved proof.verified=true for the linked proofs",
+      "Observed signal for each queried account matching catalog action signals"
+    ],
+    "reasoning_summary": "The approved seller policy eee12146ca77598 allows all catalog actions in FR/UK/DE; the proposed policy e2e468766b7a11f is not approved. Approved integer priorities exist for all six queried accounts. However, no account has the observed profile, consent, initiative, need, offering, proof link, approved proof verification, or signal records required for eligibility. Capacity, assurance and shareable records alone cannot establish eligibility, and missing facts cannot be assumed. Therefore no action is supported and the plan is empty."
+  },
+  "score": {
+    "optimum": 55,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T06:02:40.560876+00:00",
+  "seconds": 6.151655433990527
+}

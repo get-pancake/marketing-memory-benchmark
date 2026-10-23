@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:01.204776+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_07bd90b4544971b1016adaaca59d8487d1931a6df0a8a32462",
+  "usage": {
+    "input_tokens": 6110,
+    "input_tokens_details": {
+      "cache_write_tokens": 6107,
+      "cached_tokens": 0
+    },
+    "output_tokens": 69,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6179
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0159635",
+    "total_input_tokens": 6110,
+    "output_tokens": 69,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6107
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D106\"],\"explanation\":\"The September 15, 2025 weekly update uses \u201cDana's freight account\u201d within the Quarrendon Freight Lines section, describing Dana Okafor\u2019s roster check with Thea Ramaswell.\"}",
+  "finished_at": "2026-10-23T00:39:04.090181+00:00",
+  "seconds": 2.885466671999893,
+  "id": "dev-op-1-openai-raw_bm25",
+  "case_id": "dev-op-1",
+  "arm": "raw_bm25",
+  "context_bytes": 24525,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The September 15, 2025 weekly update uses \u201cDana's freight account\u201d within the Quarrendon Freight Lines section, describing Dana Okafor\u2019s roster check with Thea Ramaswell.",
+  "citations": [
+    "D106"
+  ]
+}

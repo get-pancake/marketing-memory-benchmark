@@ -1,0 +1,100 @@
+{
+  "id": "w20261023042-038-constrained-anthropic-company",
+  "case_id": "w20261023042-038-constrained",
+  "world": "w20261023042-038",
+  "family": "professional_services",
+  "level": "constrained",
+  "provider": "anthropic",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T06:02:34.385092+00:00",
+  "evidence_bytes": 12238,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9991000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:02:37Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:02:44Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:02:35Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11990000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:02:37Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfKw9hD6joFY37Z2acJ",
+  "usage": {
+    "input_tokens": 6973,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 911,
+    "output_tokens_details": {
+      "thinking_tokens": 340
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.046112",
+    "total_input_tokens": 6973,
+    "output_tokens": 911,
+    "regular_input_tokens": 6973,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Elm-38",
+        "action": "workshop",
+        "sources": [
+          "e9e895cf7cf9dc4",
+          "ecd95e53ed816cd",
+          "e76cb3550cd2532",
+          "ef1d592e3cd42fe",
+          "efd9bd7cf557b5d",
+          "e635707bd2abe3b",
+          "e1b60f694385d17",
+          "ee07a1d3a94e2a5",
+          "e85c635eb117aed",
+          "e6e20b28f312a64",
+          "ebfd83f93161499"
+        ]
+      }
+    ],
+    "missing": [
+      "Pine-38: approved verified status for proof-2 (none supplied); offering-2 capacity is approved false, so a workshop is also blocked",
+      "Aster-38: no profile, consent, signal, initiative chain or approved priority supplied",
+      "Grove-38: no profile, consent, signal, initiative chain or approved priority supplied",
+      "Iris-38: no profile, consent, signal, initiative chain or approved priority supplied",
+      "Delta-38: no profile, consent, signal, initiative chain or approved priority supplied"
+    ],
+    "reasoning_summary": "The approved seller policy (day 12) allows UK, US and FR. The proposed policy is ignored. Elm-38 passes every check: UK/services profile, observed consent true, and a launch signal. Its full chain initiative-0 -> need-0 -> offering-0 -> proof-0 is observed, with verified approved true. Offering-0 capacity is approved true and the approved priority is 6. A workshop scores 6x4=24 at cost 3, which beats a research brief (6). Pine-38 is blocked because proof-2 has no approved verified record. The other accounts have no evidence. Only one account is eligible, so the plan is a single action with total cost 3 of the 7 budget."
+  },
+  "score": {
+    "optimum": 29,
+    "recoverable_value": 24,
+    "returned_value": 24,
+    "normalized_value": 0.8275862068965517,
+    "context_normalized_value": 0.8275862068965517,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T06:02:44.436982+00:00",
+  "seconds": 10.05189882600098
+}

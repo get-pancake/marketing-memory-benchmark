@@ -1,0 +1,282 @@
+{
+  "schema": "study-analysis-v1",
+  "analyzed_at": "2026-10-22T22:09:36.019125+00:00",
+  "run": "experiments/main/sensitivity",
+  "dataset": "data/study/main-v1",
+  "source_run_complete": true,
+  "planned_attempts": 192,
+  "recorded_terminal_attempts": 192,
+  "model_calls_started": 182,
+  "reused_identical_requests": 10,
+  "physical_calls_with_unknown_usage": 0,
+  "physical_generation_seconds": 9759.239771236018,
+  "physical_input_tokens": 276931,
+  "physical_output_tokens": 30762,
+  "cost_accounting_note": "Per-method token and generation-time totals charge the observed origin call for identical-request reuse. Physical calls/tokens/time are reported separately; a reused response is not fresh inference. Missing usage is unknown, not proof of zero compute.",
+  "methods": {
+    "prompt_hybrid": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 90,
+      "reused_requests": 6,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.4375,
+      "primary_world_ci95": [
+        0.34375,
+        0.53125
+      ],
+      "applicable_choice": 0.4895833333333333,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.2708333333333333,
+      "positive_support_available": 0.75,
+      "inappropriate_abstention": 0.2708333333333333,
+      "correct_negative_withhold": 0.6041666666666666,
+      "negative_recommendations": 0.3958333333333333,
+      "positive_dry_run_completion": 0.2708333333333333,
+      "input_tokens": 146189,
+      "output_tokens": 16440,
+      "generation_seconds": 5186.259149392012,
+      "retrieval_seconds": 14.745401100997697,
+      "generation_p50_seconds": 53.854023931500706,
+      "generation_p95_seconds": 59.02694669099401,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 36,
+        "misbound_support": 17,
+        "incomplete_support": 5,
+        "irrelevant_citation": 2
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 4
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 9
+        },
+        "initial": {
+          "n": 12,
+          "correct": 4
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 2
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 10
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 2
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 8
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 3
+        }
+      }
+    },
+    "typed": {
+      "planned": 96,
+      "completed": 96,
+      "physical_calls": 92,
+      "reused_requests": 4,
+      "failures": 0,
+      "worlds": 12,
+      "positive_cases": 48,
+      "negative_cases": 48,
+      "primary": 0.6145833333333334,
+      "primary_world_ci95": [
+        0.5416666666666666,
+        0.6770833333333334
+      ],
+      "applicable_choice": 0.625,
+      "schema_valid": 1.0,
+      "supported_positive_coverage": 0.625,
+      "positive_support_available": 1.0,
+      "inappropriate_abstention": 0.08333333333333333,
+      "correct_negative_withhold": 0.6041666666666666,
+      "negative_recommendations": 0.3958333333333333,
+      "positive_dry_run_completion": 0.625,
+      "input_tokens": 145844,
+      "output_tokens": 15945,
+      "generation_seconds": 5091.294895875006,
+      "retrieval_seconds": 14.692672319040867,
+      "generation_p50_seconds": 52.46184993750285,
+      "generation_p95_seconds": 59.425455302003684,
+      "truncations": 0,
+      "violations": {
+        "inapplicable_template": 32,
+        "misbound_support": 6,
+        "incomplete_support": 1,
+        "irrelevant_citation": 1
+      },
+      "by_condition": {
+        "account_requalified": {
+          "n": 12,
+          "correct": 8
+        },
+        "evidence_correction": {
+          "n": 12,
+          "correct": 9
+        },
+        "initial": {
+          "n": 12,
+          "correct": 7
+        },
+        "objective_change": {
+          "n": 12,
+          "correct": 10
+        },
+        "policy_conflict": {
+          "n": 12,
+          "correct": 9
+        },
+        "policy_revision": {
+          "n": 12,
+          "correct": 3
+        },
+        "restricted_evidence": {
+          "n": 12,
+          "correct": 8
+        },
+        "weak_feedback": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "typed minus prompt_hybrid": {
+      "mean": 0.17708333333333334,
+      "ci95": [
+        0.10416666666666667,
+        0.2604166666666667
+      ],
+      "world_differences": {
+        "wbf8849ab": 0.375,
+        "w5f803d84": 0.125,
+        "wfc5d07df": 0.0,
+        "w692891c2": 0.125,
+        "wf579faf9": 0.125,
+        "w928ad8c3": 0.125,
+        "w3d45ea82": 0.25,
+        "wd6c72d6a": 0.5,
+        "w0b261e4e": 0.0,
+        "wb3a4ee1b": 0.125,
+        "wb34037eb": 0.375,
+        "w5e59e4e5": 0.0
+      },
+      "sd": 0.16392152131893833,
+      "inference": "Paired world bootstrap stratified by family; exploratory except the predeclared primary contrast. No equivalence claim from nonsignificance."
+    }
+  },
+  "world_means": {
+    "prompt_hybrid": {
+      "w0b261e4e": 0.5,
+      "wb3a4ee1b": 0.75,
+      "w5f803d84": 0.5,
+      "w5e59e4e5": 0.75,
+      "wfc5d07df": 0.25,
+      "wbf8849ab": 0.125,
+      "wb34037eb": 0.125,
+      "w928ad8c3": 0.5,
+      "w3d45ea82": 0.375,
+      "w692891c2": 0.75,
+      "wd6c72d6a": 0.25,
+      "wf579faf9": 0.375
+    },
+    "typed": {
+      "wbf8849ab": 0.5,
+      "w5f803d84": 0.625,
+      "wfc5d07df": 0.25,
+      "w692891c2": 0.875,
+      "wf579faf9": 0.5,
+      "w928ad8c3": 0.625,
+      "w3d45ea82": 0.625,
+      "wd6c72d6a": 0.75,
+      "w0b261e4e": 0.5,
+      "wb3a4ee1b": 0.875,
+      "wb34037eb": 0.5,
+      "w5e59e4e5": 0.75
+    }
+  },
+  "transitions": {
+    "prompt_hybrid": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 4,
+        "correct_both": 3,
+        "unconditional_joint": 0.25,
+        "conditional_preservation_or_refresh": 0.75
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 3,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 2,
+        "correct_both": 1,
+        "unconditional_joint": 0.08333333333333333,
+        "conditional_preservation_or_refresh": 0.5
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 4,
+        "correct_both": 4,
+        "unconditional_joint": 0.3333333333333333,
+        "conditional_preservation_or_refresh": 1.0
+      }
+    },
+    "typed": {
+      "initial -> weak_feedback": {
+        "world_pairs": 12,
+        "correct_before": 7,
+        "correct_both": 4,
+        "unconditional_joint": 0.3333333333333333,
+        "conditional_preservation_or_refresh": 0.5714285714285714
+      },
+      "weak_feedback -> policy_revision": {
+        "world_pairs": 12,
+        "correct_before": 5,
+        "correct_both": 0,
+        "unconditional_joint": 0.0,
+        "conditional_preservation_or_refresh": 0.0
+      },
+      "policy_revision -> account_requalified": {
+        "world_pairs": 12,
+        "correct_before": 3,
+        "correct_both": 1,
+        "unconditional_joint": 0.08333333333333333,
+        "conditional_preservation_or_refresh": 0.3333333333333333
+      },
+      "account_requalified -> evidence_correction": {
+        "world_pairs": 12,
+        "correct_before": 8,
+        "correct_both": 6,
+        "unconditional_joint": 0.5,
+        "conditional_preservation_or_refresh": 0.75
+      }
+    }
+  },
+  "unique_embedding_origin_seconds": {
+    "event": 35.01532425498772,
+    "query": 6.748974347998228
+  },
+  "embedding_cost_note": "Unique observed cache origins across this run, counted once; common reusable index cost, not a per-method cache-order advantage. Infrastructure dollars/energy unknown.",
+  "uncertainty_note": "Conditional on fictional generator/families and tested model. World bootstrap does not represent commercial-population uncertainty. Fewer than six worlds: descriptive pilot, CI suppressed. Degenerate bootstrap intervals are not guarantees.",
+  "analysis_sha256": "3dce30df983ae0face1d8916a279a61f6a2218d105c5142c7830956f66f63ad2"
+}

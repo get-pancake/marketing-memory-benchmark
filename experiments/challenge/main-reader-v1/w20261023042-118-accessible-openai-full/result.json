@@ -1,0 +1,84 @@
+{
+  "id": "w20261023042-118-accessible-openai-full",
+  "case_id": "w20261023042-118-accessible",
+  "world": "w20261023042-118",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "full",
+  "status": "completed",
+  "started_at": "2026-10-23T06:09:38.447886+00:00",
+  "evidence_bytes": 28617,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999721",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ba246eb9b27ae5a016adafa233d4887d18d6fe12fee68e62c",
+  "usage": {
+    "input_tokens": 9509,
+    "input_tokens_details": {
+      "cache_write_tokens": 9506,
+      "cached_tokens": 0
+    },
+    "output_tokens": 422,
+    "output_tokens_details": {
+      "reasoning_tokens": 155
+    },
+    "total_tokens": 9931
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.027991",
+    "total_input_tokens": 9509,
+    "output_tokens": 422,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 9506
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Cedar-118",
+        "action": "workshop",
+        "sources": [
+          "e5b28566b26036f",
+          "e3a791fb5653c23",
+          "e37da106d37a44a",
+          "e1c259ca21df1e6",
+          "ea84de977bb87a0",
+          "ecd72bcc34a5720",
+          "e4854b5b2e5cc73",
+          "e0aea580ea268dc",
+          "e41523a3675b6d7",
+          "eb6da4e9adf6966",
+          "edf6521f1fc1f3f"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "Cedar's workshop costs 3 of the shared budget of 6 and scores 10 × 4 = 40 priority points, tying its assurance_pack for the maximum supported total. Grove is blocked by its restricted sector, Iris by its US region, and Juniper by proof verification being false. No action for those accounts is eligible; no required evidence is missing."
+  },
+  "score": {
+    "optimum": 40,
+    "recoverable_value": 40,
+    "returned_value": 40,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 3
+  },
+  "finished_at": "2026-10-23T06:09:49.001405+00:00",
+  "seconds": 10.55352596200828
+}

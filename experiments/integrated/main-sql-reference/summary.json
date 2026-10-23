@@ -1,0 +1,13 @@
+{
+  "kind": "deterministic_SQL_policy_reference",
+  "model_calls": 0,
+  "queries": 264,
+  "correct": 264,
+  "policy_seconds": 0.20334719208767638,
+  "dataset_files": {
+    "inputs.json": "449072b7255fd2fc045c7e5a0e646f1511df23e2e0bac20d9e0a32c3e8e778b7",
+    "labels.json": "80f0528929304ecc2a5c4dd67cc56a0f9956ed823f73a273627602142e957211"
+  },
+  "created_at": "2026-10-23T00:34:21.147871+00:00",
+  "limitation": "Exact policy evaluation on full verified facts. An executable oracle reference, not an end-to-end ingestion/memory baseline or strategic-utility test."
+}

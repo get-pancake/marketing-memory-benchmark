@@ -1,0 +1,85 @@
+{
+  "id": "w20261023042-106-stress-openai-markdown",
+  "case_id": "w20261023042-106-stress",
+  "world": "w20261023042-106",
+  "family": "industrial_services",
+  "level": "stress",
+  "provider": "openai",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:00:47.543569+00:00",
+  "evidence_bytes": 8102,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999734",
+    "x-ratelimit-reset-requests": "10ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_02e1b7652fdfe579016adaf8106d7487d1b621133e3f744c59",
+  "usage": {
+    "input_tokens": 3177,
+    "input_tokens_details": {
+      "cache_write_tokens": 3174,
+      "cached_tokens": 0
+    },
+    "output_tokens": 408,
+    "output_tokens_details": {
+      "reasoning_tokens": 74
+    },
+    "total_tokens": 3585
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.012021",
+    "total_input_tokens": 3177,
+    "output_tokens": 408,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3174
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Pine-106",
+        "action": "diagnostic",
+        "sources": [
+          "e2a617f604e4c4f",
+          "eb16c7533514f15",
+          "e504ad0ccc0fece",
+          "e70901d40a4527a",
+          "e924391b5498ea6",
+          "ee996e7ccfb3dc0",
+          "e93783f129cd4e4",
+          "e62420103947606",
+          "eb64c2ad9d5a212",
+          "ea228c309486c77"
+        ]
+      }
+    ],
+    "missing": [
+      "For Aster-106, Cedar-106, Larch-106, Mesa-106, Elm-106, Iris-106 and Flint-106, supply observed profiles, true consent, signals and complete initiative → need → offering → proof links, plus approved true proof verification and approved integer priorities. Any action-specific approvals are also required."
+    ],
+    "reasoning_summary": "The optimal supported plan selects Pine-106 diagnostic: priority 9 × multiplier 2 = 18 synthetic priority points, costing 2 of the shared budget of 8. Its growth signal supports diagnostic and research_brief, but diagnostic scores higher. Reference_intro is blocked by approved shareable=false; the other actions do not match its signal. No other account has supplied eligibility evidence. The proposed policy does not override the approved policy."
+  },
+  "score": {
+    "optimum": 50,
+    "recoverable_value": 18,
+    "returned_value": 18,
+    "normalized_value": 0.36,
+    "context_normalized_value": 0.36,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 2
+  },
+  "finished_at": "2026-10-23T06:00:56.294925+00:00",
+  "seconds": 8.751366726995911
+}

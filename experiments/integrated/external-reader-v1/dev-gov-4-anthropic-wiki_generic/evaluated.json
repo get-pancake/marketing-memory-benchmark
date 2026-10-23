@@ -1,0 +1,50 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:53.845981+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEim2DKD5BHSgBknymL",
+  "usage": {
+    "input_tokens": 28201,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 135,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057752",
+    "total_input_tokens": 28201,
+    "output_tokens": 135,
+    "regular_input_tokens": 28201,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\",\"D002\",\"D115\"],\"explanation\":\"The signed MAS affiliate amendment (effective Oct 15, 2025) set 40 seats and Tier 1, and the April 2026 renewal retained those seats/SLA without restating them. The May 11 weekly claim of Tier 2 like the parent is unsupported by any executed tier change.\"}",
+  "finished_at": "2026-10-23T00:39:55.969897+00:00",
+  "seconds": 2.1239267389901215,
+  "id": "dev-gov-4-anthropic-wiki_generic",
+  "case_id": "dev-gov-4",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Tier 1",
+  "explanation": "The signed MAS affiliate amendment (effective Oct 15, 2025) set 40 seats and Tier 1, and the April 2026 renewal retained those seats/SLA without restating them. The May 11 weekly claim of Tier 2 like the parent is unsupported by any executed tier change.",
+  "citations": [
+    "D033",
+    "D042",
+    "D002",
+    "D115"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "resp_0dbc3c968f8c80be016adaacc509d087d1a721e0a5d7d2f8a8",
+  "object": "response",
+  "created_at": 1792715973,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715975,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0dbc3c968f8c80be016adaacc6069087d1a989c5807bd9f5d6",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzHOhn-ggLI44I-eQbDFREg3k1dGmEhEgRLNrdGkUE3kR1TbIatWTd7fxa-aGI0_LdlbUdaTdXzDUFtW1rcdNEmJzeztxsEaa2cKGFvbGP7GkP3ftw6_W4Js5iFXGZdVmU1ajyaWlos0RsEUu7F1MdRPgoas5Sky4-mu5bXf0BokU8qSEuCV33xSJZGJTqSLvTHZlzAHWAdQwWXlp_bLISeR4LeFQjRHlEYRH242Abe_osDUUaBgyaZqkfgomsSfodeZQdH5Q0Ghj-jO4b9-YMT3f4BCAEURzzrGmvqXTtILOg-40u4kU5vmpymfrW47X4nsO-mXVYQ_cNcKPP7peClDn0CeSUWsNUCbU-YVJIZ1iFeH5z9-ilJiVtOxIMAwDLhhC1OrQaMMW9l6Afg7cjbxzgF3-8NMTSvunkVDViCCldNRJPx2w3gl6x2ZWARrnUIpdQTOeuhcQK5kE4lL7g6Xb2_kmn7zHf1KmgLGJv5ghxNKvMDWGMkA1lXvEGIMT68jDeRfWrln3kYdjuD_Ho2nayZ5ccl940Wz_CMJWWEYN8Tvmw-vBNgYAEnLJBDpIdojU0chveOsHnarcTius_rDy4S9ZNcZSt3_Q0lGU_F16wM65araeYxgbu4zXCub6FKR5x4RrGzq2TXstsoLmL8kckBTeyC6pdnGxH282WPRjIYz9RYNL8zQU15mu78iFJZAFm4W0xBAJ4IhddKC0YJT__-7GAXnruudydZ2dj1CWbMQLjK-TIdffhGJOJOObvpgXcNePg17CTu58daVW3zIiMAjgXDN1ci0fr1LesfCDvKEU9RK4v1_EN6b97_OSl-OmE9KocvkRdHiTINSRLc7S-QZTZ0S1ARpBHu40R830CrSmotDjbwpq_1TX9whumhhRoxg28Ynt-UVtcBb6yLns7LwmmOwTaSsiIsi_azqA6-m18uKcU-V5k0o7wHq6K8AwAHbbthAY9By_B9_rfxY75rJXnPZCPv_Gf9zN59IGvY89hbg0rZ4S3wKizMLoKRzMJsATNBnwdLvk2OJlwM9xqqvw6jEQWOdt1o4UwFu17AqexN_phuNNX2P7ZWHO356u-8HttlF3nM2gNfghnCJ6d9fbzm6Asq2tlwCO4FDgIj2IssxvZydEV-hLMU3hsVLlhL7NiN79OLuJyQ5R4rLz2tqwFSSUeQI8pxJcAC0qHlpFLrxWJV2dI1Se2QBsmZz9gKiTj8cnxCcrbmFfOCAghZca7UXCdORTR7Wq9jSc1GnCXD7E-FsC4Zi468g0n9fewVNvdk7L42JXvwgiM1ears5Jbb33J4R5FphlsjJ3qPROSN8gEl5IpYWX7LFC7YOwPpuQzTHiR05NDP3toRFvHfj3hzzBtnYdETp-eKQrQVxM5go40sE0UwzAYtZlVsH7Df1Spt-LNJoqPaHnz40ij-6bITlLfn8ZaugenMiDxqwggcZln5xrEfD-nCvJgc3FSutpOCEQXgBO5aD6lJYndyw5WWM0zXuWkcwRgW-OpLf4ZWQ36vQXwW7yWjIwEwpohKHT8s9qwTbYvDmwoKMQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_0dbc3c968f8c80be016adaacc643ac87d1bd9a72eb690fdaea",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record the dates of the Quarrendon Sev 1 or the executive call that followed it.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 261,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 61,
+    "output_tokens_details": {
+      "reasoning_tokens": 12
+    },
+    "total_tokens": 322
+  },
+  "user": null,
+  "metadata": {}
+}

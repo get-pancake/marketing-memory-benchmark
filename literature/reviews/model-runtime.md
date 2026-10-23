@@ -1,0 +1,11 @@
+# Models and local implementation checks
+
+Reviewed 22 October 2026. Primary metadata, PDFs, model cards and licenses have dated SHA-256 receipts in `literature/retrievals.jsonl`. Model benchmark claims are not reproduced here.
+
+**Qwen3** (arXiv:2505.09388): read abstract, introduction and architecture section, not the complete training/evaluation report. The initial report describes dense and MoE variants, with 128 experts / eight activated for the 30B model. This report predates the July Instruct refresh; the pinned official July model card is the source for the exact tested variant, 30.5B total / 3.3B active parameters, and non-thinking-only behavior. Do not treat the earlier report's context/mode configuration as the later checkpoint's specification. The card's benchmark scores are developer reports, not evidence of competence on our Play contract.
+
+**Qwen3 Embedding** (arXiv:2506.05176v3): read introduction and architecture / Table 1. The 0.6B model produces 1,024-dimensional vectors. Queries receive an instruction; documents do not. The paper specifies the final-layer hidden state at the appended EOS token, rather than mean pooling. The implementation uses last-token pooling, L2 normalization, and query instruction formatting from the official card.
+
+Actual local audit: pinned llama.cpp `tools/server/server-context.cpp`, `handle_embeddings_impl`, calls the subprompt tokenizer with `add_special=true`. On the loaded Qwen3-Embedding-0.6B Q8_0 endpoint, tokenizing `Example evidence record.` without special tokens produced IDs 13314, 5904, 3255, 13; with special tokens it appended ID 151643, `<|endoftext|>`. This checks the potentially consequential EOS/pooling boundary. It does not reproduce the upstream floating-point embedding benchmark or establish that quantization has no effect. The saved readiness request also returned a finite 1,024-dimensional embedding.
+
+All Qwen variants used here have Apache-2.0 license declarations; the pinned official base LICENSE was retrieved for the generation models. llama.cpp is MIT. Weight files and source PDFs are downloaded caches and are not bundled in the public companion. Quantization, local CPU runtime and checkpoint selection are limitations of model-general claims.

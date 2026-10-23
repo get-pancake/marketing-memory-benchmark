@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "created_at": "2026-10-23T05:23:58.085026+00:00",
+  "data_index_sha256": "fee5f8328e2438bc6017cee82094d4450d3b04b22933c2019e0cc84a941428b6",
+  "upstream_pin": "531b3b1ab66c88f192abb51338028c44b80fbf21",
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1024,
+  "embedding_price_per_million": 0.02,
+  "price_source": "https://developers.openai.com/api/docs/models/text-embedding-3-small.md",
+  "embedding_reserved_usd": 0.3556692,
+  "operational_guard_usd": 5,
+  "user_numeric_budget": null,
+  "cases": 360,
+  "source_sha256": {
+    "benchmarks/challenge/prepare.py": "b9c32947f778c52789d5af993cdabc49c6b121efb01e82c7821ab55d7d7d60c5",
+    "benchmarks/challenge/core.py": "b435ede72c15efc82ae58e7a6c6ec7e221ad5eebf7cf45b65c0178c59a61456f",
+    "benchmarks/challenge/retrieve.py": "65ac1e8147030912b804517b0c4719899d1576c73efd82ba6186e49c7500e997",
+    "benchmarks/integrated/gbrain-search.ts": "f409617d302865833596b666b653e8519217d1910cde2f4a7106f606abfb6614"
+  },
+  "finished_at": "2026-10-23T05:47:17.430554+00:00",
+  "embedding_snapshot_sha256": "db699bb432ba2c28fefd63a5fb3d9c68fcdc2c137c30395639256a31b54da99b"
+}

@@ -1,0 +1,7293 @@
+{
+  "scope": "Post-hoc descriptive diagnostics. Primary outcomes, denominators, code and tests unchanged. Citation-relaxed sensitivity requires context-supported eligibility and all global constraints but ignores citation bindings. No new inference or confirmatory tests.",
+  "shortfall_attempts": 11,
+  "unsafe_attempts": 9,
+  "missing_citation_relation_counts": {
+    "priority": 6,
+    "capacity": 1,
+    "verified": 1,
+    "need": 1
+  },
+  "summary": [
+    {
+      "provider": "openai",
+      "arm": "none",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 288,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.0,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "openai",
+      "arm": "company",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 206,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.47857278748394716,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "openai",
+      "arm": "gtm",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 71,
+      "reader_below_context_positive": 1,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.8842937860989035,
+      "citation_relaxed_context_optimal": 287
+    },
+    {
+      "provider": "openai",
+      "arm": "markdown",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 215,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.4567113680578594,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "openai",
+      "arm": "gbrain",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 288,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.0,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "openai",
+      "arm": "full",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 0,
+      "reader_below_context_positive": 1,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.9996031746031746,
+      "citation_relaxed_context_optimal": 287
+    },
+    {
+      "provider": "anthropic",
+      "arm": "none",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 288,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.0,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "anthropic",
+      "arm": "company",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 206,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.47857278748394716,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "anthropic",
+      "arm": "gtm",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 71,
+      "reader_below_context_positive": 2,
+      "unsafe": 2,
+      "error_counts": {
+        "unsupported_action": 2
+      },
+      "citation_relaxed_company_mean": 0.8843843658090484,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "anthropic",
+      "arm": "markdown",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 215,
+      "reader_below_context_positive": 1,
+      "unsafe": 1,
+      "error_counts": {
+        "unsupported_action": 1
+      },
+      "citation_relaxed_company_mean": 0.4567113680578594,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "anthropic",
+      "arm": "gbrain",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 288,
+      "reader_below_context_positive": 0,
+      "unsafe": 0,
+      "error_counts": {},
+      "citation_relaxed_company_mean": 0.0,
+      "citation_relaxed_context_optimal": 288
+    },
+    {
+      "provider": "anthropic",
+      "arm": "full",
+      "cases": 360,
+      "positive_cases": 288,
+      "context_below_full_positive": 0,
+      "reader_below_context_positive": 6,
+      "unsafe": 6,
+      "error_counts": {
+        "unsupported_action": 6
+      },
+      "citation_relaxed_company_mean": 1.0,
+      "citation_relaxed_context_optimal": 288
+    }
+  ],
+  "selected_examples": [
+    {
+      "category": "company_missing_support",
+      "selection": "First lexicographic case satisfying the declared descriptive category, after main outcomes were available.",
+      "case_id": "w20261023042-001-stress",
+      "comparisons": [
+        {
+          "arm": "company",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "gtm",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 6,
+          "returned_value": 6,
+          "errors": []
+        },
+        {
+          "arm": "full",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 66,
+          "returned_value": 66,
+          "errors": []
+        },
+        {
+          "arm": "gbrain",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "markdown",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 48,
+          "returned_value": 48,
+          "errors": []
+        },
+        {
+          "arm": "markdown",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 48,
+          "returned_value": 48,
+          "errors": []
+        },
+        {
+          "arm": "none",
+          "provider": "openai",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "full",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 66,
+          "returned_value": 66,
+          "errors": []
+        },
+        {
+          "arm": "gtm",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 6,
+          "returned_value": 6,
+          "errors": []
+        },
+        {
+          "arm": "none",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "gbrain",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "company",
+          "provider": "anthropic",
+          "optimum": 66,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        }
+      ],
+      "reference_plan": [
+        {
+          "account": "Aster-1",
+          "action": "reference_intro",
+          "cost": 4,
+          "value": 15,
+          "support_groups": [
+            [
+              "ec768bb2604bea8"
+            ],
+            [
+              "e62568c4cab8e7d"
+            ],
+            [
+              "e41f3c8241caffb"
+            ],
+            [
+              "e9e574ce6ec0897"
+            ],
+            [
+              "e08a8f4de7ee593"
+            ],
+            [
+              "e5e48660ce271a3"
+            ],
+            [
+              "eabf3cd09e7a10c"
+            ],
+            [
+              "eb788f6e45eb2f4"
+            ],
+            [
+              "e65340ebfe0129a"
+            ],
+            [
+              "e2f455d1a6b39b8"
+            ],
+            [
+              "ef82c9918e6348f"
+            ]
+          ]
+        },
+        {
+          "account": "Cedar-1",
+          "action": "research_brief",
+          "cost": 1,
+          "value": 3,
+          "support_groups": [
+            [
+              "ec768bb2604bea8"
+            ],
+            [
+              "eabd11310356b61"
+            ],
+            [
+              "e75fbcca01a86db"
+            ],
+            [
+              "ebd5c88ad96ad0c"
+            ],
+            [
+              "eab83266ea2052a"
+            ],
+            [
+              "effa71fbbb466ab"
+            ],
+            [
+              "e9118a5d7a50078"
+            ],
+            [
+              "ea893e7b48c637f"
+            ],
+            [
+              "e0a3aee1b2da100"
+            ],
+            [
+              "e8803927f4dada1"
+            ]
+          ]
+        },
+        {
+          "account": "Mesa-1",
+          "action": "workshop",
+          "cost": 3,
+          "value": 48,
+          "support_groups": [
+            [
+              "ec768bb2604bea8"
+            ],
+            [
+              "e087ef02fc2433a"
+            ],
+            [
+              "ef1668de3b00cb7"
+            ],
+            [
+              "e2a7e695ea47ab1"
+            ],
+            [
+              "e69c81431fb7cae"
+            ],
+            [
+              "e6aa9968051ea99"
+            ],
+            [
+              "efdb589549100b3"
+            ],
+            [
+              "e5f55bbfb928c4d"
+            ],
+            [
+              "e11a4dc07facf59"
+            ],
+            [
+              "e7b4f085fe50006"
+            ],
+            [
+              "e8ed17fdc76a523"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "category": "specialized_budget_limit",
+      "selection": "First lexicographic case satisfying the declared descriptive category, after main outcomes were available.",
+      "case_id": "w20261023042-000-stress",
+      "comparisons": [
+        {
+          "arm": "company",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 18,
+          "returned_value": 18,
+          "errors": []
+        },
+        {
+          "arm": "gtm",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 30,
+          "returned_value": 30,
+          "errors": []
+        },
+        {
+          "arm": "none",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "gbrain",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "none",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "company",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 18,
+          "returned_value": 18,
+          "errors": []
+        },
+        {
+          "arm": "gtm",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 30,
+          "returned_value": 30,
+          "errors": []
+        },
+        {
+          "arm": "full",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 62,
+          "returned_value": 62,
+          "errors": []
+        },
+        {
+          "arm": "markdown",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 18,
+          "returned_value": 18,
+          "errors": []
+        },
+        {
+          "arm": "markdown",
+          "provider": "anthropic",
+          "optimum": 62,
+          "recoverable_value": 18,
+          "returned_value": 18,
+          "errors": []
+        },
+        {
+          "arm": "gbrain",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 0,
+          "returned_value": 0,
+          "errors": []
+        },
+        {
+          "arm": "full",
+          "provider": "openai",
+          "optimum": 62,
+          "recoverable_value": 62,
+          "returned_value": 62,
+          "errors": []
+        }
+      ],
+      "reference_plan": [
+        {
+          "account": "Birch-0",
+          "action": "reference_intro",
+          "cost": 4,
+          "value": 30,
+          "support_groups": [
+            [
+              "ed0dd7b661519fa"
+            ],
+            [
+              "e6fe665427410c5"
+            ],
+            [
+              "e37141a611e5981"
+            ],
+            [
+              "e0d18246189fabd"
+            ],
+            [
+              "eaba6cbfd55bdae"
+            ],
+            [
+              "ede14831dc9541d"
+            ],
+            [
+              "e12e86a1722db46"
+            ],
+            [
+              "ea32e93c51ed31a"
+            ],
+            [
+              "e4e3799316e2a49"
+            ],
+            [
+              "e7bf018ccd4894b"
+            ],
+            [
+              "e072009d9b19002"
+            ]
+          ]
+        },
+        {
+          "account": "Iris-0",
+          "action": "workshop",
+          "cost": 3,
+          "value": 32,
+          "support_groups": [
+            [
+              "ed0dd7b661519fa"
+            ],
+            [
+              "ef628d40604e242"
+            ],
+            [
+              "e873018fd4c5388"
+            ],
+            [
+              "ebbea330ced9cff"
+            ],
+            [
+              "e9f458f0ed3a196"
+            ],
+            [
+              "ef85c608e97ec21"
+            ],
+            [
+              "e4a7a0426f9587b"
+            ],
+            [
+              "e5ca70f4f8d9707"
+            ],
+            [
+              "ec0c3d48f9834a0"
+            ],
+            [
+              "e91b7ae73c09a68"
+            ],
+            [
+              "e576dfd2dddbc3b"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "all_reader_shortfalls": [
+    {
+      "id": "w20261023042-002-accessible-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-002-accessible-anthropic-full",
+        "case_id": "w20261023042-002-accessible",
+        "world": "w20261023042-002",
+        "family": "professional_services",
+        "level": "accessible",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 28,
+        "recoverable_value": 28,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 6,
+        "status": "completed",
+        "seconds": 13.299862153013237,
+        "estimated_usd": 0.084416,
+        "input_tokens": 14294,
+        "output_tokens": 1362,
+        "evidence_bytes": 28544
+      },
+      "action_details": [
+        {
+          "account": "Mesa-2",
+          "action": "assurance_pack",
+          "value": 16,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Birch-2",
+          "action": "assurance_pack",
+          "value": 12,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "e6dc937c3378b3a",
+                "entity": "Birch-2",
+                "relation": "priority",
+                "value": 3
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Mesa-2",
+            "action": "assurance_pack",
+            "sources": [
+              "e2ee0ca1e92443e",
+              "e0ce727d120741c",
+              "e35dd97ee945297",
+              "e10862075977da9",
+              "ebdd4c12a41c918",
+              "eb8fecdbec1e22c",
+              "e323da8dfd7eab0",
+              "eb3697741ce7ec6",
+              "e7b049bab3f85cd",
+              "ef11ab18cb63104",
+              "ea6aeb9fd143969"
+            ]
+          },
+          {
+            "account": "Birch-2",
+            "action": "assurance_pack",
+            "sources": [
+              "e2ee0ca1e92443e",
+              "ecff190bb580c21",
+              "ea9d8c0b0fb72d2",
+              "e3a6a06294f6f4e",
+              "e2da1f50323b9b4",
+              "ee35b3dc8bfcc56",
+              "efb0590ce8f347e",
+              "ed3ed7e688f9f42",
+              "e2af7f04f47b882",
+              "e7aa3d4eaae80bd",
+              "ea6aeb9fd143969"
+            ]
+          }
+        ],
+        "missing": [
+          "North-2: profile region US is not in the approved allowed regions (UK, DE, FR); an allowed-region profile would be needed for any action",
+          "Flint-2: profile region US is not in the approved allowed regions; an allowed-region profile would be needed for any action",
+          "Approved capacity=true for offering-0 and offering-3 (both currently approved false), which blocks workshop for Birch-2 and Mesa-2"
+        ],
+        "reasoning_summary": "The approved seller policy allows UK/DE/FR and blocks the restricted sector. North-2 and Flint-2 have US profiles, so they are ineligible. Birch-2 (UK services, priority 3) and Mesa-2 (UK manufacturing, priority 4) each have current consent, an observed risk signal, and a full verified chain (initiative->need->offering->proof verified true). Both offerings have approved assurance=true but capacity=false, so workshop is blocked. Two assurance_pack actions (cost 3+3=6, within budget 6) give 4x4 + 3x4 = 28 synthetic priority points, the maximum attainable. The proposed policy and nonresponse feedback were not used."
+      },
+      "context_optimum_plan": {
+        "value": 28,
+        "plan": [
+          {
+            "account": "Birch-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "ecff190bb580c21"
+              ],
+              [
+                "ea9d8c0b0fb72d2"
+              ],
+              [
+                "e3a6a06294f6f4e"
+              ],
+              [
+                "e2da1f50323b9b4"
+              ],
+              [
+                "ee35b3dc8bfcc56"
+              ],
+              [
+                "efb0590ce8f347e"
+              ],
+              [
+                "ed3ed7e688f9f42"
+              ],
+              [
+                "e2af7f04f47b882"
+              ],
+              [
+                "e7aa3d4eaae80bd"
+              ],
+              [
+                "e6dc937c3378b3a"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "e0ce727d120741c"
+              ],
+              [
+                "e35dd97ee945297"
+              ],
+              [
+                "e10862075977da9"
+              ],
+              [
+                "ebdd4c12a41c918"
+              ],
+              [
+                "eb8fecdbec1e22c"
+              ],
+              [
+                "e323da8dfd7eab0"
+              ],
+              [
+                "eb3697741ce7ec6"
+              ],
+              [
+                "e7b049bab3f85cd"
+              ],
+              [
+                "ef11ab18cb63104"
+              ],
+              [
+                "ea6aeb9fd143969"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-002-accessible",
+        "world": "w20261023042-002",
+        "eligible": [
+          {
+            "account": "Birch-2",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 6,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "ecff190bb580c21"
+              ],
+              [
+                "ea9d8c0b0fb72d2"
+              ],
+              [
+                "e3a6a06294f6f4e"
+              ],
+              [
+                "e2da1f50323b9b4"
+              ],
+              [
+                "ee35b3dc8bfcc56"
+              ],
+              [
+                "efb0590ce8f347e"
+              ],
+              [
+                "ed3ed7e688f9f42"
+              ],
+              [
+                "e2af7f04f47b882"
+              ],
+              [
+                "e6dc937c3378b3a"
+              ]
+            ]
+          },
+          {
+            "account": "Birch-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "ecff190bb580c21"
+              ],
+              [
+                "ea9d8c0b0fb72d2"
+              ],
+              [
+                "e3a6a06294f6f4e"
+              ],
+              [
+                "e2da1f50323b9b4"
+              ],
+              [
+                "ee35b3dc8bfcc56"
+              ],
+              [
+                "efb0590ce8f347e"
+              ],
+              [
+                "ed3ed7e688f9f42"
+              ],
+              [
+                "e2af7f04f47b882"
+              ],
+              [
+                "e7aa3d4eaae80bd"
+              ],
+              [
+                "e6dc937c3378b3a"
+              ]
+            ]
+          },
+          {
+            "account": "Birch-2",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 3,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "ecff190bb580c21"
+              ],
+              [
+                "ea9d8c0b0fb72d2"
+              ],
+              [
+                "e3a6a06294f6f4e"
+              ],
+              [
+                "e2da1f50323b9b4"
+              ],
+              [
+                "ee35b3dc8bfcc56"
+              ],
+              [
+                "efb0590ce8f347e"
+              ],
+              [
+                "ed3ed7e688f9f42"
+              ],
+              [
+                "e2af7f04f47b882"
+              ],
+              [
+                "e6dc937c3378b3a"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-2",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 8,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "e0ce727d120741c"
+              ],
+              [
+                "e35dd97ee945297"
+              ],
+              [
+                "e10862075977da9"
+              ],
+              [
+                "ebdd4c12a41c918"
+              ],
+              [
+                "eb8fecdbec1e22c"
+              ],
+              [
+                "e323da8dfd7eab0"
+              ],
+              [
+                "eb3697741ce7ec6"
+              ],
+              [
+                "e7b049bab3f85cd"
+              ],
+              [
+                "ea6aeb9fd143969"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "e0ce727d120741c"
+              ],
+              [
+                "e35dd97ee945297"
+              ],
+              [
+                "e10862075977da9"
+              ],
+              [
+                "ebdd4c12a41c918"
+              ],
+              [
+                "eb8fecdbec1e22c"
+              ],
+              [
+                "e323da8dfd7eab0"
+              ],
+              [
+                "eb3697741ce7ec6"
+              ],
+              [
+                "e7b049bab3f85cd"
+              ],
+              [
+                "ef11ab18cb63104"
+              ],
+              [
+                "ea6aeb9fd143969"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-2",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 4,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "e0ce727d120741c"
+              ],
+              [
+                "e35dd97ee945297"
+              ],
+              [
+                "e10862075977da9"
+              ],
+              [
+                "ebdd4c12a41c918"
+              ],
+              [
+                "eb8fecdbec1e22c"
+              ],
+              [
+                "e323da8dfd7eab0"
+              ],
+              [
+                "eb3697741ce7ec6"
+              ],
+              [
+                "e7b049bab3f85cd"
+              ],
+              [
+                "ea6aeb9fd143969"
+              ]
+            ]
+          }
+        ],
+        "optimum": 28,
+        "reference_plan": [
+          {
+            "account": "Birch-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "ecff190bb580c21"
+              ],
+              [
+                "ea9d8c0b0fb72d2"
+              ],
+              [
+                "e3a6a06294f6f4e"
+              ],
+              [
+                "e2da1f50323b9b4"
+              ],
+              [
+                "ee35b3dc8bfcc56"
+              ],
+              [
+                "efb0590ce8f347e"
+              ],
+              [
+                "ed3ed7e688f9f42"
+              ],
+              [
+                "e2af7f04f47b882"
+              ],
+              [
+                "e7aa3d4eaae80bd"
+              ],
+              [
+                "e6dc937c3378b3a"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-2",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "e2ee0ca1e92443e"
+              ],
+              [
+                "e0ce727d120741c"
+              ],
+              [
+                "e35dd97ee945297"
+              ],
+              [
+                "e10862075977da9"
+              ],
+              [
+                "ebdd4c12a41c918"
+              ],
+              [
+                "eb8fecdbec1e22c"
+              ],
+              [
+                "e323da8dfd7eab0"
+              ],
+              [
+                "eb3697741ce7ec6"
+              ],
+              [
+                "e7b049bab3f85cd"
+              ],
+              [
+                "ef11ab18cb63104"
+              ],
+              [
+                "ea6aeb9fd143969"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 28,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-002-accessible-anthropic-full/response.json",
+      "response_sha256": "0fc69f58c51178aecf98eb915a8bf6ce64843927036c12e10d5f9547cf10926e",
+      "result_sha256": "140f59baa5ff0772f74a25dff63fe40540462d5f90e82ddd756fa1aed72c4914"
+    },
+    {
+      "id": "w20261023042-005-constrained-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-005-constrained-anthropic-full",
+        "case_id": "w20261023042-005-constrained",
+        "world": "w20261023042-005",
+        "family": "professional_services",
+        "level": "constrained",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 28,
+        "recoverable_value": 28,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 6,
+        "status": "completed",
+        "seconds": 13.668862149002962,
+        "estimated_usd": 0.110144,
+        "input_tokens": 20251,
+        "output_tokens": 1457,
+        "evidence_bytes": 42062
+      },
+      "action_details": [
+        {
+          "account": "Juniper-5",
+          "action": "workshop",
+          "value": 20,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Grove-5",
+          "action": "workshop",
+          "value": 8,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "ebf347150938d57",
+                "entity": "Grove-5",
+                "relation": "priority",
+                "value": 2
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Juniper-5",
+            "action": "workshop",
+            "sources": [
+              "e5e3dcdf20510cc",
+              "eee27a57b9b6f8c",
+              "e7d76f56f170c6b",
+              "ec66c0d46740ba7",
+              "ec8d15b4da4169e",
+              "e4bc1e6d49c6d95",
+              "e72ddd2383c4fa7",
+              "e0ef2c2954cbd30",
+              "e70dffe4c9ac993",
+              "e5ce5d9add7a8cc",
+              "e3bb03ad6705fa9"
+            ]
+          },
+          {
+            "account": "Grove-5",
+            "action": "workshop",
+            "sources": [
+              "e5e3dcdf20510cc",
+              "e11138d731b4359",
+              "e3b2a8e132ccad4",
+              "e0166cc03e29308",
+              "e933fcdc55a57cd",
+              "ee5166b5575fa82",
+              "e3a323d6bb95e1a",
+              "e3ff396fb9b7fa9",
+              "ecfaaac4e97b34a",
+              "ea92ea77d8041e0",
+              "e3bb03ad6705fa9"
+            ]
+          }
+        ],
+        "missing": [
+          "Flint-5: conflicting observed consent records (true on day 15, false on day 24); a single consistent current consent value is needed.",
+          "Birch-5: current observed consent is false; customer consent is required.",
+          "Orchid-5: region UK is not in the approved policy's allowed regions.",
+          "Delta-5: sector 'restricted' is blocked by the approved policy."
+        ],
+        "reasoning_summary": "I used only the approved seller policy (e5e3dcdf20510cc). The proposed policy was ignored. Juniper-5 qualifies: it is in the US, services sector, has consent, and a launch signal. Its chain initiative-0 -> need-0 -> offering-0 -> proof-0 is verified, offering-0 has capacity, and its priority is 5, so a workshop scores 5x4=20 at cost 3. Grove-5 qualifies the same way: US, services, consent, launch signal. Its chain initiative-1 -> need-1 -> offering-1 -> proof-1 is verified, offering-1 has capacity, and its priority is 2, so a workshop scores 8 at cost 3. Total cost is 6 of the 7 budget, for a total of 28. No third eligible account exists for the remaining 1 cost unit. Flint-5 has conflicting consent records. Birch-5's consent is false. Orchid-5's region (UK) is not allowed. Delta-5's sector is blocked."
+      },
+      "context_optimum_plan": {
+        "value": 28,
+        "plan": [
+          {
+            "account": "Grove-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "e11138d731b4359"
+              ],
+              [
+                "e3b2a8e132ccad4"
+              ],
+              [
+                "e0166cc03e29308"
+              ],
+              [
+                "e933fcdc55a57cd"
+              ],
+              [
+                "ee5166b5575fa82"
+              ],
+              [
+                "e3a323d6bb95e1a"
+              ],
+              [
+                "e3ff396fb9b7fa9"
+              ],
+              [
+                "ecfaaac4e97b34a"
+              ],
+              [
+                "ea92ea77d8041e0"
+              ],
+              [
+                "ebf347150938d57"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 20,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "eee27a57b9b6f8c"
+              ],
+              [
+                "e7d76f56f170c6b"
+              ],
+              [
+                "ec66c0d46740ba7"
+              ],
+              [
+                "ec8d15b4da4169e"
+              ],
+              [
+                "e4bc1e6d49c6d95"
+              ],
+              [
+                "e72ddd2383c4fa7"
+              ],
+              [
+                "e0ef2c2954cbd30"
+              ],
+              [
+                "e70dffe4c9ac993"
+              ],
+              [
+                "e5ce5d9add7a8cc"
+              ],
+              [
+                "e3bb03ad6705fa9"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-005-constrained",
+        "world": "w20261023042-005",
+        "eligible": [
+          {
+            "account": "Juniper-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 20,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "eee27a57b9b6f8c"
+              ],
+              [
+                "e7d76f56f170c6b"
+              ],
+              [
+                "ec66c0d46740ba7"
+              ],
+              [
+                "ec8d15b4da4169e"
+              ],
+              [
+                "e4bc1e6d49c6d95"
+              ],
+              [
+                "e72ddd2383c4fa7"
+              ],
+              [
+                "e0ef2c2954cbd30"
+              ],
+              [
+                "e70dffe4c9ac993"
+              ],
+              [
+                "e5ce5d9add7a8cc"
+              ],
+              [
+                "e3bb03ad6705fa9"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-5",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 5,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "eee27a57b9b6f8c"
+              ],
+              [
+                "e7d76f56f170c6b"
+              ],
+              [
+                "ec66c0d46740ba7"
+              ],
+              [
+                "ec8d15b4da4169e"
+              ],
+              [
+                "e4bc1e6d49c6d95"
+              ],
+              [
+                "e72ddd2383c4fa7"
+              ],
+              [
+                "e0ef2c2954cbd30"
+              ],
+              [
+                "e70dffe4c9ac993"
+              ],
+              [
+                "e3bb03ad6705fa9"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "e11138d731b4359"
+              ],
+              [
+                "e3b2a8e132ccad4"
+              ],
+              [
+                "e0166cc03e29308"
+              ],
+              [
+                "e933fcdc55a57cd"
+              ],
+              [
+                "ee5166b5575fa82"
+              ],
+              [
+                "e3a323d6bb95e1a"
+              ],
+              [
+                "e3ff396fb9b7fa9"
+              ],
+              [
+                "ecfaaac4e97b34a"
+              ],
+              [
+                "ea92ea77d8041e0"
+              ],
+              [
+                "ebf347150938d57"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-5",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 2,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "e11138d731b4359"
+              ],
+              [
+                "e3b2a8e132ccad4"
+              ],
+              [
+                "e0166cc03e29308"
+              ],
+              [
+                "e933fcdc55a57cd"
+              ],
+              [
+                "ee5166b5575fa82"
+              ],
+              [
+                "e3a323d6bb95e1a"
+              ],
+              [
+                "e3ff396fb9b7fa9"
+              ],
+              [
+                "ecfaaac4e97b34a"
+              ],
+              [
+                "ebf347150938d57"
+              ]
+            ]
+          }
+        ],
+        "optimum": 28,
+        "reference_plan": [
+          {
+            "account": "Grove-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "e11138d731b4359"
+              ],
+              [
+                "e3b2a8e132ccad4"
+              ],
+              [
+                "e0166cc03e29308"
+              ],
+              [
+                "e933fcdc55a57cd"
+              ],
+              [
+                "ee5166b5575fa82"
+              ],
+              [
+                "e3a323d6bb95e1a"
+              ],
+              [
+                "e3ff396fb9b7fa9"
+              ],
+              [
+                "ecfaaac4e97b34a"
+              ],
+              [
+                "ea92ea77d8041e0"
+              ],
+              [
+                "ebf347150938d57"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-5",
+            "action": "workshop",
+            "cost": 3,
+            "value": 20,
+            "support_groups": [
+              [
+                "e5e3dcdf20510cc"
+              ],
+              [
+                "eee27a57b9b6f8c"
+              ],
+              [
+                "e7d76f56f170c6b"
+              ],
+              [
+                "ec66c0d46740ba7"
+              ],
+              [
+                "ec8d15b4da4169e"
+              ],
+              [
+                "e4bc1e6d49c6d95"
+              ],
+              [
+                "e72ddd2383c4fa7"
+              ],
+              [
+                "e0ef2c2954cbd30"
+              ],
+              [
+                "e70dffe4c9ac993"
+              ],
+              [
+                "e5ce5d9add7a8cc"
+              ],
+              [
+                "e3bb03ad6705fa9"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 28,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-005-constrained-anthropic-full/response.json",
+      "response_sha256": "80ee58358596b12a9f06b06368f0ebc2a9e6bf16310349b103697a3b31424e05",
+      "result_sha256": "3dc8a3f0a2b434e3c5c8fd50cb668ff4fd9eca688e195ba58c30644650c995b2"
+    },
+    {
+      "id": "w20261023042-009-stress-openai-full",
+      "primary_score": {
+        "id": "w20261023042-009-stress-openai-full",
+        "case_id": "w20261023042-009-stress",
+        "world": "w20261023042-009",
+        "family": "enterprise_software",
+        "level": "stress",
+        "arm": "full",
+        "provider": "openai",
+        "optimum": 105,
+        "recoverable_value": 105,
+        "returned_value": 95,
+        "normalized_value": 0.9047619047619048,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": true,
+        "exact_optimum": false,
+        "actionable": true,
+        "abstained": false,
+        "unsafe": false,
+        "valid_action_count": 3,
+        "actions_count": 3,
+        "errors": [],
+        "cost_units": 8,
+        "status": "completed",
+        "seconds": 13.961830878004548,
+        "estimated_usd": 0.0630185,
+        "input_tokens": 21668,
+        "output_tokens": 885,
+        "evidence_bytes": 68955
+      },
+      "action_details": [
+        {
+          "account": "Kestrel-9",
+          "action": "renewal_review",
+          "value": 33,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Juniper-9",
+          "action": "diagnostic",
+          "value": 12,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Orchid-9",
+          "action": "reference_intro",
+          "value": 50,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Kestrel-9",
+            "action": "renewal_review",
+            "sources": [
+              "ec5df72c230d1b4",
+              "ea5fbe55aec280d",
+              "e44da2e566e1059",
+              "e3952ae8b68cffb",
+              "e70fb93b6e67b85",
+              "ed69d3e6bb5ad54",
+              "e00c925fec051c5",
+              "ed77d6051e9079c",
+              "e7f4e5c046fbd24",
+              "eb3a5e2bed1dd26"
+            ]
+          },
+          {
+            "account": "Juniper-9",
+            "action": "diagnostic",
+            "sources": [
+              "ec5df72c230d1b4",
+              "eca11b6c5527f8e",
+              "ed293abc30d522d",
+              "e55a61d4d0e85bc",
+              "e904852f4636d9c",
+              "edc52213774eb54",
+              "e9387a2c84b3f5f",
+              "ece22b23fb6029f",
+              "ef4fd40663063b0",
+              "ec4c7c0ac7e3741"
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "reference_intro",
+            "sources": [
+              "ec5df72c230d1b4",
+              "e75dfa724b7693e",
+              "e4da5b6625a3c15",
+              "ecfd0f32f8bd0c3",
+              "e41064f8c01f675",
+              "e9f382178ad5f94",
+              "ea399aa7a08c3f6",
+              "e84fe63fe1dcc1e",
+              "e658d5196e9ca06",
+              "ef673a091336e32",
+              "e4d4c6b6ebccbf6"
+            ]
+          }
+        ],
+        "missing": [],
+        "reasoning_summary": "Optimal eligible plan: cost 8 of 8 across three distinct accounts, scoring 11×3 + 6×2 + 10×5 = 95 synthetic priority points, not expected revenue. Each selected action satisfies approved policy, observed consent, signal matching and the complete verified-proof chain; Orchid-9 also has approved shareability. Other accounts are blocked by region, sector or false consent. The proposed policy is not an approved fact."
+      },
+      "context_optimum_plan": {
+        "value": 105,
+        "plan": [
+          {
+            "account": "Kestrel-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 55,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "ea5fbe55aec280d"
+              ],
+              [
+                "e44da2e566e1059"
+              ],
+              [
+                "e7f4e5c046fbd24"
+              ],
+              [
+                "e3952ae8b68cffb"
+              ],
+              [
+                "e70fb93b6e67b85"
+              ],
+              [
+                "ed69d3e6bb5ad54"
+              ],
+              [
+                "e00c925fec051c5"
+              ],
+              [
+                "ed77d6051e9079c"
+              ],
+              [
+                "ec92a0898f548ac"
+              ],
+              [
+                "eb3a5e2bed1dd26"
+              ]
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 50,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "e75dfa724b7693e"
+              ],
+              [
+                "e4da5b6625a3c15"
+              ],
+              [
+                "e658d5196e9ca06"
+              ],
+              [
+                "ecfd0f32f8bd0c3"
+              ],
+              [
+                "e41064f8c01f675"
+              ],
+              [
+                "e9f382178ad5f94"
+              ],
+              [
+                "ea399aa7a08c3f6"
+              ],
+              [
+                "e84fe63fe1dcc1e"
+              ],
+              [
+                "e4d4c6b6ebccbf6"
+              ],
+              [
+                "ef673a091336e32"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-009-stress",
+        "world": "w20261023042-009",
+        "eligible": [
+          {
+            "account": "Kestrel-9",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 33,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "ea5fbe55aec280d"
+              ],
+              [
+                "e44da2e566e1059"
+              ],
+              [
+                "e7f4e5c046fbd24"
+              ],
+              [
+                "e3952ae8b68cffb"
+              ],
+              [
+                "e70fb93b6e67b85"
+              ],
+              [
+                "ed69d3e6bb5ad54"
+              ],
+              [
+                "e00c925fec051c5"
+              ],
+              [
+                "ed77d6051e9079c"
+              ],
+              [
+                "eb3a5e2bed1dd26"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 55,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "ea5fbe55aec280d"
+              ],
+              [
+                "e44da2e566e1059"
+              ],
+              [
+                "e7f4e5c046fbd24"
+              ],
+              [
+                "e3952ae8b68cffb"
+              ],
+              [
+                "e70fb93b6e67b85"
+              ],
+              [
+                "ed69d3e6bb5ad54"
+              ],
+              [
+                "e00c925fec051c5"
+              ],
+              [
+                "ed77d6051e9079c"
+              ],
+              [
+                "ec92a0898f548ac"
+              ],
+              [
+                "eb3a5e2bed1dd26"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-9",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 11,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "ea5fbe55aec280d"
+              ],
+              [
+                "e44da2e566e1059"
+              ],
+              [
+                "e7f4e5c046fbd24"
+              ],
+              [
+                "e3952ae8b68cffb"
+              ],
+              [
+                "e70fb93b6e67b85"
+              ],
+              [
+                "ed69d3e6bb5ad54"
+              ],
+              [
+                "e00c925fec051c5"
+              ],
+              [
+                "ed77d6051e9079c"
+              ],
+              [
+                "eb3a5e2bed1dd26"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-9",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 12,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "eca11b6c5527f8e"
+              ],
+              [
+                "ed293abc30d522d"
+              ],
+              [
+                "ef4fd40663063b0"
+              ],
+              [
+                "e55a61d4d0e85bc"
+              ],
+              [
+                "e904852f4636d9c"
+              ],
+              [
+                "edc52213774eb54"
+              ],
+              [
+                "e9387a2c84b3f5f"
+              ],
+              [
+                "ece22b23fb6029f"
+              ],
+              [
+                "ec4c7c0ac7e3741"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-9",
+            "action": "workshop",
+            "cost": 3,
+            "value": 24,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "eca11b6c5527f8e"
+              ],
+              [
+                "ed293abc30d522d"
+              ],
+              [
+                "ef4fd40663063b0"
+              ],
+              [
+                "e55a61d4d0e85bc"
+              ],
+              [
+                "e904852f4636d9c"
+              ],
+              [
+                "edc52213774eb54"
+              ],
+              [
+                "e9387a2c84b3f5f"
+              ],
+              [
+                "ece22b23fb6029f"
+              ],
+              [
+                "ec779d5db928a72"
+              ],
+              [
+                "ec4c7c0ac7e3741"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-9",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "eca11b6c5527f8e"
+              ],
+              [
+                "ed293abc30d522d"
+              ],
+              [
+                "ef4fd40663063b0"
+              ],
+              [
+                "e55a61d4d0e85bc"
+              ],
+              [
+                "e904852f4636d9c"
+              ],
+              [
+                "edc52213774eb54"
+              ],
+              [
+                "e9387a2c84b3f5f"
+              ],
+              [
+                "ece22b23fb6029f"
+              ],
+              [
+                "ec4c7c0ac7e3741"
+              ]
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 20,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "e75dfa724b7693e"
+              ],
+              [
+                "e4da5b6625a3c15"
+              ],
+              [
+                "e658d5196e9ca06"
+              ],
+              [
+                "ecfd0f32f8bd0c3"
+              ],
+              [
+                "e41064f8c01f675"
+              ],
+              [
+                "e9f382178ad5f94"
+              ],
+              [
+                "ea399aa7a08c3f6"
+              ],
+              [
+                "e84fe63fe1dcc1e"
+              ],
+              [
+                "ef673a091336e32"
+              ]
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 50,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "e75dfa724b7693e"
+              ],
+              [
+                "e4da5b6625a3c15"
+              ],
+              [
+                "e658d5196e9ca06"
+              ],
+              [
+                "ecfd0f32f8bd0c3"
+              ],
+              [
+                "e41064f8c01f675"
+              ],
+              [
+                "e9f382178ad5f94"
+              ],
+              [
+                "ea399aa7a08c3f6"
+              ],
+              [
+                "e84fe63fe1dcc1e"
+              ],
+              [
+                "e4d4c6b6ebccbf6"
+              ],
+              [
+                "ef673a091336e32"
+              ]
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 10,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "e75dfa724b7693e"
+              ],
+              [
+                "e4da5b6625a3c15"
+              ],
+              [
+                "e658d5196e9ca06"
+              ],
+              [
+                "ecfd0f32f8bd0c3"
+              ],
+              [
+                "e41064f8c01f675"
+              ],
+              [
+                "e9f382178ad5f94"
+              ],
+              [
+                "ea399aa7a08c3f6"
+              ],
+              [
+                "e84fe63fe1dcc1e"
+              ],
+              [
+                "ef673a091336e32"
+              ]
+            ]
+          }
+        ],
+        "optimum": 105,
+        "reference_plan": [
+          {
+            "account": "Kestrel-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 55,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "ea5fbe55aec280d"
+              ],
+              [
+                "e44da2e566e1059"
+              ],
+              [
+                "e7f4e5c046fbd24"
+              ],
+              [
+                "e3952ae8b68cffb"
+              ],
+              [
+                "e70fb93b6e67b85"
+              ],
+              [
+                "ed69d3e6bb5ad54"
+              ],
+              [
+                "e00c925fec051c5"
+              ],
+              [
+                "ed77d6051e9079c"
+              ],
+              [
+                "ec92a0898f548ac"
+              ],
+              [
+                "eb3a5e2bed1dd26"
+              ]
+            ]
+          },
+          {
+            "account": "Orchid-9",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 50,
+            "support_groups": [
+              [
+                "ec5df72c230d1b4"
+              ],
+              [
+                "e75dfa724b7693e"
+              ],
+              [
+                "e4da5b6625a3c15"
+              ],
+              [
+                "e658d5196e9ca06"
+              ],
+              [
+                "ecfd0f32f8bd0c3"
+              ],
+              [
+                "e41064f8c01f675"
+              ],
+              [
+                "e9f382178ad5f94"
+              ],
+              [
+                "ea399aa7a08c3f6"
+              ],
+              [
+                "e84fe63fe1dcc1e"
+              ],
+              [
+                "e4d4c6b6ebccbf6"
+              ],
+              [
+                "ef673a091336e32"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 95,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-009-stress-openai-full/response.json",
+      "response_sha256": "b6ddb4654542c259f6f7d6c4003df2c8090b4f30aa56ca67592bfe712499dadf",
+      "result_sha256": "0c42d00003f3275809cb215446678d864008c9bff730427995f4d68764d6d864"
+    },
+    {
+      "id": "w20261023042-041-accessible-anthropic-markdown",
+      "primary_score": {
+        "id": "w20261023042-041-accessible-anthropic-markdown",
+        "case_id": "w20261023042-041-accessible",
+        "world": "w20261023042-041",
+        "family": "professional_services",
+        "level": "accessible",
+        "arm": "markdown",
+        "provider": "anthropic",
+        "optimum": 56,
+        "recoverable_value": 56,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 6,
+        "status": "completed",
+        "seconds": 12.806209439004306,
+        "estimated_usd": 0.0603,
+        "input_tokens": 8825,
+        "output_tokens": 1250,
+        "evidence_bytes": 16347
+      },
+      "action_details": [
+        {
+          "account": "Iris-41",
+          "action": "workshop",
+          "value": 44,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Mesa-41",
+          "action": "workshop",
+          "value": 12,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "ebaedf3c8bbf10b",
+                "entity": "offering-1",
+                "relation": "capacity",
+                "value": true
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Iris-41",
+            "action": "workshop",
+            "sources": [
+              "ee78bbbf1e0c699",
+              "eb18903dedf29c3",
+              "e1b8736421fc0f2",
+              "e3ac53a6b76d9e0",
+              "e560e3abdd28009",
+              "ed6400a1a89c4a0",
+              "ee4edb5440dc99b",
+              "e8d5d241183617e",
+              "e3596ddedb7b9b6",
+              "e526f6055e5e354",
+              "e0ae6a4172fb728"
+            ]
+          },
+          {
+            "account": "Mesa-41",
+            "action": "workshop",
+            "sources": [
+              "ee78bbbf1e0c699",
+              "efb5e49faa16710",
+              "e40b5532fc05eff",
+              "edc4044cc91e4ba",
+              "e742dcd53318cd2",
+              "ec9cfee31c94f2a",
+              "e7dbe83399062f8",
+              "e2693b748f1a358",
+              "ebaa18662963bcd",
+              "e483ee57a25d85d",
+              "e0ae6a4172fb728"
+            ]
+          }
+        ],
+        "missing": [
+          "Elm-41: profile sector 'restricted' is blocked and current observed consent is false",
+          "Grove-41: profile sector 'restricted' is blocked; no observed consent, approved priority, or initiative chain supplied"
+        ],
+        "reasoning_summary": "The approved seller policy (ee78bbbf1e0c699) allows DE/FR/UK and blocks the restricted sector. The proposed policy was ignored. Iris-41 (DE services, consent true, launch signal, priority 11) and Mesa-41 (DE services, consent true, launch signal, priority 3) each have a full verified chain from initiative to need, offering and proof, and each offering has approved capacity. Two workshops (cost 3+3=6, within budget 6) score 11*4 + 3*4 = 56, which beats any alternative combination. Elm-41 and Grove-41 are blocked as restricted, and Elm-41 also lacks consent."
+      },
+      "context_optimum_plan": {
+        "value": 56,
+        "plan": [
+          {
+            "account": "Iris-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 44,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "eb18903dedf29c3"
+              ],
+              [
+                "e1b8736421fc0f2"
+              ],
+              [
+                "e3ac53a6b76d9e0"
+              ],
+              [
+                "ed6400a1a89c4a0"
+              ],
+              [
+                "ee4edb5440dc99b"
+              ],
+              [
+                "e8d5d241183617e"
+              ],
+              [
+                "e3596ddedb7b9b6"
+              ],
+              [
+                "e526f6055e5e354"
+              ],
+              [
+                "e0ae6a4172fb728"
+              ],
+              [
+                "e560e3abdd28009"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "efb5e49faa16710"
+              ],
+              [
+                "e40b5532fc05eff"
+              ],
+              [
+                "edc4044cc91e4ba"
+              ],
+              [
+                "ec9cfee31c94f2a"
+              ],
+              [
+                "e7dbe83399062f8"
+              ],
+              [
+                "e2693b748f1a358"
+              ],
+              [
+                "ebaa18662963bcd"
+              ],
+              [
+                "e483ee57a25d85d"
+              ],
+              [
+                "ebaedf3c8bbf10b"
+              ],
+              [
+                "e742dcd53318cd2"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-041-accessible",
+        "world": "w20261023042-041",
+        "eligible": [
+          {
+            "account": "Iris-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 44,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "eb18903dedf29c3"
+              ],
+              [
+                "e1b8736421fc0f2"
+              ],
+              [
+                "e3ac53a6b76d9e0"
+              ],
+              [
+                "ed6400a1a89c4a0"
+              ],
+              [
+                "ee4edb5440dc99b"
+              ],
+              [
+                "e8d5d241183617e"
+              ],
+              [
+                "e3596ddedb7b9b6"
+              ],
+              [
+                "e526f6055e5e354"
+              ],
+              [
+                "e0ae6a4172fb728"
+              ],
+              [
+                "e560e3abdd28009"
+              ]
+            ]
+          },
+          {
+            "account": "Iris-41",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 11,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "eb18903dedf29c3"
+              ],
+              [
+                "e1b8736421fc0f2"
+              ],
+              [
+                "e3ac53a6b76d9e0"
+              ],
+              [
+                "ed6400a1a89c4a0"
+              ],
+              [
+                "ee4edb5440dc99b"
+              ],
+              [
+                "e8d5d241183617e"
+              ],
+              [
+                "e3596ddedb7b9b6"
+              ],
+              [
+                "e526f6055e5e354"
+              ],
+              [
+                "e560e3abdd28009"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "efb5e49faa16710"
+              ],
+              [
+                "e40b5532fc05eff"
+              ],
+              [
+                "edc4044cc91e4ba"
+              ],
+              [
+                "ec9cfee31c94f2a"
+              ],
+              [
+                "e7dbe83399062f8"
+              ],
+              [
+                "e2693b748f1a358"
+              ],
+              [
+                "ebaa18662963bcd"
+              ],
+              [
+                "e483ee57a25d85d"
+              ],
+              [
+                "ebaedf3c8bbf10b"
+              ],
+              [
+                "e742dcd53318cd2"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-41",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 3,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "efb5e49faa16710"
+              ],
+              [
+                "e40b5532fc05eff"
+              ],
+              [
+                "edc4044cc91e4ba"
+              ],
+              [
+                "ec9cfee31c94f2a"
+              ],
+              [
+                "e7dbe83399062f8"
+              ],
+              [
+                "e2693b748f1a358"
+              ],
+              [
+                "ebaa18662963bcd"
+              ],
+              [
+                "e483ee57a25d85d"
+              ],
+              [
+                "e742dcd53318cd2"
+              ]
+            ]
+          }
+        ],
+        "optimum": 56,
+        "reference_plan": [
+          {
+            "account": "Iris-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 44,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "eb18903dedf29c3"
+              ],
+              [
+                "e1b8736421fc0f2"
+              ],
+              [
+                "e3ac53a6b76d9e0"
+              ],
+              [
+                "ed6400a1a89c4a0"
+              ],
+              [
+                "ee4edb5440dc99b"
+              ],
+              [
+                "e8d5d241183617e"
+              ],
+              [
+                "e3596ddedb7b9b6"
+              ],
+              [
+                "e526f6055e5e354"
+              ],
+              [
+                "e0ae6a4172fb728"
+              ],
+              [
+                "e560e3abdd28009"
+              ]
+            ]
+          },
+          {
+            "account": "Mesa-41",
+            "action": "workshop",
+            "cost": 3,
+            "value": 12,
+            "support_groups": [
+              [
+                "ee78bbbf1e0c699"
+              ],
+              [
+                "efb5e49faa16710"
+              ],
+              [
+                "e40b5532fc05eff"
+              ],
+              [
+                "edc4044cc91e4ba"
+              ],
+              [
+                "ec9cfee31c94f2a"
+              ],
+              [
+                "e7dbe83399062f8"
+              ],
+              [
+                "e2693b748f1a358"
+              ],
+              [
+                "ebaa18662963bcd"
+              ],
+              [
+                "e483ee57a25d85d"
+              ],
+              [
+                "ebaedf3c8bbf10b"
+              ],
+              [
+                "e742dcd53318cd2"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 56,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-041-accessible-anthropic-markdown/response.json",
+      "response_sha256": "23456acdd67d013a03101aae34583febcb25290d60c603220799a09866805c35",
+      "result_sha256": "71d095385f84391ad5d8bc00bf9e8217366f843de01bc24143f8c124b52a716b"
+    },
+    {
+      "id": "w20261023042-046-stress-anthropic-gtm",
+      "primary_score": {
+        "id": "w20261023042-046-stress-anthropic-gtm",
+        "case_id": "w20261023042-046-stress",
+        "world": "w20261023042-046",
+        "family": "industrial_services",
+        "level": "stress",
+        "arm": "gtm",
+        "provider": "anthropic",
+        "optimum": 40,
+        "recoverable_value": 32,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 0.8,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 4,
+        "status": "completed",
+        "seconds": 12.210166502001812,
+        "estimated_usd": 0.047088,
+        "input_tokens": 5212,
+        "output_tokens": 1312,
+        "evidence_bytes": 8117
+      },
+      "action_details": [
+        {
+          "account": "North-46",
+          "action": "diagnostic",
+          "value": 18,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Juniper-46",
+          "action": "diagnostic",
+          "value": 14,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "e55b7f8c55e84d2",
+                "entity": "proof-3",
+                "relation": "verified",
+                "value": true
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "North-46",
+            "action": "diagnostic",
+            "sources": [
+              "eb1367cd9921004",
+              "e8bc7831568497a",
+              "e4b3dc182e64521",
+              "e712e4363fed7b0",
+              "eee975339c37cea",
+              "e313e9db7279962",
+              "e7b641601b73dfe",
+              "e9781d1cc80e1ad",
+              "e3501da784f4ddb",
+              "eb9fe18d808dc13"
+            ]
+          },
+          {
+            "account": "Juniper-46",
+            "action": "diagnostic",
+            "sources": [
+              "eb1367cd9921004",
+              "ee584b27de9e094",
+              "ef6d51cee6dd74b",
+              "e67953fa5ce2e7a",
+              "e6a93a4e56e1648",
+              "e58727f93d52243",
+              "ee18a1774c8450e",
+              "e16df593ba01d8e",
+              "e84deb32cd9bdab",
+              "eb9fe18d808dc13"
+            ]
+          }
+        ],
+        "missing": [
+          "Mesa-46, Grove-46, Kestrel-46: no profile, consent, initiative chain, signal or approved priority supplied",
+          "Cedar-46: region UK is not in the approved policy's allowed regions, and the two current observed consent records conflict (true and false)",
+          "Birch-46: current observed consent is false",
+          "Pine-46: sector 'restricted' is blocked by the approved policy",
+          "North-46 and Juniper-46: the proofs are approved shareable=false, so reference_intro is not eligible"
+        ],
+        "reasoning_summary": "The approved seller policy (eb1367cd9921004) allows FR, DE and US and blocks the 'restricted' sector. The proposed policy was ignored. North-46 (FR, priority 9, growth signal) and Juniper-46 (FR, priority 7, growth signal) both have current consent and a complete chain ending in an approved verified proof. Their proofs are not shareable, which rules out reference_intro. For both accounts, diagnostic (multiplier 2, cost 2) is the highest-value eligible action, scoring 18 + 14 = 32 at a total cost of 4 within the budget of 8. Every other account is blocked or has no evidence."
+      },
+      "context_optimum_plan": {
+        "value": 32,
+        "plan": [
+          {
+            "account": "Juniper-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 14,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ee584b27de9e094"
+              ],
+              [
+                "ef6d51cee6dd74b"
+              ],
+              [
+                "e67953fa5ce2e7a"
+              ],
+              [
+                "e58727f93d52243"
+              ],
+              [
+                "ee18a1774c8450e"
+              ],
+              [
+                "e16df593ba01d8e"
+              ],
+              [
+                "e84deb32cd9bdab"
+              ],
+              [
+                "e55b7f8c55e84d2"
+              ],
+              [
+                "e6a93a4e56e1648"
+              ]
+            ]
+          },
+          {
+            "account": "North-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "e8bc7831568497a"
+              ],
+              [
+                "e4b3dc182e64521"
+              ],
+              [
+                "e712e4363fed7b0"
+              ],
+              [
+                "e313e9db7279962"
+              ],
+              [
+                "e7b641601b73dfe"
+              ],
+              [
+                "e9781d1cc80e1ad"
+              ],
+              [
+                "e3501da784f4ddb"
+              ],
+              [
+                "eb9fe18d808dc13"
+              ],
+              [
+                "eee975339c37cea"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-046-stress",
+        "world": "w20261023042-046",
+        "eligible": [
+          {
+            "account": "North-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "e8bc7831568497a"
+              ],
+              [
+                "e4b3dc182e64521"
+              ],
+              [
+                "e712e4363fed7b0"
+              ],
+              [
+                "e313e9db7279962"
+              ],
+              [
+                "e7b641601b73dfe"
+              ],
+              [
+                "e9781d1cc80e1ad"
+              ],
+              [
+                "e3501da784f4ddb"
+              ],
+              [
+                "eb9fe18d808dc13"
+              ],
+              [
+                "eee975339c37cea"
+              ]
+            ]
+          },
+          {
+            "account": "North-46",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 9,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "e8bc7831568497a"
+              ],
+              [
+                "e4b3dc182e64521"
+              ],
+              [
+                "e712e4363fed7b0"
+              ],
+              [
+                "e313e9db7279962"
+              ],
+              [
+                "e7b641601b73dfe"
+              ],
+              [
+                "e9781d1cc80e1ad"
+              ],
+              [
+                "e3501da784f4ddb"
+              ],
+              [
+                "eb9fe18d808dc13"
+              ],
+              [
+                "eee975339c37cea"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 14,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ee584b27de9e094"
+              ],
+              [
+                "ef6d51cee6dd74b"
+              ],
+              [
+                "e67953fa5ce2e7a"
+              ],
+              [
+                "e58727f93d52243"
+              ],
+              [
+                "ee18a1774c8450e"
+              ],
+              [
+                "e16df593ba01d8e"
+              ],
+              [
+                "e84deb32cd9bdab"
+              ],
+              [
+                "e55b7f8c55e84d2"
+              ],
+              [
+                "e6a93a4e56e1648"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-46",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 7,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ee584b27de9e094"
+              ],
+              [
+                "ef6d51cee6dd74b"
+              ],
+              [
+                "e67953fa5ce2e7a"
+              ],
+              [
+                "e58727f93d52243"
+              ],
+              [
+                "ee18a1774c8450e"
+              ],
+              [
+                "e16df593ba01d8e"
+              ],
+              [
+                "e84deb32cd9bdab"
+              ],
+              [
+                "e55b7f8c55e84d2"
+              ],
+              [
+                "e6a93a4e56e1648"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 4,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ed0a27c73261c38"
+              ],
+              [
+                "e50014f54b464b8"
+              ],
+              [
+                "e1708ab6a678f1b"
+              ],
+              [
+                "e0b0d60ce6dca95"
+              ],
+              [
+                "ef3dc79ce3b4793"
+              ],
+              [
+                "ed7875c446ccec3"
+              ],
+              [
+                "eb50e6913a564ab"
+              ],
+              [
+                "e714a3c221af37f"
+              ],
+              [
+                "e9a42e124a5ae2a"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-46",
+            "action": "workshop",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ed0a27c73261c38"
+              ],
+              [
+                "e50014f54b464b8"
+              ],
+              [
+                "e1708ab6a678f1b"
+              ],
+              [
+                "e0b0d60ce6dca95"
+              ],
+              [
+                "ef3dc79ce3b4793"
+              ],
+              [
+                "ed7875c446ccec3"
+              ],
+              [
+                "eb50e6913a564ab"
+              ],
+              [
+                "e714a3c221af37f"
+              ],
+              [
+                "eaef24034687583"
+              ],
+              [
+                "e9a42e124a5ae2a"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-46",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ed0a27c73261c38"
+              ],
+              [
+                "e50014f54b464b8"
+              ],
+              [
+                "e1708ab6a678f1b"
+              ],
+              [
+                "e0b0d60ce6dca95"
+              ],
+              [
+                "ef3dc79ce3b4793"
+              ],
+              [
+                "ed7875c446ccec3"
+              ],
+              [
+                "eb50e6913a564ab"
+              ],
+              [
+                "e714a3c221af37f"
+              ],
+              [
+                "e1d64aaa82d0bb0"
+              ],
+              [
+                "e9a42e124a5ae2a"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-46",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 2,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ed0a27c73261c38"
+              ],
+              [
+                "e50014f54b464b8"
+              ],
+              [
+                "e1708ab6a678f1b"
+              ],
+              [
+                "e0b0d60ce6dca95"
+              ],
+              [
+                "ef3dc79ce3b4793"
+              ],
+              [
+                "ed7875c446ccec3"
+              ],
+              [
+                "eb50e6913a564ab"
+              ],
+              [
+                "e714a3c221af37f"
+              ],
+              [
+                "e9a42e124a5ae2a"
+              ]
+            ]
+          }
+        ],
+        "optimum": 40,
+        "reference_plan": [
+          {
+            "account": "Grove-46",
+            "action": "workshop",
+            "cost": 3,
+            "value": 8,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ed0a27c73261c38"
+              ],
+              [
+                "e50014f54b464b8"
+              ],
+              [
+                "e1708ab6a678f1b"
+              ],
+              [
+                "e0b0d60ce6dca95"
+              ],
+              [
+                "ef3dc79ce3b4793"
+              ],
+              [
+                "ed7875c446ccec3"
+              ],
+              [
+                "eb50e6913a564ab"
+              ],
+              [
+                "e714a3c221af37f"
+              ],
+              [
+                "eaef24034687583"
+              ],
+              [
+                "e9a42e124a5ae2a"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 14,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "ee584b27de9e094"
+              ],
+              [
+                "ef6d51cee6dd74b"
+              ],
+              [
+                "e67953fa5ce2e7a"
+              ],
+              [
+                "e58727f93d52243"
+              ],
+              [
+                "ee18a1774c8450e"
+              ],
+              [
+                "e16df593ba01d8e"
+              ],
+              [
+                "e84deb32cd9bdab"
+              ],
+              [
+                "e55b7f8c55e84d2"
+              ],
+              [
+                "e6a93a4e56e1648"
+              ]
+            ]
+          },
+          {
+            "account": "North-46",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "eb1367cd9921004"
+              ],
+              [
+                "e8bc7831568497a"
+              ],
+              [
+                "e4b3dc182e64521"
+              ],
+              [
+                "e712e4363fed7b0"
+              ],
+              [
+                "e313e9db7279962"
+              ],
+              [
+                "e7b641601b73dfe"
+              ],
+              [
+                "e9781d1cc80e1ad"
+              ],
+              [
+                "e3501da784f4ddb"
+              ],
+              [
+                "eb9fe18d808dc13"
+              ],
+              [
+                "eee975339c37cea"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 32,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-046-stress-anthropic-gtm/response.json",
+      "response_sha256": "9114bcb740ede5d0ae1aee4405f2da73ae9cedee7291baec72308e01b5655207",
+      "result_sha256": "62f884eb2ad727fff10ce0c7a1b1ead1058100791cc8194723fa6fd8a1627dbe"
+    },
+    {
+      "id": "w20261023042-047-stress-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-047-stress-anthropic-full",
+        "case_id": "w20261023042-047-stress",
+        "world": "w20261023042-047",
+        "family": "professional_services",
+        "level": "stress",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 56,
+        "recoverable_value": 56,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 7,
+        "status": "completed",
+        "seconds": 15.5313198609947,
+        "estimated_usd": 0.158152,
+        "input_tokens": 32243,
+        "output_tokens": 1459,
+        "evidence_bytes": 69400
+      },
+      "action_details": [
+        {
+          "account": "Elm-47",
+          "action": "workshop",
+          "value": 36,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Delta-47",
+          "action": "reference_intro",
+          "value": 20,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "ed06505d7f190d1",
+                "entity": "Delta-47",
+                "relation": "priority",
+                "value": 4
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Elm-47",
+            "action": "workshop",
+            "sources": [
+              "ece97e2fb4fda2f",
+              "eb7d5d5b98f0e84",
+              "eca32df5bdee6fa",
+              "e1070dbfd50afcf",
+              "e7d6d6411af955d",
+              "e7faede970fb4f8",
+              "e3d3bbd7cebbc71",
+              "e99e9fe0fb3c058",
+              "e9612fa47e6cf57",
+              "ee6118438647a44",
+              "e13952edc42d3fb"
+            ]
+          },
+          {
+            "account": "Delta-47",
+            "action": "reference_intro",
+            "sources": [
+              "ece97e2fb4fda2f",
+              "ee7346669b7496c",
+              "ee22872b7147ed6",
+              "ec7358768c3f56d",
+              "e03b5963c1a99b7",
+              "ee7a432165da76c",
+              "efdf40d20fdcb83",
+              "e2c62370be9e390",
+              "e0ecac46f6c6605",
+              "ed9b6f0a02b98b5",
+              "e13952edc42d3fb"
+            ]
+          }
+        ],
+        "missing": [
+          "Flint-47: conflicting observed consent (true day 15 vs false day 24); resolved current consent needed",
+          "Mesa-47: conflicting observed consent (true day 15 vs false day 24); resolved current consent needed",
+          "Birch-47: current observed consent is false; consent true needed",
+          "Larch-47, Iris-47, Pine-47: profile sector is restricted (Pine-47 region UK also not allowed); eligible profile needed"
+        ],
+        "reasoning_summary": "Approved policy ece97e2fb4fda2f allows US/DE/FR and blocks restricted. Only Elm-47 and Delta-47 pass all checks. Elm-47 (risk, priority 9) with offering-7 capacity approved: workshop 9x4=36 at cost 3. Delta-47 (growth, priority 4) with proof-0 verified and shareable: reference_intro 4x5=20 at cost 4. Total cost 7 of 8, score 56. Other accounts blocked by restricted sector, disallowed region, false consent, or conflicting consent."
+      },
+      "context_optimum_plan": {
+        "value": 56,
+        "plan": [
+          {
+            "account": "Delta-47",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 20,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "ee7346669b7496c"
+              ],
+              [
+                "ee22872b7147ed6"
+              ],
+              [
+                "ec7358768c3f56d"
+              ],
+              [
+                "e03b5963c1a99b7"
+              ],
+              [
+                "ee7a432165da76c"
+              ],
+              [
+                "efdf40d20fdcb83"
+              ],
+              [
+                "e2c62370be9e390"
+              ],
+              [
+                "e0ecac46f6c6605"
+              ],
+              [
+                "ed9b6f0a02b98b5"
+              ],
+              [
+                "ed06505d7f190d1"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "ee6118438647a44"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-047-stress",
+        "world": "w20261023042-047",
+        "eligible": [
+          {
+            "account": "Delta-47",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 8,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "ee7346669b7496c"
+              ],
+              [
+                "ee22872b7147ed6"
+              ],
+              [
+                "ec7358768c3f56d"
+              ],
+              [
+                "e03b5963c1a99b7"
+              ],
+              [
+                "ee7a432165da76c"
+              ],
+              [
+                "efdf40d20fdcb83"
+              ],
+              [
+                "e2c62370be9e390"
+              ],
+              [
+                "e0ecac46f6c6605"
+              ],
+              [
+                "ed06505d7f190d1"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-47",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 20,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "ee7346669b7496c"
+              ],
+              [
+                "ee22872b7147ed6"
+              ],
+              [
+                "ec7358768c3f56d"
+              ],
+              [
+                "e03b5963c1a99b7"
+              ],
+              [
+                "ee7a432165da76c"
+              ],
+              [
+                "efdf40d20fdcb83"
+              ],
+              [
+                "e2c62370be9e390"
+              ],
+              [
+                "e0ecac46f6c6605"
+              ],
+              [
+                "ed9b6f0a02b98b5"
+              ],
+              [
+                "ed06505d7f190d1"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-47",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 4,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "ee7346669b7496c"
+              ],
+              [
+                "ee22872b7147ed6"
+              ],
+              [
+                "ec7358768c3f56d"
+              ],
+              [
+                "e03b5963c1a99b7"
+              ],
+              [
+                "ee7a432165da76c"
+              ],
+              [
+                "efdf40d20fdcb83"
+              ],
+              [
+                "e2c62370be9e390"
+              ],
+              [
+                "e0ecac46f6c6605"
+              ],
+              [
+                "ed06505d7f190d1"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "ee6118438647a44"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "e35e66367ae77af"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 9,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          }
+        ],
+        "optimum": 56,
+        "reference_plan": [
+          {
+            "account": "Delta-47",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 20,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "ee7346669b7496c"
+              ],
+              [
+                "ee22872b7147ed6"
+              ],
+              [
+                "ec7358768c3f56d"
+              ],
+              [
+                "e03b5963c1a99b7"
+              ],
+              [
+                "ee7a432165da76c"
+              ],
+              [
+                "efdf40d20fdcb83"
+              ],
+              [
+                "e2c62370be9e390"
+              ],
+              [
+                "e0ecac46f6c6605"
+              ],
+              [
+                "ed9b6f0a02b98b5"
+              ],
+              [
+                "ed06505d7f190d1"
+              ]
+            ]
+          },
+          {
+            "account": "Elm-47",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ece97e2fb4fda2f"
+              ],
+              [
+                "eb7d5d5b98f0e84"
+              ],
+              [
+                "eca32df5bdee6fa"
+              ],
+              [
+                "e1070dbfd50afcf"
+              ],
+              [
+                "e7d6d6411af955d"
+              ],
+              [
+                "e7faede970fb4f8"
+              ],
+              [
+                "e3d3bbd7cebbc71"
+              ],
+              [
+                "e99e9fe0fb3c058"
+              ],
+              [
+                "e9612fa47e6cf57"
+              ],
+              [
+                "ee6118438647a44"
+              ],
+              [
+                "e13952edc42d3fb"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 56,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-047-stress-anthropic-full/response.json",
+      "response_sha256": "431cfea67b8dcccf82a41297216db072d350479e560f7730e6963eab7c0b74ec",
+      "result_sha256": "1da46bd1a0eff1f7ac998a5b64d57166cbd0f661c05d445a22239145b2106947"
+    },
+    {
+      "id": "w20261023042-080-stress-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-080-stress-anthropic-full",
+        "case_id": "w20261023042-080-stress",
+        "world": "w20261023042-080",
+        "family": "professional_services",
+        "level": "stress",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 42,
+        "recoverable_value": 42,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 2,
+        "actions_count": 3,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 7,
+        "status": "completed",
+        "seconds": 20.622785350991762,
+        "estimated_usd": 0.174296,
+        "input_tokens": 32209,
+        "output_tokens": 2273,
+        "evidence_bytes": 69414
+      },
+      "action_details": [
+        {
+          "account": "Kestrel-80",
+          "action": "reference_intro",
+          "value": 30,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "efc3a1b06cda3ab",
+                "entity": "initiative-4",
+                "relation": "need",
+                "value": "need-4"
+              }
+            ]
+          ],
+          "unsupplied_citations": [
+            "efc3a1b06dda3ab"
+          ]
+        },
+        {
+          "account": "Larch-80",
+          "action": "diagnostic",
+          "value": 6,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Iris-80",
+          "action": "research_brief",
+          "value": 6,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Kestrel-80",
+            "action": "reference_intro",
+            "sources": [
+              "e04961f0bb503ed",
+              "e98bc97d8499dbf",
+              "e971f3784530e01",
+              "e357c2ba6906454",
+              "ecc4e2b184ab396",
+              "efc3a1b06dda3ab",
+              "e5b87df63f9b8fa",
+              "efcde24c7a917e1",
+              "ecacaa8ecdcbfb4",
+              "e1593a318d67c23",
+              "eafd6e1781714b1"
+            ]
+          },
+          {
+            "account": "Larch-80",
+            "action": "diagnostic",
+            "sources": [
+              "e04961f0bb503ed",
+              "e608ad1e7d3cf5b",
+              "e546ca32d13b2a7",
+              "e9ff991147ec2e7",
+              "e9f079015cc66e8",
+              "e4b9501bc0fa811",
+              "e9a3bd3b971ea6e",
+              "e763e2f3740dd7c",
+              "e65e5bf393b765e",
+              "e752d902a780836"
+            ]
+          },
+          {
+            "account": "Iris-80",
+            "action": "research_brief",
+            "sources": [
+              "e04961f0bb503ed",
+              "ea0b734299a975c",
+              "e8dbe157df4ad37",
+              "e35a6860f43b67d",
+              "e2febe8e7b90009",
+              "e3cf9cd39959eb4",
+              "e5cc1879ca65cd1",
+              "ef2603dda4ac39d",
+              "e2499313ab7d8c3",
+              "e4d16646fad28e9"
+            ]
+          }
+        ],
+        "missing": [
+          "Delta-80: conflicting observed consent records (true day 15 vs false day 24); a single resolved consent value is needed",
+          "Elm-80: conflicting observed consent records (true day 15 vs false day 24); a single resolved consent value is needed",
+          "Aster-80: current observed consent is false; renewed consent would be required",
+          "North-80: profile sector is restricted (blocked by policy)",
+          "Iris-80: offering-1 capacity is approved false, so workshop is ineligible",
+          "Larch-80: offering-2 capacity and assurance are approved false, so workshop and assurance_pack are ineligible"
+        ],
+        "reasoning_summary": "Approved seller policy allows US/FR/UK and blocks restricted sectors; the proposed policy and nonresponse feedback were ignored. Eligible accounts: Kestrel-80 (renewal, priority 6, proof-4 verified and shareable), Iris-80 (launch, priority 6, but offering-1 lacks capacity), Larch-80 (risk, priority 6? no: priority 3, offering-2 lacks capacity/assurance), Harbor-80 (growth, priority 1). North-80 is blocked by its restricted sector, Aster-80 by false consent, and Delta-80 and Elm-80 by conflicting consent. The best plan within budget 8 is Kestrel reference_intro (6x5=30, cost 4), Larch diagnostic (3x2=6, cost 2) and Iris research_brief (6x1=6, cost 1), for a total of 42 points at cost 7."
+      },
+      "context_optimum_plan": {
+        "value": 42,
+        "plan": [
+          {
+            "account": "Iris-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "ea0b734299a975c"
+              ],
+              [
+                "e8dbe157df4ad37"
+              ],
+              [
+                "e35a6860f43b67d"
+              ],
+              [
+                "e2febe8e7b90009"
+              ],
+              [
+                "e3cf9cd39959eb4"
+              ],
+              [
+                "e5cc1879ca65cd1"
+              ],
+              [
+                "ef2603dda4ac39d"
+              ],
+              [
+                "e2499313ab7d8c3"
+              ],
+              [
+                "e4d16646fad28e9"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-80",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 30,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e98bc97d8499dbf"
+              ],
+              [
+                "e971f3784530e01"
+              ],
+              [
+                "e357c2ba6906454"
+              ],
+              [
+                "ecc4e2b184ab396"
+              ],
+              [
+                "efc3a1b06cda3ab"
+              ],
+              [
+                "e5b87df63f9b8fa"
+              ],
+              [
+                "efcde24c7a917e1"
+              ],
+              [
+                "ecacaa8ecdcbfb4"
+              ],
+              [
+                "e1593a318d67c23"
+              ],
+              [
+                "eafd6e1781714b1"
+              ]
+            ]
+          },
+          {
+            "account": "Larch-80",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e608ad1e7d3cf5b"
+              ],
+              [
+                "e546ca32d13b2a7"
+              ],
+              [
+                "e9ff991147ec2e7"
+              ],
+              [
+                "e9f079015cc66e8"
+              ],
+              [
+                "e4b9501bc0fa811"
+              ],
+              [
+                "e9a3bd3b971ea6e"
+              ],
+              [
+                "e763e2f3740dd7c"
+              ],
+              [
+                "e65e5bf393b765e"
+              ],
+              [
+                "e752d902a780836"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-080-stress",
+        "world": "w20261023042-080",
+        "eligible": [
+          {
+            "account": "Harbor-80",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 2,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e64c5c9c61f53ad"
+              ],
+              [
+                "e98d1991581b865"
+              ],
+              [
+                "e66f49be72637a5"
+              ],
+              [
+                "eb0b90d1395619e"
+              ],
+              [
+                "e379bdcc0f5361a"
+              ],
+              [
+                "ef977846a7aeed4"
+              ],
+              [
+                "ee3153146ec4af2"
+              ],
+              [
+                "e52e5f18fd7f6e3"
+              ],
+              [
+                "e68ee2b7ebc8144"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-80",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 5,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e64c5c9c61f53ad"
+              ],
+              [
+                "e98d1991581b865"
+              ],
+              [
+                "e66f49be72637a5"
+              ],
+              [
+                "eb0b90d1395619e"
+              ],
+              [
+                "e379bdcc0f5361a"
+              ],
+              [
+                "ef977846a7aeed4"
+              ],
+              [
+                "ee3153146ec4af2"
+              ],
+              [
+                "e52e5f18fd7f6e3"
+              ],
+              [
+                "ee7c37ae61de978"
+              ],
+              [
+                "e68ee2b7ebc8144"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 1,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e64c5c9c61f53ad"
+              ],
+              [
+                "e98d1991581b865"
+              ],
+              [
+                "e66f49be72637a5"
+              ],
+              [
+                "eb0b90d1395619e"
+              ],
+              [
+                "e379bdcc0f5361a"
+              ],
+              [
+                "ef977846a7aeed4"
+              ],
+              [
+                "ee3153146ec4af2"
+              ],
+              [
+                "e52e5f18fd7f6e3"
+              ],
+              [
+                "e68ee2b7ebc8144"
+              ]
+            ]
+          },
+          {
+            "account": "Iris-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "ea0b734299a975c"
+              ],
+              [
+                "e8dbe157df4ad37"
+              ],
+              [
+                "e35a6860f43b67d"
+              ],
+              [
+                "e2febe8e7b90009"
+              ],
+              [
+                "e3cf9cd39959eb4"
+              ],
+              [
+                "e5cc1879ca65cd1"
+              ],
+              [
+                "ef2603dda4ac39d"
+              ],
+              [
+                "e2499313ab7d8c3"
+              ],
+              [
+                "e4d16646fad28e9"
+              ]
+            ]
+          },
+          {
+            "account": "Larch-80",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e608ad1e7d3cf5b"
+              ],
+              [
+                "e546ca32d13b2a7"
+              ],
+              [
+                "e9ff991147ec2e7"
+              ],
+              [
+                "e9f079015cc66e8"
+              ],
+              [
+                "e4b9501bc0fa811"
+              ],
+              [
+                "e9a3bd3b971ea6e"
+              ],
+              [
+                "e763e2f3740dd7c"
+              ],
+              [
+                "e65e5bf393b765e"
+              ],
+              [
+                "e752d902a780836"
+              ]
+            ]
+          },
+          {
+            "account": "Larch-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 3,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e608ad1e7d3cf5b"
+              ],
+              [
+                "e546ca32d13b2a7"
+              ],
+              [
+                "e9ff991147ec2e7"
+              ],
+              [
+                "e9f079015cc66e8"
+              ],
+              [
+                "e4b9501bc0fa811"
+              ],
+              [
+                "e9a3bd3b971ea6e"
+              ],
+              [
+                "e763e2f3740dd7c"
+              ],
+              [
+                "e65e5bf393b765e"
+              ],
+              [
+                "e752d902a780836"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-80",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e98bc97d8499dbf"
+              ],
+              [
+                "e971f3784530e01"
+              ],
+              [
+                "e357c2ba6906454"
+              ],
+              [
+                "ecc4e2b184ab396"
+              ],
+              [
+                "efc3a1b06cda3ab"
+              ],
+              [
+                "e5b87df63f9b8fa"
+              ],
+              [
+                "efcde24c7a917e1"
+              ],
+              [
+                "ecacaa8ecdcbfb4"
+              ],
+              [
+                "eafd6e1781714b1"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-80",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 30,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e98bc97d8499dbf"
+              ],
+              [
+                "e971f3784530e01"
+              ],
+              [
+                "e357c2ba6906454"
+              ],
+              [
+                "ecc4e2b184ab396"
+              ],
+              [
+                "efc3a1b06cda3ab"
+              ],
+              [
+                "e5b87df63f9b8fa"
+              ],
+              [
+                "efcde24c7a917e1"
+              ],
+              [
+                "ecacaa8ecdcbfb4"
+              ],
+              [
+                "e1593a318d67c23"
+              ],
+              [
+                "eafd6e1781714b1"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e98bc97d8499dbf"
+              ],
+              [
+                "e971f3784530e01"
+              ],
+              [
+                "e357c2ba6906454"
+              ],
+              [
+                "ecc4e2b184ab396"
+              ],
+              [
+                "efc3a1b06cda3ab"
+              ],
+              [
+                "e5b87df63f9b8fa"
+              ],
+              [
+                "efcde24c7a917e1"
+              ],
+              [
+                "ecacaa8ecdcbfb4"
+              ],
+              [
+                "eafd6e1781714b1"
+              ]
+            ]
+          }
+        ],
+        "optimum": 42,
+        "reference_plan": [
+          {
+            "account": "Iris-80",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "ea0b734299a975c"
+              ],
+              [
+                "e8dbe157df4ad37"
+              ],
+              [
+                "e35a6860f43b67d"
+              ],
+              [
+                "e2febe8e7b90009"
+              ],
+              [
+                "e3cf9cd39959eb4"
+              ],
+              [
+                "e5cc1879ca65cd1"
+              ],
+              [
+                "ef2603dda4ac39d"
+              ],
+              [
+                "e2499313ab7d8c3"
+              ],
+              [
+                "e4d16646fad28e9"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-80",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 30,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e98bc97d8499dbf"
+              ],
+              [
+                "e971f3784530e01"
+              ],
+              [
+                "e357c2ba6906454"
+              ],
+              [
+                "ecc4e2b184ab396"
+              ],
+              [
+                "efc3a1b06cda3ab"
+              ],
+              [
+                "e5b87df63f9b8fa"
+              ],
+              [
+                "efcde24c7a917e1"
+              ],
+              [
+                "ecacaa8ecdcbfb4"
+              ],
+              [
+                "e1593a318d67c23"
+              ],
+              [
+                "eafd6e1781714b1"
+              ]
+            ]
+          },
+          {
+            "account": "Larch-80",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 6,
+            "support_groups": [
+              [
+                "e04961f0bb503ed"
+              ],
+              [
+                "e608ad1e7d3cf5b"
+              ],
+              [
+                "e546ca32d13b2a7"
+              ],
+              [
+                "e9ff991147ec2e7"
+              ],
+              [
+                "e9f079015cc66e8"
+              ],
+              [
+                "e4b9501bc0fa811"
+              ],
+              [
+                "e9a3bd3b971ea6e"
+              ],
+              [
+                "e763e2f3740dd7c"
+              ],
+              [
+                "e65e5bf393b765e"
+              ],
+              [
+                "e752d902a780836"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 42,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-080-stress-anthropic-full/response.json",
+      "response_sha256": "2f73b972a36a66ebce31f0342c8826648f0a568fb57aebd172ce87bdab467412",
+      "result_sha256": "267b8fc8c34818e368a3182f2cbcec618e2e60ea9522aa278de518e8dc98f02b"
+    },
+    {
+      "id": "w20261023042-097-stress-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-097-stress-anthropic-full",
+        "case_id": "w20261023042-097-stress",
+        "world": "w20261023042-097",
+        "family": "industrial_services",
+        "level": "stress",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 52,
+        "recoverable_value": 52,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 6,
+        "status": "completed",
+        "seconds": 16.202001177996863,
+        "estimated_usd": 0.160392,
+        "input_tokens": 32023,
+        "output_tokens": 1615,
+        "evidence_bytes": 69247
+      },
+      "action_details": [
+        {
+          "account": "Harbor-97",
+          "action": "workshop",
+          "value": 36,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Grove-97",
+          "action": "workshop",
+          "value": 16,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "ef7f359636ce6ed",
+                "entity": "Grove-97",
+                "relation": "priority",
+                "value": 4
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Harbor-97",
+            "action": "workshop",
+            "sources": [
+              "ecff0541865546c",
+              "ebe99fafff7ec49",
+              "e74c0ced16a490d",
+              "ee4aaf0fccd3c0e",
+              "e06fa8eecca59ef",
+              "eb98de30d068a2f",
+              "ecf39bde7c72aaf",
+              "e9fe05c5557c0fc",
+              "e60c1f98cf54ba3",
+              "e2e148662fcc8ca",
+              "e7382a8701c859b"
+            ]
+          },
+          {
+            "account": "Grove-97",
+            "action": "workshop",
+            "sources": [
+              "ecff0541865546c",
+              "e403ae64ad48064",
+              "e6042036479c4f5",
+              "e60a21b6d0c1800",
+              "e883d678d0c377f",
+              "eb9ffb85cc2b21a",
+              "ecf661f58d0294a",
+              "eaf715a4f1dd02c",
+              "e15dafb28cf622e",
+              "e58d69dab594244",
+              "e7382a8701c859b"
+            ]
+          }
+        ],
+        "missing": [
+          "Flint-97, North-97, Larch-97 and Juniper-97 are in the restricted sector, and North-97, Larch-97 and Juniper-97 are in UK, which is not an allowed region; new approved profile or policy evidence would be needed.",
+          "Kestrel-97 and Birch-97 need current observed consent=true; their consent records are false.",
+          "Juniper-97 also has conflicting observed consent records (true and false).",
+          "Grove-97 citation correction: its priority source is ef7f359636ce6ed, not e7382a8701c859b."
+        ],
+        "reasoning_summary": "Only one approved seller policy applies; the other policy is proposed only. It allows US, FR and DE and blocks the restricted sector. Two accounts are eligible. Harbor-97 (US, services, consent true, launch signal) has a full verified chain initiative-0 -> need-0 -> offering-0 -> proof-0, offering-0 capacity is approved, and its approved priority is 9. A workshop scores 9 x 4 = 36 at cost 3. Grove-97 (FR, manufacturing, consent true, risk signal) has a full verified chain initiative-3 -> need-3 -> offering-3 -> proof-3, offering-3 capacity is approved, and its approved priority is 4. A workshop scores 4 x 4 = 16 at cost 3; an assurance pack would score the same. Total cost is 6 of the budget of 8, for 52 points. No other account is eligible: Flint-97, North-97, Larch-97 and Juniper-97 are restricted or outside allowed regions, and Kestrel-97 and Birch-97 lack consent. Note: the Grove-97 action's source list mistakenly cites Harbor's priority record (e7382a8701c859b); the correct Grove-97 priority source is ef7f359636ce6ed."
+      },
+      "context_optimum_plan": {
+        "value": 52,
+        "plan": [
+          {
+            "account": "Grove-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "e58d69dab594244"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "ebe99fafff7ec49"
+              ],
+              [
+                "e74c0ced16a490d"
+              ],
+              [
+                "ee4aaf0fccd3c0e"
+              ],
+              [
+                "e06fa8eecca59ef"
+              ],
+              [
+                "eb98de30d068a2f"
+              ],
+              [
+                "ecf39bde7c72aaf"
+              ],
+              [
+                "e9fe05c5557c0fc"
+              ],
+              [
+                "e60c1f98cf54ba3"
+              ],
+              [
+                "e2e148662fcc8ca"
+              ],
+              [
+                "e7382a8701c859b"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-097-stress",
+        "world": "w20261023042-097",
+        "eligible": [
+          {
+            "account": "Harbor-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "ebe99fafff7ec49"
+              ],
+              [
+                "e74c0ced16a490d"
+              ],
+              [
+                "ee4aaf0fccd3c0e"
+              ],
+              [
+                "e06fa8eecca59ef"
+              ],
+              [
+                "eb98de30d068a2f"
+              ],
+              [
+                "ecf39bde7c72aaf"
+              ],
+              [
+                "e9fe05c5557c0fc"
+              ],
+              [
+                "e60c1f98cf54ba3"
+              ],
+              [
+                "e2e148662fcc8ca"
+              ],
+              [
+                "e7382a8701c859b"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-97",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 9,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "ebe99fafff7ec49"
+              ],
+              [
+                "e74c0ced16a490d"
+              ],
+              [
+                "ee4aaf0fccd3c0e"
+              ],
+              [
+                "e06fa8eecca59ef"
+              ],
+              [
+                "eb98de30d068a2f"
+              ],
+              [
+                "ecf39bde7c72aaf"
+              ],
+              [
+                "e9fe05c5557c0fc"
+              ],
+              [
+                "e60c1f98cf54ba3"
+              ],
+              [
+                "e7382a8701c859b"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-97",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 8,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "e58d69dab594244"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-97",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "efabcc385b99688"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-97",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 4,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          }
+        ],
+        "optimum": 52,
+        "reference_plan": [
+          {
+            "account": "Grove-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 16,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "e403ae64ad48064"
+              ],
+              [
+                "e6042036479c4f5"
+              ],
+              [
+                "e60a21b6d0c1800"
+              ],
+              [
+                "e883d678d0c377f"
+              ],
+              [
+                "eb9ffb85cc2b21a"
+              ],
+              [
+                "ecf661f58d0294a"
+              ],
+              [
+                "eaf715a4f1dd02c"
+              ],
+              [
+                "e15dafb28cf622e"
+              ],
+              [
+                "e58d69dab594244"
+              ],
+              [
+                "ef7f359636ce6ed"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-97",
+            "action": "workshop",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "ecff0541865546c"
+              ],
+              [
+                "ebe99fafff7ec49"
+              ],
+              [
+                "e74c0ced16a490d"
+              ],
+              [
+                "ee4aaf0fccd3c0e"
+              ],
+              [
+                "e06fa8eecca59ef"
+              ],
+              [
+                "eb98de30d068a2f"
+              ],
+              [
+                "ecf39bde7c72aaf"
+              ],
+              [
+                "e9fe05c5557c0fc"
+              ],
+              [
+                "e60c1f98cf54ba3"
+              ],
+              [
+                "e2e148662fcc8ca"
+              ],
+              [
+                "e7382a8701c859b"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 52,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-097-stress-anthropic-full/response.json",
+      "response_sha256": "9366a0126d4fd2db2c38280e7ad7429e3382c30f1b450743362aa1bf3775ae90",
+      "result_sha256": "588d5f5fa2198d2b718c0483e1ed13856bcf425300b50c3818602b46fc544b88"
+    },
+    {
+      "id": "w20261023042-111-constrained-anthropic-full",
+      "primary_score": {
+        "id": "w20261023042-111-constrained-anthropic-full",
+        "case_id": "w20261023042-111-constrained",
+        "world": "w20261023042-111",
+        "family": "enterprise_software",
+        "level": "constrained",
+        "arm": "full",
+        "provider": "anthropic",
+        "optimum": 96,
+        "recoverable_value": 96,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 1.0,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 7,
+        "status": "completed",
+        "seconds": 17.827410379002686,
+        "estimated_usd": 0.116132,
+        "input_tokens": 20208,
+        "output_tokens": 1765,
+        "evidence_bytes": 42144
+      },
+      "action_details": [
+        {
+          "account": "Juniper-111",
+          "action": "reference_intro",
+          "value": 60,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Kestrel-111",
+          "action": "assurance_pack",
+          "value": 36,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "e693eed4b55c0d8",
+                "entity": "Kestrel-111",
+                "relation": "priority",
+                "value": 9
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Juniper-111",
+            "action": "reference_intro",
+            "sources": [
+              "e47a047c58b7f2e",
+              "ec9bb9947c16832",
+              "e0ac1ff34db7091",
+              "ef62dc13205ad72",
+              "e542248f064c5ef",
+              "e56f5a487d31427",
+              "e3f0e985b273d4b",
+              "e7192523b7c1a0e",
+              "eea0ded13ac52ed",
+              "eb919c74d930cba",
+              "e39dbaadea9c814"
+            ]
+          },
+          {
+            "account": "Kestrel-111",
+            "action": "assurance_pack",
+            "sources": [
+              "e47a047c58b7f2e",
+              "e4c97e928310c50",
+              "eca0fc3c75b9550",
+              "eef2c690bd0d9a1",
+              "efaca6f94dba2de",
+              "ebf11762583a747",
+              "e6058aa271a32ed",
+              "ea902a0df93e5f2",
+              "ee8b6cde37d4719",
+              "ea6bee3119798c1",
+              "e39dbaadea9c814"
+            ]
+          }
+        ],
+        "missing": [
+          "Flint-111 reference_intro blocked: proof-3 shareable is approved false",
+          "Kestrel-111 workshop blocked: offering-0 capacity is approved false",
+          "Delta-111, Grove-111 blocked: sector restricted (Delta-111 also region US)",
+          "Harbor-111 blocked: region US not in approved allowed regions"
+        ],
+        "reasoning_summary": "The approved seller policy (day 12) allows UK/FR/DE, blocks the restricted sector, and permits all actions; the proposed policy is ignored. Eligible accounts are Juniper-111 (DE, renewal, priority 12, verified and shareable proof-5), Kestrel-111 (UK, risk, priority 9, verified proof-0, offering-0 assurance true, capacity false), and Flint-111 (FR, renewal, priority 7, verified proof-3, not shareable). Delta-111 and Grove-111 are in the restricted sector, and Harbor-111 is in the US. Within the budget of 7, Juniper reference_intro (cost 4, 12x5=60) plus Kestrel assurance_pack (cost 3, 9x4=36) gives 96. This beats the alternatives, such as a three-action plan of renewal_review for Juniper, assurance_pack for Kestrel and renewal_review for Flint, which scores 93."
+      },
+      "context_optimum_plan": {
+        "value": 96,
+        "plan": [
+          {
+            "account": "Juniper-111",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 60,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "ec9bb9947c16832"
+              ],
+              [
+                "e0ac1ff34db7091"
+              ],
+              [
+                "ef62dc13205ad72"
+              ],
+              [
+                "e542248f064c5ef"
+              ],
+              [
+                "e56f5a487d31427"
+              ],
+              [
+                "e3f0e985b273d4b"
+              ],
+              [
+                "e7192523b7c1a0e"
+              ],
+              [
+                "eea0ded13ac52ed"
+              ],
+              [
+                "eb919c74d930cba"
+              ],
+              [
+                "e39dbaadea9c814"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-111",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e4c97e928310c50"
+              ],
+              [
+                "eca0fc3c75b9550"
+              ],
+              [
+                "eef2c690bd0d9a1"
+              ],
+              [
+                "efaca6f94dba2de"
+              ],
+              [
+                "ebf11762583a747"
+              ],
+              [
+                "e6058aa271a32ed"
+              ],
+              [
+                "ea902a0df93e5f2"
+              ],
+              [
+                "ee8b6cde37d4719"
+              ],
+              [
+                "ea6bee3119798c1"
+              ],
+              [
+                "e693eed4b55c0d8"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-111-constrained",
+        "world": "w20261023042-111",
+        "eligible": [
+          {
+            "account": "Kestrel-111",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 18,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e4c97e928310c50"
+              ],
+              [
+                "eca0fc3c75b9550"
+              ],
+              [
+                "eef2c690bd0d9a1"
+              ],
+              [
+                "efaca6f94dba2de"
+              ],
+              [
+                "ebf11762583a747"
+              ],
+              [
+                "e6058aa271a32ed"
+              ],
+              [
+                "ea902a0df93e5f2"
+              ],
+              [
+                "ee8b6cde37d4719"
+              ],
+              [
+                "e693eed4b55c0d8"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-111",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e4c97e928310c50"
+              ],
+              [
+                "eca0fc3c75b9550"
+              ],
+              [
+                "eef2c690bd0d9a1"
+              ],
+              [
+                "efaca6f94dba2de"
+              ],
+              [
+                "ebf11762583a747"
+              ],
+              [
+                "e6058aa271a32ed"
+              ],
+              [
+                "ea902a0df93e5f2"
+              ],
+              [
+                "ee8b6cde37d4719"
+              ],
+              [
+                "ea6bee3119798c1"
+              ],
+              [
+                "e693eed4b55c0d8"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-111",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 9,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e4c97e928310c50"
+              ],
+              [
+                "eca0fc3c75b9550"
+              ],
+              [
+                "eef2c690bd0d9a1"
+              ],
+              [
+                "efaca6f94dba2de"
+              ],
+              [
+                "ebf11762583a747"
+              ],
+              [
+                "e6058aa271a32ed"
+              ],
+              [
+                "ea902a0df93e5f2"
+              ],
+              [
+                "ee8b6cde37d4719"
+              ],
+              [
+                "e693eed4b55c0d8"
+              ]
+            ]
+          },
+          {
+            "account": "Flint-111",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 21,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e5f080e3dce559e"
+              ],
+              [
+                "e30f8ef066a9b4a"
+              ],
+              [
+                "ec0f59ab891ca83"
+              ],
+              [
+                "efcb348c2190dc6"
+              ],
+              [
+                "e145abc2709a5b0"
+              ],
+              [
+                "eb1dd44b74b0ca7"
+              ],
+              [
+                "e0e64029d8c3394"
+              ],
+              [
+                "ec0958ba10b5df6"
+              ],
+              [
+                "eaac7fc570abc21"
+              ]
+            ]
+          },
+          {
+            "account": "Flint-111",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 7,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e5f080e3dce559e"
+              ],
+              [
+                "e30f8ef066a9b4a"
+              ],
+              [
+                "ec0f59ab891ca83"
+              ],
+              [
+                "efcb348c2190dc6"
+              ],
+              [
+                "e145abc2709a5b0"
+              ],
+              [
+                "eb1dd44b74b0ca7"
+              ],
+              [
+                "e0e64029d8c3394"
+              ],
+              [
+                "ec0958ba10b5df6"
+              ],
+              [
+                "eaac7fc570abc21"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-111",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 36,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "ec9bb9947c16832"
+              ],
+              [
+                "e0ac1ff34db7091"
+              ],
+              [
+                "ef62dc13205ad72"
+              ],
+              [
+                "e542248f064c5ef"
+              ],
+              [
+                "e56f5a487d31427"
+              ],
+              [
+                "e3f0e985b273d4b"
+              ],
+              [
+                "e7192523b7c1a0e"
+              ],
+              [
+                "eea0ded13ac52ed"
+              ],
+              [
+                "e39dbaadea9c814"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-111",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 60,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "ec9bb9947c16832"
+              ],
+              [
+                "e0ac1ff34db7091"
+              ],
+              [
+                "ef62dc13205ad72"
+              ],
+              [
+                "e542248f064c5ef"
+              ],
+              [
+                "e56f5a487d31427"
+              ],
+              [
+                "e3f0e985b273d4b"
+              ],
+              [
+                "e7192523b7c1a0e"
+              ],
+              [
+                "eea0ded13ac52ed"
+              ],
+              [
+                "eb919c74d930cba"
+              ],
+              [
+                "e39dbaadea9c814"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-111",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 12,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "ec9bb9947c16832"
+              ],
+              [
+                "e0ac1ff34db7091"
+              ],
+              [
+                "ef62dc13205ad72"
+              ],
+              [
+                "e542248f064c5ef"
+              ],
+              [
+                "e56f5a487d31427"
+              ],
+              [
+                "e3f0e985b273d4b"
+              ],
+              [
+                "e7192523b7c1a0e"
+              ],
+              [
+                "eea0ded13ac52ed"
+              ],
+              [
+                "e39dbaadea9c814"
+              ]
+            ]
+          }
+        ],
+        "optimum": 96,
+        "reference_plan": [
+          {
+            "account": "Juniper-111",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 60,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "ec9bb9947c16832"
+              ],
+              [
+                "e0ac1ff34db7091"
+              ],
+              [
+                "ef62dc13205ad72"
+              ],
+              [
+                "e542248f064c5ef"
+              ],
+              [
+                "e56f5a487d31427"
+              ],
+              [
+                "e3f0e985b273d4b"
+              ],
+              [
+                "e7192523b7c1a0e"
+              ],
+              [
+                "eea0ded13ac52ed"
+              ],
+              [
+                "eb919c74d930cba"
+              ],
+              [
+                "e39dbaadea9c814"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-111",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 36,
+            "support_groups": [
+              [
+                "e47a047c58b7f2e"
+              ],
+              [
+                "e4c97e928310c50"
+              ],
+              [
+                "eca0fc3c75b9550"
+              ],
+              [
+                "eef2c690bd0d9a1"
+              ],
+              [
+                "efaca6f94dba2de"
+              ],
+              [
+                "ebf11762583a747"
+              ],
+              [
+                "e6058aa271a32ed"
+              ],
+              [
+                "ea902a0df93e5f2"
+              ],
+              [
+                "ee8b6cde37d4719"
+              ],
+              [
+                "ea6bee3119798c1"
+              ],
+              [
+                "e693eed4b55c0d8"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 96,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-111-constrained-anthropic-full/response.json",
+      "response_sha256": "b30c65168f731670e171175ca3af8d414266e0b4b23200060a4384b6c25b6050",
+      "result_sha256": "a4ba2d173da69056bd3360d61d1148832eca2617d4e39322de38f6ee02007543"
+    },
+    {
+      "id": "w20261023042-117-stress-anthropic-gtm",
+      "primary_score": {
+        "id": "w20261023042-117-stress-anthropic-gtm",
+        "case_id": "w20261023042-117-stress",
+        "world": "w20261023042-117",
+        "family": "enterprise_software",
+        "level": "stress",
+        "arm": "gtm",
+        "provider": "anthropic",
+        "optimum": 90,
+        "recoverable_value": 9,
+        "returned_value": 0,
+        "normalized_value": 0.0,
+        "context_normalized_value": 0.1,
+        "feasible_grounded": false,
+        "exact_optimum": false,
+        "actionable": false,
+        "abstained": false,
+        "unsafe": true,
+        "valid_action_count": 1,
+        "actions_count": 2,
+        "errors": [
+          "unsupported_action"
+        ],
+        "cost_units": 7,
+        "status": "completed",
+        "seconds": 14.991127925997716,
+        "estimated_usd": 0.050868,
+        "input_tokens": 5207,
+        "output_tokens": 1502,
+        "evidence_bytes": 8149
+      },
+      "action_details": [
+        {
+          "account": "Grove-117",
+          "action": "reference_intro",
+          "value": 5,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Cedar-117",
+          "action": "workshop",
+          "value": 4,
+          "missing_citation_groups": [
+            [
+              {
+                "id": "eabb6970346c275",
+                "entity": "Cedar-117",
+                "relation": "priority",
+                "value": 1
+              }
+            ]
+          ],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Grove-117",
+            "action": "reference_intro",
+            "sources": [
+              "e83eeff1854eb17",
+              "e81db8619744286",
+              "ea5b3b57a410be9",
+              "e0fd52a36bbac1d",
+              "e8912082f8cf3a4",
+              "ef9e332c4f20b9a",
+              "e74df1408a29691",
+              "ef66156cdd27d3b",
+              "e90d41050f6441b",
+              "e1e88207ad13d66",
+              "e02a34f4c2bbcf3"
+            ]
+          },
+          {
+            "account": "Cedar-117",
+            "action": "workshop",
+            "sources": [
+              "e83eeff1854eb17",
+              "e96f838521aa7b8",
+              "e8678999fba7a6e",
+              "e0d45066f146089",
+              "e224d17d25e6f64",
+              "ee96e2c616419cc",
+              "e8562b35c7283e7",
+              "e2e48963a4ca8e1",
+              "ea035bad83eb289",
+              "ecfe08703f1fe12",
+              "e02a34f4c2bbcf3"
+            ]
+          }
+        ],
+        "missing": [
+          "Pine-117: observed offering for need-7, plus the downstream proof and approved verified status",
+          "Flint-117: approved priority, observed profile, consent, signal and initiative chain",
+          "Kestrel-117: approved priority, observed profile, consent, signal and initiative chain",
+          "Harbor-117: approved priority, observed profile, consent, signal and initiative chain"
+        ],
+        "reasoning_summary": "The approved seller policy (e83eeff1854eb17) is used. The proposed policy is ignored. Grove-117 (FR, services, renewal signal, priority 1) has a full verified chain and a shareable proof, so reference_intro is eligible: cost 4, score 1x5=5. Cedar-117 (US, services, risk signal, priority 1) has a full verified chain and capacity true, so workshop is eligible: cost 3, score 1x4=4. Its assurance is false, so assurance_pack is not eligible. Juniper-117 and North-117 are in the blocked 'restricted' sector. Pine-117's chain breaks because need-7 has no offering record. Flint-117, Kestrel-117 and Harbor-117 have no evidence. The plan costs 7 of the budget of 8 for a total of 9 policy points, which is the maximum."
+      },
+      "context_optimum_plan": {
+        "value": 9,
+        "plan": [
+          {
+            "account": "Cedar-117",
+            "action": "workshop",
+            "cost": 3,
+            "value": 4,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e96f838521aa7b8"
+              ],
+              [
+                "e8678999fba7a6e"
+              ],
+              [
+                "e0d45066f146089"
+              ],
+              [
+                "e224d17d25e6f64"
+              ],
+              [
+                "ee96e2c616419cc"
+              ],
+              [
+                "e8562b35c7283e7"
+              ],
+              [
+                "e2e48963a4ca8e1"
+              ],
+              [
+                "ea035bad83eb289"
+              ],
+              [
+                "ecfe08703f1fe12"
+              ],
+              [
+                "eabb6970346c275"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-117",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 5,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e81db8619744286"
+              ],
+              [
+                "ea5b3b57a410be9"
+              ],
+              [
+                "e0fd52a36bbac1d"
+              ],
+              [
+                "e8912082f8cf3a4"
+              ],
+              [
+                "ef9e332c4f20b9a"
+              ],
+              [
+                "e74df1408a29691"
+              ],
+              [
+                "ef66156cdd27d3b"
+              ],
+              [
+                "e90d41050f6441b"
+              ],
+              [
+                "e1e88207ad13d66"
+              ],
+              [
+                "e02a34f4c2bbcf3"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-117-stress",
+        "world": "w20261023042-117",
+        "eligible": [
+          {
+            "account": "Grove-117",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 3,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e81db8619744286"
+              ],
+              [
+                "ea5b3b57a410be9"
+              ],
+              [
+                "e0fd52a36bbac1d"
+              ],
+              [
+                "e8912082f8cf3a4"
+              ],
+              [
+                "ef9e332c4f20b9a"
+              ],
+              [
+                "e74df1408a29691"
+              ],
+              [
+                "ef66156cdd27d3b"
+              ],
+              [
+                "e90d41050f6441b"
+              ],
+              [
+                "e02a34f4c2bbcf3"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-117",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 5,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e81db8619744286"
+              ],
+              [
+                "ea5b3b57a410be9"
+              ],
+              [
+                "e0fd52a36bbac1d"
+              ],
+              [
+                "e8912082f8cf3a4"
+              ],
+              [
+                "ef9e332c4f20b9a"
+              ],
+              [
+                "e74df1408a29691"
+              ],
+              [
+                "ef66156cdd27d3b"
+              ],
+              [
+                "e90d41050f6441b"
+              ],
+              [
+                "e1e88207ad13d66"
+              ],
+              [
+                "e02a34f4c2bbcf3"
+              ]
+            ]
+          },
+          {
+            "account": "Grove-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 1,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e81db8619744286"
+              ],
+              [
+                "ea5b3b57a410be9"
+              ],
+              [
+                "e0fd52a36bbac1d"
+              ],
+              [
+                "e8912082f8cf3a4"
+              ],
+              [
+                "ef9e332c4f20b9a"
+              ],
+              [
+                "e74df1408a29691"
+              ],
+              [
+                "ef66156cdd27d3b"
+              ],
+              [
+                "e90d41050f6441b"
+              ],
+              [
+                "e02a34f4c2bbcf3"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-117",
+            "action": "workshop",
+            "cost": 3,
+            "value": 44,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e2817631213bec5"
+              ],
+              [
+                "e91bd8808451eb7"
+              ],
+              [
+                "e416f96578f32fd"
+              ],
+              [
+                "e9a5d914f710a7b"
+              ],
+              [
+                "ec934f9a299465c"
+              ],
+              [
+                "ecca596078066c7"
+              ],
+              [
+                "e03194f244f160b"
+              ],
+              [
+                "e6d811a5e5eb937"
+              ],
+              [
+                "eebad375d0a3a9c"
+              ],
+              [
+                "edee03cb42536f8"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 11,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e2817631213bec5"
+              ],
+              [
+                "e91bd8808451eb7"
+              ],
+              [
+                "e416f96578f32fd"
+              ],
+              [
+                "e9a5d914f710a7b"
+              ],
+              [
+                "ec934f9a299465c"
+              ],
+              [
+                "ecca596078066c7"
+              ],
+              [
+                "e03194f244f160b"
+              ],
+              [
+                "e6d811a5e5eb937"
+              ],
+              [
+                "edee03cb42536f8"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-117",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 12,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "ed6aef08f0d1b28"
+              ],
+              [
+                "e4a14e911ea03a9"
+              ],
+              [
+                "e0a8aee0b99b68e"
+              ],
+              [
+                "e5165473835bc0a"
+              ],
+              [
+                "e98f297675f2f39"
+              ],
+              [
+                "e3e215b93bd0d83"
+              ],
+              [
+                "efeea0e83c22c32"
+              ],
+              [
+                "e14f5c77bb36e68"
+              ],
+              [
+                "e8aeb7fe3808fb4"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-117",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 30,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "ed6aef08f0d1b28"
+              ],
+              [
+                "e4a14e911ea03a9"
+              ],
+              [
+                "e0a8aee0b99b68e"
+              ],
+              [
+                "e5165473835bc0a"
+              ],
+              [
+                "e98f297675f2f39"
+              ],
+              [
+                "e3e215b93bd0d83"
+              ],
+              [
+                "efeea0e83c22c32"
+              ],
+              [
+                "e14f5c77bb36e68"
+              ],
+              [
+                "e6de873940f9f76"
+              ],
+              [
+                "e8aeb7fe3808fb4"
+              ]
+            ]
+          },
+          {
+            "account": "Harbor-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "ed6aef08f0d1b28"
+              ],
+              [
+                "e4a14e911ea03a9"
+              ],
+              [
+                "e0a8aee0b99b68e"
+              ],
+              [
+                "e5165473835bc0a"
+              ],
+              [
+                "e98f297675f2f39"
+              ],
+              [
+                "e3e215b93bd0d83"
+              ],
+              [
+                "efeea0e83c22c32"
+              ],
+              [
+                "e14f5c77bb36e68"
+              ],
+              [
+                "e8aeb7fe3808fb4"
+              ]
+            ]
+          },
+          {
+            "account": "Cedar-117",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 2,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e96f838521aa7b8"
+              ],
+              [
+                "e8678999fba7a6e"
+              ],
+              [
+                "e0d45066f146089"
+              ],
+              [
+                "e224d17d25e6f64"
+              ],
+              [
+                "ee96e2c616419cc"
+              ],
+              [
+                "e8562b35c7283e7"
+              ],
+              [
+                "e2e48963a4ca8e1"
+              ],
+              [
+                "ea035bad83eb289"
+              ],
+              [
+                "eabb6970346c275"
+              ]
+            ]
+          },
+          {
+            "account": "Cedar-117",
+            "action": "workshop",
+            "cost": 3,
+            "value": 4,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e96f838521aa7b8"
+              ],
+              [
+                "e8678999fba7a6e"
+              ],
+              [
+                "e0d45066f146089"
+              ],
+              [
+                "e224d17d25e6f64"
+              ],
+              [
+                "ee96e2c616419cc"
+              ],
+              [
+                "e8562b35c7283e7"
+              ],
+              [
+                "e2e48963a4ca8e1"
+              ],
+              [
+                "ea035bad83eb289"
+              ],
+              [
+                "ecfe08703f1fe12"
+              ],
+              [
+                "eabb6970346c275"
+              ]
+            ]
+          },
+          {
+            "account": "Cedar-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 1,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e96f838521aa7b8"
+              ],
+              [
+                "e8678999fba7a6e"
+              ],
+              [
+                "e0d45066f146089"
+              ],
+              [
+                "e224d17d25e6f64"
+              ],
+              [
+                "ee96e2c616419cc"
+              ],
+              [
+                "e8562b35c7283e7"
+              ],
+              [
+                "e2e48963a4ca8e1"
+              ],
+              [
+                "ea035bad83eb289"
+              ],
+              [
+                "eabb6970346c275"
+              ]
+            ]
+          },
+          {
+            "account": "Pine-117",
+            "action": "renewal_review",
+            "cost": 2,
+            "value": 24,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e89f3351023ae74"
+              ],
+              [
+                "e48668a3db4477b"
+              ],
+              [
+                "e6fd0efdb08d529"
+              ],
+              [
+                "e0e0233fe82e09c"
+              ],
+              [
+                "ef04b91a88f6736"
+              ],
+              [
+                "eb972bce84aa21b"
+              ],
+              [
+                "e54d04d41bfc287"
+              ],
+              [
+                "e22e5fdaf868730"
+              ],
+              [
+                "ed69b6012afc696"
+              ]
+            ]
+          },
+          {
+            "account": "Pine-117",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 40,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e89f3351023ae74"
+              ],
+              [
+                "e48668a3db4477b"
+              ],
+              [
+                "e6fd0efdb08d529"
+              ],
+              [
+                "e0e0233fe82e09c"
+              ],
+              [
+                "ef04b91a88f6736"
+              ],
+              [
+                "eb972bce84aa21b"
+              ],
+              [
+                "e54d04d41bfc287"
+              ],
+              [
+                "e22e5fdaf868730"
+              ],
+              [
+                "e64be75fbe116d4"
+              ],
+              [
+                "ed69b6012afc696"
+              ]
+            ]
+          },
+          {
+            "account": "Pine-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 8,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e89f3351023ae74"
+              ],
+              [
+                "e48668a3db4477b"
+              ],
+              [
+                "e6fd0efdb08d529"
+              ],
+              [
+                "e0e0233fe82e09c"
+              ],
+              [
+                "ef04b91a88f6736"
+              ],
+              [
+                "eb972bce84aa21b"
+              ],
+              [
+                "e54d04d41bfc287"
+              ],
+              [
+                "e22e5fdaf868730"
+              ],
+              [
+                "ed69b6012afc696"
+              ]
+            ]
+          }
+        ],
+        "optimum": 90,
+        "reference_plan": [
+          {
+            "account": "Harbor-117",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 6,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "ed6aef08f0d1b28"
+              ],
+              [
+                "e4a14e911ea03a9"
+              ],
+              [
+                "e0a8aee0b99b68e"
+              ],
+              [
+                "e5165473835bc0a"
+              ],
+              [
+                "e98f297675f2f39"
+              ],
+              [
+                "e3e215b93bd0d83"
+              ],
+              [
+                "efeea0e83c22c32"
+              ],
+              [
+                "e14f5c77bb36e68"
+              ],
+              [
+                "e8aeb7fe3808fb4"
+              ]
+            ]
+          },
+          {
+            "account": "Kestrel-117",
+            "action": "workshop",
+            "cost": 3,
+            "value": 44,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e2817631213bec5"
+              ],
+              [
+                "e91bd8808451eb7"
+              ],
+              [
+                "e416f96578f32fd"
+              ],
+              [
+                "e9a5d914f710a7b"
+              ],
+              [
+                "ec934f9a299465c"
+              ],
+              [
+                "ecca596078066c7"
+              ],
+              [
+                "e03194f244f160b"
+              ],
+              [
+                "e6d811a5e5eb937"
+              ],
+              [
+                "eebad375d0a3a9c"
+              ],
+              [
+                "edee03cb42536f8"
+              ]
+            ]
+          },
+          {
+            "account": "Pine-117",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 40,
+            "support_groups": [
+              [
+                "e83eeff1854eb17"
+              ],
+              [
+                "e89f3351023ae74"
+              ],
+              [
+                "e48668a3db4477b"
+              ],
+              [
+                "e6fd0efdb08d529"
+              ],
+              [
+                "e0e0233fe82e09c"
+              ],
+              [
+                "ef04b91a88f6736"
+              ],
+              [
+                "eb972bce84aa21b"
+              ],
+              [
+                "e54d04d41bfc287"
+              ],
+              [
+                "e22e5fdaf868730"
+              ],
+              [
+                "e64be75fbe116d4"
+              ],
+              [
+                "ed69b6012afc696"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 9,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-117-stress-anthropic-gtm/response.json",
+      "response_sha256": "92be6d47113799499bd2f33714e2fea74653d74b908be89194b1066e5b95f2f1",
+      "result_sha256": "47b3f8d0760fe3feb1ee76628362cdf119a7ac59c2d1715ef0f6a1f2a1b20f56"
+    },
+    {
+      "id": "w20261023042-119-stress-openai-gtm",
+      "primary_score": {
+        "id": "w20261023042-119-stress-openai-gtm",
+        "case_id": "w20261023042-119-stress",
+        "world": "w20261023042-119",
+        "family": "professional_services",
+        "level": "stress",
+        "arm": "gtm",
+        "provider": "openai",
+        "optimum": 92,
+        "recoverable_value": 74,
+        "returned_value": 72,
+        "normalized_value": 0.782608695652174,
+        "context_normalized_value": 0.8043478260869565,
+        "feasible_grounded": true,
+        "exact_optimum": false,
+        "actionable": true,
+        "abstained": false,
+        "unsafe": false,
+        "valid_action_count": 3,
+        "actions_count": 3,
+        "errors": [],
+        "cost_units": 8,
+        "status": "completed",
+        "seconds": 28.52587126099388,
+        "estimated_usd": 0.0176335,
+        "input_tokens": 3286,
+        "output_tokens": 942,
+        "evidence_bytes": 8154
+      },
+      "action_details": [
+        {
+          "account": "Delta-119",
+          "action": "reference_intro",
+          "value": 40,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Juniper-119",
+          "action": "assurance_pack",
+          "value": 20,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        },
+        {
+          "account": "Aster-119",
+          "action": "research_brief",
+          "value": 12,
+          "missing_citation_groups": [],
+          "unsupplied_citations": []
+        }
+      ],
+      "output": {
+        "actions": [
+          {
+            "account": "Delta-119",
+            "action": "reference_intro",
+            "sources": [
+              "e93e2c6f9d6e895",
+              "e2075e5e415a208",
+              "e666bcf70e55f3e",
+              "e75ccd286db0585",
+              "ef66169fbc5a336",
+              "ef8b41bb08e02a4",
+              "efa9e03e4fa9181",
+              "ebbb0828aa86bb3",
+              "e4922dafe607a21",
+              "e1347b7c1c7fc24",
+              "eebf2c5b9de5453"
+            ]
+          },
+          {
+            "account": "Juniper-119",
+            "action": "assurance_pack",
+            "sources": [
+              "e93e2c6f9d6e895",
+              "e27f897e77dc2d6",
+              "ea022cc4376c463",
+              "ec26869c943453b",
+              "ed84920fbbdb1e5",
+              "ee605e001d85a71",
+              "ec1868cfaac3004",
+              "ebef50365601df1",
+              "e247b6a40a150a3",
+              "ec6c556a669a77e",
+              "e256cf6a99ff608"
+            ]
+          },
+          {
+            "account": "Aster-119",
+            "action": "research_brief",
+            "sources": [
+              "e93e2c6f9d6e895",
+              "e00309e7a2ec5d1",
+              "e2fa2adccb801a0",
+              "e3631d4b1f902dd",
+              "eb94f17f46498a9",
+              "ee926409cdf40fe",
+              "edcbdf7bddfed86",
+              "e6cb6801dfa1b14",
+              "edae226fab06d7f",
+              "e37829e8c021eae"
+            ]
+          }
+        ],
+        "missing": [
+          "Iris-119, Mesa-119 and Kestrel-119: supply observed profile, consent, signal and complete initiative-to-proof links, approved integer priority, and approved proof verification; action-specific approvals are also required where applicable.",
+          "Larch-119: resolve conflicting current observed consent values; the later false record does not supersede the true record. Supply observed initiative-7-to-need-to-offering-to-proof links and approved proof verification."
+        ],
+        "reasoning_summary": "The optimal supported plan uses three distinct accounts and the full budget of 8. Priority points are Delta 8×5=40, Juniper 5×4=20 and Aster 12×1=12, totaling 72 synthetic priority points, not expected revenue. Each selected action meets its signal and approval requirements. Grove is blocked by false consent and false proof verification; Larch is blocked by conflicting consent and incomplete evidence. The proposed policy is not used."
+      },
+      "context_optimum_plan": {
+        "value": 74,
+        "plan": [
+          {
+            "account": "Aster-119",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 24,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e00309e7a2ec5d1"
+              ],
+              [
+                "ee926409cdf40fe"
+              ],
+              [
+                "eb94f17f46498a9"
+              ],
+              [
+                "e2fa2adccb801a0"
+              ],
+              [
+                "edcbdf7bddfed86"
+              ],
+              [
+                "e6cb6801dfa1b14"
+              ],
+              [
+                "edae226fab06d7f"
+              ],
+              [
+                "e37829e8c021eae"
+              ],
+              [
+                "e3631d4b1f902dd"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-119",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 40,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e75ccd286db0585"
+              ],
+              [
+                "ef8b41bb08e02a4"
+              ],
+              [
+                "e666bcf70e55f3e"
+              ],
+              [
+                "e2075e5e415a208"
+              ],
+              [
+                "efa9e03e4fa9181"
+              ],
+              [
+                "ebbb0828aa86bb3"
+              ],
+              [
+                "e4922dafe607a21"
+              ],
+              [
+                "e1347b7c1c7fc24"
+              ],
+              [
+                "eebf2c5b9de5453"
+              ],
+              [
+                "ef66169fbc5a336"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-119",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 10,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed84920fbbdb1e5"
+              ],
+              [
+                "ee605e001d85a71"
+              ],
+              [
+                "e27f897e77dc2d6"
+              ],
+              [
+                "ea022cc4376c463"
+              ],
+              [
+                "ec1868cfaac3004"
+              ],
+              [
+                "ebef50365601df1"
+              ],
+              [
+                "ec6c556a669a77e"
+              ],
+              [
+                "e256cf6a99ff608"
+              ],
+              [
+                "ec26869c943453b"
+              ]
+            ]
+          }
+        ]
+      },
+      "full_optimum": {
+        "case_id": "w20261023042-119-stress",
+        "world": "w20261023042-119",
+        "eligible": [
+          {
+            "account": "Delta-119",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 16,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e75ccd286db0585"
+              ],
+              [
+                "ef8b41bb08e02a4"
+              ],
+              [
+                "e666bcf70e55f3e"
+              ],
+              [
+                "e2075e5e415a208"
+              ],
+              [
+                "efa9e03e4fa9181"
+              ],
+              [
+                "ebbb0828aa86bb3"
+              ],
+              [
+                "e4922dafe607a21"
+              ],
+              [
+                "e1347b7c1c7fc24"
+              ],
+              [
+                "ef66169fbc5a336"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-119",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 40,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e75ccd286db0585"
+              ],
+              [
+                "ef8b41bb08e02a4"
+              ],
+              [
+                "e666bcf70e55f3e"
+              ],
+              [
+                "e2075e5e415a208"
+              ],
+              [
+                "efa9e03e4fa9181"
+              ],
+              [
+                "ebbb0828aa86bb3"
+              ],
+              [
+                "e4922dafe607a21"
+              ],
+              [
+                "e1347b7c1c7fc24"
+              ],
+              [
+                "eebf2c5b9de5453"
+              ],
+              [
+                "ef66169fbc5a336"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-119",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 8,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e75ccd286db0585"
+              ],
+              [
+                "ef8b41bb08e02a4"
+              ],
+              [
+                "e666bcf70e55f3e"
+              ],
+              [
+                "e2075e5e415a208"
+              ],
+              [
+                "efa9e03e4fa9181"
+              ],
+              [
+                "ebbb0828aa86bb3"
+              ],
+              [
+                "e4922dafe607a21"
+              ],
+              [
+                "e1347b7c1c7fc24"
+              ],
+              [
+                "ef66169fbc5a336"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-119",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 10,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed84920fbbdb1e5"
+              ],
+              [
+                "ee605e001d85a71"
+              ],
+              [
+                "e27f897e77dc2d6"
+              ],
+              [
+                "ea022cc4376c463"
+              ],
+              [
+                "ec1868cfaac3004"
+              ],
+              [
+                "ebef50365601df1"
+              ],
+              [
+                "ec6c556a669a77e"
+              ],
+              [
+                "e256cf6a99ff608"
+              ],
+              [
+                "ec26869c943453b"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-119",
+            "action": "assurance_pack",
+            "cost": 3,
+            "value": 20,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed84920fbbdb1e5"
+              ],
+              [
+                "ee605e001d85a71"
+              ],
+              [
+                "e27f897e77dc2d6"
+              ],
+              [
+                "ea022cc4376c463"
+              ],
+              [
+                "ec1868cfaac3004"
+              ],
+              [
+                "ebef50365601df1"
+              ],
+              [
+                "ec6c556a669a77e"
+              ],
+              [
+                "e256cf6a99ff608"
+              ],
+              [
+                "e247b6a40a150a3"
+              ],
+              [
+                "ec26869c943453b"
+              ]
+            ]
+          },
+          {
+            "account": "Juniper-119",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 5,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed84920fbbdb1e5"
+              ],
+              [
+                "ee605e001d85a71"
+              ],
+              [
+                "e27f897e77dc2d6"
+              ],
+              [
+                "ea022cc4376c463"
+              ],
+              [
+                "ec1868cfaac3004"
+              ],
+              [
+                "ebef50365601df1"
+              ],
+              [
+                "ec6c556a669a77e"
+              ],
+              [
+                "e256cf6a99ff608"
+              ],
+              [
+                "ec26869c943453b"
+              ]
+            ]
+          },
+          {
+            "account": "Aster-119",
+            "action": "diagnostic",
+            "cost": 2,
+            "value": 24,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e00309e7a2ec5d1"
+              ],
+              [
+                "ee926409cdf40fe"
+              ],
+              [
+                "eb94f17f46498a9"
+              ],
+              [
+                "e2fa2adccb801a0"
+              ],
+              [
+                "edcbdf7bddfed86"
+              ],
+              [
+                "e6cb6801dfa1b14"
+              ],
+              [
+                "edae226fab06d7f"
+              ],
+              [
+                "e37829e8c021eae"
+              ],
+              [
+                "e3631d4b1f902dd"
+              ]
+            ]
+          },
+          {
+            "account": "Aster-119",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 12,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e00309e7a2ec5d1"
+              ],
+              [
+                "ee926409cdf40fe"
+              ],
+              [
+                "eb94f17f46498a9"
+              ],
+              [
+                "e2fa2adccb801a0"
+              ],
+              [
+                "edcbdf7bddfed86"
+              ],
+              [
+                "e6cb6801dfa1b14"
+              ],
+              [
+                "edae226fab06d7f"
+              ],
+              [
+                "e37829e8c021eae"
+              ],
+              [
+                "e3631d4b1f902dd"
+              ]
+            ]
+          },
+          {
+            "account": "Iris-119",
+            "action": "workshop",
+            "cost": 3,
+            "value": 40,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed49ff37b47353b"
+              ],
+              [
+                "e667d57970005f4"
+              ],
+              [
+                "e43ffd789a1fe8d"
+              ],
+              [
+                "e72c52155d95cc4"
+              ],
+              [
+                "edefc915eb8b264"
+              ],
+              [
+                "e6c70a6c6538b0b"
+              ],
+              [
+                "eeb4b78c17a7921"
+              ],
+              [
+                "e5d7f2b956628ff"
+              ],
+              [
+                "e887463f9884e71"
+              ],
+              [
+                "eca4e0e7a340bf7"
+              ]
+            ]
+          },
+          {
+            "account": "Iris-119",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 10,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed49ff37b47353b"
+              ],
+              [
+                "e667d57970005f4"
+              ],
+              [
+                "e43ffd789a1fe8d"
+              ],
+              [
+                "e72c52155d95cc4"
+              ],
+              [
+                "edefc915eb8b264"
+              ],
+              [
+                "e6c70a6c6538b0b"
+              ],
+              [
+                "eeb4b78c17a7921"
+              ],
+              [
+                "e5d7f2b956628ff"
+              ],
+              [
+                "eca4e0e7a340bf7"
+              ]
+            ]
+          }
+        ],
+        "optimum": 92,
+        "reference_plan": [
+          {
+            "account": "Aster-119",
+            "action": "research_brief",
+            "cost": 1,
+            "value": 12,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e00309e7a2ec5d1"
+              ],
+              [
+                "ee926409cdf40fe"
+              ],
+              [
+                "eb94f17f46498a9"
+              ],
+              [
+                "e2fa2adccb801a0"
+              ],
+              [
+                "edcbdf7bddfed86"
+              ],
+              [
+                "e6cb6801dfa1b14"
+              ],
+              [
+                "edae226fab06d7f"
+              ],
+              [
+                "e37829e8c021eae"
+              ],
+              [
+                "e3631d4b1f902dd"
+              ]
+            ]
+          },
+          {
+            "account": "Delta-119",
+            "action": "reference_intro",
+            "cost": 4,
+            "value": 40,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "e75ccd286db0585"
+              ],
+              [
+                "ef8b41bb08e02a4"
+              ],
+              [
+                "e666bcf70e55f3e"
+              ],
+              [
+                "e2075e5e415a208"
+              ],
+              [
+                "efa9e03e4fa9181"
+              ],
+              [
+                "ebbb0828aa86bb3"
+              ],
+              [
+                "e4922dafe607a21"
+              ],
+              [
+                "e1347b7c1c7fc24"
+              ],
+              [
+                "eebf2c5b9de5453"
+              ],
+              [
+                "ef66169fbc5a336"
+              ]
+            ]
+          },
+          {
+            "account": "Iris-119",
+            "action": "workshop",
+            "cost": 3,
+            "value": 40,
+            "support_groups": [
+              [
+                "e93e2c6f9d6e895"
+              ],
+              [
+                "ed49ff37b47353b"
+              ],
+              [
+                "e667d57970005f4"
+              ],
+              [
+                "e43ffd789a1fe8d"
+              ],
+              [
+                "e72c52155d95cc4"
+              ],
+              [
+                "edefc915eb8b264"
+              ],
+              [
+                "e6c70a6c6538b0b"
+              ],
+              [
+                "eeb4b78c17a7921"
+              ],
+              [
+                "e5d7f2b956628ff"
+              ],
+              [
+                "e887463f9884e71"
+              ],
+              [
+                "eca4e0e7a340bf7"
+              ]
+            ]
+          }
+        ]
+      },
+      "citation_relaxed_value": 72,
+      "response_path": "experiments/challenge/main-reader-v1/w20261023042-119-stress-openai-gtm/response.json",
+      "response_sha256": "07b770fe8527b3a49d675358a1f613bbc5c8b8e233b711ec9a446f325ed5973d",
+      "result_sha256": "a6405d3501036d5678b7e5fe3b696e77a6738e1aa04169e929cf450b46aa87c7"
+    }
+  ],
+  "input_analysis_sha256": "014713014931d5f0cabdc79c967b6352b366cb0769ea70f6b81dbe50b2478008",
+  "fresh_api_calls": 0,
+  "independent_human_review": false
+}

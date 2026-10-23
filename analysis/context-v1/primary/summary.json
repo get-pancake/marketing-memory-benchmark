@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-10-22T21:19:02.288909+00:00",
+  "status": "post-hoc exploratory reanalysis after seeing v1 outcomes; not a new frozen main study",
+  "source_attempts_sha256": "947eb779dc5b59ce364919d6c5b52e681a6851f0803952ddba0c4ed1862102fd",
+  "script_sha256": "b944033e7e50d56a9b019e151e28945ce2b671a1a3588bc97f0e5733906fdd49",
+  "methods": {
+    "facet_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 5,
+      "positive_support_rate": 0.10416666666666667,
+      "reader_success_given_complete_support": 0,
+      "reader_given_complete_support_denominator": 5,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.5595031415343915
+    },
+    "full_context": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 48,
+      "positive_support_rate": 1,
+      "reader_success_given_complete_support": 25,
+      "reader_given_complete_support_denominator": 48,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 1.0
+    },
+    "generic_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 5,
+      "positive_support_rate": 0.10416666666666667,
+      "reader_success_given_complete_support": 2,
+      "reader_given_complete_support_denominator": 5,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.5110160383597884
+    },
+    "prompt_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 2,
+      "positive_support_rate": 0.041666666666666664,
+      "reader_success_given_complete_support": 0,
+      "reader_given_complete_support_denominator": 2,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.4173280423280423
+    },
+    "typed": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 48,
+      "positive_support_rate": 1,
+      "reader_success_given_complete_support": 21,
+      "reader_given_complete_support_denominator": 48,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.9861111111111112
+    },
+    "typed_history": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 34,
+      "positive_support_rate": 0.7083333333333334,
+      "reader_success_given_complete_support": 17,
+      "reader_given_complete_support_denominator": 34,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 75,
+      "mean_current_value_group_coverage": 0.8763020833333334
+    }
+  },
+  "exploratory_context_contrasts": {
+    "typed minus facet_hybrid": {
+      "mean": 0.8958333333333334,
+      "world_bootstrap_ci95": [
+        0.8333333333333334,
+        0.9583333333333334
+      ]
+    },
+    "typed minus full_context": {
+      "mean": 0,
+      "world_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "typed minus generic_hybrid": {
+      "mean": 0.8958333333333334,
+      "world_bootstrap_ci95": [
+        0.7708333333333334,
+        1.0
+      ]
+    },
+    "typed minus prompt_hybrid": {
+      "mean": 0.9583333333333334,
+      "world_bootstrap_ci95": [
+        0.8958333333333334,
+        1.0
+      ]
+    },
+    "typed minus typed_history": {
+      "mean": 0.2916666666666667,
+      "world_bootstrap_ci95": [
+        0.16666666666666666,
+        0.4166666666666667
+      ]
+    }
+  },
+  "limits": [
+    "Same typed facts and common current-view/access filter for every v1 adapter.",
+    "Conditioning reader success on available evidence is descriptive, not causal mediation.",
+    "False affordance counts apparently eligible alternatives created by incomplete evidence.",
+    "These adapters are not complete market memory products; all 12 company worlds are fictional."
+  ]
+}

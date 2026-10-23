@@ -1,0 +1,62 @@
+{
+  "base_url": "http://127.0.0.1:8080/v1",
+  "model": "qwen3-4b-instruct-2507-q4_k_m",
+  "max_output_tokens": 280,
+  "temperature": 0,
+  "seed": 20261022,
+  "timeout_seconds": 900,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "PlayRecommendation",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "recommend",
+              "request_evidence"
+            ]
+          },
+          "plays": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "template": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "template",
+                "evidence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "status",
+          "plays",
+          "missing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

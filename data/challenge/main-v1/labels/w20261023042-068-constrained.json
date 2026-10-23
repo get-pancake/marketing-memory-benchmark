@@ -1,0 +1,287 @@
+{
+  "case_id": "w20261023042-068-constrained",
+  "world": "w20261023042-068",
+  "eligible": [
+    {
+      "account": "Larch-68",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 4,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e04844fb079d4e1"
+        ],
+        [
+          "e00b3dfa3c5ce7e"
+        ],
+        [
+          "e1ffc309831c4c2"
+        ],
+        [
+          "e1ed436c484a0ef"
+        ],
+        [
+          "ef4359ff908291e"
+        ],
+        [
+          "e771a3b9d2130db"
+        ],
+        [
+          "e367330379ec606"
+        ],
+        [
+          "e038251fe4948ba"
+        ],
+        [
+          "e3f2803b6d9b198"
+        ]
+      ]
+    },
+    {
+      "account": "Larch-68",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 8,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e04844fb079d4e1"
+        ],
+        [
+          "e00b3dfa3c5ce7e"
+        ],
+        [
+          "e1ffc309831c4c2"
+        ],
+        [
+          "e1ed436c484a0ef"
+        ],
+        [
+          "ef4359ff908291e"
+        ],
+        [
+          "e771a3b9d2130db"
+        ],
+        [
+          "e367330379ec606"
+        ],
+        [
+          "e038251fe4948ba"
+        ],
+        [
+          "ed818d0a66c061e"
+        ],
+        [
+          "e3f2803b6d9b198"
+        ]
+      ]
+    },
+    {
+      "account": "Larch-68",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 2,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e04844fb079d4e1"
+        ],
+        [
+          "e00b3dfa3c5ce7e"
+        ],
+        [
+          "e1ffc309831c4c2"
+        ],
+        [
+          "e1ed436c484a0ef"
+        ],
+        [
+          "ef4359ff908291e"
+        ],
+        [
+          "e771a3b9d2130db"
+        ],
+        [
+          "e367330379ec606"
+        ],
+        [
+          "e038251fe4948ba"
+        ],
+        [
+          "e3f2803b6d9b198"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-68",
+      "action": "workshop",
+      "cost": 3,
+      "value": 32,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e2fd1c909cbcbb7"
+        ],
+        [
+          "e6213b207a453cd"
+        ],
+        [
+          "e2e644a3edac97c"
+        ],
+        [
+          "e5ff352e6e9c00e"
+        ],
+        [
+          "eed9f937551495e"
+        ],
+        [
+          "e3cef8e5968d4da"
+        ],
+        [
+          "ecd7f7bc8500fd0"
+        ],
+        [
+          "e7ead39c42e8e9e"
+        ],
+        [
+          "e668ef112769d8a"
+        ],
+        [
+          "eb62f0477d20016"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-68",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 8,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e2fd1c909cbcbb7"
+        ],
+        [
+          "e6213b207a453cd"
+        ],
+        [
+          "e2e644a3edac97c"
+        ],
+        [
+          "e5ff352e6e9c00e"
+        ],
+        [
+          "eed9f937551495e"
+        ],
+        [
+          "e3cef8e5968d4da"
+        ],
+        [
+          "ecd7f7bc8500fd0"
+        ],
+        [
+          "e7ead39c42e8e9e"
+        ],
+        [
+          "eb62f0477d20016"
+        ]
+      ]
+    }
+  ],
+  "optimum": 40,
+  "reference_plan": [
+    {
+      "account": "Larch-68",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 8,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e04844fb079d4e1"
+        ],
+        [
+          "e00b3dfa3c5ce7e"
+        ],
+        [
+          "e1ffc309831c4c2"
+        ],
+        [
+          "e1ed436c484a0ef"
+        ],
+        [
+          "ef4359ff908291e"
+        ],
+        [
+          "e771a3b9d2130db"
+        ],
+        [
+          "e367330379ec606"
+        ],
+        [
+          "e038251fe4948ba"
+        ],
+        [
+          "ed818d0a66c061e"
+        ],
+        [
+          "e3f2803b6d9b198"
+        ]
+      ]
+    },
+    {
+      "account": "Orchid-68",
+      "action": "workshop",
+      "cost": 3,
+      "value": 32,
+      "support_groups": [
+        [
+          "e57650d90f1786c"
+        ],
+        [
+          "e2fd1c909cbcbb7"
+        ],
+        [
+          "e6213b207a453cd"
+        ],
+        [
+          "e2e644a3edac97c"
+        ],
+        [
+          "e5ff352e6e9c00e"
+        ],
+        [
+          "eed9f937551495e"
+        ],
+        [
+          "e3cef8e5968d4da"
+        ],
+        [
+          "ecd7f7bc8500fd0"
+        ],
+        [
+          "e7ead39c42e8e9e"
+        ],
+        [
+          "e668ef112769d8a"
+        ],
+        [
+          "eb62f0477d20016"
+        ]
+      ]
+    }
+  ]
+}

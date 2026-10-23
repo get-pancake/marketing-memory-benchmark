@@ -1,0 +1,946 @@
+{
+  "catalog": [
+    {
+      "id": "research_hiring",
+      "objective": "pipeline",
+      "signal": "team_hiring",
+      "pain": "manual_reporting",
+      "units": 2,
+      "capabilities": [
+        "inspect_signal",
+        "select_accounts"
+      ],
+      "mechanism": "Hiring may indicate reporting work; this is a hypothesis, not purchase intent."
+    },
+    {
+      "id": "verify_hiring",
+      "objective": "pipeline",
+      "signal": "team_hiring",
+      "pain": "manual_reporting",
+      "units": 3,
+      "capabilities": [
+        "inspect_signal",
+        "verify_role",
+        "select_accounts"
+      ],
+      "mechanism": "Verify the buyer role before considering a reporting-oriented Play."
+    },
+    {
+      "id": "research_migration",
+      "objective": "pipeline",
+      "signal": "system_migration",
+      "pain": "integration_risk",
+      "units": 2,
+      "capabilities": [
+        "inspect_signal",
+        "select_accounts"
+      ],
+      "mechanism": "A migration may motivate integration research; it does not establish demand."
+    },
+    {
+      "id": "verify_migration",
+      "objective": "pipeline",
+      "signal": "system_migration",
+      "pain": "integration_risk",
+      "units": 3,
+      "capabilities": [
+        "inspect_signal",
+        "verify_role",
+        "select_accounts"
+      ],
+      "mechanism": "Check the role and observed migration before proposing further research."
+    }
+  ],
+  "worlds": [
+    {
+      "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+      "events": [
+        {
+          "id": "b0a0c5a9-6e33-5f8b-9d29-f2e7a3e27b46",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "approved_role",
+          "value": "operations_director",
+          "source": "947065e9-8243-579e-a120-dc8c66bf337b",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "6442c026-a5f8-5ce0-9481-bd1e3ca3f60b",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "approved_geo",
+          "value": "EU",
+          "source": "dd137d07-fedd-5964-84c7-e795c4cd2970",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "d698bd5e-4cb5-52f2-af90-f022997001bb",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+          "relation": "account_role",
+          "value": "operations_director",
+          "source": "5b15b871-c0bb-55f4-ba79-786524b0ca5f",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "12e777dc-4fce-5040-bc37-48d9c909d288",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+          "relation": "account_geo",
+          "value": "EU",
+          "source": "e377acc4-6597-53af-ba46-e0bd12b03c05",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "b6031153-0d81-5047-9f33-7ee2b2e68f4a",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+          "relation": "observed_signal",
+          "value": "team_hiring",
+          "source": "879106c2-a958-5ce8-b21b-c382538ad714",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "a075c8ef-4573-5450-90ac-af524baad364",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "offering_pain",
+          "value": "manual_reporting",
+          "source": "7eb377c8-c44b-55b7-abfe-bc87fcb0f4e3",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "c784ba74-40a7-5c67-9025-432e2783c8a3",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "proof_for_pain",
+          "value": "manual_reporting",
+          "source": "e6a6c24d-27d4-5e54-bbb1-3e967cdadbe3",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales",
+            "proof"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "627ad085-c3d9-5734-aa7e-e0b08fb2d5d9",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+          "relation": "non_response",
+          "value": "No reply observed; cause unknown.",
+          "source": "d63996e7-6c9d-5579-b4f0-cef36d487809",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-02T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "36455c18-401d-5d08-a419-c22e02c8dd99",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "approved_geo",
+          "value": "EXCLUDED",
+          "source": "52d1ce15-3a99-5831-807a-88870a8767b4",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-02T00:00:00Z",
+          "authority": "proposed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "e8aa4eda-174d-5cc5-a217-cb3fb131ff61",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "seller",
+          "relation": "approved_role",
+          "value": "different_role",
+          "source": "1c4b1674-eabb-5ffd-934a-e9775826be9c",
+          "valid_from": "2026-01-04T00:00:00Z",
+          "observed_at": "2026-01-04T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": [
+            "b0a0c5a9-6e33-5f8b-9d29-f2e7a3e27b46"
+          ]
+        },
+        {
+          "id": "26384da8-1eb8-59c9-a820-a14fc33db72f",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+          "relation": "observed_signal",
+          "value": "signal_retracted",
+          "source": "257e78b1-bf31-55ba-9720-23c277227c5b",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-05T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": [
+            "b6031153-0d81-5047-9f33-7ee2b2e68f4a"
+          ]
+        },
+        {
+          "id": "5c8d39f3-040c-5265-9128-7797fdcb592c",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "48cf0484-1e1e-5dc6-ad5b-ae1d4316e3b7",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 0: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "e754ce89-016d-5183-9282-4c4dff894483",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "39f0c79d-1637-5b75-9bfd-14ba78ae41f2",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "4bc34611-e70f-5dc0-a661-a7dc578c9d4d",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 1: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "fa17867e-a2f3-5931-85dc-d7e9f54af48b",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "62d7acdb-68c3-5db4-a566-033b09943832",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "7700386a-6578-5345-abe7-85ca405b5994",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 2: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "de3443d5-bac2-5cb0-a0eb-0af5d9566017",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "1b972e41-da29-5b12-8eb6-b1282d460c57",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "9ece9982-a647-5236-8f87-7daaf71ebb15",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 3: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "b5ca6ad4-19e7-524e-99b8-4d37524793d3",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "3211ede0-db01-5f78-868e-a413b1801f55",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "a3e7d495-ee0e-59f9-b9ec-d3a7ca3610d2",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 4: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "8f55a5dc-b4a3-505f-9526-11d005f4af72",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "4d25df76-7ed9-51a6-abe9-9838153867fc",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "8593f296-0b39-542d-aa0b-49267aa79e18",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 5: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "82c402fa-9817-5cd3-a6c2-51a36270e0e0",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "8a7d2454-a9d8-552a-b570-3469b1d3f511",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "482b7618-3ed2-57e5-8430-b3c25d2fec41",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 6: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "bdf90c79-c0bc-57f5-bc61-70f51dc2c715",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "1edc6d80-38f9-51c9-8616-31ea26a34527",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "1a30c9db-ba93-5ee2-b9aa-08047a0b1976",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 7: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "508a9e28-96bd-5091-a0dc-0d8ba5e4e137",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "8feb96bd-91c5-5354-aacb-5d9cd3b173bf",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "d0b41113-94d9-5eb7-b03f-94c2758679f6",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 8: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "261ff80f-3f61-540f-b3d0-52179a11bd5c",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "7d56c974-506b-5564-93ca-795e5b7ecd04",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "477fefcb-2f8c-50ba-9ab7-dd6db6bb57a1",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 9: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "04894926-6fa5-55e3-9499-df865277d26f",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "0cc1ddc9-d60f-5ece-b303-76ec4be03811",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "14135993-bbaa-5383-954d-6ac4680f21cb",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 10: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "6c8bd580-2277-59f1-8908-c03d68f3c7bd",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "06499d72-398d-50b9-80c4-d379381ad937",
+          "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+          "subject": "99c89184-4e60-5d09-9c39-1900c5910119",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 11: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "a0871087-b0ac-5339-87eb-23e758fc8270",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        }
+      ]
+    },
+    {
+      "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+      "events": [
+        {
+          "id": "d44e8639-8b10-5cba-aa9d-3ae2ac08f2d0",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "approved_role",
+          "value": "engineering_director",
+          "source": "3d7b746a-0655-54fb-81e5-b3e5f52470ed",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "479f4e6a-1812-5a72-954d-e76b62954015",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "approved_geo",
+          "value": "US",
+          "source": "12937433-f3f3-5dcc-8197-1da0d6d3f2bb",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "d15d2281-3321-578c-8869-84f461727dc2",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+          "relation": "account_role",
+          "value": "engineering_director",
+          "source": "0529f8c1-6b51-509e-a837-3df588aad333",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "b8eb8e53-fd5d-5591-af30-9dff1452b5f3",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+          "relation": "account_geo",
+          "value": "US",
+          "source": "fe5760b7-55ae-5aa7-9068-511663488278",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "eddafdc1-b7b4-5c8d-a8e2-ebbd5995d167",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+          "relation": "observed_signal",
+          "value": "system_migration",
+          "source": "9a5b59dd-690d-572e-8865-6a862ce3fda8",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "53a2375e-2ec0-542c-8fea-debf43442ed4",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "offering_pain",
+          "value": "integration_risk",
+          "source": "6589a19d-f228-51cc-b6bc-b6ee7c732b4a",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "77b0f56a-bdf3-58cf-bb9a-7f70fd27729b",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "proof_for_pain",
+          "value": "integration_risk",
+          "source": "42ae9547-6ecd-57a2-8bb9-e54b7a6d8074",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales",
+            "proof"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "7390fba0-c73f-5ed4-b436-2efbaf999261",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+          "relation": "non_response",
+          "value": "No reply observed; cause unknown.",
+          "source": "e99577ef-e3b9-549f-98f2-acd38288dc21",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-02T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "f50e1c39-c733-571f-a538-a9e6962bdd22",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "approved_geo",
+          "value": "EXCLUDED",
+          "source": "d1f363d1-259d-546d-808c-7c6d8dbe9f4a",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-02T00:00:00Z",
+          "authority": "proposed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "c4219d69-311e-5c72-82df-8d48baa023c9",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "seller",
+          "relation": "approved_role",
+          "value": "different_role",
+          "source": "7e842cec-9549-587a-a2be-400e46b012d4",
+          "valid_from": "2026-01-04T00:00:00Z",
+          "observed_at": "2026-01-04T00:00:00Z",
+          "authority": "approved",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": [
+            "d44e8639-8b10-5cba-aa9d-3ae2ac08f2d0"
+          ]
+        },
+        {
+          "id": "88b824bf-0c04-58bc-8e7e-7a23b996ed50",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+          "relation": "observed_signal",
+          "value": "signal_retracted",
+          "source": "56122b42-978c-59ea-bd1a-fe12b3b831f6",
+          "valid_from": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-01-05T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": [
+            "eddafdc1-b7b4-5c8d-a8e2-ebbd5995d167"
+          ]
+        },
+        {
+          "id": "bf856476-d4a2-5c66-962a-7b4a03f05c53",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "b2daa40d-f8eb-5ec7-8927-840e8b4ce0f9",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 0: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "a6fb5f69-89f7-5a95-874a-e976dc27dfe9",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "162d7d91-a609-555e-a5aa-d8e84dee1e28",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "1cc92675-8077-58c0-ab4f-2875fa50cf13",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 1: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "95f6a1f7-93ef-5c86-9230-537afc4814af",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "da21677d-8838-5b54-bebd-ab90a5641ba1",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "1abbc683-54af-53c1-8ae1-884b3313c723",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 2: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "c9afdcf5-d50b-5575-8d74-b59bb0f42872",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "b65acf9c-50c5-59be-bb4c-144c99ea0ed0",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "aabb17c6-3fcd-5fbf-bfbd-8b2f9808bec9",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 3: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "d50e09e5-c787-5323-a98b-5d22c0329e6e",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "0af300e5-578f-5b5e-bab1-15fc7d5fe2ea",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "57cb2b84-f76e-5e35-ae8b-20939bc56a35",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 4: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "a7769027-c838-5d69-b927-a51c648eb8e1",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "c4c06634-ae3b-514c-83e4-a1fed155a22d",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "1008e475-6642-59ee-bfbd-47c3d21e8f5d",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 5: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "2116f6fa-3265-5873-8835-9dfbcf9acc1e",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "eff67396-7369-50be-91a3-44d0cda9a18c",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "54ab1c2f-31d7-5e95-9f2c-5a561a3ba457",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 6: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "86e21c72-029a-5057-bf09-43815186d5cc",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "07966421-c842-5f18-a2b0-3b83a5f05ea5",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "ffe3af36-dc09-5e1f-86bf-8a08a9e539f2",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 7: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "26a3eeac-393c-5720-ba74-85af0378cb12",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "e1490c5b-2fb9-56b5-9e0c-3af3c475b57b",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "b8bd85b0-e174-505e-8855-c6589c6f5c16",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 8: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "30166e53-87fa-5eb6-b234-7ab64a092585",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "a20ebf9c-dd06-5efa-ae2e-8288d00bb7e3",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "0c54de78-73c8-5317-b42a-51bebb3d8408",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 9: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "5ca2f8d3-580a-5b93-bf82-6ec7392228bc",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "322b2c3b-49cd-5328-9eab-a267039de175",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "1517d44a-91d0-533e-a319-7c3a4880e0c7",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 10: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "72c4cf6f-3bbb-5ae3-b8cf-8e4f34b9ef99",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        },
+        {
+          "id": "ae9cbae8-c9b3-5161-af2e-1d177b6c4e1c",
+          "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+          "subject": "97ec3286-d3bf-5c01-8358-aaf66fe0423e",
+          "relation": "meeting_note",
+          "value": "Pipeline planning note 11: reporting, integration, hiring and migration remain topics for discussion.",
+          "source": "c056ab61-a54a-5d42-83a4-a6d0b5cb0944",
+          "valid_from": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-01-01T00:00:00Z",
+          "authority": "observed",
+          "scopes": [
+            "sales"
+          ],
+          "supersedes": []
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "31f889f7-66c6-5130-aae4-94670d325ffb",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-01T00:00:00Z",
+        "known_at": "2026-01-01T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "d9f90f57-c8e3-5242-86e8-2420a8aec172",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-02T00:00:00Z",
+        "known_at": "2026-01-02T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "06d3c5b2-977c-56a8-9a65-8bf6eea427b6",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-04T00:00:00Z",
+        "known_at": "2026-01-04T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "b3b01641-5910-5c44-b1fb-991c01c89acf",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-02T00:00:00Z",
+        "known_at": "2026-01-05T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "8ac56727-2926-5ef3-8009-a1adad70ec90",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-01T00:00:00Z",
+        "known_at": "2026-01-01T00:00:00Z",
+        "scopes": [
+          "sales"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "bae3310c-dc7e-5cc2-85b3-f8d3c1b59b8c",
+      "query": {
+        "world": "ed24ac3d-3346-57b9-a8a8-a3a86ae8a3ca",
+        "account": "e0d76695-05ab-592b-b6a5-b8a0c3a8aea0",
+        "objective": "pipeline",
+        "valid_at": "2026-01-03T00:00:00Z",
+        "known_at": "2026-01-03T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "6085ad3b-59dc-5073-9e94-ae0595388ad1",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-01T00:00:00Z",
+        "known_at": "2026-01-01T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "85c1bc2f-eb3a-5657-b95b-9a5c2d652a93",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-02T00:00:00Z",
+        "known_at": "2026-01-02T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "29876578-9797-5324-9ecf-ac7df0526773",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-04T00:00:00Z",
+        "known_at": "2026-01-04T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "9c3ec1ce-2c79-5225-abfb-1c1e3b1e2b76",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-02T00:00:00Z",
+        "known_at": "2026-01-05T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "fb7bf49a-c1ad-5726-ac55-c963b06d984b",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-01T00:00:00Z",
+        "known_at": "2026-01-01T00:00:00Z",
+        "scopes": [
+          "sales"
+        ],
+        "max_units": 4
+      }
+    },
+    {
+      "case_id": "561e0c8c-0df0-53c8-ad9b-590d6019f6de",
+      "query": {
+        "world": "c77f1927-739b-50a3-b546-53eece2e5543",
+        "account": "2e9b962e-9e7c-5eda-b22f-167b031be5dc",
+        "objective": "pipeline",
+        "valid_at": "2026-01-03T00:00:00Z",
+        "known_at": "2026-01-03T00:00:00Z",
+        "scopes": [
+          "sales",
+          "proof"
+        ],
+        "max_units": 4
+      }
+    }
+  ]
+}

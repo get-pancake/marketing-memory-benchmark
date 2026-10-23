@@ -1,0 +1,281 @@
+{
+  "case_id": "w20261023042-056-constrained",
+  "world": "w20261023042-056",
+  "eligible": [
+    {
+      "account": "Elm-56",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 2,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e61bbe7db02e359"
+        ],
+        [
+          "ea2bd7928e9bea0"
+        ],
+        [
+          "e076c89c01d6678"
+        ],
+        [
+          "e46ee889ca5c506"
+        ],
+        [
+          "ec58baac9387d9c"
+        ],
+        [
+          "e286f7c1940f526"
+        ],
+        [
+          "e654d4b1baccf17"
+        ],
+        [
+          "e721b4002e8d853"
+        ],
+        [
+          "e4ccaa4f53ed174"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-56",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 5,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e61bbe7db02e359"
+        ],
+        [
+          "ea2bd7928e9bea0"
+        ],
+        [
+          "e076c89c01d6678"
+        ],
+        [
+          "e46ee889ca5c506"
+        ],
+        [
+          "ec58baac9387d9c"
+        ],
+        [
+          "e286f7c1940f526"
+        ],
+        [
+          "e654d4b1baccf17"
+        ],
+        [
+          "e721b4002e8d853"
+        ],
+        [
+          "ef0ab7f9eb3dc04"
+        ],
+        [
+          "e4ccaa4f53ed174"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-56",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 1,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e61bbe7db02e359"
+        ],
+        [
+          "ea2bd7928e9bea0"
+        ],
+        [
+          "e076c89c01d6678"
+        ],
+        [
+          "e46ee889ca5c506"
+        ],
+        [
+          "ec58baac9387d9c"
+        ],
+        [
+          "e286f7c1940f526"
+        ],
+        [
+          "e654d4b1baccf17"
+        ],
+        [
+          "e721b4002e8d853"
+        ],
+        [
+          "e4ccaa4f53ed174"
+        ]
+      ]
+    },
+    {
+      "account": "Kestrel-56",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 24,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e903fcd89fa3802"
+        ],
+        [
+          "e947986933e3097"
+        ],
+        [
+          "e8f55670566adc4"
+        ],
+        [
+          "e27a2b6a7f4e654"
+        ],
+        [
+          "e7b58be0f1db070"
+        ],
+        [
+          "e67e24f2d3c73d8"
+        ],
+        [
+          "e57b0de62aa7e9b"
+        ],
+        [
+          "ee873827b2746a6"
+        ],
+        [
+          "ea965d1c2c04922"
+        ]
+      ]
+    },
+    {
+      "account": "Kestrel-56",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 12,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e903fcd89fa3802"
+        ],
+        [
+          "e947986933e3097"
+        ],
+        [
+          "e8f55670566adc4"
+        ],
+        [
+          "e27a2b6a7f4e654"
+        ],
+        [
+          "e7b58be0f1db070"
+        ],
+        [
+          "e67e24f2d3c73d8"
+        ],
+        [
+          "e57b0de62aa7e9b"
+        ],
+        [
+          "ee873827b2746a6"
+        ],
+        [
+          "ea965d1c2c04922"
+        ]
+      ]
+    }
+  ],
+  "optimum": 29,
+  "reference_plan": [
+    {
+      "account": "Elm-56",
+      "action": "reference_intro",
+      "cost": 4,
+      "value": 5,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e61bbe7db02e359"
+        ],
+        [
+          "ea2bd7928e9bea0"
+        ],
+        [
+          "e076c89c01d6678"
+        ],
+        [
+          "e46ee889ca5c506"
+        ],
+        [
+          "ec58baac9387d9c"
+        ],
+        [
+          "e286f7c1940f526"
+        ],
+        [
+          "e654d4b1baccf17"
+        ],
+        [
+          "e721b4002e8d853"
+        ],
+        [
+          "ef0ab7f9eb3dc04"
+        ],
+        [
+          "e4ccaa4f53ed174"
+        ]
+      ]
+    },
+    {
+      "account": "Kestrel-56",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 24,
+      "support_groups": [
+        [
+          "e557b8764cb6b55"
+        ],
+        [
+          "e903fcd89fa3802"
+        ],
+        [
+          "e947986933e3097"
+        ],
+        [
+          "e8f55670566adc4"
+        ],
+        [
+          "e27a2b6a7f4e654"
+        ],
+        [
+          "e7b58be0f1db070"
+        ],
+        [
+          "e67e24f2d3c73d8"
+        ],
+        [
+          "e57b0de62aa7e9b"
+        ],
+        [
+          "ee873827b2746a6"
+        ],
+        [
+          "ea965d1c2c04922"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "resp_060bc31a53fb0b2e016adaace99b6c87d19c2a369186694cd4",
+  "object": "response",
+  "created_at": 1792716009,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792716011,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_060bc31a53fb0b2e016adaacea75b887d1a7785f3df244292e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qzr6Q_buN-SckOhpdxK3q1hzAZreEprNTiUz8lNHWLoNa5QApG9leiY0forvgJCvsmClC1GpUd_IgnRHzb51TNE6wECAJx0RmBhnOPLs-NgrjzvgNMv0jt4BZ7CoBgSZMVP5wnXuj3Cxs5kozDbYBAtEUURZHiSyNVNVA0uHjN74y-OVN9FXTX8V0m0Kz7GtDhs3XpkgqYFOW25vB8670rhI4rK7W4G_3m43676I5OydfcSideh0XgjhsrYsoOsQAYHGH6LPMUxjkSKm4fxzNHVvC5E33L1DKpMa0xkRK_Ea53DSw7j_88MadMrFNEj4pp5aUHBrnVs2aPEGZyey5VwxwQuWGVOa9quRrJXXjN8wSPhkNcpA4FcgawYcZPrbVR0_Bi-8hQf1CKdiwHcBpeTHzmfMVqL6jpmMvvptw-GQJizANqd2Bh5DtdeIbgiTLPuojfl_7n1Ug0MGvDB9Ufw5t03_Paf6zuv5-nu8s_arW_TEPyI-BNJE6DLfg5Fp86kM282LZg7Ph2UuSBdHPQqNL8ZQtrNiVZ0Uvq21ohVKHjw_sXrKy8Cc_wHm5ehXFWS018pxbD2WKIkGtWggMLNiFpRNdt-lkSEl_n9UczM8X8jXAix-1y1hb9xyU-K8dGFQMhK-faxrY6Qgiw2831sMa5SVxpjoP0LVL9b9q9ovS7hfB4i5QUu03Jw-Oe0mF80-B4OAXJqxgCwohPLzztH7N3JggZu8S8tBsos7yCxSTTUtKn0aHj9Jn35WWiKrWC1es7IaHRpbtzbVCQuOi8IhkYFjzuHBLZ_crLWm4E-Hrt1YtLLpMi5VH-15AQskZjzpzG4e2D8_aq6_kdY-eO5K6SCfzIOuTIzsF3lZzAKghiqT7BjdDT6Ha72AhcpRpZyInqcEdabYoPoav1mEXVcvXWvL5MgwTl5azkNhnAz3rAtZf5qjmeK0LxU8U1wax0GNnvh5sI2sfHoC7fn2qzmZujPjst4L2YehobetKbndGkM7AO3Le7VqFc8LmN6kwnlHXoeOJvbUt1XK2If_0AZQHT85PPHj25P8BW1zrQFOQyeqW1xe-q_j9Qm12YiDvNNjXiemAxf9-oGt9iJD6Oiy7yvJ8Jd8ddHoSyGmhznLAuhpgB83C2QFSibztKzfuU4Ey_MfWOl_BqDm7NzgfNHozu_SSxhDvEWdGdGEETBIlPVy2ijR2LkNu0aQ8orkWzQ22dXxjTGCAvgneVki9z2_10kCtK9OUiWc7O0jLtnTQ6AujE4D8JauKQwyH8Nv87jlMLBXILWkYh3cz1ogPyibbTKO8L0hwLwDlcn-I0QjSfh0ElXTCSuKxWiEylFi8NQR8WIN9gJtYLsTC2-lXOxXcUJiAKdKzVBY-fZcQIMJ3hSCXBjCAd_B6HVFBHteYxVESDvSMlDTejlx4vuzuvxjtSexruNJtI-AUPP4jnFDLSt-0RxYrnim27NjSHhK5bMPA3VzjnVMoor4EDEBuWfeBsRF2NjvDVLQKkXSO_fxChbuU6trA55bQHLgwF-E_e7",
+      "summary": []
+    },
+    {
+      "id": "msg_060bc31a53fb0b2e016adaaceae7c887d18d552dc10652edfb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or wiki identify the company associated with the \\\"TP\\\" escalation in #central-team on July 2, 2025.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 264,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 63,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 327
+  },
+  "user": null,
+  "metadata": {}
+}

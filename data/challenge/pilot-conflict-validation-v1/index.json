@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "split": "targeted development conflict validation",
+  "seed": 20261023041,
+  "worlds": 4,
+  "cases": [
+    {
+      "id": "w20261023041-000-accessible",
+      "world": "w20261023041-000",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023041-000-accessible.json",
+      "sha256": "509544140c7d90e1da2a6227113ba785d00024ae4132cedc0a989cee6e62f61d"
+    },
+    {
+      "id": "w20261023041-001-accessible",
+      "world": "w20261023041-001",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023041-001-accessible.json",
+      "sha256": "d7b5b1cc5fb985bc5920071c3c82f17b04c6e1efbcaa68cca68d2a5172747c2d"
+    },
+    {
+      "id": "w20261023041-001-constrained",
+      "world": "w20261023041-001",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023041-001-constrained.json",
+      "sha256": "66161ae89c4d2ecb6693cc9923b98ac10689b48efd1c6f0352fb369e2a0ee0c5"
+    },
+    {
+      "id": "w20261023041-001-stress",
+      "world": "w20261023041-001",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023041-001-stress.json",
+      "sha256": "3e5ecad767d463356f7f9a93930b79063df522478795fd17d9b973bd028f9318"
+    },
+    {
+      "id": "w20261023041-003-stress",
+      "world": "w20261023041-003",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023041-003-stress.json",
+      "sha256": "8e74181a4b5746a00037d29961fa1d711c85b414591276b5d373143e22bba1cb"
+    },
+    {
+      "id": "w20261023041-004-constrained",
+      "world": "w20261023041-004",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023041-004-constrained.json",
+      "sha256": "e144b626d332c6b75c1fdc261ffeae67d07a512100ae2b314ee5a99cd5ad622d"
+    }
+  ],
+  "provenance": "Original generated fictional structured sources; not customer data. Independent implementation checks are not independent authorship.",
+  "license": "CC-BY-4.0",
+  "selection_note": "Three negative and three positive development cases; includes all distinct cases with unsafe first-pilot outputs. Not used as a new sample-size estimate."
+}

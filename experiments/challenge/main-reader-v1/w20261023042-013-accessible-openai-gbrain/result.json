@@ -1,0 +1,71 @@
+{
+  "id": "w20261023042-013-accessible-openai-gbrain",
+  "case_id": "w20261023042-013-accessible",
+  "world": "w20261023042-013",
+  "family": "industrial_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gbrain",
+  "status": "completed",
+  "started_at": "2026-10-23T05:48:22.795856+00:00",
+  "evidence_bytes": 16284,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999674",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b5b09349f8bed00016adaf527a35087d18081364ffaeb9366",
+  "usage": {
+    "input_tokens": 5718,
+    "input_tokens_details": {
+      "cache_write_tokens": 5715,
+      "cached_tokens": 0
+    },
+    "output_tokens": 468,
+    "output_tokens_details": {
+      "reasoning_tokens": 213
+    },
+    "total_tokens": 6186
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0189735",
+    "total_input_tokens": 5718,
+    "output_tokens": 468,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5715
+  },
+  "output": {
+    "actions": [],
+    "missing": [
+      "Grove-13: Supply observed consent=true and a catalog-matching signal; complete the observed chain from initiative-0 through need, offering and proof to an approved verified=true proof.",
+      "Pine-13: Supply an observed profile, consent=true, a catalog-matching signal and the complete observed initiative → need → offering → proof chain ending in approved verified=true.",
+      "Aster-13: Supply an observed profile, consent=true, a catalog-matching signal and the complete observed initiative → need → offering → proof chain ending in approved verified=true.",
+      "Elm-13: Supply an observed profile, a catalog-matching signal and the complete observed initiative → need → offering → proof chain ending in approved verified=true."
+    ],
+    "reasoning_summary": "Each queried account was checked independently. All have approved integer priorities, but none has sufficient observed evidence to establish action eligibility. Grove-13 has an allowed profile and an initiative link; Elm-13 has observed consent=true. The approved seller policy permits all catalog actions, but it cannot replace the missing account evidence. No supported action can be selected within the budget of 6."
+  },
+  "score": {
+    "optimum": 96,
+    "recoverable_value": 0,
+    "returned_value": 0,
+    "normalized_value": 0.0,
+    "context_normalized_value": 0.0,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": false,
+    "abstained": true,
+    "unsafe": false,
+    "valid_action_count": 0,
+    "actions_count": 0,
+    "errors": [],
+    "cost_units": 0
+  },
+  "finished_at": "2026-10-23T05:48:34.568669+00:00",
+  "seconds": 11.77282519399887
+}

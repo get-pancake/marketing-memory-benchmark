@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:26.285752+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00191210ab1ac032016adaacbed77487d18d01787e014037ac",
+  "usage": {
+    "input_tokens": 72916,
+    "input_tokens_details": {
+      "cache_write_tokens": 72913,
+      "cached_tokens": 0
+    },
+    "output_tokens": 82,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72998
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.1831085",
+    "total_input_tokens": 72916,
+    "output_tokens": 82,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72913
+  },
+  "text": "{\"answer\":\"Tier 1\",\"citations\":[\"D033\",\"D042\"],\"explanation\":\"The affiliate amendment set Marrow Agrisupply\u2019s SLA to Tier 1 effective 2025-10-15. The renewal effective 2026-05-01 expressly preserved that SLA, so Tier 1 applies on 2026-06-01.\"}",
+  "finished_at": "2026-10-23T00:39:29.490910+00:00",
+  "seconds": 3.2051678089919733
+}

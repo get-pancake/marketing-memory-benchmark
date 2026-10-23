@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:12.240619+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEfhnAVB6jPTvkEYkBw",
+  "usage": {
+    "input_tokens": 28213,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 136,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.057786",
+    "total_input_tokens": 28213,
+    "output_tokens": 136,
+    "regular_input_tokens": 28213,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"Thornbury Cloth Co.\",\"citations\":[\"D019\"],\"explanation\":\"The January 13 rename DM records that the Stoneharrow TCC invoice belonged to the mill (Thornbury Cloth Co., formerly Orrin Mills), not Tamsin Cold Chain. The wiki does not say who was in that chat; this answer relies on the January 13 DM entry only.\"}",
+  "finished_at": "2026-10-23T00:39:16.052850+00:00",
+  "seconds": 3.8122392970108194
+}

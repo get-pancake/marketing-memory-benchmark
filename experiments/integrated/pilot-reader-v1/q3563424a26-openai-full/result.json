@@ -1,0 +1,107 @@
+{
+  "id": "q3563424a26-openai-full",
+  "case_id": "q3563424a26",
+  "world": "w102aef1b",
+  "arm": "full",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.22448979591836735,
+    "selected_sources": 49,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 5775,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:06.314142+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06bce25387a4c155016adaa476690087d1876fdabc17ce69fb",
+  "usage": {
+    "input_tokens": 2102,
+    "input_tokens_details": {
+      "cache_write_tokens": 2099,
+      "cached_tokens": 0
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2296
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0071935",
+    "total_input_tokens": 2102,
+    "output_tokens": 194,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 2099
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo: approved seller geography is EU, while observed account geography is UK.",
+      "account.procurement_stage:observed=approved (required only for P3)."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S41",
+      "account.account_role:observed": "S8",
+      "account.observed_signal:observed": "S27",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S26",
+      "seller.approved_role:approved": "S43",
+      "seller.offering_pain:observed": "S7",
+      "seller.proof_for_pain:observed": "S39"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo: approved seller geography is EU, while observed account geography is UK.",
+      "account.procurement_stage:observed=approved (required only for P3)."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo: approved seller geography is EU, while observed account geography is UK.",
+      "account.procurement_stage:observed=approved (required only for P3)."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 and P4 meet the migration-specific requirements but fail the common geography equality because S26 approves EU and S41 observes UK; P3 also lacks an observed approved procurement stage. P2 does not match the migration objective.",
+  "finished_at": "2026-10-23T00:04:10.154237+00:00",
+  "seconds": 3.8401052330009406
+}

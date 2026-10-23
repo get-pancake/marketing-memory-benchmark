@@ -1,0 +1,116 @@
+{
+  "id": "qa2bea48e01-openai-gbrain",
+  "case_id": "qa2bea48e01",
+  "world": "w102aef1b",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 3,
+    "current_value_group_coverage": 0.42857142857142855,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2042,
+  "status": "completed",
+  "started_at": "2026-10-23T00:05:42.908259+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0b3d90ee518146f0016adaa4d7036887d19464be07c435c74a",
+  "usage": {
+    "input_tokens": 1119,
+    "input_tokens_details": {
+      "cache_write_tokens": 1116,
+      "cached_tokens": 0
+    },
+    "output_tokens": 218,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1337
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.004976",
+    "total_input_tokens": 1119,
+    "output_tokens": 218,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1116
+  },
+  "raw_output": {
+    "missing": [
+      "Approved seller role matching account role revenue_lead.",
+      "Approved seller geography matching account geography EU.",
+      "Current observed account signal equal to migration; S2 records withdrawn.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S13",
+      "account.account_role:observed": "S3",
+      "account.observed_signal:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved seller role matching account role revenue_lead.",
+      "Approved seller geography matching account geography EU.",
+      "Current observed account signal equal to migration; S2 records withdrawn.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Approved seller role matching account role revenue_lead.",
+      "Approved seller geography matching account geography EU.",
+      "Current observed account signal equal to migration; S2 records withdrawn.",
+      "Observed seller offering pain equal to integration.",
+      "Observed seller proof for pain equal to integration."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P1 and P4 meet the migration objective and resource allowance, but lack approved targeting and integration offering/proof evidence, while S2 records a withdrawn signal rather than migration. S3 establishes revenue_lead and S13 establishes EU; P3 additionally lacks observed procurement approval, and P2 does not match the objective.",
+  "finished_at": "2026-10-23T00:05:47.195495+00:00",
+  "seconds": 4.2872452739975415
+}

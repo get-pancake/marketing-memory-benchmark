@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:57.249849+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEizmhs3YwqG5vc2GfH",
+  "usage": {
+    "input_tokens": 120880,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 149,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.24325",
+    "total_input_tokens": 120880,
+    "output_tokens": 149,
+    "regular_input_tokens": 120880,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"2026-11-30\",\"citations\":[\"D035\",\"D001\",\"D051\",\"D118\"],\"explanation\":\"The signed 2025-2026 renewal order form (D035) sets the end of the current term at 2026-11-30, which the account page (D001) and the North weekly of 28 Sept 2026 (D118) confirm. The conflicting 2026-12-31 date appears only in an informal CRM note (D051) and is not supported by any signed terms.\"}",
+  "finished_at": "2026-10-23T00:39:59.731810+00:00",
+  "seconds": 2.4819697109924164
+}

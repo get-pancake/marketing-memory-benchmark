@@ -1,0 +1,53 @@
+{
+  "scope": "AI-assisted qualitative inspection of every non-no-context error in the Opus external extension; not blinded human review.",
+  "actual_calls": 132,
+  "errors_excluding_none": 5,
+  "cases": [
+    {
+      "case_id": "dev-op-1",
+      "arms_wrong": [
+        "wiki_specialized"
+      ],
+      "classification": "Reader/context interaction, plus loss of the literal dated alias anchor",
+      "raw_source": "D106 / updates/2025-09-15-north-weekly",
+      "raw_quote": "Dana's freight account needs the night-shift supervisors included in the roster check, not just the daytime office users.",
+      "raw_section": "Quarrendon Freight Lines \u2014 amendment live",
+      "generic_response": "Quarrendon Freight Lines",
+      "marketing_response": "Brackenwater Freight Co.",
+      "facts_present_in_both_wikis": [
+        "Brackenwater transfer to Marcus effective September 15, 2025",
+        "Quarrendon transfer to Dana effective June 2, 2025"
+      ],
+      "interpretation": "The literal dated phrase is omitted by both compilations, but the ownership dates needed for the inference survive. Generic-wiki Opus uses them; marketing-wiki Opus cites the Brackenwater handoff and fails to apply them. Do not attribute this error solely to deleted facts."
+    },
+    {
+      "case_id": "dev-op-2",
+      "arms_wrong": [
+        "raw_bm25",
+        "raw_chunks",
+        "raw_full"
+      ],
+      "classification": "Previously disclosed ambiguous-reference label sensitivity",
+      "expected": "ambiguous",
+      "returned": "Quarrendon Freight Lines",
+      "evidence": "D104 links a July 22 Quarrendon QBR to a July 28 update, then separately mentions expenses for Dana's freight account; Dana also held Brackenwater until September 15.",
+      "interpretation": "The answers make a plausible contextual inference, but the upstream label requires ambiguity. Preserve the original result and separately remove this one question as a sensitivity; do not silently relabel it."
+    },
+    {
+      "case_id": "dev-gov-3",
+      "arms_wrong": [
+        "raw_bm25"
+      ],
+      "classification": "Whole-document packing omits governing clause",
+      "expected": 120,
+      "returned": "unknown",
+      "interpretation": "The oversized master agreement does not fit the whole-document allowance. The reader abstains appropriately for its supplied packet; chunked retrieval recovers the clause. This is not evidence of an intrinsically worse reader."
+    }
+  ],
+  "artifact_sha256": {
+    "experiments/challenge/external-opus-v1/dev-op-1-anthropic-wiki_generic/evaluated.json": "fa68c7ce0c0de696744825d8b234453bba509341f5940dd537ccade823b1147a",
+    "experiments/challenge/external-opus-v1/dev-op-1-anthropic-wiki_specialized/evaluated.json": "c8feef76ac40792303d005f5e65a03dd5fb02acdc9a65bf0e339c99d7ef60e5d",
+    "experiments/integrated/external-wiki-compile-v4/wiki_generic/wiki/index.md": "c9621aabc55d975b4b92cdf426ab52410836fdc19c7ecb7c79a6b5a43c940683",
+    "experiments/integrated/external-wiki-compile-v4/wiki_specialized/wiki/index.md": "271e9e32263bcc7cd21f29ef83414dff40b6fa7b0c80c4f1a512b22ba1c8b15a"
+  }
+}

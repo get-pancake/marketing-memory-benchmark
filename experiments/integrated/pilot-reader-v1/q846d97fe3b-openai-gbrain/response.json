@@ -1,0 +1,95 @@
+{
+  "id": "resp_02e39d224057907b016adaa4128e7c87d1baf0503480b96bbe",
+  "object": "response",
+  "created_at": 1792713746,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792713749,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_02e39d224057907b016adaa413961c87d1875c6cb30829a9c3",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"support\":{\"seller.approved_role:approved\":\"S1\",\"seller.approved_geo:approved\":\"S10\",\"account.account_role:observed\":\"S15\",\"account.account_geo:observed\":\"S17\",\"account.observed_signal:observed\":\"S8\",\"seller.offering_pain:observed\":null,\"seller.proof_for_pain:observed\":null,\"account.procurement_stage:observed\":null},\"status\":\"recommend\",\"template\":\"P1\",\"missing\":[],\"explanation\":\"P1 matches the qualification_audit objective and the two-unit allowance. Its common prerequisites and equalities are satisfied: the approved and observed roles match (S1, S15), and the approved and observed geographies match (S10, S17).\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1139,
+    "input_tokens_details": {
+      "cache_write_tokens": 1136,
+      "cached_tokens": 0
+    },
+    "output_tokens": 158,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1297
+  },
+  "user": null,
+  "metadata": {}
+}

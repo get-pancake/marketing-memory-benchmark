@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:32.542372+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEcmQ7VghzE9T9krBVG",
+  "usage": {
+    "input_tokens": 26470,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 121,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.05415",
+    "total_input_tokens": 26470,
+    "output_tokens": 121,
+    "regular_input_tokens": 26470,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"14%\",\"citations\":[\"D037\",\"D031\"],\"explanation\":\"Tansley Parcel's renewal, effective Feb 1, 2026, carries forward the 14% discount from Amendment TPCL-AMD-01, which had explicit CFO approval. No later amendment changing the discount is supplied, so 14% applies on March 1, 2026.\"}",
+  "finished_at": "2026-10-23T00:38:38.325483+00:00",
+  "seconds": 5.783117236001999
+}

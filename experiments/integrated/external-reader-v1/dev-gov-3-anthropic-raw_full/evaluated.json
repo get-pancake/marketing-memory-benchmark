@@ -1,0 +1,47 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:40:02.865064+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEjRPnrLJHCpj6VLuxV",
+  "usage": {
+    "input_tokens": 120898,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 103,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.242826",
+    "total_input_tokens": 120898,
+    "output_tokens": 103,
+    "regular_input_tokens": 120898,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"120\",\"citations\":[\"D028\"],\"explanation\":\"Section 16.1 of the signed Quarrendon Master Subscription Agreement says either party may deliver a written election against continuation at least 120 calendar days before the close of the then-current period. Later amendments and renewal forms do not change this provision.\"}",
+  "finished_at": "2026-10-23T00:40:05.226322+00:00",
+  "seconds": 2.3612645300017903,
+  "id": "dev-gov-3-anthropic-raw_full",
+  "case_id": "dev-gov-3",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "120",
+  "explanation": "Section 16.1 of the signed Quarrendon Master Subscription Agreement says either party may deliver a written election against continuation at least 120 calendar days before the close of the then-current period. Later amendments and renewal forms do not change this provision.",
+  "citations": [
+    "D028"
+  ]
+}

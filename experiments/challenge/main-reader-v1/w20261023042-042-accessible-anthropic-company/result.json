@@ -1,0 +1,98 @@
+{
+  "id": "w20261023042-042-accessible-anthropic-company",
+  "case_id": "w20261023042-042-accessible",
+  "world": "w20261023042-042",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "company",
+  "status": "completed",
+  "started_at": "2026-10-23T05:53:55.506391+00:00",
+  "evidence_bytes": 16272,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:53:57Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:54:05Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:53:56Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11994000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:53:57Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJeffsd3DTxG3m48VwRs",
+  "usage": {
+    "input_tokens": 8687,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 924,
+    "output_tokens_details": {
+      "thinking_tokens": 407
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.053228",
+    "total_input_tokens": 8687,
+    "output_tokens": 924,
+    "regular_input_tokens": 8687,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Delta-42",
+        "action": "reference_intro",
+        "sources": [
+          "ed616d28fa3b7e3",
+          "e532dd77d826754",
+          "e43ab40f6034459",
+          "edaa0884b8de2ed",
+          "ee6b6d29c8cd2ea",
+          "e727582d3b64125",
+          "e30551115cdd3ea",
+          "ef03728bb2a690b",
+          "e168dcc75a5eae7",
+          "e4d19e65b4922a8",
+          "e973400b9e3eb7d"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-42: approved verified status for proof-1",
+      "Larch-42: current observed consent is false (consent true required)",
+      "Aster-42: no profile, consent, signal, priority, or initiative chain evidence supplied"
+    ],
+    "reasoning_summary": "Seller policy ed616d28fa3b7e3 is approved; the day-25 policy is only proposed and is ignored. Delta-42 is eligible. Its region (DE) is allowed, its sector is not blocked, and its consent is true. Its renewal signal supports reference_intro. The full chain initiative-0 -> need-0 -> offering-0 -> proof-0 is observed, and proof-0 is approved as verified and shareable. Delta-42's approved priority is 6, so reference_intro scores 6x5=30 at cost 4, which beats renewal_review at 18. Flint-42 is blocked because proof-1 has no approved verified record. Larch-42 is blocked because its consent is false. Aster-42 has no evidence at all. With 2 budget units left and no other eligible account, the plan has one action."
+  },
+  "score": {
+    "optimum": 58,
+    "recoverable_value": 30,
+    "returned_value": 30,
+    "normalized_value": 0.5172413793103449,
+    "context_normalized_value": 0.5172413793103449,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 1,
+    "actions_count": 1,
+    "errors": [],
+    "cost_units": 4
+  },
+  "finished_at": "2026-10-23T05:54:05.771863+00:00",
+  "seconds": 10.265492272999836
+}

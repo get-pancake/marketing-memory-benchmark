@@ -1,0 +1,32 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:05.222801+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_065d39a3b8f7c49f016adaaca9c95087d1a197b0f7f7ec395e",
+  "usage": {
+    "input_tokens": 16160,
+    "input_tokens_details": {
+      "cache_write_tokens": 16157,
+      "cached_tokens": 0
+    },
+    "output_tokens": 143,
+    "output_tokens_details": {
+      "reasoning_tokens": 68
+    },
+    "total_tokens": 16303
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0418285",
+    "total_input_tokens": 16160,
+    "output_tokens": 143,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 16157
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D106\",\"D004\",\"D001\"],\"explanation\":\"The September 15 weekly update\u2019s freight-account context identifies QFL, which Dana owned from June 2, 2025. Brackenwater transferred from Dana to Marcus effective September 15.\"}",
+  "finished_at": "2026-10-23T00:39:09.861173+00:00",
+  "seconds": 4.638380357995629
+}

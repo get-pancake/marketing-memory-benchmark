@@ -1,0 +1,15 @@
+{
+  "provider": "anthropic",
+  "model": "claude-opus-5-5",
+  "source_url": "https://claude.com/pricing",
+  "retrieved_at_utc": null,
+  "source_sha256": "c9dd063d4509def2339a2e40abfa822e135d7d3a5db6ba1fdbda15e8b8aa9671",
+  "excerpt": "Opus 5.5 Daily driver for agentic coding and enterprise work Prompt caching Read $0.20 / MTok Write $5 / MTok Input $4 / MTok Output $20 / MTok Sonnet 5.5 High-performance model for coding and agents Pro",
+  "rates_per_million_tokens": {
+    "input": 4,
+    "output": 20,
+    "cache_read": 0.2,
+    "cache_write_5min": 5
+  },
+  "invoice_verified": false
+}

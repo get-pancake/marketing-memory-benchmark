@@ -1,0 +1,125 @@
+{
+  "id": "qe4f6d459d8-openai-gbrain",
+  "case_id": "qe4f6d459d8",
+  "world": "wc1aa55ff",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 0.4444444444444444,
+    "false_affordance": false,
+    "required_current_value_groups": 9,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2048,
+  "status": "completed",
+  "started_at": "2026-10-23T00:31:43.661445+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999892",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_006677b832f99209016adaaaefe8ec87d1ac4c83547bac24a6",
+  "usage": {
+    "input_tokens": 1958,
+    "input_tokens_details": {
+      "cache_write_tokens": 931,
+      "cached_tokens": 1024
+    },
+    "output_tokens": 251,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2209
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0049459",
+    "total_input_tokens": 1958,
+    "output_tokens": 251,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1024,
+    "cache_write_tokens": 931
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved matching account role operations_director",
+      "seller.approved_geo:approved matching account geography CA",
+      "account.certification:observed=ISO27001 (S13 records withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S3",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S13",
+      "account.observed_signal:observed": "S9",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account role operations_director",
+      "seller.approved_geo:approved matching account geography CA",
+      "account.certification:observed=ISO27001 (S13 records withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account role operations_director",
+      "seller.approved_geo:approved matching account geography CA",
+      "account.certification:observed=ISO27001 (S13 records withdrawn)",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action is supported: S13 records withdrawn certification rather than ISO27001, and approved seller targeting, offering pain, and proof for that pain are absent. S1 and S3 establish account role and geography, and S9 establishes the compliance-review signal, but these do not satisfy the remaining prerequisites.",
+  "finished_at": "2026-10-23T00:31:48.959197+00:00",
+  "seconds": 5.297764028000529
+}

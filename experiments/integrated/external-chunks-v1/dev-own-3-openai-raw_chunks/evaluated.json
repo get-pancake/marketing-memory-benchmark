@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:12.616311+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_03704f9a745779e0016adaaddd292887d1ac7a29035a6d917a",
+  "usage": {
+    "input_tokens": 6468,
+    "input_tokens_details": {
+      "cache_write_tokens": 6465,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6534
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0168285",
+    "total_input_tokens": 6468,
+    "output_tokens": 66,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6465
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[\"D001\",\"D059\"],\"explanation\":\"Dana Okafor\u2019s start date is explicitly not recorded. Her handoff email says she managed Brackenwater before the North team existed, but the oldest CRM import only says \u201clegacy migration.\u201d\"}",
+  "finished_at": "2026-10-23T00:44:15.934527+00:00",
+  "seconds": 3.3182244000054197,
+  "id": "dev-own-3-openai-raw_chunks",
+  "case_id": "dev-own-3",
+  "arm": "raw_chunks",
+  "context_bytes": 24520,
+  "answer_correct": true,
+  "answer": "unknown",
+  "citations": [
+    "D001",
+    "D059"
+  ],
+  "explanation": "Dana Okafor\u2019s start date is explicitly not recorded. Her handoff email says she managed Brackenwater before the North team existed, but the oldest CRM import only says \u201clegacy migration.\u201d",
+  "citation_ids_valid": true
+}

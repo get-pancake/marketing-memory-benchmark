@@ -1,0 +1,113 @@
+{
+  "id": "qdae0b4dfe1-openai-generic",
+  "case_id": "qdae0b4dfe1",
+  "world": "wcacc6315",
+  "arm": "generic",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.47368421052631576,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2015,
+  "status": "completed",
+  "started_at": "2026-10-23T00:32:08.195780+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999952",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_05f20a592d6d6270016adaab0864d487d18a454b54da285777",
+  "usage": {
+    "input_tokens": 2017,
+    "input_tokens_details": {
+      "cache_write_tokens": 936,
+      "cached_tokens": 1078
+    },
+    "output_tokens": 191,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2208
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0043638",
+    "total_input_tokens": 2017,
+    "output_tokens": 191,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1078,
+    "cache_write_tokens": 936
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S2",
+      "account.account_role:observed": "S7",
+      "account.certification:observed": "S8",
+      "account.observed_signal:observed": "S6",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S11",
+      "seller.approved_role:approved": "S12",
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "No compliance action is fully supported: P3, P1 and P2 require seller.proof_for_pain:observed=audit_effort, which is absent; P2 also requires an observed approved procurement stage. P4 does not match the compliance objective.",
+  "finished_at": "2026-10-23T00:32:12.986733+00:00",
+  "seconds": 4.790963286010083
+}

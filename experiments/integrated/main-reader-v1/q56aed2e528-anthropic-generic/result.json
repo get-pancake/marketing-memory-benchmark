@@ -1,0 +1,129 @@
+{
+  "id": "q56aed2e528-anthropic-generic",
+  "case_id": "q56aed2e528",
+  "world": "wc1aa55ff",
+  "arm": "generic",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 6,
+    "current_value_group_coverage": 0.75,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.3888888888888889,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2025,
+  "status": "completed",
+  "started_at": "2026-10-23T01:02:32.902580+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T01:02:34Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T01:02:36Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T01:02:33Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11999000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T01:02:34Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJGSw7DdW3rSAdHnXL2g",
+  "usage": {
+    "input_tokens": 3885,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 349,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.01126",
+    "total_input_tokens": 3885,
+    "output_tokens": 349,
+    "regular_input_tokens": 3885,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.procurement_stage:observed (needed only for P3)"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S12",
+      "account.account_role:observed": "S1",
+      "account.certification:observed": "S11",
+      "account.observed_signal:observed": "S8",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": "S13",
+      "seller.proof_for_pain:observed": "S14"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.procurement_stage:observed (needed only for P3)"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved",
+      "seller.approved_geo:approved",
+      "account.procurement_stage:observed (needed only for P3)"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "Account-side facts are observed (role operations_director, geo UK, ISO27001, compliance_review) and the seller's audit_effort pain and proof are observed. However, there is no approved seller role or approved geo, so the common requirements and the approved_role=account_role and approved_geo=account_geo equalities cannot be checked for P2, P3 or P4. P1 has a different objective, so it does not satisfy the compliance objective.",
+  "finished_at": "2026-10-23T01:02:36.564112+00:00",
+  "seconds": 3.661540582004818
+}

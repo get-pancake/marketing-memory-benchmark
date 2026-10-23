@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-10-22T21:19:02.610019+00:00",
+  "status": "post-hoc exploratory reanalysis after seeing v1 outcomes; not a new frozen main study",
+  "source_attempts_sha256": "b480a0024e50930e60f6b33d609cc4a9fadc02712cd8de1e745d09872d5b30fd",
+  "script_sha256": "b944033e7e50d56a9b019e151e28945ce2b671a1a3588bc97f0e5733906fdd49",
+  "methods": {
+    "prompt_hybrid": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 36,
+      "positive_support_rate": 0.75,
+      "reader_success_given_complete_support": 13,
+      "reader_given_complete_support_denominator": 36,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.8979208002645502
+    },
+    "typed": {
+      "cases": 96,
+      "positive_cases": 48,
+      "complete_positive_support": 48,
+      "positive_support_rate": 1,
+      "reader_success_given_complete_support": 30,
+      "reader_given_complete_support_denominator": 48,
+      "false_affordance_cases": 0,
+      "stale_or_ineligible_sources": 0,
+      "mean_current_value_group_coverage": 0.9988425925925926
+    }
+  },
+  "exploratory_context_contrasts": {
+    "typed minus prompt_hybrid": {
+      "mean": 0.25,
+      "world_bootstrap_ci95": [
+        0.0625,
+        0.4375
+      ]
+    }
+  },
+  "limits": [
+    "Same typed facts and common current-view/access filter for every v1 adapter.",
+    "Conditioning reader success on available evidence is descriptive, not causal mediation.",
+    "False affordance counts apparently eligible alternatives created by incomplete evidence.",
+    "These adapters are not complete market memory products; all 12 company worlds are fictional."
+  ]
+}

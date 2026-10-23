@@ -1,0 +1,36 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:38:32.547096+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEckWnSpNy74CPyzi4o",
+  "usage": {
+    "input_tokens": 622,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 102,
+    "output_tokens_details": {
+      "thinking_tokens": 30
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.002264",
+    "total_input_tokens": 622,
+    "output_tokens": 102,
+    "regular_input_tokens": 622,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or wiki were supplied, so there is no record of who acted as account manager for Quarrendon Freight Lines on 2026-02-20.\"}",
+  "finished_at": "2026-10-23T00:38:37.100714+00:00",
+  "seconds": 4.5536283679975895
+}

@@ -1,0 +1,112 @@
+{
+  "id": "q544f762b6e-openai-specialized",
+  "case_id": "q544f762b6e",
+  "world": "wf66aa99f",
+  "arm": "specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.4,
+    "selected_sources": 20,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2045,
+  "status": "completed",
+  "started_at": "2026-10-23T00:12:22.079913+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14998",
+    "x-ratelimit-remaining-tokens": "39999954",
+    "x-ratelimit-reset-requests": "5ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_06469f03d4189cf9016adaa666592c87d1a65a7615920dfac6",
+  "usage": {
+    "input_tokens": 1898,
+    "input_tokens_details": {
+      "cache_write_tokens": 1895,
+      "cached_tokens": 0
+    },
+    "output_tokens": 189,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2087
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0066335",
+    "total_input_tokens": 1898,
+    "output_tokens": 189,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1895
+  },
+  "raw_output": {
+    "missing": [
+      "approved_geo=account_geo: seller approved geography CA (S6) does not match account geography UK (S5)."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S5",
+      "account.account_role:observed": "S15",
+      "account.observed_signal:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S6",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S9"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "approved_geo=account_geo: seller approved geography CA (S6) does not match account geography UK (S5)."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "approved_geo=account_geo: seller approved geography CA (S6) does not match account geography UK (S5)."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 meets the migration objective and two-unit allowance, but its geographic equality fails: approved geography is CA (S6), while the account geography is UK (S5). No action qualifies; evidence establishing an approved geographic match is required.",
+  "finished_at": "2026-10-23T00:12:26.030266+00:00",
+  "seconds": 3.9503644150099717
+}

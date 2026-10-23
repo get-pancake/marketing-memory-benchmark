@@ -1,0 +1,100 @@
+{
+  "id": "w20261023041-011-accessible-openai-gtm",
+  "case_id": "w20261023041-011-accessible",
+  "world": "w20261023041-011",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:17:52.323076+00:00",
+  "evidence_bytes": 16282,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999634",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_01f2b29c1830f68f016adaee00b8e887d195aa0c37635abe1d",
+  "usage": {
+    "input_tokens": 5670,
+    "input_tokens_details": {
+      "cache_write_tokens": 5667,
+      "cached_tokens": 0
+    },
+    "output_tokens": 508,
+    "output_tokens_details": {
+      "reasoning_tokens": 82
+    },
+    "total_tokens": 6178
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0192535",
+    "total_input_tokens": 5670,
+    "output_tokens": 508,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 5667
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-11",
+        "action": "reference_intro",
+        "sources": [
+          "efa97de2caa4e06",
+          "e13c1df1f001dec",
+          "e3312c74b442c4d",
+          "e407f6cba4e90b8",
+          "e58a1cbd4c93abd",
+          "e5f1755ea66e5b7",
+          "eac69dfbdf0869b",
+          "ef12745cc413b3c",
+          "e804078d7be7414",
+          "e0ac1e2cffdfdd0",
+          "e01f7bcf04f0bba"
+        ]
+      },
+      {
+        "account": "Flint-11",
+        "action": "renewal_review",
+        "sources": [
+          "efa97de2caa4e06",
+          "e9825ceb850cc12",
+          "ed5beac2a4edacf",
+          "eb3a8cd48309edc",
+          "e94be002680f0fe",
+          "e5e06f46f46e6d1",
+          "ee91621ada34aa0",
+          "efd1d56f9fdfbb0",
+          "e519fbec7019da8",
+          "e90d190a24cabec"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The optimal eligible plan costs 6 of 6 and scores 61 synthetic priority points: Orchid reference_intro contributes 8×5=40 and Flint renewal_review contributes 7×3=21. Both satisfy the approved policy and all required evidence checks. Cedar is blocked by its restricted sector; Birch is blocked because its proof is approved false for verification. The proposed policy is not an approved fact."
+  },
+  "score": {
+    "optimum": 61,
+    "recoverable_value": 61,
+    "returned_value": 61,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:18:01.947175+00:00",
+  "seconds": 9.624107030002051
+}

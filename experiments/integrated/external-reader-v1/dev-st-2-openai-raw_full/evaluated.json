@@ -1,0 +1,43 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:50.195378+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ce62717272a334c016adaacd6694487d1bea8dd23f85de750",
+  "usage": {
+    "input_tokens": 72915,
+    "input_tokens_details": {
+      "cache_write_tokens": 72912,
+      "cached_tokens": 0
+    },
+    "output_tokens": 55,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72970
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.182836",
+    "total_input_tokens": 72915,
+    "output_tokens": 55,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72912
+  },
+  "text": "{\"answer\":\"40\",\"citations\":[\"D039\"],\"explanation\":\"The executed 2026 renewal order form sets Thornbury Cloth Co.\u2019s subscribed quantity at 40 seats, effective 2026-03-01.\"}",
+  "finished_at": "2026-10-23T00:39:53.505898+00:00",
+  "seconds": 3.3105295159912203,
+  "id": "dev-st-2-openai-raw_full",
+  "case_id": "dev-st-2",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "40",
+  "explanation": "The executed 2026 renewal order form sets Thornbury Cloth Co.\u2019s subscribed quantity at 40 seats, effective 2026-03-01.",
+  "citations": [
+    "D039"
+  ]
+}

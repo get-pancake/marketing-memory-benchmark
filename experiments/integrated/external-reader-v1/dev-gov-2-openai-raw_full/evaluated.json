@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:01.190568+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00087c563cea4eaa016adaaca595c087d1add15b1173fdf2dc",
+  "usage": {
+    "input_tokens": 72914,
+    "input_tokens_details": {
+      "cache_write_tokens": 72911,
+      "cached_tokens": 0
+    },
+    "output_tokens": 72,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72986
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.1830035",
+    "total_input_tokens": 72914,
+    "output_tokens": 72,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72911
+  },
+  "text": "{\"answer\":\"10\",\"citations\":[\"D041\",\"D082\"],\"explanation\":\"The signed renewal sets a 10% discount effective 2026-04-01, so it applies on 2026-05-01. The later meeting note saying 12% does not override the executed terms.\"}",
+  "finished_at": "2026-10-23T00:39:04.628213+00:00",
+  "seconds": 3.4376547029969515,
+  "id": "dev-gov-2-openai-raw_full",
+  "case_id": "dev-gov-2",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "10",
+  "explanation": "The signed renewal sets a 10% discount effective 2026-04-01, so it applies on 2026-05-01. The later meeting note saying 12% does not override the executed terms.",
+  "citations": [
+    "D041",
+    "D082"
+  ]
+}

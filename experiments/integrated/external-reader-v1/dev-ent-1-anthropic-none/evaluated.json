@@ -1,0 +1,45 @@
+{
+  "provider": "anthropic",
+  "model_requested": "claude-sonnet-5-5",
+  "started_at": "2026-10-23T00:39:43.783582+00:00",
+  "status": "completed",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJEi1sAHn91dWSj8kiuw",
+  "usage": {
+    "input_tokens": 626,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 87,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.002122",
+    "total_input_tokens": 626,
+    "output_tokens": 87,
+    "regular_input_tokens": 626,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No company documents or wiki sources were supplied, so the chat between Marcus and Ilse on January 13, 2026 and the company that the \\\"TCC\\\" invoice belonged to are not recorded.\"}",
+  "finished_at": "2026-10-23T00:39:48.624708+00:00",
+  "seconds": 4.841136868999456,
+  "id": "dev-ent-1-anthropic-none",
+  "case_id": "dev-ent-1",
+  "arm": "none",
+  "context_bytes": 0,
+  "answer_correct": false,
+  "citation_ids_valid": true,
+  "answer": "unknown",
+  "explanation": "No company documents or wiki sources were supplied, so the chat between Marcus and Ilse on January 13, 2026 and the company that the \"TCC\" invoice belonged to are not recorded.",
+  "citations": []
+}

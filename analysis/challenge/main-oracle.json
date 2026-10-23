@@ -1,0 +1,2169 @@
+{
+  "status": "passed",
+  "cases": 360,
+  "sql_and_dynamic_programming_agree": true,
+  "exhaustive_optima_agree": true,
+  "independent_human_validation": false,
+  "rows": [
+    {
+      "case_id": "w20261023042-000-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-000-constrained",
+      "eligible": 6,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-000-stress",
+      "eligible": 6,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-001-accessible",
+      "eligible": 2,
+      "optimum": 6,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-001-constrained",
+      "eligible": 2,
+      "optimum": 6,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-001-stress",
+      "eligible": 7,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-002-accessible",
+      "eligible": 6,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-002-constrained",
+      "eligible": 8,
+      "optimum": 47,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-002-stress",
+      "eligible": 8,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-003-accessible",
+      "eligible": 6,
+      "optimum": 75,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-003-constrained",
+      "eligible": 5,
+      "optimum": 80,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-003-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-004-accessible",
+      "eligible": 5,
+      "optimum": 31,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-004-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-004-stress",
+      "eligible": 10,
+      "optimum": 77,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-005-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-005-constrained",
+      "eligible": 4,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-005-stress",
+      "eligible": 7,
+      "optimum": 83,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-006-accessible",
+      "eligible": 6,
+      "optimum": 42,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-006-constrained",
+      "eligible": 6,
+      "optimum": 42,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-006-stress",
+      "eligible": 6,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-007-accessible",
+      "eligible": 5,
+      "optimum": 22,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-007-constrained",
+      "eligible": 2,
+      "optimum": 12,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-007-stress",
+      "eligible": 5,
+      "optimum": 67,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-008-accessible",
+      "eligible": 8,
+      "optimum": 43,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-008-constrained",
+      "eligible": 8,
+      "optimum": 47,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-008-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-009-accessible",
+      "eligible": 6,
+      "optimum": 67,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-009-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-009-stress",
+      "eligible": 9,
+      "optimum": 105,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-010-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-010-constrained",
+      "eligible": 7,
+      "optimum": 93,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-010-stress",
+      "eligible": 11,
+      "optimum": 103,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-011-accessible",
+      "eligible": 3,
+      "optimum": 15,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-011-constrained",
+      "eligible": 3,
+      "optimum": 15,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-011-stress",
+      "eligible": 5,
+      "optimum": 43,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-012-accessible",
+      "eligible": 5,
+      "optimum": 37,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-012-constrained",
+      "eligible": 9,
+      "optimum": 42,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-012-stress",
+      "eligible": 9,
+      "optimum": 43,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-013-accessible",
+      "eligible": 7,
+      "optimum": 96,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-013-constrained",
+      "eligible": 10,
+      "optimum": 104,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-013-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-014-accessible",
+      "eligible": 6,
+      "optimum": 51,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-014-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-014-stress",
+      "eligible": 9,
+      "optimum": 100,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-015-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-015-constrained",
+      "eligible": 4,
+      "optimum": 74,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-015-stress",
+      "eligible": 8,
+      "optimum": 94,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-016-accessible",
+      "eligible": 3,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-016-constrained",
+      "eligible": 3,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-016-stress",
+      "eligible": 7,
+      "optimum": 33,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-017-accessible",
+      "eligible": 3,
+      "optimum": 16,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-017-constrained",
+      "eligible": 5,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-017-stress",
+      "eligible": 5,
+      "optimum": 19,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-018-accessible",
+      "eligible": 9,
+      "optimum": 74,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-018-constrained",
+      "eligible": 9,
+      "optimum": 88,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-018-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-019-accessible",
+      "eligible": 12,
+      "optimum": 74,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-019-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-019-stress",
+      "eligible": 12,
+      "optimum": 90,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-020-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-020-constrained",
+      "eligible": 5,
+      "optimum": 67,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-020-stress",
+      "eligible": 8,
+      "optimum": 71,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-021-accessible",
+      "eligible": 3,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-021-constrained",
+      "eligible": 6,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-021-stress",
+      "eligible": 6,
+      "optimum": 46,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-022-accessible",
+      "eligible": 8,
+      "optimum": 65,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-022-constrained",
+      "eligible": 11,
+      "optimum": 43,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-022-stress",
+      "eligible": 17,
+      "optimum": 77,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-023-accessible",
+      "eligible": 4,
+      "optimum": 16,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-023-constrained",
+      "eligible": 4,
+      "optimum": 16,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-023-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-024-accessible",
+      "eligible": 8,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-024-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-024-stress",
+      "eligible": 15,
+      "optimum": 58,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-025-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-025-constrained",
+      "eligible": 5,
+      "optimum": 73,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-025-stress",
+      "eligible": 5,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-026-accessible",
+      "eligible": 4,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-026-constrained",
+      "eligible": 5,
+      "optimum": 37,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-026-stress",
+      "eligible": 8,
+      "optimum": 47,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-027-accessible",
+      "eligible": 6,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-027-constrained",
+      "eligible": 4,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-027-stress",
+      "eligible": 6,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-028-accessible",
+      "eligible": 8,
+      "optimum": 53,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-028-constrained",
+      "eligible": 7,
+      "optimum": 68,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-028-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-029-accessible",
+      "eligible": 10,
+      "optimum": 80,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-029-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-029-stress",
+      "eligible": 13,
+      "optimum": 106,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-030-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-030-constrained",
+      "eligible": 4,
+      "optimum": 13,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-030-stress",
+      "eligible": 6,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-031-accessible",
+      "eligible": 6,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-031-constrained",
+      "eligible": 6,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-031-stress",
+      "eligible": 8,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-032-accessible",
+      "eligible": 8,
+      "optimum": 87,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-032-constrained",
+      "eligible": 6,
+      "optimum": 69,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-032-stress",
+      "eligible": 12,
+      "optimum": 105,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-033-accessible",
+      "eligible": 8,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-033-constrained",
+      "eligible": 8,
+      "optimum": 37,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-033-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-034-accessible",
+      "eligible": 8,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-034-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-034-stress",
+      "eligible": 13,
+      "optimum": 87,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-035-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-035-constrained",
+      "eligible": 9,
+      "optimum": 67,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-035-stress",
+      "eligible": 15,
+      "optimum": 80,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-036-accessible",
+      "eligible": 7,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-036-constrained",
+      "eligible": 7,
+      "optimum": 69,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-036-stress",
+      "eligible": 9,
+      "optimum": 70,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-037-accessible",
+      "eligible": 3,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-037-constrained",
+      "eligible": 3,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-037-stress",
+      "eligible": 3,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-038-accessible",
+      "eligible": 3,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-038-constrained",
+      "eligible": 3,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-038-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-039-accessible",
+      "eligible": 3,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-039-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-039-stress",
+      "eligible": 6,
+      "optimum": 96,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-040-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-040-constrained",
+      "eligible": 4,
+      "optimum": 14,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-040-stress",
+      "eligible": 5,
+      "optimum": 61,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-041-accessible",
+      "eligible": 4,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-041-constrained",
+      "eligible": 6,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-041-stress",
+      "eligible": 8,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-042-accessible",
+      "eligible": 6,
+      "optimum": 58,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-042-constrained",
+      "eligible": 6,
+      "optimum": 58,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-042-stress",
+      "eligible": 9,
+      "optimum": 70,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-043-accessible",
+      "eligible": 3,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-043-constrained",
+      "eligible": 7,
+      "optimum": 76,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-043-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-044-accessible",
+      "eligible": 2,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-044-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-044-stress",
+      "eligible": 5,
+      "optimum": 24,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-045-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-045-constrained",
+      "eligible": 8,
+      "optimum": 55,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-045-stress",
+      "eligible": 8,
+      "optimum": 61,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-046-accessible",
+      "eligible": 4,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-046-constrained",
+      "eligible": 4,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-046-stress",
+      "eligible": 8,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-047-accessible",
+      "eligible": 3,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-047-constrained",
+      "eligible": 5,
+      "optimum": 26,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-047-stress",
+      "eligible": 7,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-048-accessible",
+      "eligible": 10,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-048-constrained",
+      "eligible": 13,
+      "optimum": 78,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-048-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-049-accessible",
+      "eligible": 9,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-049-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-049-stress",
+      "eligible": 11,
+      "optimum": 56,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-050-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-050-constrained",
+      "eligible": 5,
+      "optimum": 75,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-050-stress",
+      "eligible": 5,
+      "optimum": 75,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-051-accessible",
+      "eligible": 9,
+      "optimum": 43,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-051-constrained",
+      "eligible": 8,
+      "optimum": 44,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-051-stress",
+      "eligible": 10,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-052-accessible",
+      "eligible": 4,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-052-constrained",
+      "eligible": 7,
+      "optimum": 93,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-052-stress",
+      "eligible": 9,
+      "optimum": 94,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-053-accessible",
+      "eligible": 3,
+      "optimum": 15,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-053-constrained",
+      "eligible": 6,
+      "optimum": 19,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-053-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-054-accessible",
+      "eligible": 3,
+      "optimum": 34,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-054-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-054-stress",
+      "eligible": 3,
+      "optimum": 34,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-055-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-055-constrained",
+      "eligible": 7,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-055-stress",
+      "eligible": 4,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-056-accessible",
+      "eligible": 7,
+      "optimum": 42,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-056-constrained",
+      "eligible": 5,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-056-stress",
+      "eligible": 9,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-057-accessible",
+      "eligible": 5,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-057-constrained",
+      "eligible": 8,
+      "optimum": 73,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-057-stress",
+      "eligible": 11,
+      "optimum": 79,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-058-accessible",
+      "eligible": 6,
+      "optimum": 82,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-058-constrained",
+      "eligible": 10,
+      "optimum": 89,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-058-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-059-accessible",
+      "eligible": 5,
+      "optimum": 73,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-059-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-059-stress",
+      "eligible": 5,
+      "optimum": 95,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-060-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-060-constrained",
+      "eligible": 6,
+      "optimum": 51,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-060-stress",
+      "eligible": 8,
+      "optimum": 87,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-061-accessible",
+      "eligible": 3,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-061-constrained",
+      "eligible": 3,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-061-stress",
+      "eligible": 3,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-062-accessible",
+      "eligible": 3,
+      "optimum": 12,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-062-constrained",
+      "eligible": 5,
+      "optimum": 28,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-062-stress",
+      "eligible": 5,
+      "optimum": 16,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-063-accessible",
+      "eligible": 6,
+      "optimum": 59,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-063-constrained",
+      "eligible": 11,
+      "optimum": 107,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-063-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-064-accessible",
+      "eligible": 9,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-064-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-064-stress",
+      "eligible": 13,
+      "optimum": 63,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-065-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-065-constrained",
+      "eligible": 9,
+      "optimum": 64,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-065-stress",
+      "eligible": 12,
+      "optimum": 94,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-066-accessible",
+      "eligible": 8,
+      "optimum": 72,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-066-constrained",
+      "eligible": 10,
+      "optimum": 100,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-066-stress",
+      "eligible": 12,
+      "optimum": 110,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-067-accessible",
+      "eligible": 2,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-067-constrained",
+      "eligible": 4,
+      "optimum": 24,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-067-stress",
+      "eligible": 4,
+      "optimum": 24,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-068-accessible",
+      "eligible": 5,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-068-constrained",
+      "eligible": 5,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-068-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-069-accessible",
+      "eligible": 10,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-069-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-069-stress",
+      "eligible": 12,
+      "optimum": 78,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-070-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-070-constrained",
+      "eligible": 12,
+      "optimum": 88,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-070-stress",
+      "eligible": 15,
+      "optimum": 110,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-071-accessible",
+      "eligible": 2,
+      "optimum": 8,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-071-constrained",
+      "eligible": 2,
+      "optimum": 8,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-071-stress",
+      "eligible": 8,
+      "optimum": 37,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-072-accessible",
+      "eligible": 2,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-072-constrained",
+      "eligible": 2,
+      "optimum": 32,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-072-stress",
+      "eligible": 4,
+      "optimum": 34,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-073-accessible",
+      "eligible": 6,
+      "optimum": 46,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-073-constrained",
+      "eligible": 9,
+      "optimum": 64,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-073-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-074-accessible",
+      "eligible": 4,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-074-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-074-stress",
+      "eligible": 13,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-075-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-075-constrained",
+      "eligible": 9,
+      "optimum": 102,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-075-stress",
+      "eligible": 9,
+      "optimum": 120,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-076-accessible",
+      "eligible": 3,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-076-constrained",
+      "eligible": 3,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-076-stress",
+      "eligible": 5,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-077-accessible",
+      "eligible": 3,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-077-constrained",
+      "eligible": 3,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-077-stress",
+      "eligible": 3,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-078-accessible",
+      "eligible": 6,
+      "optimum": 73,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-078-constrained",
+      "eligible": 8,
+      "optimum": 75,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-078-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-079-accessible",
+      "eligible": 7,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-079-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-079-stress",
+      "eligible": 8,
+      "optimum": 65,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-080-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-080-constrained",
+      "eligible": 12,
+      "optimum": 50,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-080-stress",
+      "eligible": 9,
+      "optimum": 42,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-081-accessible",
+      "eligible": 9,
+      "optimum": 63,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-081-constrained",
+      "eligible": 9,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-081-stress",
+      "eligible": 9,
+      "optimum": 90,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-082-accessible",
+      "eligible": 5,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-082-constrained",
+      "eligible": 5,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-082-stress",
+      "eligible": 5,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-083-accessible",
+      "eligible": 13,
+      "optimum": 72,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-083-constrained",
+      "eligible": 13,
+      "optimum": 95,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-083-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-084-accessible",
+      "eligible": 2,
+      "optimum": 2,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-084-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-084-stress",
+      "eligible": 5,
+      "optimum": 52,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-085-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-085-constrained",
+      "eligible": 10,
+      "optimum": 58,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-085-stress",
+      "eligible": 14,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-086-accessible",
+      "eligible": 2,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-086-constrained",
+      "eligible": 5,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-086-stress",
+      "eligible": 2,
+      "optimum": 36,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-087-accessible",
+      "eligible": 11,
+      "optimum": 69,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-087-constrained",
+      "eligible": 15,
+      "optimum": 75,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-087-stress",
+      "eligible": 15,
+      "optimum": 87,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-088-accessible",
+      "eligible": 6,
+      "optimum": 50,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-088-constrained",
+      "eligible": 9,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-088-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-089-accessible",
+      "eligible": 4,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-089-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-089-stress",
+      "eligible": 4,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-090-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-090-constrained",
+      "eligible": 4,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-090-stress",
+      "eligible": 6,
+      "optimum": 29,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-091-accessible",
+      "eligible": 4,
+      "optimum": 24,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-091-constrained",
+      "eligible": 7,
+      "optimum": 39,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-091-stress",
+      "eligible": 7,
+      "optimum": 39,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-092-accessible",
+      "eligible": 3,
+      "optimum": 55,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-092-constrained",
+      "eligible": 3,
+      "optimum": 55,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-092-stress",
+      "eligible": 3,
+      "optimum": 55,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-093-accessible",
+      "eligible": 7,
+      "optimum": 58,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-093-constrained",
+      "eligible": 10,
+      "optimum": 63,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-093-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-094-accessible",
+      "eligible": 5,
+      "optimum": 48,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-094-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-094-stress",
+      "eligible": 5,
+      "optimum": 66,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-095-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-095-constrained",
+      "eligible": 7,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-095-stress",
+      "eligible": 7,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-096-accessible",
+      "eligible": 5,
+      "optimum": 54,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-096-constrained",
+      "eligible": 8,
+      "optimum": 79,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-096-stress",
+      "eligible": 12,
+      "optimum": 95,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-097-accessible",
+      "eligible": 6,
+      "optimum": 52,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-097-constrained",
+      "eligible": 6,
+      "optimum": 52,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-097-stress",
+      "eligible": 6,
+      "optimum": 52,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-098-accessible",
+      "eligible": 9,
+      "optimum": 53,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-098-constrained",
+      "eligible": 9,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-098-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-099-accessible",
+      "eligible": 3,
+      "optimum": 10,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-099-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-099-stress",
+      "eligible": 7,
+      "optimum": 25,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-100-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-100-constrained",
+      "eligible": 3,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-100-stress",
+      "eligible": 9,
+      "optimum": 110,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-101-accessible",
+      "eligible": 6,
+      "optimum": 46,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-101-constrained",
+      "eligible": 6,
+      "optimum": 46,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-101-stress",
+      "eligible": 10,
+      "optimum": 70,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-102-accessible",
+      "eligible": 10,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-102-constrained",
+      "eligible": 4,
+      "optimum": 20,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-102-stress",
+      "eligible": 8,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-103-accessible",
+      "eligible": 2,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-103-constrained",
+      "eligible": 2,
+      "optimum": 4,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-103-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-104-accessible",
+      "eligible": 3,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-104-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-104-stress",
+      "eligible": 3,
+      "optimum": 45,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-105-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-105-constrained",
+      "eligible": 10,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-105-stress",
+      "eligible": 17,
+      "optimum": 80,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-106-accessible",
+      "eligible": 2,
+      "optimum": 18,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-106-constrained",
+      "eligible": 2,
+      "optimum": 18,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-106-stress",
+      "eligible": 6,
+      "optimum": 50,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-107-accessible",
+      "eligible": 3,
+      "optimum": 5,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-107-constrained",
+      "eligible": 3,
+      "optimum": 5,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-107-stress",
+      "eligible": 8,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-108-accessible",
+      "eligible": 4,
+      "optimum": 70,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-108-constrained",
+      "eligible": 6,
+      "optimum": 97,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-108-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-109-accessible",
+      "eligible": 8,
+      "optimum": 83,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-109-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-109-stress",
+      "eligible": 8,
+      "optimum": 105,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-110-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-110-constrained",
+      "eligible": 11,
+      "optimum": 59,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-110-stress",
+      "eligible": 13,
+      "optimum": 61,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-111-accessible",
+      "eligible": 5,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-111-constrained",
+      "eligible": 8,
+      "optimum": 96,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-111-stress",
+      "eligible": 6,
+      "optimum": 96,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-112-accessible",
+      "eligible": 6,
+      "optimum": 81,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-112-constrained",
+      "eligible": 3,
+      "optimum": 60,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-112-stress",
+      "eligible": 8,
+      "optimum": 99,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-113-accessible",
+      "eligible": 2,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-113-constrained",
+      "eligible": 2,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-113-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-114-accessible",
+      "eligible": 6,
+      "optimum": 68,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-114-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-114-stress",
+      "eligible": 6,
+      "optimum": 74,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-115-accessible",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-115-constrained",
+      "eligible": 7,
+      "optimum": 62,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-115-stress",
+      "eligible": 7,
+      "optimum": 64,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-116-accessible",
+      "eligible": 3,
+      "optimum": 5,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-116-constrained",
+      "eligible": 3,
+      "optimum": 5,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-116-stress",
+      "eligible": 3,
+      "optimum": 5,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-117-accessible",
+      "eligible": 8,
+      "optimum": 57,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-117-constrained",
+      "eligible": 11,
+      "optimum": 74,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-117-stress",
+      "eligible": 14,
+      "optimum": 90,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-118-accessible",
+      "eligible": 4,
+      "optimum": 40,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-118-constrained",
+      "eligible": 7,
+      "optimum": 90,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-118-stress",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-119-accessible",
+      "eligible": 8,
+      "optimum": 64,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-119-constrained",
+      "eligible": 0,
+      "optimum": 0,
+      "passed": true
+    },
+    {
+      "case_id": "w20261023042-119-stress",
+      "eligible": 10,
+      "optimum": 92,
+      "passed": true
+    }
+  ]
+}

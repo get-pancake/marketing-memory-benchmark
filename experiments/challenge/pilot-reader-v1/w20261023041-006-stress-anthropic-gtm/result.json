@@ -1,0 +1,116 @@
+{
+  "id": "w20261023041-006-stress-anthropic-gtm",
+  "case_id": "w20261023041-006-stress",
+  "world": "w20261023041-006",
+  "family": "enterprise_software",
+  "level": "stress",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:15:26.772112+00:00",
+  "evidence_bytes": 8095,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9997000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:15:28Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:15:39Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:15:27Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11997000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:15:28Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbjU2EfDZVZbJZjoZwJ",
+  "usage": {
+    "input_tokens": 5174,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1442,
+    "output_tokens_details": {
+      "thinking_tokens": 720
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.049536",
+    "total_input_tokens": 5174,
+    "output_tokens": 1442,
+    "regular_input_tokens": 5174,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Pine-6",
+        "action": "reference_intro",
+        "sources": [
+          "ee9df4490ceff73",
+          "e58aea1b1c1af8c",
+          "e576fbb47ebe978",
+          "e7b2a4b9dd5991a",
+          "e8b7d676ca89ff1",
+          "e9b580d853e0a0f",
+          "ec0c2598f42b1cf",
+          "e37ad1796eff3f7",
+          "e1fb431ebdfb108",
+          "eb54e7df705d79e",
+          "ec39221d7921ada"
+        ]
+      },
+      {
+        "account": "Grove-6",
+        "action": "workshop",
+        "sources": [
+          "ee9df4490ceff73",
+          "e2b7e5e2692319f",
+          "e373902a13969ec",
+          "e68aecdd1442781",
+          "ec9f931ee4115dd",
+          "ede47d9fb4a8b01",
+          "ead1e2c74f676e9",
+          "e732e665a4b1bcf",
+          "e7ac2960f82b77d",
+          "e2391cd4b900873",
+          "eecb45e33d58fc1"
+        ]
+      }
+    ],
+    "missing": [
+      "Orchid-6: need record for initiative-4 and the downstream offering, proof and verified chain",
+      "Iris-6: profile, consent, priority, signal and initiative chain",
+      "Elm-6: profile, consent, priority, signal and initiative chain",
+      "Harbor-6: profile, consent, priority, signal and initiative chain"
+    ],
+    "reasoning_summary": "Only the approved day-12 seller policy is used; the proposed policy is ignored. Pine-6 (priority 4, renewal signal) has a fully verified chain and a shareable proof, so reference_intro scores 20 at cost 4. Grove-6 (priority 2, launch signal) has a verified chain and offering capacity, so workshop scores 8 at cost 3. The total is 28 at cost 7 of the 8 budget, which beats alternatives such as renewal_review plus workshop (20). Delta-6 is blocked because consent is false and its proof is unverified. Mesa-6 is blocked because its latest consent (day 24) is false. Orchid-6 is blocked because the need record for initiative-4 is missing. Iris-6, Elm-6 and Harbor-6 have no evidence. No eligible third account fits the remaining budget of 1."
+  },
+  "score": {
+    "optimum": 40,
+    "recoverable_value": 28,
+    "returned_value": 28,
+    "normalized_value": 0.7,
+    "context_normalized_value": 0.7,
+    "feasible_grounded": true,
+    "exact_optimum": false,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:15:39.923945+00:00",
+  "seconds": 13.151843141997233
+}

@@ -1,0 +1,125 @@
+{
+  "id": "q272adfc073-openai-gbrain",
+  "case_id": "q272adfc073",
+  "world": "w4a4f0929",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": true,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 0.5,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.23529411764705882,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2",
+      "P3"
+    ]
+  },
+  "evidence_bytes": 2008,
+  "status": "completed",
+  "started_at": "2026-10-23T00:35:03.152830+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999909",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_004fbf4172e42cb3016adaabb7967487d191537f02bea68cc5",
+  "usage": {
+    "input_tokens": 1944,
+    "input_tokens_details": {
+      "cache_write_tokens": 917,
+      "cached_tokens": 1024
+    },
+    "output_tokens": 233,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2177
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0047309",
+    "total_input_tokens": 1944,
+    "output_tokens": 233,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1024,
+    "cache_write_tokens": 917
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved=operations_director",
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S10",
+      "account.account_role:observed": "S17",
+      "account.certification:observed": "S15",
+      "account.observed_signal:observed": "S5",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=operations_director",
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved=operations_director",
+      "seller.approved_geo:approved=EU",
+      "seller.offering_pain:observed=audit_effort",
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": false,
+    "choice_correct": false,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": true,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "S15 and S5 establish ISO27001 certification and a compliance-review signal, while S17 and S10 establish the account role and geography. No compliance action is supported without approved seller role and geography matching the account and observed offering-pain and proof-for-pain evidence; P4 additionally requires an observed approved procurement stage.",
+  "finished_at": "2026-10-23T00:35:08.276561+00:00",
+  "seconds": 5.123795587991481
+}

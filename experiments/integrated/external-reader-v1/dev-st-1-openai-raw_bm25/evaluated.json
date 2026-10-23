@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:32.632065+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0c77477631f2de4f016adaacc4dab887d1b42ac7f6d74df486",
+  "usage": {
+    "input_tokens": 6113,
+    "input_tokens_details": {
+      "cache_write_tokens": 6110,
+      "cached_tokens": 0
+    },
+    "output_tokens": 120,
+    "output_tokens_details": {
+      "reasoning_tokens": 56
+    },
+    "total_tokens": 6233
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016481",
+    "total_input_tokens": 6113,
+    "output_tokens": 120,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6110
+  },
+  "text": "{\"answer\":\"false\",\"citations\":[\"D034\",\"D035\"],\"explanation\":\"The October 28 customer redline is explicitly marked unsigned and for review only. The executed renewal was a separate order form signed on November 21, with different commercial terms.\"}",
+  "finished_at": "2026-10-23T00:39:36.343074+00:00",
+  "seconds": 3.7110176579881227,
+  "id": "dev-st-1-openai-raw_bm25",
+  "case_id": "dev-st-1",
+  "arm": "raw_bm25",
+  "context_bytes": 24575,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "false",
+  "explanation": "The October 28 customer redline is explicitly marked unsigned and for review only. The executed renewal was a separate order form signed on November 21, with different commercial terms.",
+  "citations": [
+    "D034",
+    "D035"
+  ]
+}

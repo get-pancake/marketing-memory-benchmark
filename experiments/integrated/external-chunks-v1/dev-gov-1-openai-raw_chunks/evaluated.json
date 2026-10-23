@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:44:07.105929+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00f2e231c384448d016adaadd7779487d1a33041d0a39c45bb",
+  "usage": {
+    "input_tokens": 6353,
+    "input_tokens_details": {
+      "cache_write_tokens": 6350,
+      "cached_tokens": 0
+    },
+    "output_tokens": 88,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6441
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.016761",
+    "total_input_tokens": 6353,
+    "output_tokens": 88,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 6350
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D041\",\"D044\"],\"explanation\":\"Amendment No. 1 established 185 seats effective 2025-09-01, and the 2026 renewal left that quantity unchanged. Amendment No. 3's increase to 230 seats takes effect only on 2027-01-01, not when signed.\"}",
+  "finished_at": "2026-10-23T00:44:09.976694+00:00",
+  "seconds": 2.870777136005927,
+  "id": "dev-gov-1-openai-raw_chunks",
+  "case_id": "dev-gov-1",
+  "arm": "raw_chunks",
+  "context_bytes": 24503,
+  "answer_correct": true,
+  "answer": "185",
+  "citations": [
+    "D032",
+    "D041",
+    "D044"
+  ],
+  "explanation": "Amendment No. 1 established 185 seats effective 2025-09-01, and the 2026 renewal left that quantity unchanged. Amendment No. 3's increase to 230 seats takes effect only on 2027-01-01, not when signed.",
+  "citation_ids_valid": true
+}

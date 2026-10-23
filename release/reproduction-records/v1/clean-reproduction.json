@@ -1,0 +1,334 @@
+{
+  "started_at": "2026-10-22T12:53:51.894615+00:00",
+  "passed": true,
+  "core_payload_sha256": "5a0d0b5829928ee532a9d012909bc287490092a4f5e830d4da3e99f2a0f15718",
+  "package_files_verified": 355,
+  "package_manifest_sha256": "0fcbe38e7ef84554b25959e7b2d6b747a654ac809142811bd416d489142b5a70",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "independent_hardware": false,
+  "fresh_runtime_compilation": false,
+  "fresh_full_main_inference": false,
+  "fresh_smoke_requested": true,
+  "upstream_scorer_requested": true,
+  "commands": [
+    {
+      "label": "tests-original",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8a9409faf98dd8a5360c16031e7ca3cf8d6861d2f6cf0fb45cfe408862786c47"
+    },
+    {
+      "label": "tests-study",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "-m",
+        "unittest",
+        "study.test_contract",
+        "study.test_ledger",
+        "analysis.test_analysis",
+        "analysis.test_audit",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d938e5c69ddf7cab800756e57aa2a2ed21ecd8855f5e32cf56f9568008cc4721"
+    },
+    {
+      "label": "data",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "-m",
+        "study.fixtures",
+        "--split",
+        "test",
+        "--worlds",
+        "12",
+        "--seed",
+        "2026102202",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/regenerated-data"
+      ],
+      "exit_code": 0,
+      "output_sha256": "fee6660d0f0634fefb2be60742a3f050fe99b7076cfdc1c19b215673e363d3e5"
+    },
+    {
+      "label": "input-capacity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/input_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/input-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "949f7fbd062f24a281310dd27da469daf585c013917e13867710f32422307a43"
+    },
+    {
+      "label": "output-capacity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/output_capacity.py",
+        "--verify-saved",
+        "analysis/diagnostics/output-capacity.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "83125a161bd4b92f27253602e6b5bd2156972c827c49deb1c0b9dd4d17fcb604"
+    },
+    {
+      "label": "audit-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/primary/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "da5963a666e6a4223303f1a8869a4cb7a9be500583b75b27e69a9b83556aaab9"
+    },
+    {
+      "label": "analysis-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "c603c4fb0a55b2a67788a8c646464817bbe248d52a221e4964752c478bbcd76c"
+    },
+    {
+      "label": "errors-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/gtm-reproduction-results-v1/analysis/primary",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/primary/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9523cd974103849f9da3d49c38096765a6f8ddeabc5a17a834236aea0c015a13"
+    },
+    {
+      "label": "figures-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/gtm-reproduction-results-v1/analysis/primary/summary.json",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/figures/primary"
+      ],
+      "exit_code": 0,
+      "output_sha256": "7b3c9efc9121dcd452feeaf5ea7a9eb0519b0bc777cb68f33e32b5ffce12fabb"
+    },
+    {
+      "label": "audit-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/sensitivity/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "343393a33b21d8f4896024e44637dbd62dbf8cce25befd62dd6b925436a6c3a8"
+    },
+    {
+      "label": "analysis-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "858f9a3976cd1916296fb77c026c451fbcd58bff57bbec0475bbd7e35c0d9b3b"
+    },
+    {
+      "label": "errors-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/error_localization.py",
+        "--analysis",
+        "/tmp/gtm-reproduction-results-v1/analysis/sensitivity",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/analysis/sensitivity/error-localization.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a3ee9243d8089f1550fe962c67d0f714ebaac82367ea73d753f56335a99b074c"
+    },
+    {
+      "label": "figures-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "/tmp/gtm-reproduction-results-v1/analysis/sensitivity/summary.json",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/figures/sensitivity"
+      ],
+      "exit_code": 0,
+      "output_sha256": "1592fa693ac557b81014d89f640f25dfdabaa9afd78547ac50fe04329bbb2975"
+    },
+    {
+      "label": "sql-reference",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "-m",
+        "study.reference",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/sql-reference"
+      ],
+      "exit_code": 0,
+      "output_sha256": "573547acc83bfe0fb7902db22b92457569f4fdd4e4cc39d57560f58bb2288f73"
+    },
+    {
+      "label": "cost-accounting",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/cost_accounting.py",
+        "--runs",
+        "experiments/main/primary",
+        "experiments/main/sensitivity",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/cost-accounting.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "393f0ea35a1a838ea94a7121d56eb38a7ec0beaa9b65787cbd753a3d248e2587"
+    },
+    {
+      "label": "report-claims",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "scripts/verify_report_claims.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "40a7cf599773fc8a7b6f99072fc5233fea956703ed09e9e09d574b526f22b499"
+    },
+    {
+      "label": "paper",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "scripts/compile_paper.py",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/report.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "34bece955811e9bb30771d0bfd034349a1415122166849fc0b0f7d7945fafb43"
+    },
+    {
+      "label": "investor-note",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "scripts/compile_investor_note.py",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/investor-note.pdf"
+      ],
+      "exit_code": 0,
+      "output_sha256": "01ab6c4d266f75daf300f743941055dc6f0bef99673d30dfc3d8af730ba8a087"
+    },
+    {
+      "label": "upstream-scorer",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "scripts/audit_enterprisemem_scorer.py",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/upstream-scorer/report.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e001cda4e0f888528e4b46b0b4584ef11d6e10a97f17e2d9a982c6424a944d39"
+    },
+    {
+      "label": "fresh-inference-smoke",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "-m",
+        "study.run",
+        "--data",
+        "data/study/runtime-smoke-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/fresh-inference-smoke",
+        "--model-config",
+        "experiments/qwen3-moe-study.json",
+        "--runtime-manifest",
+        "experiments/qwen3-moe-runtime.json",
+        "--embedding-cache",
+        "/tmp/gtm-reproduction-results-v1/fresh-embeddings.jsonl",
+        "--methods",
+        "prompt_hybrid",
+        "typed",
+        "--conditions",
+        "initial",
+        "--token-cap",
+        "1024"
+      ],
+      "exit_code": 0,
+      "output_sha256": "ba7e7f0874072f775745882d2b41b4d933c60cf66b0bcf97b47169601154565d"
+    },
+    {
+      "label": "fresh-inference-audit",
+      "argv": [
+        "/workspace/research-papers/.cache/clean-reproduction-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "/tmp/gtm-reproduction-results-v1/fresh-inference-smoke",
+        "--data",
+        "data/study/runtime-smoke-v1",
+        "--output",
+        "/tmp/gtm-reproduction-results-v1/fresh-inference-audit.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3e6a30b4fb60881c0a65ac34ab5a5d40ac9560f42634d0d3b7b7a8d0d5c58ec5"
+    }
+  ],
+  "checks": {
+    "main_dataset_byte_identical": true,
+    "input_capacity_receipts_verified_offline": true,
+    "output_capacity_receipts_verified_offline": true,
+    "primary_analysis_identical_excluding_timestamp_and_paths": true,
+    "primary_error_localization_identical_excluding_timestamp": true,
+    "primary_figure_and_table_bytes_identical": true,
+    "sensitivity_analysis_identical_excluding_timestamp_and_paths": true,
+    "sensitivity_error_localization_identical_excluding_timestamp": true,
+    "sensitivity_figure_and_table_bytes_identical": true,
+    "sql_reference_identical_excluding_timing": true,
+    "cost_accounting_identical_excluding_timestamp": true,
+    "numeric_claim_register_and_citation_keys_verified": true,
+    "paper_recompiled_and_text_layout_identical": true,
+    "recompiled_pdf_sha256": "03f1c3c4fbe0cb5372aca48c40eb07a9028a2eca41c72d0e492cfa2a5612175e",
+    "investor_note_two_pages_and_text_layout_identical": true,
+    "upstream_scorer_diagnostic_identical_excluding_timestamp": true,
+    "fresh_inference_requests": 2,
+    "fresh_inference_reused_requests": 0,
+    "packaged_evidence_unchanged_after_reproduction": true
+  },
+  "scope": "Clean extracted code/data and isolated Python environment; system TeX and, if requested, existing pinned local model services remain external dependencies.",
+  "fresh_smoke_accuracy_is_not_main_reproduction": true,
+  "finished_at": "2026-10-22T12:55:22.147850+00:00"
+}

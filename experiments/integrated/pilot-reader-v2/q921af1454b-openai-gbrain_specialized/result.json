@@ -1,0 +1,112 @@
+{
+  "id": "q921af1454b-openai-gbrain_specialized",
+  "case_id": "q921af1454b",
+  "world": "wc26a095a",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 6,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 6,
+    "required_slot_precision": 0.3333333333333333,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1954,
+  "status": "completed",
+  "started_at": "2026-10-23T00:10:08.138095+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999930",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_090cd453c035d23f016adaa5e091cc87d19e07fd79e7d430ca",
+  "usage": {
+    "input_tokens": 1849,
+    "input_tokens_details": {
+      "cache_write_tokens": 1846,
+      "cached_tokens": 0
+    },
+    "output_tokens": 212,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2061
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.006741",
+    "total_input_tokens": 1849,
+    "output_tokens": 212,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1846
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S8",
+      "account.account_role:observed": "S16",
+      "account.observed_signal:observed": "S7",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S12",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=onboarding"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P2 meets the hiring objective and two-unit allowance, with matching approved and observed role and geography (S1, S16, S12, S8), a hiring signal (S7), and an onboarding offering (S3), but lacks observed proof for onboarding. S4 is a proposal and does not change the approved geography; P1 has a different objective, and P4 and P3 exceed the resource allowance.",
+  "finished_at": "2026-10-23T00:10:12.768947+00:00",
+  "seconds": 4.6308624950033845
+}

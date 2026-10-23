@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-10-22T22:13:14.390992+00:00",
+  "commands": [
+    {
+      "program": "pdflatex",
+      "exit_code": 0
+    },
+    {
+      "program": "bibtex",
+      "exit_code": 0
+    },
+    {
+      "program": "pdflatex",
+      "exit_code": 0
+    },
+    {
+      "program": "pdflatex",
+      "exit_code": 0
+    }
+  ],
+  "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "sources": {
+    "paper/abstract.tex": "6481918451ef569b26a2299bb83e59b68627c5e5b79ed7871f03a342fcad9f87",
+    "paper/appendix.tex": "0945805b894612c0c2d04e6afe94455b176fc805b2564cab8006ac0832702a08",
+    "paper/conclusion.tex": "62693a9960d1a172c4f4c1f843b5f0e5eb2e0851e3ac5bb032a66e12a5151b22",
+    "paper/context-extension.tex": "1d18ad42ef3720abb380c7ff2fd71605bf503649e31c4c365b6d30cabadc4d69",
+    "paper/discussion.tex": "b027a6d13764fa65dccb694fbe12ce1dadbcb9d7127e47cd5618681f8fcc1c53",
+    "paper/introduction.tex": "d057b35207986e9ada9ab823e27e896433698079068a792fdc40254c7ec905cb",
+    "paper/investor-note.tex": "f674d133d11402e2dc59d892811b71a875dbff3e40dae2b3aeb42ef435ef0bd9",
+    "paper/limitations.tex": "2557d61729c3aeafae53fca2739a62fa511ba4099f151a739ebf4c347cae5e1a",
+    "paper/main.tex": "0d00e40a588aff821f8c51e41a300cefff0a6700ba7b2043fec0434de9b902c2",
+    "paper/methods.tex": "7ec0962c9b32e8dcd860735f0444e337173a0c30712931a7b6787fee1228713e",
+    "paper/references.bib": "b31e15924076d6a97f73dc7c1a3b2c7bad112e2656e22ffc3260b3554f758677",
+    "paper/related-work.tex": "55b3af241d575df34aab43a7a046a9c9eab4fe6bf140988fc975b14e3eb585a9",
+    "paper/results-appendix.tex": "112edd6a7d3d971ee9ed0112d605c49e4057639a795044c7fccdc5927a501d7d",
+    "paper/results.tex": "209f0e319b90f912c6d037d0562453ab0e7aebdd813f574e93627b7098daf40e",
+    "paper/system-figure.tex": "48b476340a9b9b792a4126cc36b6bb0c8aa43ceb5a8f487047437aded983b0b1",
+    "paper/task.tex": "54095cc9815d7b3d64d42ac5b2c44f0188a813a05918f018c3b7ed070d522e72"
+  },
+  "figures": {
+    "paper/figures/context-budget-table.json": "f1c915645d1fe8f14404546e8b340c25509f125e0726d8684e07e81e2427917e",
+    "paper/figures/context-budget-table.tex": "e3614edcf8113e631c510219a223dbe1710d62488ca10dccb3b8009419d94582",
+    "paper/figures/primary/conditions.pdf": "9960736d74dc7a391da6b35a2e8942a05ba5c1fe42c3480697d90b52d3df6e20",
+    "paper/figures/primary/conditions.svg": "d6c6c5585c8d85f45c11af8222811a601179b2b98f0ca71d932f515b1adbc546",
+    "paper/figures/primary/manifest.json": "960e45cc9da4108b508afb90a87b6e66acb6c40bbb9604631a9c705c4236180b",
+    "paper/figures/primary/quality-cost.pdf": "015a18ec34fbf7653d26a67069778149839d69b38418ba85694724191681724c",
+    "paper/figures/primary/quality-cost.svg": "91cbf28cbeaacd069139435fcf2dc4298906da800560b34d0aaff00d5b3385e2",
+    "paper/figures/primary/quality.pdf": "09c33732bca3ef995fc88dd3ae1bea72fc833eb7d2ff60a44fa569ac44a4a91c",
+    "paper/figures/primary/quality.svg": "fb0eefee23d1b9fc0fccf54b83c200e27a18da1cf93f403d065f829dee6c8c1c",
+    "paper/figures/primary/results-table.tex": "d93c1729fefb636dce83e51bcba14a2784b20ba18b94af75e36441466305a61e",
+    "paper/figures/sensitivity/conditions.pdf": "c60ab231b10dc6787ac82f98ca12b29101ab17c40294c6cd390be2aea2b23904",
+    "paper/figures/sensitivity/conditions.svg": "7208f4d9c235e0a5489dfa737e447cbd6630943b202710eec06b4cdd88774010",
+    "paper/figures/sensitivity/manifest.json": "ced92a6b09463b7521e657dc6c35841cef016d5f87ebc17f9d195121a19eb922",
+    "paper/figures/sensitivity/quality-cost.pdf": "7784861a4735f5bdb032f19fde84ab07e5ac41456b35e5d29a192861bebc32f5",
+    "paper/figures/sensitivity/quality-cost.svg": "21223166b97523766dc6eafe22f67897933cae0264226b1f6dc2b6098e589d40",
+    "paper/figures/sensitivity/quality.pdf": "b53b3c39d8f6c5b4d81785139585e34d64599d45bdbe0e5f49646f5b85517a6d",
+    "paper/figures/sensitivity/quality.svg": "7238fdf573db5920c3e316c7819dbed3d7867208eb927adf63f227c84db39eff",
+    "paper/figures/sensitivity/results-table.tex": "07312564b8a18dd8d7fcdcc93dcbb24761096e5662ca729e37fa98da6831b924"
+  },
+  "pdf_sha256": "789e6562dc9f56cf16cab57d30ed8284125a00307a4bbb4db0ec190f71f85b1f",
+  "note": "Successful compilation is not visual inspection, scientific validation or publication."
+}

@@ -1,0 +1,104 @@
+{
+  "id": "qa2bea48e01-openai-gbrain_specialized",
+  "case_id": "qa2bea48e01",
+  "world": "w102aef1b",
+  "arm": "gbrain_specialized",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3888888888888889,
+    "selected_sources": 18,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2027,
+  "status": "completed",
+  "started_at": "2026-10-23T00:05:11.381710+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_04bf1cb6b7428b27016adaa4b7813087d1b0202814d02c640a",
+  "usage": {
+    "input_tokens": 1116,
+    "input_tokens_details": {
+      "cache_write_tokens": 1113,
+      "cached_tokens": 0
+    },
+    "output_tokens": 202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1318
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0048085",
+    "total_input_tokens": 1116,
+    "output_tokens": 202,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1113
+  },
+  "raw_output": {
+    "missing": [
+      "A current observed migration signal for Caldera-224; S4 records withdrawn rather than migration."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S12",
+      "account.account_role:observed": "S5",
+      "account.observed_signal:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S13",
+      "seller.approved_role:approved": "S17",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S16"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "A current observed migration signal for Caldera-224; S4 records withdrawn rather than migration."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "A current observed migration signal for Caldera-224; S4 records withdrawn rather than migration."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "The approved role and geography match the account observations, and integration offering and proof evidence are supplied (S17, S5, S13, S12, S3, S16). P1 and P4 fail the required migration signal because S4 records withdrawn; P3 additionally lacks an observed approved procurement stage, while P2 does not match the requested objective.",
+  "finished_at": "2026-10-23T00:05:15.866220+00:00",
+  "seconds": 4.484520255005918
+}

@@ -1,0 +1,104 @@
+{
+  "id": "q8d7d6766f5-openai-markdown",
+  "case_id": "q8d7d6766f5",
+  "world": "wc26a095a",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 2037,
+  "status": "completed",
+  "started_at": "2026-10-23T00:04:37.186006+00:00",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0bdb4abad74cf942016adaa495594c87d1ae878eb61cb9726f",
+  "usage": {
+    "input_tokens": 1149,
+    "input_tokens_details": {
+      "cache_write_tokens": 1146,
+      "cached_tokens": 0
+    },
+    "output_tokens": 177,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1326
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.004641",
+    "total_input_tokens": 1149,
+    "output_tokens": 177,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1146
+  },
+  "raw_output": {
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo; current approved geography is US, while observed account geography is UK."
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S8",
+      "account.account_role:observed": "S17",
+      "account.observed_signal:observed": "S7",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S13",
+      "seller.approved_role:approved": "S1",
+      "seller.offering_pain:observed": "S3",
+      "seller.proof_for_pain:observed": "S9"
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo; current approved geography is US, while observed account geography is UK."
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "Evidence satisfying approved_geo=account_geo; current approved geography is US, while observed account geography is UK."
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P2 meets the hiring objective and two-unit allowance, but its required geography equality fails: S13 approves US while S8 observes UK. P1 has a different objective, and P3 and P4 exceed the resource allowance.",
+  "finished_at": "2026-10-23T00:04:41.071331+00:00",
+  "seconds": 3.885310836005374
+}

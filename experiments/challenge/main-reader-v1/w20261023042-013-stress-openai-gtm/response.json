@@ -1,0 +1,162 @@
+{
+  "id": "resp_07fe36aa6d011c39016adaf628589c87d1a3b8140daddb7418",
+  "object": "response",
+  "created_at": 1792734760,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734768,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_07fe36aa6d011c39016adaf6299f1c87d18225b5a0839c99e7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Grove-13: current observed consent must be true; supplied consent is false.\",\n    \"Pine-13: current observed consent must be true, and its profile must satisfy approved policy; supplied consent is false, DE is not allowed, and restricted is blocked.\",\n    \"Aster-13, Mesa-13, and Kestrel-13: supply observed profile, consent, signal, initiative, need, offering and proof links, approved true proof verification, and approved integer priority. Supply action-specific approvals where required.\",\n    \"Elm-13: current observed consent must be true. A workshop also requires approved true offering capacity; supplied capacity is false.\",\n    \"Cedar-13: resolve conflicting current observed consent records; the later true record does not supersede the false record. Its profile must also satisfy approved policy; DE is not allowed and restricted is blocked.\",\n    \"Orchid-13: current observed consent must be true, and supply the observed initiative-to-need-to-offering-to-proof chain with approved true proof verification. A workshop also requires approved true offering capacity.\"\n  ],\n  \"reasoning_summary\": \"No supported action is available after checking accounts independently. All accounts with supplied profiles are blocked by false or conflicting consent; Pine-13 and Cedar-13 also fail the approved regional and sector policy. Aster-13, Mesa-13 and Kestrel-13 lack eligibility evidence. The proposed seller policy is not approved evidence. The empty plan costs 0 of the shared budget of 8 and earns 0 synthetic priority points.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Grove-13",
+                    "Pine-13",
+                    "Aster-13",
+                    "Elm-13",
+                    "Mesa-13",
+                    "Kestrel-13",
+                    "Cedar-13",
+                    "Orchid-13"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3326,
+    "input_tokens_details": {
+      "cache_write_tokens": 3323,
+      "cached_tokens": 0
+    },
+    "output_tokens": 337,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3663
+  },
+  "user": null,
+  "metadata": {}
+}

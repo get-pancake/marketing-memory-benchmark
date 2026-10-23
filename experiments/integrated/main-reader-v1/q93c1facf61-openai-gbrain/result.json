@@ -1,0 +1,125 @@
+{
+  "id": "q93c1facf61-openai-gbrain",
+  "case_id": "q93c1facf61",
+  "world": "w992b6c36",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 0.5,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.23529411764705882,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1991,
+  "status": "completed",
+  "started_at": "2026-10-23T00:32:19.057160+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999896",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_0ab8af32b76b5b90016adaab133c3087d1b74389fdca0cfd6f",
+  "usage": {
+    "input_tokens": 1944,
+    "input_tokens_details": {
+      "cache_write_tokens": 1941,
+      "cached_tokens": 0
+    },
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2191
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0073285",
+    "total_input_tokens": 1944,
+    "output_tokens": 247,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1941
+  },
+  "raw_output": {
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "account.customer_state:observed=active (S4 records withdrawn)",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S16",
+      "account.customer_state:observed": "S4",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S17",
+      "seller.approved_geo:approved": null,
+      "seller.approved_role:approved": null,
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "account.customer_state:observed=active (S4 records withdrawn)",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.approved_role:approved matching account_role=revenue_lead",
+      "seller.approved_geo:approved matching account_geo=UK",
+      "account.customer_state:observed=active (S4 records withdrawn)",
+      "seller.offering_pain:observed=adoption",
+      "seller.proof_for_pain:observed=adoption"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P4 fits the renewal objective and two-unit allowance, but approved seller role and geography, adoption offering and proof, and an active customer state are not established; S4 instead records the customer state as withdrawn. P3 and P2 exceed the allowance, while P1 has a different objective.",
+  "finished_at": "2026-10-23T00:32:24.300447+00:00",
+  "seconds": 5.24329578600009
+}

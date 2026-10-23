@@ -1,0 +1,160 @@
+{
+  "id": "resp_0b9ec585bc24aa63016adaf6d378c487d1bb1aefa844568d82",
+  "object": "response",
+  "created_at": 1792734931,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792734937,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0b9ec585bc24aa63016adaf6d4cce087d1bb3e119a286e36ba",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"actions\":[],\"missing\":[\"Iris-90, Flint-90, Mesa-90 and Elm-90: supply observed profile, consent=true, signal, and the initiative \u2192 need \u2192 offering \u2192 proof chain; also supply approved proof.verified=true and an approved integer account priority. Action-specific extras must be approved true where required.\",\"North-90: resolve conflicting current observed consent values (e6431c0d553c5fd=true; ee5df7ee5d9da0f=false). Its observed profile also places it in the policy-blocked restricted sector, independently preventing eligibility.\",\"Delta-90: its observed DE region is not allowed by the approved seller policy. Eligibility requires an approved policy permitting that region or authoritative evidence resolving the profile to an allowed region.\"],\"reasoning_summary\":\"No supported action is available under approved policy ee165ad3549679c. North-90 is blocked by both its restricted sector and conflicting consent; the later consent record does not supersede the earlier current record. Delta-90 is independently blocked by its DE region. No eligibility evidence was supplied for the other queried accounts. The proposed policy and feedback do not establish approved facts; no budget is spent.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Iris-90",
+                    "Flint-90",
+                    "Delta-90",
+                    "North-90",
+                    "Mesa-90",
+                    "Elm-90"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4445,
+    "input_tokens_details": {
+      "cache_write_tokens": 4442,
+      "cached_tokens": 0
+    },
+    "output_tokens": 252,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4697
+  },
+  "user": null,
+  "metadata": {}
+}

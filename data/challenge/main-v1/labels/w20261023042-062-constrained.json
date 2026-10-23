@@ -1,0 +1,281 @@
+{
+  "case_id": "w20261023042-062-constrained",
+  "world": "w20261023042-062",
+  "eligible": [
+    {
+      "account": "Elm-62",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 6,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "ec17b8cbad87d6e"
+        ],
+        [
+          "e7fcbb3ae0a88f5"
+        ],
+        [
+          "e7a0f63d0f6a4a7"
+        ],
+        [
+          "e91e1ecf569b36b"
+        ],
+        [
+          "e923aae50e9c638"
+        ],
+        [
+          "ecf6f332b770ecb"
+        ],
+        [
+          "eec45ea46eead9b"
+        ],
+        [
+          "e0d4cd9a2a4e7dd"
+        ],
+        [
+          "eb3d4c71b4a8cdb"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-62",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 12,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "ec17b8cbad87d6e"
+        ],
+        [
+          "e7fcbb3ae0a88f5"
+        ],
+        [
+          "e7a0f63d0f6a4a7"
+        ],
+        [
+          "e91e1ecf569b36b"
+        ],
+        [
+          "e923aae50e9c638"
+        ],
+        [
+          "ecf6f332b770ecb"
+        ],
+        [
+          "eec45ea46eead9b"
+        ],
+        [
+          "e0d4cd9a2a4e7dd"
+        ],
+        [
+          "e2e4bd892fa438b"
+        ],
+        [
+          "eb3d4c71b4a8cdb"
+        ]
+      ]
+    },
+    {
+      "account": "Elm-62",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 3,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "ec17b8cbad87d6e"
+        ],
+        [
+          "e7fcbb3ae0a88f5"
+        ],
+        [
+          "e7a0f63d0f6a4a7"
+        ],
+        [
+          "e91e1ecf569b36b"
+        ],
+        [
+          "e923aae50e9c638"
+        ],
+        [
+          "ecf6f332b770ecb"
+        ],
+        [
+          "eec45ea46eead9b"
+        ],
+        [
+          "e0d4cd9a2a4e7dd"
+        ],
+        [
+          "eb3d4c71b4a8cdb"
+        ]
+      ]
+    },
+    {
+      "account": "Larch-62",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 16,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "e80d0f8f62ddc92"
+        ],
+        [
+          "e972d1ad3cc765a"
+        ],
+        [
+          "ee91afc5c4beeca"
+        ],
+        [
+          "e625962a425b9cf"
+        ],
+        [
+          "eeae38346c950b0"
+        ],
+        [
+          "e92008b5f7a2c5b"
+        ],
+        [
+          "e7539c4d8110835"
+        ],
+        [
+          "e7a4e5c89d25086"
+        ],
+        [
+          "e9dc64af4a3560f"
+        ]
+      ]
+    },
+    {
+      "account": "Larch-62",
+      "action": "research_brief",
+      "cost": 1,
+      "value": 8,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "e80d0f8f62ddc92"
+        ],
+        [
+          "e972d1ad3cc765a"
+        ],
+        [
+          "ee91afc5c4beeca"
+        ],
+        [
+          "e625962a425b9cf"
+        ],
+        [
+          "eeae38346c950b0"
+        ],
+        [
+          "e92008b5f7a2c5b"
+        ],
+        [
+          "e7539c4d8110835"
+        ],
+        [
+          "e7a4e5c89d25086"
+        ],
+        [
+          "e9dc64af4a3560f"
+        ]
+      ]
+    }
+  ],
+  "optimum": 28,
+  "reference_plan": [
+    {
+      "account": "Elm-62",
+      "action": "assurance_pack",
+      "cost": 3,
+      "value": 12,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "ec17b8cbad87d6e"
+        ],
+        [
+          "e7fcbb3ae0a88f5"
+        ],
+        [
+          "e7a0f63d0f6a4a7"
+        ],
+        [
+          "e91e1ecf569b36b"
+        ],
+        [
+          "e923aae50e9c638"
+        ],
+        [
+          "ecf6f332b770ecb"
+        ],
+        [
+          "eec45ea46eead9b"
+        ],
+        [
+          "e0d4cd9a2a4e7dd"
+        ],
+        [
+          "e2e4bd892fa438b"
+        ],
+        [
+          "eb3d4c71b4a8cdb"
+        ]
+      ]
+    },
+    {
+      "account": "Larch-62",
+      "action": "diagnostic",
+      "cost": 2,
+      "value": 16,
+      "support_groups": [
+        [
+          "e584099154fbfc9"
+        ],
+        [
+          "e80d0f8f62ddc92"
+        ],
+        [
+          "e972d1ad3cc765a"
+        ],
+        [
+          "ee91afc5c4beeca"
+        ],
+        [
+          "e625962a425b9cf"
+        ],
+        [
+          "eeae38346c950b0"
+        ],
+        [
+          "e92008b5f7a2c5b"
+        ],
+        [
+          "e7539c4d8110835"
+        ],
+        [
+          "e7a4e5c89d25086"
+        ],
+        [
+          "e9dc64af4a3560f"
+        ]
+      ]
+    }
+  ]
+}

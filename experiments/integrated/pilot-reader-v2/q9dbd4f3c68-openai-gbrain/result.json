@@ -1,0 +1,176 @@
+{
+  "id": "q9dbd4f3c68-openai-gbrain",
+  "case_id": "q9dbd4f3c68",
+  "world": "wf66aa99f",
+  "arm": "gbrain",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P2"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 4,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 4,
+    "required_slot_precision": 0.3157894736842105,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P2"
+    ]
+  },
+  "evidence_bytes": 2027,
+  "status": "completed",
+  "started_at": "2026-10-23T00:11:36.359411+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14997",
+    "x-ratelimit-remaining-tokens": "39999978",
+    "x-ratelimit-reset-requests": "9ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00d44ceb06e013a4016adaa638cc5087d1ad95de7edd431df9",
+  "usage": {
+    "input_tokens": 1868,
+    "input_tokens_details": {
+      "cache_write_tokens": 1865,
+      "cached_tokens": 0
+    },
+    "output_tokens": 164,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2032
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0063085",
+    "total_input_tokens": 1868,
+    "output_tokens": 164,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 1865
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S6",
+      "account.account_role:observed": "S14",
+      "account.observed_signal:observed": "S2",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S4",
+      "seller.approved_role:approved": "S3",
+      "seller.offering_pain:observed": null,
+      "seller.proof_for_pain:observed": null
+    },
+    "template": "P2"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e3804275",
+          "e5d79e84",
+          "ec44dae5",
+          "e6dc98f0"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-751",
+      "objective": "qualification_audit",
+      "template": "P2",
+      "policy_versions": [
+        "e3804275",
+        "e5d79e84"
+      ],
+      "evidence": [
+        "e3804275",
+        "e5d79e84",
+        "e6dc98f0",
+        "ec44dae5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P2",
+        "evidence": [
+          "e3804275",
+          "e5d79e84",
+          "ec44dae5",
+          "e6dc98f0"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Arden-751",
+      "objective": "qualification_audit",
+      "template": "P2",
+      "policy_versions": [
+        "e3804275",
+        "e5d79e84"
+      ],
+      "evidence": [
+        "e3804275",
+        "e5d79e84",
+        "e6dc98f0",
+        "ec44dae5"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "Check current targeting fit before further research.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P2 satisfies the qualification_audit objective within the two-unit allowance: the approved role matches the observed account role (S3, S14), and the approved geography matches the observed account geography (S4, S6). P2 requires no additional evidence.",
+  "finished_at": "2026-10-23T00:11:40.387143+00:00",
+  "seconds": 4.02774179399421
+}

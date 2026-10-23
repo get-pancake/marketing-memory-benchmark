@@ -1,0 +1,113 @@
+{
+  "id": "qea8e6c98c0-openai-markdown",
+  "case_id": "qea8e6c98c0",
+  "world": "wacc7f06b",
+  "arm": "markdown",
+  "provider": "openai",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 7,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 7,
+    "required_slot_precision": 0.3684210526315789,
+    "selected_sources": 19,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1960,
+  "status": "completed",
+  "started_at": "2026-10-23T00:41:25.751271+00:00",
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999916",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_080a08af4bb5197d016adaad363ee887d198f1e092e0533445",
+  "usage": {
+    "input_tokens": 1994,
+    "input_tokens_details": {
+      "cache_write_tokens": 913,
+      "cached_tokens": 1078
+    },
+    "output_tokens": 226,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2220
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0046563",
+    "total_input_tokens": 1994,
+    "output_tokens": 226,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 1078,
+    "cache_write_tokens": 913
+  },
+  "raw_output": {
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ],
+    "status": "request_evidence",
+    "support": {
+      "account.account_geo:observed": "S15",
+      "account.account_role:observed": "S9",
+      "account.certification:observed": "S4",
+      "account.observed_signal:observed": "S16",
+      "account.procurement_stage:observed": null,
+      "seller.approved_geo:approved": "S2",
+      "seller.approved_role:approved": "S18",
+      "seller.offering_pain:observed": "S17",
+      "seller.proof_for_pain:observed": null
+    },
+    "template": null
+  },
+  "materialized": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "request_evidence",
+    "plays": [],
+    "missing": [
+      "seller.proof_for_pain:observed=audit_effort"
+    ]
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": false,
+    "supported_recommendation": false,
+    "inappropriate_abstention": false,
+    "correct_withhold": true,
+    "violations": [],
+    "dry_run": null
+  },
+  "explanation": "P3 meets the compliance objective and two-unit allowance, with matching approved and observed role and geography (S18, S9, S2, S15) and certification, signal, and offering-pain evidence (S4, S16, S17), but lacks observed seller proof for audit_effort. Supply that evidence before recommending P3; P4 and P2 exceed the resource allowance, and P1 has a different objective.",
+  "finished_at": "2026-10-23T00:41:31.809370+00:00",
+  "seconds": 6.0581092479988
+}

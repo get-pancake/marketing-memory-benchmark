@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:57.256261+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_057cc680ea4ebece016adaacdd708887d18bf3091864490ba1",
+  "usage": {
+    "input_tokens": 17585,
+    "input_tokens_details": {
+      "cache_write_tokens": 17582,
+      "cached_tokens": 0
+    },
+    "output_tokens": 74,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17659
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.044701",
+    "total_input_tokens": 17585,
+    "output_tokens": 74,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 17582
+  },
+  "text": "{\"answer\":\"185\",\"citations\":[\"D032\",\"D041\",\"D044\"],\"explanation\":\"The 185-seat amendment remained in effect through October 14, 2026; the renewal did not change seat quantity. The signed increase to 230 seats becomes effective only on January 1, 2027.\"}",
+  "finished_at": "2026-10-23T00:39:59.534972+00:00",
+  "seconds": 2.27871932600101,
+  "id": "dev-gov-1-openai-wiki_generic",
+  "case_id": "dev-gov-1",
+  "arm": "wiki_generic",
+  "context_bytes": 66742,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "185",
+  "explanation": "The 185-seat amendment remained in effect through October 14, 2026; the renewal did not change seat quantity. The signed increase to 230 seats becomes effective only on January 1, 2027.",
+  "citations": [
+    "D032",
+    "D041",
+    "D044"
+  ]
+}

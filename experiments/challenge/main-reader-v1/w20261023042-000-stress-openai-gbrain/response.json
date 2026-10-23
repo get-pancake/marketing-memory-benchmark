@@ -1,0 +1,169 @@
+{
+  "id": "resp_0a59ab65704655e2016adaf953ea3c87d1b156ce18ab7f5566",
+  "object": "response",
+  "created_at": 1792735571,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792735576,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a59ab65704655e2016adaf954de2087d1b11749f997b7cfc3",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2vlZ6dc_MjcZFIcUJKY8s3t1ZPF5eGdiJ5P4-F8uHDCb7TMJfkz2x2TtPyygVFXzZW8leOyXdT9s7_4IobQ-lLmm3_PtnA-MyfYpKvULx-cJAq7SPb2bCJl0HKbjdD7Ivu1gPBve0vcJanAHsD_WSCV6j3oHldTc7sdTbVSdDaPDsnux7xOqRFjq7MPOMllgX5ra4WP6XxctMhZTTlbjkescwszuDybUTpdWIGEb9n0UoX0IPnTPoX3yiVMiyF0beyM3a6tjKrU6H9CCSAZi9u2Hgtq7ZmYfPBNZnYMFHS6yonaJl9Rmk4PDjyp5KD_ngaEAvfAGBxQlaVot7bOG8_wdeeCrBTbgGAUtPHnEYEq276wkuvko5TF9acrfV98OqbT1NATgP8sNRwzVw7TUqmJowhQeRtQfpAmxrehIsFkSvUyOwxFkAT47udzavBdaX3Uw1xqg5Q7jgIFC0F8PW9W83nxA6iqtJo44EMI-7SR76TC8DMSv3bQ7pdVifliiL4qN_F-OrNWHsGoPu5lVEvK-5-A-Qzf-UCXawXL2Aj0PNYg9mCnjRCV1EU_oHJ-FS57pROObaaNngMzeE_anYEwGjKFw-31eXQzB1umpWke7nhgXahqMLsKXzLunFI-ita9rVzguZr1uxGY6DZ0RRW9xJ_arpO9gWzByVKPu4hL26a0dutzswXDWWhEvWuA79_wXqtdZFrDQSYlIux3ZubcDFJ2_lKhGRzMGZuQApMc01D8KbIKKJ1AjTCc1zzVmN4fpptj9y66Eb9_YVWrfWOPglpWrpHmz6ihe7_d5G43bcZAfoKOpXQONV1iOeYtIi-pZIVROEX8IpaeQtSYQ4uym9WtVEXSUKaBL3eZb-qxkb7G9M-deYaazUl5y5zRoMsz1ubguNWmN7XY5cO2j6rnzzoA39c7SoClPmyMBS6QNKJlJqul84INo1L5EqKtL1JCS1LLesMR0cZngWTMabCs-kmUKZQna4Ca5q8UiwMriy5Hg9R-UBwZdK0dCMu1PRSQpQFN0hffY4SM-BVhb0AmENDa0VuuruKIxeyXSL1lC_4UVZUxhA3ef46dDih_qaWQFdsI-InZNXED9k41hvGTZUhsD9h0roTuGlDLr3n_swE8cT60VGR3hsUwaY3A9OQHB81oybEe3P6V0glXnEv3wQHUWFxmh0rqOXYPr1yGgyjYPQzVW2l46pCRgnbV2wlm-5t_GJX2Q2TCJLO6n-snXnCqYV-nzptd3yv-5PbxaZWBL7Jh67YMvSEC_3pEHILoplHPdfWUsFsNfdOdspwfjfmUaXCC9sIolKIgv2Zs11RkXyNjAF_ija5PTVJEYtJyZmrUcduWrAKNehZOSosLQHJ61MhYJuIM7W3Vf-ULhj0ZCYzfGfPIHJECKz-dDFTqjvM_M_4RISZW2vJyQGqPZG-0_SH9MdyjtgL3zexGQ6DHQfajZ1GR6mPbVy1jYRgLh3aFG3uw1p1sAkEKrtKXFYi_-wG1Q75pKP6XjzWc50PTh9igBHgpDOXvSq20tKfTcNSFrgJiQvWH37Z1owjFPJLzIX51odUSycsLskP1UxZv_8ROaMSgWHEv3IYeiBVlXyMM_69AO_Lp8wix6J-qxZ6tKUmdRrzmiXuogKF6hN23UvmRsM8maU6wSxtlv8r9SV7g--i0NQzDBj8NFw5KlXf7AkDTNYJdepgbwRD6leKrYqFhzVyr3T6K23tWzhGbCclWwUeKnc-QV_fK92R_BXA3-cynv9nbmM0tZGyed2UU=",
+      "summary": []
+    },
+    {
+      "id": "msg_0a59ab65704655e2016adaf955a6f487d1838e44d11d445ea7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"actions\": [],\n  \"missing\": [\n    \"Approved seller policy specifying allowed regions, blocked sectors, and approved actions.\",\n    \"For each queried account: observed profile with region and sector, current observed consent=true, and an observed signal matching a catalog action.\",\n    \"For each queried account: the observed account.initiative \u2192 initiative.need \u2192 need.offering \u2192 offering.proof chain, plus observed proof.verified=true.\",\n    \"For workshop, assurance_pack, or reference_intro: approved offering.capacity=true, approved offering.assurance=true, or approved proof.shareable=true, respectively, linked through the required chain.\"\n  ],\n  \"reasoning_summary\": \"Each account was assessed independently. All eight have approved integer priorities, but none has the supplied policy, profile, consent, signal, and verified evidence chain required for any action. Isolated capacity records cannot establish eligibility. No supported action can be selected within the shared budget of 8.\"\n}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "marketing_plan",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "account": {
+                  "enum": [
+                    "Birch-0",
+                    "Kestrel-0",
+                    "Elm-0",
+                    "Larch-0",
+                    "Iris-0",
+                    "Aster-0",
+                    "Flint-0",
+                    "Juniper-0"
+                  ],
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "diagnostic",
+                    "workshop",
+                    "renewal_review",
+                    "reference_intro",
+                    "assurance_pack",
+                    "research_brief"
+                  ],
+                  "type": "string"
+                },
+                "sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "account",
+                "action",
+                "sources"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "reasoning_summary",
+          "missing"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3109,
+    "input_tokens_details": {
+      "cache_write_tokens": 3106,
+      "cached_tokens": 0
+    },
+    "output_tokens": 228,
+    "output_tokens_details": {
+      "reasoning_tokens": 25
+    },
+    "total_tokens": 3337
+  },
+  "user": null,
+  "metadata": {}
+}

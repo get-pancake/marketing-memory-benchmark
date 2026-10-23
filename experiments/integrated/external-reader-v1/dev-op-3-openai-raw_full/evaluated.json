@@ -1,0 +1,45 @@
+{
+  "provider": "openai",
+  "model_requested": "gpt-6.1-sol",
+  "started_at": "2026-10-23T00:39:05.230804+00:00",
+  "status": "completed",
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_00995e860e03e526016adaaca9ce7887d1bc22106db9765780",
+  "usage": {
+    "input_tokens": 72925,
+    "input_tokens_details": {
+      "cache_write_tokens": 72922,
+      "cached_tokens": 0
+    },
+    "output_tokens": 91,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 73016
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.183221",
+    "total_input_tokens": 72925,
+    "output_tokens": 91,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 72922
+  },
+  "text": "{\"answer\":\"Quarrendon Freight Lines\",\"citations\":[\"D079\",\"D056\",\"D059\"],\"explanation\":\"The review explicitly places \u201cDana's freight account\u201d in the Quarrendon Freight Lines discussion and dates the meeting September 16, after the Brackenwater handoff. Quarrendon moved to Dana on June 2, while Brackenwater moved to Marcus on September 15.\"}",
+  "finished_at": "2026-10-23T00:39:09.066736+00:00",
+  "seconds": 3.8359434330050135,
+  "id": "dev-op-3-openai-raw_full",
+  "case_id": "dev-op-3",
+  "arm": "raw_full",
+  "context_bytes": 293342,
+  "answer_correct": true,
+  "citation_ids_valid": true,
+  "answer": "Quarrendon Freight Lines",
+  "explanation": "The review explicitly places \u201cDana's freight account\u201d in the Quarrendon Freight Lines discussion and dates the meeting September 16, after the Brackenwater handoff. Quarrendon moved to Dana on June 2, while Brackenwater moved to Marcus on September 15.",
+  "citations": [
+    "D079",
+    "D056",
+    "D059"
+  ]
+}

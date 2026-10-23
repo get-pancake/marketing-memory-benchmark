@@ -1,0 +1,113 @@
+{
+  "id": "w20261023041-011-accessible-anthropic-gtm",
+  "case_id": "w20261023041-011-accessible",
+  "world": "w20261023041-011",
+  "family": "professional_services",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:12:15.294077+00:00",
+  "evidence_bytes": 16282,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9995000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T05:12:17Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T05:12:28Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T05:12:15Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11995000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T05:12:17Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJbVLvTqZLp8dH2HjoFf",
+  "usage": {
+    "input_tokens": 8709,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1505,
+    "output_tokens_details": {
+      "thinking_tokens": 721
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.064936",
+    "total_input_tokens": 8709,
+    "output_tokens": 1505,
+    "regular_input_tokens": 8709,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Orchid-11",
+        "action": "reference_intro",
+        "sources": [
+          "efa97de2caa4e06",
+          "e13c1df1f001dec",
+          "e58a1cbd4c93abd",
+          "e3312c74b442c4d",
+          "e407f6cba4e90b8",
+          "e5f1755ea66e5b7",
+          "eac69dfbdf0869b",
+          "ef12745cc413b3c",
+          "e804078d7be7414",
+          "e0ac1e2cffdfdd0",
+          "e01f7bcf04f0bba"
+        ]
+      },
+      {
+        "account": "Flint-11",
+        "action": "renewal_review",
+        "sources": [
+          "efa97de2caa4e06",
+          "e9825ceb850cc12",
+          "e94be002680f0fe",
+          "ed5beac2a4edacf",
+          "eb3a8cd48309edc",
+          "e5e06f46f46e6d1",
+          "ee91621ada34aa0",
+          "efd1d56f9fdfbb0",
+          "e519fbec7019da8",
+          "e90d190a24cabec"
+        ]
+      }
+    ],
+    "missing": [
+      "Cedar-11: no action is possible because its profile sector 'restricted' is blocked by the approved seller policy; an updated observed profile would be needed.",
+      "Birch-11: no action is possible because proof-3 has approved verified=false; an approved verified=true proof would be needed. Its proof-3 is also not shareable, so reference_intro is unavailable."
+    ],
+    "reasoning_summary": "The approved seller policy (efa97de2caa4e06) allows FR, UK and DE and blocks the 'restricted' sector. The proposed policy was ignored because it is not approved. Orchid-11 (FR, services, consent true, growth signal, priority 8) has a full verified chain, and proof-0 is shareable, so reference_intro scores 8x5=40 at cost 4. Flint-11 (FR, manufacturing, consent true, renewal signal, priority 7) has a full verified chain, so renewal_review scores 7x3=21 at cost 2. Together the two actions cost 6, which uses the full budget of 6, for a total of 61 policy points. The alternatives are lower: Flint-11 reference_intro plus Orchid-11 diagnostic totals 51, and Orchid-11 reference_intro plus Flint-11 research_brief totals 47. Cedar-11 is excluded because its sector is restricted, and Birch-11 is excluded because its proof is not verified. These points are synthetic priorities, not revenue."
+  },
+  "score": {
+    "optimum": 61,
+    "recoverable_value": 61,
+    "returned_value": 61,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T05:12:28.984122+00:00",
+  "seconds": 13.690051574012614
+}

@@ -1,0 +1,116 @@
+{
+  "id": "w20261023042-006-accessible-anthropic-markdown",
+  "case_id": "w20261023042-006-accessible",
+  "world": "w20261023042-006",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "markdown",
+  "status": "completed",
+  "started_at": "2026-10-23T06:01:52.117269+00:00",
+  "evidence_bytes": 16326,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9989000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:01:54Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:02:06Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:01:53Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11989000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:01:54Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfGqCg46J3m5kNGWg8N",
+  "usage": {
+    "input_tokens": 8784,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1434,
+    "output_tokens_details": {
+      "thinking_tokens": 684
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.063816",
+    "total_input_tokens": 8784,
+    "output_tokens": 1434,
+    "regular_input_tokens": 8784,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Harbor-6",
+        "action": "reference_intro",
+        "sources": [
+          "e5183b64da54e01",
+          "ed6307871768198",
+          "eb956b803db7ae6",
+          "e5d4caadb9f0964",
+          "ee465bedfe8a6d5",
+          "e912cfce57e5b7e",
+          "ee68b72856a8821",
+          "e8e77d026d8a99d",
+          "e84725fffaf6aca",
+          "e53cd08f11ec396",
+          "e5a2dbc1272b8c8"
+        ]
+      },
+      {
+        "account": "Birch-6",
+        "action": "diagnostic",
+        "sources": [
+          "e5183b64da54e01",
+          "ec59cc1bdbed8a1",
+          "e2bba3ccf625594",
+          "e933fa201eb92a4",
+          "e80a7d6fc6d5bc9",
+          "eb16297e15dbc11",
+          "eba5d10f396bf1f",
+          "e0384bb706d14f1",
+          "e66ca15f532fd54",
+          "e513fa7575dd9dd"
+        ]
+      }
+    ],
+    "missing": [
+      "Flint-6: observed profile (region/sector)",
+      "Flint-6: observed signal",
+      "Flint-6: approved integer priority",
+      "Flint-6: observed initiative -> need -> offering -> proof chain and approved proof verification",
+      "Larch-6: blocked because its observed profile sector is 'restricted'; a non-blocked sector would be required"
+    ],
+    "reasoning_summary": "The plan uses the full budget of 6 for a total score of 42. Harbor-6 gets reference_intro: priority 8 x multiplier 5 = 40, cost 4. Birch-6 gets diagnostic: priority 1 x multiplier 2 = 2, cost 2. Both accounts pass the approved seller policy and have allowed regions (FR, US) with sectors that are not blocked. Both have current observed consent and a growth signal, and each has a full observed chain from initiative to proof with approved verified=true. Harbor's proof is also approved shareable. Larch-6 is excluded because its sector, restricted, is blocked. Flint-6 is excluded because it has no profile, signal, priority or initiative chain. The proposed policy and the nonresponse feedback were not treated as approved facts. Other combinations score less: Harbor reference_intro plus Birch research_brief = 41, and Birch reference_intro plus Harbor diagnostic = 21."
+  },
+  "score": {
+    "optimum": 42,
+    "recoverable_value": 42,
+    "returned_value": 42,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:02:06.185791+00:00",
+  "seconds": 14.06853170901013
+}

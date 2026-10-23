@@ -1,0 +1,109 @@
+{
+  "started_at": "2026-10-22T12:32:42.368903+00:00",
+  "complete": true,
+  "model_calls": 0,
+  "commands": [
+    {
+      "label": "audit-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "analysis/main/primary/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "da5963a666e6a4223303f1a8869a4cb7a9be500583b75b27e69a9b83556aaab9"
+    },
+    {
+      "label": "analysis-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/primary",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "analysis/main/primary"
+      ],
+      "exit_code": 0,
+      "log_sha256": "9c48b44206a96bb596143983f9192a3a61c6a9cccfbe9f1a426b6162ebed7d82"
+    },
+    {
+      "label": "figures-primary",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "analysis/main/primary/summary.json",
+        "--output",
+        "paper/figures/primary"
+      ],
+      "exit_code": 0,
+      "log_sha256": "7cd97eae0d56b4821989f89f6f3c03912c16e3b91d75d7d702b24390d3cabc89"
+    },
+    {
+      "label": "audit-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/audit_run.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "analysis/main/sensitivity/provenance-audit.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "343393a33b21d8f4896024e44637dbd62dbf8cce25befd62dd6b925436a6c3a8"
+    },
+    {
+      "label": "analysis-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/analyze_study.py",
+        "--run",
+        "experiments/main/sensitivity",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "analysis/main/sensitivity"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ce7601a9d9cd9ad41b5cd3a12da9197cc0ecea83aa6faea852522edab1e30764"
+    },
+    {
+      "label": "figures-sensitivity",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "analysis/figures.py",
+        "--analysis",
+        "analysis/main/sensitivity/summary.json",
+        "--output",
+        "paper/figures/sensitivity"
+      ],
+      "exit_code": 0,
+      "log_sha256": "08c2c81a7f1824b2e165c74d5e5fe5952213056d8ab7aedda5e48e1e104feb63"
+    },
+    {
+      "label": "sql-reference",
+      "argv": [
+        "/workspace/research-papers/.cache/analysis-venv/bin/python",
+        "-m",
+        "study.reference",
+        "--data",
+        "data/study/main-v1",
+        "--output",
+        "experiments/main/sql-reference"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ea1ccd09946f67c894bb030d46b53b5c0b33526cca7b84f7907d7c0b93227172"
+    }
+  ],
+  "scope": "Analysis of saved actual outputs only, after both frozen blocks completed.",
+  "finished_at": "2026-10-22T12:32:47.629566+00:00"
+}

@@ -1,0 +1,142 @@
+{
+  "scope": "Exploratory development QA; one externally authored fictional company; no independent-company interval.",
+  "run_status": "completed",
+  "planned_calls": 220,
+  "completed": 220,
+  "attempted": 220,
+  "groups": {
+    "openai/none": {
+      "cases": 22,
+      "correct": 1,
+      "accuracy": 0.045454545454545456,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 22,
+      "estimated_usd": 0.023896,
+      "mean_input_tokens": 261.04545454545456,
+      "mean_context_bytes": 0
+    },
+    "openai/raw_bm25": {
+      "cases": 22,
+      "correct": 20,
+      "accuracy": 0.9090909090909091,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 0.36622699999999997,
+      "mean_input_tokens": 6366.545454545455,
+      "mean_context_bytes": 24469.454545454544
+    },
+    "openai/raw_full": {
+      "cases": 22,
+      "correct": 21,
+      "accuracy": 0.9545454545454546,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 4.0256795,
+      "mean_input_tokens": 72916.04545454546,
+      "mean_context_bytes": 293342
+    },
+    "openai/wiki_generic": {
+      "cases": 22,
+      "correct": 21,
+      "accuracy": 0.9545454545454546,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 0.9821195,
+      "mean_input_tokens": 17584.045454545456,
+      "mean_context_bytes": 66742
+    },
+    "openai/wiki_specialized": {
+      "cases": 22,
+      "correct": 22,
+      "accuracy": 1.0,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 0.9050945,
+      "mean_input_tokens": 16155.045454545454,
+      "mean_context_bytes": 63942
+    },
+    "anthropic/none": {
+      "cases": 22,
+      "correct": 1,
+      "accuracy": 0.045454545454545456,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 22,
+      "estimated_usd": 0.044648,
+      "mean_input_tokens": 614.7272727272727,
+      "mean_context_bytes": 0
+    },
+    "anthropic/raw_bm25": {
+      "cases": 22,
+      "correct": 20,
+      "accuracy": 0.9090909090909091,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 0.502768,
+      "mean_input_tokens": 10649.954545454546,
+      "mean_context_bytes": 24469.454545454544
+    },
+    "anthropic/raw_full": {
+      "cases": 22,
+      "correct": 21,
+      "accuracy": 0.9545454545454546,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 5.35893,
+      "mean_input_tokens": 120887.72727272728,
+      "mean_context_bytes": 293342
+    },
+    "anthropic/wiki_generic": {
+      "cases": 22,
+      "correct": 20,
+      "accuracy": 0.9090909090909091,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 1.281766,
+      "mean_input_tokens": 28201.727272727272,
+      "mean_context_bytes": 66742
+    },
+    "anthropic/wiki_specialized": {
+      "cases": 22,
+      "correct": 20,
+      "accuracy": 0.9090909090909091,
+      "failures": 0,
+      "invalid_citation_ids": 0,
+      "empty_citations": 0,
+      "estimated_usd": 1.215506,
+      "mean_input_tokens": 26476.727272727272,
+      "mean_context_bytes": 63942
+    }
+  },
+  "compilation": {
+    "wiki_generic": {
+      "status": "completed",
+      "bytes": 66742,
+      "estimated_usd": 0.1764792,
+      "seconds": 322.1308571440022,
+      "output_tokens": 16966
+    },
+    "wiki_specialized": {
+      "status": "completed",
+      "bytes": 63942,
+      "estimated_usd": 0.1621027,
+      "seconds": 280.6913674679963,
+      "output_tokens": 15528
+    }
+  },
+  "estimated_reader_usd": 14.7066345,
+  "citation_check": "ID validity only, not entailment or verified human assessment.",
+  "source_sha256": {
+    "run_manifest": "227d4f6c83d45da1d0bf789c90020d062710c94e141f08e3e2ef114a67b1fd2a",
+    "wiki_manifest": "4453126d42f727dc8a8c93be2a0dcba55081d614ba4aeda48b4146c1b64473d3",
+    "analysis": "46bf91fc70e26d80824c8e9b6672733290a00f56a1a90e4ac2a0d033ad323aac"
+  }
+}

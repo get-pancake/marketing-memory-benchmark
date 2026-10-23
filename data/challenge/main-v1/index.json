@@ -1,0 +1,2890 @@
+{
+  "schema": 1,
+  "split": "held-out-worlds",
+  "seed": 20261023042,
+  "worlds": 120,
+  "cases": [
+    {
+      "id": "w20261023042-000-accessible",
+      "world": "w20261023042-000",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-000-accessible.json",
+      "sha256": "6bd041c88f29b333330ab804ea339ebf68b6e054db2eaa1199a5c6eb96f42cb9"
+    },
+    {
+      "id": "w20261023042-000-constrained",
+      "world": "w20261023042-000",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-000-constrained.json",
+      "sha256": "a32dc316386a2de13e35bafa47b1c7a39244f5d0d4d97b6964f8bc2dadef28c4"
+    },
+    {
+      "id": "w20261023042-000-stress",
+      "world": "w20261023042-000",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-000-stress.json",
+      "sha256": "a258dda3572e95b744b310c6e8ca4a1229e4bd466e808069988b6613d0a09f03"
+    },
+    {
+      "id": "w20261023042-001-accessible",
+      "world": "w20261023042-001",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-001-accessible.json",
+      "sha256": "9ab2de8713ffb0eaf8859be770fae14edc364f95d8eeedb57732e38620d12f43"
+    },
+    {
+      "id": "w20261023042-001-constrained",
+      "world": "w20261023042-001",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-001-constrained.json",
+      "sha256": "289057018a604962dcee3d9212ebcbbaac4cc5d81325a85e9c929f7359374eb0"
+    },
+    {
+      "id": "w20261023042-001-stress",
+      "world": "w20261023042-001",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-001-stress.json",
+      "sha256": "d7899878b5f4e6952a33b45d13fdcb5272fc0c7fb440dc54fd44a9d85dc446bd"
+    },
+    {
+      "id": "w20261023042-002-accessible",
+      "world": "w20261023042-002",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-002-accessible.json",
+      "sha256": "f1f702e7e9a2781e59a185aa13f78f13d2ae68db4cecbf32ac3c53db2f688d6a"
+    },
+    {
+      "id": "w20261023042-002-constrained",
+      "world": "w20261023042-002",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-002-constrained.json",
+      "sha256": "76e9cd96ef24b78d773a9051cde0c3224b99737a532ac3d4363a05b7bf4ae1dd"
+    },
+    {
+      "id": "w20261023042-002-stress",
+      "world": "w20261023042-002",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-002-stress.json",
+      "sha256": "f2a2dd10e521a11df8c92292d121db12537db5c60a36ed23d114fa5734e8a65c"
+    },
+    {
+      "id": "w20261023042-003-accessible",
+      "world": "w20261023042-003",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-003-accessible.json",
+      "sha256": "cd58db3ed582d57e881a89e1565304a3b771506b1f8bc3405592c968b60a12fb"
+    },
+    {
+      "id": "w20261023042-003-constrained",
+      "world": "w20261023042-003",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-003-constrained.json",
+      "sha256": "039c3f7888233bd9c6590f79828bfc77167f5769eae724896ad274f3f857c05e"
+    },
+    {
+      "id": "w20261023042-003-stress",
+      "world": "w20261023042-003",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-003-stress.json",
+      "sha256": "5b50cc88accdbdaa398b3b70d558a8911b185365539c6759b2dfe1faf8dc08ab"
+    },
+    {
+      "id": "w20261023042-004-accessible",
+      "world": "w20261023042-004",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-004-accessible.json",
+      "sha256": "eaebb73d0f43a5856ffccda057d763e25208947398c5fe7042d36d02f58c63cf"
+    },
+    {
+      "id": "w20261023042-004-constrained",
+      "world": "w20261023042-004",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-004-constrained.json",
+      "sha256": "6e314b42ed88904e47c0358fab2cf8bce3974c213f3e6d83ee6f6a3edb4bf563"
+    },
+    {
+      "id": "w20261023042-004-stress",
+      "world": "w20261023042-004",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-004-stress.json",
+      "sha256": "907c15870f5f46ae7e608115ab5cf2c3b5b677c5f4ebb087f4399564bfe0b0f0"
+    },
+    {
+      "id": "w20261023042-005-accessible",
+      "world": "w20261023042-005",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-005-accessible.json",
+      "sha256": "46fad85af78d9763c500e6c607eb1133af3ffd7498069085ba5cebe5d39077cd"
+    },
+    {
+      "id": "w20261023042-005-constrained",
+      "world": "w20261023042-005",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-005-constrained.json",
+      "sha256": "dcc498a100140bb73cf79e92eda02cb4c9e71da5837598c85671f4204926cba1"
+    },
+    {
+      "id": "w20261023042-005-stress",
+      "world": "w20261023042-005",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-005-stress.json",
+      "sha256": "559672727685a13e266183feea53630950a0442c4959974083aabff0ce51c274"
+    },
+    {
+      "id": "w20261023042-006-accessible",
+      "world": "w20261023042-006",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-006-accessible.json",
+      "sha256": "8a91211a12725e3ef6eb867c59732336d9fe009dd490fdf07117e22055d02f69"
+    },
+    {
+      "id": "w20261023042-006-constrained",
+      "world": "w20261023042-006",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-006-constrained.json",
+      "sha256": "ac9f67b4f3ee4702b84ea4240f4657e9ca920632ed3199e291d04218ea95d6ce"
+    },
+    {
+      "id": "w20261023042-006-stress",
+      "world": "w20261023042-006",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-006-stress.json",
+      "sha256": "8453121d964d9b1b738e781ee58465d0a5011eb64e4e80a3a86fa0f02733784a"
+    },
+    {
+      "id": "w20261023042-007-accessible",
+      "world": "w20261023042-007",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-007-accessible.json",
+      "sha256": "1ec570becfac3aafe6474f880e43d49c65bfc8d79ad59a0317b38167be269b23"
+    },
+    {
+      "id": "w20261023042-007-constrained",
+      "world": "w20261023042-007",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-007-constrained.json",
+      "sha256": "dcb03803eae92972c268f38fbb8f13da8f31e0e592750ced42c9d99866cb12a6"
+    },
+    {
+      "id": "w20261023042-007-stress",
+      "world": "w20261023042-007",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-007-stress.json",
+      "sha256": "af6283149db759338037437115592c7e9c1c80fee31cfcafda2f6072eb5f5564"
+    },
+    {
+      "id": "w20261023042-008-accessible",
+      "world": "w20261023042-008",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-008-accessible.json",
+      "sha256": "f08f4567b1c35aebedd9189f9a4212c53a89bc6b197207cfcb7337804680aab5"
+    },
+    {
+      "id": "w20261023042-008-constrained",
+      "world": "w20261023042-008",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-008-constrained.json",
+      "sha256": "92765f1d86d393127809ce2596b445b5ccecd2991767eb83a0485ad2081a5562"
+    },
+    {
+      "id": "w20261023042-008-stress",
+      "world": "w20261023042-008",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-008-stress.json",
+      "sha256": "21613f30827671022b0c852ad4cb00cc8d400492eebd22ea52523900f4971cd3"
+    },
+    {
+      "id": "w20261023042-009-accessible",
+      "world": "w20261023042-009",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-009-accessible.json",
+      "sha256": "62e20e2685b00c892b9178d1a121b46efb5946c0cb40d8c6ea6d0c19d0b27b3a"
+    },
+    {
+      "id": "w20261023042-009-constrained",
+      "world": "w20261023042-009",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-009-constrained.json",
+      "sha256": "6ada322a7bbd14a52e55d726e818c0d28e4e4ad1487eefa83b4e6e7792aa215f"
+    },
+    {
+      "id": "w20261023042-009-stress",
+      "world": "w20261023042-009",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-009-stress.json",
+      "sha256": "162eedb6f6cbfc78f3f0e1ce4e7a4674e2347ad2860d543de811c68570d000c6"
+    },
+    {
+      "id": "w20261023042-010-accessible",
+      "world": "w20261023042-010",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-010-accessible.json",
+      "sha256": "e8b91bd9495a1510f47f2265285517e6de0323cf998c33cb1cda6abccaae0a8e"
+    },
+    {
+      "id": "w20261023042-010-constrained",
+      "world": "w20261023042-010",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-010-constrained.json",
+      "sha256": "cea693e1ab50ad42d0e51610e308b97473d105626dd44604fd4a997bfe60d713"
+    },
+    {
+      "id": "w20261023042-010-stress",
+      "world": "w20261023042-010",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-010-stress.json",
+      "sha256": "a87b222945670645fc428444eec54abccb338061b0804e8836cdca4784802dec"
+    },
+    {
+      "id": "w20261023042-011-accessible",
+      "world": "w20261023042-011",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-011-accessible.json",
+      "sha256": "825e4ce45f614aee43f3ba54e60fa111e7942b77ca76919230def6e4d63c32f8"
+    },
+    {
+      "id": "w20261023042-011-constrained",
+      "world": "w20261023042-011",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-011-constrained.json",
+      "sha256": "911febc913fc330080950f7bdcfc623d4f06c717cb4914448423262c37de6e34"
+    },
+    {
+      "id": "w20261023042-011-stress",
+      "world": "w20261023042-011",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-011-stress.json",
+      "sha256": "930a747ed1928640698d80d384fd2cce3c6751785f5c1c86c9b7dc74715163c2"
+    },
+    {
+      "id": "w20261023042-012-accessible",
+      "world": "w20261023042-012",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-012-accessible.json",
+      "sha256": "f30ad41087229cafa4eadddc1742b74e9f10597309ce5e84e6ca641ddda05a7f"
+    },
+    {
+      "id": "w20261023042-012-constrained",
+      "world": "w20261023042-012",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-012-constrained.json",
+      "sha256": "7a3046b7cdff0a85a6fb151ca64b9a014e9ef3536958127c0e1b8d5b92bb2a66"
+    },
+    {
+      "id": "w20261023042-012-stress",
+      "world": "w20261023042-012",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-012-stress.json",
+      "sha256": "e3ee4dbefdfbfc35ecfc7b361b74cee7276798a82f18d761237495edef009cc7"
+    },
+    {
+      "id": "w20261023042-013-accessible",
+      "world": "w20261023042-013",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-013-accessible.json",
+      "sha256": "76370766241ae80c24e0fa49f882b6a5a4899610f19cb900a04ea38b3e257c1b"
+    },
+    {
+      "id": "w20261023042-013-constrained",
+      "world": "w20261023042-013",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-013-constrained.json",
+      "sha256": "596565719a0bb555745e2f1393c1e56aa70b8f8d0ff30a6fc899f407051b656c"
+    },
+    {
+      "id": "w20261023042-013-stress",
+      "world": "w20261023042-013",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-013-stress.json",
+      "sha256": "b573787913b3b18b871474ecf1e96a7fccd90fe32787e5b3e300551375347ecd"
+    },
+    {
+      "id": "w20261023042-014-accessible",
+      "world": "w20261023042-014",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-014-accessible.json",
+      "sha256": "8815f15c0aa64789562d41073e07438e64a10d6ff4b49c15d9682ab36b1be2a4"
+    },
+    {
+      "id": "w20261023042-014-constrained",
+      "world": "w20261023042-014",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-014-constrained.json",
+      "sha256": "84828f8cf879a60e92c686a558c1ec0a65e0c300b7404756d23dcfab6c3dd97a"
+    },
+    {
+      "id": "w20261023042-014-stress",
+      "world": "w20261023042-014",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-014-stress.json",
+      "sha256": "80214f02287c0c01c6a7f5a736e21df35586c9d78ba135b7d2728f8ede5ce760"
+    },
+    {
+      "id": "w20261023042-015-accessible",
+      "world": "w20261023042-015",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-015-accessible.json",
+      "sha256": "9497ce86c78d4a722047d2f2d0927c827a07bccef933980382d2fdd4737c272b"
+    },
+    {
+      "id": "w20261023042-015-constrained",
+      "world": "w20261023042-015",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-015-constrained.json",
+      "sha256": "ef9e0ba6690dcc4f6abb52210c09c0796b88604a7d25acf14751c41ce729271d"
+    },
+    {
+      "id": "w20261023042-015-stress",
+      "world": "w20261023042-015",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-015-stress.json",
+      "sha256": "8b8a75b2206313e8649f30422a50031c411e7fdce8f2c839081841ac83649a0d"
+    },
+    {
+      "id": "w20261023042-016-accessible",
+      "world": "w20261023042-016",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-016-accessible.json",
+      "sha256": "5e529966a8e7fba0284ad2fcaeac9d5195645ecbec4f7708e1ded3e2c26c6d3f"
+    },
+    {
+      "id": "w20261023042-016-constrained",
+      "world": "w20261023042-016",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-016-constrained.json",
+      "sha256": "8601fbc298db4e1f66a7c7426846fce2b64c03ee5ce562f3b7691e5331a1039f"
+    },
+    {
+      "id": "w20261023042-016-stress",
+      "world": "w20261023042-016",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-016-stress.json",
+      "sha256": "7c946c9408fa69ee949f99dc7bf179b7312af454f58f45f02a5f46b55a80a58a"
+    },
+    {
+      "id": "w20261023042-017-accessible",
+      "world": "w20261023042-017",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-017-accessible.json",
+      "sha256": "692ca25079ae3f9246173de375c1068a12597dd99b7720ad0ad95da7305c0af6"
+    },
+    {
+      "id": "w20261023042-017-constrained",
+      "world": "w20261023042-017",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-017-constrained.json",
+      "sha256": "36f9cc88b842da53d35876255cb5177c04b07e64dfc547f42f48845c923ac834"
+    },
+    {
+      "id": "w20261023042-017-stress",
+      "world": "w20261023042-017",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-017-stress.json",
+      "sha256": "6a0f4470b5267a34abea79123583b2ea61436f83ab4636e9a9f0ade8a4d665a0"
+    },
+    {
+      "id": "w20261023042-018-accessible",
+      "world": "w20261023042-018",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-018-accessible.json",
+      "sha256": "6338671b0c027756a3e9fc1ccae024004d70730bc5f4b90ca1250cd2565cb464"
+    },
+    {
+      "id": "w20261023042-018-constrained",
+      "world": "w20261023042-018",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-018-constrained.json",
+      "sha256": "b4b244bf9da3fcc6186f213176e104181d470ac24fa6f4d5d44ba1a7074f01b4"
+    },
+    {
+      "id": "w20261023042-018-stress",
+      "world": "w20261023042-018",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-018-stress.json",
+      "sha256": "f1fc295ea257cead3ae2133473b13b9c686afae84e90f082b87c22aa17a8ff18"
+    },
+    {
+      "id": "w20261023042-019-accessible",
+      "world": "w20261023042-019",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-019-accessible.json",
+      "sha256": "914a47af1cd3f554bf7484033e7005d24c599494adcbd823c7f4192101b6c0f3"
+    },
+    {
+      "id": "w20261023042-019-constrained",
+      "world": "w20261023042-019",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-019-constrained.json",
+      "sha256": "f0e07a21f4436c9651e1a889c03ba3d8c9fbd3ebc3eb6ebcd5f2fa4a5cdc93a0"
+    },
+    {
+      "id": "w20261023042-019-stress",
+      "world": "w20261023042-019",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-019-stress.json",
+      "sha256": "e713db2680cdeb2d2ff7beceb03d17a2c5ccc91514489d106386db48eeb67ffa"
+    },
+    {
+      "id": "w20261023042-020-accessible",
+      "world": "w20261023042-020",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-020-accessible.json",
+      "sha256": "a3e1cacfb8101a3e600b667ce1fd5b4b75a355e95eb699f0a20906c9e96d537f"
+    },
+    {
+      "id": "w20261023042-020-constrained",
+      "world": "w20261023042-020",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-020-constrained.json",
+      "sha256": "1b2765074fe64f994ccd4a4d4b1d664c473b79c2490c4b426c45104e65aeb498"
+    },
+    {
+      "id": "w20261023042-020-stress",
+      "world": "w20261023042-020",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-020-stress.json",
+      "sha256": "d6bc5150005cec112ab8b3d7eb2c559a97c18082aaefdd51519d85318669d21e"
+    },
+    {
+      "id": "w20261023042-021-accessible",
+      "world": "w20261023042-021",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-021-accessible.json",
+      "sha256": "aec91751a4b2ee0da5c944003839232760365c80dc3de5491cb022ddd34d0b52"
+    },
+    {
+      "id": "w20261023042-021-constrained",
+      "world": "w20261023042-021",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-021-constrained.json",
+      "sha256": "61479a8fa834adab0b1c56d34aab29df91ebdde8d3f570660c121a188fb65c99"
+    },
+    {
+      "id": "w20261023042-021-stress",
+      "world": "w20261023042-021",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-021-stress.json",
+      "sha256": "fbd737095b91430992de9d05fc62471a1a8ea6d866ee0740d367a32a2c9bf43f"
+    },
+    {
+      "id": "w20261023042-022-accessible",
+      "world": "w20261023042-022",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-022-accessible.json",
+      "sha256": "42ec59a2f13fd9336d695d435b7b42f1bdfac17d5930d041cf560f699ca99cf8"
+    },
+    {
+      "id": "w20261023042-022-constrained",
+      "world": "w20261023042-022",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-022-constrained.json",
+      "sha256": "ec3b45f56e9374efaa99f3ffa6be568368d7adb40e11b4545522fe8bb9940028"
+    },
+    {
+      "id": "w20261023042-022-stress",
+      "world": "w20261023042-022",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-022-stress.json",
+      "sha256": "fee1ca04a3617e9851f354938b3196a94e36128c4963aabf75b8ef7e1b6909ea"
+    },
+    {
+      "id": "w20261023042-023-accessible",
+      "world": "w20261023042-023",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-023-accessible.json",
+      "sha256": "4dfb26ede07ad3c3e7660172ddb059ddb6120e8c8e1ed1632aca80a539718261"
+    },
+    {
+      "id": "w20261023042-023-constrained",
+      "world": "w20261023042-023",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-023-constrained.json",
+      "sha256": "7177dbccbf45740004cd3a255f0424b51286106715218f55195506a4a7662b5c"
+    },
+    {
+      "id": "w20261023042-023-stress",
+      "world": "w20261023042-023",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-023-stress.json",
+      "sha256": "69f27e772c398ffd22482aca1a972f4517695c63994be1fa6b26ddaadd4e21fc"
+    },
+    {
+      "id": "w20261023042-024-accessible",
+      "world": "w20261023042-024",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-024-accessible.json",
+      "sha256": "ea66e153de0e88049ac52cfd3b1d97fb2e03d2d6e1fc45344d8bbcbba0386f9a"
+    },
+    {
+      "id": "w20261023042-024-constrained",
+      "world": "w20261023042-024",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-024-constrained.json",
+      "sha256": "704a3468a03e2192b0a60b26deefbdadf3f2eaa849f4f68de4e336fd2b221290"
+    },
+    {
+      "id": "w20261023042-024-stress",
+      "world": "w20261023042-024",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-024-stress.json",
+      "sha256": "4d31d4d68e29c0c8e1049c9cff918f6ee0a3567bd79e2ce00efc78d9532e5e6c"
+    },
+    {
+      "id": "w20261023042-025-accessible",
+      "world": "w20261023042-025",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-025-accessible.json",
+      "sha256": "6484324b13201416853593ebb0bdad424d5e2eb4986ac9613260f672bb4cb812"
+    },
+    {
+      "id": "w20261023042-025-constrained",
+      "world": "w20261023042-025",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-025-constrained.json",
+      "sha256": "dcff4aed54635146758a879eab9030dee1321d21af09ee572dc666d56bc17aea"
+    },
+    {
+      "id": "w20261023042-025-stress",
+      "world": "w20261023042-025",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-025-stress.json",
+      "sha256": "e92645d0c8c264911a10272e617e4260042a3fb26cc597ef347baf8ac3b6d4a6"
+    },
+    {
+      "id": "w20261023042-026-accessible",
+      "world": "w20261023042-026",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-026-accessible.json",
+      "sha256": "2273054034d479f54e4b3ad4abbc825adb584a3d67c39eaf918ef48aef3da6bd"
+    },
+    {
+      "id": "w20261023042-026-constrained",
+      "world": "w20261023042-026",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-026-constrained.json",
+      "sha256": "c4c80157c918fabb9809378d678ba18b840f08fcad485206e8d68175f1636a7f"
+    },
+    {
+      "id": "w20261023042-026-stress",
+      "world": "w20261023042-026",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-026-stress.json",
+      "sha256": "1bf686f6f67bed8f03b8b41d8108d4a92e5f06c7aab26a97bd48fb2f3db8d605"
+    },
+    {
+      "id": "w20261023042-027-accessible",
+      "world": "w20261023042-027",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-027-accessible.json",
+      "sha256": "ad5eb1a9f9640013c3f8dd51125613e0c75153059eb86397d0017798ddb451ea"
+    },
+    {
+      "id": "w20261023042-027-constrained",
+      "world": "w20261023042-027",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-027-constrained.json",
+      "sha256": "212d7da25b231a20e3d14722bc36c7836dd0876c8ef6926ef6c0d37e1b2c57ec"
+    },
+    {
+      "id": "w20261023042-027-stress",
+      "world": "w20261023042-027",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-027-stress.json",
+      "sha256": "49e18a0fa81cd993593ff2a9e3a1cbf6abd734f3ff2c117e96637feb6fff7332"
+    },
+    {
+      "id": "w20261023042-028-accessible",
+      "world": "w20261023042-028",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-028-accessible.json",
+      "sha256": "79ccd9635c3f8c6125cde2d419d0b18af962b08b115090e478d49c9eda0f11ce"
+    },
+    {
+      "id": "w20261023042-028-constrained",
+      "world": "w20261023042-028",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-028-constrained.json",
+      "sha256": "df3d5c3e07fc07f65d515dd302d80f70df059978fccc33673bbe0c98650d5989"
+    },
+    {
+      "id": "w20261023042-028-stress",
+      "world": "w20261023042-028",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-028-stress.json",
+      "sha256": "b23a2f66561c2a5b0767e03bddbfb7ff3bd503aa7abce4ad59d99ab9512bf99b"
+    },
+    {
+      "id": "w20261023042-029-accessible",
+      "world": "w20261023042-029",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-029-accessible.json",
+      "sha256": "15940101d32466e5238333c65fc623573ac50c4dad5c0f1392fb5b3dac4f695b"
+    },
+    {
+      "id": "w20261023042-029-constrained",
+      "world": "w20261023042-029",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-029-constrained.json",
+      "sha256": "28f1de82c493068ad1e7b3da91d8cd71fdb6906d7ca404e9929960c97d90e23b"
+    },
+    {
+      "id": "w20261023042-029-stress",
+      "world": "w20261023042-029",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-029-stress.json",
+      "sha256": "7405bb14b42da0fbd7a3c65aea13be619a513397bd3150ce2717fad712021fdf"
+    },
+    {
+      "id": "w20261023042-030-accessible",
+      "world": "w20261023042-030",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-030-accessible.json",
+      "sha256": "0df069bbf90913ad02785eb853e20ef61dbde2138522adb3284b963836c91485"
+    },
+    {
+      "id": "w20261023042-030-constrained",
+      "world": "w20261023042-030",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-030-constrained.json",
+      "sha256": "3bbf10fad9799266e508da08b05cce440f1e4763ee662b2d510b9d1e6b478309"
+    },
+    {
+      "id": "w20261023042-030-stress",
+      "world": "w20261023042-030",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-030-stress.json",
+      "sha256": "41b86f697d343fc26caf96155bc39ad38be0d0ee0144154f550aa638f6835d62"
+    },
+    {
+      "id": "w20261023042-031-accessible",
+      "world": "w20261023042-031",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-031-accessible.json",
+      "sha256": "238910dbcf5995d7763a89403f19c21d96be40e1e29ef2dc8d7a846b492880f8"
+    },
+    {
+      "id": "w20261023042-031-constrained",
+      "world": "w20261023042-031",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-031-constrained.json",
+      "sha256": "eafc8444c84e3d18fbdbcb7f1214f427477a52f0ca444b94f44ac3aeba6de076"
+    },
+    {
+      "id": "w20261023042-031-stress",
+      "world": "w20261023042-031",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-031-stress.json",
+      "sha256": "a3668fd804e177753382f8eb43d67baa83bad649fb7c744dbd9bc8b3a422bbd9"
+    },
+    {
+      "id": "w20261023042-032-accessible",
+      "world": "w20261023042-032",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-032-accessible.json",
+      "sha256": "9aa6a3f646c290390c5303651c69b931c7a5be3a8f4b7c07a1b4cf094864e4ee"
+    },
+    {
+      "id": "w20261023042-032-constrained",
+      "world": "w20261023042-032",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-032-constrained.json",
+      "sha256": "2f9f16459830a1148bb7be73e2ac57f5e64dc21d85bdfba9c43815a62f171562"
+    },
+    {
+      "id": "w20261023042-032-stress",
+      "world": "w20261023042-032",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-032-stress.json",
+      "sha256": "a1e8b9737eb75eefc681ce1551b79ec3973f42d6b429120df2ed217a64d19663"
+    },
+    {
+      "id": "w20261023042-033-accessible",
+      "world": "w20261023042-033",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-033-accessible.json",
+      "sha256": "254d2a9bb5071928805ea2245e08e9e12ce2d8a3d319dd1051a48a29bbfc6f0e"
+    },
+    {
+      "id": "w20261023042-033-constrained",
+      "world": "w20261023042-033",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-033-constrained.json",
+      "sha256": "ec8144a67e56761c4f6a5234fab8beb5714ff49e8d3804dfe8e0ee10e448fbcf"
+    },
+    {
+      "id": "w20261023042-033-stress",
+      "world": "w20261023042-033",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-033-stress.json",
+      "sha256": "62f2b38fd5e2de8a90a9f10d0d89405342694ce59603d3fb06803f9d77e73a6f"
+    },
+    {
+      "id": "w20261023042-034-accessible",
+      "world": "w20261023042-034",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-034-accessible.json",
+      "sha256": "cfe66707198db71a852a3be172e81427b81cb7e3d6f818e0c696b05eb832e488"
+    },
+    {
+      "id": "w20261023042-034-constrained",
+      "world": "w20261023042-034",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-034-constrained.json",
+      "sha256": "3fd82cd31c6f79684407d962bc24156f0a7bf7f9c5b8fe9e781bc09bcb46999b"
+    },
+    {
+      "id": "w20261023042-034-stress",
+      "world": "w20261023042-034",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-034-stress.json",
+      "sha256": "40998045e1c686ebfcbb7e46615cd290cfde19e37bd0fefeeb913d7ada34668f"
+    },
+    {
+      "id": "w20261023042-035-accessible",
+      "world": "w20261023042-035",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-035-accessible.json",
+      "sha256": "5b124e48f424ff6b8b851c9a323faae1a1c13a11743f3ee40d9ff0b5bd780192"
+    },
+    {
+      "id": "w20261023042-035-constrained",
+      "world": "w20261023042-035",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-035-constrained.json",
+      "sha256": "3596a36b108e4466b27d442e5ee7b1698e8c658a18789545197a27103a7b7411"
+    },
+    {
+      "id": "w20261023042-035-stress",
+      "world": "w20261023042-035",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-035-stress.json",
+      "sha256": "8b205c677430d92401ddf227f2ccffd26a7f11681757df18f3ef923be4846778"
+    },
+    {
+      "id": "w20261023042-036-accessible",
+      "world": "w20261023042-036",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-036-accessible.json",
+      "sha256": "80bd9cdcb89f218598e78af2ea0e02e097df195bbf328a08ad92e051826d1ba8"
+    },
+    {
+      "id": "w20261023042-036-constrained",
+      "world": "w20261023042-036",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-036-constrained.json",
+      "sha256": "47e5a2f077afb297a6c89702734317310d1e7375dd939a9fda0bc93766dccffb"
+    },
+    {
+      "id": "w20261023042-036-stress",
+      "world": "w20261023042-036",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-036-stress.json",
+      "sha256": "782b2311e83f30ca67597f35e44d5f56697d920c99ff6f394f935f81d5543ae1"
+    },
+    {
+      "id": "w20261023042-037-accessible",
+      "world": "w20261023042-037",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-037-accessible.json",
+      "sha256": "9977d5d39d2161f592939a5578226213cc8f319fa784f2dfd87c3a09cf94b967"
+    },
+    {
+      "id": "w20261023042-037-constrained",
+      "world": "w20261023042-037",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-037-constrained.json",
+      "sha256": "a3efa03d9e8867235f012810a5ebddde6c979f1d0967ce34f1be46087a60190f"
+    },
+    {
+      "id": "w20261023042-037-stress",
+      "world": "w20261023042-037",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-037-stress.json",
+      "sha256": "de5cd8392e3da7c15672e91c5cfeb76d07aeba5f48e0dd713777f7da81315be2"
+    },
+    {
+      "id": "w20261023042-038-accessible",
+      "world": "w20261023042-038",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-038-accessible.json",
+      "sha256": "b5f99c37efd76050f37a292ee57e62c2204622d7085fff4466ec88e0b3cf76ed"
+    },
+    {
+      "id": "w20261023042-038-constrained",
+      "world": "w20261023042-038",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-038-constrained.json",
+      "sha256": "b1d6ad22c6ac69cdfdafa9485ecaf64d2c037467dc3493a7782510e7d9cd5f3f"
+    },
+    {
+      "id": "w20261023042-038-stress",
+      "world": "w20261023042-038",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-038-stress.json",
+      "sha256": "790754eda5c4a895e504a3127fa229eb5652ee4528a1f3c8861879e110ee6846"
+    },
+    {
+      "id": "w20261023042-039-accessible",
+      "world": "w20261023042-039",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-039-accessible.json",
+      "sha256": "366760c61cda3be6f896387cc9378937a4aa2f32b6eb1e563a43c14cd7bf76cc"
+    },
+    {
+      "id": "w20261023042-039-constrained",
+      "world": "w20261023042-039",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-039-constrained.json",
+      "sha256": "1d91739ae5f2d851ee9416c5b48b54b97ab70165ab93d9e4124fb7ac4d1bef1d"
+    },
+    {
+      "id": "w20261023042-039-stress",
+      "world": "w20261023042-039",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-039-stress.json",
+      "sha256": "0608597dcd6dc799513019a941d2c86a820ffc34998d7fc29aa1c374dd05402e"
+    },
+    {
+      "id": "w20261023042-040-accessible",
+      "world": "w20261023042-040",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-040-accessible.json",
+      "sha256": "b7796ea9d449d6cc87396df81a866f22cf5dde0e57a078435430b7e3adf95236"
+    },
+    {
+      "id": "w20261023042-040-constrained",
+      "world": "w20261023042-040",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-040-constrained.json",
+      "sha256": "f875574cbfcea2c993b966450e2932db460cf12cc18b1aea2f530ddc34ba510c"
+    },
+    {
+      "id": "w20261023042-040-stress",
+      "world": "w20261023042-040",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-040-stress.json",
+      "sha256": "e58961e606a83a6ae01aacb9dca49a64e0550a90b6496f479bac220def2b253c"
+    },
+    {
+      "id": "w20261023042-041-accessible",
+      "world": "w20261023042-041",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-041-accessible.json",
+      "sha256": "a78921bbbfeee2a1e0cd2517b4ad3b50f30f60fa80e686c94996b08ad1cf1ccf"
+    },
+    {
+      "id": "w20261023042-041-constrained",
+      "world": "w20261023042-041",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-041-constrained.json",
+      "sha256": "e0bdba811a35e16c303ab00c0d8d1e13bb18817e0baf2809a628b0798254c2ba"
+    },
+    {
+      "id": "w20261023042-041-stress",
+      "world": "w20261023042-041",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-041-stress.json",
+      "sha256": "b550ab77899b38f4dc28c4fe41fa1ea7b5ef32af8b0f7c085a6fea7984f6a4e5"
+    },
+    {
+      "id": "w20261023042-042-accessible",
+      "world": "w20261023042-042",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-042-accessible.json",
+      "sha256": "a842cb4b7e467dced69176093bc0c0a96f9f30553217ccf2c6977f74f9ab3b03"
+    },
+    {
+      "id": "w20261023042-042-constrained",
+      "world": "w20261023042-042",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-042-constrained.json",
+      "sha256": "b680fce7907c39655195a64ea3c33255c8acf3ad96660ad9617803a5791b2673"
+    },
+    {
+      "id": "w20261023042-042-stress",
+      "world": "w20261023042-042",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-042-stress.json",
+      "sha256": "7137a06ebf4498f790c373d8391d376d4d2d31169cda1734da1795f5ec834617"
+    },
+    {
+      "id": "w20261023042-043-accessible",
+      "world": "w20261023042-043",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-043-accessible.json",
+      "sha256": "979465fd6366076a662f492932575c40ef10a799fc26c413e4690fd0a9415dd2"
+    },
+    {
+      "id": "w20261023042-043-constrained",
+      "world": "w20261023042-043",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-043-constrained.json",
+      "sha256": "4d0d767e21ceecb766b40a562e27a41eeb5eb7ad52c746f5303e8ba0d121d34e"
+    },
+    {
+      "id": "w20261023042-043-stress",
+      "world": "w20261023042-043",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-043-stress.json",
+      "sha256": "f4edd468e833108a82dd5e509e97979b217ed8eb2166b89290ef455284770bd8"
+    },
+    {
+      "id": "w20261023042-044-accessible",
+      "world": "w20261023042-044",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-044-accessible.json",
+      "sha256": "70f08f0f863861e9400cf21c84fc04f5fd91fae79df10f9147d955a0297fa4e3"
+    },
+    {
+      "id": "w20261023042-044-constrained",
+      "world": "w20261023042-044",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-044-constrained.json",
+      "sha256": "5ef30e044275552396fcbca7ea88019db80a7b823a40b84e3a7ed91523a8638b"
+    },
+    {
+      "id": "w20261023042-044-stress",
+      "world": "w20261023042-044",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-044-stress.json",
+      "sha256": "33b440ecfb9ec66b8b01f158f32fcdd2146afccc14e8ae8eb58dedbe9dc70d1a"
+    },
+    {
+      "id": "w20261023042-045-accessible",
+      "world": "w20261023042-045",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-045-accessible.json",
+      "sha256": "330c36cd5e90747a64b5a2c491f18c652309f0ecf5c95e4a0a0553f15467b30a"
+    },
+    {
+      "id": "w20261023042-045-constrained",
+      "world": "w20261023042-045",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-045-constrained.json",
+      "sha256": "d7418385fcbe77b92758aa5b56006ff10ca11fdb16b01b9c82830af393757ea7"
+    },
+    {
+      "id": "w20261023042-045-stress",
+      "world": "w20261023042-045",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-045-stress.json",
+      "sha256": "ad80c3eee58d715fcb34441c5a0c92c0a9ae213c173a69dbc5f749fc6a91c065"
+    },
+    {
+      "id": "w20261023042-046-accessible",
+      "world": "w20261023042-046",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-046-accessible.json",
+      "sha256": "756ae905029d981d683b2d045d4f8e2e8dfc79554b21044ff5488c9b9d5b1b9d"
+    },
+    {
+      "id": "w20261023042-046-constrained",
+      "world": "w20261023042-046",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-046-constrained.json",
+      "sha256": "f4e8809c5a2619f462ca5f886818053396ff72c54d4bf0b13f45f4931fcb22ea"
+    },
+    {
+      "id": "w20261023042-046-stress",
+      "world": "w20261023042-046",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-046-stress.json",
+      "sha256": "52fa5ba4ce7b54023105f8162f7fd1352063c73869233d532cb7299359d0d91d"
+    },
+    {
+      "id": "w20261023042-047-accessible",
+      "world": "w20261023042-047",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-047-accessible.json",
+      "sha256": "566439ac85a894a3769c5caaee96778724f2b4e324f1983704570da5d48906f1"
+    },
+    {
+      "id": "w20261023042-047-constrained",
+      "world": "w20261023042-047",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-047-constrained.json",
+      "sha256": "636346a471a510c649c6cadeacfd062ea9009c7e10193a63ee69160da9c9a0e7"
+    },
+    {
+      "id": "w20261023042-047-stress",
+      "world": "w20261023042-047",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-047-stress.json",
+      "sha256": "e4165baa7efbc63914847b7e9e8d50283ad331505ab47608143c14fc6918f9ae"
+    },
+    {
+      "id": "w20261023042-048-accessible",
+      "world": "w20261023042-048",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-048-accessible.json",
+      "sha256": "4144f56d0893d404454aa519b1cbfce025104e6ac726afebd9d2dc140bcfa027"
+    },
+    {
+      "id": "w20261023042-048-constrained",
+      "world": "w20261023042-048",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-048-constrained.json",
+      "sha256": "18e0400d4ecdf5dc4d5279c5bec50d829861eac30476252e3f174084809ece5d"
+    },
+    {
+      "id": "w20261023042-048-stress",
+      "world": "w20261023042-048",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-048-stress.json",
+      "sha256": "9e07b44ae27b98460e6d2957f9cff3c4cf2fd60f7b890d6292fbe1b3775af162"
+    },
+    {
+      "id": "w20261023042-049-accessible",
+      "world": "w20261023042-049",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-049-accessible.json",
+      "sha256": "ba6375773ea4dc50e822400040df3aa06448fe46e9b0cf23ef0feaf53fa6d60f"
+    },
+    {
+      "id": "w20261023042-049-constrained",
+      "world": "w20261023042-049",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-049-constrained.json",
+      "sha256": "eb484ed626fb4dcf45ac2e8c10f67f51da044baea22b3e9101f533165bdc17fa"
+    },
+    {
+      "id": "w20261023042-049-stress",
+      "world": "w20261023042-049",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-049-stress.json",
+      "sha256": "f0947b8b9b628ccef911e31d1c295a22d83934f2216c54d5d6f0f9b020194318"
+    },
+    {
+      "id": "w20261023042-050-accessible",
+      "world": "w20261023042-050",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-050-accessible.json",
+      "sha256": "caf8a16ebd4bbd513c86a207d6f772b6fbe048752ee6688ad5eb9390a6d1c1ca"
+    },
+    {
+      "id": "w20261023042-050-constrained",
+      "world": "w20261023042-050",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-050-constrained.json",
+      "sha256": "23b97552949e5a6db051769af0f10528b7036f3e90caad3bb6399169e70494b8"
+    },
+    {
+      "id": "w20261023042-050-stress",
+      "world": "w20261023042-050",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-050-stress.json",
+      "sha256": "30a33005df3ac5f502ad7b2dfb7b8474e3a9f050eb860eb6f267009ca4cc7357"
+    },
+    {
+      "id": "w20261023042-051-accessible",
+      "world": "w20261023042-051",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-051-accessible.json",
+      "sha256": "a25ab2469286ba0f65b3ed491656e82e1783b28800d27a25cf3f7def2fd2537f"
+    },
+    {
+      "id": "w20261023042-051-constrained",
+      "world": "w20261023042-051",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-051-constrained.json",
+      "sha256": "e5f4e5b0b60f036598555ee1fa70094e18e53527f0f6b45c0802996aab164ad1"
+    },
+    {
+      "id": "w20261023042-051-stress",
+      "world": "w20261023042-051",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-051-stress.json",
+      "sha256": "7e971e2a794468c5bb2243b81247714ab7a79a9c57006e73d28b519c7b01de1e"
+    },
+    {
+      "id": "w20261023042-052-accessible",
+      "world": "w20261023042-052",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-052-accessible.json",
+      "sha256": "05475809b50d66df3798cf7a59823620a3b9420eac69ec5dcd5563b8281989d7"
+    },
+    {
+      "id": "w20261023042-052-constrained",
+      "world": "w20261023042-052",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-052-constrained.json",
+      "sha256": "1c699d6dd4e1168832aec2306cf6a5e1b76a5892ec0a880b7e864934a9b78031"
+    },
+    {
+      "id": "w20261023042-052-stress",
+      "world": "w20261023042-052",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-052-stress.json",
+      "sha256": "041eecdfee1fee7d76ac851bbbb91953379914ad7cfcf2f5db21ba9f4f0f7750"
+    },
+    {
+      "id": "w20261023042-053-accessible",
+      "world": "w20261023042-053",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-053-accessible.json",
+      "sha256": "15c106d662342d0897647e7c02d24dfca5086b7c9539f6fb410c2979b552ed26"
+    },
+    {
+      "id": "w20261023042-053-constrained",
+      "world": "w20261023042-053",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-053-constrained.json",
+      "sha256": "95f3ee6dac044e611e28e7f5830051ab806027e4ced9aefd6f1f079b496bbb88"
+    },
+    {
+      "id": "w20261023042-053-stress",
+      "world": "w20261023042-053",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-053-stress.json",
+      "sha256": "c69635d66ec4c4a181decb3e9ad7e301c449fb73e88c5b125b0854b68a228a59"
+    },
+    {
+      "id": "w20261023042-054-accessible",
+      "world": "w20261023042-054",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-054-accessible.json",
+      "sha256": "9433ce2aa5b1427d4c03bc6e53704e68aed370cf82b5caa4898645cf6c17960f"
+    },
+    {
+      "id": "w20261023042-054-constrained",
+      "world": "w20261023042-054",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-054-constrained.json",
+      "sha256": "318e18f639b24df27d3ca794c4deb0e2cb951d8668aae469b898c9d73ee2e4d8"
+    },
+    {
+      "id": "w20261023042-054-stress",
+      "world": "w20261023042-054",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-054-stress.json",
+      "sha256": "18fc63e82bd01a63cec0944af9187be765685d5f48f29e1400408405c8406a52"
+    },
+    {
+      "id": "w20261023042-055-accessible",
+      "world": "w20261023042-055",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-055-accessible.json",
+      "sha256": "ae6ccff971ea8c7921a163e0889475118d9c28483656f8343318cccec241df34"
+    },
+    {
+      "id": "w20261023042-055-constrained",
+      "world": "w20261023042-055",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-055-constrained.json",
+      "sha256": "ed08f5225d2228f1f048be4e4a3825853418e8e8ae283f32d1bff8df720b96e4"
+    },
+    {
+      "id": "w20261023042-055-stress",
+      "world": "w20261023042-055",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-055-stress.json",
+      "sha256": "e6c8e8564affb1f86aa5b143631866af086252e0fad758d29e2382a56e6e9b62"
+    },
+    {
+      "id": "w20261023042-056-accessible",
+      "world": "w20261023042-056",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-056-accessible.json",
+      "sha256": "f1043a84d7b6a8b00dda182e430c084b34d33036350feb3b00f065b2df947d7e"
+    },
+    {
+      "id": "w20261023042-056-constrained",
+      "world": "w20261023042-056",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-056-constrained.json",
+      "sha256": "1199f0a85ee6badbd12a3ea1695e9e97a3c8115b44c7590fbf5ea38f646d8c8c"
+    },
+    {
+      "id": "w20261023042-056-stress",
+      "world": "w20261023042-056",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-056-stress.json",
+      "sha256": "95026438ab9239d82701312e0156ffc12f28f73e8f79144bd8e5c82960f60d27"
+    },
+    {
+      "id": "w20261023042-057-accessible",
+      "world": "w20261023042-057",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-057-accessible.json",
+      "sha256": "5adf58bdecb1439c3e668d5309ea1ff59b2b9d758c8e94543ef17158528b33d4"
+    },
+    {
+      "id": "w20261023042-057-constrained",
+      "world": "w20261023042-057",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-057-constrained.json",
+      "sha256": "c6f7f8543a8050e36944fd917852b1f1e6e891b879ac6a657557d1f9270ed0fa"
+    },
+    {
+      "id": "w20261023042-057-stress",
+      "world": "w20261023042-057",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-057-stress.json",
+      "sha256": "345884650b60ce0098f609ea6244e72e26aeb8c3398b6e8caba026fd66320ea5"
+    },
+    {
+      "id": "w20261023042-058-accessible",
+      "world": "w20261023042-058",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-058-accessible.json",
+      "sha256": "339b5c235b3be564d6b3c1d745aefb200ede2038cce33bfb09dfd36fca0ba34d"
+    },
+    {
+      "id": "w20261023042-058-constrained",
+      "world": "w20261023042-058",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-058-constrained.json",
+      "sha256": "7637fa2e2999b0307a7a1fd4e3e5aa828c4f076833122978dee7fcafb0df971c"
+    },
+    {
+      "id": "w20261023042-058-stress",
+      "world": "w20261023042-058",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-058-stress.json",
+      "sha256": "025d20ed0daa263aff65c6f0abeab3fe87fee47d7e133f179e73ca17cf411dfc"
+    },
+    {
+      "id": "w20261023042-059-accessible",
+      "world": "w20261023042-059",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-059-accessible.json",
+      "sha256": "89427311d39d630e26484e1d57af3895853ac67bd91b9bc9bfc01af9fd1d633c"
+    },
+    {
+      "id": "w20261023042-059-constrained",
+      "world": "w20261023042-059",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-059-constrained.json",
+      "sha256": "a7824516c58ad16e17f9cb7bd0e8abfefa1de734110cf9a0b227a7646d3202ab"
+    },
+    {
+      "id": "w20261023042-059-stress",
+      "world": "w20261023042-059",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-059-stress.json",
+      "sha256": "4200c7ec1f7e230df964860d163e84aff84f81fda800177eea59916e749cf3d1"
+    },
+    {
+      "id": "w20261023042-060-accessible",
+      "world": "w20261023042-060",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-060-accessible.json",
+      "sha256": "1c9ea52d3b45830568e4689cd58bebe194eced6f13da51167254cd207dd68019"
+    },
+    {
+      "id": "w20261023042-060-constrained",
+      "world": "w20261023042-060",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-060-constrained.json",
+      "sha256": "1c6668f545eb9cc73b323aad856b5991931005c671d7da01578a1c8c0a4e4b5b"
+    },
+    {
+      "id": "w20261023042-060-stress",
+      "world": "w20261023042-060",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-060-stress.json",
+      "sha256": "a01419e5b46ec9be4c094e748a00905c21fc19425b946f77d233a2b7c53e2e43"
+    },
+    {
+      "id": "w20261023042-061-accessible",
+      "world": "w20261023042-061",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-061-accessible.json",
+      "sha256": "eee09faea5c8f11cdd9ab544fbde721c907afb7585f586d5de1019fbeef91ee5"
+    },
+    {
+      "id": "w20261023042-061-constrained",
+      "world": "w20261023042-061",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-061-constrained.json",
+      "sha256": "a8b5c9475133a04d69423e862833c53f9b3950043fa575096a745cd20d4737f4"
+    },
+    {
+      "id": "w20261023042-061-stress",
+      "world": "w20261023042-061",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-061-stress.json",
+      "sha256": "f4ddeaa454b48a9e45ad32d44510c8d3740fbc3e864d2c36b02f5646fa48036d"
+    },
+    {
+      "id": "w20261023042-062-accessible",
+      "world": "w20261023042-062",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-062-accessible.json",
+      "sha256": "e409b6e020ad4beac0de03939f132bcdb7b18776555e824a02d9962ca79fc38d"
+    },
+    {
+      "id": "w20261023042-062-constrained",
+      "world": "w20261023042-062",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-062-constrained.json",
+      "sha256": "593eebb2e9d3e830c4e7d6757637ac7b2448180003ba1d7428a6a3803d851848"
+    },
+    {
+      "id": "w20261023042-062-stress",
+      "world": "w20261023042-062",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-062-stress.json",
+      "sha256": "6f23e3a5ca3707e3375124368c157b3e4e14b994771215421f5ad7b4566812ad"
+    },
+    {
+      "id": "w20261023042-063-accessible",
+      "world": "w20261023042-063",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-063-accessible.json",
+      "sha256": "e72fe9792527cd8034318d388aed1cada005f36e6b83a62bb9fc90399f3b97b8"
+    },
+    {
+      "id": "w20261023042-063-constrained",
+      "world": "w20261023042-063",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-063-constrained.json",
+      "sha256": "9585687011a48a72ee595f4e3ee6ee90c818ee2aee2b8bbf7ba6184f01e96069"
+    },
+    {
+      "id": "w20261023042-063-stress",
+      "world": "w20261023042-063",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-063-stress.json",
+      "sha256": "e0b543ab0791153b6abacf23cd85ecb94dbe4702a59586ff21761d6874e04ba4"
+    },
+    {
+      "id": "w20261023042-064-accessible",
+      "world": "w20261023042-064",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-064-accessible.json",
+      "sha256": "19a772b781a70e78f1a2cb6084769f2e3f13c088973bf9d5208f0b5302467d55"
+    },
+    {
+      "id": "w20261023042-064-constrained",
+      "world": "w20261023042-064",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-064-constrained.json",
+      "sha256": "ccdbfdf5836e15ad0cc764ea7925bdde50438fe741457ef19c72b2624e1650af"
+    },
+    {
+      "id": "w20261023042-064-stress",
+      "world": "w20261023042-064",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-064-stress.json",
+      "sha256": "42d0f9bc004d02cc0daf7f00e531c170937cde4365c1d2213488a3b318492884"
+    },
+    {
+      "id": "w20261023042-065-accessible",
+      "world": "w20261023042-065",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-065-accessible.json",
+      "sha256": "6eafdc68b38f57bae604d5266241c656c6d9116a1d5ee233972bb3118b739b71"
+    },
+    {
+      "id": "w20261023042-065-constrained",
+      "world": "w20261023042-065",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-065-constrained.json",
+      "sha256": "453c9a28f99a77d7e203846736da7b03cd45fc611e7872ced1230d636f38f2bf"
+    },
+    {
+      "id": "w20261023042-065-stress",
+      "world": "w20261023042-065",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-065-stress.json",
+      "sha256": "f8e02d5aec19e9a87e8e93da469255a55acfc4121603295e90b9e3d253e32776"
+    },
+    {
+      "id": "w20261023042-066-accessible",
+      "world": "w20261023042-066",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-066-accessible.json",
+      "sha256": "499e7809b1a07dbe1a0cfd0260aa8f5ef4e682919aa70b05111f2f29a956af68"
+    },
+    {
+      "id": "w20261023042-066-constrained",
+      "world": "w20261023042-066",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-066-constrained.json",
+      "sha256": "3d1ce64dfef157e7b304c014125a7196668f7e9f7d25cf7b029afa57632348ee"
+    },
+    {
+      "id": "w20261023042-066-stress",
+      "world": "w20261023042-066",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-066-stress.json",
+      "sha256": "40074da456f4759824e4f21e3f1f581227adab088d84a8796cd1de1a402b36b9"
+    },
+    {
+      "id": "w20261023042-067-accessible",
+      "world": "w20261023042-067",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-067-accessible.json",
+      "sha256": "ff212e7bf61f91eab7ab1ba640379df0b05266f52a0f30e5af02c14a67301c07"
+    },
+    {
+      "id": "w20261023042-067-constrained",
+      "world": "w20261023042-067",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-067-constrained.json",
+      "sha256": "55d62d65e42d83b946fb5e8ea8f07e81cd5acb00982f4dd054fd629eb1d35c23"
+    },
+    {
+      "id": "w20261023042-067-stress",
+      "world": "w20261023042-067",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-067-stress.json",
+      "sha256": "37296615f1ca8055dfec40bf5ed6278acb47514ab994e6966b3c53b6ec47b25f"
+    },
+    {
+      "id": "w20261023042-068-accessible",
+      "world": "w20261023042-068",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-068-accessible.json",
+      "sha256": "749c8dea85a54d74c5a3b93fe575c991f0b7ae3614ce81dd85d7713ac3c48166"
+    },
+    {
+      "id": "w20261023042-068-constrained",
+      "world": "w20261023042-068",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-068-constrained.json",
+      "sha256": "17de52f3df0275405b2ec5210e6f501b8810efbb5f664bd15bfdffcf6fdbc210"
+    },
+    {
+      "id": "w20261023042-068-stress",
+      "world": "w20261023042-068",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-068-stress.json",
+      "sha256": "5bbffd10e1ad0aadd69fee9994b21759954a08647ede25d3b7304aa5218757f8"
+    },
+    {
+      "id": "w20261023042-069-accessible",
+      "world": "w20261023042-069",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-069-accessible.json",
+      "sha256": "5d87c2db877077cff574651d0cc59201a0a3af60913b8708c89b9309a95813d5"
+    },
+    {
+      "id": "w20261023042-069-constrained",
+      "world": "w20261023042-069",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-069-constrained.json",
+      "sha256": "7c5db6621c77063b032a9e496ec77831c8ccd7e556f6d4d2e9295b757cc9f029"
+    },
+    {
+      "id": "w20261023042-069-stress",
+      "world": "w20261023042-069",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-069-stress.json",
+      "sha256": "39325f07f17eb532db91e509ad64ed940ebd269cff5f2a0c0dad1e76403108e2"
+    },
+    {
+      "id": "w20261023042-070-accessible",
+      "world": "w20261023042-070",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-070-accessible.json",
+      "sha256": "e73659b8b9186c39cd7832eca46fd2f033d26600c82b4577295c4f1bcfff03d2"
+    },
+    {
+      "id": "w20261023042-070-constrained",
+      "world": "w20261023042-070",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-070-constrained.json",
+      "sha256": "17ff0acf6eb535b8f4c43f7f9270dd2023fc7ab9d6978e0ef3f14c4ac96ebf2f"
+    },
+    {
+      "id": "w20261023042-070-stress",
+      "world": "w20261023042-070",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-070-stress.json",
+      "sha256": "e377995289c812c09d46eb2e3f8f67a46875d97207386bd9b2b53862305bd48d"
+    },
+    {
+      "id": "w20261023042-071-accessible",
+      "world": "w20261023042-071",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-071-accessible.json",
+      "sha256": "b435b61281d567001e39e8beda77af956cc2f7cdb2b75c01fbc8a1a7e23069af"
+    },
+    {
+      "id": "w20261023042-071-constrained",
+      "world": "w20261023042-071",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-071-constrained.json",
+      "sha256": "e01597d3dce914307cbf519e5bc6565048c65137a9b691527361f15182135873"
+    },
+    {
+      "id": "w20261023042-071-stress",
+      "world": "w20261023042-071",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-071-stress.json",
+      "sha256": "e767071aa6ff1b3cd77e7345f250e43e55aeace4a285a5ba50f47a433f852600"
+    },
+    {
+      "id": "w20261023042-072-accessible",
+      "world": "w20261023042-072",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-072-accessible.json",
+      "sha256": "bd0f232a7ae32bc24a98e97ef3cd721dda20fb36f2d15ee99b66ccfc46f8190d"
+    },
+    {
+      "id": "w20261023042-072-constrained",
+      "world": "w20261023042-072",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-072-constrained.json",
+      "sha256": "94692482e5b2641759c17627d50864ebc5726237bc6064545adfcb1cdb8dce2c"
+    },
+    {
+      "id": "w20261023042-072-stress",
+      "world": "w20261023042-072",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-072-stress.json",
+      "sha256": "a4812d06c06713dba30f90edc649d4540053450f8e2585017ceff9760fa33c81"
+    },
+    {
+      "id": "w20261023042-073-accessible",
+      "world": "w20261023042-073",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-073-accessible.json",
+      "sha256": "637442025dc4bb28f757f2f9ee86f273f7da1218864b31537ec82b3da2338f11"
+    },
+    {
+      "id": "w20261023042-073-constrained",
+      "world": "w20261023042-073",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-073-constrained.json",
+      "sha256": "3bd169aaf7ec02ae8ae75346a48ec5a0cc3ff830d09788e8d720aac5f9341513"
+    },
+    {
+      "id": "w20261023042-073-stress",
+      "world": "w20261023042-073",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-073-stress.json",
+      "sha256": "9a88e75da35a2457fd93b4239dbb495158768f241b98aab02a41112567b6f998"
+    },
+    {
+      "id": "w20261023042-074-accessible",
+      "world": "w20261023042-074",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-074-accessible.json",
+      "sha256": "bc3f9ab1ae4ab41c0b46297ad6bf76127033139d9bedcd601b3675593fc0ce27"
+    },
+    {
+      "id": "w20261023042-074-constrained",
+      "world": "w20261023042-074",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-074-constrained.json",
+      "sha256": "067789361f491e3d027ceb31edea06a71f88cb634256af1abd57f059a84c6dad"
+    },
+    {
+      "id": "w20261023042-074-stress",
+      "world": "w20261023042-074",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-074-stress.json",
+      "sha256": "771aebf5a8bebb723a5df9143c537d1c8ba74e46d37805965828af4d85818df2"
+    },
+    {
+      "id": "w20261023042-075-accessible",
+      "world": "w20261023042-075",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-075-accessible.json",
+      "sha256": "ff9b19fa640b420a0ea9815ef8fe33c0dc14ef699b80a42bd033fe987e554411"
+    },
+    {
+      "id": "w20261023042-075-constrained",
+      "world": "w20261023042-075",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-075-constrained.json",
+      "sha256": "c2321f3318b50f696dd7180ead9ebbad39fe8bd4c01ea4fae7d5f72b50ebf434"
+    },
+    {
+      "id": "w20261023042-075-stress",
+      "world": "w20261023042-075",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-075-stress.json",
+      "sha256": "665484633fa9d4e519c7d0ef1f704fad9539bfa71b85218344cfd9ac0a532918"
+    },
+    {
+      "id": "w20261023042-076-accessible",
+      "world": "w20261023042-076",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-076-accessible.json",
+      "sha256": "fa094ff86d61912fcae75369473419501c36369494319fc41ddefd87738fd4a0"
+    },
+    {
+      "id": "w20261023042-076-constrained",
+      "world": "w20261023042-076",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-076-constrained.json",
+      "sha256": "780a5b5c47ed46a5346b1649f5bf61971c8d1d8cbf7d076342c89098737eefbb"
+    },
+    {
+      "id": "w20261023042-076-stress",
+      "world": "w20261023042-076",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-076-stress.json",
+      "sha256": "8dbd30533679eb40fcfed45233b5e7d5562790ce719457844fa86ca1ab025628"
+    },
+    {
+      "id": "w20261023042-077-accessible",
+      "world": "w20261023042-077",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-077-accessible.json",
+      "sha256": "9ecfc008bdca5c7773f3118d34c2ae98c08696ad1350420f5e4a9aff682fa4b3"
+    },
+    {
+      "id": "w20261023042-077-constrained",
+      "world": "w20261023042-077",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-077-constrained.json",
+      "sha256": "012a7ce24112c81cf8de6584283be75bb5eb32b56e2f08e19e762b143c203b4e"
+    },
+    {
+      "id": "w20261023042-077-stress",
+      "world": "w20261023042-077",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-077-stress.json",
+      "sha256": "df8fa22ec7f84277cef2fde044cd5684e78c69ae3ab1d47ed902dafdefc5a431"
+    },
+    {
+      "id": "w20261023042-078-accessible",
+      "world": "w20261023042-078",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-078-accessible.json",
+      "sha256": "99bbfdaeef2d98696c4b31515e306037f2e4be551e0a439e5187d614cd82d8fa"
+    },
+    {
+      "id": "w20261023042-078-constrained",
+      "world": "w20261023042-078",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-078-constrained.json",
+      "sha256": "2f861ef7e42ad2bb60473a5883f8737116a551667ffd61064aba2aad02e1eb70"
+    },
+    {
+      "id": "w20261023042-078-stress",
+      "world": "w20261023042-078",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-078-stress.json",
+      "sha256": "a03182bb2b86e89cdbd94a4f2f2eb587fbbb8feb9a1ec83ea4dd15f1ee255810"
+    },
+    {
+      "id": "w20261023042-079-accessible",
+      "world": "w20261023042-079",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-079-accessible.json",
+      "sha256": "0761cdd1f8458fc36f1ffd2a76291982518e2db62d57d8b00ee80def24150963"
+    },
+    {
+      "id": "w20261023042-079-constrained",
+      "world": "w20261023042-079",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-079-constrained.json",
+      "sha256": "18847dfe305594718f7d99fb82a97e7f85c9499f4c315c8db0743e1ae3650cd3"
+    },
+    {
+      "id": "w20261023042-079-stress",
+      "world": "w20261023042-079",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-079-stress.json",
+      "sha256": "a4d941c26744566a2adf038f990120fffc8e52c6e27b93251578544425b10ee6"
+    },
+    {
+      "id": "w20261023042-080-accessible",
+      "world": "w20261023042-080",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-080-accessible.json",
+      "sha256": "f33ccebab1ff1ae162f1056b77289187cda6c57a1bc3d714821b6cf1e1bbd491"
+    },
+    {
+      "id": "w20261023042-080-constrained",
+      "world": "w20261023042-080",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-080-constrained.json",
+      "sha256": "e64bd3fb1aa15838c5bb24653fc631f1a9afab143d51022460fb3f2baa0a76d0"
+    },
+    {
+      "id": "w20261023042-080-stress",
+      "world": "w20261023042-080",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-080-stress.json",
+      "sha256": "961f2a2594b2cc423f0b00746f750493b7070965d41efdd71d33999f86278016"
+    },
+    {
+      "id": "w20261023042-081-accessible",
+      "world": "w20261023042-081",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-081-accessible.json",
+      "sha256": "586331d42d7e00d3df86ebfcfa471e18919c57de0a74e6c94b1627b804381a3b"
+    },
+    {
+      "id": "w20261023042-081-constrained",
+      "world": "w20261023042-081",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-081-constrained.json",
+      "sha256": "6c2740e8fa80da1f6682fab06f66ff40c638276d0d4a13e4b6df8c9dd2f4e4ee"
+    },
+    {
+      "id": "w20261023042-081-stress",
+      "world": "w20261023042-081",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-081-stress.json",
+      "sha256": "65ee64d1a7a9e62b0a78e2eb069a060f09b99abac65e8c21ae120b784fce232d"
+    },
+    {
+      "id": "w20261023042-082-accessible",
+      "world": "w20261023042-082",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-082-accessible.json",
+      "sha256": "6f28e7f51875237f247d8d540a6ea7ca9a631c5c4c621235ec5c86e849f75ba9"
+    },
+    {
+      "id": "w20261023042-082-constrained",
+      "world": "w20261023042-082",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-082-constrained.json",
+      "sha256": "916d01878d89c2454e175bc8a6175d21905ccd9ca1bff95ff82cbf2e28f09881"
+    },
+    {
+      "id": "w20261023042-082-stress",
+      "world": "w20261023042-082",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-082-stress.json",
+      "sha256": "5c3f25761f18a0ee4bb01c0f62aa91120a922a4e16f08317b13671c257a1bb6d"
+    },
+    {
+      "id": "w20261023042-083-accessible",
+      "world": "w20261023042-083",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-083-accessible.json",
+      "sha256": "6f56cf4290198755989d3eaf42bdc7a2952b424115b71c74acfd45ffbc3d91c3"
+    },
+    {
+      "id": "w20261023042-083-constrained",
+      "world": "w20261023042-083",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-083-constrained.json",
+      "sha256": "a84725cd32ed3b3b0d3650b6a768d6cd7442de60e756f164a633820e8f65d824"
+    },
+    {
+      "id": "w20261023042-083-stress",
+      "world": "w20261023042-083",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-083-stress.json",
+      "sha256": "0d2a52f5564168e33bde8bca515d962b7a6e0a07e85e64baf777d837179f876c"
+    },
+    {
+      "id": "w20261023042-084-accessible",
+      "world": "w20261023042-084",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-084-accessible.json",
+      "sha256": "8ddafcaeb3662b9a930f935e9cd5499286a17bbc052b615d7fad0a119dee56b3"
+    },
+    {
+      "id": "w20261023042-084-constrained",
+      "world": "w20261023042-084",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-084-constrained.json",
+      "sha256": "7ef9ee800bcfbdef9af96047bd52d5816000ba975909fc29ba52d70584396bda"
+    },
+    {
+      "id": "w20261023042-084-stress",
+      "world": "w20261023042-084",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-084-stress.json",
+      "sha256": "1f24cb118cb3345cdd16166d598fb1b875ed66afd78dbd8149446a6bb1a560f9"
+    },
+    {
+      "id": "w20261023042-085-accessible",
+      "world": "w20261023042-085",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-085-accessible.json",
+      "sha256": "312f21ef285644f89346157031f892522d894c8625580ee619ae39277a708fab"
+    },
+    {
+      "id": "w20261023042-085-constrained",
+      "world": "w20261023042-085",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-085-constrained.json",
+      "sha256": "c429d6e7bfe1d871cbb29514775a897a69a7d968247be61f42020cbfa37d9c05"
+    },
+    {
+      "id": "w20261023042-085-stress",
+      "world": "w20261023042-085",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-085-stress.json",
+      "sha256": "f0add5fff5101cfd1fd25502bba4c99b5c50f909799d835f2dd5331204b5d2e1"
+    },
+    {
+      "id": "w20261023042-086-accessible",
+      "world": "w20261023042-086",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-086-accessible.json",
+      "sha256": "8b4379f2285822c2f12f4af2072ad12feaef3fba5b43e46bc53ebfff42391429"
+    },
+    {
+      "id": "w20261023042-086-constrained",
+      "world": "w20261023042-086",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-086-constrained.json",
+      "sha256": "da79d8ccedf385a4bb5c44bc1b27d47038ff151bdf78ab9228332a1e798542ed"
+    },
+    {
+      "id": "w20261023042-086-stress",
+      "world": "w20261023042-086",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-086-stress.json",
+      "sha256": "1b263bb4f74a7e2e39bbb32eec6c0abb0114c80c59eb1e730d6cf780ab7aa14b"
+    },
+    {
+      "id": "w20261023042-087-accessible",
+      "world": "w20261023042-087",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-087-accessible.json",
+      "sha256": "917008f95b70d08ffde7b0013f2510a24899bf16e48bc2cb1c71270ddf775c26"
+    },
+    {
+      "id": "w20261023042-087-constrained",
+      "world": "w20261023042-087",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-087-constrained.json",
+      "sha256": "7129abb96b444cdee240f57d5c290a06ff31d8ae0b8c8dd5768d3067366d4e19"
+    },
+    {
+      "id": "w20261023042-087-stress",
+      "world": "w20261023042-087",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-087-stress.json",
+      "sha256": "6b2970262c8a141cb5ce5a5898751e07be0c982333ac5a576353e395275d7af4"
+    },
+    {
+      "id": "w20261023042-088-accessible",
+      "world": "w20261023042-088",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-088-accessible.json",
+      "sha256": "645e08ce9ec48064612313d6b822e47545d57b58e6447d33afc20582a53e6910"
+    },
+    {
+      "id": "w20261023042-088-constrained",
+      "world": "w20261023042-088",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-088-constrained.json",
+      "sha256": "c53f95d4a3006e4625645e77e67fff4fec9284e5caf2a9415f7c1d02a3083f35"
+    },
+    {
+      "id": "w20261023042-088-stress",
+      "world": "w20261023042-088",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-088-stress.json",
+      "sha256": "2a5aefe9622d46e6c5194e93ec702ce0c6042de4948ab920f4246712f05547be"
+    },
+    {
+      "id": "w20261023042-089-accessible",
+      "world": "w20261023042-089",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-089-accessible.json",
+      "sha256": "02d06c57a45b382876892297d7affb90f98be5744ab1e1e8f2e2e7af8d41aeaa"
+    },
+    {
+      "id": "w20261023042-089-constrained",
+      "world": "w20261023042-089",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-089-constrained.json",
+      "sha256": "c69d2f44f78835795df64f1a7efe6eb17cbe3c148ea8f5117fc5dd9d841e6cb6"
+    },
+    {
+      "id": "w20261023042-089-stress",
+      "world": "w20261023042-089",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-089-stress.json",
+      "sha256": "acadd9ff58a1e153cce2a607ae6a57028e523ed7f757cc6c3cd9953f04b3ba3d"
+    },
+    {
+      "id": "w20261023042-090-accessible",
+      "world": "w20261023042-090",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-090-accessible.json",
+      "sha256": "4caa5b1d0be59f582e47984495915a14934e8fcabff3720dbd94b5ffc3e68a3c"
+    },
+    {
+      "id": "w20261023042-090-constrained",
+      "world": "w20261023042-090",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-090-constrained.json",
+      "sha256": "9e6f8e145ebb931699786ec86ae67d016059bf3bef6e9b76b93115c8f8536fa0"
+    },
+    {
+      "id": "w20261023042-090-stress",
+      "world": "w20261023042-090",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-090-stress.json",
+      "sha256": "fb9705605a31f9337f37a72619213790b5e19444c35e61636a54ecf2f724abaf"
+    },
+    {
+      "id": "w20261023042-091-accessible",
+      "world": "w20261023042-091",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-091-accessible.json",
+      "sha256": "a5a338b3a24a60daae77a1afa8536c6a5e165e479ea8833e179eb0fb9c616b05"
+    },
+    {
+      "id": "w20261023042-091-constrained",
+      "world": "w20261023042-091",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-091-constrained.json",
+      "sha256": "b57cc6c43a6fcf3548a17279e1e890d2ea9235ac9e91c13f05e45c337042643f"
+    },
+    {
+      "id": "w20261023042-091-stress",
+      "world": "w20261023042-091",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-091-stress.json",
+      "sha256": "454c20f012de895a0761aaeb313cc91c0a9fec5f9ca0a32b192be0a488eae736"
+    },
+    {
+      "id": "w20261023042-092-accessible",
+      "world": "w20261023042-092",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-092-accessible.json",
+      "sha256": "1194bfecfdfd1e2238f4338cd31f8b887fdf20c339e96ba7703cc63bc4d7e446"
+    },
+    {
+      "id": "w20261023042-092-constrained",
+      "world": "w20261023042-092",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-092-constrained.json",
+      "sha256": "894763e7f3b9daef982d8c9060ddcfc64d58e96c857511adb57aa5132737226a"
+    },
+    {
+      "id": "w20261023042-092-stress",
+      "world": "w20261023042-092",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-092-stress.json",
+      "sha256": "578b30d25c37c455419cf493f70be2d95825960837491d5e75b517f69a92a7b8"
+    },
+    {
+      "id": "w20261023042-093-accessible",
+      "world": "w20261023042-093",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-093-accessible.json",
+      "sha256": "cef92091b70b2075e02e2f5487c3fc3fb31cf80c437f9b6a4311462ed636bc8d"
+    },
+    {
+      "id": "w20261023042-093-constrained",
+      "world": "w20261023042-093",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-093-constrained.json",
+      "sha256": "5cd0a73e44918a42a721d435491d7d5a25a761d41d747468ecbdd1236339a305"
+    },
+    {
+      "id": "w20261023042-093-stress",
+      "world": "w20261023042-093",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-093-stress.json",
+      "sha256": "46e005ac212361575808e1e2ef067755dff766cc23700fccec55daa6a4cb478a"
+    },
+    {
+      "id": "w20261023042-094-accessible",
+      "world": "w20261023042-094",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-094-accessible.json",
+      "sha256": "57ee632f9ef3bf2cbdc85812e7904dc2d68abe2d5d2ed0244f17ad3712c90f31"
+    },
+    {
+      "id": "w20261023042-094-constrained",
+      "world": "w20261023042-094",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-094-constrained.json",
+      "sha256": "7f7e6e133391575c412e782e05838b3245f3f6130a91bf9ee0ac66bb5cf61165"
+    },
+    {
+      "id": "w20261023042-094-stress",
+      "world": "w20261023042-094",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-094-stress.json",
+      "sha256": "b75efcda4b80c9966b3dbb1a9004267b48a5db3cb4d8aaa210dad40425cef4df"
+    },
+    {
+      "id": "w20261023042-095-accessible",
+      "world": "w20261023042-095",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-095-accessible.json",
+      "sha256": "aacd322aa885089609cdf970d5f07152f2616455cf85a4a00219c260d185a995"
+    },
+    {
+      "id": "w20261023042-095-constrained",
+      "world": "w20261023042-095",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-095-constrained.json",
+      "sha256": "700ffcb76820de234a743964d1c93c076b568369b7704bc0fe2ee452cd4edd00"
+    },
+    {
+      "id": "w20261023042-095-stress",
+      "world": "w20261023042-095",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-095-stress.json",
+      "sha256": "bf49450d2219b92326016de2f9d0a5ddf465687f1bc62a6313a2e8600fca6111"
+    },
+    {
+      "id": "w20261023042-096-accessible",
+      "world": "w20261023042-096",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-096-accessible.json",
+      "sha256": "378dd96010899e26c73ec548363abe601d2dca1545fb90b362ea2dfd4e5b2fdc"
+    },
+    {
+      "id": "w20261023042-096-constrained",
+      "world": "w20261023042-096",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-096-constrained.json",
+      "sha256": "d57122c0d4f36b62c8e235b0086b3bbe87cfbf998a4dab6e9f77bcac187939a9"
+    },
+    {
+      "id": "w20261023042-096-stress",
+      "world": "w20261023042-096",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-096-stress.json",
+      "sha256": "60352f20ac7abeb6cba797a75799ed4947539ff29798c060e2e7e47327084a5b"
+    },
+    {
+      "id": "w20261023042-097-accessible",
+      "world": "w20261023042-097",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-097-accessible.json",
+      "sha256": "8bef7cbafefda5ec5dae52e0d54fc393d2c19bc43ebec932b3f615c27020558f"
+    },
+    {
+      "id": "w20261023042-097-constrained",
+      "world": "w20261023042-097",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-097-constrained.json",
+      "sha256": "227f7c36652bb1076d1472650bcfd255075f08b4f95f4ebb9f63e15635aa345b"
+    },
+    {
+      "id": "w20261023042-097-stress",
+      "world": "w20261023042-097",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-097-stress.json",
+      "sha256": "89d5ded32f3f2206ccd10073b23aa14de5de15a8f2143880e58c70489aed4389"
+    },
+    {
+      "id": "w20261023042-098-accessible",
+      "world": "w20261023042-098",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-098-accessible.json",
+      "sha256": "31b11faf39f5569a284907137d3c420d987b729a803566b9f4a2b9333e386aa6"
+    },
+    {
+      "id": "w20261023042-098-constrained",
+      "world": "w20261023042-098",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-098-constrained.json",
+      "sha256": "b87334a043081f9ca74cc7353fefaaaf7ff65a516f78e80f7cd4cfb59f912d96"
+    },
+    {
+      "id": "w20261023042-098-stress",
+      "world": "w20261023042-098",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-098-stress.json",
+      "sha256": "2475d19812d4851f8e1c6d5d42b70d1ee87437518e5a9f47d5c48d1f82644110"
+    },
+    {
+      "id": "w20261023042-099-accessible",
+      "world": "w20261023042-099",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-099-accessible.json",
+      "sha256": "887bd4ee7500f7deb094e22dce42b63a683092f66058c0eff61c0bba247570d3"
+    },
+    {
+      "id": "w20261023042-099-constrained",
+      "world": "w20261023042-099",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-099-constrained.json",
+      "sha256": "63769e8bf85bad52bb49633e7b44f2e0176767ad7c28762e45116a87538e48c6"
+    },
+    {
+      "id": "w20261023042-099-stress",
+      "world": "w20261023042-099",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-099-stress.json",
+      "sha256": "827ab9b6e784dff70e38663250d40bbfc47f7ba2025ec42326f75c39ebb13543"
+    },
+    {
+      "id": "w20261023042-100-accessible",
+      "world": "w20261023042-100",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-100-accessible.json",
+      "sha256": "659c88da92a542c6e61b162912157c9fbe702c26f64562d372d9801e59459074"
+    },
+    {
+      "id": "w20261023042-100-constrained",
+      "world": "w20261023042-100",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-100-constrained.json",
+      "sha256": "bcb24288e24dde25cd527bdffb61483d06648e8f0a8a99c15c8560d6941a72c1"
+    },
+    {
+      "id": "w20261023042-100-stress",
+      "world": "w20261023042-100",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-100-stress.json",
+      "sha256": "f4e7e2f556096b3b0abd05a0ad6cc0bae2694dc0b0348fd7b5ed911e35b5b982"
+    },
+    {
+      "id": "w20261023042-101-accessible",
+      "world": "w20261023042-101",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-101-accessible.json",
+      "sha256": "fb99349e1363928cfd04247dff77942200d3788f808b98b54f2cfd0c95092c79"
+    },
+    {
+      "id": "w20261023042-101-constrained",
+      "world": "w20261023042-101",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-101-constrained.json",
+      "sha256": "c247be8e7cf0a35dbf1cb4eb8029adb689e2072f23eb2edd8ed46cf7643ee5aa"
+    },
+    {
+      "id": "w20261023042-101-stress",
+      "world": "w20261023042-101",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-101-stress.json",
+      "sha256": "c952a549b8f4a99e3453b9719a8d64efcce79c05e78bd892cf7830b347883f7e"
+    },
+    {
+      "id": "w20261023042-102-accessible",
+      "world": "w20261023042-102",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-102-accessible.json",
+      "sha256": "6872163072f202dfece96aaf0b20912d23488398074152059353b2b3bc6bc32d"
+    },
+    {
+      "id": "w20261023042-102-constrained",
+      "world": "w20261023042-102",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-102-constrained.json",
+      "sha256": "37b12278d04a5ccabe44d2397e3e0f913de1b1432423978968e434251940a2a5"
+    },
+    {
+      "id": "w20261023042-102-stress",
+      "world": "w20261023042-102",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-102-stress.json",
+      "sha256": "d2675e36d840c296c8ef7aa72c1bf1bfb95f110b9db39016c928df25cda33035"
+    },
+    {
+      "id": "w20261023042-103-accessible",
+      "world": "w20261023042-103",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-103-accessible.json",
+      "sha256": "d3a2e5ac2cc6d587f56fada430df5a3f81e198f021a2f97e8259113a99ac1e9f"
+    },
+    {
+      "id": "w20261023042-103-constrained",
+      "world": "w20261023042-103",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-103-constrained.json",
+      "sha256": "9868677748c990a31c7e4e7f33bfcd071021a84bfbe19d80bd78e73234b39e87"
+    },
+    {
+      "id": "w20261023042-103-stress",
+      "world": "w20261023042-103",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-103-stress.json",
+      "sha256": "7a0c74df163497e6dfb8dc0a645c0fea6fadf510176b054c62b4b3df8901c9fe"
+    },
+    {
+      "id": "w20261023042-104-accessible",
+      "world": "w20261023042-104",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-104-accessible.json",
+      "sha256": "37e9b8dbd46a9005772688a2bf3c55916614c63341665cbda4a22aafad0ccac6"
+    },
+    {
+      "id": "w20261023042-104-constrained",
+      "world": "w20261023042-104",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-104-constrained.json",
+      "sha256": "d770cf078cec8da0402ec180b6612acc420ff843d865350bb11ae9f7a97f17d0"
+    },
+    {
+      "id": "w20261023042-104-stress",
+      "world": "w20261023042-104",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-104-stress.json",
+      "sha256": "564cee922eb3e25e57e2f6a36c2322f35a1085d58047773583a571dc556feae9"
+    },
+    {
+      "id": "w20261023042-105-accessible",
+      "world": "w20261023042-105",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-105-accessible.json",
+      "sha256": "4481adfc65a57cded3839b2e1814c44d8198442e04a4fc1c7276b1935612815b"
+    },
+    {
+      "id": "w20261023042-105-constrained",
+      "world": "w20261023042-105",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-105-constrained.json",
+      "sha256": "94a4211ae0b54495d03e4c9196449feca1424007c0799aae003ef0871cd8f0bd"
+    },
+    {
+      "id": "w20261023042-105-stress",
+      "world": "w20261023042-105",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-105-stress.json",
+      "sha256": "31918618ddc572676aab92e861c9b2dfc9893d23a496af91d4bab3fc6e82c1b1"
+    },
+    {
+      "id": "w20261023042-106-accessible",
+      "world": "w20261023042-106",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-106-accessible.json",
+      "sha256": "50fae1cc69d8239ec33b12ff9d99b9f6dc98aa5afd104dbb2786997bf1d5d48e"
+    },
+    {
+      "id": "w20261023042-106-constrained",
+      "world": "w20261023042-106",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-106-constrained.json",
+      "sha256": "04d82d515026daba1fcbed8e676092f5a81bc55af6e0f1382a537f3a6a3de235"
+    },
+    {
+      "id": "w20261023042-106-stress",
+      "world": "w20261023042-106",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-106-stress.json",
+      "sha256": "363a032618f06b668dcb703cc94056345f672a9ccb2267ceb8d81091f2b3f0c0"
+    },
+    {
+      "id": "w20261023042-107-accessible",
+      "world": "w20261023042-107",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-107-accessible.json",
+      "sha256": "e812cc1b5c6cf5b967b07e382f65fcda785485bb4ec3fa11f85217c4bdc1ecf1"
+    },
+    {
+      "id": "w20261023042-107-constrained",
+      "world": "w20261023042-107",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-107-constrained.json",
+      "sha256": "d853fd568066167becc3f8ff142cb2440a0278bf399d4f8eae6e63a8076ba9c1"
+    },
+    {
+      "id": "w20261023042-107-stress",
+      "world": "w20261023042-107",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-107-stress.json",
+      "sha256": "19a8f847af9177cce06a466d18a1dbdbaf041cb1b64f34ff1cc242400eca5f58"
+    },
+    {
+      "id": "w20261023042-108-accessible",
+      "world": "w20261023042-108",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-108-accessible.json",
+      "sha256": "b3d1e725a7f001ed3434cc2b71d5c19ea1d85139e0766058c7dbe01b074b4cbf"
+    },
+    {
+      "id": "w20261023042-108-constrained",
+      "world": "w20261023042-108",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-108-constrained.json",
+      "sha256": "ce5865a2f23a687afcfe7f9af735bcc212b8e96fe74a7229cdf92648b1ba4999"
+    },
+    {
+      "id": "w20261023042-108-stress",
+      "world": "w20261023042-108",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-108-stress.json",
+      "sha256": "722d229cfc77404512971c5084008ecc01ca407ee0d12f744de320fc37ef8b54"
+    },
+    {
+      "id": "w20261023042-109-accessible",
+      "world": "w20261023042-109",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-109-accessible.json",
+      "sha256": "eaef7fbd9f7cc605ca9177c33655797e1a28fe23cd42cffe9f35c9c4ec8a1660"
+    },
+    {
+      "id": "w20261023042-109-constrained",
+      "world": "w20261023042-109",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-109-constrained.json",
+      "sha256": "64f2537eb04788eba09ea392388d8136dfa63292e457bb7f2954f2a5642adfa7"
+    },
+    {
+      "id": "w20261023042-109-stress",
+      "world": "w20261023042-109",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-109-stress.json",
+      "sha256": "94987e69df8236ca1a2775575209e920806a8c1113848507b52d3dae55fba815"
+    },
+    {
+      "id": "w20261023042-110-accessible",
+      "world": "w20261023042-110",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-110-accessible.json",
+      "sha256": "052c2711b3930b934f7bdc1b89247a4cbdec8330cdfdaf25a88153715e6caec6"
+    },
+    {
+      "id": "w20261023042-110-constrained",
+      "world": "w20261023042-110",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-110-constrained.json",
+      "sha256": "476286efdedcb0cd1465695456cf653d07c61d366ce9f8bf49b74f1135528699"
+    },
+    {
+      "id": "w20261023042-110-stress",
+      "world": "w20261023042-110",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-110-stress.json",
+      "sha256": "00d6add0765c5ca268058b09b7854ba84dae0426e8fd3930332be9626467b646"
+    },
+    {
+      "id": "w20261023042-111-accessible",
+      "world": "w20261023042-111",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-111-accessible.json",
+      "sha256": "6c564290c9f37825b25277b45dea406ef02eaff17e6d5fb847638552050a2a4c"
+    },
+    {
+      "id": "w20261023042-111-constrained",
+      "world": "w20261023042-111",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-111-constrained.json",
+      "sha256": "ac600a593a5d94b8966ab2d187c913d33b4c69bbff90ec3d3418e6e61b33e872"
+    },
+    {
+      "id": "w20261023042-111-stress",
+      "world": "w20261023042-111",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-111-stress.json",
+      "sha256": "b56609531a08ce048917f304fe78f5b95d02dd07ae3f3be8ce2fb982884da0a5"
+    },
+    {
+      "id": "w20261023042-112-accessible",
+      "world": "w20261023042-112",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-112-accessible.json",
+      "sha256": "2a6366a15ef9d52056a62ed9f0731df39b907dba13f3f4063e7d91991e357ac5"
+    },
+    {
+      "id": "w20261023042-112-constrained",
+      "world": "w20261023042-112",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-112-constrained.json",
+      "sha256": "573801e1165d13b68e741c3c7a5d5def1bfceb763b96a8386697a29f53e1290e"
+    },
+    {
+      "id": "w20261023042-112-stress",
+      "world": "w20261023042-112",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-112-stress.json",
+      "sha256": "82935fe2901b97be94d7f4b2a403aeb298231649bcf7b7dc7c73128f2aca559c"
+    },
+    {
+      "id": "w20261023042-113-accessible",
+      "world": "w20261023042-113",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-113-accessible.json",
+      "sha256": "2239e2f8d932d3a3f2010c5e0b84c6da62988a3f6752098be62b8e42c16c69e2"
+    },
+    {
+      "id": "w20261023042-113-constrained",
+      "world": "w20261023042-113",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-113-constrained.json",
+      "sha256": "f6fd461bbba5bd6c0d86d5e09f13a37ea53a227908794ba04a1d53ebf716338c"
+    },
+    {
+      "id": "w20261023042-113-stress",
+      "world": "w20261023042-113",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-113-stress.json",
+      "sha256": "20eab189920bd49809a054b3ce3731523f3e505207cae750cd8d5a9f80576dda"
+    },
+    {
+      "id": "w20261023042-114-accessible",
+      "world": "w20261023042-114",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-114-accessible.json",
+      "sha256": "7e3a5ab60f0724b1ba8bc0344681e5d8cecdf4e2ee1b03b539d7f14e5953704f"
+    },
+    {
+      "id": "w20261023042-114-constrained",
+      "world": "w20261023042-114",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-114-constrained.json",
+      "sha256": "0e2f4990a455d7594513896589f35aad87393d61dec33e1fd7b7f5635368d886"
+    },
+    {
+      "id": "w20261023042-114-stress",
+      "world": "w20261023042-114",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-114-stress.json",
+      "sha256": "0981ed7ad0106dd9912a8fc9121da0bd3d17d70757cac6ef1916c6ae6c21e257"
+    },
+    {
+      "id": "w20261023042-115-accessible",
+      "world": "w20261023042-115",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-115-accessible.json",
+      "sha256": "1ed9ae361d1056ec7591b0925f9d8d65a747a4ae7d1554435ea87a17fe3ea569"
+    },
+    {
+      "id": "w20261023042-115-constrained",
+      "world": "w20261023042-115",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-115-constrained.json",
+      "sha256": "5de260eae6324ca1dbe0c3a950c5c2f8cb5a2fe04e05d9d26088747855c50837"
+    },
+    {
+      "id": "w20261023042-115-stress",
+      "world": "w20261023042-115",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-115-stress.json",
+      "sha256": "b49b2379f0b624615dc19b3934f2a10c2d619f389cf0759ec8b78d14928bfc37"
+    },
+    {
+      "id": "w20261023042-116-accessible",
+      "world": "w20261023042-116",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-116-accessible.json",
+      "sha256": "2c1f77c8f227024fabb3f98ffc5957aff93a381a2ae3606cfb3772799f599240"
+    },
+    {
+      "id": "w20261023042-116-constrained",
+      "world": "w20261023042-116",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-116-constrained.json",
+      "sha256": "eabc252d854743d7b72d05b07d52ed12c0fee3937693745af7e815c08ae7a4ed"
+    },
+    {
+      "id": "w20261023042-116-stress",
+      "world": "w20261023042-116",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-116-stress.json",
+      "sha256": "5049d3e4f3b1c5a2f88aed77bd101eb28cfc36f83276acf37d467635c707f36c"
+    },
+    {
+      "id": "w20261023042-117-accessible",
+      "world": "w20261023042-117",
+      "family": "enterprise_software",
+      "level": "accessible",
+      "path": "cases/w20261023042-117-accessible.json",
+      "sha256": "07ac887f01e10d3bbae369dc2d3f20450ffa56298ef34606f4db538224be125b"
+    },
+    {
+      "id": "w20261023042-117-constrained",
+      "world": "w20261023042-117",
+      "family": "enterprise_software",
+      "level": "constrained",
+      "path": "cases/w20261023042-117-constrained.json",
+      "sha256": "98c093d2f061b5c254bc00f6ed9f6f81bf6d4e58d87c3c5d6deb124906e6d5d4"
+    },
+    {
+      "id": "w20261023042-117-stress",
+      "world": "w20261023042-117",
+      "family": "enterprise_software",
+      "level": "stress",
+      "path": "cases/w20261023042-117-stress.json",
+      "sha256": "560899daacb1591652df6ae24bccf6900507480c8428082b5359fa236695da59"
+    },
+    {
+      "id": "w20261023042-118-accessible",
+      "world": "w20261023042-118",
+      "family": "industrial_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-118-accessible.json",
+      "sha256": "d45f055fa197bf560419e6c23a05e602b094f67040f9a00a06aefb5bac31563b"
+    },
+    {
+      "id": "w20261023042-118-constrained",
+      "world": "w20261023042-118",
+      "family": "industrial_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-118-constrained.json",
+      "sha256": "1e2b944207002c1729dcf9e2a87af62d4aa155d42f5df7a0552d9b5349044c34"
+    },
+    {
+      "id": "w20261023042-118-stress",
+      "world": "w20261023042-118",
+      "family": "industrial_services",
+      "level": "stress",
+      "path": "cases/w20261023042-118-stress.json",
+      "sha256": "753fbba7f247ef105a59d900d5cd6bc67f1ac2752a76203430b93b82aeb40b6a"
+    },
+    {
+      "id": "w20261023042-119-accessible",
+      "world": "w20261023042-119",
+      "family": "professional_services",
+      "level": "accessible",
+      "path": "cases/w20261023042-119-accessible.json",
+      "sha256": "215b82c012064472957f60266e610bb6d2019250fa18b477e2a388f9824b052f"
+    },
+    {
+      "id": "w20261023042-119-constrained",
+      "world": "w20261023042-119",
+      "family": "professional_services",
+      "level": "constrained",
+      "path": "cases/w20261023042-119-constrained.json",
+      "sha256": "073021b43c64df47bab206da2a86a418fd917303e5773bd285ef3bfb74999f9b"
+    },
+    {
+      "id": "w20261023042-119-stress",
+      "world": "w20261023042-119",
+      "family": "professional_services",
+      "level": "stress",
+      "path": "cases/w20261023042-119-stress.json",
+      "sha256": "fea228e31e5714aa157408b4e452f3267090a7eaae8e68a9207ab0e398045744"
+    }
+  ],
+  "provenance": "Original generated fictional structured sources; not customer data. Independent implementation checks are not independent authorship.",
+  "license": "CC-BY-4.0"
+}

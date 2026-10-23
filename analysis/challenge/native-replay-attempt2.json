@@ -1,0 +1,6 @@
+{
+  "status": "failed_checker_path_glob",
+  "fresh_native_calls": 0,
+  "fresh_api_calls": 0,
+  "explanation": "Offline reanalysis passed all three native/packet comparisons but the no-API assertion incorrectly matched the local embedding-snapshot.json.gz file. Changed the checker to match actual embedding attempt request.json paths. Existing native execution is reused; no provider or native run is repeated."
+}

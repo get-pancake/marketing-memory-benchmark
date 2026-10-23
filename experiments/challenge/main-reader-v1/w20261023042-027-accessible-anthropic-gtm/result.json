@@ -1,0 +1,111 @@
+{
+  "id": "w20261023042-027-accessible-anthropic-gtm",
+  "case_id": "w20261023042-027-accessible",
+  "world": "w20261023042-027",
+  "family": "enterprise_software",
+  "level": "accessible",
+  "provider": "anthropic",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T06:08:29.117734+00:00",
+  "evidence_bytes": 16345,
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9988000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T06:08:31Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "2000000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T06:08:41Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9999",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T06:08:30Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11988000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T06:08:31Z"
+  },
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgJfn6TVpCvSnXTrBjZcY",
+  "usage": {
+    "input_tokens": 8805,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1274,
+    "output_tokens_details": {
+      "thinking_tokens": 634
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.0607",
+    "total_input_tokens": 8805,
+    "output_tokens": 1274,
+    "regular_input_tokens": 8805,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Juniper-27",
+        "action": "workshop",
+        "sources": [
+          "e8f811df58b7130",
+          "e1215dcd5c942df",
+          "ee6cf34ce7de5a2",
+          "e48267ea5072d2e",
+          "e47fb31d0467d84",
+          "eb359686628c1b3",
+          "e60071ee371c56e",
+          "e3c61c7f2ec6d97",
+          "ec408c9528394ea",
+          "e64ae837831768f",
+          "e7a951f1360f076"
+        ]
+      },
+      {
+        "account": "Pine-27",
+        "action": "workshop",
+        "sources": [
+          "e8f811df58b7130",
+          "ecd852a2da18134",
+          "ee0385c06395ce5",
+          "ec8686de7f4e1fb",
+          "e75c01bcc586c6d",
+          "e24c77636ec118e",
+          "e8cbbdf2eb504b9",
+          "e82eebd7377b5bd",
+          "e40d25e4b019831",
+          "eb706915af37a4a",
+          "e073136621e1e77"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "The approved seller policy (e8f811df58b7130) allows the UK, US and FR regions, permits all actions, and blocks the restricted sector. The proposed policy was ignored. Mesa-27 is ineligible because its sector is restricted. Kestrel-27 is ineligible because its region (DE) is not allowed and its sector is restricted. Juniper-27 (UK, services, priority 9, signal launch) has a fully verified chain and approved capacity, so the workshop scores 9x4=36 at a cost of 3. Pine-27 (UK, services, priority 5, signal risk) has a verified chain with approved capacity and assurance, so a workshop or assurance pack scores 5x4=20 at a cost of 3. Reference intro is not possible for Pine-27 because its proof is not shareable. Pine-27's workshop and assurance pack tie at 20; the workshop was chosen. The plan uses the full budget of 6 for a total of 56, which is the maximum."
+  },
+  "score": {
+    "optimum": 56,
+    "recoverable_value": 56,
+    "returned_value": 56,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 2,
+    "actions_count": 2,
+    "errors": [],
+    "cost_units": 6
+  },
+  "finished_at": "2026-10-23T06:08:41.534816+00:00",
+  "seconds": 12.417091966010048
+}

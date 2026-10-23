@@ -1,0 +1,54 @@
+{
+  "id": "q740b784511-anthropic-generic",
+  "case_id": "q740b784511",
+  "world": "wc26a095a",
+  "arm": "generic",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": false,
+    "answerable": false,
+    "apparent_eligible_templates": [],
+    "complete_positive_support": false,
+    "covered_current_value_groups": 5,
+    "current_value_group_coverage": 0.625,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.29411764705882354,
+    "selected_sources": 17,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": []
+  },
+  "evidence_bytes": 1993,
+  "status": "failed",
+  "started_at": "2026-10-23T00:05:05.741298+00:00",
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJC4pU379vTErLxXdres",
+  "usage": {
+    "input_tokens": 1680,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 852,
+    "output_tokens_details": {
+      "thinking_tokens": 526
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.01188",
+    "total_input_tokens": 1680,
+    "output_tokens": 852,
+    "regular_input_tokens": 1680,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "error_type": "JSONDecodeError",
+  "finished_at": "2026-10-23T00:05:11.204052+00:00",
+  "seconds": 5.462831212003948
+}

@@ -1,0 +1,392 @@
+{
+  "kind": "actual_local_model_pilot",
+  "started_at": "2026-10-22T02:58:38.254889+00:00",
+  "complete": true,
+  "code_revision": "ada408746df5723ddbd75709b9be615c70671822",
+  "source_sha256": {
+    "prototype/core.py": "8b4221b3ddf514c6608f50b8029de6c72559bb7b44942e1e2309f3583d0464bf",
+    "prototype/run.py": "2c919a5750d1d6610ebdd31f88a21dbb905b3fe44b38c65de8bba0a59c1cba75",
+    "study/__init__.py": "ebf596b56899d66d83c6a09b7523f4f09c87192d14f5ff506db499c3397f27a1",
+    "study/contract.py": "d2b2a394ca53ac604a55ea0ad57a66ab60a5d44bef1b92e191aa1017cadcaec1",
+    "study/dryrun.py": "b27f0a05519d473df2693e5c6ae53fd94a9e290054e3d7a0b8b2c9d333662d67",
+    "study/fixtures.py": "23abe6b04215cf7a145e9600ca10745c659015e32314b6588416b1b8601d3462",
+    "study/reference.py": "666f1f00a8282afb63e3b53c92fb3008d519ecb09d124d7b6a76233df6f1c505",
+    "study/retrieval.py": "225d78bc4af3ca545717fe632c6e0cdcf491828ad747d1b7892e577e5e0be757",
+    "study/run.py": "8c1a2bc3b8c4e12a095cb8c06e99db2fbb3953193c35850be3bfb00686098bc6",
+    "study/test_contract.py": "486518cc18907f4b58e224b49679b1ab03b82e2a60b003308e62e394d923ad02"
+  },
+  "working_tree_dirty": true,
+  "dataset_manifest": {
+    "schema": "gtm-verified-events-v1",
+    "split": "pilot",
+    "worlds": 2,
+    "queries": 16,
+    "seed": 2026102201,
+    "created_at": "2026-10-22T02:42:26.215214+00:00",
+    "files": {
+      "inputs.json": "8c49f8b5c4bc9c2e69bf82ee93480754b5efe3f92d8470e5c8a8f72999bdf554",
+      "labels.json": "bbeedcbb803b97f36d18a8a4b0ffa5ca3e516115c7e94efcb0ce60094579e41c"
+    },
+    "provenance": "Original programmatically authored fictional worlds; no customer data, human annotations or model-generated fact prose.",
+    "checks": "Construction labels agree with independent Python and SQLite contract implementations; not human validation.",
+    "license": "CC-BY-4.0",
+    "scope": "Verified-event controlled experiment, not raw-document ingestion or commercial outcomes."
+  },
+  "model_config": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+    "max_output_tokens": 280,
+    "temperature": 0,
+    "seed": 20261022,
+    "timeout_seconds": 900
+  },
+  "methods": [
+    "generic_hybrid",
+    "prompt_hybrid",
+    "facet_hybrid",
+    "typed",
+    "full_context",
+    "typed_history"
+  ],
+  "token_cap": 1024,
+  "full_context_cap": 15000,
+  "order_seed": 20261022,
+  "planned": [
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "typed_history",
+      "world": "w69bf7897",
+      "attempt_id": 0
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "generic_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 1
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "full_context",
+      "world": "w69bf7897",
+      "attempt_id": 2
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "prompt_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 3
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "facet_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 4
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "full_context",
+      "world": "w2bcf71ae",
+      "attempt_id": 5
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "typed_history",
+      "world": "w69bf7897",
+      "attempt_id": 6
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "facet_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 7
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "typed",
+      "world": "w69bf7897",
+      "attempt_id": 8
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "prompt_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 9
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "prompt_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 10
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "typed",
+      "world": "w2bcf71ae",
+      "attempt_id": 11
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "facet_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 12
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "full_context",
+      "world": "w2bcf71ae",
+      "attempt_id": 13
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "typed",
+      "world": "w69bf7897",
+      "attempt_id": 14
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "typed",
+      "world": "w2bcf71ae",
+      "attempt_id": 15
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "facet_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 16
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "typed",
+      "world": "w2bcf71ae",
+      "attempt_id": 17
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "typed_history",
+      "world": "w2bcf71ae",
+      "attempt_id": 18
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "prompt_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 19
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "generic_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 20
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "facet_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 21
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "full_context",
+      "world": "w2bcf71ae",
+      "attempt_id": 22
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "facet_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 23
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "typed_history",
+      "world": "w2bcf71ae",
+      "attempt_id": 24
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "typed_history",
+      "world": "w2bcf71ae",
+      "attempt_id": 25
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "full_context",
+      "world": "w69bf7897",
+      "attempt_id": 26
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "full_context",
+      "world": "w69bf7897",
+      "attempt_id": 27
+    },
+    {
+      "case_id": "q2d3b8138f4",
+      "method": "generic_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 28
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "prompt_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 29
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "typed_history",
+      "world": "w69bf7897",
+      "attempt_id": 30
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "generic_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 31
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "prompt_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 32
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "typed",
+      "world": "w2bcf71ae",
+      "attempt_id": 33
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "generic_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 34
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "generic_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 35
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "facet_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 36
+    },
+    {
+      "case_id": "qc12da0f847",
+      "method": "full_context",
+      "world": "w2bcf71ae",
+      "attempt_id": 37
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "generic_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 38
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "typed_history",
+      "world": "w2bcf71ae",
+      "attempt_id": 39
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "facet_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 40
+    },
+    {
+      "case_id": "q4789ca6172",
+      "method": "typed",
+      "world": "w69bf7897",
+      "attempt_id": 41
+    },
+    {
+      "case_id": "q9ebcd369cd",
+      "method": "typed",
+      "world": "w69bf7897",
+      "attempt_id": 42
+    },
+    {
+      "case_id": "q4f02e27a9f",
+      "method": "typed_history",
+      "world": "w69bf7897",
+      "attempt_id": 43
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "generic_hybrid",
+      "world": "w69bf7897",
+      "attempt_id": 44
+    },
+    {
+      "case_id": "q9f0ad7d4ae",
+      "method": "prompt_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 45
+    },
+    {
+      "case_id": "q7a990ad1f5",
+      "method": "full_context",
+      "world": "w69bf7897",
+      "attempt_id": 46
+    },
+    {
+      "case_id": "q35398bd68a",
+      "method": "prompt_hybrid",
+      "world": "w2bcf71ae",
+      "attempt_id": 47
+    }
+  ],
+  "freeze": null,
+  "scope": "Controlled fictional verified events; same model and planner; no human utility ratings or observed commercial outcomes.",
+  "runtime": {
+    "model": "qwen3-30b-a3b-instruct-2507-q4_k_m",
+    "model_sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+    "repository": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "revision": "eea7b2be5805a5f151f8847ede8e5f9a9284bf77",
+    "base_repository": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+    "license": "Apache-2.0",
+    "llama_cpp": "a37cc46104eb50900d5ab4a9ba02a0abdac039db",
+    "threads": 4,
+    "context": 16384,
+    "parallel": 1,
+    "prompt_cache": false,
+    "cpu_model": "AMD EPYC 9V74",
+    "generation_instruction_set": "AVX2+AVX512+VBMI+VNNI+BF16",
+    "embedding_instruction_set": "AVX2",
+    "binary_sha256": {
+      "libggml-base.so": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-base.so.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-base.so.0.27.0": "3ae6993b03266d553a802375f545dcaa9758fcc7945b95d931d59ae383b53967",
+      "libggml-cpu.so": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml-cpu.so.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml-cpu.so.0.27.0": "da0b6f1ebbc9445f05bfd0c621acdbbe1c3cbf0449bafa35f7a8ad7edb544a85",
+      "libggml.so": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libggml.so.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libggml.so.0.27.0": "04eaa6694622bea9657ee829ea89f7d1f7cc8f9d68d0daed7de88974595f1b6d",
+      "libllama-common.so": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-common.so.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-common.so.0.7.0": "2b6cddb33c50aa0d32fcb6e575053dab92b6b41f69fd4193bea0e498794a7606",
+      "libllama-server-impl.so": "8b9ed36b93310227cfe25236cc9ff9a65cdc9d9b8107a47d0003f5b35d13c497",
+      "libllama.so": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libllama.so.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libllama.so.0.7.0": "a09044f6bb96cf3d19e328e4a6084c4f44a3fe7c2ddb6be7ab02ed7b25ba13e0",
+      "libmtmd.so": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "libmtmd.so.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "libmtmd.so.0.7.0": "8897255e1172e51d1e1bf17d82fe1243fd4443b9cd5d2b9386573dbe261e71e8",
+      "llama-server": "3f25e4a07086e0f5bed97950aef360c23b9b28572f062737482798147f07b5a3"
+    },
+    "build_recipe": "worklog/avx512-build.md",
+    "non_thinking_checkpoint": true
+  },
+  "model_sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+  "embedding_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+  "cost_methodology": "Local CPU seconds and measured tokens; API spend zero, infrastructure price/energy unavailable. Cache origin receipts preserved.",
+  "finished_at": "2026-10-22T03:27:21.534335+00:00",
+  "attempt_count": 48
+}

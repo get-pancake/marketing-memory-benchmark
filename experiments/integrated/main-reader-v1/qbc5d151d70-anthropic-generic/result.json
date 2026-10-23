@@ -1,0 +1,203 @@
+{
+  "id": "qbc5d151d70-anthropic-generic",
+  "case_id": "qbc5d151d70",
+  "world": "w2a5aeb37",
+  "arm": "generic",
+  "provider": "anthropic",
+  "context": {
+    "all_current_value_groups_available": true,
+    "answerable": true,
+    "apparent_eligible_templates": [
+      "P4"
+    ],
+    "complete_positive_support": true,
+    "covered_current_value_groups": 8,
+    "current_value_group_coverage": 1.0,
+    "false_affordance": false,
+    "required_current_value_groups": 8,
+    "required_slot_precision": 0.5454545454545454,
+    "selected_sources": 22,
+    "stale_or_ineligible_sources": 0,
+    "true_eligible_templates": [
+      "P4"
+    ]
+  },
+  "evidence_bytes": 2040,
+  "status": "completed",
+  "started_at": "2026-10-23T00:58:32.519146+00:00",
+  "rate_limit_headers": {
+    "anthropic-ratelimit-input-tokens-limit": "10000000",
+    "anthropic-ratelimit-input-tokens-remaining": "9999000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-10-23T00:58:33Z",
+    "anthropic-ratelimit-output-tokens-limit": "2000000",
+    "anthropic-ratelimit-output-tokens-remaining": "1999000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-10-23T00:58:38Z",
+    "anthropic-ratelimit-requests-limit": "10000",
+    "anthropic-ratelimit-requests-remaining": "9998",
+    "anthropic-ratelimit-requests-reset": "2026-10-23T00:58:32Z",
+    "anthropic-ratelimit-tokens-limit": "12000000",
+    "anthropic-ratelimit-tokens-remaining": "11998000",
+    "anthropic-ratelimit-tokens-reset": "2026-10-23T00:58:33Z"
+  },
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgJG9Dsn174zE9Y4yG8yc",
+  "usage": {
+    "input_tokens": 4093,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 747,
+    "output_tokens_details": {
+      "thinking_tokens": 444
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "finish_reason": "end_turn",
+  "accounting": {
+    "estimated_usd": "0.015656",
+    "total_input_tokens": 4093,
+    "output_tokens": 747,
+    "regular_input_tokens": 4093,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "raw_output": {
+    "missing": [],
+    "status": "recommend",
+    "support": {
+      "account.account_geo:observed": "S17",
+      "account.account_role:observed": "S2",
+      "account.customer_state:observed": "S10",
+      "account.procurement_stage:observed": null,
+      "account.usage_trend:observed": "S8",
+      "seller.approved_geo:approved": "S15",
+      "seller.approved_role:approved": "S16",
+      "seller.offering_pain:observed": "S4",
+      "seller.proof_for_pain:observed": "S20"
+    },
+    "template": "P4"
+  },
+  "materialized": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "ec1d169b",
+          "ebfbe957",
+          "e0902d00",
+          "ed2c4a62",
+          "e8ff23e9",
+          "e73a1233",
+          "e290945f",
+          "ef736b15"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "raw_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-956",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "ebfbe957",
+        "ec1d169b"
+      ],
+      "evidence": [
+        "e0902d00",
+        "e290945f",
+        "e73a1233",
+        "e8ff23e9",
+        "ebfbe957",
+        "ec1d169b",
+        "ed2c4a62",
+        "ef736b15"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "validator_rejected": false,
+  "validated_output": {
+    "status": "recommend",
+    "plays": [
+      {
+        "template": "P4",
+        "evidence": [
+          "ec1d169b",
+          "ebfbe957",
+          "e0902d00",
+          "ed2c4a62",
+          "e8ff23e9",
+          "e73a1233",
+          "e290945f",
+          "ef736b15"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "validated_score": {
+    "schema_valid": true,
+    "decision_correct": true,
+    "choice_correct": true,
+    "recommended": true,
+    "supported_recommendation": true,
+    "inappropriate_abstention": false,
+    "correct_withhold": false,
+    "violations": [],
+    "dry_run": {
+      "kind": "mock_catalog_validation",
+      "status": "executable",
+      "account": "Velora-956",
+      "objective": "renewal",
+      "template": "P4",
+      "policy_versions": [
+        "ebfbe957",
+        "ec1d169b"
+      ],
+      "evidence": [
+        "e0902d00",
+        "e290945f",
+        "e73a1233",
+        "e8ff23e9",
+        "ebfbe957",
+        "ec1d169b",
+        "ed2c4a62",
+        "ef736b15"
+      ],
+      "units": 2,
+      "steps": [
+        "verify_prerequisites",
+        "prepare_evidence_report"
+      ],
+      "mechanism_hypothesis": "The observed renewal context may justify a scoped research review; commercial value is unproven.",
+      "allowed_next_step": "dry_run"
+    }
+  },
+  "explanation": "P4 fits the renewal objective and the 2-unit limit. Approved role and geo (S16, S15) match the observed account role and geo (S2, S17), and the account is active (S10) and declining (S8) with adoption pain (S4) and adoption proof (S20). P3 and P2 exceed the unit limit, P1 is a different objective, and S12 and S22 are non-authoritative and not used.",
+  "finished_at": "2026-10-23T00:58:38.525650+00:00",
+  "seconds": 6.006514827997307
+}

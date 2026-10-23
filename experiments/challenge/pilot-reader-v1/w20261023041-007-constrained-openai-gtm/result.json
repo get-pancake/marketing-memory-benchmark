@@ -1,0 +1,116 @@
+{
+  "id": "w20261023041-007-constrained-openai-gtm",
+  "case_id": "w20261023041-007-constrained",
+  "world": "w20261023041-007",
+  "family": "industrial_services",
+  "level": "constrained",
+  "provider": "openai",
+  "arm": "gtm",
+  "status": "completed",
+  "started_at": "2026-10-23T05:21:31.190348+00:00",
+  "evidence_bytes": 12251,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "15000",
+    "x-ratelimit-limit-tokens": "40000000",
+    "x-ratelimit-remaining-requests": "14999",
+    "x-ratelimit-remaining-tokens": "39999418",
+    "x-ratelimit-reset-requests": "4ms",
+    "x-ratelimit-reset-tokens": "0s"
+  },
+  "response_model": "gpt-6.1-sol",
+  "response_id": "resp_08c3da59f792a4b2016adaeedb658c87d1be39ddeea58b4240",
+  "usage": {
+    "input_tokens": 4430,
+    "input_tokens_details": {
+      "cache_write_tokens": 4427,
+      "cached_tokens": 0
+    },
+    "output_tokens": 725,
+    "output_tokens_details": {
+      "reasoning_tokens": 121
+    },
+    "total_tokens": 5155
+  },
+  "finish_reason": "completed",
+  "accounting": {
+    "estimated_usd": "0.0183235",
+    "total_input_tokens": 4430,
+    "output_tokens": 725,
+    "regular_input_tokens": 3,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 4427
+  },
+  "output": {
+    "actions": [
+      {
+        "account": "Grove-7",
+        "action": "renewal_review",
+        "sources": [
+          "e093f0605063dbf",
+          "e32627cda1d2c58",
+          "e7c7901ddbc7d91",
+          "ebeada34007f282",
+          "eec9de850069c8b",
+          "ef10cf4a168aa9f",
+          "ef891f5bb531ddf",
+          "e787083c7a3638c",
+          "e06008e72bbd07f",
+          "e5ed034854585cc"
+        ]
+      },
+      {
+        "account": "North-7",
+        "action": "workshop",
+        "sources": [
+          "e093f0605063dbf",
+          "e5dbeed21fa80bf",
+          "e80b5a66a079b89",
+          "ec15422261e0ab6",
+          "ec3cfd7881a9351",
+          "ede797e5300c2f9",
+          "e228d0a4b21fe5d",
+          "ea518f5f27d04c2",
+          "e1e53be46be5031",
+          "e2f3e61d3c2cff5",
+          "e81e315af06bb8f"
+        ]
+      },
+      {
+        "account": "Mesa-7",
+        "action": "diagnostic",
+        "sources": [
+          "e093f0605063dbf",
+          "e0a553c38f6c0fc",
+          "e3d9941f37843b8",
+          "e4cf2994019f290",
+          "ee258eb71bc65c9",
+          "eedddbc2f46908e",
+          "e90955982f03959",
+          "e5f804f42c59d54",
+          "e43efa23459bcd4",
+          "eb636947ca48dec"
+        ]
+      }
+    ],
+    "missing": [],
+    "reasoning_summary": "This optimal plan uses the full budget of 7 across three distinct accounts: Grove-7 renewal_review costs 2 and scores 36; North-7 workshop costs 3 and scores 12; Mesa-7 diagnostic costs 2 and scores 6. Total approved priority × multiplier is 54 synthetic policy points, not expected revenue. All selected actions satisfy eligibility. Pine-7 is sector-blocked and Delta-7 is outside allowed regions. Orchid-7's workshop lacks approved true capacity, while its eligible research_brief is less valuable within this budget. The proposed policy is not approved evidence."
+  },
+  "score": {
+    "optimum": 54,
+    "recoverable_value": 54,
+    "returned_value": 54,
+    "normalized_value": 1.0,
+    "context_normalized_value": 1.0,
+    "feasible_grounded": true,
+    "exact_optimum": true,
+    "actionable": true,
+    "abstained": false,
+    "unsafe": false,
+    "valid_action_count": 3,
+    "actions_count": 3,
+    "errors": [],
+    "cost_units": 7
+  },
+  "finished_at": "2026-10-23T05:21:42.703648+00:00",
+  "seconds": 11.513311379996594
+}

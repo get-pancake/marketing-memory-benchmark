@@ -1,0 +1,128 @@
+{
+  "id": "resp_0922e69ab0f61eb7016adaaca55f9c87d19e283e47dc8fb510",
+  "object": "response",
+  "created_at": 1792715941,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792715943,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0922e69ab0f61eb7016adaaca6410887d1a5c84c4a4e0907e6",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq2qynjPwOyJ-5JVQc5zE5bq_-ZNLoPHgMvGUwGV0nQqKKpyan9BBZBIfNE9e_gOZHvDIT_5bYNHNwqzYwi4rRoc2zGv5pVIwgs2_Z7DplZV0OJGrZWGB6FywjM9bj1TJMeYt5ighZRcadrUN8thh3pPOkGEObx-BQn6dbMNaMbPPEhzdKaV3EaPoCQnFfPH8CFd0seWRy60uVz48Uu7iUj2_6HZ6FuYLcmgMEGHWKg_z89vFEfFUOwnTuvgupT9o7ZiKoAsVh0WPeUsGm8Q9OWs9pg0zqpMM4zmAtlpviun7G9T3zM3aGyS3--Nwj_awtqv3peKAOWdBHQrghHKwhiHzDeolKHC2T46iV3xSeYa2gzkMoCL6ZKEW7UuYfjclpMcRHGKDUDv8mG84J18-fZMkXTNfI_kLpXRbvjUQybGJsVSYAnRSXAEGdj1ZXBxgC4GIVw_31PQgQRsuMRm1Y7qbwLjEk6VH8hqWVpA0KqAMcV3RFwxofaV6E15zS61L7CqSejy2Qqy28fZoCb5gmZ2GTt7DFdRRaVnkQKaFm3y1_-jiQqtRV8NdXLNQFv6aNORBnwQiEryXwDxlqnWCz9uZ-2MBNSjgY_5j0GeJd9CKQB4o301iGOSCGmZjf5KO9XaiJxGvDT7dk9LfQ6sJkxp1jE1FypuGn55CM6oyQzn0WxayjwFNf-cw8s8HZHjnCkPWQuTIcY7UUWTvZzELmGjMuHnsEfD9fjxHJsl52fKBISFshw2HpquEbQnz9Ha70Vru7LXU691mfOoZYPo--GN-z_8tMvrgj6cTtixTHZJ-GLE9OtXzJXZ2Xs9BfuF8QQOu4ty0yvYNXoejhyXYvH2qthq2N2CWscdKxO4i0_q8GWKTAZUP-jSmfEb_R2wHzXdwlQgOzE1HMl8b5hTqMtF03jvLzpqI-iDiJdR0ttPo-KBVZh8lzLKWALOygOxB7r7iHoCsLDD4yPjNMqrQmMpc7mgv-Lnc-9AYHD2D2KChLOlda49a_WT635s7jfIXENYcYZ0X62UBW-30BBOVITnOy2eizpHfF66wLaMMuJSv9MoaG1UKgaHKYu3wo1W9cDiD8thOLOc4sET9xCuH2yG5irkOzHwNv_wGI3grFV0qw4WDnPjhrCs3CyoPQEpBLDqO9OBbnuAO6BTsGtiVg5oNNB7ifOag_qSjhaZ3qL6DYjjWF_AdrfFKe6nlAUQk-1iXlPI99Jx_xd2lPL6K2WSCpQ84irQic9cB-46cDmwkaQ0wHNNw93gQHaKaIiaRLPl8vmT-Mnazq4Iy9T_lvSpsFw-SUwAoewTBzOsSvuKzQ_hfaImQyfny3Y1FRTU__2XACP8NCRTTRF521-SHr7_Ok4VXqlsFNmrnKg6zMfAwufTJ-JDuxpyRd88Tl2vvNysmf6bpwkxiltzanwOdwJIslo8L-ad_E8hVoq_8ecKy86nktWUucHa9YeMrpGH9tKLJOjVkhlaM9Q6l_pD0FGPFJp4Izvugdt9A8JOdF-DIdNszu_-c2_ik6QU4M8BOtfWlTjNs7WOnzBGUCHmetr6jVAw==",
+      "summary": []
+    },
+    {
+      "id": "msg_0922e69ab0f61eb7016adaaca6b51887d1ae8207f3f6db0959",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"answer\":\"unknown\",\"citations\":[],\"explanation\":\"No supplied company documents or compiled wiki record the seat count signed in Thornbury Cloth Co.\u2019s 2026 renewal.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "company_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer",
+          "citations",
+          "explanation"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 260,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 12
+    },
+    "total_tokens": 319
+  },
+  "user": null,
+  "metadata": {}
+}
